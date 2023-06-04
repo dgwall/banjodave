@@ -1,24 +1,118 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+
+// Import your components
+import Header from "./components/Header/Header";
+import Home from "./components/Home";
+import Footer from "./components/Footer/Footer";
+import N from "./components/N";
+import League from "./components/League";
+import Doom from "./components/Doom/Doom";
+import Games from "./components/Games";
+import Zine from "./components/Zine/Zine";
+import Support from "./components/Support";
+import Shop from "./components/Shop";
+import About from "./components/About";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <Routes>
+        <Route
+          path="/games"
+          element={
+            <main>
+              <div className="page">
+                <Games />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/doom"
+          element={
+            <main className="main-doom">
+              <div className="page">
+                <Doom />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/n"
+          element={
+            <main>
+              <div className="page">
+                <N />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/league"
+          element={
+            <main className="main-league">
+              <div className="page">
+                <League />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/zine"
+          element={
+            <main className="main-zine">
+              <div className="page">
+                <Zine />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/thank-you"
+          element={
+            <main>
+              <div className="page">
+                <Support />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/shop"
+          element={
+            <main>
+              <div className="page">
+                <Shop />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/about"
+          element={
+            <main>
+              <div className="page">
+                <About />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/"
+          element={
+            <main>
+              <div className="page">
+                <Home />
+              </div>
+            </main>
+          }
+        />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
