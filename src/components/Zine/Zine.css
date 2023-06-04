@@ -32,6 +32,14 @@
   margin-right: 0.5rem;
 }
 
+.skull-head {
+  border-top: 1px dotted #3f494e;
+  padding-top: 1.25rem;
+  width: 80%;
+  max-width: 720px;
+  margin: auto;
+}
+
 .current-issue .skull {
   margin: 0;
   margin-bottom: 1rem;

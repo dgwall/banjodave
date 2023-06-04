@@ -43,10 +43,8 @@ function Zine() {
       </article>
 
       <article className="current-issue">
-        <h1>
+        <h1 className="skull-head">
           <img src={skull} alt="Skull" className="skull" />
-          <br />
-          Current Issue
         </h1>
         <p>
           A new moon rises, heralding the unveiling of issue #{issues[0].id}.
