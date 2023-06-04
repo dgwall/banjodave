@@ -37,7 +37,7 @@ function Zine() {
           BanjoZine: the underground intersection of games, philosophy, and
           media. Established in March 2021, this digital cryptex delves into pop
           culture revelations, the arcane secrets of game design, and the abyss
-          of philosophical discourse. As nightfall descends, you embark on an
+          of philosophical discourse. As nightfall descends, embark on an
           unexpected odyssey.
         </p>
       </article>
