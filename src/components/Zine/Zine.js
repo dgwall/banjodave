@@ -21,7 +21,7 @@ function Zine() {
       })
       .then((data) => {
         if (Array.isArray(data) && data.length > 0) {
-          setIssues(data);
+          setIssues(data.sort((a, b) => b.id - a.id));
         } else {
           throw new Error("Zine fetch error: Invalid data format");
         }
