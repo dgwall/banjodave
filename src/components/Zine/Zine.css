@@ -37,8 +37,7 @@
 }
 
 .skull-head {
-  border-top: 1px dotted #3f494e;
-  padding-top: 1.25rem;
+  border: none;
   width: 80%;
   max-width: 720px;
   margin: auto;

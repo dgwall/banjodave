@@ -1,5 +1,6 @@
 import React from "react";
 import skull from "../../assets/images/zine/skull.png";
+import ZineCard from "./ZineCard";
 
 const CurrentIssue = ({ currentIssue }) => {
   if (!currentIssue) return null;
@@ -13,33 +14,7 @@ const CurrentIssue = ({ currentIssue }) => {
       </p>
       <div className="issue-details current">
         <div className="current-container">
-          <div>
-            <a
-              href={
-                "img/BanjoZine-Issue-" +
-                String(currentIssue.id).padStart(3, "0") +
-                ".pdf"
-              }
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img
-                src={
-                  "img/zine-covers/issue-" +
-                  String(currentIssue.id).padStart(3, "0") +
-                  ".jpg"
-                }
-                alt={currentIssue.title}
-              />
-              <br />
-              Read now
-            </a>
-          </div>
-          <p className="contents">
-            <b>Contents</b>
-            <br />
-            {currentIssue.description}
-          </p>
+          <ZineCard issue={currentIssue} />
         </div>
       </div>
     </article>

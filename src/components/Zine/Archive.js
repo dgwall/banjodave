@@ -1,6 +1,6 @@
-// components/Archive.js
 import React from "react";
 import skull from "../../assets/images/zine/skull.png";
+import ZineCard from "./ZineCard";
 
 const Archive = ({ archiveIssues, selectedIssue, handleIssueClick }) => {
   return (
@@ -30,30 +30,7 @@ const Archive = ({ archiveIssues, selectedIssue, handleIssueClick }) => {
         >
           {selectedIssue && (
             <div className="archive-container">
-              <h2>{selectedIssue.title}</h2>
-              <a
-                href={
-                  "img/BanjoZine-Issue-" +
-                  String(selectedIssue.id).padStart(3, "0") +
-                  ".pdf"
-                }
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={
-                    "img/zine-covers/issue-" +
-                    String(selectedIssue.id).padStart(3, "0") +
-                    ".jpg"
-                  }
-                  alt={selectedIssue.title}
-                />
-                <br />
-                Read now
-              </a>
-              <p className="contents">
-                <b>Contents:</b> {selectedIssue.description}
-              </p>
+              <ZineCard issue={selectedIssue} />
             </div>
           )}
         </div>
