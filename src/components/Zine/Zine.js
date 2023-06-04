@@ -1,30 +1,40 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import logo from "../../assets/images/zine/banjozine.png";
 import skull from "../../assets/images/zine/skull.png";
 import seal from "../../assets/images/zine/banjohouse.png";
 import "./Zine.css";
+import CurrentIssue from "./CurrentIssue";
+import Archive from "./Archive";
 
 function Zine() {
-  const issues = [
-    {
-      id: 1,
-      title: "Issue #1 March 2021",
-      description:
-        "rootootoot, Mapwich 2, Vanish Glide, Things, Orb, ULTRACLUB4K, Podcasts, ガキの使い, Nintendo 64, 森林浴, Productivity.",
-    },
-    {
-      id: 2,
-      title: "Issue #2 June 2021",
-      description:
-        "MALAGARD, Blazing Beachhead, Lullaby by Danlex, Cosmic Snake, Fissure, Advanced Tech, '90s Games, GameCube, Gruntz, Star____?, The Mushroom King, Πυῤῥώνειοι ὑποτυπώσεις & मूलमध्यमककारिका, ドラゴンボールＺ 愛する者のために... ベジータ散る!!, དུག་གསུམ་.",
-    },
-  ].sort((a, b) => b.id - a.id);
-
+  const [issues, setIssues] = useState([]);
   const [selectedIssue, setSelectedIssue] = useState(null);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    fetch("./zineIssues.json")
+      .then((response) => {
+        if (!response.ok) {
+          throw new Error("Zine fetch error: Network response was not ok");
+        }
+        return response.json();
+      })
+      .then((data) => {
+        if (Array.isArray(data) && data.length > 0) {
+          setIssues(data);
+        } else {
+          throw new Error("Zine fetch error: Invalid data format");
+        }
+      })
+      .catch(() => setError(true));
+  }, []);
 
   const handleIssueClick = (issue) => {
     setSelectedIssue(issue);
   };
+
+  const currentIssue = issues[0] || null;
+  const archiveIssues = issues.slice(1);
 
   return (
     <section>
@@ -42,105 +52,30 @@ function Zine() {
         </p>
       </article>
 
-      <article className="current-issue">
-        <h1 className="skull-head">
-          <img src={skull} alt="Skull" className="skull" />
-        </h1>
-        <p>
-          A new moon rises, heralding the unveiling of issue #{issues[0].id}.
-        </p>
-        <div className="issue-details current">
-          <div className="current-container">
-            <div>
-              <a
-                href={
-                  "img/BanjoZine-Issue-" +
-                  String(issues[0].id).padStart(3, "0") +
-                  ".pdf"
-                }
-                target="_blank"
-                rel="noreferrer"
-              >
-                <img
-                  src={
-                    "img/zine-covers/issue-" +
-                    String(issues[0].id).padStart(3, "0") +
-                    ".jpg"
-                  }
-                  alt={issues[0].title}
-                />
-                <br />
-                Read now
-              </a>
-            </div>
-            <p className="contents">
-              <b>Contents</b>
-              <br />
-              {issues[0].description}
-            </p>
-          </div>
-        </div>
-      </article>
+      {error ? (
+        <article className="error">
+          <h1>
+            <img src={skull} alt="Skull" className="skull" />
+            Unseen Forces Have Disrupted Our Connection
+          </h1>
+          <p>
+            It seems a temporal rift has swallowed our latest issues into the
+            abyss. Rest assured, our metaphysical engineers are working hard to
+            rectify this reality distortion. Please check back after the moon's
+            next phase.
+          </p>
+        </article>
+      ) : (
+        <>
+          <CurrentIssue currentIssue={currentIssue} />
+          <Archive
+            archiveIssues={archiveIssues}
+            selectedIssue={selectedIssue}
+            handleIssueClick={handleIssueClick}
+          />
+        </>
+      )}
 
-      <article>
-        <h1>
-          <img src={skull} alt="Skull" className="skull" />
-          Archive
-        </h1>
-        <p>
-          Missed an issue? No problem. For those brave enough to enter, the
-          archive stands as a sanctum dedicated to the eternal preservation of
-          the spectral echoes of forgotten tomes. All previous issues stand
-          ready for your perusal, offered freely.
-        </p>
-
-        <div className="archive">
-          <ul className="issue-list">
-            {issues
-              .filter((issue, index) => index !== 0)
-              .map((issue) => (
-                <li key={issue.id} onClick={() => handleIssueClick(issue)}>
-                  {issue.title}
-                </li>
-              ))}
-          </ul>
-
-          <div
-            className={`issue-details archive ${
-              selectedIssue ? "selected" : "blank"
-            }`}
-          >
-            {selectedIssue && (
-              <div className="archive-container">
-                <h2>{selectedIssue.title}</h2>
-                <a
-                  href={
-                    "img/BanjoZine-Issue-" +
-                    String(selectedIssue.id).padStart(3, "0") +
-                    ".pdf"
-                  }
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <img
-                    src={
-                      "img/zine-covers/issue-" +
-                      String(selectedIssue.id).padStart(3, "0") +
-                      ".jpg"
-                    }
-                    alt={selectedIssue.title}
-                  />
-                  <br />
-                  Read now
-                </a>
-                <p className="contents">
-                  <b>Contents:</b> {selectedIssue.description}
-                </p>
-              </div>
-            )}
-          </div>
-        </div>
-      </article>
       <article>
         <h1>
           <img src={skull} alt="Skull" className="skull" />

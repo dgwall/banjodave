@@ -26,6 +26,10 @@
   object-fit: contain;
 }
 
+.error {
+  color: red;
+}
+
 .skull {
   position: relative;
   top: 0.5rem;
