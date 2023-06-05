@@ -6,10 +6,10 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer/Footer";
-import N from "./components/N";
-import League from "./components/League";
+import N from "./components/N/N";
+import League from "./components/League/League";
 import Doom from "./components/Doom/Doom";
-import Games from "./components/Games";
+import Games from "./components/Games/Games";
 import Zine from "./components/Zine/Zine";
 import Support from "./components/Support";
 import Shop from "./components/Shop";
@@ -23,7 +23,7 @@ function App() {
         <Route
           path="/games"
           element={
-            <main>
+            <main className="main-games">
               <div className="page">
                 <Games />
               </div>
@@ -43,7 +43,7 @@ function App() {
         <Route
           path="/n"
           element={
-            <main>
+            <main className="main-n">
               <div className="page">
                 <N />
               </div>
@@ -73,7 +73,7 @@ function App() {
         <Route
           path="/thank-you"
           element={
-            <main>
+            <main className="main">
               <div className="page">
                 <Support />
               </div>
@@ -83,7 +83,7 @@ function App() {
         <Route
           path="/shop"
           element={
-            <main>
+            <main className="main">
               <div className="page">
                 <Shop />
               </div>
@@ -93,7 +93,7 @@ function App() {
         <Route
           path="/about"
           element={
-            <main>
+            <main className="main">
               <div className="page">
                 <About />
               </div>
@@ -103,7 +103,7 @@ function App() {
         <Route
           path="/"
           element={
-            <main>
+            <main className="main">
               <div className="page">
                 <Home />
               </div>

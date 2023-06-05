@@ -5,7 +5,9 @@ function Doom() {
   return (
     <section>
       <header>DOOM Mapping</header>
-      <div>Under Construction.</div>
+      <div>Under Construction. One page. Working on, more maps.</div>
+      <div>Working on. Overview, patreon.</div>
+      <div>More maps. Cards. Overview, screenshots.</div>
     </section>
   );
 }

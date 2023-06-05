@@ -19,7 +19,7 @@ const Archive = ({ archiveIssues, selectedIssue, handleIssueClick }) => {
         <ul className="issue-list">
           {archiveIssues.map((issue) => (
             <li key={issue.id} onClick={() => handleIssueClick(issue)}>
-              {issue.title}
+              #{issue.id} {issue.title}
             </li>
           ))}
         </ul>

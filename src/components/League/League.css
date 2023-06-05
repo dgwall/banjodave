@@ -1,0 +1,11 @@
+.main-league {
+  background-image: url("../../assets/images/league/bg.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.main-league header {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem;
+}

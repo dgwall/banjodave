@@ -15,20 +15,6 @@ button {
   font-family: "Dosis", sans-serif;
 }
 
-.main-doom {
-  background-color: #300500;
-  background-image: url("assets/bg-doom.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.main-league {
-  background-image: url("assets/images/league/bg.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
-}
-
 .page {
   max-width: 1280px;
   margin: auto;
@@ -48,4 +34,16 @@ article {
 
 .overview p {
   text-align: center;
+}
+
+.main header {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+.main .page {
+  background-color: #eee;
+  padding: 0 2rem 2rem 2rem;
+  color: #333;
 }

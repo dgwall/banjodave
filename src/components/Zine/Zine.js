@@ -83,13 +83,13 @@ function Zine() {
         </h1>
         <p>
           Do you yearn for a deeper connection with the unseen forces of
-          BanjoZine? The ancient pact of Patreon awaits the valorous! Gazing
-          into the dark crystal pool of previews, patrons scry pages of upcoming
-          issues, while those of higher ranks can manifest physical copies into
-          existence. Through support and shared energies, patrons become
-          essential conduits of creation, fanning our ever-burning black flame,
-          and propelling our nocturnal journey further into the unknown. Will
-          you join our arcane quest?
+          BanjoZine? The ancient pact of Patreon awaits! Gazing into the dark
+          crystal pool of previews, patrons scry pages of upcoming issues, while
+          those of higher ranks can manifest physical copies into existence.
+          Through support and shared energies, patrons become essential conduits
+          of creation, fanning our ever-burning black flame, and propelling our
+          nocturnal journey further into the unknown. Will you join our arcane
+          quest?
         </p>
         <a
           href="https://www.patreon.com/user?u=11485117"

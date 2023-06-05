@@ -2,7 +2,9 @@ import React from "react";
 
 const ZineCard = ({ issue }) => (
   <>
-    <h2>{issue.title}</h2>
+    <h2>
+      Issue #{issue.id} {issue.title}
+    </h2>
     <a
       href={
         "https://s3.eu-north-1.amazonaws.com/banjodave.com/BanjoZine/BanjoZine-Issue-" +

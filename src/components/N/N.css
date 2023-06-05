@@ -1,0 +1,18 @@
+.main-n {
+  background-image: url("../../assets/images/n/bg.png");
+  background-position: 50% 50%;
+  background-attachment: fixed;
+  background-color: #d4d3ac;
+}
+
+.main-n .page {
+  background-color: #cacad0;
+  border: 24px solid #797988;
+  padding: 24px;
+  color: #797988;
+}
+
+.main-n header {
+  font-size: 3rem;
+  text-align: center;
+}

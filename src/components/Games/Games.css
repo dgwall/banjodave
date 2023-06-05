@@ -1,0 +1,17 @@
+.main-games {
+  background-color: #a3e2ff;
+  background-image: url("../../assets/images/games/bg.png");
+  background-repeat: repeat;
+  background-attachment: fixed;
+}
+
+.main-games .page {
+  background-color: #000;
+}
+
+.main-games header {
+  font-size: 3rem;
+  text-align: center;
+  padding: 2rem;
+  color: #eee;
+}

@@ -31,14 +31,14 @@ export const menuItems = [
     label: "Download Maps for N",
     text: "N Maps",
     icon: "n",
-    move: true,
+    move: false,
   },
   {
     path: "/zine",
     label: "Read BanjoZine",
     text: "BanjoZine",
     icon: "zine",
-    move: false,
+    move: true,
   },
   {
     path: "/thank-you",

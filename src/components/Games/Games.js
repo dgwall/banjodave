@@ -1,10 +1,11 @@
 import React from "react";
+import "./Games.css";
 
 function Games() {
   return (
     <section>
       <header>0D_Games</header>
-      <div>Under Construction.</div>
+      <div>Under Construction. Banjo's Arcade.</div>
     </section>
   );
 }
