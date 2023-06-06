@@ -1,14 +1,115 @@
 .main-doom {
   background-color: #300500;
   background-image: url("../../assets/images/doom/bg.jpg");
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
   background-attachment: fixed;
 }
 
+.main-doom .page {
+  background: rgb(27, 27, 27);
+  color: #7a7677;
+}
+
+.main-doom .container {
+  position: relative;
+  top: -3px;
+  background: linear-gradient(180deg, rgb(64, 21, 19) 0%, rgb(27, 27, 27) 35%);
+}
+
 .main-doom header {
-  font-size: 3rem;
-  text-align: center;
+  display: flex;
+  background: radial-gradient(at bottom center, #401513, #401513 25%, #0f0e0e);
+  text-align: right;
   padding: 2rem;
-  color: #e0a0a0;
+  color: #c7783a;
+  border-bottom: 1px solid #201817;
+}
+
+.main-doom nav a {
+  color: #66594b;
+  font-size: 1.1rem;
+  padding: 0 1rem;
+  text-decoration: none;
+}
+
+.main-doom nav a:hover {
+  color: #945603;
+  text-shadow: 0 0 1rem #945603c0;
+}
+
+.main-doom .banner {
+  width: 100%;
+}
+
+.main-doom .banner img {
+  width: fit-content;
+  height: auto;
+}
+
+.main-doom h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.main-doom h2 {
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: #d3995a;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.main-doom h2 span {
+  font-weight: normal;
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+.main-doom article {
+  padding: 1rem 3rem 1rem 5rem;
+}
+
+.main-doom button {
+  font-size: 1rem;
+  margin-top: 2rem;
+  padding: 0.75rem;
+  background: linear-gradient(to bottom, #eea256, #c7783a);
+  border: 0;
+  border-radius: 0.2rem;
+  color: #733809;
+  text-shadow: 0 1px 1.5px rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  border-bottom: 2px solid #9c5d2d;
+}
+
+.main-doom button:hover,
+.main-doom button:active {
+  background: #eea256;
+  text-shadow: none;
+}
+
+.main-doom button:active {
+  background: #c7783a;
+  color: #000;
+  text-shadow: none;
+  border-bottom: none;
+  position: relative;
+  top: 2px;
+  border-bottom: 2px solid transparent;
+}
+
+@media screen and (max-width: 768px) {
+  .main-doom header {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media not screen and (max-width: 768px) {
+  .main-doom header {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: baseline;
+  }
 }

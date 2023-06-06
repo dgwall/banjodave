@@ -2,9 +2,12 @@ import React from "react";
 
 function Support() {
   return (
-    <section>
+    <section className="under-construction">
       <header>Support My Work</header>
-      <div>Under Construction.</div>
+      <div>
+        Under Construction. TO-DO: Patreon. Donate. More ways: subscribe, like,
+        comment, share.
+      </div>
     </section>
   );
 }

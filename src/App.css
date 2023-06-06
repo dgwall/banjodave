@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -22,10 +26,6 @@ button {
   color: #eee;
 }
 
-article {
-  margin: 2em;
-}
-
 .overview {
   width: 80%;
   max-width: 720px;
@@ -34,6 +34,12 @@ article {
 
 .overview p {
   text-align: center;
+}
+
+.main {
+  background-image: url("./assets/images/bg.png");
+  background-attachment: fixed;
+  background-color: #c1c1c1;
 }
 
 .main header {
@@ -46,4 +52,12 @@ article {
   background-color: #eee;
   padding: 0 2rem 2rem 2rem;
   color: #333;
+}
+
+.under-construction {
+  background: url("./assets/images/uc.png");
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bolder;
+  -webkit-text-stroke: 0.5px;
 }

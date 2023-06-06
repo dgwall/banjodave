@@ -3,11 +3,12 @@
   background-position: 50% 50%;
   background-attachment: fixed;
   background-color: #d4d3ac;
+  text-shadow: -0.1rem 0.1rem 0 rgba(121, 121, 136, 0.5);
 }
 
 .main-n .page {
   background-color: #cacad0;
-  border: 24px solid #797988;
+  border: 24px solid rgb(121, 121, 136);
   padding: 24px;
   color: #797988;
 }

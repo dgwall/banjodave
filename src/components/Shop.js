@@ -2,9 +2,9 @@ import React from "react";
 
 function Shop() {
   return (
-    <section>
+    <section className="under-construction">
       <header>Shop BanjoWare</header>
-      <div>Under Construction.</div>
+      <div>Under Construction. TO-DO: Pick an e-commerce platform.</div>
     </section>
   );
 }

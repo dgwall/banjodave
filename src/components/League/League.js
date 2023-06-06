@@ -3,7 +3,7 @@ import "./League.css";
 
 function League() {
   return (
-    <section>
+    <section className="under-construction">
       <header>BanjoLeague</header>
       <div>Under Construction. Highscoring/speedrun app.</div>
     </section>

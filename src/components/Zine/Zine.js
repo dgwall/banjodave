@@ -91,13 +91,8 @@ function Zine() {
           nocturnal journey further into the unknown. Will you join our arcane
           quest?
         </p>
-        <a
-          href="https://www.patreon.com/user?u=11485117"
-          target="_blank"
-          rel="noreferrer"
-          className="patreon-link"
-        >
-          Join us on Patreon
+        <a href="#" target="_blank" rel="noreferrer" className="patreon-link">
+          <span className="under-construction">Join us on Patreon</span>
         </a>
         <div align="center">
           <img src={seal} alt="Seal of Banjo House Publishing" />
