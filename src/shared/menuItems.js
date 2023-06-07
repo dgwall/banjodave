@@ -7,8 +7,8 @@ export const menuItems = [
   },
   {
     path: "/games",
-    label: "Play 0D_Games",
-    text: "0D_Games",
+    label: "Play 0DGames",
+    text: "0DGames",
     icon: "0d",
     move: true,
   },

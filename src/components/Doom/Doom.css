@@ -12,16 +12,17 @@
 .main-doom .container {
   position: relative;
   top: -3px;
-  background: linear-gradient(180deg, rgb(64, 21, 19) 0%, rgb(27, 27, 27) 35%);
+  background: linear-gradient(180deg, rgb(64, 21, 19) 0%, rgb(27, 27, 27) 50%);
 }
 
 .main-doom header {
   display: flex;
-  background: radial-gradient(at bottom center, #401513, #401513 25%, #0f0e0e);
+  background: linear-gradient(to top, #401513, #0f0e0e);
   text-align: right;
   padding: 2rem;
   color: #c7783a;
   border-bottom: 1px solid #201817;
+  max-height: 400px;
 }
 
 .main-doom nav a {
@@ -29,6 +30,7 @@
   font-size: 1.1rem;
   padding: 0 1rem;
   text-decoration: none;
+  text-shadow: 0 -0.1rem 0 #000;
 }
 
 .main-doom nav a:hover {
@@ -48,6 +50,7 @@
 .main-doom h1 {
   font-size: 3rem;
   margin: 0;
+  text-shadow: 0 -0.3rem 0 #000;
 }
 
 .main-doom h2 {
@@ -65,19 +68,37 @@
   opacity: 0.8;
 }
 
+.main-doom a {
+  text-decoration: none;
+  color: #c7783a;
+}
+
+.main-doom a:hover,
+.main-doom a:active {
+  color: #fff;
+}
+
 .main-doom article {
-  padding: 1rem 3rem 1rem 5rem;
+  padding: 1rem 5rem 0 5rem;
+  text-align: justify;
+}
+
+.main-doom article div {
+  margin-bottom: 2rem;
+}
+
+.main-doom .dev-progress p {
+  margin: 0;
 }
 
 .main-doom button {
   font-size: 1rem;
-  margin-top: 2rem;
   padding: 0.75rem;
   background: linear-gradient(to bottom, #eea256, #c7783a);
   border: 0;
   border-radius: 0.2rem;
   color: #733809;
-  text-shadow: 0 1px 1.5px rgba(255, 255, 255, 0.25);
+  text-shadow: 0 1px 1.5px rgba(255, 255, 255, 0.5);
   cursor: pointer;
   border-bottom: 2px solid #9c5d2d;
 }
@@ -103,6 +124,25 @@
     flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
+  }
+
+  .main-doom h2 {
+    text-align: center;
+  }
+
+  .main-doom .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-doom button {
+    text-align: center;
+    margin: auto;
+  }
+
+  .main-doom .dev-progress p {
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.25);
   }
 }
 

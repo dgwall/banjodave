@@ -91,12 +91,11 @@ function Zine() {
           nocturnal journey further into the unknown. Will you join our arcane
           quest?
         </p>
-        <a
-          href="#maincontent"
-          target="_blank"
-          rel="noreferrer"
-          className="patreon-link"
-        >
+        <a href="#maincontent" className="patreon-link">
+          {/* 
+        target="_blank"
+        rel="noreferrer"
+         */}
           <span className="under-construction">Join us on Patreon</span>
         </a>
         <div align="center">

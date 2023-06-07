@@ -10,8 +10,8 @@ function N() {
       </div>
       <div>rootootoot, CD, free download, posters, videos</div>
       <div>sol, CD sol+144*10mm, free download</div>
-      <div>CWDW40, patreon download, featured maps</div>
       <div>N++, featured maps, poster</div>
+      <div>CWDW40, patreon download, featured maps</div>
     </section>
   );
 }
