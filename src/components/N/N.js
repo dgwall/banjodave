@@ -10,7 +10,15 @@ function N() {
         <img src="./img/n/nv14.png" alt="N v1.4 by Metanet Software" />
         <div>
           <p>
-            In N v1.4 by{" "}
+            In{" "}
+            <a
+              href="https://www.thewayoftheninja.org/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              N
+            </a>{" "}
+            by{" "}
             <a
               href="https://www.metanetsoftware.com/"
               target="_blank"
@@ -27,8 +35,8 @@ function N() {
             the allure of gold.
           </p>
           <p>
-            The heart of N v1.4 beats in its vibrant community, where disciples
-            of the game exercise their creativity in crafting and sharing custom
+            The heart of N beats in its vibrant community, where disciples of
+            the game exercise their creativity in crafting and sharing custom
             maps to{" "}
             <a href="https://www.nmaps.net/" target="_blank" rel="noreferrer">
               NUMA
@@ -37,6 +45,15 @@ function N() {
             turning this platformer into an ever-evolving digital playground
             where each new map is a testament to the collective creativity and
             ingenuity of its players.
+          </p>
+          <p>
+            The maps on this website and on NUMA are designed for version 1.4 of
+            the game, released in 2005. You can find a free download of this
+            version here: &gt;&gt;
+            <a href="n_v1pc.zip" download>
+              Download N v1.4 for PC
+            </a>
+            &lt;&lt;
           </p>
         </div>
       </div>

@@ -113,7 +113,9 @@ const ScreenshotsCarousel = ({ screenshots }) => {
           onClick={openLightbox}
         />
         <CarouselControls onPrev={handlePrev} onNext={handleNext} />
-        <figcaption>{currentScreenshot.alt}</figcaption>
+        <figcaption className="under-construction">
+          {currentScreenshot.alt}
+        </figcaption>
       </figure>
       {isLightboxOpen && (
         <Lightbox
