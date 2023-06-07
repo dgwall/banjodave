@@ -3,17 +3,71 @@
   background-position: 50% 50%;
   background-attachment: fixed;
   background-color: #797988;
-  text-shadow: -0.1rem 0.1rem 0 rgba(121, 121, 136, 0.5);
 }
 
 .main-n .page {
   background-color: #cacad0;
   border: 24px solid rgb(121, 121, 136);
   padding: 24px;
-  color: #797988;
+  color: #000;
 }
 
 .main-n header {
   font-size: 3rem;
   text-align: center;
+  text-shadow: -0.2rem 0.2rem 0.05rem rgba(121, 121, 136, 0.25);
+}
+
+.main-n a {
+  color: #a67c00;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.main-n a:hover,
+.main-n a:active {
+  color: #ffffcc;
+}
+
+.main-n .overview {
+  text-align: justify;
+  text-indent: 24px;
+  margin-top: 24px;
+}
+
+.main-n .overview img {
+  margin-bottom: 24px;
+}
+
+.main-n p {
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-n .overview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-n .overview img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+@media not screen and (max-width: 768px) {
+  .main-n .overview {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+
+  .main-n .overview img {
+    max-width: 30%;
+    height: auto;
+  }
+  .main-n .overview img {
+    margin-left: 24px;
+  }
 }

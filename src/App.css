@@ -26,16 +26,6 @@ button {
   color: #eee;
 }
 
-.overview {
-  width: 80%;
-  max-width: 720px;
-  margin: 2rem auto;
-}
-
-.overview p {
-  text-align: center;
-}
-
 .main {
   background-image: url("./assets/images/bg.png");
   background-attachment: fixed;

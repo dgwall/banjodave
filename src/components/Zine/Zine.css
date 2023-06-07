@@ -167,8 +167,18 @@
   transform: rotate(3deg);
 }
 
-.herald,
-.overview {
+.main-zine .overview {
+  width: 80%;
+  max-width: 720px;
+  margin: 2rem auto;
+}
+
+.main-zine .overview p {
+  text-align: center;
+}
+
+.main-zine .herald,
+.main-zine .overview {
   margin: auto;
   margin-bottom: 1rem;
   width: fit-content;
@@ -177,7 +187,7 @@
   box-shadow: 0.1rem 0.1rem 0.1rem rgba(0, 0, 0, 0.2);
 }
 
-.herald {
+.main-zine .herald {
   margin-top: 0.5rem;
   transform: rotate(-1deg);
 }
