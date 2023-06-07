@@ -6,6 +6,10 @@ import "./App.css";
 import Header from "./components/Header/Header";
 import Home from "./components/Home";
 import Footer from "./components/Footer/Footer";
+import Rootootoot from "./components/N/Rootootoot";
+import Sol from "./components/N/Sol";
+import PlusPlus from "./components/N/PlusPlus";
+import Dw40 from "./components/N/Dw40";
 import N from "./components/N/N";
 import League from "./components/League/League";
 import Doom from "./components/Doom/Doom";
@@ -36,6 +40,46 @@ function App() {
             <main className="main-doom">
               <div className="page">
                 <Doom />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/n/rootootoot"
+          element={
+            <main className="main-n">
+              <div className="page">
+                <Rootootoot />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/n/sol"
+          element={
+            <main className="main-n">
+              <div className="page">
+                <Sol />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/n/plusplus"
+          element={
+            <main className="main-n">
+              <div className="page">
+                <PlusPlus />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/n/DW40"
+          element={
+            <main className="main-n">
+              <div className="page">
+                <Dw40 />
               </div>
             </main>
           }

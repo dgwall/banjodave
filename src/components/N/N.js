@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./N.css";
 
 function N() {
@@ -8,10 +9,18 @@ function N() {
       <div>
         Under Construction. TO-DO: 4 Page. rootootoot, sol, N++, Complete Works.
       </div>
-      <div>rootootoot, CD, free download, posters, videos</div>
-      <div>sol, CD sol+144*10mm, free download</div>
-      <div>N++, featured maps, poster</div>
-      <div>CWDW40, patreon download, featured maps</div>
+      <div>
+        <Link to="/n/rootootoot">rootootoot</Link>
+      </div>
+      <div>
+        <Link to="/n/sol">Sol</Link>
+      </div>
+      <div>
+        <Link to="/n/plusplus">N++</Link>
+      </div>
+      <div>
+        <Link to="/n/dw40">Complete Works of DW40</Link>
+      </div>
     </section>
   );
 }

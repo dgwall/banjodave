@@ -54,12 +54,25 @@
 }
 
 .main-doom h2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   font-weight: normal;
   font-size: 2.5rem;
   color: #d3995a;
+  margin: 2rem 0;
+}
+
+.main-doom h2 div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.main-doom h2 img {
+  height: 3.5rem;
+  width: auto;
+  margin-right: 1rem;
 }
 
 .main-doom h2 span {
@@ -83,15 +96,54 @@
   text-align: justify;
 }
 
-.main-doom article div {
+.main-doom article p {
   margin-bottom: 2rem;
 }
 
-.main-doom .dev-progress p {
+.main-doom .dev-progress ul {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-doom .screenshots {
   margin: 0;
 }
 
-.main-doom button {
+.main-doom figure img {
+  width: 100%;
+  cursor: pointer;
+}
+
+.main-doom .carousel-controls {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  height: 2rem;
+  width: 100%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+.main-doom .carousel-controls button {
+  width: 50%;
+  background-color: transparent;
+  border: none;
+  color: #7a7677;
+  cursor: pointer;
+  padding: 0;
+  height: 1.5rem;
+}
+
+.main-doom .carousel-controls button:hover {
+  color: #fff;
+}
+
+.main-doom figcaption {
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.main-doom .button button {
   font-size: 1rem;
   padding: 0.75rem;
   background: linear-gradient(to bottom, #eea256, #c7783a);
@@ -103,13 +155,13 @@
   border-bottom: 2px solid #9c5d2d;
 }
 
-.main-doom button:hover,
-.main-doom button:active {
+.main-doom .button button:hover,
+.main-doom .button button:active {
   background: #eea256;
   text-shadow: none;
 }
 
-.main-doom button:active {
+.main-doom .button button:active {
   background: #c7783a;
   color: #000;
   text-shadow: none;
@@ -131,18 +183,31 @@
   }
 
   .main-doom .button {
+    margin-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .main-doom button {
+  .main-doom .button button {
     text-align: center;
     margin: auto;
   }
 
-  .main-doom .dev-progress p {
+  .main-doom .dev-progress li {
     border-bottom: 1px dotted rgba(255, 255, 255, 0.25);
+  }
+
+  .main-doom .feature {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-doom .carousel {
+    text-align: center;
+    width: 100%;
+    margin: 2rem 0;
+    background-color: #212020;
   }
 }
 
@@ -151,5 +216,23 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: baseline;
+  }
+
+  .main-doom .feature {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-doom .button button {
+    text-align: center;
+    margin: auto;
+    margin-top: 2rem;
+  }
+
+  .main-doom .carousel {
+    width: 100rem;
+    margin-top: 1rem;
+    margin-left: 2rem;
+    background-color: #212020;
   }
 }

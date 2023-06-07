@@ -1,6 +1,10 @@
 import React from "react";
 import "./Doom.css";
+import ScreenshotsCarousel from "../../shared/ScreenshotsCarousel";
+import screensSA from "./screensSA.json";
 import banner from "../../assets/images/doom/banner.jpg";
+import gargoyleA from "../../assets/images/doom/icon-1.png";
+import gargoyleB from "../../assets/images/doom/icon-2.png";
 
 function Doom() {
   return (
@@ -18,40 +22,53 @@ function Doom() {
         className="banner"
       />
       <div className="container">
-        <article>
-          <h2 id="starlit-abyss">
-            Starlit Abyss <br />
-            <span>Ultimate DOOM Episode</span>
+        <article id="starlit-abyss">
+          <h2>
+            <img src={gargoyleA} alt="Lion Gargoyle" />
+            <div>
+              Starlit Abyss
+              <br />
+              <span>Ultimate DOOM Episode</span>
+            </div>
           </h2>
-          <div>
-            Ready to dance with demons on the edge of the Starlit Abyss? This
-            classic 9-map Ultimate DOOM episode is set to blast onto the scene,
-            seething with infernal fiends, scorching hellfire, and enough
-            firepower to make a Cyberdemon blush. While the full release will be
-            yours to wreak havoc with for free, the brave souls who can't resist
-            an early foray into the abyss can subscribe to the{" "}
-            <a href="#maincontent" className="under-construction">
-              BanjoDave Patreon
-            </a>
-            , granting you exclusive access to individual maps as they roll hot
-            off the anvil. I will also be posting regular development updates to
-            my{" "}
-            <a
-              href="https://www.twitter.com/banjeetz"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Twitter
-            </a>
-            . The abyss beckons... are you ready to answer its call?
-          </div>
-          <div className="dev-progress">
-            <p>
-              <b>Development</b>
-            </p>
-            <p>E1M1: Deep Space Telemetry [IN PROGRESS]</p>
-            <p>E1M2: Eldritch Nexus of the Eternal Furnace [COMING SOON]</p>
-            <p>E1M3: [TBA]</p>
+          <div className="feature">
+            <div>
+              <p>
+                Ready to dance with demons on the edge of the Starlit Abyss?
+                This 9-map Ultimate DOOM episode is set to blast onto the scene,
+                seething with infernal fiends, scorching hellfire, and enough
+                firepower to make a Cyberdemon blush. While the full release
+                will be yours to wreak havoc with for free, the brave souls who
+                can't resist an early foray into the abyss can subscribe to the{" "}
+                <a href="#maincontent" className="under-construction">
+                  BanjoDave Patreon
+                </a>
+                , granting you exclusive access to individual maps as they roll
+                hot off the anvil. I will also be posting regular development
+                updates to my{" "}
+                <a
+                  href="https://www.twitter.com/banjeetz"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Twitter
+                </a>
+                . The abyss beckons... are you ready to answer its call?
+              </p>
+              <div className="dev-progress">
+                <ul>
+                  <li>
+                    <b>Development</b>
+                  </li>
+                  <li>E1M1: Deep Space Telemetry [IN PROGRESS]</li>
+                  <li>
+                    E1M2: Eldritch Nexus of the Eternal Furnace [COMING SOON]
+                  </li>
+                  <li>E1M3: [TBA]</li>
+                </ul>
+              </div>
+            </div>
+            <ScreenshotsCarousel screenshots={screensSA} />
           </div>
           <div className="button">
             <button className="under-construction">
@@ -60,8 +77,15 @@ function Doom() {
           </div>
         </article>
         <article id="more" className="under-construction">
-          <h2>More Maps</h2>
-          <div>Cards. Overview, screenshots, downloads.</div>
+          <h2 id="more">
+            <img src={gargoyleB} alt="Satyr Gargoyle" />
+            <div>
+              More Maps
+              <br />
+              <span>Various Projects</span>
+            </div>
+          </h2>
+          <p>Cards. Overview, screenshots, downloads.</p>
           <ul>
             <li>Deep Underground Military Bunker</li>
             <li>Blazing Beachhead</li>
