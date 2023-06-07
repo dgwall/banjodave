@@ -7,10 +7,10 @@ const ImageWithLightbox = ({ src, alt, onClick, ...props }) => {
 const CarouselControls = ({ onPrev, onNext }) => (
   <div className="carousel-controls">
     <button aria-label="Previous Image" onClick={onPrev}>
-      &#129032;
+      &lt;
     </button>
     <button aria-label="Next Image" onClick={onNext}>
-      &#129034;
+      &gt;
     </button>
   </div>
 );

@@ -72,7 +72,6 @@
 .main-doom h2 img {
   height: 3.5rem;
   width: auto;
-  margin-right: 1rem;
 }
 
 .main-doom h2 span {
@@ -92,7 +91,6 @@
 }
 
 .main-doom article {
-  padding: 1rem 5rem 0 5rem;
   text-align: justify;
 }
 
@@ -113,6 +111,7 @@
 .main-doom figure img {
   width: 100%;
   cursor: pointer;
+  background-color: #000;
 }
 
 .main-doom .carousel-controls {
@@ -178,8 +177,19 @@
     align-items: center;
   }
 
+  .main-doom article {
+    padding: 1rem 2rem 0 2rem;
+  }
+
   .main-doom h2 {
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .main-doom h2 img {
+    margin-bottom: 2rem;
   }
 
   .main-doom .button {
@@ -216,6 +226,14 @@
     flex-direction: row;
     justify-content: flex-end;
     align-items: baseline;
+  }
+
+  .main-doom article {
+    padding: 1rem 5rem 0 5rem;
+  }
+
+  .main-doom h2 img {
+    margin-right: 1rem;
   }
 
   .main-doom .feature {
