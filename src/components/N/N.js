@@ -50,25 +50,53 @@ function N() {
             The maps on this website and on NUMA are designed for version 1.4 of
             the game, released in 2005. You can find a free download of this
             version here: &gt;&gt;
-            <a href="n_v1pc.zip" download>
+            <a href="n_v1pc.zip" title="n_v1pc.zip 1.26 MB" download>
               Download N v1.4 for PC
             </a>
             &lt;&lt;
           </p>
         </div>
       </div>
-      <div className="under-construction">
+      <h2>Map Packs</h2>
+      <div className="panels">
         <div>
-          <Link to="/n/rootootoot">rootootoot</Link>
+          <Link to="/n/rootootoot">
+            <img
+              src="img/n/panel-rootootoot.jpg"
+              alt="rootootoot: 500 maps by DW40 for N v1.4"
+            />
+            <br />
+            <span>rootootoot</span>
+          </Link>
+          <br />
+          500+ of my best maps in one package
         </div>
         <div>
-          <Link to="/n/sol">Sol</Link>
+          <Link to="/n/sol">
+            <img src="img/n/panel-sol.jpg" alt="Sol+144*10mm" />
+            <br />
+            <span>Sol+144*10mm</span>
+          </Link>
+          <br />
+          NEW maps for 2023
         </div>
         <div>
-          <Link to="/n/plusplus">N++</Link>
+          <Link to="/n/dw40">
+            <img src="img/n/panel-complete.jpg" alt="Complete Works of DW40" />
+            <br />
+            <span>Complete Works of DW40</span>
+          </Link>
+          <br />
+          2000+ maps, the best and worst of DW40
         </div>
         <div>
-          <Link to="/n/dw40">Complete Works of DW40</Link>
+          <Link to="/n/plusplus">
+            <img src="img/n/panel-nplusplus.jpg" alt="N++" />
+            <br />
+            <span>N++</span>
+          </Link>
+          <br />
+          The ultimate up-to-date version of N
         </div>
       </div>
     </section>

@@ -1,12 +1,12 @@
 .main-doom {
-  background-color: #300500;
+  background-color: #130f0c;
   background-image: url("../../assets/images/doom/bg.jpg");
   background-attachment: fixed;
 }
 
 .main-doom .page {
   background: rgb(27, 27, 27);
-  color: #7a7677;
+  color: #9c9799;
 }
 
 .main-doom .container {
@@ -26,7 +26,7 @@
 }
 
 .main-doom nav a {
-  color: #66594b;
+  color: #9c9799;
   font-size: 1.1rem;
   padding: 0 1rem;
   text-decoration: none;
@@ -34,7 +34,7 @@
 }
 
 .main-doom nav a:hover {
-  color: #945603;
+  color: #b66d0f;
   text-shadow: 0 0 1rem #945603c0;
 }
 
@@ -123,12 +123,16 @@
 }
 
 .main-doom .carousel-controls button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 50%;
   background-color: transparent;
   border: none;
   color: #7a7677;
   cursor: pointer;
   padding: 0;
+  font-size: 2rem;
   height: 1.5rem;
 }
 

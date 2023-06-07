@@ -44,6 +44,35 @@
   margin-bottom: 24px;
 }
 
+.main-n .panels {
+  text-align: center;
+}
+
+.main-n .panels div {
+  margin: 24px;
+  display: inline-block;
+  text-align: center;
+}
+
+.main-n .panels div a img {
+  opacity: 0.8;
+  max-height: 80vh;
+}
+
+.main-n .panels div a:hover img {
+  opacity: 1;
+}
+
+.main-n .panels div span {
+  font-size: 1.5rem;
+}
+
+.main-n h2 {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2rem;
+}
+
 @media screen and (max-width: 768px) {
   .main-n .overview {
     display: flex;
@@ -54,6 +83,10 @@
   .main-n .overview img {
     max-width: 100%;
     height: auto;
+  }
+
+  .main-n .panels div img {
+    width: 100%;
   }
 }
 
