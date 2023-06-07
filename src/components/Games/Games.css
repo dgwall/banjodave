@@ -7,12 +7,61 @@
 
 .main-games .page {
   background-color: #000;
-  padding: 0 2rem 2rem 2rem;
 }
 
 .main-games header {
   font-size: 3rem;
   text-align: center;
   padding: 2rem;
-  color: #eee;
+  color: #fcd116;
+}
+
+.main-games header h1,
+.main-games header h2 {
+  margin: 0;
+}
+
+.main-games header h2 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.main-games .overview-container {
+  width: 100%;
+  background: linear-gradient(
+    to bottom right,
+    rgba(252, 210, 22, 0.75),
+    transparent 40%,
+    transparent 60%,
+    rgba(200, 33, 0, 0.5) 100%
+  );
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 2rem;
+}
+
+.main-games .overview {
+  margin: auto;
+  text-align: center;
+}
+
+.main-games .emblem {
+  text-align: center;
+}
+
+.main-games .emblem img {
+  margin-top: 1.5rem;
+  width: 5%;
+  height: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .main-games .overview {
+    width: 90%;
+  }
+}
+@media not screen and (max-width: 768px) {
+  .main-games .overview {
+    width: 50%;
+  }
 }

@@ -19,9 +19,8 @@
 }
 
 .main-n a {
-  color: #a67c00;
+  color: #882222;
   text-decoration: none;
-  text-shadow: none;
 }
 
 .main-n a:hover,
@@ -71,6 +70,7 @@
   text-align: center;
   font-weight: normal;
   font-size: 2rem;
+  text-shadow: -0.15rem 0.15rem 0.05rem rgba(121, 121, 136, 0.25);
 }
 
 @media screen and (max-width: 768px) {
