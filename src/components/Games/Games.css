@@ -21,47 +21,57 @@
   margin: 0;
 }
 
-.main-games header h2 {
-  font-size: 2rem;
+.main-games h2 {
+  margin: 0;
+  font-size: 1.5rem;
   font-weight: normal;
 }
 
 .main-games .overview-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   width: 100%;
   background: linear-gradient(
-    to bottom right,
-    rgba(252, 210, 22, 0.75),
-    transparent 40%,
-    transparent 60%,
-    rgba(200, 33, 0, 0.5) 100%
+    to top left,
+    rgb(212, 105, 5),
+    rgb(212, 147, 6),
+    rgb(179, 124, 5)
   );
   color: #fff;
   font-size: 1.1rem;
-  padding: 2rem;
-}
-
-.main-games .overview {
-  margin: auto;
-  text-align: center;
+  padding: 2rem 0;
 }
 
 .main-games .emblem {
+  width: 15%;
   text-align: center;
 }
 
 .main-games .emblem img {
   margin-top: 1.5rem;
-  width: 5%;
+  width: 100%;
   height: auto;
 }
 
 @media screen and (max-width: 768px) {
+  .main-games .overview-container {
+    flex-direction: column;
+  }
+
   .main-games .overview {
-    width: 90%;
+    font-size: 0.9rem;
+    text-align: center;
+    width: 80%;
   }
 }
 @media not screen and (max-width: 768px) {
+  .main-games .overview-container {
+    flex-direction: row;
+  }
+
   .main-games .overview {
     width: 50%;
+    text-align: left;
   }
 }

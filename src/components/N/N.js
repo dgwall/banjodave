@@ -87,7 +87,7 @@ function N() {
             <span>Complete Works of DW40</span>
           </Link>
           <br />
-          2000+ maps, the best and worst of DW40
+          2000+ maps, the best (and worst) of DW40
         </div>
         <div>
           <Link to="/n/plusplus">

@@ -7,10 +7,10 @@ function Games() {
     <section>
       <header>
         <h1>0DGames</h1>
-        <h2>Cutting-Edge Throwbacks</h2>
       </header>
       <div className="overview-container">
         <div className="overview">
+          <h2>Cutting-Edge Throwbacks</h2>
           <p>
             Rooted in the vision of a dedicated solo developer, 0DGames brings
             to life action games that stand out. I'm dedicated to creating
@@ -22,9 +22,9 @@ function Games() {
             something for you.
           </p>
         </div>
-      </div>
-      <div className="emblem">
-        <img src={emblem} alt="0DG Emblem" />
+        <div className="emblem">
+          <img src={emblem} alt="0DG Emblem" />
+        </div>
       </div>
     </section>
   );
