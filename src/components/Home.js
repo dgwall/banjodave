@@ -3,19 +3,17 @@ import { Link } from "react-router-dom";
 
 function Home() {
   return (
-    <section>
-      <header>
-        <h1>BanjoDave.com</h1>
-      </header>
-
+    <section className="homepage">
       <article className="overview">
+        <img src="./img/quote.png" alt="Speech bubble" className="quote" />
         <p>
-          Alright? Welcome to BanjoDave.com. As a web and game developer, I'm
-          shaping and refining each pixel of my creations, diligently
-          transforming my corner of our vast digital wasteland into a thriving
-          gallery of projects. The crafting process is still underway, but I'm
-          looking forward to unveiling my digital gems to you in due time. Stay
-          tuned.
+          Alright? Welcome to <span className="title">BanjoDave.com</span>. I'm
+          a front-end web developer and game developer based in Scotland,
+          designing and implementing engaging interactive user experiences.
+          Currently I am diligently transforming my little corner of our vast
+          digital wasteland into a thriving gallery of projects. The crafting
+          process is still underway, but I'm looking forward to unveiling my
+          digital gems to you in due time. Stay tuned.
         </p>
       </article>
 

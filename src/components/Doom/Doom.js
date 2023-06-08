@@ -55,6 +55,7 @@ function Doom() {
                 </a>
                 . The abyss beckons... are you ready to answer its call?
               </p>
+              <p className="p-desc">DOOM.WAD required</p>
               <div className="dev-progress">
                 <ul>
                   <li>
@@ -88,9 +89,10 @@ function Doom() {
           <div className="doom-cards">
             <div className="card" id="dumb">
               <h3>Deep Underground Military Bunker</h3>
+              <p className="card-requirements">Requires: GZDoom, OTEX</p>
               <p className="desc">
-                Scripting, dynamic lighting, and mods based on Tango's
-                Supercharge.
+                A strange mist is making people crazy in this secret base, and
+                your prison door just unlocked itself.
               </p>
               <a
                 href="https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/DUMB.pk3"
@@ -99,13 +101,13 @@ function Doom() {
               >
                 <button>Download .pk3</button>
               </a>
-              <p className="card-requirements">
-                Requires: DOOM2.WAD, GZDoom, OTEX
-              </p>
             </div>
             <div className="card" id="bb">
               <h3>Blazing Beachhead</h3>
-              <p className="desc">Modded weapons and enemies on a huge map.</p>
+              <p className="card-requirements">Requires: GZDoom, OTEX</p>
+              <p className="desc">
+                An expansive magma shoreline with hordes of modded enemies.
+              </p>
               <a
                 href="https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/BanjoDave_Blazing-Beachhead.wad"
                 title="BanjoDave_Blazing-Beachhead.wad 5.62 MB"
@@ -113,9 +115,6 @@ function Doom() {
               >
                 <button>Download .wad</button>
               </a>
-              <p className="card-requirements">
-                Requires: DOOM2.WAD, GZDoom, OTEX
-              </p>
             </div>
             <div className="card" id="atv">
               <h3>Ascent to Valhalla</h3>
@@ -139,6 +138,8 @@ function Doom() {
                 <button>Doomworld Thread</button>
               </a>
             </div>
+
+            <p className="more-desc">DOOM2.WAD required</p>
           </div>
         </article>
       </div>

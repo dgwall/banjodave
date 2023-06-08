@@ -187,11 +187,11 @@
   flex-direction: column;
   justify-content: flex-end;
   min-width: 15rem;
-  max-width: 20rem;
+  max-width: 15rem;
   width: 30vw;
   border-radius: 1rem;
   aspect-ratio: 0.672;
-  margin: 2rem;
+  margin: 1rem;
   text-align: center;
   transition: 0.5s ease-out;
   box-shadow: 0 0 0 black;
@@ -221,17 +221,28 @@
 .main-doom .card .desc {
   text-shadow: 0 -0.1rem 0.2rem black;
   font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.main-doom .doom-cards .more-desc,
+.main-doom .p-desc {
+  opacity: 0.5;
+  font-size: 0.9rem;
 }
 
 .main-doom .card button {
   width: 100%;
   padding: 0.5rem;
-  margin-top: 1rem;
 }
 
 .main-doom .card-requirements {
-  font-size: 0.7rem;
-  opacity: 0.5;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0 0.3rem;
+  background-color: #000;
+  color: maroon;
+  font-size: 0.8rem;
+  opacity: 0.9;
 }
 
 .main-doom .card:hover {
