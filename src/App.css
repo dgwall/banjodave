@@ -74,17 +74,29 @@ button {
 .main h1 {
   margin: 0;
   font-weight: normal;
+  text-shadow: 0 2px 1px #fff;
+  font-size: 3rem;
+}
+
+.main p {
+  text-align: justify;
+  opacity: 0.9;
 }
 
 .main .overview {
-  background-color: #fff;
+  background: linear-gradient(to bottom, #fff, #eee);
   width: 80%;
   margin: auto;
   margin-bottom: 3rem;
   padding: 1rem;
-  text-align: center;
   border-radius: 1.5rem;
   box-shadow: 0 0.75rem 1rem rgba(0, 0, 0, 0.5);
+  border: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.main .overview p {
+  text-align: center;
+  color: #666;
 }
 
 .main h2 {
@@ -94,6 +106,17 @@ button {
   margin-top: 2rem;
   padding-bottom: 1rem;
   border-bottom: 1px solid black;
+  text-shadow: 0 2px 0 #fff;
+}
+
+.main a {
+  text-decoration: none;
+  color: rgb(138, 84, 13);
+}
+
+.main a:hover,
+.main a:focus {
+  color: rgb(212, 147, 6);
 }
 
 @media screen and (max-width: 768px) {

@@ -3,6 +3,10 @@
   background-image: url("../../assets/images/league/bg.png");
   background-repeat: repeat;
   background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .main-league header {

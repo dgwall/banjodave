@@ -13,13 +13,6 @@ export const menuItems = [
     move: true,
   },
   {
-    path: "/league",
-    label: "Compete in the BanjoLeague",
-    text: "BanjoLeague",
-    icon: "league",
-    move: false,
-  },
-  {
     path: "/doom",
     label: "Download Maps for DOOM",
     text: "DOOM Maps",
@@ -39,6 +32,13 @@ export const menuItems = [
     text: "BanjoZine",
     icon: "zine",
     move: true,
+  },
+  {
+    path: "/league",
+    label: "Compete in the BanjoLeague",
+    text: "BanjoLeague",
+    icon: "league",
+    move: false,
   },
   {
     path: "/thank-you",
