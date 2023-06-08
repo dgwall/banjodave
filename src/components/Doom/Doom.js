@@ -88,7 +88,7 @@ function Doom() {
           <div className="doom-cards">
             <div className="card" id="dumb">
               <h3>Deep Underground Military Bunker</h3>
-              <p>
+              <p className="desc">
                 Scripting, dynamic lighting, and mods based on Tango's
                 Supercharge.
               </p>
@@ -97,7 +97,7 @@ function Doom() {
                 title="DUMB.pk3 18.1 MB"
                 download
               >
-                <button>Download</button>
+                <button>Download .pk3</button>
               </a>
               <p className="card-requirements">
                 Requires: DOOM2.WAD, GZDoom, OTEX
@@ -105,13 +105,13 @@ function Doom() {
             </div>
             <div className="card" id="bb">
               <h3>Blazing Beachhead</h3>
-              <p>Modded weapons and enemies on a huge map.</p>
+              <p className="desc">Modded weapons and enemies on a huge map.</p>
               <a
                 href="https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/BanjoDave_Blazing-Beachhead.wad"
                 title="BanjoDave_Blazing-Beachhead.wad 5.62 MB"
                 download
               >
-                <button>Download</button>
+                <button>Download .wad</button>
               </a>
               <p className="card-requirements">
                 Requires: DOOM2.WAD, GZDoom, OTEX
@@ -119,7 +119,7 @@ function Doom() {
             </div>
             <div className="card" id="atv">
               <h3>Ascent to Valhalla</h3>
-              <p>Collab with Danlex for Mapwich 2.</p>
+              <p className="desc">Collab with Danlex for Mapwich 2.</p>
               <a
                 href="https://www.doomworld.com/forum/topic/117485-come-eat-the-mapwich-2-public-beta-out-now/"
                 target="_blank"
@@ -130,7 +130,7 @@ function Doom() {
             </div>
             <div className="card" id="m">
               <h3>MALAGARD</h3>
-              <p>My first release!</p>
+              <p className="desc">My first release!</p>
               <a
                 href="https://www.doomworld.com/forum/topic/110861-malagard-single-map-for-doom-ii/"
                 target="_blank"

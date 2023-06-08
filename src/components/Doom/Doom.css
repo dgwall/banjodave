@@ -192,7 +192,7 @@
   border-radius: 1rem;
   aspect-ratio: 0.672;
   margin: 2rem;
-  text-align: left;
+  text-align: center;
   transition: 0.5s ease-out;
   box-shadow: 0 0 0 black;
   padding: 0.5rem;
@@ -200,6 +200,14 @@
   vertical-align: top;
   background-size: cover;
   overflow: hidden;
+}
+
+.main-doom .card h3 {
+  margin-bottom: auto;
+  text-shadow: 0 0 0.2rem black;
+  font-weight: normal;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .main-doom .card * {
@@ -210,8 +218,9 @@
   width: 100%;
 }
 
-.main-doom .card p {
-  opacity: 0.8;
+.main-doom .card .desc {
+  text-shadow: 0 -0.1rem 0.2rem black;
+  font-size: 0.9rem;
 }
 
 .main-doom .card button {
@@ -235,7 +244,8 @@
   background-image: linear-gradient(
       to bottom,
       transparent,
-      rgba(0, 0, 0, 0.666)
+      transparent 66.6%,
+      black
     ),
     url("../../../public/img/doom-cards/dumb.jpg");
 }
@@ -244,7 +254,8 @@
   background-image: linear-gradient(
       to bottom,
       transparent,
-      rgba(0, 0, 0, 0.666)
+      transparent 66.6%,
+      black
     ),
     url("../../../public/img/doom-cards/atv.jpg");
 }
@@ -253,7 +264,8 @@
   background-image: linear-gradient(
       to bottom,
       transparent,
-      rgba(0, 0, 0, 0.666)
+      transparent 66.6%,
+      black
     ),
     url("../../../public/img/doom-cards/bb.jpg");
 }
@@ -262,7 +274,8 @@
   background-image: linear-gradient(
       to bottom,
       transparent,
-      rgba(0, 0, 0, 0.666)
+      transparent 66.6%,
+      black
     ),
     url("../../../public/img/doom-cards/m.jpg");
 }

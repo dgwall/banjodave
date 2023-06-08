@@ -70,3 +70,34 @@ button {
   max-width: 90%;
   max-height: 90%;
 }
+
+.main h1 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.main .overview {
+  background-color: #fff;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 3rem;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  box-shadow: 0 0.75rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.main h2 {
+  font-weight: normal;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid black;
+}
+
+@media screen and (max-width: 768px) {
+  .main h1 {
+    font-size: 3rem;
+  }
+}
