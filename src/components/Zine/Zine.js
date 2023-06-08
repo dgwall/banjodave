@@ -88,15 +88,16 @@ function Zine() {
           those of higher ranks can manifest physical copies into existence.
           Through support and shared energies, patrons become essential conduits
           of creation, fanning our ever-burning black flame, and propelling our
-          nocturnal journey further into the unknown. Will you join our arcane
-          quest?
+          nocturnal journey further into the unknown.
         </p>
         <a href="#maincontent" className="patreon-link">
           {/* 
         target="_blank"
         rel="noreferrer"
          */}
-          <span className="under-construction">Join us on Patreon</span>
+          <span className="under-construction">
+            Join our arcane quest on Patreon
+          </span>
         </a>
         <div align="center">
           <img src={seal} alt="Seal of Banjo House Publishing" />

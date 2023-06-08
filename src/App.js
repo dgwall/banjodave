@@ -35,7 +35,27 @@ function App() {
           }
         />
         <Route
+          path="/0dgames"
+          element={
+            <main className="main-games">
+              <div className="page">
+                <Games />
+              </div>
+            </main>
+          }
+        />
+        <Route
           path="/doom"
+          element={
+            <main className="main-doom">
+              <div className="page">
+                <Doom />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/banjodoom"
           element={
             <main className="main-doom">
               <div className="page">

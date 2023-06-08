@@ -51,7 +51,7 @@ const socials = [
     href: "https://www.patreon.com/banjodave",
     title: "Patreon",
     icon: "patreon",
-    extra: false,
+    extra: true,
   },
   {
     href: "https://soundcloud.com/anjoave",
@@ -69,7 +69,7 @@ const socials = [
     href: "https://www.twitch.tv/banjodave",
     title: "Twitch",
     icon: "twitch",
-    extra: false,
+    extra: true,
   },
   {
     href: "https://twitter.com/banjeetz",

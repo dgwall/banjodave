@@ -55,7 +55,7 @@
 
 .main-n .panels div a img {
   opacity: 0.8;
-  max-height: 80vh;
+  max-height: 70vh;
 }
 
 .main-n .panels div a:hover img {
@@ -94,7 +94,7 @@
   .main-n .overview {
     display: flex;
     flex-direction: row-reverse;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .main-n .overview img {

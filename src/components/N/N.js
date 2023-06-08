@@ -69,7 +69,7 @@ function N() {
             <span>rootootoot</span>
           </Link>
           <br />
-          500+ of my best maps in one package
+          500+ of my best maps in one package.
         </div>
         <div>
           <Link to="/n/sol">
@@ -78,7 +78,7 @@ function N() {
             <span>Sol+144*10mm</span>
           </Link>
           <br />
-          NEW maps for 2023
+          NEW maps for 2023.
         </div>
         <div>
           <Link to="/n/dw40">
@@ -87,7 +87,7 @@ function N() {
             <span>Complete Works of DW40</span>
           </Link>
           <br />
-          2000+ maps, the best (and worst) of DW40
+          2000+ maps. The best (and worst) of DW40.
         </div>
         <div>
           <Link to="/n/plusplus">
@@ -96,7 +96,7 @@ function N() {
             <span>N++</span>
           </Link>
           <br />
-          The ultimate up-to-date version of N
+          The ultimate up-to-date version of N.
         </div>
       </div>
     </section>

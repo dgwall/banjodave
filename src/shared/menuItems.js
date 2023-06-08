@@ -6,7 +6,7 @@ export const menuItems = [
     text: "Home",
   },
   {
-    path: "/games",
+    path: "/0dgames",
     label: "Play 0DGames",
     text: "0DGames",
     icon: "0d",
@@ -17,7 +17,7 @@ export const menuItems = [
     label: "Compete in the BanjoLeague",
     text: "BanjoLeague",
     icon: "league",
-    move: true,
+    move: false,
   },
   {
     path: "/doom",
@@ -31,7 +31,7 @@ export const menuItems = [
     label: "Download Maps for N",
     text: "N Maps",
     icon: "n",
-    move: false,
+    move: true,
   },
   {
     path: "/zine",

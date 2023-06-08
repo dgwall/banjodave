@@ -4,8 +4,7 @@ import "./League.css";
 function League() {
   return (
     <section className="under-construction">
-      <header>BanjoLeague</header>
-      <div>Under Construction. Highscoring/speedrun app.</div>
+      <img src="./img/league/coming-soon.png" alt="BanjoLeague Coming Soon" />
     </section>
   );
 }

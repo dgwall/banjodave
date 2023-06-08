@@ -12,5 +12,11 @@
 }
 
 .main-league .page {
-  padding: 0 2rem 2rem 2rem;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-league img {
+  max-height: 60vh;
+  max-width: 60vw;
 }

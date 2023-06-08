@@ -6,24 +6,31 @@
 }
 
 .main-games .page {
-  background-color: #000;
+  background-color: #fff;
+  color: #000;
+  overflow-x: hidden;
 }
 
 .main-games header {
-  font-size: 3rem;
+  background-color: #000;
+}
+
+.main-games header h1 {
+  margin: 0;
+  font-weight: normal;
+  font-size: 6rem;
   text-align: center;
   padding: 2rem;
   color: #fcd116;
 }
 
-.main-games header h1,
-.main-games header h2 {
-  margin: 0;
+.main-games h1 span {
+  font-weight: bold;
 }
 
 .main-games h2 {
   margin: 0;
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-weight: normal;
 }
 
@@ -41,6 +48,8 @@
   color: #fff;
   font-size: 1.1rem;
   padding: 2rem 0;
+  text-shadow: -1px 1px 1px rgb(179, 88, 3);
+  box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.6);
 }
 
 .main-games .emblem {
@@ -52,6 +61,11 @@
   margin-top: 1.5rem;
   width: 100%;
   height: auto;
+}
+
+.main-games article {
+  text-align: center;
+  margin: 2rem;
 }
 
 @media screen and (max-width: 768px) {

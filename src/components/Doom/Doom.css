@@ -146,7 +146,8 @@
   text-align: center;
 }
 
-.main-doom .button button {
+.main-doom .button button,
+.main-doom .card button {
   font-size: 1rem;
   padding: 0.75rem;
   background: linear-gradient(to bottom, #eea256, #c7783a);
@@ -159,12 +160,15 @@
 }
 
 .main-doom .button button:hover,
-.main-doom .button button:active {
+.main-doom .button button:active,
+.main-doom .card button:hover,
+.main-doom .card button:active {
   background: #eea256;
   text-shadow: none;
 }
 
-.main-doom .button button:active {
+.main-doom .button button:active,
+.main-doom .card button:active {
   background: #c7783a;
   color: #000;
   text-shadow: none;
@@ -172,6 +176,95 @@
   position: relative;
   top: 2px;
   border-bottom: 2px solid transparent;
+}
+
+.main-doom .doom-cards {
+  text-align: center;
+}
+
+.main-doom .card {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-width: 15rem;
+  max-width: 20rem;
+  width: 30vw;
+  border-radius: 1rem;
+  aspect-ratio: 0.672;
+  margin: 2rem;
+  text-align: left;
+  transition: 0.5s ease-out;
+  box-shadow: 0 0 0 black;
+  padding: 0.5rem;
+  color: #fff;
+  vertical-align: top;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.main-doom .card * {
+  margin: 0;
+}
+
+.main-doom .card a {
+  width: 100%;
+}
+
+.main-doom .card p {
+  opacity: 0.8;
+}
+
+.main-doom .card button {
+  width: 100%;
+  padding: 0.5rem;
+  margin-top: 1rem;
+}
+
+.main-doom .card-requirements {
+  font-size: 0.7rem;
+  opacity: 0.5;
+}
+
+.main-doom .card:hover {
+  transform: scale(1.1);
+  transition: 0.5s ease-out;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
+}
+
+.main-doom #dumb {
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.666)
+    ),
+    url("../../../public/img/doom-cards/dumb.jpg");
+}
+
+.main-doom #atv {
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.666)
+    ),
+    url("../../../public/img/doom-cards/atv.jpg");
+}
+
+.main-doom #bb {
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.666)
+    ),
+    url("../../../public/img/doom-cards/bb.jpg");
+}
+
+.main-doom #m {
+  background-image: linear-gradient(
+      to bottom,
+      transparent,
+      rgba(0, 0, 0, 0.666)
+    ),
+    url("../../../public/img/doom-cards/m.jpg");
 }
 
 @media screen and (max-width: 768px) {
@@ -222,6 +315,9 @@
     width: 100%;
     margin: 2rem 0;
     background-color: #212020;
+  }
+  .main-doom .card {
+    font-size: smaller;
   }
 }
 

@@ -76,8 +76,8 @@ function Doom() {
             </button>
           </div>
         </article>
-        <article id="more" className="under-construction">
-          <h2 id="more">
+        <article id="more">
+          <h2>
             <img src={gargoyleB} alt="Satyr Gargoyle" />
             <div>
               More Maps
@@ -85,13 +85,61 @@ function Doom() {
               <span>Various Projects</span>
             </div>
           </h2>
-          <p>Cards. Overview, screenshots, downloads.</p>
-          <ul>
-            <li>Deep Underground Military Bunker</li>
-            <li>Blazing Beachhead</li>
-            <li>Ascent to Valhalla</li>
-            <li>MALAGARD</li>
-          </ul>
+          <div className="doom-cards">
+            <div className="card" id="dumb">
+              <h3>Deep Underground Military Bunker</h3>
+              <p>
+                Scripting, dynamic lighting, and mods based on Tango's
+                Supercharge.
+              </p>
+              <a
+                href="https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/DUMB.pk3"
+                title="DUMB.pk3 18.1 MB"
+                download
+              >
+                <button>Download</button>
+              </a>
+              <p className="card-requirements">
+                Requires: DOOM2.WAD, GZDoom, OTEX
+              </p>
+            </div>
+            <div className="card" id="bb">
+              <h3>Blazing Beachhead</h3>
+              <p>Modded weapons and enemies on a huge map.</p>
+              <a
+                href="https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/BanjoDave_Blazing-Beachhead.wad"
+                title="BanjoDave_Blazing-Beachhead.wad 5.62 MB"
+                download
+              >
+                <button>Download</button>
+              </a>
+              <p className="card-requirements">
+                Requires: DOOM2.WAD, GZDoom, OTEX
+              </p>
+            </div>
+            <div className="card" id="atv">
+              <h3>Ascent to Valhalla</h3>
+              <p>Collab with Danlex for Mapwich 2.</p>
+              <a
+                href="https://www.doomworld.com/forum/topic/117485-come-eat-the-mapwich-2-public-beta-out-now/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>Doomworld Thread</button>
+              </a>
+            </div>
+            <div className="card" id="m">
+              <h3>MALAGARD</h3>
+              <p>My first release!</p>
+              <a
+                href="https://www.doomworld.com/forum/topic/110861-malagard-single-map-for-doom-ii/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button>Doomworld Thread</button>
+              </a>
+            </div>
+          </div>
         </article>
       </div>
     </section>
