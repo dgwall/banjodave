@@ -9,12 +9,11 @@ function Home() {
 
       <article className="overview">
         <p>
-          Hello, and welcome to BanjoDave.com. As a web and game developer, I'm
-          chiseling my own niche in the vast digital landscape, carefully
-          shaping and refining each pixel of my creations. I am working
-          diligently to transform my corner of the internet into a thriving
-          gallery of projects. The crafting process is still underway, but I
-          eagerly anticipate unveiling my digital masterpieces to you. Stay
+          Alright? Welcome to BanjoDave.com. As a web and game developer, I'm
+          shaping and refining each pixel of my creations, diligently
+          transforming my corner of our vast digital wasteland into a thriving
+          gallery of projects. The crafting process is still underway, but I'm
+          looking forward to unveiling my digital gems to you in due time. Stay
           tuned.
         </p>
       </article>
@@ -23,26 +22,25 @@ function Home() {
         <h2>0DGames</h2>
         <p>
           0DGames is the creative playground where my game development projects
-          come to life. As a solo dev, I aspire to design action games defined
-          by distinctive artwork, crisp controls, and gripping mechanics. Behind
-          the scenes, I'm fervently curating a showcase of my projects and
-          insights into my design process. Keep an eye on this space as the
-          curtain prepares to rise on the world of 0DGames.
+          come to life. As a solo dev, I aspire to design indie action games
+          defined by distinctive artwork, crisp controls, and gripping
+          mechanics. Behind the scenes, I'm fervently curating a showcase of my
+          projects and insights into my design process. Keep an eye on this
+          space as the curtain prepares to rise on the world of 0DGames.
         </p>
       </article>
 
       <article>
         <h2>Level Design</h2>
         <p>
-          Welcome to the heart of my level design work, where I create maps for
-          the classic games DOOM by id Software and N by Metanet Software. In
-          DOOM, I mold the eerie corridors and chambers of demon-infested bases,
-          striving to challenge and engage players with every unexpected turn.
-          For N, I focus on constructing 2D landscapes that test players'
-          agility and dynamic problem-solving skills, keeping in line with the
-          game's unique blend of momentum-based gameplay and precise controls.
-          My aim is to contribute meaningfully to these classic games, providing
-          levels that both challenge and entertain.
+          I create maps for the classic games DOOM by id Software and N by
+          Metanet Software. In DOOM, I mold the eerie corridors and chambers of
+          demon-infested bases, striving to challenge and engage players with
+          every unexpected turn. For N, I focus on constructing 2D landscapes
+          that test players' agility and dynamic problem-solving skills, keeping
+          in line with the game's unique blend of momentum-based gameplay and
+          precise controls. My aim is to contribute meaningfully to these
+          classic games, providing levels that both challenge and entertain.
         </p>
       </article>
 
