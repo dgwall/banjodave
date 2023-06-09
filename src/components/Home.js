@@ -8,12 +8,12 @@ function Home() {
         <img src="./img/quote.png" alt="Speech bubble" className="quote" />
         <p>
           Alright? Welcome to <span className="title">BanjoDave.com</span>. I'm
-          a front-end web developer and game developer based in Scotland,
-          designing and implementing engaging interactive user experiences.
-          Currently I am diligently transforming my little corner of our vast
-          digital wasteland into a thriving gallery of projects. The crafting
-          process is still underway, but I'm looking forward to unveiling my
-          digital gems to you in due time. Stay tuned.
+          a front-end web and games developer based in Scotland, designing and
+          implementing engaging interactive user experiences. Currently I am
+          diligently transforming my little corner of our vast digital wasteland
+          into a thriving gallery of projects. The crafting process is still
+          underway, but I'm looking forward to unveiling my digital gems to you
+          in due time. Stay tuned.
         </p>
       </article>
 

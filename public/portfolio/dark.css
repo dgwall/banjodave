@@ -1,0 +1,394 @@
+* {
+  color: #ddd;
+}
+
+:root {
+  --col-bg: 25, 13, 27; /* licorice */
+  --col-fg: 42, 52, 57; /* gunmetal */
+  --col-hl: 204, 82, 0; /* burnt sienna */
+  --shadow: rgba(0, 0, 0, 0.4);
+  --glow: rgba(204, 82, 0, 0.2);
+  --glow-brighter: rgba(204, 82, 0, 0.4);
+}
+
+body {
+  background: rgb(var(--col-bg)) url("img/dither.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.2;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob-container {
+  overflow: hidden;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: -3;
+}
+
+#blob {
+  background-color: white;
+  height: 40vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, crimson, magenta);
+  animation: rotate 20s infinite;
+  opacity: 0.3;
+  z-index: -3;
+}
+
+#blur {
+  background: linear-gradient(to bottom, transparent, rgb(var(--col-bg)) 95%);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  z-index: -2;
+  backdrop-filter: blur(5em);
+}
+
+nav {
+  background: var(--shadow);
+  backdrop-filter: blur(5em);
+}
+
+nav * {
+  color: rgb(var(--col-fg));
+}
+
+nav a:hover {
+  background-color: rgb(var(--col-hl));
+  text-shadow: 0 0 0.5rem #dddddd80;
+}
+
+nav div {
+  color: rgb(var(--col-hl));
+}
+
+nav div i {
+  color: rgb(var(--col-hl));
+  font-size: 2rem;
+}
+
+nav a:not(#top) div {
+  font-size: 0;
+}
+
+nav a:hover div {
+  color: #fff;
+}
+
+nav a:hover div i {
+  color: #fff;
+}
+
+nav h1 #top {
+  background: transparent;
+}
+
+nav h1 a:hover {
+  background: transparent;
+}
+
+#mode-switch div {
+  background-image: url("img/mode-dark.png");
+}
+
+h1,
+h2,
+h1 *,
+h2 * {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+header h1,
+header h2 {
+  padding: 0 1em;
+}
+
+header {
+  min-height: 50em;
+}
+
+h1 {
+  color: rgb(var(--col-hl));
+}
+
+header h1:before {
+  content: "> ";
+}
+
+#hfintro {
+  border-radius: 2rem;
+}
+
+#title {
+  background: -webkit-linear-gradient(90deg, rgba(var(--col-hl), 0.5), #ffa280);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header h2 {
+  color: rgba(var(--col-hl), 0.6);
+}
+
+article h2 {
+  font-size: 1em;
+}
+
+header p {
+  width: 100%;
+  background-color: rgba(var(--col-bg), 0.7);
+  backdrop-filter: blur(1px);
+  border: 1px solid var(--shadow);
+}
+.subsection-header,
+summary {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+#hftitle {
+  border: 3px solid red;
+  overflow: hidden;
+}
+
+#hfintro {
+  margin-top: 5rem;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  margin-bottom: auto;
+  width: 50%;
+  background: linear-gradient(
+    30deg,
+    rgba(var(--col-hl), 1) 0%,
+    rgba(var(--col-fg), 0) 40%,
+    rgba(var(--col-fg), 0) 60%,
+    rgba(var(--col-hl), 1) 100%
+  );
+}
+
+.garray2 {
+  background-image: url("img/greeble-array-cross-w.png");
+  z-index: -1;
+}
+
+strong {
+  color: #fff;
+}
+
+article {
+  background: url("img/dither.png"),
+    radial-gradient(
+      circle at bottom,
+      rgba(var(--col-hl), 0.3),
+      rgb(var(--col-hl), 0.15) 80%
+    );
+  border: 1px solid rgba(var(--col-hl), 0.4);
+  box-shadow: 0 0 20em var(--glow) inset, 0 0 1em var(--glow);
+}
+
+#contact {
+  background-position: bottom;
+}
+
+article h1 span {
+  border-bottom: 3px solid rgb(var(--col-hl));
+}
+
+#contact {
+  border: 2px solid rgba(var(--col-hl), 1);
+  box-shadow: 0 0 30em rgba(var(--col-hl), 0.6) inset,
+    0 0 2em rgba(var(--col-hl), 0.6);
+}
+
+#contact p {
+  color: #ddd;
+  font-weight: 400;
+}
+
+#contact h1 span {
+  border-bottom: 3px solid rgb(var(--col-hl));
+  color: rgb(var(--col-hl));
+}
+
+@media screen and (min-width: 740px) {
+  nav {
+    border-bottom: 1px solid rgba(var(--col-hl), 0.2);
+  }
+  nav i {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  nav a:hover {
+    background: linear-gradient(to top, rgb(var(--col-hl), 0.2), transparent),
+      radial-gradient(at center, rgb(var(--col-hl), 0.3), transparent);
+  }
+
+  #container {
+    border-top: 1px solid #000;
+  }
+  header {
+    justify-content: space-between;
+  }
+
+  #hftitle {
+    margin-top: 5rem;
+    background: radial-gradient(
+        ellipse at bottom,
+        rgba(33, 33, 33, 0.3),
+        rgba(0, 0, 0, 0.6)
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(0, 0, 0, 0.1) 20%
+      );
+    border-radius: 2rem;
+  }
+
+  header h1 {
+    padding-top: 5rem;
+  }
+
+  header h2 {
+    padding-bottom: 5rem;
+  }
+
+  header p {
+    margin: 2px;
+    border-radius: 2em;
+  }
+
+  .gband {
+    background-color: rgb(var(--col-bg));
+  }
+
+  .garray1 {
+    display: none;
+  }
+
+  .garray2 {
+    opacity: 0.1;
+    top: 0;
+    left: 0;
+    height: calc(100vh + 5rem);
+    width: 100vw;
+  }
+}
+@media screen and not (min-width: 740px) {
+  nav {
+    border-right: 1px solid rgba(var(--col-hl), 0.2);
+    background: url("img/dither.png") bottom right no-repeat;
+  }
+  nav h1 {
+    margin-bottom: 3rem;
+  }
+
+  header h2 {
+    padding-bottom: 1rem;
+  }
+  nav a:hover {
+    background: linear-gradient(to left, rgb(var(--col-hl), 0.2), transparent),
+      radial-gradient(at center, rgb(var(--col-hl), 0.3), transparent);
+  }
+
+  #container {
+    border-left: 1px solid #000;
+  }
+
+  header {
+    height: 100vh;
+    justify-content: space-between;
+    border-radius: 0;
+    padding: 0.5rem;
+    background: radial-gradient(
+        ellipse at bottom,
+        rgba(33, 33, 33, 0.3),
+        rgba(0, 0, 0, 0.6)
+      ),
+      linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.3),
+        rgba(0, 0, 0, 0.1) 20%
+      );
+  }
+
+  header h1 {
+    padding-top: 1rem;
+    font-size: 1.75rem;
+  }
+
+  header h2 {
+    width: 100%;
+  }
+
+  header p {
+    margin: 2px;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  #hftitle {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+  }
+
+  #hfintro {
+    margin-bottom: auto;
+    width: 80%;
+    border-radius: 0;
+  }
+
+  .gband {
+    background: linear-gradient(rgb(var(--col-bg)), rgb(var(--col-hl)));
+    opacity: 0.6;
+  }
+
+  .garray1,
+  .garray2 {
+    left: 0;
+    width: 100vw;
+    height: 20vh;
+    min-height: 50em;
+  }
+
+  .garray1 {
+    display: none;
+  }
+
+  .garray2 {
+    opacity: 0.1;
+    bottom: 0;
+    left: 5rem;
+    background-position: bottom;
+    width: calc(100vw - 5rem);
+  }
+
+  article {
+    border-radius: 1em;
+    margin: 1rem 0.5rem 0 0.5rem;
+  }
+}

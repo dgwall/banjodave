@@ -27,7 +27,8 @@
   color: #ffffcc;
 }
 
-.main-n .overview {
+.main-n .overview,
+.main-n .pack-overview {
   text-align: justify;
   text-indent: 24px;
   margin-top: 24px;
@@ -69,6 +70,80 @@
   text-align: center;
   font-weight: normal;
   font-size: 2rem;
+}
+
+.main-n .download {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.main-n .carousel figure {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 30rem;
+  margin: 0;
+}
+
+.main-n .product {
+  display: flex;
+  flex-direction: row;
+  margin: 2rem 0;
+}
+
+.main-n .product-description {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.main-n .product-description p {
+  margin: auto 2rem;
+  text-align: center;
+}
+
+.main-n button {
+  padding: 1rem;
+  cursor: pointer;
+  background-color: #79798888;
+  color: #fff;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.main-n button:hover {
+  background-color: #797988;
+  color: #cacad0;
+}
+
+.main-n .product-carousel figcaption {
+  display: none;
+}
+
+.main-n .product-carousel {
+  width: 200%;
+  text-align: center;
+}
+
+.main-n .product-carousel button {
+  margin: 0 2rem;
+  padding: 1rem 3rem;
+}
+
+.main-n .screenshots {
+  display: flex;
+  flex-direction: column;
+}
+
+.main-n .product-carousel img {
+  margin-top: auto;
+  max-width: 80%;
+  max-height: 40vh;
+  cursor: pointer;
+}
+
+.main-n .carousel-controls {
+  margin-top: auto;
 }
 
 @media screen and (max-width: 768px) {

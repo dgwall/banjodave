@@ -28,10 +28,12 @@ const Archive = ({ archiveIssues, selectedIssue, handleIssueClick }) => {
             selectedIssue ? "selected" : "blank"
           }`}
         >
-          {selectedIssue && (
+          {selectedIssue ? (
             <div className="archive-container">
               <ZineCard issue={selectedIssue} />
             </div>
+          ) : (
+            <p className="select-an-issue">&lt; Select an issue</p>
           )}
         </div>
       </div>

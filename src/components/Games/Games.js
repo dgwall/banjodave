@@ -7,20 +7,20 @@ function Games() {
     <section>
       <header>
         <h1>
-          <span>0DG</span>ames
+          <span>0DG</span>
         </h1>
       </header>
       <div className="overview-container">
         <div className="overview">
           <h2>Cutting-Edge Throwbacks</h2>
           <p>
-            Rooted in the vision of a solo dev, 0DGames brings to life action
-            games that stand out. I'm dedicated to crafting experiences
-            characterized by unique artwork, precise controls, and compelling
-            mechanics, which stretch the imagination and challenge. For the
-            casual gamer looking for a fun diversion, and the elite player
-            seeking to uncover advanced techniques, 0DGames has something for
-            you.
+            Rooted in the vision of a solo dev, <span>0DGames</span> brings to
+            life action games that stand out. I'm dedicated to crafting
+            experiences characterized by unique artwork, precise controls, and
+            compelling mechanics, which stretch the imagination and challenge.
+            For the casual gamer looking for a fun diversion, and the elite
+            player seeking to uncover advanced techniques, 0DGames has something
+            for you.
           </p>
         </div>
         <div className="emblem">

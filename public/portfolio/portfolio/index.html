@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link id="mode" rel="stylesheet" href="light.css" />
+    <script
+      src="https://kit.fontawesome.com/b87fac1863.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <title>David Wallace, developer portfolio</title>
+  </head>
+
+  <body>
+    <nav>
+      <h1>
+        <a href="#top"><img src="img/logo.png" /></a>
+      </h1>
+      <a href="#tech">
+        <div><i class="fa-solid fa-toolbox"></i>Tech</div></a
+      >
+      <a href="#web"
+        ><div><i class="fa-solid fa-globe"></i>WebDev</div></a
+      >
+      <a href="#game"
+        ><div><i class="fa-solid fa-gamepad"></i>GameDev</div></a
+      >
+      <a href="#more"
+        ><div><i class="fa-solid fa-ellipsis"></i>More</div></a
+      >
+      <a href="#contact" id="contact-link"
+        ><div><i class="fa-solid fa-bell-concierge"></i>Contact</div></a
+      >
+      <a
+        onclick="styleSwitch()"
+        href="#"
+        id="mode-switch"
+        title="Light/Dark Mode"
+        ><div>&nbsp;</div></a
+      >
+    </nav>
+
+    <div id="container">
+      <header>
+        <div id="hftitle">
+          <h1>David Wallace</h1>
+          <h2>Developer Portfolio</h2>
+        </div>
+        <div id="hfintro">
+          <p id="intro">
+            Hi! I'm a
+            <strong>front-end web developer</strong> and hobbyist
+            <strong>game developer</strong> based in <strong>Scotland</strong>,
+            designing and implementing engaging interactive user experiences.
+          </p>
+        </div>
+      </header>
+
+      <div class="greebles">
+        <div class="greeble gb"></div>
+        <div class="greeble gc"></div>
+        <div class="greeble gd"></div>
+        <div class="greeble garray1"></div>
+        <div class="greeble garray2"></div>
+        <div class="gband"></div>
+      </div>
+
+      <section>
+        <article id="tech">
+          <h1><span>Technology Stack</span></h1>
+          <p>
+            As a graduate of University of Dundee with a BSc in Applied
+            Computing, I continue to develop my skills, exploring and learning
+            new technologies. I have experience with the following:
+          </p>
+        </article>
+        <article id="web">
+          <h1><span>Web Development</span></h1>
+          <p>
+            At age 12 I asked my parents for a book on HTML and started making
+            my first website. I've enjoyed designing and writing websites ever
+            since.
+          </p>
+        </article>
+        <article id="game">
+          <h1><span>Game Development</span></h1>
+          <p>
+            As well as creating interactive websites I also enjoy studying game
+            development and applying my user experience knowledge to games. I
+            have designed, programmed, illustrated, scored, and self-published
+            various indie games.
+          </p>
+          <h2>Malice Striker</h2>
+        </article>
+        <article id="more">
+          <h1><span>More Programming Projects</span></h1>
+          <p>
+            Combining technical skills, artistic flair, and innovative thinking,
+            I aim to engage audiences with creative programming. Here are some
+            side-projects I have worked on.
+          </p>
+        </article>
+        <article id="contact">
+          <h1><span>Contact</span></h1>
+          <p>
+            I am currently open to full-time employment opportunities and to
+            joining teams working on interesting projects. I'm available to work
+            remotely anywhere or in-person around Dundee, Fife, Glasgow, and
+            Edinburgh.
+          </p>
+        </article>
+      </section>
+
+      <div id="legal">
+        Copyright &copy; 2023 David Wallace. All Rights Reserved.
+      </div>
+    </div>
+
+    <script>
+      var url = "light.css";
+
+      function styleSwitch() {
+        var stylesheet = document.getElementById("mode");
+        if (url === "light.css") {
+          url = "dark.css";
+          stylesheet.setAttribute("href", url);
+        } else {
+          url = "light.css";
+          stylesheet.setAttribute("href", url);
+        }
+      }
+    </script>
+  </body>
+</html>

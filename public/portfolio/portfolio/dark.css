@@ -1,0 +1,240 @@
+* {
+  color: #ddd;
+}
+
+:root {
+  --col-bg: 25, 13, 27; /* licorice */
+  --col-fg: 42, 52, 57; /* gunmetal */
+  --col-hl: 204, 82, 0; /* burnt sienna */
+  --shadow: rgba(0, 0, 0, 0.4);
+  --glow: rgba(204, 82, 0, 0.2);
+}
+
+body {
+  background: rgb(var(--col-bg));
+}
+
+nav {
+  background: var(--shadow);
+  backdrop-filter: blur(1.5em);
+}
+
+nav * {
+  color: rgb(var(--col-fg));
+}
+
+nav a:hover {
+  background-color: rgb(var(--col-hl));
+  text-shadow: 0 0 0.5rem #dddddd80;
+}
+
+nav div {
+  color: rgb(var(--col-hl));
+}
+
+nav div i {
+  color: rgb(var(--col-hl));
+  font-size: 2rem;
+}
+
+nav a:not(#top) div {
+  font-size: 0;
+}
+
+nav a:hover div {
+  color: #fff;
+}
+
+nav a:hover div i {
+  color: #fff;
+}
+
+nav h1 #top {
+  background: transparent;
+}
+
+nav h1 a:hover {
+  background: transparent;
+}
+
+#mode-switch div {
+  background-image: url("img/mode-dark.png");
+}
+
+h1,
+h2,
+h1 *,
+h2 * {
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+}
+
+header h1,
+header h2 {
+  color: rgb(var(--col-hl));
+  padding: 0 1em;
+  background-color: rgba(var(--col-bg), 1);
+}
+
+header h1 {
+  padding-top: 5rem;
+}
+
+header h2 {
+  padding-bottom: 5rem;
+}
+
+h2 {
+  font-size: 1em;
+}
+
+header p {
+  background: linear-gradient(
+    30deg,
+    rgba(var(--col-fg), 0.4),
+    rgba(var(--col-fg), 0.2),
+    rgba(var(--col-fg), 0.4)
+  );
+  backdrop-filter: blur(1px);
+}
+
+.garray2 {
+  opacity: 0.05;
+  background-image: url("img/greeble-array-cross-w.png");
+}
+
+strong {
+  color: #fff;
+}
+
+article {
+  background-color: rgb(var(--col-bg));
+  border: 1px solid rgba(var(--col-hl), 0.3);
+  box-shadow: 0 0 20em var(--glow) inset, 0 0 1em var(--glow);
+}
+
+article h1 span {
+  border-bottom: 3px solid rgb(var(--col-hl));
+}
+
+#contact {
+  background-color: rgba(var(--col-hl), 0.2);
+}
+
+#contact p {
+  color: #ddd;
+  font-weight: 400;
+}
+
+#contact h1 span {
+  border-bottom: 3px solid rgb(var(--col-hl));
+  color: rgb(var(--col-hl));
+}
+
+@media screen and (min-width: 740px) {
+  nav {
+    border-bottom: 1px solid rgb(var(--col-hl));
+  }
+  nav i {
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+  }
+  nav a:hover {
+    background: linear-gradient(
+      to top,
+      rgb(var(--col-hl), 1),
+      rgb(var(--col-hl), 0)
+    );
+  }
+  header {
+    justify-content: space-between;
+  }
+
+  header p {
+    width: 50%;
+  }
+
+  #hfintro {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+
+  .gband {
+    background-color: rgb(var(--col-bg));
+  }
+
+  .garray1,
+  .garray2 {
+    top: 0;
+    width: 100vw;
+    height: calc(100vh + 5rem);
+  }
+
+  .garray1 {
+    display: none;
+  }
+
+  .garray2 {
+    left: 0;
+  }
+}
+@media screen and not (min-width: 740px) {
+  nav {
+    border-right: 1px solid rgb(var(--col-hl));
+    background: url("img/dither.png") bottom right no-repeat;
+  }
+  nav h1 {
+    margin-bottom: 3rem;
+  }
+  nav a:hover {
+    background: linear-gradient(
+      to left,
+      rgb(var(--col-hl), 1),
+      rgb(var(--col-hl), 0)
+    );
+  }
+
+  header {
+    height: 100vh;
+    justify-content: space-between;
+  }
+
+  header h2 {
+    width: 100%;
+    border-bottom: 10px groove rgb(var(--col-hl));
+  }
+
+  header p {
+    padding: 2rem;
+    width: 100%;
+  }
+
+  #hfintro {
+    margin-bottom: auto;
+  }
+
+  .gband {
+    background: linear-gradient(rgb(var(--col-bg)), rgb(var(--col-hl)));
+    opacity: 0.6;
+  }
+
+  .garray1,
+  .garray2 {
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .garray1 {
+    display: none;
+  }
+
+  .garray2 {
+    top: 0;
+  }
+
+  article {
+    border-radius: 1em;
+    margin: 1rem 0.5rem 0 0.5rem;
+  }
+}

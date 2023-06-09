@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link id="mode" rel="stylesheet" href="light.css" />
+    <script
+      src="https://kit.fontawesome.com/b87fac1863.js"
+      crossorigin="anonymous"
+      async
+    ></script>
+    <title>David Wallace, developer portfolio</title>
+  </head>
+
+  <body>
+    <nav>
+      <h1>
+        <a href="#top">
+          <img src="img/logo.png" />
+        </a>
+      </h1>
+      <a href="#tech">
+        <div><i class="fa-solid fa-toolbox"></i>Tech</div>
+      </a>
+      <a href="#web">
+        <div><i class="fa-solid fa-globe"></i>WebDev</div>
+      </a>
+      <a href="#game">
+        <div><i class="fa-solid fa-gamepad"></i>GameDev</div>
+      </a>
+      <a href="#more">
+        <div><i class="fa-solid fa-ellipsis"></i>More</div>
+      </a>
+      <a href="#contact" id="contact-link">
+        <div><i class="fa-solid fa-bell-concierge"></i>Contact</div>
+      </a>
+      <a
+        onclick="styleSwitch()"
+        href="#"
+        id="mode-switch"
+        title="Light/Dark Mode"
+        ><div>&nbsp;</div></a
+      >
+    </nav>
+
+    <div id="container">
+      <div id="blob-container"><div id="blob"></div></div>
+      <div id="blur"></div>
+      <header>
+        <div id="hftitle">
+          <h1 id="title" data-value="David_Wallace">
+            David<span>_</span>Wallace
+          </h1>
+          <h2>Developer Portfolio</h2>
+        </div>
+        <div id="hfintro">
+          <p id="intro">
+            Hi! I'm a
+            <strong>front-end web developer</strong> and hobbyist
+            <strong>game developer</strong> based in <strong>Scotland</strong>,
+            designing and implementing engaging interactive user experiences.
+          </p>
+        </div>
+      </header>
+
+      <div class="greebles">
+        <div class="greeble gb"></div>
+        <div class="greeble gc"></div>
+        <div class="greeble gd"></div>
+        <div class="greeble garray1"></div>
+        <div class="greeble garray2"></div>
+        <div class="gband"></div>
+      </div>
+
+      <section>
+        <article id="tech">
+          <h1><span>Technology Stack</span></h1>
+          <p>
+            As a graduate of University of Dundee with a BSc in Applied
+            Computing, I continue to develop my skills, exploring and learning
+            new technologies. I have experience with the following:
+          </p>
+          <div class="subsection-header">Main Skills</div>
+          <ul id="stack">
+            <li><i class="fa-brands fa-html5"></i> HTML5</li>
+            <li><i class="fa-brands fa-css3-alt"></i> CSS3</li>
+            <li><i class="fa-brands fa-square-js"></i> JavaScript ES6</li>
+            <li><i class="fa-brands fa-react"></i> React</li>
+            <li><i class="fa-brands fa-python"></i> Python 3</li>
+            <li><i class="fa-solid fa-c"></i> C, C++</li>
+            <li><i class="fa-solid fa-hashtag"></i> C#</li>
+            <li><i class="fa-solid fa-database"></i> SQL, PHP</li>
+          </ul>
+          <details>
+            <summary>Click to View Studies</summary>
+            <p>
+              <strong>BSc Applied Computing @ University of Dundee:</strong>
+              Software Development, WWW Authoring, Data Structures and
+              Algorithms, Physical Computing, Algorithms and Artificial
+              Intelligence, Architecture Fundamentals and UNIX, Data
+              Visualisation, Information Technology, Object Oriented Analysis
+              and Design, Architecture and Operating Systems, Networks and Data
+              Communications, Database Systems, Games Programming.
+            </p>
+            <p>
+              <strong>Codecademy:</strong> Learn Python 3, Learn Itermediate
+              Python 3, Learn Advanced Python 3, Web Development Foundations,
+              Building Interactive Websites, Front-End Development
+            </p>
+            <p>
+              <strong>Google:</strong> Online Marketing Fundamentals, Technical
+              Writing.
+            </p>
+          </details>
+        </article>
+        <article id="web">
+          <h1><span>Web Development</span></h1>
+          <p>
+            At age 12 I asked my parents for a book on HTML and started making
+            my first website. I've enjoyed designing and writing websites ever
+            since.
+          </p>
+          <h2>Appointment Planner</h2>
+          <h2>Readed</h2>
+          <h2>Discontent</h2>
+          <h2>Personal Website</h2>
+        </article>
+        <article id="game">
+          <h1><span>Game Development</span></h1>
+          <p>
+            As well as creating interactive websites I also enjoy studying game
+            development and applying my user experience knowledge to games. I
+            have designed, programmed, illustrated, scored, and self-published
+            various indie games.
+          </p>
+          <h2>Malice Striker</h2>
+          <h2>Banjo's Arcade</h2>
+        </article>
+        <article id="more">
+          <h1><span>More Programming Projects</span></h1>
+          <p>
+            Combining <a href>technical skills, artistic flair,</a> and
+            innovative thinking, I aim to engage audiences with creative
+            programming. Here are some side-projects I have worked on.
+          </p>
+        </article>
+        <article id="contact">
+          <div>
+            <h1><span>Contact</span></h1>
+            <p>
+              I
+              <a href>am currently open to full-time employment</a>
+              opportunities and to joining teams working on interesting
+              projects. I'm available to work remotely anywhere or in-person
+              around Dundee, Fife, Glasgow, and Edinburgh.
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <div id="legal">
+        Copyright &copy; 2023 David Wallace. All Rights Reserved.
+      </div>
+    </div>
+
+    <script>
+      /* -- Switch Stylesheets -- */
+
+      var url = "light.css";
+
+      function styleSwitch() {
+        var stylesheet = document.getElementById("mode");
+        if (url === "light.css") {
+          url = "dark.css";
+          stylesheet.setAttribute("href", url);
+        } else {
+          url = "light.css";
+          stylesheet.setAttribute("href", url);
+        }
+      }
+
+      /* -- Glow effect -- */
+
+      const blob = document.getElementById("blob");
+
+      window.onpointermove = (event) => {
+        const { clientX, clientY } = event;
+
+        blob.animate(
+          {
+            left: `${clientX}px`,
+            top: `${clientY}px`,
+          },
+          { duration: 2000, fill: "forwards", easing: "ease-in-out" }
+        );
+        console.log(`${clientX}, ${clientY}`);
+      };
+
+      /* -- Text effect -- */
+
+      const letters = "0123456789_";
+
+      let interval = null;
+      let display = "David_Wallace";
+
+      document.getElementById("title").onmouseover = (event) => {
+        if (url === "dark.css") {
+          let i = 0;
+
+          clearInterval(interval);
+
+          interval = setInterval(() => {
+            display = event.target.innerText
+              .split("")
+              .map((letter, index) => {
+                if (index < i) {
+                  return event.target.dataset.value[index];
+                }
+
+                return letters[Math.floor(Math.random() * 11)];
+              })
+              .join("");
+
+            if (i >= event.target.dataset.value.length) {
+              clearInterval(interval);
+            }
+
+            i += 1 / 3;
+            event.target.innerText = display;
+          }, 30);
+        }
+      };
+    </script>
+  </body>
+</html>
