@@ -95,6 +95,7 @@ button {
 }
 
 .main .overview {
+  position: relative;
   background: linear-gradient(to bottom, #fff, #eee);
   width: 80%;
   margin: auto;
@@ -106,8 +107,8 @@ button {
 }
 
 .main .overview .quote {
-  position: relative;
-  top: calc(-62px);
+  position: absolute;
+  top: -39px;
   left: 10%;
 }
 
@@ -121,7 +122,7 @@ button {
   color: #000;
 }
 
-.main article p {
+.main article:not(.overview) p {
   text-indent: 3rem;
 }
 
