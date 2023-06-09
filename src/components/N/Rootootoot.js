@@ -31,7 +31,7 @@ function Rootootoot() {
           In 2018, I set out on the monumental task of compiling every map I've
           ever crafted. From this extensive collection, I painstakingly curated
           my top 500 - a showcase of my best work. These maps were then
-          meticulously structured into an episodic format matching to original
+          meticulously structured into an episodic format matching the original
           game. Their arrangement reflects a progression in both difficulty and
           complexity.
         </p>
@@ -56,7 +56,7 @@ function Rootootoot() {
             href="https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar"
             title="DW40_rootootoot.zip [1.27 MB]"
           >
-            Download rootootoot now (game included)!
+            rootootoot free download (game included!)
           </a>
         </p>
         <p>
@@ -65,7 +65,7 @@ function Rootootoot() {
             target="_blank"
             rel="noreferrer"
           >
-            Browse maps on packs.droni.es
+            or browse maps on packs.droni.es
           </a>
         </p>
       </article>
@@ -76,11 +76,14 @@ function Rootootoot() {
             <ScreenshotsCarousel screenshots={cd} />
           </div>
           <div className="product-description">
-            <h2>Out Now on PC-CD!</h2>
+            <h2>rootootoot Collector's Edition PC-CD, Out Now!</h2>
             <p>
-              description description description description description
-              description description description description description
-              description{" "}
+              Encased in a classic jewel case and embellished with the exclusive
+              BanjoWare sticker. Not just a decorative piece, this CD includes
+              the full rootootoot map pack. Even though we live in the age of
+              digital downloads, this physical copy offers an irreplaceable
+              tactile and visual experience that will take you back to the
+              golden days of gaming.
             </p>
             <button>Add to Cart</button>
           </div>
@@ -88,7 +91,6 @@ function Rootootoot() {
       </article>
 
       <article>
-        <h2>Posters</h2>
         <div className="product">
           <div className="product-carousel">
             <Lightbox>
@@ -107,7 +109,7 @@ function Rootootoot() {
           </div>
           <div className="product-description">
             <h2>rootootoot 500 Poster</h2>
-            <p>A3, Single Sided, Classic Silk, No Lamination. All 500 maps.</p>
+            <p>A3, Single Sided, Classic Silk. All 500 maps.</p>
             <p>
               <a href="#top" target="_blank" rel="noreferrer">
                 Full-resolution [4960 x 3508] download on Patreon
@@ -134,7 +136,7 @@ function Rootootoot() {
           </div>
           <div className="product-description">
             <h2>rootootoot 50 Poster</h2>
-            <p>A3, Single Sided, Classic Silk, No Lamination. Column R.</p>
+            <p>A3, Single Sided, Classic Silk. Column R.</p>
             <p>
               <a href="#top" target="_blank" rel="noreferrer">
                 Full-resolution [3508 x 4960] download on Patreon
