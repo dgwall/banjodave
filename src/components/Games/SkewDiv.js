@@ -41,16 +41,22 @@ const SkewDiv = ({ imgSrc, dest, title, description }) => {
     <Link to={dest}>
       <div
         className="tile"
-        style={{
-          clipPath: generateClipPath(),
-          transition: "clip-path 2s linear",
-        }}
         onMouseEnter={startInterval}
         onMouseLeave={stopInterval}
       >
-        <img src={imgSrc} alt={title} />
-        <h3>{title}</h3>
-        <p>{description}</p>
+        <div
+          className="image"
+          style={{
+            clipPath: generateClipPath(),
+            transition: "clip-path 2s linear",
+          }}
+        >
+          <img src={imgSrc} alt={title} />
+        </div>
+        <div className="details">
+          <h3>{title}</h3>
+          <p>{description}</p>
+        </div>
       </div>
     </Link>
   );
