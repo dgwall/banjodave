@@ -6,15 +6,9 @@ import SkewDiv from "./SkewDiv";
 const gameData = [
   {
     imgSrc: "img/0dg/tile-ba.png",
-    dest: "#top",
+    dest: "/0dg/banjos-arcade",
     title: "Banjo's Arcade",
     description: "Retro-remake collection.",
-  },
-  {
-    imgSrc: "img/0dg/tile-ag.png",
-    dest: "#top",
-    title: "Another Game",
-    description: "Something else.",
   },
   // Add more game data objects here as needed
 ];
@@ -52,6 +46,7 @@ function Games() {
             {gameData.map((game, index) => (
               <SkewDiv
                 key={index}
+                dest={game.dest}
                 imgSrc={game.imgSrc}
                 altText={game.title}
                 title={game.title}

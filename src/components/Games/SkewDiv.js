@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const SkewDiv = ({ imgSrc, dest, title, description }) => {
   const [randomOffsets, setRandomOffsets] = useState([0, 0, 0, 0]);
+  const [isHovering, setIsHovering] = useState(false);
   const intervalId = useRef(null);
 
   const generateRandomOffsets = () => {
@@ -31,10 +32,12 @@ const SkewDiv = ({ imgSrc, dest, title, description }) => {
   const startInterval = () => {
     generateRandomOffsets();
     intervalId.current = setInterval(generateRandomOffsets, 2000);
+    setIsHovering(true);
   };
 
   const stopInterval = () => {
     clearInterval(intervalId.current);
+    setIsHovering(false);
   };
 
   return (
@@ -54,7 +57,24 @@ const SkewDiv = ({ imgSrc, dest, title, description }) => {
           <img src={imgSrc} alt={title} />
         </div>
         <div className="details">
-          <h3>{title}</h3>
+          <h3>
+            {title.split("").map((char, index) => {
+              const style = {
+                animationName: isHovering ? "wave" : "none",
+                animationDuration: "1s",
+                animationTimingFunction: "ease",
+                animationIterationCount: "infinite",
+                animationDelay: isHovering ? `${index * 0.1}s` : "0s",
+                display: "inline-block",
+              };
+
+              return (
+                <span key={index} style={style}>
+                  {char === " " ? "\u00A0" : char}
+                </span>
+              );
+            })}
+          </h3>
           <p>{description}</p>
         </div>
       </div>

@@ -18,6 +18,7 @@ import Zine from "./components/Zine/Zine";
 import Support from "./components/Support";
 import Shop from "./components/Shop";
 import About from "./components/About";
+import BanjosArcade from "./components/Games/BanjosArcade";
 
 function App() {
   return (
@@ -31,6 +32,16 @@ function App() {
             <main className="main-games">
               <div className="page">
                 <Games />
+              </div>
+            </main>
+          }
+        />
+        <Route
+          path="/0dg/banjos-arcade"
+          element={
+            <main className="main-games">
+              <div className="page">
+                <BanjosArcade />
               </div>
             </main>
           }

@@ -86,14 +86,19 @@
   padding: 1rem;
 }
 
-.main-games .image {
-  background-color: #000;
+.main-games .tile .image {
+  background-color: rgba(0, 0, 0, 1);
   padding: 4rem 2rem;
+}
+
+.main-games .tile:hover .image {
+  background-color: #131313;
 }
 
 .main-games .tile img {
   width: 100%;
-  max-width: 50vw;
+  max-width: 70vw;
+  max-height: 40vh;
 }
 
 .main-games .game-tiles h3 {
@@ -104,13 +109,31 @@
 }
 
 .main-games .tile:hover h3 {
-  text-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
-  color: #fcd116;
+  text-shadow: 0 2px 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 0 0 #000;
+  color: #fff;
 }
 
 .main-games .game-tiles p {
   color: #000;
   margin: 0;
+}
+
+.main-games .tile:hover p {
+  opacity: 0.7;
+}
+
+@keyframes wave {
+  0%,
+  50%,
+  100% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-10px) rotate(5deg);
+  }
+  75% {
+    transform: translateY(-10px) rotate(-5deg);
+  }
 }
 
 @media screen and (max-width: 768px) {
