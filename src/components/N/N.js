@@ -78,7 +78,7 @@ function N() {
             <span>Sol+144*10mm</span>
           </Link>
           <br />
-          NEW maps for 2023.
+          NEW maps for 2023. Coming soon.
         </div>
         <div>
           <Link to="/n/dw40">

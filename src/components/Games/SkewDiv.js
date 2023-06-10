@@ -60,8 +60,8 @@ const SkewDiv = ({ imgSrc, dest, title, description }) => {
           <h3>
             {title.split("").map((char, index) => {
               const style = {
-                animationName: isHovering ? "wave" : "none",
-                animationDuration: "1s",
+                animationName: isHovering ? "wave, colorwave" : "none",
+                animationDuration: "2s",
                 animationTimingFunction: "ease",
                 animationIterationCount: "infinite",
                 animationDelay: isHovering ? `${index * 0.1}s` : "0s",

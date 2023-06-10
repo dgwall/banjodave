@@ -1,18 +1,20 @@
-// ScreenshotsCarousel.js
 import React, { useState, useCallback } from "react";
 import { Lightbox, LightboxTrigger, LightboxContent } from "./Lightbox";
 import CarouselControls from "./CarouselControls";
 
 const ScreenshotsCarousel = ({ screenshots }) => {
   const [currentScreenshotIndex, setCurrentScreenshotIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleNext = useCallback(() => {
+    setIsLoading(true);
     setCurrentScreenshotIndex(
       (currentScreenshotIndex + 1) % screenshots.length
     );
   }, [currentScreenshotIndex, screenshots.length]);
 
   const handlePrev = useCallback(() => {
+    setIsLoading(true);
     setCurrentScreenshotIndex(
       (currentScreenshotIndex - 1 + screenshots.length) % screenshots.length
     );
@@ -20,14 +22,21 @@ const ScreenshotsCarousel = ({ screenshots }) => {
 
   const currentScreenshot = screenshots[currentScreenshotIndex];
 
+  const handleImageLoad = useCallback(() => {
+    setIsLoading(false);
+  }, []);
+
   return (
     <Lightbox>
       <div className="carousel">
         <figure className="screenshots">
+          {isLoading && <div>Loading image...</div>}
           <LightboxTrigger>
             <img
+              style={{ display: isLoading ? "none" : "block" }}
               src={currentScreenshot.src}
               alt={`${currentScreenshotIndex + 1} ${currentScreenshot.alt}`}
+              onLoad={handleImageLoad}
             />
           </LightboxTrigger>
           <CarouselControls onPrev={handlePrev} onNext={handleNext} />

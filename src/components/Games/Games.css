@@ -74,6 +74,7 @@
 }
 
 .main-games .content {
+  background-color: #feeed9;
   background-image: url("data:image/svg+xml;base64,PHN2ZyBpZD0idmlzdWFsIiB2aWV3Qm94PSIwIDAgOTAwIDYwMCIgd2lkdGg9IjkwMCIgaGVpZ2h0PSI2MDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHZlcnNpb249IjEuMSI+PHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjkwMCIgaGVpZ2h0PSI2MDAiIGZpbGw9IiNmZmZmZmYiPjwvcmVjdD48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImdyYWQxXzAiIHgxPSIzMy4zJSIgeTE9IjAlIiB4Mj0iMTAwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMjAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiPjwvc3RvcD48c3RvcCBvZmZzZXQ9IjgwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIxIj48L3N0b3A+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkMl8wIiB4MT0iMCUiIHkxPSIwJSIgeDI9IjY2LjclIiB5Mj0iMTAwJSI+PHN0b3Agb2Zmc2V0PSIyMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSI+PC9zdG9wPjxzdG9wIG9mZnNldD0iODAlIiBzdG9wLWNvbG9yPSIjZmZmZmZmIiBzdG9wLW9wYWNpdHk9IjEiPjwvc3RvcD48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5MDAsIDApIj48cGF0aCBkPSJNMCA0ODYuN0MtNjkuMSA0NzkuMyAtMTM4LjIgNDcxLjkgLTE3OS4xIDQzMi40Qy0yMjAgMzkyLjkgLTIzMi42IDMyMS4zIC0yODAgMjgwQy0zMjcuNCAyMzguOCAtNDA5LjUgMjI3LjkgLTQ0OS43IDE4Ni4zQy00ODkuOSAxNDQuNyAtNDg4LjMgNzIuMyAtNDg2LjcgMEwwIDBaIiBmaWxsPSIjZmRlMWI3Ij48L3BhdGg+PC9nPjxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsIDYwMCkiPjxwYXRoIGQ9Ik0wIC00ODYuN0M1MC42IC00NDAuOCAxMDEuMiAtMzk0LjkgMTUyLjcgLTM2OC42QzIwNC4xIC0zNDIuNCAyNTYuNCAtMzM1LjcgMzEwLjQgLTMxMC40QzM2NC40IC0yODUuMSA0MjAgLTI0MS4xIDQ0OS43IC0xODYuM0M0NzkuNCAtMTMxLjQgNDgzLjEgLTY1LjcgNDg2LjcgMEwwIDBaIiBmaWxsPSIjZmRlMWI3Ij48L3BhdGg+PC9nPjwvc3ZnPg==");
   background-size: cover;
   margin: 0;
@@ -105,12 +106,12 @@
   font-weight: normal;
   font-size: 2rem;
   color: #000;
+  text-shadow: 0 0 3px #000;
   margin: 0;
 }
 
 .main-games .tile:hover h3 {
-  text-shadow: 0 2px 0 #000, 0 -2px 0 #000, -2px 0 0 #000, 2px 0 0 #000;
-  color: #fff;
+  color: #000;
 }
 
 .main-games .game-tiles p {
@@ -133,6 +134,24 @@
   }
   75% {
     transform: translateY(-10px) rotate(-5deg);
+  }
+}
+
+@keyframes colorwave {
+  0% {
+    color: #000;
+  }
+  25% {
+    color: rgb(212, 147, 6);
+  }
+  50% {
+    color: #fde1b7;
+  }
+  75% {
+    color: #fff;
+  }
+  100% {
+    color: #000;
   }
 }
 
