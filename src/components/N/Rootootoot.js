@@ -51,32 +51,33 @@ function Rootootoot() {
       </article>
 
       <article className="download">
-        <p>
-          <a
-            href="https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar"
-            title="DW40_rootootoot.zip [1.27 MB]"
-          >
-            rootootoot free download (game included!)
-          </a>
-        </p>
-        <p>
-          <a
-            href="https://packs.droni.es/47f49e3074ce84b685"
-            target="_blank"
-            rel="noreferrer"
-          >
-            or browse maps on packs.droni.es
-          </a>
-        </p>
+        <a
+          href="https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar"
+          title="DW40_rootootoot.zip [1.27 MB]"
+        >
+          rootootoot free download (game included!)
+        </a>
+        <a
+          href="https://packs.droni.es/47f49e3074ce84b685"
+          target="_blank"
+          rel="noreferrer"
+        >
+          or browse maps on packs.droni.es
+        </a>
       </article>
 
       <article>
+        <h2 className="header-m">
+          rootootoot Collector's Edition PC-CD, Out Now!
+        </h2>
         <div className="product">
           <div className="product-carousel">
             <ScreenshotsCarousel screenshots={cd} />
           </div>
           <div className="product-description">
-            <h2>rootootoot Collector's Edition PC-CD, Out Now!</h2>
+            <h2 className="header-d">
+              rootootoot Collector's Edition PC-CD, Out Now!
+            </h2>
             <p>
               Encased in a classic jewel case and embellished with the exclusive
               BanjoWare sticker. Not just a decorative piece, this CD includes
@@ -85,13 +86,14 @@ function Rootootoot() {
               tactile and visual experience that will take you back to the
               golden days of gaming.
             </p>
-            <button>Add to Cart</button>
+            <button className="under-construction">Add to Cart</button>
           </div>
         </div>
       </article>
 
       <article>
         <div className="product">
+          <h2 className="header-m">rootootoot 500 Poster</h2>
           <div className="product-carousel">
             <Lightbox>
               <LightboxTrigger>
@@ -108,17 +110,18 @@ function Rootootoot() {
             </Lightbox>
           </div>
           <div className="product-description">
-            <h2>rootootoot 500 Poster</h2>
+            <h2 className="header-d">rootootoot 500 Poster</h2>
             <p>A3, Single Sided, Classic Silk. All 500 maps.</p>
             <p>
               <a href="#top" target="_blank" rel="noreferrer">
                 Full-resolution [4960 x 3508] download on Patreon
               </a>
             </p>
-            <button>Add to Cart</button>
+            <button className="under-construction">Add to Cart</button>
           </div>
         </div>
         <div className="product">
+          <h2 className="header-m">rootootoot 50 Poster</h2>
           <div className="product-carousel">
             <Lightbox>
               <LightboxTrigger>
@@ -135,14 +138,14 @@ function Rootootoot() {
             </Lightbox>
           </div>
           <div className="product-description">
-            <h2>rootootoot 50 Poster</h2>
+            <h2 className="header-d">rootootoot 50 Poster</h2>
             <p>A3, Single Sided, Classic Silk. Column R.</p>
             <p>
               <a href="#top" target="_blank" rel="noreferrer">
                 Full-resolution [3508 x 4960] download on Patreon
               </a>
             </p>
-            <button>Add to Cart</button>
+            <button className="under-construction">Add to Cart</button>
           </div>
         </div>
       </article>

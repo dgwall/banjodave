@@ -35,7 +35,6 @@
 }
 
 .main-n .pack-overview {
-  width: 80%;
   margin: 24px auto;
 }
 
@@ -78,8 +77,15 @@
 }
 
 .main-n .download {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
   text-align: center;
   font-size: 2rem;
+}
+
+.main-n .download a {
+  display: block;
+  margin: 24px;
 }
 
 .main-n .carousel figure {
@@ -147,6 +153,10 @@
   cursor: pointer;
 }
 
+.main-n .screenshots img {
+  margin-top: auto;
+}
+
 .main-n .carousel-controls {
   margin-top: auto;
 }
@@ -177,6 +187,18 @@
     width: 100%;
     text-align: center;
   }
+
+  .main-n .product-description {
+    margin: 24px 0;
+  }
+
+  .main-n .product button {
+    margin-top: 24px;
+  }
+
+  .header-d {
+    display: none;
+  }
 }
 
 @media not screen and (max-width: 768px) {
@@ -195,6 +217,10 @@
     margin-left: 24px;
   }
 
+  .main-n .pack-overview {
+    width: 60%;
+  }
+
   .main-n .product {
     display: flex;
     flex-direction: row;
@@ -204,5 +230,9 @@
   .main-n .product-carousel {
     width: 150%;
     text-align: center;
+  }
+
+  .header-m {
+    display: none;
   }
 }

@@ -21,9 +21,14 @@ button {
 
 .page {
   max-width: 1280px;
-  margin: auto;
-  padding-bottom: 2rem;
+  margin: 0 auto;
   color: #eee;
+  padding-bottom: 2rem;
+}
+
+main {
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .main {
@@ -124,6 +129,7 @@ button {
 
 .main article:not(.overview) p {
   text-indent: 3rem;
+  margin-bottom: 0.5rem;
 }
 
 .main h2 {
