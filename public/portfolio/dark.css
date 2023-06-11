@@ -220,6 +220,10 @@ article h1 span {
   border-bottom: 3px solid rgb(var(--col-hl));
 }
 
+article a:hover {
+  color: #fff;
+}
+
 #contact {
   border: 2px solid rgba(var(--col-hl), 1);
   box-shadow: 0 0 30em rgba(var(--col-hl), 0.6) inset,
@@ -234,6 +238,14 @@ article h1 span {
 #contact h1 span {
   border-bottom: 3px solid rgb(var(--col-hl));
   color: rgb(var(--col-hl));
+}
+
+#contact a {
+  color: rgb(var(--col-hl), 1);
+}
+
+#contact a:hover {
+  color: #fff;
 }
 
 @media screen and (min-width: 740px) {

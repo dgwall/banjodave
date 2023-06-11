@@ -153,6 +153,10 @@ summary {
   color: rgb(var(--col-fg));
 }
 
+#contact a {
+  color: #fff;
+}
+
 @media screen and (min-width: 740px) {
   nav {
     border-bottom: 3px solid rgb(var(--col-hl));
@@ -169,6 +173,7 @@ summary {
   header p {
     width: 35vw;
   }
+
   .gband {
     height: 100vh;
     width: 7.5vw;
@@ -211,7 +216,7 @@ summary {
     background: linear-gradient(to right, #e86c4a, rgb(var(--col-hl)));
   }
   header h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   header h2 {
     border-bottom: 3px solid rgb(var(--col-bg));
