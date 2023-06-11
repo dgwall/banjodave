@@ -80,8 +80,14 @@ function Header() {
   const handleDropdownHover = () => {
     clearTimer(closeTimerRef);
     clearTimer(clickEnableTimerRef);
-    setIsClickEnabled(false);
-    startTimer(openTimerRef, () => setIsDropdownOpen(true), 180);
+    startTimer(
+      openTimerRef,
+      () => {
+        setIsDropdownOpen(true);
+        setIsClickEnabled(false);
+      },
+      180
+    );
   };
 
   const handleDropdownFocus = () => {
