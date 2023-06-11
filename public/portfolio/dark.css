@@ -154,7 +154,8 @@ header h2 {
 }
 
 article h2 {
-  font-size: 1em;
+  font-size: 1.3em;
+  color: #fff;
 }
 
 header p {
@@ -205,6 +206,8 @@ article {
       rgba(var(--col-hl), 0.3),
       rgb(var(--col-hl), 0.15) 80%
     );
+  background-repeat: no-repeat;
+  background-position: bottom;
   border: 1px solid rgba(var(--col-hl), 0.4);
   box-shadow: 0 0 20em var(--glow) inset, 0 0 1em var(--glow);
 }

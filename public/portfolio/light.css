@@ -83,6 +83,10 @@ header h2 {
   color: rgb(var(--col-hl));
 }
 
+article h2 {
+  color: #000;
+}
+
 header p {
   background-color: rgba(var(--col-fg), 0.5);
   border: 1px solid #ddd;

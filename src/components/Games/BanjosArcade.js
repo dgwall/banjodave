@@ -32,7 +32,7 @@ const gameData = [
     imgSrc: "img/0dg/tile-ba-.png",
     dest: "/0dg/banjos-arcade",
     title: "LAUNCH PACK",
-    description: "TBA",
+    description: "Coming Soon",
   },
   {
     stage: "tba",

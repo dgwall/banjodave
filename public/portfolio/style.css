@@ -125,7 +125,6 @@ article h1 span {
 article h2 {
   text-align: center;
   text-decoration: underline;
-  color: #000;
   font-size: 1.3em;
   margin: 1em 0;
   opacity: 0.8;
@@ -250,13 +249,23 @@ article a:hover {
 }
 
 .project img {
-  border-radius: 1.5rem;
   padding: 1rem;
   display: block;
   width: 100%;
   height: auto;
   max-width: fit-content;
   margin: auto;
+  border-radius: 2rem;
+}
+
+.project a img {
+  border-radius: 2.5rem;
+  transition: 0.3s ease-in;
+}
+
+.project a:hover img {
+  border-radius: 1.5rem;
+  transition: 0.3s ease-in;
 }
 
 .project p {
