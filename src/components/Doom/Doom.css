@@ -1,7 +1,6 @@
 .main-doom {
   background-color: #130f0c;
   background-image: url("../../assets/images/doom/bg.jpg");
-  background-attachment: fixed;
 }
 
 .main-doom .page {

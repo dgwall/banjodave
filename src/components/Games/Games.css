@@ -89,7 +89,7 @@
 
 .main-games .tile .image {
   background-color: rgba(0, 0, 0, 1);
-  padding: 4rem 2rem;
+  padding: 2rem 2rem;
 }
 
 .main-games .tile:hover .image {
@@ -123,6 +123,10 @@
   opacity: 0.7;
 }
 
+.main-games h2 img {
+  max-width: 100%;
+}
+
 @keyframes wave {
   0%,
   50%,
@@ -130,34 +134,42 @@
     transform: translateY(0);
   }
   25% {
-    transform: translateY(-10px) rotate(5deg);
+    transform: translateY(-5px) rotate(5deg);
   }
   75% {
-    transform: translateY(-10px) rotate(-5deg);
+    transform: translateY(-5px) rotate(-5deg);
   }
 }
 
 @keyframes colorwave {
-  0% {
-    color: #000;
-  }
-  25% {
-    color: rgb(212, 147, 6);
-  }
-  50% {
-    color: #fde1b7;
-  }
-  75% {
-    color: #fff;
-  }
+  0%,
   100% {
     color: #000;
+  }
+  14% {
+    color: rgb(212, 147, 6);
+  }
+  29% {
+    color: #fde1b7;
+  }
+  43% {
+    color: #fff;
+  }
+  57% {
+    color: #fde1b7;
+  }
+  71% {
+    color: rgb(212, 147, 6);
   }
 }
 
 @media screen and (max-width: 768px) {
   .main-games .overview-container {
     flex-direction: column;
+  }
+
+  .main-games .tile h3 {
+    font-size: 1.6rem;
   }
 
   .main-games .overview {

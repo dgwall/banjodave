@@ -76,7 +76,7 @@ function Rootootoot() {
           </div>
           <div className="product-description">
             <h2 className="header-d">
-              rootootoot Collector's Edition PC-CD, Out Now!
+              rootootoot Collector's Edition PC-CD, Coming Soon!
             </h2>
             <p>
               Encased in a classic jewel case and embellished with the exclusive
