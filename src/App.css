@@ -105,15 +105,15 @@ main {
   width: 80%;
   margin: auto;
   margin-bottom: 3rem;
-  padding: 24px;
+  padding: 1rem;
   border-radius: 1.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(172, 161, 139, 0.651);
 }
 
 .main .overview .quote {
-  position: absolute;
-  top: -39px;
+  position: relative;
+  top: 3.6rem;
   left: 10%;
 }
 

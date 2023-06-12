@@ -5,7 +5,6 @@ function Home() {
   return (
     <section className="homepage">
       <article className="overview">
-        <img src="./img/quote.png" alt="Speech bubble" className="quote" />
         <p>
           Alright? Welcome to <span className="title">BanjoDave.com</span>. I'm
           a front-end web and games developer based in Scotland, designing and
