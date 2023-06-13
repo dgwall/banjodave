@@ -33,10 +33,14 @@ function PlusPlus() {
             <p>A2, Single Sided, Classic Silk, Matt Lamination.</p>
             <p>
               <a href="#top" target="_blank" rel="noreferrer">
+                <img
+                  src="../img/orb_invert_small.gif"
+                  alt="Under Construction"
+                />{" "}
                 Full-resolution [9920 x 7016] download on Patreon
               </a>
             </p>
-            <button className="under-construction">
+            <button>
               <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
               Cart
             </button>

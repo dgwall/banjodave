@@ -15,6 +15,7 @@ function Home() {
           in due time. Stay tuned.
         </p>
         <img src="./img/orb_invert.gif" alt="Under Construction" />
+        <p>The ~orb of creation~ denotes sections under construction.</p>
       </article>
 
       <article>
@@ -49,11 +50,11 @@ function Home() {
       <article>
         <h2>Stay Updated</h2>
         <p>
-          Ever thought about diving into the gritty details of game creation or
+          <img src="./img/orb_invert_small.gif" alt="Under Construction" /> Ever
+          thought about diving into the gritty details of game creation or
           getting a sneak peek of my games, levels, and{" "}
           <Link to="/zine">BanjoZine</Link> issues before they hit the public?
-          That's exactly what I'm offering to my Patreon community (
-          <img src="./img/orb_invert_small.gif" alt="Under Construction" />{" "}
+          That's exactly what I'll be offering to my Patreon community (
           Launching Soon). If this seems like your kind of deal, It would be
           sick if you could{" "}
           <a
@@ -100,7 +101,7 @@ function Home() {
             YouTube
           </a>{" "}
           where I share whatever's cooking in the game dev kitchen and the ins
-          and outs of my creations. So, if you're game, let's... game?
+          and outs of my creations.
         </p>
       </article>
     </section>

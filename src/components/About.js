@@ -4,9 +4,12 @@ function About() {
   return (
     <section className="under-construction">
       <header>
-        <img src="./img/orb_invert.gif" alt="Under Construction" /> About
+        <img src="./img/orb_invert.gif" alt="Under Construction" />
+        <br /> About
       </header>
-      <div>Under Construction. Intro, bio, skills, interests, contact.</div>
+      <div class="overview">
+        Under Construction. Intro, bio, skills, interests, contact.
+      </div>
     </section>
   );
 }

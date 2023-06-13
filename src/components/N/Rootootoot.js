@@ -68,7 +68,8 @@ function Rootootoot() {
 
       <article>
         <h2 className="header-m">
-          rootootoot Collector's Edition PC-CD, Out Now!
+          <img src="../img/orb_invert.gif" alt="Under Construction" />
+          <br /> rootootoot Collector's Edition PC-CD, Coming Soon!
         </h2>
         <div className="product">
           <div className="product-carousel">
@@ -76,7 +77,8 @@ function Rootootoot() {
           </div>
           <div className="product-description">
             <h2 className="header-d">
-              rootootoot Collector's Edition PC-CD, Coming Soon!
+              <img src="../img/orb_invert.gif" alt="Under Construction" />
+              <br /> rootootoot Collector's Edition PC-CD, Coming Soon!
             </h2>
             <p>
               Encased in a classic jewel case and embellished with the exclusive
@@ -86,7 +88,7 @@ function Rootootoot() {
               tactile and visual experience that will take you back to the
               golden days of gaming.
             </p>
-            <button className="under-construction">
+            <button>
               <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
               Cart
             </button>
@@ -124,7 +126,7 @@ function Rootootoot() {
                 Full-resolution [4960 x 3508] download on Patreon
               </a>
             </p>
-            <button className="under-construction">
+            <button>
               <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
               Cart
             </button>
@@ -159,7 +161,7 @@ function Rootootoot() {
                 Full-resolution [3508 x 4960] download on Patreon
               </a>
             </p>
-            <button className="under-construction">
+            <button>
               <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
               Cart
             </button>

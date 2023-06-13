@@ -43,6 +43,7 @@ function Zine() {
       </header>
 
       <article className="overview">
+        <p>I'm looking forward to reviving this old project.</p>
         <p>
           BanjoZine: the underground intersection of games, philosophy, and
           media. Established in March 2021, this digital cryptex delves into pop

@@ -103,6 +103,9 @@
   align-items: center;
   justify-content: center;
   background-color: #79798888;
+  background-image: url("../../../public/img/icon-bw.gif");
+  background-position: 1rem 1rem;
+  background-repeat: no-repeat;
   margin-right: 24px;
   height: 30rem;
 }

@@ -4,10 +4,10 @@ function Support() {
   return (
     <section className="under-construction">
       <header>
-        <img src="./img/orb_invert.gif" alt="Under Construction" /> Support My
-        Work
+        <img src="./img/orb_invert.gif" alt="Under Construction" />
+        <br /> Support My Work
       </header>
-      <div>
+      <div class="overview">
         Under Construction. TO-DO: Patreon. Donate. More ways: subscribe, like,
         comment, share.
       </div>

@@ -84,7 +84,7 @@ function BanjosArcade() {
             nebulous new addition. A neon-soaked ride down the pixelated path of
             retro glory!
           </p>
-          <img src="./img/orb_invert.gif" alt="Under Construction" />
+          <img src="../img/orb.gif" alt="Under Construction" />
         </div>
         <div className="emblem">
           <img src="/img/0dg/tile-ba.png" alt="Banjo's Arcade Cover" />
