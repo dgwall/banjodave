@@ -14,6 +14,7 @@ function Home() {
           underway, but I'm looking forward to unveiling my digital gems to you
           in due time. Stay tuned.
         </p>
+        <img src="./img/orb_invert.gif" alt="Under Construction" />
       </article>
 
       <article>
@@ -24,8 +25,12 @@ function Home() {
           design indie action games defined by distinctive artwork, crisp
           controls, and gripping mechanics. Behind the scenes, I'm fervently
           curating a showcase of my projects and insights into my design
-          process. Keep an eye on this space as the curtain prepares to rise on
-          the world of 0DGames.
+          process.
+        </p>
+        <p>
+          <img src="./img/orb_invert_small.gif" alt="Under Construction" /> Keep
+          an eye on this space as the curtain prepares to rise on the world of
+          0DGames.
         </p>
       </article>
 
@@ -33,14 +38,11 @@ function Home() {
         <h2>Level Design</h2>
         <p>
           I create maps for the classic games DOOM by id Software and N by
-          Metanet Software. <Link to="/doom">In DOOM</Link>, I mold the eerie
-          corridors and chambers of demon-infested bases, striving to challenge
-          and engage players with every unexpected turn.{" "}
-          <Link to="/n">For N</Link>, I focus on constructing 2D landscapes that
-          test players' agility and dynamic problem-solving skills, keeping in
-          line with the game's unique blend of momentum-based gameplay and
-          precise controls. My aim is to contribute meaningfully to these
-          classic games, providing levels that both challenge and entertain.
+          Metanet Software.
+        </p>
+        <p>
+          <img src="./img/orb_invert_small.gif" alt="Under Construction" /> My
+          aim is to contribute meaningfully to these classic games.
         </p>
       </article>
 
@@ -50,9 +52,10 @@ function Home() {
           Ever thought about diving into the gritty details of game creation or
           getting a sneak peek of my games, levels, and{" "}
           <Link to="/zine">BanjoZine</Link> issues before they hit the public?
-          That's exactly what I'm offering to my Patreon community (Launching
-          Soon). If this seems like your kind of deal, It would be sick if you
-          could{" "}
+          That's exactly what I'm offering to my Patreon community (
+          <img src="./img/orb_invert_small.gif" alt="Under Construction" />{" "}
+          Launching Soon). If this seems like your kind of deal, It would be
+          sick if you could{" "}
           <a
             href="https://www.patreon.com/banjodave"
             target="_blank"

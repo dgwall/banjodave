@@ -86,7 +86,10 @@ function Rootootoot() {
               tactile and visual experience that will take you back to the
               golden days of gaming.
             </p>
-            <button className="under-construction">Add to Cart</button>
+            <button className="under-construction">
+              <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
+              Cart
+            </button>
           </div>
         </div>
       </article>
@@ -114,10 +117,17 @@ function Rootootoot() {
             <p>A3, Single Sided, Classic Silk. All 500 maps.</p>
             <p>
               <a href="#top" target="_blank" rel="noreferrer">
+                <img
+                  src="../img/orb_invert_small.gif"
+                  alt="Under Construction"
+                />{" "}
                 Full-resolution [4960 x 3508] download on Patreon
               </a>
             </p>
-            <button className="under-construction">Add to Cart</button>
+            <button className="under-construction">
+              <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
+              Cart
+            </button>
           </div>
         </div>
         <div className="product">
@@ -142,10 +152,17 @@ function Rootootoot() {
             <p>A3, Single Sided, Classic Silk. Column R.</p>
             <p>
               <a href="#top" target="_blank" rel="noreferrer">
+                <img
+                  src="../img/orb_invert_small.gif"
+                  alt="Under Construction"
+                />{" "}
                 Full-resolution [3508 x 4960] download on Patreon
               </a>
             </p>
-            <button className="under-construction">Add to Cart</button>
+            <button className="under-construction">
+              <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
+              Cart
+            </button>
           </div>
         </div>
       </article>

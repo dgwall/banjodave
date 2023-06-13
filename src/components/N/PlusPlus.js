@@ -36,7 +36,10 @@ function PlusPlus() {
                 Full-resolution [9920 x 7016] download on Patreon
               </a>
             </p>
-            <button className="under-construction">Add to Cart</button>
+            <button className="under-construction">
+              <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
+              Cart
+            </button>
           </div>
         </div>
       </article>

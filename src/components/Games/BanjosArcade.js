@@ -29,28 +29,28 @@ const gameData = [
   },
   {
     stage: "tba",
-    imgSrc: "img/0dg/tile-ba-.png",
+    imgSrc: "/img/0dg/tile-ba-.png",
     dest: "/0dg/banjos-arcade",
     title: "LAUNCH PACK",
     description: "Coming Soon. First three games with special features.",
   },
   {
     stage: "tba",
-    imgSrc: "img/0dg/tile-ba-.png",
+    imgSrc: "/img/0dg/tile-ba-.png",
     dest: "/0dg/banjos-arcade",
     title: "MEGA PACK",
     description: "3 new games",
   },
   {
     stage: "tba",
-    imgSrc: "img/0dg/tile-ba-.png",
+    imgSrc: "/img/0dg/tile-ba-.png",
     dest: "/0dg/banjos-arcade",
     title: "ULTRA PACK",
     description: "3 new games",
   },
   {
     stage: "tba",
-    imgSrc: "img/0dg/tile-ba-.png",
+    imgSrc: "/img/orb.gif",
     dest: "/0dg/banjos-arcade",
     title: "???",
     description: "TBA",
@@ -84,6 +84,7 @@ function BanjosArcade() {
             nebulous new addition. A neon-soaked ride down the pixelated path of
             retro glory!
           </p>
+          <img src="./img/orb_invert.gif" alt="Under Construction" />
         </div>
         <div className="emblem">
           <img src="/img/0dg/tile-ba.png" alt="Banjo's Arcade Cover" />

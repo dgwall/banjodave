@@ -96,6 +96,7 @@ function Zine() {
         rel="noreferrer"
          */}
           <span className="under-construction">
+            <img src="../img/orb_invert_small.gif" alt="Under Construction" />{" "}
             Join our arcane quest on Patreon
           </span>
         </a>

@@ -109,6 +109,7 @@ main {
   border-radius: 1.5rem;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(172, 161, 139, 0.651);
+  text-align: center;
 }
 
 .main .overview .quote {
@@ -125,6 +126,14 @@ main {
 
 .main .overview p .title {
   color: #000;
+}
+
+.main .overview img {
+  padding-top: 1rem;
+}
+
+.main p img {
+  vertical-align: bottom;
 }
 
 .main article:not(.overview) p {
