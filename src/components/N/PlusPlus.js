@@ -9,7 +9,14 @@ import {
 function PlusPlus() {
   return (
     <section>
-      <header>N++</header>
+      <header className="under-construction">
+        <img src="../img/orb_invert.gif" alt="Under Construction" />
+        <br />
+        N++
+      </header>
+      <div className="pack-overview">
+        Under Construction: Overview, Featured Maps.
+      </div>
       <article>
         <div className="product">
           <h2 className="header-m">BanjoDave N++ Poster</h2>
@@ -37,7 +44,7 @@ function PlusPlus() {
                   src="../img/orb_invert_small.gif"
                   alt="Under Construction"
                 />{" "}
-                Full-resolution [9920 x 7016] download on Patreon
+                Full-resolution [9920 x 7016px] download on Patreon
               </a>
             </p>
             <button>

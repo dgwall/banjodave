@@ -4,8 +4,9 @@ import "./N.css";
 function Sol() {
   return (
     <section>
-      <header>
-        <img src="../img/orb_invert.gif" alt="Under Construction" />{" "}
+      <header className="under-construction">
+        <img src="../img/orb_invert.gif" alt="Under Construction" />
+        <br />
         Sol+144*10mm
       </header>
       <div className="pack-overview">

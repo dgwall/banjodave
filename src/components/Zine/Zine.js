@@ -34,7 +34,7 @@ function Zine() {
   };
 
   const currentIssue = issues[0] || null;
-  const archiveIssues = issues.slice(1);
+  const archiveIssues = issues.slice(0);
 
   return (
     <section>

@@ -67,7 +67,7 @@ function Rootootoot() {
       </article>
 
       <article>
-        <h2 className="header-m">
+        <h2 className="header-m  under-construction">
           <img src="../img/orb_invert.gif" alt="Under Construction" />
           <br /> rootootoot Collector's Edition PC-CD, Coming Soon!
         </h2>
@@ -76,7 +76,7 @@ function Rootootoot() {
             <ScreenshotsCarousel screenshots={cd} />
           </div>
           <div className="product-description">
-            <h2 className="header-d">
+            <h2 className="header-d under-construction">
               <img src="../img/orb_invert.gif" alt="Under Construction" />
               <br /> rootootoot Collector's Edition PC-CD, Coming Soon!
             </h2>
@@ -123,7 +123,7 @@ function Rootootoot() {
                   src="../img/orb_invert_small.gif"
                   alt="Under Construction"
                 />{" "}
-                Full-resolution [4960 x 3508] download on Patreon
+                Full-resolution [4960 x 3508px] download on Patreon
               </a>
             </p>
             <button>
@@ -158,7 +158,7 @@ function Rootootoot() {
                   src="../img/orb_invert_small.gif"
                   alt="Under Construction"
                 />{" "}
-                Full-resolution [3508 x 4960] download on Patreon
+                Full-resolution [3508 x 4960px] download on Patreon
               </a>
             </p>
             <button>

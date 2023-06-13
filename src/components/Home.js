@@ -21,29 +21,23 @@ function Home() {
       <article>
         <h2>0DGames</h2>
         <p>
+          <img src="./img/orb_invert_small.gif" alt="Under Construction" />{" "}
           <Link to="/0dgames">0DGames</Link> is the creative playground where my
           game development projects come to life. As a solo dev, I aspire to
           design indie action games defined by distinctive artwork, crisp
           controls, and gripping mechanics. Behind the scenes, I'm fervently
           curating a showcase of my projects and insights into my design
-          process.
-        </p>
-        <p>
-          <img src="./img/orb_invert_small.gif" alt="Under Construction" /> Keep
-          an eye on this space as the curtain prepares to rise on the world of
-          0DGames.
+          process.Keep an eye on this space as the curtain prepares to rise on
+          the world of 0DGames.
         </p>
       </article>
 
       <article>
         <h2>Level Design</h2>
         <p>
-          I create maps for the classic games DOOM by id Software and N by
-          Metanet Software.
-        </p>
-        <p>
-          <img src="./img/orb_invert_small.gif" alt="Under Construction" /> My
-          aim is to contribute meaningfully to these classic games.
+          <img src="./img/orb_invert_small.gif" alt="Under Construction" /> I
+          create maps for the classic games DOOM by id Software and N by Metanet
+          Software. My aim is to contribute meaningfully to these classic games.
         </p>
       </article>
 
@@ -54,8 +48,8 @@ function Home() {
           thought about diving into the gritty details of game creation or
           getting a sneak peek of my games, levels, and{" "}
           <Link to="/zine">BanjoZine</Link> issues before they hit the public?
-          That's exactly what I'll be offering to my Patreon community (
-          Launching Soon). If this seems like your kind of deal, It would be
+          That's exactly what I'll be offering to my Patreon community
+          (Launching Soon). If this seems like your kind of deal, It would be
           sick if you could{" "}
           <a
             href="https://www.patreon.com/banjodave"
@@ -64,11 +58,8 @@ function Home() {
           >
             join us on Patreon
           </a>
-          .
-        </p>
-        <p>
-          If you just want to keep tabs on what's going down or sneak a peek at
-          my day-to-day grind, join the{" "}
+          . If you just want to keep tabs on what's going down or sneak a peek
+          at my day-to-day grind, join the{" "}
           <a
             href="https://discord.com/invite/W9UtSAYQXR"
             target="_blank"
