@@ -15,7 +15,16 @@ function PlusPlus() {
         N++
       </header>
       <div className="pack-overview">
-        Under Construction: Overview, Featured Maps.
+        <a href="https://www.nplusplus.org/" target="_blank" rel="noreferrer">
+          N++
+        </a>{" "}
+        is the newest, most up-to-date version of N, available on Nintendo
+        Switch, Xbox One, PS4, and Steam. I regularly publish maps for N++ under
+        the name BanjoDave.
+      </div>
+      <div className="under-construction">
+        <img src="../img/orb_invert_small.gif" alt="Under Construction" /> TODO:
+        Featured Maps
       </div>
       <article>
         <div className="product">

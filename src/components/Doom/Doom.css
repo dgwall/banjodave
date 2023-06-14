@@ -199,6 +199,7 @@
   vertical-align: top;
   background-size: cover;
   overflow: hidden;
+  border: 1px solid #111;
 }
 
 .main-doom .card h3 {
@@ -245,6 +246,7 @@
 }
 
 .main-doom .card:hover {
+  border: 1px solid #222;
   transform: scale(1.1);
   transition: 0.5s ease-out;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
