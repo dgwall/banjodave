@@ -22,66 +22,6 @@ function Doom() {
         className="banner"
       />
       <div className="container">
-        <article id="starlit-abyss">
-          <h2>
-            <img src={gargoyleA} alt="Lion Gargoyle" />
-            <div>
-              Starlit Abyss
-              <br />
-              <span>Ultimate DOOM Episode</span>
-            </div>
-          </h2>
-          <div className="feature">
-            <div>
-              <p>
-                Ready to dance with demons on the edge of the Starlit Abyss?
-                This 9-map Ultimate DOOM episode is set to blast onto the scene,
-                seething with infernal fiends, scorching hellfire, and enough
-                firepower to make a Cyberdemon blush. While the full release
-                will be yours to wreak havoc with for free, the brave souls who
-                can't resist an early foray into the abyss can subscribe to the{" "}
-                <img src="./img/orb_small.gif" alt="Under Construction" />{" "}
-                <a href="#maincontent" className="under-construction">
-                  BanjoDave Patreon
-                </a>
-                , granting you exclusive access to individual maps as they roll
-                hot off the anvil. I will also be posting regular development
-                updates to my{" "}
-                <a
-                  href="https://www.twitter.com/banjeetz"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Twitter
-                </a>
-                . The abyss beckons... are you ready to answer its call?
-              </p>
-              <p className="p-desc">DOOM.WAD required</p>
-              <div className="dev-progress">
-                <ul>
-                  <li>
-                    <b>
-                      <img src="./img/orb_small.gif" alt="Under Construction" />{" "}
-                      Development
-                    </b>
-                  </li>
-                  <li>E1M1: Deep Space Telemetry [IN PROGRESS]</li>
-                  <li>
-                    E1M2: Eldritch Nexus of the Eternal Furnace [COMING SOON]
-                  </li>
-                  <li>E1M3: [TBA]</li>
-                </ul>
-              </div>
-            </div>
-            <ScreenshotsCarousel screenshots={screensSA} />
-          </div>
-          <div className="button">
-            <button className="under-construction">
-              <img src="./img/orb_small.gif" alt="Under Construction" /> Early
-              Access on Patreon!
-            </button>
-          </div>
-        </article>
         <article id="more">
           <h2>
             <img src={gargoyleB} alt="Satyr Gargoyle" />
@@ -145,6 +85,67 @@ function Doom() {
             </div>
 
             <p className="more-desc">DOOM2.WAD required</p>
+          </div>
+        </article>
+                  
+        <article id="starlit-abyss">
+          <h2>
+            <img src={gargoyleA} alt="Lion Gargoyle" />
+            <div>
+              Starlit Abyss
+              <br />
+              <span>Ultimate DOOM Episode</span>
+            </div>
+          </h2>
+          <div className="feature">
+            <div>
+              <p>
+                Ready to dance with demons on the edge of the Starlit Abyss?
+                This 9-map Ultimate DOOM episode is set to blast onto the scene,
+                seething with infernal fiends, scorching hellfire, and enough
+                firepower to make a Cyberdemon blush. While the full release
+                will be yours to wreak havoc with for free, the brave souls who
+                can't resist an early foray into the abyss can subscribe to the{" "}
+                <img src="./img/orb_small.gif" alt="Under Construction" />{" "}
+                <a href="#maincontent" className="under-construction">
+                  BanjoDave Patreon
+                </a>
+                , granting you exclusive access to individual maps as they roll
+                hot off the anvil. I will also be posting regular development
+                updates to my{" "}
+                <a
+                  href="https://www.twitter.com/banjeetz"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  Twitter
+                </a>
+                . The abyss beckons... are you ready to answer its call?
+              </p>
+              <p className="p-desc">DOOM.WAD required</p>
+              <div className="dev-progress">
+                <ul>
+                  <li>
+                    <b>
+                      <img src="./img/orb_small.gif" alt="Under Construction" />{" "}
+                      Development
+                    </b>
+                  </li>
+                  <li>E1M1: Deep Space Telemetry [IN PROGRESS]</li>
+                  <li>
+                    E1M2: Eldritch Nexus of the Eternal Furnace [COMING SOON]
+                  </li>
+                  <li>E1M3: [TBA]</li>
+                </ul>
+              </div>
+            </div>
+            <ScreenshotsCarousel screenshots={screensSA} />
+          </div>
+          <div className="button">
+            <button className="under-construction">
+              <img src="./img/orb_small.gif" alt="Under Construction" /> Early
+              Access on Patreon!
+            </button>
           </div>
         </article>
       </div>
