@@ -26,9 +26,9 @@ function Doom() {
           <h2>
             <img src={gargoyleB} alt="Satyr Gargoyle" />
             <div>
-              More Maps
+              Single Maps
               <br />
-              <span>Various Projects</span>
+              <span>From Various Projects</span>
             </div>
           </h2>
           <div className="doom-cards">
