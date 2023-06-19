@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Header.css";
 import logo from "../../../assets/images/logo400.png";
 import icons from "../../../assets/images/icon";
-import { menuItems } from "../../shared/menuItems.js";
+import { menuItems } from "../menuItems.js";
 
 // A reusable MenuItem component for rendering menu items
 const MenuItem = ({ item }) => {

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Footer.css";
 import icons from "../../../assets/images/icon";
-import { menuItems } from "../../shared/menuItems.js";
+import { menuItems } from "../menuItems.js";
 
 const socials = [
   {
