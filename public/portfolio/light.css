@@ -129,9 +129,12 @@ article h1 span {
   border-bottom: 3px solid rgb(var(--col-hl));
 }
 
-.subsection-header,
-summary {
+.subsection-header {
   color: #444;
+  border-bottom: 1px solid #ccc;
+}
+
+summary {
   border-bottom: 1px solid #ccc;
 }
 

@@ -127,51 +127,168 @@
 
           <h2>BanjoDave.com</h2>
           <div class="project">
-            <a
-              href="https://www.banjodave.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="img/project-banjodave.png" />
-              Visit BanjoDave.com
-            </a>
-            <p>
-              A React application with animations and various functional
-              components, for sharing my hobby projects.
-            </p>
-            <p>
+            <div class="overview">
               <a
-                href="https://github.com/dgwall/banjodave"
+                href="https://www.banjodave.com/"
                 target="_blank"
                 rel="noreferrer"
-                >View source code on GitHub</a
               >
-            </p>
+                <img src="img/project-banjodave.png" />
+                Visit BanjoDave.com
+              </a>
+              <p>
+                <a
+                  href="https://github.com/dgwall/banjodave"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View source code on GitHub</a
+                >
+              </p>
+              <p>
+                <video autoplay loop muted>
+                  <source src="img/animation.webm" type="video/webm" />
+                  Sorry, your browser doesn't support embedded videos.
+                </video>
+              </p>
+              <p style="font-size: smaller">Animation Example</p>
+            </div>
+            <div class="case-study">
+              <h3>Case Study: A Responsive and Accessible Header</h3>
+              <p>
+                The objective was to create a header component for
+                BanjoDave.com, a React application sharing my hobby projects.
+                The header needed to provide clear and straightforward
+                navigation across different sections of the website, adapt to
+                different screen sizes, and meet accessibility standards for
+                inclusive user experience.
+              </p>
+              <p>
+                <a
+                  href="https://github.com/dgwall/banjodave/blob/master/src/components/Header/Header.js"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View Header.js on GitHub</a
+                >
+              </p>
+              <ul>
+                <li>
+                  <strong>Adaptive Dropdown Menu: </strong>In order to cater to
+                  devices with smaller screen real estate, I designed a dropdown
+                  menu that accommodates secondary navigation links. This menu
+                  unveils its content when the user hovers over it. I've
+                  included specific adjustments for users who interact with the
+                  dropdown by clicking. To prevent the dropdown from abruptly
+                  closing just after it opens, I implemented a feature that
+                  disables response to user clicks for a specific duration after
+                  the dropdown opens or closes via a hover action.
+                </li>
+
+                <li>
+                  <strong>Navigation Links: </strong>The website's navigation
+                  links are fetched from an external file menuItems.js. This
+                  separation of concerns ensures that changes to navigation
+                  items can be managed without interfering with the Header
+                  component's core functionality.
+                </li>
+
+                <li>
+                  <strong>Accessible Navigation: </strong>To ensure the website
+                  is accessible, I included a 'skip-link' that allows users to
+                  skip to the main content of the website. This feature is
+                  particularly useful for users who navigate with a keyboard
+                  rather than a mouse.
+                </li>
+              </ul>
+              <h3>Case Study: A Dynamic and Interactive Tile Component</h3>
+              <p>
+                The primary goal was to develop a compelling, interactive
+                component for showcasing hobby projects on BanjoDave.com. This
+                component needed to capture visitors' attention and encourage
+                them to explore further
+              </p>
+              <p>
+                <a
+                  href="https://github.com/dgwall/banjodave/blob/master/src/components/Header/Header.js"
+                  target="_blank"
+                  rel="noreferrer"
+                  >View SkewDiv.js on GitHub</a
+                >
+              </p>
+              <ul>
+                <li>
+                  <strong>Dynamic Polygon Clipping: </strong>The SkewDiv
+                  component incorporates a breathing-like animation by using
+                  dynamic polygon clipping with CSS clip-path property. The
+                  clip-path is created through a function, generateClipPath,
+                  that utilizes an array of random offsets generated with
+                  JavaScript's Math.random function. The polygon shape defined
+                  by the clip-path provides a distinctive look for each tile and
+                  changes subtly every 2 seconds through a setInterval function.
+                </li>
+                <li>
+                  <strong>Hover Interactivity: </strong>User interactivity is
+                  enhanced through hover effects. When a user's mouse enters the
+                  tile (triggered by onMouseEnter), two animations are
+                  initiated. Firstly, the clip-path of the tile undergoes
+                  changes, giving a pulsating effect. This effect is achieved by
+                  the startInterval function that sets the animation interval.
+                  Secondly, a wave-like animation is applied to the text within
+                  the tile, where each character in the title is assigned an
+                  animation delay based on its index, created by mapping over
+                  the title string.
+                </li>
+                <li>
+                  <strong>Versatility and Reusability: </strong>The SkewDiv
+                  component accepts various properties, such as imgSrc, dest,
+                  title, and description, enhancing its reusability across
+                  different projects. Thus, it presents an engaging and unique
+                  appearance while eliminating the need for custom coding for
+                  each new project.
+                </li>
+              </ul>
+            </div>
           </div>
 
           <h2>Outback Adventures</h2>
           <div class="project">
-            <a
-              href="https://www.banjodave.com/portfolio/oa/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="img/project-oa.png" />
-              Visit "Outback Adventures"
-            </a>
-            <p>
-              The website features a static layout enhanced by a visually
-              engaging parallax scrolling effect.
-            </p>
+            <div class="overview">
+              <a
+                href="https://www.banjodave.com/portfolio/oa/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="img/project-oa.png" />
+                Visit "Outback Adventures"
+              </a>
+            </div>
+            <div class="case-study">
+              <h3>Visually engaging parallax scrolling effect</h3>
+              <p>
+                In designing the Outback Adventures homepage, the key goal was
+                to create an engaging user experience reminiscent of a journey
+                through the Australian outback. Utilizing a parallax scrolling
+                effect, the page simulates a 3D landscape, achieved by carefully
+                manipulating SVG images of hills and adjusting their scales
+                based on their assigned 'depth'. The incorporation of dynamic
+                elements like an animated sun and shifting clouds further
+                elevates the immersive feel of the website. Critical to this
+                design was the use of CSS transforms, particularly the
+                `translateZ` function and `transform-style: preserve-3d`
+                property, effectively creating a sense of depth and making the
+                website's landscape come alive.
+              </p>
+            </div>
           </div>
 
           <h2>Discontent Front-End</h2>
           <div class="project">
-            <img src="img/project-discontent.png" />
-            <p>
-              I designed a logo and recreated a Discord-like user interface
-              using Chakra UI. Not currently hosted.
-            </p>
+            <div class="overview">
+              <img src="img/project-discontent.png" />
+              <p>
+                I designed a logo and recreated a Discord-like user interface
+                using Chakra UI. Not currently hosted.
+              </p>
+            </div>
           </div>
         </article>
         <article id="game">
@@ -185,43 +302,49 @@
 
           <h2>Banjo's Arcade</h2>
           <div class="project">
-            <a
-              href="https://www.banjodave.com/0dg/banjos-arcade"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="img/project-ba.png" />
-              View on banjodave.com
-            </a>
-            <p>
-              An ongoing series of retro-remakes. Trying to replicate as many
-              classic game mechanics as I can.
-            </p>
+            <div class="overview">
+              <a
+                href="https://www.banjodave.com/0dg/banjos-arcade"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="img/project-ba.png" />
+                View on banjodave.com
+              </a>
+              <p>
+                An ongoing series of retro-remakes. Trying to replicate as many
+                classic game mechanics as I can.
+              </p>
+            </div>
           </div>
 
           <h2>Malice Striker</h2>
           <div class="project">
-            <a
-              href="https://globalgamejam.org/2023/games/malice-striker-9"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <img src="img/project-ms.png" />
-              View on globalgamejam.org
-            </a>
-            <p>
-              I attended Global Game Jam 2023, and joined a team as the lead
-              programmer to finish this game in a single weekend.
-            </p>
+            <div class="overview">
+              <a
+                href="https://globalgamejam.org/2023/games/malice-striker-9"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="img/project-ms.png" />
+                View on globalgamejam.org
+              </a>
+              <p>
+                I attended Global Game Jam 2023, and joined a team as the lead
+                programmer to finish this game in a single weekend.
+              </p>
+            </div>
           </div>
 
           <h2>Isometric Craft Game</h2>
           <div class="project">
-            <img src="img/project-not-minecraft.png" />
-            <p>
-              Isometric Minecraft-like building game with lighting, procedural
-              terrain, rotation, and water simulation
-            </p>
+            <div class="overview">
+              <img src="img/project-not-minecraft.png" />
+              <p>
+                Isometric Minecraft-like building game with lighting, procedural
+                terrain, rotation, and water simulation
+              </p>
+            </div>
           </div>
         </article>
         <article id="contact">
@@ -235,23 +358,39 @@
               or in-person in areas around Dundee, Fife, Glasgow, and Edinburgh.
               Looking forward to potentially working with you!
             </p>
-            <p>
+            <p class="contact-item">
+              <i
+                class="fa-solid fa-envelope fa-bounce"
+                style="color: #ffffff"
+              ></i>
               <a
                 href="mailto:wakkace@gmail.com"
                 target="_blank"
                 rel="noreferrer"
-                >wakkace@gmail.com</a
+              >
+                wakkace@gmail.com</a
               >
             </p>
-            <p>
+            <p class="contact-item">
+              <i
+                class="fa-brands fa-linkedin fa-bounce"
+                style="color: #ffffff"
+              ></i>
               <a
                 href="https://www.linkedin.com/in/david-g-wallace/"
                 target="_blank"
                 rel="noreferrer"
-                >David Wallace on LinkedIn</a
+              >
+                David Wallace on LinkedIn</a
               >
             </p>
-            <p><a href="David-Wallace_CV.pdf" download>Download CV .pdf</a></p>
+            <p class="contact-item">
+              <i
+                class="fa-solid fa-file-pdf fa-bounce"
+                style="color: #ffffff"
+              ></i>
+              <a href="David-Wallace_CV.pdf" download>Download CV .pdf</a>
+            </p>
           </div>
         </article>
       </section>
@@ -277,7 +416,8 @@
         }
       }
 
-      /* -- Glow effect -- */
+      /* DARK MODE EASTER EGGS */
+      /* Glow Blob */
 
       const blob = document.getElementById("blob");
 
@@ -294,7 +434,7 @@
         console.log(`${clientX}, ${clientY}`);
       };
 
-      /* -- Text effect -- */
+      /* Hacker Text */
 
       const letters = "0123456789_";
 

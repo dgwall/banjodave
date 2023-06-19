@@ -142,6 +142,11 @@ header h1:before {
   border-radius: 2rem;
 }
 
+#intro {
+  text-align: center;
+  padding: 2rem;
+}
+
 #title {
   background: -webkit-linear-gradient(90deg, rgba(var(--col-hl), 0.5), #ffa280);
   background-clip: text;
@@ -180,7 +185,6 @@ summary {
   align-items: center;
   justify-self: center;
   margin-bottom: auto;
-  width: 50%;
   background: linear-gradient(
     30deg,
     rgba(var(--col-hl), 1) 0%,

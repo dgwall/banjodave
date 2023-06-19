@@ -194,6 +194,11 @@ li i {
   width: 1em;
 }
 
+summary {
+  color: rgba(var(--col-hl), 1);
+  cursor: pointer;
+}
+
 details p {
   margin: 1em;
 }
@@ -240,6 +245,10 @@ article a:hover {
   padding-bottom: 1rem;
 }
 
+#contact .contact-item {
+  font-size: large;
+}
+
 #legal {
   text-align: center;
   font-size: x-small;
@@ -248,8 +257,20 @@ article a:hover {
 }
 
 .project {
+  display: flex;
+  justify-content: center;
   text-align: center;
   margin-bottom: 5rem;
+}
+
+.overview,
+.case-study {
+  width: 100%;
+}
+
+.overview p {
+  width: 60%;
+  margin: auto;
 }
 
 .project img {
@@ -264,17 +285,28 @@ article a:hover {
 }
 
 .project a img {
-  border-radius: 2.5rem;
+  border-radius: 2em;
   transition: 0.3s ease-in;
 }
 
-.project a:hover img {
-  border-radius: 1.5rem;
-  transition: 0.3s ease-in;
-}
-
-.project p {
+.project p,
+.project ul {
   margin-top: 1rem;
+}
+
+.project ul {
+  margin-bottom: 1rem;
+}
+
+.case-study {
+  text-align: left;
+}
+
+video {
+  border-radius: 1em;
+  width: 100%;
+  max-width: 256px;
+  max-height: 256px;
 }
 
 @media screen and (min-width: 740px) {
@@ -458,5 +490,13 @@ article a:hover {
 
   #contact {
     margin-bottom: 2rem;
+  }
+
+  .project {
+    flex-direction: column;
+  }
+
+  .overview {
+    margin-bottom: 1rem;
   }
 }
