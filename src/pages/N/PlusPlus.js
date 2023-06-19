@@ -4,7 +4,7 @@ import {
   Lightbox,
   LightboxTrigger,
   LightboxContent,
-} from "../../shared/Lightbox";
+} from "../../components/shared/Lightbox";
 
 function PlusPlus() {
   return (

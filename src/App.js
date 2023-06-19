@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Header from "./components/menus/Header/Header";
 import Footer from "./components/menus/Footer/Footer";
-import ScrollToTop from "./shared/ScrollToTop";
+import ScrollToTop from "./components/shared/ScrollToTop";
 
 const Home = React.lazy(() => import("./pages/Home"));
 const Rootootoot = React.lazy(() => import("./pages/N/Rootootoot"));

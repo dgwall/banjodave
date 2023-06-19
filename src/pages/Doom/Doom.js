@@ -1,6 +1,6 @@
 import React from "react";
 import "./Doom.css";
-import ScreenshotsCarousel from "../../shared/ScreenshotsCarousel";
+import ScreenshotsCarousel from "../../components/shared/ScreenshotsCarousel";
 import screensSA from "./screensSA.json";
 import banner from "../../assets/images/doom/banner.jpg";
 import gargoyleA from "../../assets/images/doom/icon-1.png";
@@ -87,7 +87,7 @@ function Doom() {
             <p className="more-desc">DOOM2.WAD required</p>
           </div>
         </article>
-                  
+
         <article id="starlit-abyss">
           <h2>
             <img src={gargoyleA} alt="Lion Gargoyle" />

@@ -4,8 +4,8 @@ import {
   Lightbox,
   LightboxTrigger,
   LightboxContent,
-} from "../../shared/Lightbox";
-import ScreenshotsCarousel from "../../shared/ScreenshotsCarousel";
+} from "../../components/shared/Lightbox";
+import ScreenshotsCarousel from "../../components/shared/ScreenshotsCarousel";
 
 function Rootootoot() {
   const cd = [
