@@ -228,7 +228,7 @@
     width: 80%;
   }
   .header {
-    background-image: url(../../assets/images/mobile-header.png);
+    background-image: url(../../../assets/images/mobile-header.png);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;

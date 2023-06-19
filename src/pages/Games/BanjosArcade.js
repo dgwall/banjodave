@@ -1,6 +1,6 @@
 import React from "react";
 import "./Games.css";
-import SkewDiv from "./SkewDiv";
+import SkewDiv from "../../components/shared/SkewDiv";
 
 const gameData = [
   {

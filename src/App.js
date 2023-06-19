@@ -1,192 +1,66 @@
-import React from "react";
+import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-
-import Header from "./components/Header/Header";
+import Header from "./components/menus/Header/Header";
+import Footer from "./components/menus/Footer/Footer";
 import ScrollToTop from "./shared/ScrollToTop";
-import Home from "./components/Home";
-import Footer from "./components/Footer/Footer";
-import Rootootoot from "./components/N/Rootootoot";
-import Sol from "./components/N/Sol";
-import PlusPlus from "./components/N/PlusPlus";
-import Dw40 from "./components/N/Dw40";
-import N from "./components/N/N";
-import League from "./components/League/League";
-import Doom from "./components/Doom/Doom";
-import Games from "./components/Games/Games";
-import Zine from "./components/Zine/Zine";
-import Support from "./components/Support";
-import Shop from "./components/Shop";
-import About from "./components/About";
-import BanjosArcade from "./components/Games/BanjosArcade";
+
+const Home = React.lazy(() => import("./pages/Home"));
+const Rootootoot = React.lazy(() => import("./pages/N/Rootootoot"));
+const Sol = React.lazy(() => import("./pages/N/Sol"));
+const PlusPlus = React.lazy(() => import("./pages/N/PlusPlus"));
+const Dw40 = React.lazy(() => import("./pages/N/Dw40"));
+const N = React.lazy(() => import("./pages/N/N"));
+const League = React.lazy(() => import("./pages/League/League"));
+const Doom = React.lazy(() => import("./pages/Doom/Doom"));
+const Games = React.lazy(() => import("./pages/Games/Games"));
+const Zine = React.lazy(() => import("./pages/Zine/Zine"));
+const Support = React.lazy(() => import("./pages/Support"));
+const Shop = React.lazy(() => import("./pages/Shop"));
+const About = React.lazy(() => import("./pages/About"));
+const BanjosArcade = React.lazy(() => import("./pages/Games/BanjosArcade"));
+
+const routes = [
+  { path: "/", mainClass: "", Component: Home },
+  { path: "/games", mainClass: "-games", Component: Games },
+  { path: "/0dg/banjos-arcade", mainClass: "-games", Component: BanjosArcade },
+  { path: "/0dgames", mainClass: "-games", Component: Games },
+  { path: "/doom", mainClass: "-doom", Component: Doom },
+  { path: "/banjodoom", mainClass: "-doom", Component: Doom },
+  { path: "/n/rootootoot", mainClass: "-n", Component: Rootootoot },
+  { path: "/n/sol", mainClass: "-n", Component: Sol },
+  { path: "/n/plusplus", mainClass: "-n", Component: PlusPlus },
+  { path: "/n/DW40", mainClass: "-n", Component: Dw40 },
+  { path: "/n", mainClass: "-n", Component: N },
+  { path: "/league", mainClass: "-league", Component: League },
+  { path: "/zine", mainClass: "-zine", Component: Zine },
+  { path: "/thank-you", mainClass: "", Component: Support },
+  { path: "/shop", mainClass: "", Component: Shop },
+  { path: "/about", mainClass: "", Component: About },
+];
 
 function App() {
   return (
     <Router>
       <ScrollToTop />
       <Header />
-      <Routes>
-        <Route
-          path="/games"
-          element={
-            <main className="main-games">
-              <div className="page">
-                <Games />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/0dg/banjos-arcade"
-          element={
-            <main className="main-games">
-              <div className="page">
-                <BanjosArcade />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/0dgames"
-          element={
-            <main className="main-games">
-              <div className="page">
-                <Games />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/doom"
-          element={
-            <main className="main-doom">
-              <div className="page">
-                <Doom />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/banjodoom"
-          element={
-            <main className="main-doom">
-              <div className="page">
-                <Doom />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/n/rootootoot"
-          element={
-            <main className="main-n">
-              <div className="page">
-                <Rootootoot />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/n/sol"
-          element={
-            <main className="main-n">
-              <div className="page">
-                <Sol />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/n/plusplus"
-          element={
-            <main className="main-n">
-              <div className="page">
-                <PlusPlus />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/n/DW40"
-          element={
-            <main className="main-n">
-              <div className="page">
-                <Dw40 />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/n"
-          element={
-            <main className="main-n">
-              <div className="page">
-                <N />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/league"
-          element={
-            <main className="main-league">
-              <div className="page">
-                <League />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/zine"
-          element={
-            <main className="main-zine">
-              <div className="page">
-                <Zine />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/thank-you"
-          element={
-            <main className="main">
-              <div className="page">
-                <Support />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/shop"
-          element={
-            <main className="main">
-              <div className="page">
-                <Shop />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/about"
-          element={
-            <main className="main">
-              <div className="page">
-                <About />
-              </div>
-            </main>
-          }
-        />
-        <Route
-          path="/"
-          element={
-            <main className="main">
-              <div className="page">
-                <Home />
-              </div>
-            </main>
-          }
-        />
-      </Routes>
+      <Suspense fallback={<div>Loading...</div>}>
+        <Routes>
+          {routes.map(({ path, mainClass, Component }) => (
+            <Route
+              path={path}
+              key={path}
+              element={
+                <main className={`main${mainClass}`}>
+                  <div className="page">
+                    <Component />
+                  </div>
+                </main>
+              }
+            />
+          ))}
+        </Routes>
+      </Suspense>
       <Footer />
     </Router>
   );

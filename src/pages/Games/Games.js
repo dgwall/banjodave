@@ -1,7 +1,7 @@
 import React from "react";
 import "./Games.css";
 import emblem from "./../../assets/images/games/emblem.png";
-import SkewDiv from "./SkewDiv";
+import SkewDiv from "../../components/shared/SkewDiv";
 
 const gameData = [
   {
