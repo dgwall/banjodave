@@ -247,6 +247,7 @@
 
 .main-doom .card:hover {
   border: 1px solid #222;
+  filter: brightness(1.1) invert(0.05);
   transform: scale(1.1);
   transition: 0.5s ease-out;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
@@ -301,6 +302,19 @@
 
   .main-doom article {
     padding: 1rem 2rem 0 2rem;
+  }
+
+  .main-doom .page {
+    background: rgba(27, 27, 27, 0.5);
+    padding-bottom: 2rem;
+  }
+
+  .main-doom .container {
+    background: linear-gradient(
+      180deg,
+      rgba(64, 21, 19, 0.666) 0%,
+      transparent
+    );
   }
 
   .main-doom h2 {

@@ -22,13 +22,9 @@ function Home() {
         <h2>0DGames</h2>
         <p>
           <img src="./img/orb_invert_small.gif" alt="Under Construction" />{" "}
-          <Link to="/0dgames">0DGames</Link> is the creative playground where my
-          game development projects come to life. As a solo dev, I aspire to
-          design indie action games defined by distinctive artwork, crisp
-          controls, and gripping mechanics. Behind the scenes, I'm fervently
-          curating a showcase of my projects and insights into my design
-          process.Keep an eye on this space as the curtain prepares to rise on
-          the world of 0DGames.
+          <Link to="/0dgames">0DGames</Link> is where my game development
+          projects come to life. Keep an eye on this space as the curtain
+          prepares to rise on the world of 0DGames.
         </p>
       </article>
 

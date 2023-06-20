@@ -30,9 +30,9 @@ function Rootootoot() {
         <p>
           In 2018, I set out on the monumental task of compiling every map I've
           ever crafted. From this extensive collection, I painstakingly curated
-          my top 500 - a showcase of my best work. These maps were then
-          meticulously structured into an episodic format matching the original
-          game. Their arrangement reflects a progression in both difficulty and
+          my top 500 - a showcase of my best work. These maps were meticulously
+          arranged in an episodic format mirroring the original game, their
+          order reflecting a thoughtful progression in both difficulty and
           complexity.
         </p>
         <p>

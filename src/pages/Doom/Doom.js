@@ -11,8 +11,8 @@ function Doom() {
     <section>
       <header>
         <nav>
-          <a href="#starlit-abyss">Starlit Abyss</a>&bull;
-          <a href="#more">More</a>
+          <a href="#more">Selected Maps</a>&bull;
+          <a href="#starlit-abyss">Starlit Abyss</a>
         </nav>
         <h1>BanjoDOOM</h1>
       </header>
@@ -26,7 +26,7 @@ function Doom() {
           <h2>
             <img src={gargoyleB} alt="Satyr Gargoyle" />
             <div>
-              Single Maps
+              Selected Maps
               <br />
               <span>From Various Projects</span>
             </div>

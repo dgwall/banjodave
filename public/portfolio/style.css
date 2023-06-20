@@ -305,8 +305,8 @@ article a:hover {
 video {
   border-radius: 1em;
   width: 100%;
-  max-width: 256px;
-  max-height: 256px;
+  max-width: 360px;
+  max-height: 360px;
 }
 
 @media screen and (min-width: 740px) {

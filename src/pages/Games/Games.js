@@ -1,7 +1,7 @@
-import React from "react";
+import React, { Suspense } from "react";
 import "./Games.css";
 import emblem from "./../../assets/images/games/emblem.png";
-import SkewDiv from "../../components/items/SkewDiv";
+const SkewDiv = React.lazy(() => import("../../components/items/SkewDiv"));
 
 const gameData = [
   {
@@ -35,24 +35,28 @@ function Games() {
             for you.
           </p>
         </div>
-        <div className="emblem">
-          <img src={emblem} alt="0DG Emblem" />
-        </div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <div className="emblem">
+            <img src={emblem} alt="0DG Emblem" />
+          </div>
+        </Suspense>
       </div>
 
       <section className="content">
         <article>
           <div className="game-tiles">
-            {gameData.map((game, index) => (
-              <SkewDiv
-                key={index}
-                dest={game.dest}
-                imgSrc={game.imgSrc}
-                altText={game.title}
-                title={game.title}
-                description={game.description}
-              />
-            ))}
+            <Suspense fallback={<div>Loading...</div>}>
+              {gameData.map((game, index) => (
+                <SkewDiv
+                  key={index}
+                  dest={game.dest}
+                  imgSrc={game.imgSrc}
+                  altText={game.title}
+                  title={game.title}
+                  description={game.description}
+                />
+              ))}
+            </Suspense>
           </div>
         </article>
       </section>
