@@ -3,8 +3,8 @@ import "./Doom.css";
 import ScreenshotsCarousel from "../../components/modals/ScreenshotsCarousel";
 import screensSA from "./screensSA.json";
 import banner from "../../assets/images/doom/banner.jpg";
-import gargoyleA from "../../assets/images/doom/icon-1.png";
-import gargoyleB from "../../assets/images/doom/icon-2.png";
+import gargoyleA from "../../assets/images/doom/icon-1.webp";
+import gargoyleB from "../../assets/images/doom/icon-2.webp";
 
 function Doom() {
   return (

@@ -14,14 +14,24 @@ function Home() {
           underway, but I'm looking forward to unveiling my digital gems to you
           in due time. Stay tuned.
         </p>
-        <img src="./img/orb_invert.gif" alt="Under Construction" />
+        <img
+          src="./img/orb_invert.gif"
+          alt="Under Construction"
+          height="64"
+          width="64"
+        />
         <p>The ~orb of creation~ denotes sections under construction.</p>
       </article>
 
       <article>
         <h2>0DGames</h2>
         <p>
-          <img src="./img/orb_invert_small.gif" alt="Under Construction" />{" "}
+          <img
+            src="./img/orb_invert_small.gif"
+            alt="Under Construction"
+            height="16"
+            width="16"
+          />{" "}
           <Link to="/0dgames">0DGames</Link> is where my game development
           projects come to life. Keep an eye on this space as the curtain
           prepares to rise on the world of 0DGames.
@@ -31,17 +41,28 @@ function Home() {
       <article>
         <h2>Level Design</h2>
         <p>
-          <img src="./img/orb_invert_small.gif" alt="Under Construction" /> I
-          create maps for the classic games DOOM by id Software and N by Metanet
-          Software. My aim is to contribute meaningfully to these classic games.
+          <img
+            src="./img/orb_invert_small.gif"
+            alt="Under Construction"
+            height="16"
+            width="16"
+          />{" "}
+          I create maps for the classic games DOOM by id Software and N by
+          Metanet Software. My aim is to contribute meaningfully to these
+          classic games.
         </p>
       </article>
 
       <article>
         <h2>Stay Updated</h2>
         <p>
-          <img src="./img/orb_invert_small.gif" alt="Under Construction" /> Ever
-          thought about diving into the gritty details of game creation or
+          <img
+            src="./img/orb_invert_small.gif"
+            alt="Under Construction"
+            height="16"
+            width="16"
+          />{" "}
+          Ever thought about diving into the gritty details of game creation or
           getting a sneak peek of my games, levels, and{" "}
           <Link to="/zine">BanjoZine</Link> issues before they hit the public?
           That's exactly what I'll be offering to my Patreon community

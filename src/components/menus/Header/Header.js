@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-import logo from "../../../assets/images/logo400.png";
+import logo from "../../../assets/images/logo400.webp";
 import icons from "../../../assets/images/icon";
 import { menuItems } from "../menuItems.js";
 
@@ -15,6 +15,8 @@ const MenuItem = ({ item }) => {
           src={icons[item.icon]}
           alt={`${item.text} Icon`}
           className="icon"
+          width="32"
+          height="32"
         />
       </NavLink>
     </div>
@@ -125,9 +127,9 @@ function Header() {
         ))}
 
       {/* Render dropdown with remaining items */}
-      <div
+      <button
         ref={dropdownRef}
-        className={`dropdown link ${isDropdownOpen ? "open" : ""}`}
+        className={`dropdown link${isDropdownOpen ? " open" : ""}`}
         onMouseEnter={handleDropdownHover}
         onMouseLeave={handleDropdownBlur}
         onFocus={handleDropdownFocus}
@@ -145,7 +147,7 @@ function Header() {
             <MenuItem item={item} key={item.text} />
           ))}
         </div>
-      </div>
+      </button>
     </nav>
   );
 }

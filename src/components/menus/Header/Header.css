@@ -25,8 +25,7 @@
 }
 
 .dropdown .icon {
-  padding-left: 0.8em;
-  padding-right: 0.3em;
+  margin-left: 0.8rem;
 }
 
 .logo {
@@ -141,9 +140,26 @@
 }
 
 .dropdown {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  line-height: normal;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+  appearance: none;
+  -webkit-appearance: none;
   position: relative;
   cursor: pointer;
   text-align: center;
+}
+
+&::-moz-focus-inner {
+  border: 0;
+  padding: 0;
 }
 
 .dropdown.open .dropdown-content {
@@ -208,6 +224,10 @@
   color: grey;
 }
 
+.mobile-link {
+  font-size: 3rem;
+}
+
 @media screen and (max-width: 768px) {
   .desktop-link {
     display: none;
@@ -228,7 +248,7 @@
     width: 80%;
   }
   .header {
-    background-image: url(../../../assets/images/mobile-header.png);
+    background-image: url(../../../assets/images/mobile-header.webp);
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
