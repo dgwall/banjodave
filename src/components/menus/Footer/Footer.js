@@ -93,7 +93,12 @@ const SocialLink = ({ social }) => (
     title={`BanjoDave on ${social.title}`}
     aria-label={`BanjoDave on ${social.title}`}
   >
-    <img src={icons[social.icon]} alt={`BanjoDave's ${social.title} Icon`} />
+    <img
+      src={icons[social.icon]}
+      alt={`BanjoDave's ${social.title} Icon`}
+      height="32"
+      width="32"
+    />
   </a>
 );
 
