@@ -224,10 +224,6 @@
   color: grey;
 }
 
-.mobile-link {
-  font-size: 3rem;
-}
-
 @media screen and (max-width: 768px) {
   .desktop-link {
     display: none;
