@@ -65,23 +65,28 @@ function Header() {
   // Effect to handle enabling click after dropdown is open
   useEffect(() => {
     if (isDropdownOpen) {
-      startTimer(clickEnableTimerRef, () => setIsClickEnabled(true), 360);
+      startTimer(
+        clickEnableTimerRef,
+        () => {
+          setIsClickEnabled(true);
+        },
+        360
+      );
     }
   }, [isDropdownOpen]);
 
   // Function to toggle dropdown open/close state
-  const toggleDropdown = () => {
+  const toggleDropdown = (event) => {
     if (isClickEnabled) {
       setIsDropdownOpen(!isDropdownOpen);
+    } else {
     }
-    clearTimer(openTimerRef);
-    clearTimer(closeTimerRef);
+    event.preventDefault();
   };
 
   // Handlers for various mouse events related to dropdown
   const handleDropdownHover = () => {
     clearTimer(closeTimerRef);
-    clearTimer(clickEnableTimerRef);
     startTimer(
       openTimerRef,
       () => {
@@ -93,7 +98,6 @@ function Header() {
   };
 
   const handleDropdownFocus = () => {
-    clearTimer(closeTimerRef);
     setIsDropdownOpen(true);
   };
 
@@ -132,9 +136,9 @@ function Header() {
         className={`dropdown link${isDropdownOpen ? " open" : ""}`}
         onMouseEnter={handleDropdownHover}
         onMouseLeave={handleDropdownBlur}
-        onFocus={handleDropdownFocus}
         onBlur={handleDropdownBlur}
-        onClick={toggleDropdown}
+        onMouseDown={toggleDropdown}
+        onFocus={handleDropdownFocus}
         aria-haspopup="true"
         aria-expanded={isDropdownOpen}
         aria-label="Navigate to other pages"
