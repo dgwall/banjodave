@@ -241,7 +241,7 @@
     border-bottom: 1px solid #92908c;
   }
   .logo {
-    width: 80%;
+    display: none;
   }
   .header {
     background-image: url(../../../assets/images/mobile-header.webp);

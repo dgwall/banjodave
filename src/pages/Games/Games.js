@@ -37,7 +37,7 @@ function Games() {
         </div>
         <Suspense fallback={<div>Loading...</div>}>
           <div className="emblem">
-            <img src={emblem} alt="0DG Emblem" />
+            <img src={emblem} alt="0DG Emblem" loading="lazy" />
           </div>
         </Suspense>
       </div>

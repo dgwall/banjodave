@@ -19,6 +19,7 @@ const ZineCard = ({ issue }) => (
           "img/zine-covers/issue-" + String(issue.id).padStart(3, "0") + ".jpg"
         }
         alt={issue.title}
+        loading="lazy"
       />
       <br />
       Read now

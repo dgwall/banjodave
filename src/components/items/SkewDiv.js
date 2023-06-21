@@ -54,7 +54,7 @@ const SkewDiv = ({ imgSrc, dest, title, description }) => {
             transition: "clip-path 2s linear",
           }}
         >
-          <img src={imgSrc} alt={title} />
+          <img src={imgSrc} alt={title} loading="lazy" />
         </div>
         <div className="details">
           <h3>

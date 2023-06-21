@@ -21,12 +21,12 @@
   text-align: center;
   margin: 2rem;
   border-radius: 1rem;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(21, 21, 85, 0.1);
   width: 90%;
   max-width: 100%;
   backdrop-filter: blur(0.2rem);
-  border: 1px solid #151555;
-  box-shadow: 0 0 10rem #151555 inset, 0 0 0.5rem #000;
+  border: 2px solid #151555;
+  box-shadow: 0 0 10rem rgb(21, 21, 85) inset, 0 0 0.5rem #000;
 }
 
 .main-league img {

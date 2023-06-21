@@ -39,7 +39,12 @@ function Zine() {
   return (
     <section>
       <header>
-        <img src={logo} alt="BanjoZine" className="header-logo" />
+        <img
+          src={logo}
+          alt="BanjoZine"
+          className="header-logo"
+          loading="lazy"
+        />
       </header>
 
       <article className="overview">
@@ -56,7 +61,7 @@ function Zine() {
       {error ? (
         <article className="error">
           <h1>
-            <img src={skull} alt="Skull" className="skull" />
+            <img src={skull} alt="Skull" className="skull" loading="lazy" />
             Unseen Forces Have Disrupted Our Connection
           </h1>
           <p>
@@ -79,7 +84,7 @@ function Zine() {
 
       <article>
         <h1>
-          <img src={skull} alt="Skull" className="skull" />
+          <img src={skull} alt="Skull" className="skull" loading="lazy" />
           Patreon
         </h1>
         <p>
@@ -97,7 +102,11 @@ function Zine() {
         rel="noreferrer"
          */}
           <span className="under-construction">
-            <img src="../img/orb_invert_small.gif" alt="Under Construction" />{" "}
+            <img
+              src="../img/orb_invert_small.gif"
+              alt="Under Construction"
+              loading="lazy"
+            />{" "}
             Join our arcane quest on Patreon
           </span>
         </a>

@@ -6,7 +6,7 @@ const Archive = ({ archiveIssues, selectedIssue, handleIssueClick }) => {
   return (
     <article>
       <h1>
-        <img src={skull} alt="Skull" className="skull" />
+        <img src={skull} alt="Skull" className="skull" loading="lazy" />
         Archive
       </h1>
       <p>

@@ -20,11 +20,12 @@ function Doom() {
         src={banner}
         alt="Screenshot of Blazing Beachhead"
         className="banner"
+        loading="lazy"
       />
       <div className="container">
         <article id="more">
           <h2>
-            <img src={gargoyleB} alt="Satyr Gargoyle" />
+            <img src={gargoyleB} alt="Satyr Gargoyle" loading="lazy" />
             <div>
               Selected Maps
               <br />
@@ -90,7 +91,7 @@ function Doom() {
 
         <article id="starlit-abyss">
           <h2>
-            <img src={gargoyleA} alt="Lion Gargoyle" />
+            <img src={gargoyleA} alt="Lion Gargoyle" loading="lazy" />
             <div>
               Starlit Abyss
               <br />
@@ -106,7 +107,6 @@ function Doom() {
                 firepower to make a Cyberdemon blush. While the full release
                 will be yours to wreak havoc with for free, the brave souls who
                 can't resist an early foray into the abyss can subscribe to the{" "}
-                <img src="./img/orb_small.gif" alt="Under Construction" />{" "}
                 <a href="#maincontent" className="under-construction">
                   BanjoDave Patreon
                 </a>
@@ -124,12 +124,9 @@ function Doom() {
               </p>
               <p className="p-desc">DOOM.WAD required</p>
               <div className="dev-progress">
-                <ul>
+                <ul className="under-construction">
                   <li>
-                    <b>
-                      <img src="./img/orb_small.gif" alt="Under Construction" />{" "}
-                      Development
-                    </b>
+                    <b>Development</b>
                   </li>
                   <li>E1M1: Deep Space Telemetry [IN PROGRESS]</li>
                   <li>
@@ -143,8 +140,7 @@ function Doom() {
           </div>
           <div className="button">
             <button className="under-construction">
-              <img src="./img/orb_small.gif" alt="Under Construction" /> Early
-              Access on Patreon!
+              Early Access on Patreon!
             </button>
           </div>
         </article>

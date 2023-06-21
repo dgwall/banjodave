@@ -7,7 +7,11 @@ function N() {
     <section>
       <header>N Maps by DW40</header>
       <div className="overview">
-        <img src="./img/n/nv14.png" alt="N v1.4 by Metanet Software" />
+        <img
+          src="./img/n/nv14.png"
+          alt="N v1.4 by Metanet Software"
+          loading="lazy"
+        />
         <div>
           <p>
             In{" "}
@@ -64,6 +68,7 @@ function N() {
             <img
               src="img/n/panel-rootootoot.jpg"
               alt="rootootoot: 500 maps by DW40 for N v1.4"
+              loading="lazy"
             />
             <br />
             <span>rootootoot</span>
@@ -73,7 +78,7 @@ function N() {
         </div>
         <div>
           <Link to="/n/sol">
-            <img src="img/n/panel-sol.jpg" alt="Sol+144*10mm" />
+            <img src="img/n/panel-sol.jpg" alt="Sol+144*10mm" loading="lazy" />
             <br />
             <span>Sol+144*10mm</span>
           </Link>
@@ -82,7 +87,11 @@ function N() {
         </div>
         <div>
           <Link to="/n/dw40">
-            <img src="img/n/panel-complete.jpg" alt="Complete Works of DW40" />
+            <img
+              src="img/n/panel-complete.jpg"
+              alt="Complete Works of DW40"
+              loading="lazy"
+            />
             <br />
             <span>Complete Works of DW40</span>
           </Link>
@@ -91,7 +100,7 @@ function N() {
         </div>
         <div>
           <Link to="/n/plusplus">
-            <img src="img/n/panel-nplusplus.jpg" alt="N++" />
+            <img src="img/n/panel-nplusplus.jpg" alt="N++" loading="lazy" />
             <br />
             <span>N++</span>
           </Link>

@@ -7,7 +7,7 @@ const CurrentIssue = ({ currentIssue }) => {
   return (
     <article className="current-issue">
       <div className="skull-head">
-        <img src={skull} alt="Skull" className="skull" />
+        <img src={skull} alt="Skull" className="skull" loading="lazy" />
       </div>
       <p className="herald">A new moon rises, heralding the unveiling of...</p>
       <div className="issue-details current">

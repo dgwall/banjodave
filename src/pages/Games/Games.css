@@ -33,6 +33,11 @@
   color: #000;
 }
 
+.main-games h1 {
+  text-align: center;
+  font-size: 3rem;
+}
+
 .main-games h2 {
   margin: 0;
   font-size: 2rem;

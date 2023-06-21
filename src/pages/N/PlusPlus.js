@@ -9,11 +9,7 @@ import {
 function PlusPlus() {
   return (
     <section>
-      <header className="under-construction">
-        <img src="../img/orb_invert.gif" alt="Under Construction" />
-        <br />
-        N++
-      </header>
+      <header className="under-construction">N++</header>
       <div className="pack-overview">
         <a href="https://www.nplusplus.org/" target="_blank" rel="noreferrer">
           N++
@@ -22,10 +18,7 @@ function PlusPlus() {
         Switch, Xbox One, PS4, and Steam. I regularly publish maps for N++ under
         the name BanjoDave.
       </div>
-      <div className="under-construction">
-        <img src="../img/orb_invert_small.gif" alt="Under Construction" /> TODO:
-        Featured Maps
-      </div>
+      <div className="under-construction">Featured Maps</div>
       <article>
         <div className="product">
           <h2 className="header-m">BanjoDave N++ Poster</h2>
@@ -36,6 +29,7 @@ function PlusPlus() {
                   src="../../../img/n/poster-npp.png"
                   alt="BanjoDave N++ Poster"
                   className="lightbox-trigger"
+                  loading="lazy"
                 />
               </LightboxTrigger>
               <LightboxContent
@@ -49,17 +43,10 @@ function PlusPlus() {
             <p>A2, Single Sided, Classic Silk, Matt Lamination.</p>
             <p>
               <a href="#top" target="_blank" rel="noreferrer">
-                <img
-                  src="../img/orb_invert_small.gif"
-                  alt="Under Construction"
-                />{" "}
                 Full-resolution [9920 x 7016px] download on Patreon
               </a>
             </p>
-            <button>
-              <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
-              Cart
-            </button>
+            <button>Add to Cart</button>
           </div>
         </div>
       </article>

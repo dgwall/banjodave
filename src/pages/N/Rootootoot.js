@@ -28,17 +28,17 @@ function Rootootoot() {
       <header>rootootoot</header>
       <article className="pack-overview">
         <p>
-          In 2018, I set out on the monumental task of compiling every map I've
-          ever crafted. From this extensive collection, I painstakingly curated
-          my top 500 - a showcase of my best work. These maps were meticulously
-          arranged in an episodic format mirroring the original game, their
-          order reflecting a thoughtful progression in both difficulty and
-          complexity.
+          In 2018, I set out on the monumental task of compiling every map I'd
+          ever created. From this extensive archive, I painstakingly whittled it
+          down to my favorite 500 - a personal collection reflecting the journey
+          of my creativity. These maps have been presented in an episodic format
+          resembling the original game, with their order indicating a gentle
+          progression in difficulty and complexity.
         </p>
         <p>
-          To further highlight the cream of the crop, I've included a special
-          selection: 'Column R.' This features an elite lineup of 50 maps,
-          handpicked from the original 500 for their standout qualities.
+          A notable mention is 'Column R.' This segment features a unique
+          collection of 50 maps, chosen from the original 500 due to their
+          distinctiveness.
         </p>
         <p>
           And for those seeking an extra thrill, 'Column B' offers a remix that
@@ -68,8 +68,7 @@ function Rootootoot() {
 
       <article>
         <h2 className="header-m  under-construction">
-          <img src="../img/orb_invert.gif" alt="Under Construction" />
-          <br /> rootootoot Collector's Edition PC-CD, Coming Soon!
+          rootootoot Collector's Edition PC-CD, Coming Soon!
         </h2>
         <div className="product">
           <div className="product-carousel">
@@ -77,8 +76,7 @@ function Rootootoot() {
           </div>
           <div className="product-description">
             <h2 className="header-d under-construction">
-              <img src="../img/orb_invert.gif" alt="Under Construction" />
-              <br /> rootootoot Collector's Edition PC-CD, Coming Soon!
+              rootootoot Collector's Edition PC-CD, Coming Soon!
             </h2>
             <p>
               Encased in a classic jewel case and embellished with the exclusive
@@ -88,10 +86,7 @@ function Rootootoot() {
               tactile and visual experience that will take you back to the
               golden days of gaming.
             </p>
-            <button>
-              <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
-              Cart
-            </button>
+            <button>Add to Cart</button>
           </div>
         </div>
       </article>
@@ -106,6 +101,7 @@ function Rootootoot() {
                   src="../../../img/n/poster-rootootoot-500.png"
                   alt="rootootoot 500 poster"
                   className="lightbox-trigger"
+                  loading="lazy"
                 />
               </LightboxTrigger>
               <LightboxContent
@@ -119,17 +115,10 @@ function Rootootoot() {
             <p>A3, Single Sided, Classic Silk. All 500 maps.</p>
             <p>
               <a href="#top" target="_blank" rel="noreferrer">
-                <img
-                  src="../img/orb_invert_small.gif"
-                  alt="Under Construction"
-                />{" "}
                 Full-resolution [4960 x 3508px] download on Patreon
               </a>
             </p>
-            <button>
-              <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
-              Cart
-            </button>
+            <button>Add to Cart</button>
           </div>
         </div>
         <div className="product">
@@ -141,6 +130,7 @@ function Rootootoot() {
                   src="../../../img/n/poster-rootootoot-50.png"
                   alt="rootootoot 50 poster"
                   className="lightbox-trigger"
+                  loading="lazy"
                 />
               </LightboxTrigger>
               <LightboxContent
@@ -154,17 +144,10 @@ function Rootootoot() {
             <p>A3, Single Sided, Classic Silk. Column R.</p>
             <p>
               <a href="#top" target="_blank" rel="noreferrer">
-                <img
-                  src="../img/orb_invert_small.gif"
-                  alt="Under Construction"
-                />{" "}
                 Full-resolution [3508 x 4960px] download on Patreon
               </a>
             </p>
-            <button>
-              <img src="../img/orb_small.gif" alt="Under Construction" /> Add to
-              Cart
-            </button>
+            <button>Add to Cart</button>
           </div>
         </div>
       </article>

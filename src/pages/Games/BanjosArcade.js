@@ -1,7 +1,7 @@
 import React from "react";
 import "./Games.css";
-import SkewDiv from "../../components/items/SkewDiv";
-
+//import SkewDiv from "../../components/items/SkewDiv";
+/*
 const gameData = [
   {
     stage: "cs",
@@ -57,7 +57,7 @@ const gameData = [
   },
   // Add more game data objects here as needed
 ];
-
+*/
 function BanjosArcade() {
   return (
     <section>
@@ -70,7 +70,11 @@ function BanjosArcade() {
       <div className="overview-container">
         <div className="overview">
           <h2>
-            <img src="/img/0dg/banner-ba.png" alt="Banjo's Arcade Banner" />
+            <img
+              src="/img/0dg/banner-ba.png"
+              alt="Banjo's Arcade Banner"
+              loading="lazy"
+            />
           </h2>
           <p>
             Prepare to reignite your passion for classic gaming with{" "}
@@ -90,18 +94,23 @@ function BanjosArcade() {
             Hold your breath for <span>Kósmoptasía,</span> a nebulous new
             addition. A neon-soaked ride down the pixelated path of retro glory!
           </p>
-          <img src="../img/orb.gif" alt="Under Construction" />
         </div>
         <div className="emblem">
-          <img src="/img/0dg/tile-ba.png" alt="Banjo's Arcade Cover" />
+          <img
+            src="/img/0dg/tile-ba.png"
+            alt="Banjo's Arcade Cover"
+            loading="lazy"
+          />
         </div>
       </div>
 
       <section className="content">
         <article>
+          <h1 className="under-construction">Under Construction</h1>
+          {/*
           <div className="game-tiles">
             {gameData
-              .filter((game) => game.stage === "free" || game.stage === "cs")
+              .filter((game) => game.stage === "free")
               .map((game, index) => (
                 <SkewDiv
                   key={index}
@@ -112,21 +121,7 @@ function BanjosArcade() {
                   description={game.description}
                 />
               ))}
-          </div>
-          <div className="game-tiles">
-            {gameData
-              .filter((game) => game.stage === "tba")
-              .map((game, index) => (
-                <SkewDiv
-                  key={index}
-                  dest={game.dest}
-                  imgSrc={game.imgSrc}
-                  altText={game.title}
-                  title={game.title}
-                  description={game.description}
-                />
-              ))}
-          </div>
+              </div>*/}
         </article>
       </section>
     </section>

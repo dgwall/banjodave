@@ -4,11 +4,7 @@ import "./N.css";
 function Sol() {
   return (
     <section>
-      <header className="under-construction">
-        <img src="../img/orb_invert.gif" alt="Under Construction" />
-        <br />
-        Sol+144*10mm
-      </header>
+      <header className="under-construction">Sol+144*10mm</header>
       <div className="pack-overview">
         <p>
           Get ready for the launch of <b>Sol+144*10mm</b>, an extensive map pack
