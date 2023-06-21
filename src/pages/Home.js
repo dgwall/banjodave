@@ -37,21 +37,8 @@ function Home() {
       <article>
         <h2>Stay Updated</h2>
         <p>
-          Ever thought about diving into the gritty details of game creation or
-          getting a sneak peek of my games, levels, and{" "}
-          <Link to="/zine">BanjoZine</Link> issues before they hit the public?
-          That's exactly what I'll be offering to my Patreon community
-          (Launching Soon). If this seems like your kind of deal, It would be
-          sick if you could{" "}
-          <a
-            href="https://www.patreon.com/banjodave"
-            target="_blank"
-            rel="noreferrer"
-          >
-            join us on Patreon
-          </a>
-          . If you just want to keep tabs on what's going down or sneak a peek
-          at my day-to-day grind, join the{" "}
+          If you want to keep tabs on what's going down or sneak a peek at my
+          day-to-day grind, join the{" "}
           <a
             href="https://discord.com/invite/W9UtSAYQXR"
             target="_blank"

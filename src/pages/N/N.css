@@ -77,14 +77,12 @@
 }
 
 .main-n .download {
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
   text-align: center;
   font-size: 2rem;
 }
 
 .main-n .download a {
-  display: block;
+  display: inline-block;
   margin: 24px;
 }
 

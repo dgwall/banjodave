@@ -29,6 +29,10 @@
   font-weight: bold;
 }
 
+.main-games .overview {
+  color: #fff;
+}
+
 .main-games .overview span {
   color: #000;
 }
@@ -39,6 +43,7 @@
 }
 
 .main-games h2 {
+  color: #fcd116;
   margin: 0;
   font-size: 2rem;
   font-weight: normal;

@@ -53,10 +53,10 @@ function N() {
           <p>
             The maps on this website and on NUMA are designed for version 1.4 of
             the game, released in 2005. You can find a free download of this
-            version here: &gt;&gt;
+            version here: &gt;&gt;{" "}
             <a href="n_v1pc.zip" title="n_v1pc.zip 1.26 MB" download>
               Download N v1.4 for PC
-            </a>
+            </a>{" "}
             &lt;&lt;
           </p>
         </div>

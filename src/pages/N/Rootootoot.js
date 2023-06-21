@@ -51,18 +51,24 @@ function Rootootoot() {
       </article>
 
       <article className="download">
-        <a
-          href="https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar"
-          title="DW40_rootootoot.zip [1.27 MB]"
-        >
-          &gt; rootootoot free download (game included!) &lt;
-        </a>
+        <p>Free Download</p>
+        <p>
+          &gt;&gt;
+          <a
+            href="https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar"
+            title="DW40_rootootoot.zip [1.27 MB]"
+          >
+            rootootoot (pre-packaged with game!)
+          </a>
+          &lt;&lt;
+        </p>
+        <p>or</p>
         <a
           href="https://packs.droni.es/47f49e3074ce84b685"
           target="_blank"
           rel="noreferrer"
         >
-          or browse maps on packs.droni.es
+          browse maps on packs
         </a>
       </article>
 

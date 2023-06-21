@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Doom.css";
 import ScreenshotsCarousel from "../../components/modals/ScreenshotsCarousel";
 import screensSA from "./screensSA.json";
@@ -107,9 +108,9 @@ function Doom() {
                 firepower to make a Cyberdemon blush. While the full release
                 will be yours to wreak havoc with for free, the brave souls who
                 can't resist an early foray into the abyss can subscribe to the{" "}
-                <a href="#maincontent" className="under-construction">
+                <Link to="/thank-you" className="under-construction">
                   BanjoDave Patreon
-                </a>
+                </Link>
                 , granting you exclusive access to individual maps as they roll
                 hot off the anvil. I will also be posting regular development
                 updates to my{" "}
@@ -124,7 +125,7 @@ function Doom() {
               </p>
               <p className="p-desc">DOOM.WAD required</p>
               <div className="dev-progress">
-                <ul className="under-construction">
+                <ul>
                   <li>
                     <b>Development</b>
                   </li>

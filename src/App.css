@@ -126,6 +126,10 @@ main {
   text-shadow: 0 1px 0 #fff;
 }
 
+.main .overview p:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
 .main .overview p .title {
   color: #000;
 }
@@ -139,7 +143,6 @@ main {
 }
 
 .main article:not(.overview) p {
-  text-indent: 3rem;
   margin-bottom: 0.5rem;
 }
 
