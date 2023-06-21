@@ -244,7 +244,8 @@
     display: none;
   }
   .header {
-    background-image: url(../../../assets/images/mobile-header.webp);
+    background-image: url("../../../../public/img/mobile-header.webp"),
+      url("../../../../public/img/mobile-header.png");
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;

@@ -1,7 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
-import logo from "../../../assets/images/logo400.webp";
 import icons from "../../../assets/images/icon";
 import { menuItems } from "../menuItems.js";
 
@@ -111,7 +110,14 @@ function Header() {
   return (
     <nav className="header">
       <NavLink to="/" className="link-logo">
-        <img src={logo} alt="Logo of BanjoDave" className="logo" />
+        <picture>
+          <source type="image/webp" srcset="./img/logo400.webp" />
+          <img
+            src="./img/logo400.png"
+            alt="Logo of BanjoDave"
+            className="logo"
+          />
+        </picture>
       </NavLink>
       <a href="#maincontent" className="skip-link">
         Skip to main content

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import "./Doom.css";
 import ScreenshotsCarousel from "../../components/modals/ScreenshotsCarousel";
 import screensSA from "./screensSA.json";
-import banner from "../../assets/images/doom/banner.jpg";
 import gargoyleA from "../../assets/images/doom/icon-1.webp";
 import gargoyleB from "../../assets/images/doom/icon-2.webp";
 
@@ -18,7 +17,11 @@ function Doom() {
         <h1>BanjoDOOM</h1>
       </header>
       <img
-        src={banner}
+        srcSet="
+      /img/doom/banner-min.jpg 768w,
+      /img/doom/banner.png 1280w"
+        sizes="(max-width: 768px) 768px, 1280px"
+        src="/img/doom/banner.png"
         alt="Screenshot of Blazing Beachhead"
         className="banner"
         loading="lazy"

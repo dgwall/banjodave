@@ -260,7 +260,7 @@
       transparent 66.6%,
       black
     ),
-    url("../../../public/img/doom-cards/dumb.jpg");
+    url("../../../public/img/doom/card-dumb.jpg");
 }
 
 .main-doom #atv {
@@ -270,7 +270,7 @@
       transparent 66.6%,
       black
     ),
-    url("../../../public/img/doom-cards/atv.jpg");
+    url("../../../public/img/doom/card-atv.jpg");
 }
 
 .main-doom #bb {
@@ -280,7 +280,7 @@
       transparent 66.6%,
       black
     ),
-    url("../../../public/img/doom-cards/bb.jpg");
+    url("../../../public/img/doom/card-bb.jpg");
 }
 
 .main-doom #m {
@@ -290,7 +290,7 @@
       transparent 66.6%,
       black
     ),
-    url("../../../public/img/doom-cards/m.jpg");
+    url("../../../public/img/doom/card-m.jpg");
 }
 
 @media screen and (max-width: 768px) {
