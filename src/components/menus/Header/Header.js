@@ -98,6 +98,7 @@ function Header() {
   };
 
   const handleDropdownFocus = () => {
+    clearTimer(closeTimerRef);
     setIsDropdownOpen(true);
   };
 
@@ -136,14 +137,13 @@ function Header() {
         className={`dropdown link${isDropdownOpen ? " open" : ""}`}
         onMouseEnter={handleDropdownHover}
         onMouseLeave={handleDropdownBlur}
-        onBlur={handleDropdownBlur}
-        onMouseDown={toggleDropdown}
         onFocus={handleDropdownFocus}
+        onBlur={handleDropdownBlur}
         aria-haspopup="true"
         aria-expanded={isDropdownOpen}
         aria-label="Navigate to other pages"
       >
-        <div className="dropdown-link">
+        <div onMouseDown={toggleDropdown} className="dropdown-link">
           <div>&#9776;</div>
         </div>
         <div className="dropdown-content">

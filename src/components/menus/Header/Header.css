@@ -172,11 +172,9 @@
   position: absolute;
   top: 100%;
   right: 0;
-  min-width: 200px;
-  width: 100vw;
   padding-top: 1px;
   background: radial-gradient(circle at top right, #c1c1c1, lightgray);
-  border-bottom: 1px solid #92908c;
+  border-bottom: 1px solid darkgray;
   z-index: 10;
   overflow: hidden;
   text-align: right;
@@ -240,6 +238,9 @@
     border-left: 1px solid darkgray;
     border-bottom: 1px solid #92908c;
   }
+  .dropdown-content {
+    width: 100vw;
+  }
   .logo {
     display: none;
   }
@@ -257,6 +258,18 @@
   }
 }
 @media not screen and (max-width: 768px) {
+  .dropdown {
+    min-width: 16rem;
+    max-width: 20vw;
+  }
+
+  .dropdown-content {
+    min-width: calc(16rem + 1px);
+    width: calc(20vw + 1px);
+    border-left: 1px solid darkgray;
+    border-radius: 0 0 0 1rem;
+  }
+
   .header {
     padding-left: 5rem;
   }
