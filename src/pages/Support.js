@@ -2,11 +2,11 @@ import React from "react";
 
 function Support() {
   return (
-    <section className="under-construction">
-      <header>Support My Work</header>
-      <div class="overview">
-        Under Construction. TO-DO: Patreon. Donate. More ways: subscribe, like,
-        comment, share.
+    <section>
+      <header className="under-construction">Support My Work</header>
+      <div className="overview">
+        Under Construction. Stay tuned for various Patreon benefits: early
+        access, dev vlogs, sneak previews, etc.
       </div>
     </section>
   );

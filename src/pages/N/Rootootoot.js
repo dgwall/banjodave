@@ -86,7 +86,7 @@ function Rootootoot() {
               tactile and visual experience that will take you back to the
               golden days of gaming.
             </p>
-            <button>Add to Cart</button>
+            <button>Coming Soon</button>
           </div>
         </div>
       </article>
@@ -118,7 +118,7 @@ function Rootootoot() {
                 Full-resolution [4960 x 3508px] download on Patreon
               </a>
             </p>
-            <button>Add to Cart</button>
+            <button>Coming Soon</button>
           </div>
         </div>
         <div className="product">
@@ -147,7 +147,7 @@ function Rootootoot() {
                 Full-resolution [3508 x 4960px] download on Patreon
               </a>
             </p>
-            <button>Add to Cart</button>
+            <button>Coming Soon</button>
           </div>
         </div>
       </article>

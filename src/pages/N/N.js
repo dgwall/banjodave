@@ -78,9 +78,9 @@ function N() {
         </div>
         <div>
           <Link to="/n/sol">
-            <img src="img/n/panel-sol.jpg" alt="Sol+144*10mm" loading="lazy" />
+            <img src="img/n/panel-sol.jpg" alt="sol+144*10mm" loading="lazy" />
             <br />
-            <span>Sol+144*10mm</span>
+            <span>sol+144*10mm</span>
           </Link>
           <br />
           NEW maps for 2023. Coming soon.

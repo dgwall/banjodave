@@ -46,7 +46,7 @@ function PlusPlus() {
                 Full-resolution [9920 x 7016px] download on Patreon
               </a>
             </p>
-            <button>Add to Cart</button>
+            <button>Coming Soon</button>
           </div>
         </div>
       </article>

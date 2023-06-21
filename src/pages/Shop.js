@@ -2,10 +2,11 @@ import React from "react";
 
 function Shop() {
   return (
-    <section className="under-construction">
-      <header>Shop BanjoWare</header>
-      <div class="overview">
-        Under Construction. TO-DO: Pick an e-commerce platform.
+    <section>
+      <header className="under-construction">Shop BanjoWare</header>
+      <div className="overview">
+        Under Construction. Stay tuned for stickers, posters, CDs, Zines, and
+        more!
       </div>
     </section>
   );

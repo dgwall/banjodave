@@ -1,5 +1,5 @@
 import React from "react";
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
@@ -16,9 +16,7 @@ function Home() {
         </p>
       </article>
 
-      <h1 className="under-construction">Under Construction</h1>
-      {/*
-      <article className="under-construction">
+      <article>
         <h2>0DGames</h2>
         <p>
           <Link to="/0dgames">0DGames</Link> is where my game development
@@ -27,7 +25,7 @@ function Home() {
         </p>
       </article>
 
-      <article className="under-construction">
+      <article>
         <h2>Level Design</h2>
         <p>
           I create maps for the classic games DOOM by id Software and N by
@@ -36,7 +34,7 @@ function Home() {
         </p>
       </article>
 
-      <article className="under-construction">
+      <article>
         <h2>Stay Updated</h2>
         <p>
           Ever thought about diving into the gritty details of game creation or
@@ -89,7 +87,6 @@ function Home() {
           and outs of my creations.
         </p>
       </article>
-  */}
     </section>
   );
 }
