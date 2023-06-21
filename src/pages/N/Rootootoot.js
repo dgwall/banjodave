@@ -51,16 +51,14 @@ function Rootootoot() {
       </article>
 
       <article className="download">
-        <p>Free Download</p>
+        <p>free download</p>
         <p>
-          &gt;&gt;
           <a
             href="https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar"
             title="DW40_rootootoot.zip [1.27 MB]"
           >
             rootootoot (pre-packaged with game!)
           </a>
-          &lt;&lt;
         </p>
         <p>or</p>
         <a

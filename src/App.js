@@ -44,7 +44,19 @@ function App() {
     <Router>
       <ScrollToTop />
       <Header />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense
+        fallback={
+          <div className="main">
+            <div className="page">
+              <div className="loading">
+                <img src="/img/orb.gif" alt="orb" loading="lazy" />
+                <br />
+                Loading...
+              </div>
+            </div>
+          </div>
+        }
+      >
         <Routes>
           {routes.map(({ path, mainClass, Component }) => (
             <Route

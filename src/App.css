@@ -48,6 +48,11 @@ main {
   color: #333;
 }
 
+.main .page .loading {
+  text-align: center;
+  padding-top: 10rem;
+}
+
 .under-construction {
   background: url("./assets/images/uc.png");
   background-clip: text;

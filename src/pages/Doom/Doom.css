@@ -203,10 +203,16 @@
 }
 
 .main-doom .card h3 {
+  color: #e4d2cd;
   margin-bottom: auto;
-  text-shadow: 0 0 0.2rem black;
+  font-size: 1.4rem;
+  text-shadow: 0 -0.05rem 0.2rem black;
   font-weight: normal;
   padding-bottom: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 4rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.25);
 }
 

@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import "./Header.css";
 import icons from "../../../assets/images/icon";
@@ -38,6 +39,9 @@ function Header() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isClickEnabled, setIsClickEnabled] = useState(true);
 
+  // For detecting navigation changes
+  const location = useLocation();
+
   // Filtering menuItems to exclude Home item and storing the result
   const filteredMenuItems = menuItems.filter((item) => item.text !== "Home");
 
@@ -73,6 +77,11 @@ function Header() {
       );
     }
   }, [isDropdownOpen]);
+
+  // Close dropdown when navigating
+  useEffect(() => {
+    setIsDropdownOpen(false);
+  }, [location]);
 
   // Function to toggle dropdown open/close state
   const toggleDropdown = (event) => {
@@ -111,7 +120,7 @@ function Header() {
     <nav className="header">
       <NavLink to="/" className="link-logo">
         <picture>
-          <source type="image/webp" srcset="./img/logo400.webp" />
+          <source type="image/webp" srcSet="./img/logo400.webp" />
           <img
             src="./img/logo400.png"
             alt="Logo of BanjoDave"
