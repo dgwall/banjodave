@@ -1,8 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./N.css";
+//import NMapOrganiser from "../../components/menus/NMapOrganiser/NMapOrganiser";
 
 function N() {
+  //const dataSource = process.env.PUBLIC_URL + "/nMapData.json";
+
   return (
     <section>
       <header>N Maps by DW40</header>
@@ -61,6 +64,9 @@ function N() {
           </p>
         </div>
       </div>
+
+      {/*<NMapOrganiser dataSource={dataSource} />*/}
+
       <h2>Map Packs</h2>
       <div className="panels">
         <div>

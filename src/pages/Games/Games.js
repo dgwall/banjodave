@@ -46,9 +46,9 @@ function Games() {
         <article>
           <div className="game-tiles">
             <Suspense fallback={<div>Loading...</div>}>
-              {gameData.map((game, index) => (
+              {gameData.map((game) => (
                 <SkewDiv
-                  key={index}
+                  key={game.title}
                   dest={game.dest}
                   imgSrc={game.imgSrc}
                   altText={game.title}
