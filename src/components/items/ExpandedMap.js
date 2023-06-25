@@ -2,30 +2,44 @@ import React from "react";
 import VideoPlayer from "../shared/VideoPlayer";
 import ScreenshotCarousel from "../shared/ScreenshotCarousel";
 
-const ExpandedMap = ({ product }) => {
+const ExpandedMap = ({ product, handleTagClick, selectedTag }) => {
   return (
-    <div>
-      <h2>{product.title}</h2>
-      <p>{product.description}</p>
-      <div>
-        {product.tags.map((tag) => (
-          <span key={tag}>{tag}</span>
-        ))}
+    <div className="map-item-selected">
+      <div className="media">
+        {product.video ? (
+          <VideoPlayer src={product.mediaSrc} />
+        ) : (
+          <ScreenshotCarousel
+            type="n"
+            productId={product.id}
+            screenshotCount={product.screenshotCount}
+          />
+        )}
       </div>
-      {product.mediaType === "video" ? (
-        <VideoPlayer src={product.mediaSrc} />
-      ) : (
-        <ScreenshotCarousel screenshots={product.mediaSrc} />
-      )}
-      {product.mapData ? (
-        <button onClick={() => navigator.clipboard.writeText(product.mapData)}>
-          Copy Map Data
-        </button>
-      ) : (
-        <a href={product.download} download>
-          Download
-        </a>
-      )}
+      <div className="details">
+        <div className="tags">
+          {product.tags.map((tag) => (
+            <span
+              key={tag}
+              className={selectedTag === tag ? "selected" : ""}
+              onClick={() => handleTagClick(tag)}
+            >
+              {tag}
+            </span>
+          ))}
+        </div>
+        <h2>{product.title}</h2>
+        <p>{product.description}</p>
+        {product.buttons && (
+          <div className="buttons">
+            {product.buttons.map((button) => (
+              <a href={button.href} target="_blank" rel="noreferrer">
+                {button.label}
+              </a>
+            ))}
+          </div>
+        )}
+      </div>
     </div>
   );
 };

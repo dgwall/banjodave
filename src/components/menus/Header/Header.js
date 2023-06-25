@@ -120,9 +120,9 @@ function Header() {
     <nav className="header">
       <NavLink to="/" className="link-logo">
         <picture>
-          <source type="image/webp" srcSet="./img/logo400.webp" />
+          <source type="image/webp" srcSet="/img/logo400.webp" />
           <img
-            src="./img/logo400.png"
+            src="/img/logo400.png"
             alt="Logo of BanjoDave"
             className="logo"
           />

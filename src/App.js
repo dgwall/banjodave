@@ -6,10 +6,6 @@ import Footer from "./components/menus/Footer/Footer";
 import ScrollToTop from "./components/utils/ScrollToTop";
 
 const Home = React.lazy(() => import("./pages/Home"));
-const Rootootoot = React.lazy(() => import("./pages/N/Rootootoot"));
-const Sol = React.lazy(() => import("./pages/N/Sol"));
-const PlusPlus = React.lazy(() => import("./pages/N/PlusPlus"));
-const Dw40 = React.lazy(() => import("./pages/N/Dw40"));
 const N = React.lazy(() => import("./pages/N/N"));
 const League = React.lazy(() => import("./pages/League/League"));
 const Doom = React.lazy(() => import("./pages/Doom/Doom"));
@@ -27,11 +23,7 @@ const routes = [
   { path: "/0dgames", mainClass: "-games", Component: Games },
   { path: "/doom", mainClass: "-doom", Component: Doom },
   { path: "/banjodoom", mainClass: "-doom", Component: Doom },
-  { path: "/n/rootootoot", mainClass: "-n", Component: Rootootoot },
-  { path: "/n/sol", mainClass: "-n", Component: Sol },
-  { path: "/n/plusplus", mainClass: "-n", Component: PlusPlus },
-  { path: "/n/DW40", mainClass: "-n", Component: Dw40 },
-  { path: "/n", mainClass: "-n", Component: N },
+  { path: "/n/*", mainClass: "-n", Component: N },
   { path: "/league", mainClass: "-league", Component: League },
   { path: "/zine", mainClass: "-zine", Component: Zine },
   { path: "/thank-you", mainClass: "", Component: Support },

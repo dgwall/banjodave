@@ -3,7 +3,6 @@
   background-image: url("../../assets/images/league/bg.png");
   background-repeat: repeat;
   background-attachment: fixed;
-  min-height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -17,7 +16,9 @@
 }
 
 .main-league .page {
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   margin: 2rem;
   border-radius: 1rem;

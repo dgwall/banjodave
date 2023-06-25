@@ -1,10 +1,15 @@
 import { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import filterSimilarProducts from "../components/menus/filterSimilarProducts";
+import scrollToElement from "../components/utils/scrollToElement";
 
 const useProductData = (dataSource) => {
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [similarProducts, setSimilarProducts] = useState([]);
+  const [selectedTag, setSelectedTag] = useState(null);
+
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetch(dataSource)
@@ -16,7 +21,7 @@ const useProductData = (dataSource) => {
       })
       .then((data) => {
         setProducts(data);
-        setSelectedProduct(data[0]);
+        setSimilarProducts(data);
       })
       .catch((error) => console.error("Error fetching product data:", error));
   }, [dataSource]);
@@ -28,16 +33,36 @@ const useProductData = (dataSource) => {
     }
   }, [selectedProduct, products]);
 
+  useEffect(() => {
+    if (selectedTag) {
+      setSimilarProducts((prevSimilarProducts) => {
+        return [...prevSimilarProducts].sort((a, b) => {
+          return b.tags.includes(selectedTag) - a.tags.includes(selectedTag);
+        });
+      });
+    }
+  }, [selectedTag]);
+
   const handleProductClick = (product) => {
     setSelectedProduct(product);
-
-    const productListElement = document.getElementById("product-list");
-    if (productListElement) {
-      productListElement.scrollIntoView({ behavior: "smooth" });
-    }
+    scrollToElement("product-list");
+    navigate(`/n/${product.id}`);
   };
 
-  return { selectedProduct, similarProducts, handleProductClick };
+  const handleTagClick = (tag) => {
+    setSelectedTag(tag);
+    scrollToElement("recommended");
+  };
+
+  return {
+    products,
+    setSelectedProduct,
+    selectedProduct,
+    similarProducts,
+    handleProductClick,
+    handleTagClick,
+    selectedTag,
+  };
 };
 
 export default useProductData;
