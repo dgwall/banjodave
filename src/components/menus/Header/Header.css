@@ -245,8 +245,7 @@
     display: none;
   }
   .header {
-    background-image: url("../../../../public/img/mobile-header.webp"),
-      url("../../../../public/img/mobile-header.png");
+    background-image: url("../../../../public/img/mobile-header.webp");
     background-position: left;
     background-size: cover;
     background-repeat: no-repeat;

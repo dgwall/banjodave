@@ -118,7 +118,7 @@ function Header() {
 
   return (
     <nav className="header">
-      <NavLink to="/" className="link-logo">
+      <NavLink to="/" className="link-logo" aria-label="Go to the Homepage">
         <picture>
           <source type="image/webp" srcSet="/img/logo400.webp" />
           <img

@@ -17,11 +17,7 @@ function N() {
             <article>
               <header>N Maps by DW40</header>
               <div className="overview">
-                <img
-                  src="/img/n/nv14.png"
-                  alt="N v1.4 by Metanet Software"
-                  loading="lazy"
-                />
+                <img src="/img/n/nv14.png" alt="N v1.4 by Metanet Software" />
                 <div>
                   <p>
                     In{" "}
