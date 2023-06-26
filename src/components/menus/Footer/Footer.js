@@ -60,12 +60,6 @@ const socials = [
     extra: true,
   },
   {
-    href: "https://www.tiktok.com/@banjodave",
-    title: "TikTok",
-    icon: "tiktok",
-    extra: true,
-  },
-  {
     href: "https://www.twitch.tv/banjodave",
     title: "Twitch",
     icon: "twitch",

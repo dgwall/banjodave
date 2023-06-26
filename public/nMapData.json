@@ -3,13 +3,13 @@
     "id": "rootootoot",
     "title": "rootootoot",
     "tags": ["Map Pack", "rootootoot", "500 Maps+", "NReality", "Remix", "Hard", "column r"],
-    "description": "In 2018, I set out on the monumental task of compiling every map I've ever crafted. From this extensive collection, I painstakingly curated my top 500 - a showcase of my best work. These maps were then meticulously structured into an episodic format matching the original game. Their arrangement reflects a progression in both difficulty and complexity.",
+    "description": "In 2018, I set out on the monumental task of compiling every map I've ever crafted. From this extensive collection, I painstakingly curated my top 500 - a showcase of my best work. These maps were then meticulously structured into an episodic format matching the original game reflecting a progression in both difficulty and complexity.",
     "buttons": [{"href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar", "label":"rootootoot (free download pre-packaged with game!)"},
                 {"href": "https://packs.droni.es/47f49e3074ce84b685", "label": "browse maps on packs"}]
   },
   {
     "id": "rootootoot-cd",
-    "title": "rootootoot collector's edition PC-CD Coming Soon",
+    "title": "rootootoot collector's edition PC-CD (Coming Soon)",
     "tags": [
       "BanjoWare",
       "PC-CD",
@@ -21,5 +21,11 @@
     ],
     "description": "Encased in a classic jewel case and embellished with the exclusive BanjoWare sticker. Not just a decorative piece, this CD includes the full rootootoot map pack. Even though we live in the age of digital downloads, this physical copy offers an irreplaceable tactile and visual experience that will take you back to the golden days of gaming.",
     "screenshotCount": 3
+  },
+  {
+    "id": "poster-rootootoot-50",
+    "title": "rootootoot column r poster (Coming Soon)",
+    "tags": ["BanjoWare", "Poster", "rootootoot", "column r"],
+    "description": "A3, Single Sided, Classic Silk. column r."
   }
 ]

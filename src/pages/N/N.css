@@ -296,12 +296,17 @@
   align-items: center;
   position: relative;
   height: 30rem;
+  width: 100%;
+  max-width: calc(100vw - 96px);
   aspect-ratio: 1.32;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 .main-screenshot {
-  max-width: 100%;
+  max-width: calc(100vw - 96px);
+  object-fit: contain;
+  height: auto;
+  width: 100%;
   max-height: 30rem;
 }
 
@@ -417,6 +422,14 @@
     margin-left: 6px;
   }
 
+  .main-n .map-item-selected .details .buttons {
+    flex-direction: column;
+  }
+
+  .main-n .map-item-selected .details .buttons a {
+    margin: 12px 0;
+  }
+
   .main-n .map-item .tags span {
     margin-left: 6px;
     margin-top: 6px;
@@ -510,10 +523,11 @@
 
   .main-n .map-item-selected .details {
     padding-left: 24px;
+    width: 100%;
   }
 
   .main-n .media,
   .map-item-selected .details {
-    width: 100%;
+    width: 50%;
   }
 }
