@@ -2,30 +2,51 @@
   {
     "id": "rootootoot",
     "title": "rootootoot",
-    "tags": ["Map Pack", "rootootoot", "500 Maps+", "NReality", "Remix", "Hard", "column r"],
+    "tags": ["550 Map Pack", "Map Pack", "rootootoot"],
     "description": "In 2018, I set out on the monumental task of compiling every map I've ever crafted. From this extensive collection, I painstakingly curated my top 500 - a showcase of my best work. These maps were then meticulously structured into an episodic format matching the original game reflecting a progression in both difficulty and complexity.",
-    "buttons": [{"href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar", "label":"rootootoot (free download pre-packaged with game!)"},
+    "buttons": [{"type": "download", "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar", "label":"rootootoot (free download pre-packaged with game!)"},
                 {"href": "https://packs.droni.es/47f49e3074ce84b685", "label": "browse maps on packs"}]
   },
   {
+    "id": "sol",
+    "title": "sol",
+    "tags": ["244 Map Pack", "Map Pack", "sol"],
+    "description": "The sol map pack will feature maps with difficulty levels that range from very easy to hard, ensuring a suitable challenge for everyone from beginners to experienced players. Each map will also house three hidden trapdoor switches, serving as bonus objectives for those players who love to explore and conquer."
+  },
+  {
+    "id": "DW40",
+    "title": "Complete Works of DW40",
+    "tags": ["2000+ Map Pack", "Map Pack", "Patreon"],
+    "description": "My best efforts to catalogue a decade of mapping. Every map I've ever made in one massive pack. Includes the best and worst of DW40."
+  },
+  {
     "id": "rootootoot-cd",
-    "title": "rootootoot collector's edition PC-CD (Coming Soon)",
+    "title": "rootootoot collector's edition",
     "tags": [
-      "BanjoWare",
       "PC-CD",
+      "BanjoWare",
       "Map Pack",
-      "rootootoot",
-      "500 Maps+",
-      "Remix",
-      "column r"
+      "rootootoot"
     ],
-    "description": "Encased in a classic jewel case and embellished with the exclusive BanjoWare sticker. Not just a decorative piece, this CD includes the full rootootoot map pack. Even though we live in the age of digital downloads, this physical copy offers an irreplaceable tactile and visual experience that will take you back to the golden days of gaming.",
+    "description": "Encased in a classic jewel case and embellished with the exclusive BanjoWare sticker. Not just a decorative piece, this CD includes the full rootootoot map pack. Even though we live in the age of digital downloads, this physical copy offers an irreplaceable tactile and visual experience that will take you back to the golden days of gaming. (Coming Soon)",
     "screenshotCount": 3
   },
   {
     "id": "poster-rootootoot-50",
-    "title": "rootootoot column r poster (Coming Soon)",
-    "tags": ["BanjoWare", "Poster", "rootootoot", "column r"],
-    "description": "A3, Single Sided, Classic Silk. column r."
+    "title": "column r",
+    "tags": ["Poster", "BanjoWare", "rootootoot", "column r"],
+    "description": "A3, Single Sided, Classic Silk. column r. (Coming Soon)"
+  },
+  {
+    "id": "poster-rootootoot-500",
+    "title": "rootootoot",
+    "tags": ["Poster", "BanjoWare", "rootootoot"],
+    "description": "A3, Single Sided, Classic Silk. All 500 maps. (Coming Soon)"
+  },
+  {
+    "id": "plusplus",
+    "title": "N++",
+    "tags": ["Poster", "BanjoWare", "N++"],
+    "description": "A2, Single Sided, Classic Silk, Matt Lamination. (Coming Soon)"
   }
 ]

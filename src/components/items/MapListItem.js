@@ -19,7 +19,8 @@ const MapListItem = ({ product, onMapClick, handleTagClick, selectedTag }) => {
       </div>
       <div className="details">
         <h3>
-          {product.tags[0]}: {product.title}
+          {product.tags[0]}
+          <br /> {product.title}
         </h3>
         <p>{truncateString(product.description, 90)}</p>
         <div className="tags">

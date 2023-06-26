@@ -45,7 +45,6 @@ const useProductData = (dataSource) => {
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
-    scrollToElement("product-list");
     navigate(`/n/${product.id}`);
   };
 

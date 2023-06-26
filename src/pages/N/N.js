@@ -8,8 +8,6 @@ function N() {
 
   return (
     <section>
-      <header className="under-construction">Under Construction</header>
-      <br />
       <Routes>
         <Route
           path="/"
