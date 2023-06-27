@@ -3,13 +3,14 @@ import { useNavigate } from "react-router-dom";
 import filterSimilarProducts from "../components/menus/filterSimilarProducts";
 import scrollToElement from "../components/utils/scrollToElement";
 
-const useProductData = (dataSource) => {
+const useProductData = (dataSource, type) => {
   const [products, setProducts] = useState([]);
   const [selectedProduct, setSelectedProduct] = useState(null);
   const [similarProducts, setSimilarProducts] = useState([]);
   const [selectedTag, setSelectedTag] = useState(null);
 
   const navigate = useNavigate();
+  const dataCategory = type;
 
   useEffect(() => {
     fetch(dataSource)
@@ -45,7 +46,7 @@ const useProductData = (dataSource) => {
 
   const handleProductClick = (product) => {
     setSelectedProduct(product);
-    navigate(`/n/${product.id}`);
+    navigate(`/${dataCategory}/${product.id}`);
   };
 
   const handleTagClick = (tag) => {

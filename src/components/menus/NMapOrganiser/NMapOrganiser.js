@@ -13,7 +13,7 @@ const NMapOrganiser = ({ dataSource }) => {
     handleProductClick,
     handleTagClick,
     selectedTag,
-  } = useProductData(dataSource);
+  } = useProductData(dataSource, "n");
 
   const { productId } = useParams();
 

@@ -1,10 +1,18 @@
 import React from "react";
 import "./N.css";
 import { Routes, Route } from "react-router-dom";
+import RandomImage from "../../components/shared/RandomImage";
 import NMapOrganiser from "../../components/menus/NMapOrganiser/NMapOrganiser";
 
 function N() {
   const dataSource = process.env.PUBLIC_URL + "/nMapData.json";
+  const splashImages = [
+    "flora",
+    "kill-factory",
+    "lettuce-in",
+    "netsec",
+    "the-black-gates",
+  ];
 
   return (
     <section>
@@ -15,7 +23,7 @@ function N() {
             <article>
               <header>N Maps by DW40</header>
               <div className="overview">
-                <img src="/img/n/nv14.png" alt="N v1.4 by Metanet Software" />
+                <RandomImage path={"/img/n/nv14"} images={splashImages} />
                 <div>
                   <p>
                     In{" "}
@@ -70,6 +78,7 @@ function N() {
                   </p>
                 </div>
               </div>
+              <div className="hr"></div>
               <div className="hr"></div>
               <NMapOrganiser dataSource={dataSource} />
             </article>

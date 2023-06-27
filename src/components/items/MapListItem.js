@@ -9,7 +9,10 @@ const MapListItem = ({ product, onMapClick, handleTagClick, selectedTag }) => {
   };
 
   return (
-    <div onClick={() => onMapClick(product)} className="map-item">
+    <div
+      onClick={() => onMapClick(product)}
+      className={`map-item ${!product.buttons ? "coming-soon" : ""}`}
+    >
       <div className="thumb">
         <img
           src={`/img/n/thumb/${product.id}.jpg`}
@@ -19,8 +22,7 @@ const MapListItem = ({ product, onMapClick, handleTagClick, selectedTag }) => {
       </div>
       <div className="details">
         <h3>
-          {product.tags[0]}
-          <br /> {product.title}
+          {product.title} <span>{product.tags[0]}</span>
         </h3>
         <p>{truncateString(product.description, 90)}</p>
         <div className="tags">

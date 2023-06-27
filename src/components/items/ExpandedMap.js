@@ -34,7 +34,12 @@ const ExpandedMap = ({ product, handleTagClick, selectedTag }) => {
           {product.buttons && (
             <div className="buttons">
               {product.buttons.map((button) => (
-                <a href={button.href} target="_blank" rel="noreferrer">
+                <a
+                  key={button.label}
+                  href={button.href}
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   {button.label}
                 </a>
               ))}
