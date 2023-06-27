@@ -38,10 +38,6 @@
   margin: 24px auto;
 }
 
-.main-n .overview img {
-  margin-bottom: 24px;
-}
-
 .main-n .hr {
   width: 100%;
   height: 24px;
@@ -191,11 +187,18 @@
   text-align: center;
   width: 100%;
   background-color: #797988;
-  margin: 0 12px;
   padding: 12px;
   font-size: 1.2rem;
   color: #fff;
   border: 1px solid transparent;
+}
+
+.buttons a:not(:last-child) {
+  margin-right: 12px;
+}
+
+.buttons a:not(:first-child) {
+  margin-left: 12px;
 }
 
 .main-n .map-item-selected .details .buttons a:hover,
@@ -295,7 +298,6 @@
 
 .main-n .recommended {
   text-align: center;
-  padding-top: 24px;
 }
 
 .carousel-container {
@@ -427,6 +429,7 @@
 
   .main-n .map-item-selected {
     flex-direction: column;
+    padding-bottom: 24px;
   }
 
   .main-n .map-item-selected .tags span {
@@ -508,6 +511,7 @@
   }
   .main-n .map-item-selected {
     flex-direction: row;
+    padding-bottom: 24px;
   }
 
   .main-n .map-item-selected .tags span {

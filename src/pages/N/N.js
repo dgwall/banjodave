@@ -79,6 +79,11 @@ function N() {
                 </div>
               </div>
               <div className="hr"></div>
+              <img
+                src="/img/n/placeholder.webp"
+                style={{ width: "100%", height: "auto" }}
+                alt="placeholder"
+              />
               <div className="hr"></div>
               <NMapOrganiser dataSource={dataSource} />
             </article>
