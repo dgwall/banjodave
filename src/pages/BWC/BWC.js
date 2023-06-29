@@ -6,12 +6,16 @@ const correctSequence = [216, 216, 72, 180];
 
 const generateEmojiSlots = (selectedImages) =>
   selectedImages.map((emoji, index) => (
-    <img
-      key={index}
-      src={emoji > -1 ? `/img/emojikitchen/${index}-${emoji}.png` : undefined}
-      alt="emoji"
-      className={`emoji-slot slot-${index}`}
-    />
+    <div className="emoji-slot">
+      <img
+        key={index}
+        src={emoji > -1 ? `/img/emojikitchen/${index}-${emoji}.png` : undefined}
+        alt="emoji"
+        className={`emoji-slot slot-${index} ${
+          emoji !== -1 ? "selected" : "empty"
+        }`}
+      />
+    </div>
   ));
 
 const generateEmojiKeys = (selectedImages, handleClick) =>
@@ -78,14 +82,24 @@ function EmojiPassword() {
       {access === 2 ? (
         <div className="monitor">
           <div className="screen">
-            <img
-              src="/bwc/Banjo-Warez-Corporation.png"
-              alt="Banjo Warez Corporation"
-              loading="lazy"
-              height="256px"
-            />
+            <div className="center">
+              <img
+                src="/bwc/Banjo-Warez-Corporation.png"
+                alt="Banjo Warez Corporation"
+                loading="lazy"
+                height="256px"
+              />
+            </div>
             <div className="screen-page">
-              TOP SECRET//SAR-MAPLE SMOKE/SAR-COOL TUNE//WAIVED
+              <div className="center">
+                <div className="sEcUrItY">
+                  <br />
+                  <u> TOP SECRET//SAR-MAPLE SMOKE/SAR-COOL TUNE//WAIVED </u>
+                  <br />
+                  <u> LEVEL 2 [TWO] ACCESS </u>
+                  <br />
+                </div>
+              </div>
             </div>
           </div>
           <div className="inlay">BWC Special Access Device</div>
