@@ -39,7 +39,7 @@
   text-shadow: 0 0 2rem #ffffffc0;
   border: 5px solid #000;
   box-shadow: 0 0 10rem #03200038 inset;
-  animation: flicker 5s infinite;
+  animation: flicker 10s infinite;
   width: 640px;
   height: 480px;
   scrollbar-width: thin;
@@ -49,27 +49,18 @@
 }
 @keyframes flicker {
   0% {
+    opacity: 0.6;
+  }
+  92% {
     opacity: 1;
   }
-  1% {
-    opacity: 0.85;
-  }
-  50% {
-    opacity: 0.9;
-  }
-  51% {
-    opacity: 0.75;
-  }
-  55% {
+  94% {
     opacity: 0.8;
   }
-  60% {
-    opacity: 0.9;
+  96% {
+    opacity: 1;
   }
-  61% {
-    opacity: 0.75;
-  }
-  65% {
+  98% {
     opacity: 0.8;
   }
   100% {
@@ -128,6 +119,10 @@
   color: #000;
   white-space: pre;
 }
+.main-bwc .sEcUrItY u {
+  background-color: #fff;
+  box-shadow: 0 0 1rem #ffffff80;
+}
 .main-bwc .inlay {
   background-color: #222;
   text-align: center;
@@ -147,11 +142,17 @@
 .emoji-pin-pad {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   color: #0f0;
   font-family: "Courier New", monospace;
   text-align: center;
+}
+
+.main-bwc .hint {
+  color: #000;
+  font-size: xx-small;
+  text-shadow: none;
 }
 
 .selected-emojis {
@@ -169,6 +170,7 @@
   align-items: center;
   justify-content: center;
   border-radius: 0.5rem;
+  background: radial-gradient(circle at center, #222, transparent);
 }
 
 .selected-emojis img {
@@ -202,7 +204,6 @@
   color: #0f0;
   font-size: 20px;
   cursor: pointer;
-  background: radial-gradient(circle at center, #333, transparent);
   border-radius: 0.25rem;
   border: 1px solid darkslategray;
   margin: 0.1rem;
@@ -219,7 +220,7 @@
 
 .emoji-keys.emoji-keys:not(.selected-emoji):hover,
 .submit:hover {
-  border: 1px solid lightgreen;
+  border: 1px solid whitesmoke;
 }
 
 .emoji-keys:not(.selected-emoji):hover img {
@@ -267,7 +268,11 @@ a {
     width: 1.5rem;
     height: 1.5rem;
   }
+  .screen {
+    max-width: calc(100vw - 2rem);
+  }
   .emoji-pin-pad {
+    max-width: calc(100vw - 2rem);
     height: 100%;
   }
 }

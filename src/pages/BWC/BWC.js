@@ -41,7 +41,7 @@ function EmojiPassword() {
 
   useEffect(() => {
     console.log(
-      "In an enchanted jungle—Bongo, cloaked in dawn's blush. Above, a tempest's dance woven into the celestial. Changing—whispers of summer's sweet crescent. Dark eyes plotted to capture the beauty of night."
+      "abovetempestsdancewovenintothecelestial\nanenchantedjunglebongocloakeddawnsblush\nchangingwhispersofasummerssweetcrescent\ndarkeyessoughttocapturethebeautyofnight"
     );
   }, []);
 
@@ -81,114 +81,47 @@ function EmojiPassword() {
         <div className="monitor">
           <div className="screen">
             <img
-              src="Banjo-Warez-Corporation.png"
+              src="/bwc/Banjo-Warez-Corporation.png"
               alt="Banjo Warez Corporation"
+              loading="lazy"
+              height="256px"
             />
             <div className="screen-page">
-              <div className="data">
-                TOP SECRET//SAR-MAPLE SMOKE/SAR-COOL TUNE//WAIVED
-                <br />
-                S//SAR-CT
-                <br />
-                <u> &#9650; Animations </u>
-                <br />
-                <u> &#9650; Art </u>
-                <br />
-                <u> &#9650; Banjo's Arcade </u>
-                <br />
-                <u> &#9650; BanjoZine </u>
-                <br />
-                <u> &#9650; Cringe Archive 2017 </u>
-                <br />
-                <u> &#9650; Digital Art </u>
-                <br />
-                <u> &#9650; DOOM Maps </u>
-                <br />
-                <u> &#9650; DOOM Speedmaps </u>
-                <br />
-                <u> &#9650; Game Jams </u>
-                <br />
-                <u> &#9650; Music </u>
-                <br />
-                <u> &#9650; N Maps </u>
-                <br />
-                <u> &#9650; Posters </u>
-                <br />
-                <u> &#9650; rootootoot collector's edition </u>
-                <br />
-                <u> &#9650; Stickers </u>
-                <br />
-                TS//SAR-MS//WAIVED
-                <br />
-                <u>
-                  <span className="a"> &#9632; Archive </span> Animations{" "}
-                </u>
-                <br />
-                <u>
-                  <span className="a"> &#9632; Archive </span> Digital Art{" "}
-                </u>
-                <br />
-                <u>
-                  <span className="a"> &#9632; Archive </span> Gameplay{" "}
-                </u>
-                <br />
-                <u>
-                  <span className="a"> &#9632; Archive </span> Albums{" "}
-                </u>
-                <br />
-                <u>
-                  <span className="a"> &#9632; Archive </span> Magazines{" "}
-                </u>
-                <br />
-                <u>
-                  <span className="a"> &#9632; Archive </span> Power Points{" "}
-                </u>
-                <br />
-                <u> &#9650; Scrapped Games </u>
-                <br />
-                Release{" "}
-                <a href="www.google.com">
-                  &#11043; Freeware <span>dl.info 0 B</span>
-                </a>
-                <br />
-                <span>Leaked: Coming soon</span>
-              </div>
-              <div className="center">
-                &#9650; Banjo <span></span>
-                <br />
-                &#9650; &#9650; Warez
-                <br />
-                CORPORATION
-                <br />
-                <br />
-                <a
-                  href="https://www.banjodave.com/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="site-link"
-                >
-                  banjodave.com
-                </a>
-                <br />
-                <a
-                  href="https://twitter.com/banjeetz"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="twitter-link"
-                >
-                  @banjeetz
-                </a>
-                <br />
-                <br />
-                Copyright &copy; MCMXCIII-MMXIII. All rights reserved.
-                <br />
-              </div>
+              TOP SECRET//SAR-MAPLE SMOKE/SAR-COOL TUNE//WAIVED
             </div>
           </div>
           <div className="inlay">BWC Special Access Device</div>
         </div>
       ) : access === 1 ? (
-        "SECRET//SPECIAL ACCESS REQUIRED-COOL TUNE"
+        <div className="monitor">
+          <div className="screen">
+            <div className="center">
+              <img
+                src="/bwc/Banjo-Warez-Corporation.png"
+                alt="Banjo Warez Corporation"
+                loading="lazy"
+                height="256px"
+              />
+            </div>
+            <div className="screen-page">
+              <div className="center">
+                <div className="sEcUrItY">
+                  <br />
+                  <u> SECRET//SPECIAL ACCESS REQUIRED-COOL TUNE </u>
+                  <br />
+                  <u> LEVEL 1 [ONE] ACCESS </u>
+                </div>
+                <br />
+                Congratulations on figuring out the password, bypassing security
+                protocol, or finding the GitHub!
+                <br />
+                Send secret code PSYCHO-GORILLA to BanjoDave right now for a BWC
+                Black Key Card granting free top-tier Banjo content for life.
+              </div>
+            </div>
+          </div>
+          <div className="inlay">BWC Special Access Device</div>
+        </div>
       ) : (
         <div className="monitor">
           <div className="screen pin-screen">
@@ -196,9 +129,18 @@ function EmojiPassword() {
               <div className="selected-emojis">
                 {generateEmojiSlots(selectedImages)}
               </div>
-              {generateEmojiKeys(selectedImages, handleClick)}
+              <div>{generateEmojiKeys(selectedImages, handleClick)}</div>
+              <p className="hint">
+                abovetempestsdancewovenintothecelestial
+                <br />
+                anenchantedjunglebongocloakeddawnsblush
+                <br />
+                changingwhispersofasummerssweetcrescent
+                <br />
+                darkeyessoughttocapturethebeautyofnight
+              </p>
               <p>
-                <Link to="thank-you" className="access-link">
+                <Link to="../thank-you" className="access-link">
                   Password on Patreon Free Tier
                 </Link>
               </p>
