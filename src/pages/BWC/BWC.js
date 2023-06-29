@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./BWC.css";
 
-const correctSequence = [6, 6, 2, 5];
+const correctSequence = [216, 216, 72, 180];
 
 const generateEmojiSlots = (selectedImages) =>
   selectedImages.map((emoji, index) => (
@@ -40,12 +40,6 @@ function EmojiPassword() {
   const [aroma, setAroma] = useState(0);
 
   useEffect(() => {
-    console.log(
-      "abovetempestsdancewovenintothecelestial\nanenchantedjunglebongocloakeddawnsblush\nchangingwhispersofasummerssweetcrescent\ndarkeyessoughttocapturethebeautyofnight"
-    );
-  }, []);
-
-  useEffect(() => {
     if (
       selectedImages[0] === -1 &&
       selectedImages[1] === 4 &&
@@ -57,7 +51,11 @@ function EmojiPassword() {
   }, [aroma, selectedImages]);
 
   useEffect(() => {
-    if (JSON.stringify(selectedImages) === JSON.stringify(correctSequence)) {
+    if (
+      JSON.stringify(selectedImages, (key, value) =>
+        typeof value === "number" ? value * 36 : value
+      ) === JSON.stringify(correctSequence)
+    ) {
       setAccess(1);
     }
   }, [selectedImages]);
