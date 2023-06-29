@@ -10,7 +10,7 @@
       #00000080 66.6%,
       transparent
     ),
-    #0d0d0d url("/public/bwc/bg.png") fixed;
+    #0d0d0d url("/public/bwc/bg.png");
   font-family: monospace;
   margin: 0;
   display: flex;
@@ -23,7 +23,7 @@
   margin: 0;
 }
 .main-bwc .monitor {
-  background: #000 url("/public/bwc/fg.gif") fixed center;
+  background: #000 url("/public/bwc/fg.gif") center;
   overflow: hidden;
   border-radius: 2rem;
   border: 1rem solid #333;
@@ -31,7 +31,7 @@
   box-shadow: 0 0 4rem #000;
 }
 .main-bwc .screen {
-  background: url("/public/bwc/lines.png") fixed;
+  background: url("/public/bwc/lines.png");
   color: #ffffff;
   text-align: left;
   overflow-y: auto;
@@ -119,7 +119,8 @@
   color: #000;
   white-space: pre;
 }
-.main-bwc .sEcUrItY u {
+.main-bwc .sEcUrItY u,
+.main-bwc u.sEcUrItY {
   background-color: #fff;
   box-shadow: 0 0 1rem #ffffff80;
 }
