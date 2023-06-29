@@ -178,6 +178,7 @@
 .main-n .map-item-selected .details .buttons {
   display: flex;
   flex-direction: row;
+  margin-top: 12px;
 }
 
 .main-n .map-item-selected .details .buttons a {
@@ -433,7 +434,7 @@
   }
 
   .main-n .map-item-selected .tags span {
-    margin-bottom: 6px;
+    margin-top: 6px;
     margin-left: 6px;
   }
 
@@ -515,7 +516,7 @@
   }
 
   .main-n .map-item-selected .tags span {
-    margin-bottom: 12px;
+    margin-top: 12px;
     margin-left: 12px;
   }
 

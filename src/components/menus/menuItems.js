@@ -34,6 +34,13 @@ export const menuItems = [
     move: false,
   },
   {
+    path: "/bwc",
+    label: "BWC",
+    text: "BWC",
+    icon: "bwc",
+    move: false,
+  },
+  {
     path: "/thank-you",
     label: "Supprt My Work",
     text: "Support My Work",

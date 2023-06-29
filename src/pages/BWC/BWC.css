@@ -1,0 +1,278 @@
+.main-bwc .page {
+  max-width: 100%;
+  width: 100%;
+  background: linear-gradient(
+      to left,
+      transparent,
+      #00000080 33.3%,
+      #111 33.3%,
+      #111 66.6%,
+      #00000080 66.6%,
+      transparent
+    ),
+    #0d0d0d url("/public/bwc/bg.png") fixed;
+  font-family: monospace;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-bwc p {
+  margin: 0;
+}
+.main-bwc .monitor {
+  background: #000 url("/public/bwc/fg.gif") fixed center;
+  overflow: hidden;
+  border-radius: 2rem;
+  border: 1rem solid #333;
+  border-bottom: 6rem solid #333;
+  box-shadow: 0 0 4rem #000;
+}
+.main-bwc .screen {
+  background: url("/public/bwc/lines.png") fixed;
+  color: #ffffff;
+  text-align: left;
+  overflow-y: auto;
+  overflow-x: hidden;
+  text-shadow: 0 0 2rem #ffffffc0;
+  border: 5px solid #000;
+  box-shadow: 0 0 10rem #03200038 inset;
+  animation: flicker 5s infinite;
+  width: 640px;
+  height: 480px;
+  scrollbar-width: thin;
+}
+.main-bwc .pin-screen {
+  overflow: hidden;
+}
+@keyframes flicker {
+  0% {
+    opacity: 1;
+  }
+  1% {
+    opacity: 0.85;
+  }
+  50% {
+    opacity: 0.9;
+  }
+  51% {
+    opacity: 0.75;
+  }
+  55% {
+    opacity: 0.8;
+  }
+  60% {
+    opacity: 0.9;
+  }
+  61% {
+    opacity: 0.75;
+  }
+  65% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+.main-bwc .screen-page {
+  max-width: 640px;
+  max-height: 480px;
+}
+.main-bwc .center {
+  text-align: center;
+}
+.main-bwc img {
+  max-width: 100%;
+}
+.main-bwc .site-link {
+  color: #fcd116;
+}
+.main-bwc .site-link:hover {
+  background-color: #fcd116;
+  box-shadow: 0 0 0.5rem #fcd116;
+  text-shadow: none;
+}
+.main-bwc .twitter-link {
+  color: #1da1f2;
+}
+.main-bwc .twitter-link:hover {
+  background-color: #1da1f2;
+  box-shadow: 0 0 0.5rem #1da1f2;
+  text-shadow: none;
+}
+.main-bwc span {
+  color: darkslategray;
+  text-shadow: none;
+}
+.main-bwc a {
+  color: #16fcaf;
+  text-decoration: none;
+  white-space: pre;
+}
+.main-bwc a:hover {
+  background-color: #16fcaf;
+  box-shadow: 0 0 0.5rem #16fcaf;
+  text-shadow: none;
+  color: #000;
+}
+.main-bwc a:hover span {
+  color: #000;
+}
+.main-bwc u {
+  text-decoration: none;
+  background-color: #fccd16;
+  box-shadow: 0 0 1rem #fccd1680;
+  text-shadow: none;
+  color: #000;
+  white-space: pre;
+}
+.main-bwc .inlay {
+  background-color: #222;
+  text-align: center;
+  color: #181818;
+  text-shadow: 0 1px #292929;
+  font-size: larger;
+  font-weight: bold;
+  padding: 0.3rem;
+}
+.main-bwc .a {
+  background-color: #108fca;
+  box-shadow: 0 0 1rem #108fca80;
+  text-shadow: none;
+  color: #000;
+}
+
+.emoji-pin-pad {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0f0;
+  font-family: "Courier New", monospace;
+  text-align: center;
+}
+
+.selected-emojis {
+  display: flex;
+  justify-content: space-around;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.emoji-slot {
+  width: 5rem;
+  height: 5rem;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5rem;
+}
+
+.selected-emojis img {
+  width: 5rem;
+  padding: 0.5rem;
+}
+
+.emoji-slot.slot-0 {
+  border: 2px solid #00ff0040;
+}
+
+.emoji-slot.slot-1 {
+  border: 2px solid #0000ff40;
+}
+
+.emoji-slot.slot-2 {
+  border: 2px solid #ff000040;
+}
+
+.emoji-slot.slot-3 {
+  border: 2px solid #00ff8040;
+}
+
+.emoji-keys,
+.submit {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  border: none;
+  color: #0f0;
+  font-size: 20px;
+  cursor: pointer;
+  background: radial-gradient(circle at center, #333, transparent);
+  border-radius: 0.25rem;
+  border: 1px solid darkslategray;
+  margin: 0.1rem;
+  padding: 0.1rem;
+}
+
+.submit img {
+  filter: grayscale(1);
+}
+
+.submit:hover img {
+  filter: none;
+}
+
+.emoji-keys.emoji-keys:not(.selected-emoji):hover,
+.submit:hover {
+  border: 1px solid lightgreen;
+}
+
+.emoji-keys:not(.selected-emoji):hover img {
+  transform: scale(1.5);
+}
+
+.selected-emoji {
+  opacity: 0.5;
+}
+
+.emoji-pin-pad .emoji-list img,
+.submit img {
+  width: 3rem;
+  height: 3rem;
+}
+
+.list-0 .selected-emoji {
+  background: radial-gradient(circle at center, #8f8, transparent);
+}
+
+.list-1 .selected-emoji {
+  background: radial-gradient(circle at center, #88f, transparent);
+}
+
+.list-2 .selected-emoji {
+  background: radial-gradient(circle at center, #f88, transparent);
+}
+
+.list-3 .selected-emoji {
+  background: radial-gradient(circle at center, #0f8, transparent);
+}
+
+a {
+  color: #0f0;
+}
+
+@media screen and (max-width: 768px) {
+  .selected-emojis img {
+    width: 4rem;
+    height: 4rem;
+    padding: 0;
+  }
+  .emoji-pin-pad .emoji-list img,
+  .submit img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .emoji-pin-pad {
+    height: 100%;
+  }
+}
+@media not screen and (max-width: 768px) {
+  .emoji-pin-pad {
+    height: 480px;
+  }
+}

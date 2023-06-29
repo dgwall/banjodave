@@ -3,13 +3,12 @@ import "./League.css";
 
 function League() {
   return (
-    <section className="under-construction">
+    <section>
       <img
         src="./img/league/coming-soon.png"
         alt="BanjoLeague Coming Soon"
         loading="lazy"
       />
-      <br />
       <img
         src="./img/league/league-badges.png"
         alt="BanjoLeague Badges and Trophies"

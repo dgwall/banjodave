@@ -2,7 +2,6 @@
   background-color: #00002f;
   background-image: url("../../assets/images/league/bg.png");
   background-repeat: repeat;
-  background-attachment: fixed;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,10 +11,10 @@
 .main-league header {
   font-size: 3rem;
   text-align: center;
-  padding: 2rem;
 }
 
 .main-league .page {
+  padding-bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,14 +22,25 @@
   margin: 2rem;
   border-radius: 1rem;
   background-color: rgba(21, 21, 85, 0.1);
-  width: 90%;
-  max-width: 100%;
-  backdrop-filter: blur(0.2rem);
+  width: 80%;
+  height: calc(100vh - 4rem);
+  backdrop-filter: blur(0.4rem);
   border: 2px solid #151555;
   box-shadow: 0 0 10rem rgb(21, 21, 85) inset, 0 0 0.5rem #000;
 }
 
+.main-league section {
+  margin: 2rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .main-league img {
-  max-height: 60vh;
-  max-width: 60vw;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  max-height: 50vh;
+  max-width: 50vw;
 }

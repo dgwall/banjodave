@@ -19,6 +19,7 @@ import icondiscord from "./discord.png";
 import icontwitch from "./twitch.png";
 import icontwitter from "./twitter.png";
 import iconyoutube from "./youtube.png";
+import iconbwc from "./bwc.png";
 
 const icons = {
   "0d": icon0d,
@@ -42,6 +43,7 @@ const icons = {
   twitch: icontwitch,
   twitter: icontwitter,
   youtube: iconyoutube,
+  bwc: iconbwc,
 };
 
 export default icons;

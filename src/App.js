@@ -14,6 +14,7 @@ const Zine = React.lazy(() => import("./pages/Zine/Zine"));
 const Support = React.lazy(() => import("./pages/Support"));
 const Shop = React.lazy(() => import("./pages/Shop"));
 const About = React.lazy(() => import("./pages/About"));
+const BWC = React.lazy(() => import("./pages/BWC/BWC"));
 const BanjosArcade = React.lazy(() => import("./pages/Games/BanjosArcade"));
 
 const routes = [
@@ -29,6 +30,7 @@ const routes = [
   { path: "/thank-you", mainClass: "", Component: Support },
   { path: "/shop", mainClass: "", Component: Shop },
   { path: "/about", mainClass: "", Component: About },
+  { path: "/bwc", mainClass: "-bwc", Component: BWC },
 ];
 
 function App() {
