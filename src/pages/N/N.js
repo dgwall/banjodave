@@ -79,11 +79,17 @@ function N() {
                 </div>
               </div>
               <div className="hr"></div>
-              <img
-                src="/img/n/placeholder.webp"
+              <video
                 style={{ width: "100%", height: "auto" }}
-                alt="placeholder"
-              />
+                autoPlay
+                muted
+                loop
+                controls
+                src="/vid/plusplus.webm"
+              >
+                <img src="/img/n/placeholder.webp" alt="N++ Video Loading..." />
+              </video>
+
               <div className="hr"></div>
               <NMapOrganiser dataSource={dataSource} />
             </article>

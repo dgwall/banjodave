@@ -220,18 +220,15 @@
   margin-bottom: 24px;
   opacity: 0.85;
   background-color: #79798888;
-  border: 2px solid black;
-  border-radius: 0 2rem 0 2rem;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  border-radius: 0 1rem 0 1rem;
   overflow: hidden;
-}
-
-.map-item.coming-soon {
-  opacity: 0.4;
 }
 
 .main-n .map-item:hover,
 .main-n .map-item:focus {
   opacity: 1;
+  border-color: #000;
 }
 
 .main-n .map-item .details {

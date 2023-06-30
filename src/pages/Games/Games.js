@@ -24,7 +24,7 @@ function Games() {
     <section>
       <header>
         <h1>
-          <span>0DGames</span>
+          <span>0DG</span>
         </h1>
       </header>
 

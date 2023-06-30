@@ -154,6 +154,7 @@
   color: #000;
   font-size: xx-small;
   text-shadow: none;
+  opacity: 0.25;
 }
 
 .main-bwc .empty {
@@ -176,6 +177,7 @@
   justify-content: center;
   border-radius: 0.5rem;
   background: radial-gradient(circle at center, #222, transparent);
+  border: 2px solid #000;
 }
 
 .selected-emojis img {
@@ -223,9 +225,20 @@
   filter: none;
 }
 
-.emoji-keys.emoji-keys:not(.selected-emoji):hover,
-.submit:hover {
-  border: 1px solid whitesmoke;
+.list-0 .emoji-keys.emoji-keys:not(.selected-emoji):hover {
+  border: 1px solid #8f8;
+}
+
+.list-1 .emoji-keys.emoji-keys:not(.selected-emoji):hover {
+  border: 1px solid #88f;
+}
+
+.list-2 .emoji-keys.emoji-keys:not(.selected-emoji):hover {
+  border: 1px solid #f88;
+}
+
+.list-3 .emoji-keys.emoji-keys:not(.selected-emoji):hover {
+  border: 1px solid #0f8;
 }
 
 .emoji-keys:not(.selected-emoji):hover img {
