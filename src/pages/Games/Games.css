@@ -1,8 +1,5 @@
 .main-games {
   background-color: #f2eeba;
-  background-image: url("../../assets/images/games/bg.png");
-  background-repeat: repeat;
-  background-attachment: fixed;
 }
 
 .main-games .page {
@@ -63,11 +60,6 @@
   padding: 2rem 0;
   text-shadow: -1px 1px 2px rgb(179, 88, 3);
   box-shadow: 0 0 2.5rem rgba(0, 0, 0, 0.6);
-}
-
-.main-games .emblem {
-  width: 15%;
-  text-align: center;
 }
 
 .main-games .emblem img {
@@ -193,6 +185,13 @@
     text-align: center;
     width: 80%;
   }
+
+  .main-games .emblem {
+    max-width: 30%;
+    height: auto;
+    object-fit: contain;
+    text-align: center;
+  }
 }
 @media not screen and (max-width: 768px) {
   .main-games .overview-container {
@@ -202,5 +201,10 @@
   .main-games .overview {
     width: 50%;
     text-align: left;
+  }
+
+  .main-games .emblem {
+    width: 15%;
+    text-align: center;
   }
 }
