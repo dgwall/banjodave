@@ -106,6 +106,7 @@ function BanjosArcade() {
 
       <section className="content">
         <article>
+          <img src="/img/0dg/cart-dmg.png" alt="Damaged Cartridge" />
           <h1 className="under-construction">Under Construction</h1>
           {/*
           <div className="game-tiles">

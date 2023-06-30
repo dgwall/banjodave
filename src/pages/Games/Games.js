@@ -5,10 +5,16 @@ const SkewDiv = React.lazy(() => import("../../components/items/SkewDiv"));
 
 const gameData = [
   {
-    imgSrc: "img/0dg/tile-ba.png",
+    imgSrc: "/img/0dg/tile-ba.png",
     dest: "/0dg/banjos-arcade",
     title: "Banjo's Arcade",
     description: "Retro-remake collection.",
+  },
+  {
+    imgSrc: "/img/orb_invert.gif",
+    dest: "/0dgames/",
+    title: "More Coming Soon",
+    description: "TBA",
   },
   // Add more game data objects here as needed
 ];
@@ -18,7 +24,7 @@ function Games() {
     <section>
       <header>
         <h1>
-          <span>0DG</span>
+          <span>0DGames</span>
         </h1>
       </header>
 

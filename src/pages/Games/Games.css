@@ -6,6 +6,7 @@
 }
 
 .main-games .page {
+  max-width: 100%;
   background-color: #000;
   color: #000;
   overflow-x: hidden;
@@ -18,18 +19,15 @@
 .main-games header h1 {
   margin: 0;
   font-weight: normal;
-  font-size: 5rem;
+  font-size: 2rem;
   text-align: center;
-  padding: 2rem;
+  padding: 1rem;
   color: #fcd116;
   text-shadow: 0 0 0.5rem #fcd116;
 }
 
-.main-games h1 span {
-  font-weight: bold;
-}
-
 .main-games .overview {
+  max-width: 720px;
   color: #fff;
 }
 
@@ -90,6 +88,10 @@
   margin: 0;
 }
 
+.main-games .content img {
+  max-width: calc(100vw - 6rem);
+}
+
 .main-games .tile {
   display: inline-flex;
   flex-direction: column;
@@ -109,6 +111,11 @@
 .main-games .tile img {
   max-width: 70vw;
   max-height: 40vh;
+}
+
+.main-games .game-tiles {
+  display: flex;
+  flex-direction: column;
 }
 
 .main-games .game-tiles h3 {

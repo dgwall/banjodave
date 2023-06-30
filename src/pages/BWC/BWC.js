@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import "./BWC.css";
 
 const correctSequence = [216, 216, 72, 180];
