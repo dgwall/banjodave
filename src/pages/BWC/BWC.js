@@ -106,159 +106,156 @@ const AccessScreen = ({ access, accessLabel, secretCode }) => (
             protocol, or finding the GitHub!
             <br />
             Send secret code <u className="sEcUrItY"> {secretCode} </u> to
-            BanjoDave right now for a BWC Black Keycard granting free top-tier
-            Banjo content for life.
+            BanjoDave right now for a BWC Black Keycard granting free L3 BWC
+            Access for life.
           </p>
         )}
         {access === "2" ? (
           <>
             <div className="data">
-              <img
-                src="/bwc/bwc.png"
-                alt="BWC"
-                style={{
-                  width: "1rem",
-                  height: "1rem",
-                  verticalAlign: "bottom",
-                }}
-              />{" "}
-              <u className="sEcUrItY"> S//SAR-ST </u>
+              <div className="center">
+                <u className="l2"> TS//SAR-MS &#9650; </u>
+                <br />
+                <br />
+                <u className="l1"> S//SAR-ST &#9632; </u>
+              </div>
               <br />
               <br />
-              <u> &#9650; Animations </u>
+              <u> &#11043; Animation </u>
               <br />
+              <a href="/" className="l2">
+                &#9650;
+                BanjoD453.Norbert.the.Magnificent.2008.360p.WEBDL.x264-[BWC].mp4{" "}
+                <span>0 B</span>
+              </a>
               <br />
-              <u> &#9650; Art </u>
+              <a href="/" className="l2">
+                &#9650; BanjoD453.Old.Animations.2008.360p.WEBDL.x264-[BWC].mp4{" "}
+                <span>0 B</span>
+              </a>
               <br />
+              <a href="/" className="l2">
+                &#9650; BanjoD453.RCT3.Carnage.2008.480p.WEBDL.x264-[BWC].mp4{" "}
+                <span>0 B</span>
+              </a>
               <br />
-              <u> &#9650; Banjo's Arcade </u>
+              <a href="/" className="l2">
+                &#9650; BanjoD453.YouTube.Poops.2009.YT-[BWC].url{" "}
+                <span>0 B</span>
+              </a>
               <br />
               <br />
-              <u> &#9650; BanjoZine </u>
+              <u> &#11043; Banjo's Arcade </u>
               <br />
+              <a href="/" className="l1">
+                &#9632; Banjos.Arcade.hiecom.beta.2022.WEBDL-[BWC].zip{" "}
+                <span>0 B</span>
+              </a>
               <br />
-              <u> &#9650; Digital Art </u>
+              <a href="/" className="l1">
+                &#9632; Banjos.Arcade.navexe.beta.2023.WEBDL-[BWC].zip{" "}
+                <span>0 B</span>
+              </a>
               <br />
               <br />
-              <u> &#9650; DOOM Maps </u>
+              <u> &#11043; BanjoZine </u>
               <br />
+              <a href="/" className="l1">
+                &#9632; BanjoZine.2021.03.ENG.RETAiL.eBOOK-[BWC].pdf{" "}
+                <span>0 B</span>
+              </a>
               <br />
-              <u> &#9650; DOOM Speedmaps </u>
+              <a href="/" className="l1">
+                &#9632; BanjoZine.2021.06.ENG.RETAiL.eBOOK-[BWC].pdf{" "}
+                <span>0 B</span>
+              </a>
               <br />
               <br />
-              <u> &#9650; Game Jams </u>
+              <u> &#11043; Cringe Archive 2017 </u>
               <br />
+              <a href="/" className="l2">
+                &#9650;
+                BanjoDaves.Cringe.Archive.2017.480p.DVDRip.x264-[BWC].url{" "}
+                <span>0 B</span>
+              </a>
+              <span></span>
               <br />
-              <u> &#9650; Music </u>
               <br />
+              <u> &#11043; DOOM Maps </u>
               <br />
-              <u> &#9650; N Maps </u>
+              <a href="/" className="l2">
+                &#9650; DOOM.II.BanjoDave.DOWNFALL.Pre.Alpha.2021.Leak-[BWC].zip{" "}
+                <span>0 B</span>
+              </a>
               <br />
+              <a href="/" className="l1">
+                &#9632; DOOM.II.BanjoDave.Blazing.Beachhead.2020.WEBDL-[BWC].zip{" "}
+                <span>0 B</span>
+              </a>
               <br />
-              Memoirs of the Ancients REDUX <span>[2012] Community pack</span>
+              <a href="/" className="l1">
+                &#9632;
+                DOOM.II.BanjoDave.Deep.Underground.Military.Bunker.2020.WEBDL-[BWC].zip{" "}
+                <span>0 B</span>
+              </a>
               <br />
-              &#11043; N.v1.4.Memoirs.of.the.Ancients.REDUX.2012.WEBDL-[BWC].txt{" "}
-              <span>766 KB</span>
+              <a href="/" className="l1">
+                &#9632; DOOM.II.Mapwich.2.2020.WEBDL-[BWC].zip <span>0 B</span>
+              </a>
               <br />
+              <a href="/" className="l1">
+                &#9632; DOOM.II.BanjoDave.MALAGARD.2020.WEBDL-[BWC].zip{" "}
+                <span>0 B</span>
+              </a>
               <br />
-              rootootoot <span>[2008] 550 Selected Maps</span>
               <br />
-              &#11043; NReality.rootootoot.2018.WEBDL-[BWC].txt{" "}
-              <span>1,004 KB</span>
+              <u> &#11043; Music </u>
               <br />
-              <br />
-              waNder... <span>[2019] NReality image maps</span>
-              <br />
-              &#11043; NReality.waNder....2019.WEBDL-[BWC].zip{" "}
-              <span>1,004 KB</span>
-              <br />
-              <br />
-              <u> &#9650; Posters </u>
-              <br />
-              <br />
-              <u> &#9650; rootootoot collector's edition </u>
-              <br />
-              <br />
-              <u> &#9650; Stickers </u>
-              <br />
-              <br />
-              <img
-                src="/bwc/bwc.png"
-                alt="BWC"
-                style={{
-                  width: "1rem",
-                  height: "1rem",
-                  verticalAlign: "bottom",
-                }}
-              />{" "}
-              <u className="sEcUrItY"> TS//SAR-MS </u>
-              <br />
-              <br />
-              <u>
-                <span className="a"> &#9632; Albums </span>
-              </u>
-              <br />
-              <br />
-              <u>
-                <span className="a"> &#9632; Animations </span>
-              </u>
-              <br />
-              <br />
-              <u>
-                <span className="a"> &#9632; Cringe Archive 2017 </span>
-              </u>
-              <br />
-              <br />
-              <u>
-                <span className="a"> &#9632; Digital Art </span>
-              </u>
-              <br />
-              <br />
-              <u>
-                <span className="a"> &#9632; Gameplay </span>
-              </u>
-              <br />
-              <br />
-              <u>
-                <span className="a"> &#9632; Magazines </span>
-              </u>
-              <br />
-              <br />
-              <u>
-                <span className="a"> &#9632; N Maps </span>
-              </u>
-              <br />
-              <br />
-              2008 - Fissure
-              <br />
-              <br />
-              2009 - DW40 pack
-              <br />
-              <br />
-              2009 - OUTER DX
-              <br />
-              <br />
-              2015 - NUMA Bitesized & Featured
-              <br />
-              <br />
-              2016 - Fauna
-              <br />
-              <br />
-              <u>
-                <span className="a"> &#9632; Power Points </span>
-              </u>
-              <br />
-              <br />
-              <u>
-                <span className="a"> &#9632; Scrapped Games </span>
-              </u>
-              <br />
-              <br /> <span>[] </span>
-              <br />
-              &#11043; <span></span>
-              <br />
-              <br />
+              <a href="/" className="l2">
+                &#9650; BanjoDave.Rudeolf.2015.128kbps.WEBDL-[BWC].mp3{" "}
+                <span>0 B</span>
+              </a>
+              <br />
+              <a href="/" className="l2">
+                &#9650; BanjoDave.Purgatory.2016.128kbps.WEBDL-[BWC].mp3{" "}
+                <span>0 B</span>
+              </a>
+              <br />
+              <a href="/" className="l1">
+                &#9632; Banjeetz.Emerald.City.2022.208kbps.WEBDL-[BWC].mp3{" "}
+                <span>0 B</span>
+              </a>
+              <br />
+              <a href="/" className="l1">
+                &#9632; Banjeetz.Sunder.2020.106kpbs.WEBDL-[BWC].mp3{" "}
+                <span>0 B</span>
+              </a>
+              <br />
+              <br />
+              <u> &#11043; N Maps </u>
+              <br />
+              <a href="/" className="l1">
+                &#9632;
+                N.v1.4.Memoirs.of.the.Ancients.REDUX.2012.WEBDL-[BWC].txt{" "}
+                <span>766 KB</span>
+              </a>
+              <br />
+              <a href="/" className="l1">
+                &#9632; N.v1.4.DW40.rootootoot.2018.WEBDL-[BWC].txt{" "}
+                <span>1,004 KB</span>
+              </a>
+              <br />
+              <a href="/" className="l1">
+                &#9632; NReality.DW40.Complete.Works.of.DW40.WEBDL-[BWC].zip{" "}
+                <span>0 B</span>
+              </a>
+              <br />
+              <a href="/" className="l1">
+                &#9632; NReality.DW40.waNder....2019.WEBDL-[BWC].zip{" "}
+                <span>0 B</span>
+              </a>
             </div>
+            <br />
             <div className="center">
               &#9650; Banjo <span></span>
               <br />
@@ -289,6 +286,122 @@ const AccessScreen = ({ access, accessLabel, secretCode }) => (
               Copyright &copy; MCMXCIII-MMXIII. All rights reserved.
               <br />
             </div>
+            {/* prettier-ignore */}
+            <pre>{`
+       ..
+       .^~
+        .YJ:                                                    .:^^~^^:.
+         ?Y7~^:...                       .^7?7!~^^:.            .!???7!~^.
+         ?7~!!!!7?777?~.                ..:!7JYYJ??J7:        .~!7^:.
+        :7!~^:::!?YYJYY?:             ....    .^!??7YY?^      .~^
+      .!?!7!^.    :!?JYY7^                       .!!^7JJ!
+     :??~~!!~:.    .~!Y5Y!:            .:::^:  .:!JY?7JY?.          ^7?JJ?7~::::
+     ::    .:~:.     :JP557:          .::~~~7~.   .!Y?J5?.        .^?JJ?7!7??J7!
+             :^.      7P5P?:.             .:~!~.    ^??557.     :!7!~77^:.:::^:.
+   ..         :^       ^YPJ77~^:            :~!~...:7JYPPJ.       .:!?7:
+  :~          .^.    .!7Y5PPPY?~:          :!!!7~^~755YYJ?^     .^!7???7:
+ :?^           ^.    :??5J!~^::^~~:... ...:^777?7~..:!7!7J?7^..~J5?7^:^~~^.
+ !?.          :^       :PBBBGJ. .:^~!!^:..:::^!!!!~.  ~~^!J?~^^J555Y?.   ::.
+.!~.       ..!7:     ^!YGBBB#B!    .:^^::......~JJ?~..:^:^!!^^~!77J55?. .:::.
+.~~.      :J7?!:    ~J5GGGPJ7J?:..:::^^^^^^:::.:!??7~^~~~~~!!7~^~77?JY?~:.
+.^!.      !~..  .^!YGYJ5GGP55PJ^.  ...::^^^.    .^^!!: .:~!!^.   .~~!!77^
+.:!^.    ^J~^^~?5GGPPY?JYPGG5?:..                .^^:.. ..::::^:....~~:^!^.
+..~!^...:~7??7!7!~^::....!?7~:.  ........:::^~^:^^^^^^~~^~~~~~~~~^^^::~^?YY7:
+.:~7!!!7J?~^.      ..:~~^^^:.......::...::....  .:^^^^..              ~!JJ~YY?~^
+..:!7?JJ?!^:          .^~!^.                    :^^:.^~~~^.          .:!57 ^?J?!
+   .....                 :^:... .....  .:    .!YPJ~:^!7?JJ?77!!!!~!7!7?5J.  !YYJ
+                          .7???77!!!!!~7Y?77JGBG55J~:...^!JJJJ?!!!77!!?J~^~7?JY5
+                           ~JYY5YJ7777!?JYYY!7?Y5G5^.    .7JJJ7!~!?????777!!~^^:
+                           :7Y?!J?~^:::^!~777J5PPP!.     ~???7~^::^^::..
+                          .^!77?YY7~~^^~?J5GGGG5J!.      .:.:.
+                         .~!~~^~~~~::::.^^~7?7!^
+           .:::::::.
+                  .:^.      ....:~~^.               :~:
+                   .!7!^:::.::::^~~!^.               :!!^.
+                 ^!???7^.::^^^^~7!~^^^:          ^^:^^^7J?^
+                .::.::!^:......:~~^^~^^:         ^JJJYJ????^
+                ::^^^:~^::...:^~^:...^~~~^^:.:^.:.^!?~:.
+                .:!7??7~:....      ..:.::....       :.
+                    .~~.           .~~.      ::....~!7?~
+                     :7!!~~~:::...^!777!^:::!!!!:..7JJYY?~:
+                   .^!~^:^!7~:!~:. ..:::.. .!!!~:   ^!?J?!^
+                ..^~^::::~77!:~??7!^.:^!!!^ :!^::.......
+             .~7?J?7!!!~~!77!::^!!!!....^7!::^:::~7?7^
+              .^~!?JJ?!^^~^:.   :^::.            :^~7^
+                   :^^:.                      .::
+                                            .. :!!~:
+                    ..:::..               .     ~777~.
+                  .^?Y??~^^~:.   . .^^.  ~?!:...^7?77!^
+       .........^?YYJJ?7!~!7!77~::::^~~!!77?!~~^~!!7777^
+      .........^?J?!^!?JY?7J7!^:..    .:~~^:~!!~^:^!!!!^
+    ....        .:!7~~~!J5Y7!!^::..::  .^!^..::^~!~.^^.
+           ..::..:. :!!~^~7?J7~~^^:...  .^??!~!!7JJ!:
+                .~77^.^^.   .^.  .:..     .^!77?5YP5J~
+                  ^J5?:!7!^::....  ...       ..:Y5PPP57:
+                   .JGY^?5Y^:~!!7~^:^^^~7?JYJY5PPP5YPPP5?^
+                    :?J!^YPJ^..^~!7JJJ!!7??5P5YJ??J5PPPP57.
+                  .::~777J5PPJ:.  ...^!7???JJJJJYJJ5PPY7:
+               ..^~!JJ?7~.:^~^^^~~~~~~~~~^^~~~!77?7!!^.
+                  .^7?777!^    ..:^^.
+..:^..              .^^!!~~^:.
+JY5P557.
+.:7PP5P5~                                    .:.
+^~JY??P5Y7                                    .^^^^::.
+?!^^~JP7..         ...:^^^:::.....              ^!!!!!~~^^:.       .......
+!JYYJ!:        ..:^~~~!~~~~77!!!!!^:............:~~^^~~!!7!!~:..^!???????77~:
+             .:^^^~~^::...::::::^::::.......   ...:^^^^^^:.    ^7?????7!?JJJ?7~^
+^:....::^:^^~!!!!!!~^^^!!!!!!!!^.....:^^^^~~:......~~^:.       :!~. :!: !JJ?!^:.
+^~!~!!!~~^^^^:::...    ......:..........:^^^^.  ....~~.        .^:   :..7J!:
+  ...::     ...                                     .~!~.            ...!:
+                ..:::~^.         .                    .::              .
+                    .!Y?^....  ..::.......:.
+                      755YJJJ7!!!!~:::^^^~77!!~^^::.
+                     .!JPPPPPY!!~~~::..:^^~~!7!~~!!!!!:
+                    :7JJYJ?7JJ^^:........^~~~!!^^~~~?JJ^
+               .::^!??7?JJJ?J7^^......:^~!~^^^~!~:..!?JYJ7:
+        ......:^7?JJJJJJ?!~^:..    ...  :::::...:^!?YYYYY7~.
+                 .^^::..::::.         .    .~7?7?JYJYYYY7^
+                     ....               :~:^7Y5JJ?~~?YJ7:
+                        ....              ..7Y5?~~7YY?^.
+                           :^^.             ~J77!:.~!:
+                :~~~^::.     .:.           :~!!!:  .:.
+                 :^!J55YJ?~!!~^:.. .:^~!!!!!!~......
+                    ^?5PY?~^!?!~^^~?JYY5YJ?7:.~7??~!:
+                    .J5?J5!!!~^^::^~!!JY?!!!!JYYJ~~J!
+                  ^7??~:7J7!:.:::.^^~!!!^^^^7YJ!^^~?J!
+           ...^~~!?7!~!!7!~^...::^^^::^:^?JYY?!77^.!JJ7:
+          ...~7?JYYJ7~^::..     ..:^^::..:. .  ..:!JYJJ?~.
+                .:::...              .::!!!~~:~!?JYYJJJ?^.
+                        ...           ..~J5PY!?JJJJJJ777.
+                          .::             .?57^^^~?J?7^.
+                            .              .JY?~^^::.
+                                            ::.
+                                                ..
+                  :::..                        .^!??!^.
+                    ..:~^:.            ...   ....:!Y55J7~:.
+                       !YYJJ?!^......^!JYJ!~^^^:^^::75PPPPY?!!~.
+                  .:^~7J555PPPY^::^^^!?JJ7!:     ....:?PPPPY5P5J!:
+           ....:~!7J55YYY77?~:. ....^?J?!^...:...      !55Y^.!YP5J!:.
+            ...^~!77!!^:~7??JJ!~:::?5Y7~:....:^~~~^.   .JYJ~. :?JY5YJ?~:.
+      .:::.       .:~?YJJJ55?!^....^!:          .~?7^::~7~^~!~^^..:::^~:.
+      .:::.           ^7YY!^.                     ~??7^:.
+       ...              :7?7!~^..... ...         .~!!??!:.
+                     ........:^::::.. ..    .....    .^~^::.
+             ..:^::^::.......               ...
+            .^~^:....:~?YY7:                 :^:.::.
+                       .~Y5Y7^:...    :~:     .::~?7~:
+                 .:^^^.  :77?7!!~^:...~~.       .7J7??!^.
+                 ...     :!7!~..^^~!!:.         :^^^^~~^..
+                        .7?J??.    .!7^.     :~~:..:::..
+                      .^~!!~7?^     .!7^      :!JJ7!~:.
+                ..::~77?JYY557:..    ..~^.      !JJ7.
+           .^7??JJ???777!~~7?~.        .!^:.....~?J7.
+           .:^^^^~7????JJYJ?~       .^:^^:....:::~?~
+                  ..:^^~~!JJ7~..   .^~~:       .:~7^..  .
+                          ...^~^.                ::.^7!!~::.
+                              :!!.                   ::.
+                                ::
+`}</pre>
           </>
         ) : (
           ""

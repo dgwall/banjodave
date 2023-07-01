@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Doom.css";
-import ScreenshotsCarousel from "../../components/modals/ScreenshotsCarousel";
-import screensSA from "./screensSA.json";
+//import ScreenshotsCarousel from "../../components/modals/ScreenshotsCarousel";
 import gargoyleA from "../../assets/images/doom/icon-1.webp";
 import gargoyleB from "../../assets/images/doom/icon-2.webp";
 
@@ -108,28 +107,37 @@ function Doom() {
                 onMouseEnter={() => handleMouseEnter(card.id)}
                 onMouseLeave={() => handleMouseLeave(card.id)}
               >
-                <h3>{card.title}</h3>
-                <div className="card-video">
-                  {card.videoLoaded && (
-                    <video
-                      src={`/vid/doom/${card.id}.webm`}
-                      muted
-                      loop
-                      autoPlay
-                      playsInline
-                      className={card.hover ? "video-active" : ""}
-                    >
-                      Test
-                    </video>
+                <div className="card-container">
+                  <h3>{card.title}</h3>
+                  <div
+                    className={`card-video ${card.hover ? "video-active" : ""}`}
+                  >
+                    {card.videoLoaded && (
+                      <video
+                        src={`/vid/doom/${card.id}.webm`}
+                        muted
+                        loop
+                        autoPlay
+                        playsInline
+                      >
+                        <img src="/img/orb_small.gif" alt="loading..." />
+                      </video>
+                    )}
+                  </div>
+                  {card.requirements && (
+                    <p className="card-requirements">{card.requirements}</p>
+                  )}
+                  <p className="desc">{card.desc}</p>
+                  {card.downloadLabel ? (
+                    <a href={card.href} title={card.downloadLabel} download>
+                      <button>{card.buttonLabel}</button>
+                    </a>
+                  ) : (
+                    <a href={card.href} target="_blank" rel="noreferrer">
+                      <button>{card.buttonLabel}</button>
+                    </a>
                   )}
                 </div>
-                {card.requirements && (
-                  <p className="card-requirements">{card.requirements}</p>
-                )}
-                <p className="desc">{card.desc}</p>
-                <a href={card.href} title={card.downloadLabel} download>
-                  <button>{card.buttonLabel}</button>
-                </a>
               </div>
             ))}
 
@@ -184,7 +192,6 @@ function Doom() {
                 </ul>
               </div>
             </div>
-            <ScreenshotsCarousel screenshots={screensSA} />
           </div>
           <div className="button">
             <button className="under-construction">

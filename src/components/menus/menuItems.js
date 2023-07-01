@@ -27,6 +27,13 @@ export const menuItems = [
     move: true,
   },
   {
+    path: "/zine",
+    label: "BanjoZine",
+    text: "BanjoZine",
+    icon: "zine",
+    move: false,
+  },
+  {
     path: "/league",
     label: "Compete in the BanjoLeague",
     text: "BanjoLeague",

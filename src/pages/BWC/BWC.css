@@ -1,3 +1,8 @@
+.main-bwc {
+  --l1: #16fcaf;
+  --l2: #fff;
+}
+
 .main-bwc .page {
   max-width: 100%;
   width: 100%;
@@ -94,18 +99,37 @@
   text-shadow: none;
 }
 .main-bwc span {
-  color: darkslategray;
+  color: rgb(66, 141, 141);
   text-shadow: none;
 }
 .main-bwc a {
-  color: #16fcaf;
   text-decoration: none;
 }
+.main-bwc a.l1 {
+  color: var(--l1);
+}
+.main-bwc a.l2 {
+  color: var(--l2);
+}
 .main-bwc a:hover {
-  background-color: #16fcaf;
-  box-shadow: 0 0 0.5rem #16fcaf;
   text-shadow: none;
   color: #000;
+}
+.main-bwc a.l1:hover {
+  background-color: var(--l1);
+  box-shadow: 0 0 0.5rem var(--l1);
+}
+.main-bwc a.l2:hover {
+  background-color: var(--l2);
+  box-shadow: 0 0 0.5rem var(--l2);
+}
+.main-bwc u.l1 {
+  background-color: var(--l1);
+  box-shadow: 0 0 0.5rem var(--l1);
+}
+.main-bwc u.l2 {
+  background-color: var(--l2);
+  box-shadow: 0 0 0.5rem var(--l2);
 }
 .main-bwc a:hover span {
   color: #000;
@@ -116,6 +140,7 @@
   box-shadow: 0 0 0.5rem #fccd16;
   text-shadow: none;
   color: #000;
+  white-space: pre;
 }
 .main-bwc .sEcUrItY u,
 .main-bwc u.sEcUrItY {
@@ -199,8 +224,7 @@
   border: 2px solid #00ff8040;
 }
 
-.emoji-keys,
-.submit {
+.emoji-keys {
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -213,14 +237,6 @@
   border: 1px solid darkslategray;
   margin: 0.1rem;
   padding: 0.1rem;
-}
-
-.submit img {
-  filter: grayscale(1);
-}
-
-.submit:hover img {
-  filter: none;
 }
 
 .list-0 .emoji-keys.emoji-keys:not(.selected-emoji):hover {
@@ -269,8 +285,15 @@
   background: radial-gradient(circle at center, #0f8, transparent);
 }
 
-a {
+.main-bwc a {
   color: #0f0;
+}
+
+.main-bwc pre {
+  color: #433419;
+  text-shadow: none;
+  font-size: 1.03em;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {

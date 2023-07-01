@@ -194,18 +194,34 @@
   text-align: center;
   transition: 0.5s ease-out;
   box-shadow: 0 0 0 black;
-  padding: 0.5rem;
   color: #fff;
   vertical-align: top;
   background-size: cover;
-  overflow: hidden;
   border: 1px solid #111;
+  background-position-x: 50%;
+  background-position-y: 20%;
+}
+
+.main-doom .card-container {
+  border-radius: 0.9rem;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0.5rem;
+  height: 100%;
+  width: 100%;
+  background-color: #11111100;
+  transition: 0.5s ease-out;
+}
+
+.main-doom .card:hover .card-container {
+  background-color: #111111c0;
+  transition: 1s ease-out;
 }
 
 .main-doom .card h3 {
-  margin-bottom: auto;
+  margin-bottom: 1rem;
   color: #e4d2cd;
-  margin-bottom: 2rem;
   font-size: 1.4rem;
   text-shadow: 0 -0.05rem 0.2rem black;
   font-weight: normal;
@@ -253,34 +269,35 @@
 }
 
 .main-doom .card:hover {
+  background-position-y: 60%;
   border: 1px solid #222;
-  filter: brightness(1.1) invert(0.05);
   transform: scale(1.1);
-  transition: 0.5s ease-out;
+  transition: 1s ease-out;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
-.main-doom .card .video-active {
+.main-doom .card .card-video.video-active {
   width: 100%;
   height: auto;
   opacity: 1;
-  transition: 0.5s;
-  transform: scaleY(1);
+  transition: 1s ease-out;
+  transform: scale(1.15) translateY(0);
 }
 
 .main-doom .card .card-video {
+  z-index: 10;
+  margin-bottom: auto;
+  transform: scale(0) translateY(8rem);
+  transition: 0.5s ease-out;
+  opacity: 0;
   margin-bottom: auto;
 }
 
 .main-doom .card video {
   border-radius: 1rem;
-  box-shadow: 0 0 1rem #000;
-  margin-bottom: auto;
+  box-shadow: 0 0 0.5rem #000;
   width: 100%;
-  opacity: 0;
   background-color: #000;
-  transform: scaleY(0);
-  transition: 0.5s;
 }
 
 @media screen and (max-width: 768px) {

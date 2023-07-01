@@ -12,7 +12,7 @@ function Zine() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("./zineIssues.json")
+    fetch("./BLACKMAGIC.json")
       .then((response) => {
         if (!response.ok) {
           throw new Error("Zine fetch error: Network response was not ok");
