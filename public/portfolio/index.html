@@ -136,6 +136,16 @@
                 <img src="img/project-banjodave.png" />
                 Visit BanjoDave.com
               </a>
+              <ul class="features">
+                <li>95.5% rating on PageSpeed Insights</li>
+                <li>Recommendation engine which shows related products</li>
+                <li>Tag filtering</li>
+                <li>Product image carousels</li>
+                <li>Video info cards</li>
+                <li>Responsive and accessible menus</li>
+                <li>Interactive animations</li>
+                <li>and more!</li>
+              </ul>
               <p>
                 <a
                   href="https://github.com/dgwall/banjodave"
@@ -152,109 +162,110 @@
               </p>
               <p style="font-size: smaller">Animation Example</p>
             </div>
-            <div class="case-study">
-              <ul class="features">
-                <li>95.5% rating on PageSpeed Insights</li>
-                <li>Recommendation engine which shows related products</li>
-                <li>Tag filtering</li>
-                <li>Responsive and accessible menus</li>
-                <li>Interactive animations</li>
-                <li>and more!</li>
-              </ul>
-              <br />
-              <h3>Case Study: A Responsive and Accessible Header</h3>
-              <p>
-                The objective was to create a header component for
-                BanjoDave.com, a React application sharing my hobby projects.
-                The header needed to provide clear and straightforward
-                navigation across different sections of the website, adapt to
-                different screen sizes, and meet accessibility standards for
-                inclusive user experience.
-              </p>
-              <p>
-                <a
-                  href="https://github.com/dgwall/banjodave/blob/master/src/components/menus/Header/Header.js"
-                  target="_blank"
-                  rel="noreferrer"
-                  >View Header.js on GitHub</a
-                >
-              </p>
-              <ul>
-                <li>
-                  <strong>Adaptive Dropdown Menu: </strong>In order to cater to
-                  devices with smaller screen real estate, I designed a dropdown
-                  menu that accommodates secondary navigation links. This menu
-                  unveils its content when the user hovers over it. I've
-                  included specific adjustments for users who interact with the
-                  dropdown by clicking. To prevent the dropdown from abruptly
-                  closing just after it opens, I implemented a feature that
-                  disables response to user clicks for a specific duration after
-                  the dropdown opens or closes via a hover action.
-                </li>
+            <div>
+              <details class="case-study">
+                <summary>
+                  Case Study: A Responsive and Accessible Header
+                </summary>
+                <p>
+                  The objective was to create a header component for
+                  BanjoDave.com, a React application sharing my hobby projects.
+                  The header needed to provide clear and straightforward
+                  navigation across different sections of the website, adapt to
+                  different screen sizes, and meet accessibility standards for
+                  inclusive user experience.
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/dgwall/banjodave/blob/master/src/components/menus/Header/Header.js"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View Header.js on GitHub</a
+                  >
+                </p>
+                <ul>
+                  <li>
+                    <strong>Adaptive Dropdown Menu: </strong>In order to cater
+                    to devices with smaller screen real estate, I designed a
+                    dropdown menu that accommodates secondary navigation links.
+                    This menu unveils its content when the user hovers over it.
+                    I've included specific adjustments for users who interact
+                    with the dropdown by clicking. To prevent the dropdown from
+                    abruptly closing just after it opens, I implemented a
+                    feature that disables response to user clicks for a specific
+                    duration after the dropdown opens or closes via a hover
+                    action.
+                  </li>
 
-                <li>
-                  <strong>Navigation Links: </strong>The website's navigation
-                  links are fetched from an external file menuItems.js. This
-                  separation of concerns ensures that changes to navigation
-                  items can be managed without interfering with the Header
-                  component's core functionality.
-                </li>
+                  <li>
+                    <strong>Navigation Links: </strong>The website's navigation
+                    links are fetched from an external file menuItems.js. This
+                    separation of concerns ensures that changes to navigation
+                    items can be managed without interfering with the Header
+                    component's core functionality.
+                  </li>
 
-                <li>
-                  <strong>Accessible Navigation: </strong>To ensure the website
-                  is accessible, I included a 'skip-link' that allows users to
-                  skip to the main content of the website. This feature is
-                  particularly useful for users who navigate with a keyboard
-                  rather than a mouse.
-                </li>
-              </ul>
-              <h3>Case Study: A Dynamic and Interactive Tile Component</h3>
-              <p>
-                The primary goal was to develop a compelling, interactive
-                component for showcasing hobby projects on BanjoDave.com. This
-                component needed to capture visitors' attention and encourage
-                them to explore further
-              </p>
-              <p>
-                <a
-                  href="https://github.com/dgwall/banjodave/blob/master/src/components/items/SkewDiv.js"
-                  target="_blank"
-                  rel="noreferrer"
-                  >View SkewDiv.js on GitHub</a
-                >
-              </p>
-              <ul>
-                <li>
-                  <strong>Dynamic Polygon Clipping: </strong>The SkewDiv
-                  component incorporates a breathing-like animation by using
-                  dynamic polygon clipping with CSS clip-path property. The
-                  clip-path is created through a function, generateClipPath,
-                  that utilizes an array of random offsets generated with
-                  JavaScript's Math.random function. The polygon shape defined
-                  by the clip-path provides a distinctive look for each tile and
-                  changes subtly every 2 seconds through a setInterval function.
-                </li>
-                <li>
-                  <strong>Hover Interactivity: </strong>User interactivity is
-                  enhanced through hover effects. When a user's mouse enters the
-                  tile (triggered by onMouseEnter), two animations are
-                  initiated. Firstly, the clip-path of the tile undergoes
-                  changes, giving a pulsating effect. This effect is achieved by
-                  the startInterval function that sets the animation interval.
-                  Secondly, a wave-like animation is applied to the text within
-                  the tile, where each character in the title is assigned an
-                  animation delay based on its index, created by mapping over
-                  the title string.
-                </li>
-                <li>
-                  <strong>Versatility and Reusability: </strong>The SkewDiv
-                  component accepts various properties, such as imgSrc, dest,
-                  title, and description, enhancing its reusability across
-                  different projects. Thus, it presents an engaging and unique
-                  appearance while eliminating the need for custom coding for
-                  each new project.
-                </li>
-              </ul>
+                  <li>
+                    <strong>Accessible Navigation: </strong>To ensure the
+                    website is accessible, I included a 'skip-link' that allows
+                    users to skip to the main content of the website. This
+                    feature is particularly useful for users who navigate with a
+                    keyboard rather than a mouse.
+                  </li>
+                </ul>
+              </details>
+              <details class="case-study">
+                <summary>
+                  Case Study: A Dynamic and Interactive Tile Component
+                </summary>
+                <p>
+                  The primary goal was to develop a compelling, interactive
+                  component for showcasing hobby projects on BanjoDave.com. This
+                  component needed to capture visitors' attention and encourage
+                  them to explore further
+                </p>
+                <p>
+                  <a
+                    href="https://github.com/dgwall/banjodave/blob/master/src/components/items/SkewDiv.js"
+                    target="_blank"
+                    rel="noreferrer"
+                    >View SkewDiv.js on GitHub</a
+                  >
+                </p>
+                <ul>
+                  <li>
+                    <strong>Dynamic Polygon Clipping: </strong>The SkewDiv
+                    component incorporates a breathing-like animation by using
+                    dynamic polygon clipping with CSS clip-path property. The
+                    clip-path is created through a function, generateClipPath,
+                    that utilizes an array of random offsets generated with
+                    JavaScript's Math.random function. The polygon shape defined
+                    by the clip-path provides a distinctive look for each tile
+                    and changes subtly every 2 seconds through a setInterval
+                    function.
+                  </li>
+                  <li>
+                    <strong>Hover Interactivity: </strong>User interactivity is
+                    enhanced through hover effects. When a user's mouse enters
+                    the tile (triggered by onMouseEnter), two animations are
+                    initiated. Firstly, the clip-path of the tile undergoes
+                    changes, giving a pulsating effect. This effect is achieved
+                    by the startInterval function that sets the animation
+                    interval. Secondly, a wave-like animation is applied to the
+                    text within the tile, where each character in the title is
+                    assigned an animation delay based on its index, created by
+                    mapping over the title string.
+                  </li>
+                  <li>
+                    <strong>Versatility and Reusability: </strong>The SkewDiv
+                    component accepts various properties, such as imgSrc, dest,
+                    title, and description, enhancing its reusability across
+                    different projects. Thus, it presents an engaging and unique
+                    appearance while eliminating the need for custom coding for
+                    each new project.
+                  </li>
+                </ul>
+              </details>
             </div>
           </div>
 
@@ -270,8 +281,10 @@
                 Visit "Outback Adventures"
               </a>
             </div>
-            <div class="case-study">
-              <h3>Case Study: Visually engaging parallax scrolling effect</h3>
+            <details class="case-study">
+              <summary>
+                Case Study: Visually engaging parallax scrolling effect
+              </summary>
               <p>
                 In designing the Outback Adventures homepage, the key goal was
                 to create an engaging user experience reminiscent of a journey
@@ -286,7 +299,7 @@
                 property, effectively creating a sense of depth and making the
                 website's landscape come alive.
               </p>
-            </div>
+            </details>
           </div>
 
           <h2>Discontent Front-End</h2>
@@ -447,7 +460,6 @@
           },
           { duration: 2000, fill: "forwards", easing: "ease-in-out" }
         );
-        console.log(`${clientX}, ${clientY}`);
       };
 
       /* Hacker Text */

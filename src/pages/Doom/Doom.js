@@ -32,8 +32,8 @@ function Doom() {
     },
     {
       id: "atv",
-      title: "Ascent to Valhalla",
-      desc: "Collab with Danlex for Mapwich 2.",
+      title: "Mapwich 2: Ascent to Valhalla",
+      desc: "Collab with Danlex. Climb storm-lashed cliffs on your way to a monumental fortress.",
       href: "https://www.doomworld.com/forum/topic/117485-come-eat-the-mapwich-2-public-beta-out-now/",
       buttonLabel: "Doomworld Thread",
       hover: false,
@@ -43,7 +43,7 @@ function Doom() {
     {
       id: "m",
       title: "MALAGARD",
-      desc: "My first release!",
+      desc: "Navigate the mysterious ruins and bulwarks on a demon-infested island.",
       href: "https://www.doomworld.com/forum/topic/110861-malagard-single-map-for-doom-ii/",
       buttonLabel: "Doomworld Thread",
       hover: false,

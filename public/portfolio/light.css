@@ -160,6 +160,10 @@ summary {
   color: #fff;
 }
 
+.case-study summary {
+  color: #444;
+}
+
 @media screen and (min-width: 740px) {
   nav {
     border-bottom: 3px solid rgb(var(--col-hl));

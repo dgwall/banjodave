@@ -252,6 +252,10 @@ article a:hover {
   color: #fff;
 }
 
+.case-study summary {
+  color: #cecece;
+}
+
 @media screen and (min-width: 740px) {
   nav {
     border-bottom: 1px solid rgba(var(--col-hl), 0.2);
