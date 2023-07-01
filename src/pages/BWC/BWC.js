@@ -157,27 +157,20 @@ const AccessScreen = ({ access, accessLabel, secretCode }) => (
               <br />
               Memoirs of the Ancients REDUX <span>[2012] Community pack</span>
               <br />
-              <a>
-                &#11043;
-                N.v1.4.Memoirs.of.the.Ancients.REDUX.2012.WEBDL-[BWC].txt{" "}
-                <span>766 KB</span>
-              </a>
+              &#11043; N.v1.4.Memoirs.of.the.Ancients.REDUX.2012.WEBDL-[BWC].txt{" "}
+              <span>766 KB</span>
               <br />
               <br />
               rootootoot <span>[2008] 550 Selected Maps</span>
               <br />
-              <a>
-                &#11043; NReality.rootootoot.2018.WEBDL-[BWC].txt{" "}
-                <span>1,004 KB</span>
-              </a>
+              &#11043; NReality.rootootoot.2018.WEBDL-[BWC].txt{" "}
+              <span>1,004 KB</span>
               <br />
               <br />
               waNder... <span>[2019] NReality image maps</span>
               <br />
-              <a>
-                &#11043; NReality.waNder....2019.WEBDL-[BWC].zip{" "}
-                <span>1,004 KB</span>
-              </a>
+              &#11043; NReality.waNder....2019.WEBDL-[BWC].zip{" "}
+              <span>1,004 KB</span>
               <br />
               <br />
               <u> &#9650; Posters </u>
@@ -262,9 +255,7 @@ const AccessScreen = ({ access, accessLabel, secretCode }) => (
               <br />
               <br /> <span>[] </span>
               <br />
-              <a href="#">
-                &#11043; <span></span>
-              </a>
+              &#11043; <span></span>
               <br />
               <br />
             </div>
