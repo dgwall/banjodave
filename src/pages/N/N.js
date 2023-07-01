@@ -85,9 +85,13 @@ function N() {
                 muted
                 loop
                 controls
-                src="/vid/plusplus.webm"
+                src="/vid/n/plusplus.webm"
               >
-                <img src="/img/n/placeholder.webp" alt="N++ Video Loading..." />
+                <img
+                  src="/img/n/placeholder.webp"
+                  alt="N++ Video Loading..."
+                  loading="lazy"
+                />
               </video>
 
               <div className="hr"></div>

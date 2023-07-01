@@ -203,8 +203,9 @@
 }
 
 .main-doom .card h3 {
-  color: #e4d2cd;
   margin-bottom: auto;
+  color: #e4d2cd;
+  margin-bottom: 2rem;
   font-size: 1.4rem;
   text-shadow: 0 -0.05rem 0.2rem black;
   font-weight: normal;
@@ -259,44 +260,27 @@
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.5);
 }
 
-.main-doom #dumb {
-  background-image: linear-gradient(
-      to bottom,
-      transparent,
-      transparent 66.6%,
-      black
-    ),
-    url("../../../public/img/doom/card-dumb.jpg");
+.main-doom .card .video-active {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  transition: 0.5s;
+  transform: scaleY(1);
 }
 
-.main-doom #atv {
-  background-image: linear-gradient(
-      to bottom,
-      transparent,
-      transparent 66.6%,
-      black
-    ),
-    url("../../../public/img/doom/card-atv.jpg");
+.main-doom .card .card-video {
+  margin-bottom: auto;
 }
 
-.main-doom #bb {
-  background-image: linear-gradient(
-      to bottom,
-      transparent,
-      transparent 66.6%,
-      black
-    ),
-    url("../../../public/img/doom/card-bb.jpg");
-}
-
-.main-doom #m {
-  background-image: linear-gradient(
-      to bottom,
-      transparent,
-      transparent 66.6%,
-      black
-    ),
-    url("../../../public/img/doom/card-m.jpg");
+.main-doom .card video {
+  border-radius: 1rem;
+  box-shadow: 0 0 1rem #000;
+  margin-bottom: auto;
+  width: 100%;
+  opacity: 0;
+  background-color: #000;
+  transform: scaleY(0);
+  transition: 0.5s;
 }
 
 @media screen and (max-width: 768px) {

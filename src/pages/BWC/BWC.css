@@ -69,7 +69,7 @@
 }
 .main-bwc .screen-page {
   max-width: 640px;
-  max-height: 480px;
+  min-height: 480px;
 }
 .main-bwc .center {
   text-align: center;
@@ -100,7 +100,6 @@
 .main-bwc a {
   color: #16fcaf;
   text-decoration: none;
-  white-space: pre;
 }
 .main-bwc a:hover {
   background-color: #16fcaf;
@@ -114,15 +113,14 @@
 .main-bwc u {
   text-decoration: none;
   background-color: #fccd16;
-  box-shadow: 0 0 1rem #fccd1680;
+  box-shadow: 0 0 0.5rem #fccd16;
   text-shadow: none;
   color: #000;
-  white-space: pre;
 }
 .main-bwc .sEcUrItY u,
 .main-bwc u.sEcUrItY {
   background-color: #fff;
-  box-shadow: 0 0 1rem #ffffff80;
+  box-shadow: 0 0 0.5rem #ffffff;
 }
 .main-bwc .inlay {
   background-color: #222;
@@ -134,8 +132,8 @@
   padding: 0.3rem;
 }
 .main-bwc .a {
-  background-color: #108fca;
-  box-shadow: 0 0 1rem #108fca80;
+  background-color: #7facff;
+  box-shadow: 0 0 0.5rem #7facff;
   text-shadow: none;
   color: #000;
 }

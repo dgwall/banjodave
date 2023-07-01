@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./Doom.css";
 import ScreenshotsCarousel from "../../components/modals/ScreenshotsCarousel";
@@ -7,6 +7,66 @@ import gargoyleA from "../../assets/images/doom/icon-1.webp";
 import gargoyleB from "../../assets/images/doom/icon-2.webp";
 
 function Doom() {
+  const [cards, setCards] = useState([
+    {
+      id: "dumb",
+      title: "Deep Underground Military Bunker",
+      requirements: "Requires: GZDoom, OTEX",
+      desc: "A strange mist is making people crazy in this secret base, and your prison door just unlocked itself.",
+      href: "https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/DUMB.pk3",
+      downloadLabel: "DUMB.pk3 18.1 MB",
+      buttonLabel: "Download .pk3",
+      hover: false,
+      videoLoaded: false,
+    },
+    {
+      id: "bb",
+      title: "Blazing Beachhead",
+      requirements: "Requires: GZDoom, OTEX",
+      desc: "An expansive magma shoreline with hordes of modded enemies.",
+      href: "https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/BanjoDave_Blazing-Beachhead.wad",
+      downloadLabel: "BanjoDave_Blazing-Beachhead.wad 5.62 MB",
+      buttonLabel: "Download .wad",
+      hover: false,
+      videoLoaded: false,
+      videoSrc: "/path/to/video.webm",
+    },
+    {
+      id: "atv",
+      title: "Ascent to Valhalla",
+      desc: "Collab with Danlex for Mapwich 2.",
+      href: "https://www.doomworld.com/forum/topic/117485-come-eat-the-mapwich-2-public-beta-out-now/",
+      buttonLabel: "Doomworld Thread",
+      hover: false,
+      videoLoaded: false,
+      videoSrc: "/path/to/video.webm",
+    },
+    {
+      id: "m",
+      title: "MALAGARD",
+      desc: "My first release!",
+      href: "https://www.doomworld.com/forum/topic/110861-malagard-single-map-for-doom-ii/",
+      buttonLabel: "Doomworld Thread",
+      hover: false,
+      videoLoaded: false,
+      videoSrc: "/path/to/video.webm",
+    },
+  ]);
+
+  function handleMouseEnter(id) {
+    setCards(
+      cards.map((card) =>
+        card.id === id
+          ? { ...card, hover: true, videoLoaded: true }
+          : { ...card, hover: false }
+      )
+    );
+  }
+
+  function handleMouseLeave(id) {
+    setCards(cards.map((card) => ({ ...card, hover: false })));
+  }
+
   return (
     <section>
       <header>
@@ -37,57 +97,41 @@ function Doom() {
             </div>
           </h2>
           <div className="doom-cards">
-            <div className="card" id="dumb">
-              <h3>Deep Underground Military Bunker</h3>
-              <p className="card-requirements">Requires: GZDoom, OTEX</p>
-              <p className="desc">
-                A strange mist is making people crazy in this secret base, and
-                your prison door just unlocked itself.
-              </p>
-              <a
-                href="https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/DUMB.pk3"
-                title="DUMB.pk3 18.1 MB"
-                download
+            {cards.map((card) => (
+              <div
+                className="card"
+                id={card.id}
+                key={card.id}
+                style={{
+                  backgroundImage: `linear-gradient(to bottom, transparent, transparent 66.6%, black), url('/img/doom/card-${card.id}.jpg')`,
+                }}
+                onMouseEnter={() => handleMouseEnter(card.id)}
+                onMouseLeave={() => handleMouseLeave(card.id)}
               >
-                <button>Download .pk3</button>
-              </a>
-            </div>
-            <div className="card" id="bb">
-              <h3>Blazing Beachhead</h3>
-              <p className="card-requirements">Requires: GZDoom, OTEX</p>
-              <p className="desc">
-                An expansive magma shoreline with hordes of modded enemies.
-              </p>
-              <a
-                href="https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/BanjoDave_Blazing-Beachhead.wad"
-                title="BanjoDave_Blazing-Beachhead.wad 5.62 MB"
-                download
-              >
-                <button>Download .wad</button>
-              </a>
-            </div>
-            <div className="card" id="atv">
-              <h3>Ascent to Valhalla</h3>
-              <p className="desc">Collab with Danlex for Mapwich 2.</p>
-              <a
-                href="https://www.doomworld.com/forum/topic/117485-come-eat-the-mapwich-2-public-beta-out-now/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button>Doomworld Thread</button>
-              </a>
-            </div>
-            <div className="card" id="m">
-              <h3>MALAGARD</h3>
-              <p className="desc">My first release!</p>
-              <a
-                href="https://www.doomworld.com/forum/topic/110861-malagard-single-map-for-doom-ii/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <button>Doomworld Thread</button>
-              </a>
-            </div>
+                <h3>{card.title}</h3>
+                <div className="card-video">
+                  {card.videoLoaded && (
+                    <video
+                      src={`/vid/doom/${card.id}.webm`}
+                      muted
+                      loop
+                      autoPlay
+                      playsInline
+                      className={card.hover ? "video-active" : ""}
+                    >
+                      Test
+                    </video>
+                  )}
+                </div>
+                {card.requirements && (
+                  <p className="card-requirements">{card.requirements}</p>
+                )}
+                <p className="desc">{card.desc}</p>
+                <a href={card.href} title={card.downloadLabel} download>
+                  <button>{card.buttonLabel}</button>
+                </a>
+              </div>
+            ))}
 
             <p className="more-desc">DOOM2.WAD required</p>
           </div>

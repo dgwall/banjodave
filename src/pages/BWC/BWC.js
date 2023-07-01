@@ -6,29 +6,29 @@ const correctSequence = [216, 216, 72, 180];
 
 const emojiDescriptions = {
   "0-0": "Hibiscus Slot Machine",
-  "0-1": "Money Face Poop",
-  "0-2": "Dazed Diamond",
-  "0-3": "VHS in Waste Basket",
-  "0-4": "UFO under Wave",
+  "0-1": "Poop Money Face",
+  "0-2": "Dizzy Diamond",
+  "0-3": "A VHS Tape in Waste Basket",
+  "0-4": "Drones in the Ocean",
   "0-5": "Earth-Sun",
   "0-6": "Cool Thundercloud",
   "0-7": "Shocked Banana",
   "0-8": "Rudolf Bread",
   "0-9": "Tiger Candy",
-  "1-0": "Fork and Knife with Infinity",
+  "1-0": "Fork and Knife with Infinity Symbol",
   "1-1": "Brain Ghost",
   "1-2": "Fuming",
   "1-3": "Colourful Microbes",
   "1-4": "Disguised Alien",
   "1-5": "Moonlit Love Letter",
-  "1-6": "Monkey eating Satsuma",
+  "1-6": "Monkey Eating Satsuma",
   "1-7": "Vomiting Cupcake",
   "1-8": "Can of Saturn",
   "1-9": "City Ablaze",
   "2-0": "Diamond Pepper",
   "2-1": "Mushroom Rabbits",
   "2-2": "Shrinking Watermelon",
-  "2-3": "Goat eating Jack-o'-Lantern",
+  "2-3": "Goat Eating a Jack-o'-Lantern",
   "2-4": "Newspaper Stump",
   "2-5": "Visions of a Wilted Rose",
   "2-6": "Shaking Full-Moon Face",
@@ -81,7 +81,7 @@ const generateEmojiKeys = (selectedImages, handleClick) =>
     </div>
   ));
 
-const AccessScreen = ({ accessLabel, secretCode }) => (
+const AccessScreen = ({ access, accessLabel, secretCode }) => (
   <div className="monitor">
     <div className="screen">
       <div className="center">
@@ -89,7 +89,6 @@ const AccessScreen = ({ accessLabel, secretCode }) => (
           src="/bwc/Banjo-Warez-Corporation.png"
           alt="Banjo Warez Corporation"
           loading="lazy"
-          height="256px"
         />
       </div>
       <div className="screen-page">
@@ -110,6 +109,198 @@ const AccessScreen = ({ accessLabel, secretCode }) => (
             BanjoDave right now for a BWC Black Keycard granting free top-tier
             Banjo content for life.
           </p>
+        )}
+        {access === "2" ? (
+          <>
+            <div className="data">
+              <img
+                src="/bwc/bwc.png"
+                alt="BWC"
+                style={{
+                  width: "1rem",
+                  height: "1rem",
+                  verticalAlign: "bottom",
+                }}
+              />{" "}
+              <u className="sEcUrItY"> S//SAR-ST </u>
+              <br />
+              <br />
+              <u> &#9650; Animations </u>
+              <br />
+              <br />
+              <u> &#9650; Art </u>
+              <br />
+              <br />
+              <u> &#9650; Banjo's Arcade </u>
+              <br />
+              <br />
+              <u> &#9650; BanjoZine </u>
+              <br />
+              <br />
+              <u> &#9650; Digital Art </u>
+              <br />
+              <br />
+              <u> &#9650; DOOM Maps </u>
+              <br />
+              <br />
+              <u> &#9650; DOOM Speedmaps </u>
+              <br />
+              <br />
+              <u> &#9650; Game Jams </u>
+              <br />
+              <br />
+              <u> &#9650; Music </u>
+              <br />
+              <br />
+              <u> &#9650; N Maps </u>
+              <br />
+              <br />
+              Memoirs of the Ancients REDUX <span>[2012] Community pack</span>
+              <br />
+              <a>
+                &#11043;
+                N.v1.4.Memoirs.of.the.Ancients.REDUX.2012.WEBDL-[BWC].txt{" "}
+                <span>766 KB</span>
+              </a>
+              <br />
+              <br />
+              rootootoot <span>[2008] 550 Selected Maps</span>
+              <br />
+              <a>
+                &#11043; NReality.rootootoot.2018.WEBDL-[BWC].txt{" "}
+                <span>1,004 KB</span>
+              </a>
+              <br />
+              <br />
+              waNder... <span>[2019] NReality image maps</span>
+              <br />
+              <a>
+                &#11043; NReality.waNder....2019.WEBDL-[BWC].zip{" "}
+                <span>1,004 KB</span>
+              </a>
+              <br />
+              <br />
+              <u> &#9650; Posters </u>
+              <br />
+              <br />
+              <u> &#9650; rootootoot collector's edition </u>
+              <br />
+              <br />
+              <u> &#9650; Stickers </u>
+              <br />
+              <br />
+              <img
+                src="/bwc/bwc.png"
+                alt="BWC"
+                style={{
+                  width: "1rem",
+                  height: "1rem",
+                  verticalAlign: "bottom",
+                }}
+              />{" "}
+              <u className="sEcUrItY"> TS//SAR-MS </u>
+              <br />
+              <br />
+              <u>
+                <span className="a"> &#9632; Albums </span>
+              </u>
+              <br />
+              <br />
+              <u>
+                <span className="a"> &#9632; Animations </span>
+              </u>
+              <br />
+              <br />
+              <u>
+                <span className="a"> &#9632; Cringe Archive 2017 </span>
+              </u>
+              <br />
+              <br />
+              <u>
+                <span className="a"> &#9632; Digital Art </span>
+              </u>
+              <br />
+              <br />
+              <u>
+                <span className="a"> &#9632; Gameplay </span>
+              </u>
+              <br />
+              <br />
+              <u>
+                <span className="a"> &#9632; Magazines </span>
+              </u>
+              <br />
+              <br />
+              <u>
+                <span className="a"> &#9632; N Maps </span>
+              </u>
+              <br />
+              <br />
+              2008 - Fissure
+              <br />
+              <br />
+              2009 - DW40 pack
+              <br />
+              <br />
+              2009 - OUTER DX
+              <br />
+              <br />
+              2015 - NUMA Bitesized & Featured
+              <br />
+              <br />
+              2016 - Fauna
+              <br />
+              <br />
+              <u>
+                <span className="a"> &#9632; Power Points </span>
+              </u>
+              <br />
+              <br />
+              <u>
+                <span className="a"> &#9632; Scrapped Games </span>
+              </u>
+              <br />
+              <br /> <span>[] </span>
+              <br />
+              <a href="#">
+                &#11043; <span></span>
+              </a>
+              <br />
+              <br />
+            </div>
+            <div className="center">
+              &#9650; Banjo <span></span>
+              <br />
+              &#9650; &#9650; Warez
+              <br />
+              CORPORATION
+              <br />
+              <br />
+              <a
+                href="https://www.banjodave.com/"
+                target="_blank"
+                rel="noreferrer"
+                className="site-link"
+              >
+                banjodave.com
+              </a>
+              <br />
+              <a
+                href="https://twitter.com/banjeetz"
+                target="_blank"
+                rel="noreferrer"
+                className="twitter-link"
+              >
+                @banjeetz
+              </a>
+              <br />
+              <br />
+              Copyright &copy; MCMXCIII-MMXIII. All rights reserved.
+              <br />
+            </div>
+          </>
+        ) : (
+          ""
         )}
       </div>
     </div>
@@ -187,10 +378,14 @@ function EmojiPassword() {
   return (
     <>
       {access === 2 ? (
-        <AccessScreen accessLabel="TOP SECRET//SAR-MAPLE SMOKE/SAR-COOL TUNE//WAIVED" />
+        <AccessScreen
+          access="2"
+          accessLabel="TOP SECRET//SAR-MAPLE SMOKE/SAR-SILENT TUNE"
+        />
       ) : access === 1 ? (
         <AccessScreen
-          accessLabel="SECRET//SPECIAL ACCESS REQUIRED-COOL TUNE"
+          access="1"
+          accessLabel="SECRET//SPECIAL ACCESS REQUIRED-SILENT TUNE"
           secretCode="PSYCHO-GORILLA"
         />
       ) : (
