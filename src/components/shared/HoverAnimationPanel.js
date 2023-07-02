@@ -37,7 +37,7 @@ function HoverAnimationPanel({ data }) {
 
   useEffect(() => {
     // Construct URLs for the images
-    if (hover) {
+    if (hover || !imageURLs.length) {
       setImageURLs(
         Array.from({ length: data.imageCount }, (_, index) => ({
           url: `/img/hoverpanels/${data.id}-${index}.webp`,
@@ -46,7 +46,7 @@ function HoverAnimationPanel({ data }) {
         }))
       );
     }
-  }, [data, hover]);
+  }, [data, hover, imageURLs.length]);
 
   // handle mouse enter and leave events
   const handleMouseEnter = () => {
@@ -86,6 +86,7 @@ function HoverAnimationPanel({ data }) {
           className={`image ${imgData.animation} ${hover ? "animate" : ""}`}
           style={imgData.position}
           alt=""
+          loading="lazy"
         />
       ))}
       <div className="glass">{data.name}</div>
