@@ -104,6 +104,9 @@
 }
 .main-bwc a {
   text-decoration: none;
+  width: 95%;
+  display: inline-block;
+  word-break: break-word;
 }
 .main-bwc a.l1 {
   color: var(--l1);

@@ -1,7 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 // The animations array
-const animations = ["rotate", "wobble", "pulse"];
+const animations = [
+  "rotate",
+  "wobble",
+  "pulse",
+  "flipHorizontal",
+  "fadeInOut",
+  "bounce",
+];
 
 function HoverAnimationPanel({ data }) {
   const [hover, setHover] = useState(false);
@@ -13,10 +20,10 @@ function HoverAnimationPanel({ data }) {
     const angle = angleOffset + (index / total) * 2 * Math.PI;
 
     // Calculate the radius of the circle
-    const radius = hovered ? Math.random() * 20 + 30 : Math.random() * 10 + 25;
+    const radius = hovered ? Math.random() * 15 + 25 : Math.random() * 10 + 25;
 
     // Calculate the position of the image
-    const left = 50 + radius * Math.cos(angle); // 50 is the center
+    const left = 50 + radius * Math.cos(angle);
     const top = 50 + radius * Math.sin(angle);
 
     return {
@@ -30,13 +37,15 @@ function HoverAnimationPanel({ data }) {
 
   useEffect(() => {
     // Construct URLs for the images
-    setImageURLs(
-      Array.from({ length: data.imageCount }, (_, index) => ({
-        url: `/img/hoverpanels/${data.id}-${index}.webp`,
-        animation: getRandomAnimation(),
-        position: assignPosition(index, data.imageCount, false, 0),
-      }))
-    );
+    if (hover) {
+      setImageURLs(
+        Array.from({ length: data.imageCount }, (_, index) => ({
+          url: `/img/hoverpanels/${data.id}-${index}.webp`,
+          animation: getRandomAnimation(),
+          position: assignPosition(index, data.imageCount, false, 0),
+        }))
+      );
+    }
   }, [data, hover]);
 
   // handle mouse enter and leave events
