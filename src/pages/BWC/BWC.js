@@ -113,12 +113,9 @@ const AccessScreen = ({ access, accessLabel, secretCode }) => (
         {access === "2" ? (
           <>
             <div className="data">
-              <div className="center">
-                <u className="l2"> TS//SAR-MS &#9650; </u>
-                <br />
-                <br />
-                <u className="l1"> S//SAR-ST &#9632; </u>
-              </div>
+              <u className="l2"> &#9650; TS//SAR-MS </u>
+              <br />
+              <u className="l1"> &#9632; S//SAR-ST </u>
               <br />
               <br />
               <u> &#11043; Animation </u>

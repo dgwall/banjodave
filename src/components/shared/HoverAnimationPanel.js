@@ -20,7 +20,7 @@ function HoverAnimationPanel({ data }) {
     const angle = angleOffset + (index / total) * 2 * Math.PI;
 
     // Calculate the radius of the circle
-    const radius = hovered ? Math.random() * 15 + 25 : Math.random() * 10 + 25;
+    const radius = hovered ? Math.random() * 15 + 25 : Math.random() * 10 + 20;
 
     // Calculate the position of the image
     const left = 50 + radius * Math.cos(angle);

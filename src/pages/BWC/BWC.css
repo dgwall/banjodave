@@ -104,9 +104,10 @@
 }
 .main-bwc a {
   text-decoration: none;
-  width: 95%;
+  width: 100%;
   display: inline-block;
   word-break: break-word;
+  white-space: pre-wrap;
 }
 .main-bwc a.l1 {
   color: var(--l1);
@@ -143,7 +144,8 @@
   box-shadow: 0 0 0.5rem #fccd16;
   text-shadow: none;
   color: #000;
-  white-space: pre;
+  width: 100%;
+  display: inline-block;
 }
 .main-bwc .sEcUrItY u,
 .main-bwc u.sEcUrItY {
@@ -164,6 +166,10 @@
   box-shadow: 0 0 0.5rem #7facff;
   text-shadow: none;
   color: #000;
+}
+.main-bwc .data {
+  width: 95%;
+  margin: auto;
 }
 
 .emoji-pin-pad {
