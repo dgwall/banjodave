@@ -32,7 +32,7 @@ function HoverAnimationPanel({ data }) {
     // Construct URLs for the images
     setImageURLs(
       Array.from({ length: data.imageCount }, (_, index) => ({
-        url: `/img/hoverpanels/${data.id}-${index}.png`,
+        url: `/img/hoverpanels/${data.id}-${index}.webp`,
         animation: getRandomAnimation(),
         position: assignPosition(index, data.imageCount, false, 0),
       }))
