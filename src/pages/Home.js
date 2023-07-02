@@ -1,5 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import HoverAnimationPanel from "../components/shared/HoverAnimationPanel";
+
+const panelA = { id: "0dg", name: "0DGames", imageCount: 4 };
+const panelB = { id: "lvl", name: "Level Design", imageCount: 5 };
+const panelC = { id: "soc", name: "Stay Updated", imageCount: 5 };
 
 function Home() {
   return (
@@ -16,26 +21,29 @@ function Home() {
         </p>
       </article>
 
-      <article>
-        <h2>0DGames</h2>
+      <article className="benefits">
         <p>
           <Link to="/0dgames">0DGames</Link> is where my game development
           projects come to life. Keep an eye on this space as the curtain
           prepares to rise on the world of 0DGames.
         </p>
+        <Link to="/0dgames/">
+          <HoverAnimationPanel data={panelA} />
+        </Link>
       </article>
 
-      <article>
-        <h2>Level Design</h2>
+      <article className="benefits">
         <p>
           I create maps for the classic games DOOM by id Software and N by
           Metanet Software. My aim is to contribute meaningfully to these
           classic games.
         </p>
+        <Link to="/doom/">
+          <HoverAnimationPanel data={panelB} />
+        </Link>
       </article>
 
-      <article>
-        <h2>Stay Updated</h2>
+      <article className="benefits">
         <p>
           If you want to keep tabs on what's going down or sneak a peek at my
           day-to-day grind, join the{" "}
@@ -73,6 +81,9 @@ function Home() {
           where I share whatever's cooking in the game dev kitchen and the ins
           and outs of my creations.
         </p>
+        <Link to="/thank-you/">
+          <HoverAnimationPanel data={panelC} />
+        </Link>
       </article>
     </section>
   );

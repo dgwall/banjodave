@@ -172,6 +172,120 @@ main {
   color: rgb(212, 147, 6);
 }
 
+.main .benefits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main .benefits:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.main .benefits p {
+  max-width: 30vw;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.main .benefits .ani-panel {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 20vh;
+  width: 20vw;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.ani-panel.hover .glass {
+  transform: scale(1.1);
+  box-shadow: 0 0 2rem #00000080;
+}
+
+.ani-panel .glass {
+  transform: scale(0.8);
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e6e9ec9f;
+  background: radial-gradient(#dadcdf42, #dadcdf80);
+  color: #333333e0;
+  position: relative;
+  backdrop-filter: blur(0.3rem);
+  border-radius: 1rem;
+  font-size: 2rem;
+  padding: 1rem;
+  transition: 3s;
+  box-shadow: 0 0 1rem #00000040;
+}
+
+.ani-panel .image {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+  position: absolute;
+  transition: 1s;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes wobble {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.rotate {
+  animation: rotate 2s linear;
+}
+
+.wobble {
+  animation: wobble 2s ease;
+}
+
+.pulse {
+  animation: pulse 2s linear;
+}
+
+.animate {
+  animation-iteration-count: infinite;
+}
+
 @media screen and (max-width: 768px) {
   .main h1 {
     font-size: 3rem;
