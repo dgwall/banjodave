@@ -214,7 +214,7 @@
 
 .dropdown-content a:focus .icon,
 .dropdown-content a:hover .icon {
-  filter: invert(66%);
+  filter: invert(100%);
   opacity: 1;
 }
 

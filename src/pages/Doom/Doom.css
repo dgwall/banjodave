@@ -197,30 +197,51 @@
   color: #fff;
   vertical-align: top;
   background-size: cover;
+  overflow: hidden;
   border: 1px solid #111;
   background-position-x: 50%;
   background-position-y: 20%;
+  position: relative;
 }
 
 .main-doom .card-container {
-  border-radius: 0.9rem;
+  z-index: 10;
   display: inline-flex;
   flex-direction: column;
   justify-content: flex-end;
   padding: 0.5rem;
   height: 100%;
-  width: 100%;
-  background-color: #11111100;
-  transition: 0.5s ease-out;
 }
 
-.main-doom .card:hover .card-container {
-  background-color: #111111c0;
-  transition: 1s ease-out;
+.main .card:hover .card-container {
+  background-color: #111111ff;
+}
+
+.main-doom .video-dimmer {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.75s ease-in;
+  background: linear-gradient(
+    to bottom,
+    #0d0d0d,
+    #0d0d0d 15%,
+    transparent 30%,
+    transparent 60%,
+    #000 75%,
+    #000
+  );
+}
+
+.main-doom .card:hover .video-dimmer {
+  opacity: 1;
+  transition: 0.25s;
 }
 
 .main-doom .card h3 {
-  margin-bottom: 1rem;
+  margin-bottom: auto;
   color: #e4d2cd;
   font-size: 1.4rem;
   text-shadow: 0 -0.05rem 0.2rem black;
@@ -269,7 +290,6 @@
 }
 
 .main-doom .card:hover {
-  background-position-y: 60%;
   border: 1px solid #222;
   transform: scale(1.1);
   transition: 1s ease-out;
@@ -277,26 +297,24 @@
 }
 
 .main-doom .card .card-video.video-active {
-  width: 100%;
-  height: auto;
   opacity: 1;
   transition: 1s ease-out;
-  transform: scale(1.15) translateY(0);
 }
 
 .main-doom .card .card-video {
-  z-index: 10;
+  z-index: 2;
   margin-bottom: auto;
-  transform: scale(0) translateY(8rem);
   transition: 0.5s ease-out;
   opacity: 0;
   margin-bottom: auto;
+  position: absolute;
+  top: 15%;
+  left: -5.6rem;
 }
 
 .main-doom .card video {
-  border-radius: 1rem;
-  box-shadow: 0 0 0.5rem #000;
-  width: 100%;
+  width: auto;
+  height: 15rem;
   background-color: #000;
 }
 

@@ -84,7 +84,6 @@ function N() {
                 autoPlay
                 muted
                 loop
-                controls
                 src="/vid/n/plusplus.webm"
               >
                 <img

@@ -33,7 +33,7 @@ function Doom() {
     {
       id: "atv",
       title: "Mapwich 2: Ascent to Valhalla",
-      desc: "Collab with Danlex. Climb storm-lashed cliffs on your way to a monumental fortress.",
+      desc: "Climb storm-lashed cliffs on your way to a monumental fortress. Collab with Danlex.",
       href: "https://www.doomworld.com/forum/topic/117485-come-eat-the-mapwich-2-public-beta-out-now/",
       buttonLabel: "Doomworld Thread",
       hover: false,
@@ -107,23 +107,24 @@ function Doom() {
                 onMouseEnter={() => handleMouseEnter(card.id)}
                 onMouseLeave={() => handleMouseLeave(card.id)}
               >
+                <div className="video-dimmer"></div>
+                <div
+                  className={`card-video ${card.hover ? "video-active" : ""}`}
+                >
+                  {card.videoLoaded && (
+                    <video
+                      src={`/vid/doom/${card.id}.webm`}
+                      muted
+                      loop
+                      autoPlay
+                      playsInline
+                    >
+                      <img src="/img/orb_small.gif" alt="loading..." />
+                    </video>
+                  )}
+                </div>
                 <div className="card-container">
                   <h3>{card.title}</h3>
-                  <div
-                    className={`card-video ${card.hover ? "video-active" : ""}`}
-                  >
-                    {card.videoLoaded && (
-                      <video
-                        src={`/vid/doom/${card.id}.webm`}
-                        muted
-                        loop
-                        autoPlay
-                        playsInline
-                      >
-                        <img src="/img/orb_small.gif" alt="loading..." />
-                      </video>
-                    )}
-                  </div>
                   {card.requirements && (
                     <p className="card-requirements">{card.requirements}</p>
                   )}
