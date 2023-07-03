@@ -111,9 +111,10 @@ function BanjosArcade() {
             title="YouTube video player"
             frameborder="0"
             style={{
+              borderRadius: "2rem",
               marginTop: "5rem",
               width: "1280px",
-              aspectRatio: "1.778",
+              aspectRatio: "1.77",
               height: "auto",
               maxWidth: "80vw",
             }}
@@ -142,7 +143,8 @@ function BanjosArcade() {
                   description={game.description}
                 />
               ))}
-              </div>*/}
+              </div>
+              */}
         </article>
       </section>
     </section>

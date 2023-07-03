@@ -1,6 +1,7 @@
 .main-bwc {
-  --l1: #16fcaf;
+  --l1: #44ffd7;
   --l2: #fff;
+  --l3: #131313;
 }
 
 .main-bwc .page {
@@ -10,8 +11,8 @@
       to left,
       transparent,
       #00000080 33.3%,
-      #111 33.3%,
-      #111 66.6%,
+      #11111140 33.3%,
+      #11111140 66.6%,
       #00000080 66.6%,
       transparent
     ),
@@ -115,6 +116,9 @@
 .main-bwc a.l2 {
   color: var(--l2);
 }
+.main-bwc a.l3 {
+  color: var(--l3);
+}
 .main-bwc a:hover {
   text-shadow: none;
   color: #000;
@@ -127,6 +131,12 @@
   background-color: var(--l2);
   box-shadow: 0 0 0.5rem var(--l2);
 }
+.main-bwc a.l3:hover {
+  color: #589752;
+  background-color: var(--l3);
+  box-shadow: none;
+  text-shadow: 0 0 0.5rem #589752;
+}
 .main-bwc u.l1 {
   background-color: var(--l1);
   box-shadow: 0 0 0.5rem var(--l1);
@@ -134,6 +144,12 @@
 .main-bwc u.l2 {
   background-color: var(--l2);
   box-shadow: 0 0 0.5rem var(--l2);
+}
+.main-bwc u.l3 {
+  color: #589752;
+  background-color: var(--l3);
+  box-shadow: none;
+  text-shadow: 0 0 0.5rem #589752;
 }
 .main-bwc a:hover span {
   color: #000;
@@ -218,19 +234,19 @@
 }
 
 .emoji-slot.slot-0 {
-  border: 2px solid #00ff0040;
+  border-color: #00ff0040;
 }
 
 .emoji-slot.slot-1 {
-  border: 2px solid #0000ff40;
+  border-color: #0000ff40;
 }
 
 .emoji-slot.slot-2 {
-  border: 2px solid #ff000040;
+  border-color: #ff000040;
 }
 
 .emoji-slot.slot-3 {
-  border: 2px solid #00ff8040;
+  border-color: #00ff8040;
 }
 
 .emoji-keys {
@@ -249,19 +265,19 @@
 }
 
 .list-0 .emoji-keys.emoji-keys:not(.selected-emoji):hover {
-  border: 1px solid #8f8;
+  border: 1px solid #0f0;
 }
 
 .list-1 .emoji-keys.emoji-keys:not(.selected-emoji):hover {
-  border: 1px solid #88f;
+  border: 1px solid #00f;
 }
 
 .list-2 .emoji-keys.emoji-keys:not(.selected-emoji):hover {
-  border: 1px solid #f88;
+  border: 1px solid #f00;
 }
 
 .list-3 .emoji-keys.emoji-keys:not(.selected-emoji):hover {
-  border: 1px solid #0f8;
+  border: 1px solid #0ff;
 }
 
 .emoji-keys:not(.selected-emoji):hover img {
@@ -278,20 +294,40 @@
   height: 3rem;
 }
 
-.list-0 .selected-emoji {
+.list-0 .selected-emoji,
+.list-0 .emoji-keys:hover {
   background: radial-gradient(circle at center, #8f8, transparent);
 }
 
-.list-1 .selected-emoji {
+.list-1 .selected-emoji,
+.list-1 .emoji-keys:hover {
   background: radial-gradient(circle at center, #88f, transparent);
 }
 
-.list-2 .selected-emoji {
+.list-2 .selected-emoji,
+.list-2 .emoji-keys:hover {
   background: radial-gradient(circle at center, #f88, transparent);
 }
 
-.list-3 .selected-emoji {
+.list-3 .selected-emoji,
+.list-3 .emoji-keys:hover {
   background: radial-gradient(circle at center, #0f8, transparent);
+}
+
+.list-0 .emoji-keys {
+  border-color: #88ff8840;
+}
+
+.list-1 .emoji-keys {
+  border-color: #8888ff40;
+}
+
+.list-2 .emoji-keys {
+  border-color: #ff888840;
+}
+
+.list-3 .emoji-keys {
+  border-color: #00ff8840;
 }
 
 .main-bwc a {

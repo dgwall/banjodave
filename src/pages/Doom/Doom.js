@@ -28,7 +28,6 @@ function Doom() {
       buttonLabel: "Download .wad",
       hover: false,
       videoLoaded: false,
-      videoSrc: "/path/to/video.webm",
     },
     {
       id: "atv",
@@ -38,7 +37,6 @@ function Doom() {
       buttonLabel: "Doomworld Thread",
       hover: false,
       videoLoaded: false,
-      videoSrc: "/path/to/video.webm",
     },
     {
       id: "m",
@@ -48,7 +46,6 @@ function Doom() {
       buttonLabel: "Doomworld Thread",
       hover: false,
       videoLoaded: false,
-      videoSrc: "/path/to/video.webm",
     },
   ]);
 
@@ -194,11 +191,12 @@ function Doom() {
               </div>
             </div>
           </div>
+          {/*
           <div className="button">
             <button className="under-construction">
               Early Access on Patreon!
             </button>
-          </div>
+          </div> */}
         </article>
       </div>
     </section>

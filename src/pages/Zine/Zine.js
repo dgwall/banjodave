@@ -96,11 +96,10 @@ function Zine() {
           of creation, fanning our ever-burning black flame, and propelling our
           nocturnal journey further into the unknown.
         </p>
+        {/* 
         <a href="#maincontent" className="patreon-link">
-          {/* 
         target="_blank"
         rel="noreferrer"
-         */}
           <span className="under-construction">
             <img
               src="../img/orb_invert_small.gif"
@@ -110,6 +109,7 @@ function Zine() {
             Join our arcane quest on Patreon
           </span>
         </a>
+         */}
         <div align="center">
           <img src={seal} alt="Seal of Banjo House Publishing" />
         </div>

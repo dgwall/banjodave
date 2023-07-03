@@ -110,12 +110,14 @@ const AccessScreen = ({ access, accessLabel, secretCode }) => (
             Access for life.
           </p>
         )}
-        {access === "2" ? (
+        {access === "3" ? (
           <>
             <div className="data">
-              <u className="l2"> &#9650; TS//SAR-MS </u>
+              <u className="l3"> L3 &#9734; TS//SAR-CL//WAIVED </u>
               <br />
-              <u className="l1"> &#9632; S//SAR-ST </u>
+              <u className="l2"> L2 &#9650; TS//SAR-MS </u>
+              <br />
+              <u className="l1"> L1 &#9632; S//SAR-ST </u>
               <br />
               <br />
               <u> &#11043; Animation </u>
@@ -449,7 +451,7 @@ function EmojiPassword() {
       selectedImages[2] === -1 &&
       aroma > 9
     ) {
-      setAccess(2);
+      setAccess(3);
     }
   }, [aroma, selectedImages]);
 
@@ -478,7 +480,12 @@ function EmojiPassword() {
 
   return (
     <>
-      {access === 2 ? (
+      {access === 3 ? (
+        <AccessScreen
+          access="3"
+          accessLabel="TOP SECRET//SAR-MULTIPLE PROGRAMS//WAIVED"
+        />
+      ) : access === 2 ? (
         <AccessScreen
           access="2"
           accessLabel="TOP SECRET//SAR-MAPLE SMOKE/SAR-SILENT TUNE"

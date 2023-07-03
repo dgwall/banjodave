@@ -89,7 +89,9 @@ function HoverAnimationPanel({ data }) {
           loading="lazy"
         />
       ))}
-      <div className="glass">{data.name}</div>
+      <div className="glass">
+        <div>{data.name}</div>
+      </div>
     </div>
   );
 }
