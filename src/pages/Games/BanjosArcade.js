@@ -106,29 +106,23 @@ function BanjosArcade() {
 
       <section className="content">
         <article>
-          <iframe
-            src="https://www.youtube.com/embed/KZnIY07b3-Q"
-            title="YouTube video player"
-            frameborder="0"
-            style={{
-              borderRadius: "2rem",
-              marginTop: "5rem",
-              width: "1280px",
-              aspectRatio: "1.77",
-              height: "auto",
-              maxWidth: "80vw",
-            }}
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          >
-            <img
-              src="/portfolio/img/project-ba.png"
-              alt="Banjo's Arcade Screenshots"
-            />
-          </iframe>
+          <div className="preview-container">
+            <iframe
+              src="https://www.youtube.com/embed/KZnIY07b3-Q"
+              title="YouTube video player"
+              frameborder="0"
+              className="preview"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              <img
+                src="/portfolio/img/project-ba.png"
+                alt="Banjo's Arcade Screenshots"
+              />
+            </iframe>
+          </div>
           <h1 className="under-construction">Under Construction</h1>
 
-          <img src="/img/0dg/cart-dmg.png" alt="Damaged Cartridge" />
           {/*
           <div className="game-tiles">
             {gameData

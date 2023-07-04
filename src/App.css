@@ -53,8 +53,7 @@ main {
   padding-top: 10rem;
 }
 
-.under-construction,
-.map-item.coming-soon h3 {
+.under-construction {
   background: url("./assets/images/uc.png");
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -235,7 +234,7 @@ main {
 .ani-panel .glass div {
   padding: 1rem;
   border-radius: 1rem;
-  border: 1.5px solid #00000018;
+  border: 1.5px solid #00000013;
 }
 
 .ani-panel .image {

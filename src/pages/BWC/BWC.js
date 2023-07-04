@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 //import { Link } from "react-router-dom";
 import "./BWC.css";
+import BwcTracker from "../../components/menus/BwcTracker";
 
 const correctSequence = [216, 216, 72, 180];
 
@@ -81,7 +82,7 @@ const generateEmojiKeys = (selectedImages, handleClick) =>
     </div>
   ));
 
-const AccessScreen = ({ access, accessLabel, secretCode }) => (
+const AccessScreen = ({ access, accessLabel, secretCode, data }) => (
   <div className="monitor">
     <div className="screen">
       <div className="center">
@@ -101,192 +102,61 @@ const AccessScreen = ({ access, accessLabel, secretCode }) => (
           </div>
         </div>
         {secretCode && (
-          <p>
-            Congratulations on figuring out the password, bypassing security
-            protocol, or finding the GitHub!
-            <br />
-            Send secret code <u className="sEcUrItY"> {secretCode} </u> to
-            BanjoDave right now for a BWC Black Keycard granting free L3 BWC
-            Access for life.
-          </p>
+          <div className="data">
+            <p>
+              Congratulations on figuring out the password, bypassing security
+              protocol, or finding the GitHub!
+              <br />
+              Send secret code <u className="sEcUrItY"> {secretCode} </u> to
+              BanjoDave right now for a BWC Black Keycard granting free L3 BWC
+              Access for life.
+            </p>
+            <BwcTracker data={data} access={1} />
+          </div>
         )}
-        {access === "3" ? (
+        {access === "2" ? (
           <>
             <div className="data">
-              <u className="l3"> L3 &#9734; TS//SAR-CL//WAIVED </u>
-              <br />
-              <u className="l2"> L2 &#9650; TS//SAR-MS </u>
-              <br />
-              <u className="l1"> L1 &#9632; S//SAR-ST </u>
-              <br />
-              <br />
-              <u> &#11043; Animation </u>
-              <br />
-              <a href="/" className="l2">
-                &#9650;
-                BanjoD453.Norbert.the.Magnificent.2008.360p.WEBDL.x264-[BWC].mp4{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l2">
-                &#9650; BanjoD453.Old.Animations.2008.360p.WEBDL.x264-[BWC].mp4{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l2">
-                &#9650; BanjoD453.RCT3.Carnage.2008.480p.WEBDL.x264-[BWC].mp4{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l2">
-                &#9650; BanjoD453.YouTube.Poops.2009.YT-[BWC].url{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <br />
-              <u> &#11043; Banjo's Arcade </u>
-              <br />
-              <a href="/" className="l1">
-                &#9632; Banjos.Arcade.hiecom.beta.2022.WEBDL-[BWC].zip{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632; Banjos.Arcade.navexe.beta.2023.WEBDL-[BWC].zip{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <br />
-              <u> &#11043; BanjoZine </u>
-              <br />
-              <a href="/" className="l1">
-                &#9632; BanjoZine.2021.03.ENG.RETAiL.eBOOK-[BWC].pdf{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632; BanjoZine.2021.06.ENG.RETAiL.eBOOK-[BWC].pdf{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <br />
-              <u> &#11043; Cringe Archive 2017 </u>
-              <br />
-              <a href="/" className="l2">
-                &#9650;
-                BanjoDaves.Cringe.Archive.2017.480p.DVDRip.x264-[BWC].url{" "}
-                <span>0 B</span>
-              </a>
-              <span></span>
-              <br />
-              <br />
-              <u> &#11043; DOOM Maps </u>
-              <br />
-              <a href="/" className="l2">
-                &#9650; DOOM.II.BanjoDave.DOWNFALL.Pre.Alpha.2021.Leak-[BWC].zip{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632; DOOM.II.BanjoDave.Blazing.Beachhead.2020.WEBDL-[BWC].zip{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632;
-                DOOM.II.BanjoDave.Deep.Underground.Military.Bunker.2020.WEBDL-[BWC].zip{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632; DOOM.II.Mapwich.2.2020.WEBDL-[BWC].zip <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632; DOOM.II.BanjoDave.MALAGARD.2020.WEBDL-[BWC].zip{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <br />
-              <u> &#11043; Music </u>
-              <br />
-              <a href="/" className="l2">
-                &#9650; BanjoDave.Rudeolf.2015.128kbps.WEBDL-[BWC].mp3{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l2">
-                &#9650; BanjoDave.Purgatory.2016.128kbps.WEBDL-[BWC].mp3{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632; Banjeetz.Emerald.City.2022.208kbps.WEBDL-[BWC].mp3{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632; Banjeetz.Sunder.2020.106kpbs.WEBDL-[BWC].mp3{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <br />
-              <u> &#11043; N Maps </u>
-              <br />
-              <a href="/" className="l1">
-                &#9632;
-                N.v1.4.Memoirs.of.the.Ancients.REDUX.2012.WEBDL-[BWC].txt{" "}
-                <span>766 KB</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632; N.v1.4.DW40.rootootoot.2018.WEBDL-[BWC].txt{" "}
-                <span>1,004 KB</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632; NReality.DW40.Complete.Works.of.DW40.WEBDL-[BWC].zip{" "}
-                <span>0 B</span>
-              </a>
-              <br />
-              <a href="/" className="l1">
-                &#9632; NReality.DW40.waNder....2019.WEBDL-[BWC].zip{" "}
-                <span>0 B</span>
-              </a>
+              <BwcTracker data={data} access={2} />
             </div>
-            <br />
-            <div className="center">
-              &#9650; Banjo <span></span>
-              <br />
-              &#9650; &#9650; Warez
-              <br />
-              CORPORATION
-              <br />
-              <br />
-              <a
-                href="https://www.banjodave.com/"
-                target="_blank"
-                rel="noreferrer"
-                className="site-link"
-              >
-                banjodave.com
-              </a>
-              <br />
-              <a
-                href="https://twitter.com/banjeetz"
-                target="_blank"
-                rel="noreferrer"
-                className="twitter-link"
-              >
-                @banjeetz
-              </a>
-              <br />
-              <br />
-              Copyright &copy; MCMXCIII-MMXIII. All rights reserved.
-              <br />
-            </div>
-            {/* prettier-ignore */}
-            <pre>{`
+          </>
+        ) : (
+          ""
+        )}
+
+        <br />
+        <div className="center">
+          &#9650; Banjo <span></span>
+          <br />
+          &#9650; &#9650; Warez
+          <br />
+          CORPORATION
+          <br />
+          <br />
+          <a
+            href="https://www.banjodave.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="site-link"
+          >
+            banjodave.com
+          </a>
+          <br />
+          <a
+            href="https://twitter.com/banjeetz"
+            target="_blank"
+            rel="noreferrer"
+            className="twitter-link"
+          >
+            @banjeetz
+          </a>
+          <br />
+          <br />
+          Copyright &copy; MCMXCIII-MMXIII. All rights reserved.
+          <br />
+        </div>
+        {/* prettier-ignore */}
+        <pre>{`
        ..
        .^~
         .YJ:                                                    .:^^~^^:.
@@ -401,10 +271,6 @@ JY5P557.
                               :!!.                   ::.
                                 ::
 `}</pre>
-          </>
-        ) : (
-          ""
-        )}
       </div>
     </div>
     <div className="inlay">BWC Special Access Device</div>
@@ -443,6 +309,13 @@ function EmojiPassword() {
   const [selectedImages, setSelectedImages] = useState(Array(4).fill(-1));
   const [access, setAccess] = useState(0);
   const [aroma, setAroma] = useState(0);
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    fetch("/MAPLESMOKE.json")
+      .then((response) => response.json())
+      .then((data) => setData(data));
+  }, []);
 
   useEffect(() => {
     if (
@@ -451,7 +324,7 @@ function EmojiPassword() {
       selectedImages[2] === -1 &&
       aroma > 9
     ) {
-      setAccess(3);
+      setAccess(2);
     }
   }, [aroma, selectedImages]);
 
@@ -484,17 +357,20 @@ function EmojiPassword() {
         <AccessScreen
           access="3"
           accessLabel="TOP SECRET//SAR-MULTIPLE PROGRAMS//WAIVED"
+          data={data}
         />
       ) : access === 2 ? (
         <AccessScreen
           access="2"
           accessLabel="TOP SECRET//SAR-MAPLE SMOKE/SAR-SILENT TUNE"
+          data={data}
         />
       ) : access === 1 ? (
         <AccessScreen
           access="1"
           accessLabel="SECRET//SPECIAL ACCESS REQUIRED-SILENT TUNE"
-          secretCode="PSYCHO-GORILLA"
+          secretCode="CERULEAN LIBRARY"
+          data={data}
         />
       ) : (
         <MainScreen selectedImages={selectedImages} handleClick={handleClick} />

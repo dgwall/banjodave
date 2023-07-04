@@ -221,7 +221,6 @@
   opacity: 0.85;
   background-color: #79798888;
   border: 2px solid rgba(0, 0, 0, 0.3);
-  border-radius: 0 1rem 0 1rem;
   overflow: hidden;
 }
 
@@ -247,6 +246,10 @@
   color: #cacad0;
 }
 
+.map-item.coming-soon h3 span {
+  color: #000;
+}
+
 .main-n .tags {
   text-align: right;
   margin-top: auto;
@@ -262,7 +265,6 @@
   padding: 6px;
   font-size: smaller;
   border: 1px solid #cacad0;
-  border-radius: 0 0.5rem 0 0.5rem;
 }
 
 .main-n .tags .selected {

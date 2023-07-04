@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 // The animations array
 const animations = [
@@ -13,6 +13,46 @@ const animations = [
 function HoverAnimationPanel({ data }) {
   const [hover, setHover] = useState(false);
   const [imageURLs, setImageURLs] = useState([]);
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+  const [scale, setScale] = useState(1);
+  const glassRef = useRef(null);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    if (isMobile) setHover(true);
+  }, [isMobile]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (glassRef.current) {
+        const rect = glassRef.current.getBoundingClientRect();
+        const viewportHeight = window.innerHeight;
+        const scaleValue = Math.max(
+          0,
+          Math.min(1, 1 - rect.top / viewportHeight)
+        );
+
+        setScale(scaleValue * 0.8 + 0.3);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   // Assign a position on the circle for each image
   const assignPosition = (index, total, hovered, angleOffset) => {
@@ -53,7 +93,7 @@ function HoverAnimationPanel({ data }) {
     setHover(true);
   };
   const handleMouseLeave = () => {
-    setHover(false);
+    if (!isMobile) setHover(false);
   };
 
   // update image positions when hover state changes
@@ -89,7 +129,19 @@ function HoverAnimationPanel({ data }) {
           loading="lazy"
         />
       ))}
-      <div className="glass">
+      <div
+        className="glass"
+        ref={glassRef}
+        style={
+          isMobile
+            ? {
+                transform: `scale(${scale})`,
+                opacity: `${scale + 0.2}`,
+                transition: "1s ease-in-out",
+              }
+            : {}
+        }
+      >
         <div>{data.name}</div>
       </div>
     </div>

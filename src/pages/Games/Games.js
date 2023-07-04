@@ -16,7 +16,6 @@ const gameData = [
     title: "More Coming Soon",
     description: "TBA",
   },
-  // Add more game data objects here as needed
 ];
 
 function Games() {
@@ -40,11 +39,9 @@ function Games() {
             techniques, 0DGames has something for you.
           </p>
         </div>
-        <Suspense fallback={<div>Loading...</div>}>
-          <div className="emblem">
-            <img src={emblem} alt="0DG Emblem" loading="lazy" />
-          </div>
-        </Suspense>
+        <div className="emblem">
+          <img src={emblem} alt="0DG Emblem" loading="lazy" />
+        </div>
       </div>
 
       <section className="content">

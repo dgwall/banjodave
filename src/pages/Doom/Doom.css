@@ -179,6 +179,9 @@
 
 .main-doom .doom-cards {
   text-align: center;
+  background-color: #00000033;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 .main-doom .card {
@@ -316,6 +319,12 @@
   width: auto;
   height: 15rem;
   background-color: #000;
+}
+
+.main-doom .feature > div {
+  background-color: #00000033;
+  padding: 1rem;
+  border-radius: 1rem;
 }
 
 @media screen and (max-width: 768px) {

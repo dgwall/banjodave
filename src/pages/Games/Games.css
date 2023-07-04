@@ -135,6 +135,27 @@
   max-width: 100%;
 }
 
+.main-games .preview-container {
+  margin: auto;
+  max-width: 727px;
+  height: 570px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../../public/img/0dg/cart-dmg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-bottom: 5%;
+  padding-right: 1%;
+}
+
+.main-games .preview {
+  width: 75%;
+  aspect-ratio: 1.77;
+  position: relative;
+}
+
 @keyframes wave {
   0%,
   50%,
