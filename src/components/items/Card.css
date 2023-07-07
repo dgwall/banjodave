@@ -4,28 +4,38 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  position: relative; /* Added position property */
+  z-index: 0; /* Set z-index to 0 */
 }
 
 .main-cards .card-container {
   display: inline-block;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
   perspective: 20em;
+  position: relative; /* Added position property */
 }
 
 .main-cards .card {
   position: relative;
   background-size: cover;
   background-position: center center;
-  margin: 1.5vmin;
-  width: 31.25vmin;
-  height: 43.75vmin;
+  margin: 2vw;
+  width: 30vw;
+  max-width: 25vmin;
+  aspect-ratio: 0.7143;
   border-radius: 1.5vmin;
   transition: transform 0s linear;
-  will-change: transform;
   overflow: hidden;
   pointer-events: none;
   text-align: left;
+  z-index: 1; /* Changed from -1 to 1 */
+}
+
+.main-cards .card-container:hover {
+  z-index: 2; /* Increased z-index when card-container is hovered */
+}
+
+.main-cards .card-container:hover .card {
+  z-index: 3; /* Set z-index higher than card-container when card is hovered */
 }
 
 .main-cards .card-holo {

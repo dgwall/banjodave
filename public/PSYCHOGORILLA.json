@@ -175,7 +175,7 @@
   },
   {
     "id": "TEST",
-    "accessLevel": 1,
+    "accessLevel": 0,
     "date": "",
     "title": "Wrath",
     "thumbreel": true,
@@ -183,7 +183,6 @@
     "tags": [
       "Art",
       "Physical Art",
-      "Hell",
       "Acrylic Paint",
       "Canvas",
       "Fire",
@@ -205,26 +204,33 @@
     ]
   },
   {
+    "id": "BWC1",
+    "accessLevel": 1,
+    "date": "",
+    "title": "SECRET",
+    "thumbreel": true,
+    "theme": "bwc",
+    "tags": ["BWC", "Restricted Access", "Level 1"],
+    "tagline": "Free Tier BWC Access Required",
+    "text": [""],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
     "id": "BWC2",
     "accessLevel": 2,
     "date": "",
-    "title": "Holographic Card",
+    "title": "TOP SECRET",
     "thumbreel": true,
     "theme": "bwc",
-    "tags": [
-      "Art",
-      "Physical Art",
-      "Hell",
-      "Acrylic Paint",
-      "Canvas",
-      "Fire",
-      "Hell",
-      "Storm",
-      "Blood",
-      "Water",
-      "Dark"
-    ],
-    "tagline": "Cursor position tracking 3D rotation and overlay effect",
+    "tags": ["BWC", "Restricted Access", "Level 2"],
+    "tagline": "Level 2 BWC Access Required",
     "text": [""],
     "images": [""],
     "buttons": [
@@ -239,23 +245,11 @@
     "id": "BWC3",
     "accessLevel": 3,
     "date": "",
-    "title": "Holographic Card",
+    "title": "ABOVE TOP SECRET",
     "thumbreel": true,
     "theme": "bwc",
-    "tags": [
-      "Art",
-      "Physical Art",
-      "Hell",
-      "Acrylic Paint",
-      "Canvas",
-      "Fire",
-      "Hell",
-      "Storm",
-      "Blood",
-      "Water",
-      "Dark"
-    ],
-    "tagline": "Cursor position tracking 3D rotation and overlay effect",
+    "tags": ["BWC", "Restricted Access", "Level 3"],
+    "tagline": "Level 3 BWC Access Required",
     "text": [""],
     "images": [""],
     "buttons": [
@@ -268,24 +262,12 @@
   },
   {
     "id": "BDDAFF",
-    "accessLevel": 1,
+    "accessLevel": 0,
     "date": "",
     "title": "Frost Fortress",
     "thumbreel": true,
     "theme": "ice",
-    "tags": [
-      "Art",
-      "Physical Art",
-      "Hell",
-      "Acrylic Paint",
-      "Canvas",
-      "Fire",
-      "Hell",
-      "Storm",
-      "Blood",
-      "Water",
-      "Dark"
-    ],
+    "tags": ["Art", "Digital Art", "Commission", "Canvas", "Ice", "Bright"],
     "tagline": "Digital art commission for @GateGuard",
     "text": ["Acrylic on Canvas"],
     "images": [""],
@@ -298,55 +280,21 @@
     ]
   },
   {
-    "id": "BWC1",
-    "accessLevel": 1,
-    "date": "",
-    "title": "SECRET",
-    "thumbreel": true,
-    "theme": "bwc",
-    "tags": [
-      "Art",
-      "Physical Art",
-      "Hell",
-      "Acrylic Paint",
-      "Canvas",
-      "Fire",
-      "Hell",
-      "Storm",
-      "Blood",
-      "Water",
-      "Dark"
-    ],
-    "tagline": "Level 1 BWC Access Required",
-    "text": [""],
-    "images": [""],
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
-    ]
-  },
-  {
     "id": "BHC034",
-    "accessLevel": 2,
+    "accessLevel": 0,
     "date": "",
     "title": "Pebblemoth #034",
     "thumbreel": true,
-    "theme": "bwc",
+    "theme": "pebblemoth",
     "tags": [
-      "Art",
-      "Physical Art",
-      "Hell",
-      "Acrylic Paint",
-      "Canvas",
-      "Fire",
-      "Hell",
-      "Storm",
-      "Blood",
-      "Water",
-      "Dark"
+      "Pebblemoth",
+      "AI Assisted",
+      "Salt",
+      "Gemini",
+      "Common",
+      "Dark Brown",
+      "Bismuth",
+      "Throne"
     ],
     "tagline": "Salt in Gemini",
     "text": [""],
@@ -360,25 +308,32 @@
     ]
   },
   {
-    "id": "BHZ001",
-    "accessLevel": 1,
+    "id": "BZP001",
+    "accessLevel": 0,
     "date": "",
     "title": "BanjoZine Issue #1",
     "thumbreel": true,
-    "theme": "bwc",
-    "tags": [
-      "Art",
-      "Physical Art",
-      "Hell",
-      "Acrylic Paint",
-      "Canvas",
-      "Fire",
-      "Hell",
-      "Storm",
-      "Blood",
-      "Water",
-      "Dark"
-    ],
+    "theme": "zine",
+    "tags": ["Banjo House", "BanjoZine", "March", "Publication", "Writing"],
+    "tagline": "March 2021",
+    "text": [""],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
+    "id": "BZD001",
+    "accessLevel": 1,
+    "date": "",
+    "title": "BanjoZine Issue #1 Digital",
+    "thumbreel": true,
+    "theme": "zine",
+    "tags": ["Banjo House", "BanjoZine", "March", "Publication", "Writing"],
     "tagline": "March 2021",
     "text": [""],
     "images": [""],

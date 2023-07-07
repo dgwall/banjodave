@@ -38,20 +38,20 @@ const Card = ({ data }) => {
     filter: `invert(${Math.abs(rotation.x) / 100}) brightness(${
       1 + (Math.abs(rotation.x) + rotation.y) / 30
     })`,
-    transform: `scale(${!smoothTransition ? "1.15" : "1"}) rotateY(${
+    transform: `scale(${!smoothTransition ? "1.1" : "1"}) rotateY(${
       rotation.x
     }deg) rotateX(${rotation.y}deg)`,
     transition: `${smoothTransition ? "1s" : "0s"}`,
     boxShadow: `${-rotation.x / 20}rem ${
       rotation.y / 20
-    }rem 0.5rem rgba(0, 0, 0, 0.25)`,
+    }rem 0.5rem rgba(0, 0, 0, 0.75)`,
   };
 
   const holoStyle = {
     backgroundImage: `url("/img/cards/holo-${data.accessLevel}.png")`,
     backgroundPositionX: `${(rotation.x / 20) * 30}%`,
     backgroundPositionY: `${(-rotation.y / 20) * 30}%`,
-    filter: `hue-rotate(${rotation.x * 20}deg)`,
+    filter: `hue-rotate(${rotation.x * data.accessLevel * 10}deg)`,
     opacity: `${(rotation.y / 10 + Math.abs(rotation.x) / 15) / 3}`,
   };
 
