@@ -224,7 +224,7 @@
       "Water",
       "Dark"
     ],
-    "tagline": "Digital art commission for LostFrost",
+    "tagline": "Digital art commission for @GateGuard",
     "text": ["Acrylic on Canvas"],
     "images": [""],
     "buttons": [
@@ -239,7 +239,7 @@
     "id": "BWC1",
     "accessLevel": 1,
     "date": "",
-    "title": "ACCESS RESTRICTED",
+    "title": "SECRET",
     "thumbreel": true,
     "theme": "bwc",
     "tags": [
@@ -255,7 +255,69 @@
       "Water",
       "Dark"
     ],
-    "tagline": "Level 1 Security Clearance Required",
+    "tagline": "Level 1 BWC Access Required",
+    "text": [""],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
+    "id": "BWC2",
+    "accessLevel": 2,
+    "date": "",
+    "title": "TOP SECRET",
+    "thumbreel": true,
+    "theme": "bwc",
+    "tags": [
+      "Art",
+      "Physical Art",
+      "Hell",
+      "Acrylic Paint",
+      "Canvas",
+      "Fire",
+      "Hell",
+      "Storm",
+      "Blood",
+      "Water",
+      "Dark"
+    ],
+    "tagline": "Level 2 BWC Access Required",
+    "text": [""],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
+    "id": "BHC034",
+    "accessLevel": 2,
+    "date": "",
+    "title": "Pebblemoth #034",
+    "thumbreel": true,
+    "theme": "bwc",
+    "tags": [
+      "Art",
+      "Physical Art",
+      "Hell",
+      "Acrylic Paint",
+      "Canvas",
+      "Fire",
+      "Hell",
+      "Storm",
+      "Blood",
+      "Water",
+      "Dark"
+    ],
+    "tagline": "Salt in Gemini",
     "text": [""],
     "images": [""],
     "buttons": [

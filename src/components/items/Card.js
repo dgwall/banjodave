@@ -34,7 +34,7 @@ const Card = ({ data }) => {
 
   // Calculate styles outside of JSX
   const cardStyle = {
-    backgroundImage: `linear-gradient(to bottom,transparent,transparent 66.67%,rgba(17,17,17,0.5)), url("/img/thumbnails/${data.id}.jpg")`,
+    backgroundImage: `linear-gradient(170deg,rgba(17,17,17,0.75),transparent 30%,transparent 75%,rgba(17,17,17,0.75)), url("/img/thumbnails/${data.id}.jpg")`,
     filter: `invert(${Math.abs(rotation.x) / 100}) brightness(${
       1 + (Math.abs(rotation.x) + rotation.y) / 30
     })`,
@@ -48,6 +48,7 @@ const Card = ({ data }) => {
   };
 
   const holoStyle = {
+    backgroundImage: `url("/img/cards/holo-${data.accessLevel}.png")`,
     backgroundPositionX: `${(rotation.x / 20) * 30}%`,
     backgroundPositionY: `${(-rotation.y / 20) * 30}%`,
     filter: `hue-rotate(${rotation.x * 20}deg)`,
@@ -73,11 +74,6 @@ const Card = ({ data }) => {
         <div className="card-text">
           <div className="card-header">
             <h1>{data.title}</h1>
-            {data.accessLevel > 0 && (
-              <div className="card-icon" style={iconStyle}>
-                &#9650;
-              </div>
-            )}
           </div>
           <p>{data.tagline}</p>
         </div>

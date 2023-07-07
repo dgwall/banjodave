@@ -14,8 +14,8 @@
   background-size: cover;
   background-position: center center;
   margin: 1.5vmin;
-  width: 25vmin;
-  height: 35vmin;
+  width: 31.25vmin;
+  height: 43.75vmin;
   border-radius: 1.5vmin;
   transition: transform 0s linear;
   will-change: transform;
@@ -28,7 +28,6 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../../../public/img/cards/holo.png");
   mix-blend-mode: color-dodge;
   background-size: 120%;
   background-repeat: no-repeat;
@@ -48,6 +47,9 @@
 .border-1 {
   background-image: url("../../../public/img/cards/border-1.png");
 }
+.border-2 {
+  background-image: url("../../../public/img/cards/border-2.png");
+}
 
 .card-text {
   position: absolute;
@@ -64,31 +66,17 @@
 }
 
 .card h1 {
-  line-height: 1.6vmin;
+  display: flex;
+  justify-content: center;
+  line-height: 2.5vmin;
   text-align: center;
   font-weight: normal;
-  font-size: 1.5vmin;
-  text-align: center;
+  font-size: 2.5vmin;
   margin: 0;
   width: 100%;
   min-height: 4vmin;
   margin-right: auto;
-  padding: 0.5vmin;
-  background-color: #333;
-  box-shadow: 0 0 2vmin black inset;
-}
-
-.card-icon {
-  display: flex;
-  font-size: 2.5vmin;
-  justify-content: center;
-  align-items: center;
-  height: 4vmin;
-  width: 4vmin;
-  aspect-ratio: 1;
-  background-color: #333;
-  box-shadow: 0 0 2vmin black inset;
-  margin-left: 1vmin;
+  text-shadow: 0 0 0.2vmin black;
 }
 
 .card p {
@@ -96,8 +84,9 @@
   justify-content: center;
   align-items: flex-end;
   margin: 0;
+  width: 100%;
   text-align: center;
   margin-top: auto;
-  font-size: 1.5vmin;
+  font-size: 1.75vmin;
   text-shadow: 0 0 0.2vmin black;
 }

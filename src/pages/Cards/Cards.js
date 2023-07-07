@@ -4,7 +4,7 @@ import "./Cards.css";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 import Card from "../../components/items/Card";
 
-const ITEMS_PER_PAGE = 10;
+const ITEMS_PER_PAGE = 5;
 
 function Cards() {
   const [products, setProducts] = useState([]);
