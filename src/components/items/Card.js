@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Card.css";
 
-// Helper function for calculation
+// Helper function to calculate rotation
 const calculateRotation = (e, element) => {
   const { width, height, top, left } = element.getBoundingClientRect();
-  const x = 0.5 - (e.pageX - left) / width;
-  const y = 0.6 - (e.pageY - top) / height;
+  const x = 0.5 - (e.clientX - left) / width;
+  const y = 0.6 - (e.clientY - top) / height;
   return { x: x * -10, y: y * 10 };
 };
 
@@ -13,26 +13,26 @@ const Card = ({ data }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [smoothTransition, setSmoothTransition] = useState(true);
 
-  // Function to handle mouse move
+  // Mouse move handler
   const handleMouseMove = (e) => {
     setSmoothTransition(false);
     const newRotation = calculateRotation(e, e.target);
     setRotation(newRotation);
   };
 
-  // Handle mouse enter
+  // Mouse enter handler
   const handleMouseEnter = (e) => {
     setSmoothTransition(true);
     handleMouseMove(e);
   };
 
-  // Reset rotation
+  // Mouse leave handler, resets rotation
   const resetRotation = () => {
     setSmoothTransition(true);
     setRotation({ x: 0, y: 0 });
   };
 
-  // Calculate styles outside of JSX
+  // Calculating styles
   const cardStyle = {
     backgroundImage: `linear-gradient(170deg,rgba(17,17,17,0.75),transparent 30%,transparent 75%,rgba(17,17,17,0.75)), url("/img/thumbnails/${data.id}.jpg")`,
     filter: `invert(${Math.abs(rotation.x) / 100}) brightness(${
@@ -53,10 +53,6 @@ const Card = ({ data }) => {
     backgroundPositionY: `${(-rotation.y / 20) * 30}%`,
     filter: `hue-rotate(${rotation.x * 20}deg)`,
     opacity: `${(rotation.y / 10 + Math.abs(rotation.x) / 15) / 3}`,
-  };
-
-  const iconStyle = {
-    color: `${data.accessLevel === 1 ? "#00ffbc" : "#fff"}`,
   };
 
   return (

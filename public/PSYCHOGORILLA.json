@@ -205,6 +205,37 @@
     ]
   },
   {
+    "id": "BWC2",
+    "accessLevel": 2,
+    "date": "",
+    "title": "Holographic Card",
+    "thumbreel": true,
+    "theme": "bwc",
+    "tags": [
+      "Art",
+      "Physical Art",
+      "Hell",
+      "Acrylic Paint",
+      "Canvas",
+      "Fire",
+      "Hell",
+      "Storm",
+      "Blood",
+      "Water",
+      "Dark"
+    ],
+    "tagline": "Cursor position tracking 3D rotation and overlay effect",
+    "text": [""],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
     "id": "BDDAFF",
     "accessLevel": 1,
     "date": "",
@@ -256,37 +287,6 @@
       "Dark"
     ],
     "tagline": "Level 1 BWC Access Required",
-    "text": [""],
-    "images": [""],
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
-    ]
-  },
-  {
-    "id": "BWC2",
-    "accessLevel": 2,
-    "date": "",
-    "title": "TOP SECRET",
-    "thumbreel": true,
-    "theme": "bwc",
-    "tags": [
-      "Art",
-      "Physical Art",
-      "Hell",
-      "Acrylic Paint",
-      "Canvas",
-      "Fire",
-      "Hell",
-      "Storm",
-      "Blood",
-      "Water",
-      "Dark"
-    ],
-    "tagline": "Level 2 BWC Access Required",
     "text": [""],
     "images": [""],
     "buttons": [
