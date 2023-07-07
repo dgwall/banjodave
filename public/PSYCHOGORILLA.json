@@ -236,6 +236,37 @@
     ]
   },
   {
+    "id": "BWC3",
+    "accessLevel": 3,
+    "date": "",
+    "title": "Holographic Card",
+    "thumbreel": true,
+    "theme": "bwc",
+    "tags": [
+      "Art",
+      "Physical Art",
+      "Hell",
+      "Acrylic Paint",
+      "Canvas",
+      "Fire",
+      "Hell",
+      "Storm",
+      "Blood",
+      "Water",
+      "Dark"
+    ],
+    "tagline": "Cursor position tracking 3D rotation and overlay effect",
+    "text": [""],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
     "id": "BDDAFF",
     "accessLevel": 1,
     "date": "",
@@ -318,6 +349,37 @@
       "Dark"
     ],
     "tagline": "Salt in Gemini",
+    "text": [""],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
+    "id": "BHZ001",
+    "accessLevel": 1,
+    "date": "",
+    "title": "BanjoZine Issue #1",
+    "thumbreel": true,
+    "theme": "bwc",
+    "tags": [
+      "Art",
+      "Physical Art",
+      "Hell",
+      "Acrylic Paint",
+      "Canvas",
+      "Fire",
+      "Hell",
+      "Storm",
+      "Blood",
+      "Water",
+      "Dark"
+    ],
+    "tagline": "March 2021",
     "text": [""],
     "images": [""],
     "buttons": [

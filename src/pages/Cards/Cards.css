@@ -19,3 +19,25 @@
 .cards-container {
   text-align: center;
 }
+
+.load-more-btn {
+  background: rgba(97, 97, 97, 0.705);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 80%;
+  margin: auto;
+}
+
+.load-more-btn:hover {
+  background: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.47);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+}

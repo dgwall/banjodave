@@ -8,32 +8,26 @@ const ITEMS_PER_PAGE = 5;
 
 function Cards() {
   const [products, setProducts] = useState([]);
-  const [currentPage, setCurrentPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(0);
+  const [itemsToShow, setItemsToShow] = useState(ITEMS_PER_PAGE);
 
   useEffect(() => {
-    // Change this URL to where your JSON is located
     const fetchData = async () => {
       const response = await axios.get("/PSYCHOGORILLA.json");
       setProducts(response.data);
-      setTotalPages(Math.ceil(response.data.length / ITEMS_PER_PAGE));
     };
 
     fetchData();
   }, []);
 
-  const handlePageChange = (newPage) => {
-    setCurrentPage(newPage);
+  const handleLoadMore = () => {
+    setItemsToShow(itemsToShow + ITEMS_PER_PAGE);
   };
-
-  const begin = (currentPage - 1) * ITEMS_PER_PAGE;
-  const end = begin + ITEMS_PER_PAGE;
 
   return (
     <div>
       <TransitionGroup>
         <div className="cards-container">
-          {products.slice(begin, end).map((product) => (
+          {products.slice(0, itemsToShow).map((product) => (
             <CSSTransition key={product.id} timeout={500} classNames="fade">
               <Card data={product} />
             </CSSTransition>
@@ -41,11 +35,11 @@ function Cards() {
         </div>
       </TransitionGroup>
 
-      {[...Array(totalPages)].map((e, i) => (
-        <button key={i} onClick={() => handlePageChange(i + 1)}>
-          {i + 1}
+      {itemsToShow < products.length && (
+        <button onClick={handleLoadMore} className="load-more-btn">
+          Load More
         </button>
-      ))}
+      )}
     </div>
   );
 }

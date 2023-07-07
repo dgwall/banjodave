@@ -34,7 +34,7 @@ const Card = ({ data }) => {
 
   // Calculating styles
   const cardStyle = {
-    backgroundImage: `linear-gradient(170deg,rgba(17,17,17,0.75),transparent 30%,transparent 75%,rgba(17,17,17,0.75)), url("/img/thumbnails/${data.id}.jpg")`,
+    backgroundImage: `linear-gradient(170deg,rgba(17,17,17,0.5),transparent 25%,transparent 75%,rgba(17,17,17,0.5)), url("/img/thumbnails/${data.id}.jpg")`,
     filter: `invert(${Math.abs(rotation.x) / 100}) brightness(${
       1 + (Math.abs(rotation.x) + rotation.y) / 30
     })`,

@@ -6,14 +6,14 @@
   min-height: 100vh;
 }
 
-.card-container {
+.main-cards .card-container {
   display: inline-block;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   perspective: 20em;
 }
 
-.card {
+.main-cards .card {
   position: relative;
   background-size: cover;
   background-position: center center;
@@ -28,7 +28,7 @@
   text-align: left;
 }
 
-.card-holo {
+.main-cards .card-holo {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -37,7 +37,7 @@
   background-repeat: no-repeat;
 }
 
-.card-border {
+.main-cards .card-border {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -45,17 +45,20 @@
   background-position: 50% 50%;
 }
 
-.border-0 {
+.main-cards .border-0 {
   background-image: url("../../../public/img/cards/border-0.png");
 }
-.border-1 {
+.main-cards .border-1 {
   background-image: url("../../../public/img/cards/border-1.png");
 }
-.border-2 {
+.main-cards .border-2 {
   background-image: url("../../../public/img/cards/border-2.png");
 }
+.main-cards .border-3 {
+  background-image: url("../../../public/img/cards/border-3.png");
+}
 
-.card-text {
+.main-cards .card-text {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -64,12 +67,12 @@
   padding: 1.5vmin;
 }
 
-.card-header {
+.main-cards .card-header {
   display: flex;
   flex-direction: row;
 }
 
-.card h1 {
+.main-cards .card h1 {
   display: flex;
   justify-content: center;
   line-height: 2.5vmin;
@@ -80,10 +83,10 @@
   width: 100%;
   min-height: 4vmin;
   margin-right: auto;
-  text-shadow: 0 0 0.2vmin black;
+  text-shadow: 0 0 0.4vmin black;
 }
 
-.card p {
+.main-cards .card p {
   display: flex;
   justify-content: center;
   align-items: flex-end;
