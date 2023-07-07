@@ -6,7 +6,7 @@ const BwcTracker = ({ data, access }) => {
   useEffect(() => {
     const interval = setInterval(() => {
       setBaseHue((prevHue) => (prevHue + 1) % 360);
-    }, 80);
+    }, 60);
 
     // Clean up on component unmount
     return () => clearInterval(interval);
@@ -42,10 +42,12 @@ const BwcTracker = ({ data, access }) => {
             <br />
             <u
               style={{
-                background: `linear-gradient(60deg,hsl(${hue}, 100%, 66.7%) 0%,hsl(${
-                  hue + 40
-                }, 100%, 66.7%) 95%,hsl(${hue + 90}, 100%, 66.7%) 100%)`,
-                boxShadow: `0 0 0.5rem hsl(${hue + 20}, 100%, 66.7%)`,
+                background: `linear-gradient(210deg,hsl(${hue}, 100%, 66.7%) 0%,hsl(${
+                  (hue + hueStep) % 360
+                }, 100%, 66.7%)`,
+                boxShadow: `0 0 0.5rem hsl(${
+                  (hue + hueStep / 2) % 360
+                }, 100%, 66.7%)`,
               }}
             >
               &#11043; {category}

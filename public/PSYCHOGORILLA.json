@@ -1,0 +1,269 @@
+[
+  {
+    "id": "DMBDBD",
+    "accessLevel": 0,
+    "date": "2019-12-0X",
+    "title": "BanjoDOOM",
+    "theme": "doom",
+    "tagPin": "DOOM",
+    "tags": [
+      "DOOM",
+      "Mapping",
+      "DOOM Mapping",
+      "BanjoDOOM",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Scifi",
+      "Hell"
+    ],
+    "tagline": "DOOM Mapping",
+    "text": [
+      "I started making maps for DOOM II in December of 2019, looking for a convenient way to start dabbling in 3D level design. I have a lot of nostalgia for DOOM too having installed it on all of the school PCs that I used when I was a student. You will need a copy of DOOM2.wad and a source port to be able to play my levels."
+    ]
+  },
+  {
+    "id": "DMBDBB",
+    "accessLevel": 0,
+    "date": "2020-06-09",
+    "title": "Blazing Beachhead",
+    "theme": "magma",
+    "tagPin": "Blazing Beachhead",
+    "tags": [
+      "Blazing Beachhead",
+      "DOOM",
+      "GZDoom",
+      "Single Map",
+      "Mods",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "BanjoDOOM",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Scifi",
+      "Hell",
+      "Magma",
+      "Fire"
+    ],
+    "tagline": "An expansive magma shoreline with hordes of modded enemies",
+    "text": [
+      "I created this map to teach myself the basics of DECORATE and UDMF. It is a remake of the very beginning of my first proper map MALAGARD. Initially I was going to remake the entirety of MALAGARD in this style but ran into some issues. I designed this map to be a humungous space to explore but it quickly became too big and the node builder began to express unusual buggy sector behaviour and I had to cut the map short. I'm not sure the modifications I made to the player and enemies have entirely worked out but the map remains an interesting and unique experience."
+    ]
+  },
+  {
+    "id": "DMHMAV",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Mapwich 2: Ascent to Valhalla by BanjoDave and Danlex",
+    "thumbreel": true,
+    "theme": "storm",
+    "tagPin": "Ascent to Valhalla",
+    "tags": [
+      "DOOM",
+      "GZDoom",
+      "Zandronum",
+      "Hellforge",
+      "Community Project",
+      "Collab",
+      "Single Map",
+      "Mods",
+      "Supercharge",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "BanjoDOOM",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Scifi",
+      "Hell",
+      "Storm",
+      "Danlex"
+    ],
+    "tagline": "Climb storm-lashed cliffs on your way to a monumental fortress. Collab with Danlex.",
+    "text": [
+      "This map was MAP01 of MALAGARD 2 before I decided to remake it. Uses Tango's Supercharge gameplay mod as a base."
+    ],
+    "images": ["Security Station", "Barracks", "Data Center"],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/DUMB.pk3",
+        "label": "Download DUMB.pk3 18.1 MB"
+      }
+    ]
+  },
+  {
+    "id": "DW40RO",
+    "accessLevel": 0,
+    "date": "",
+    "title": "rootootoot",
+    "thumbreel": false,
+    "theme": "n",
+    "tagPin": "rootootoot",
+    "tags": [
+      "N",
+      "Mapping",
+      "N Mapping",
+      "rootootoot",
+      "Map Pack",
+      "N Map Pack",
+      "Large N Map Pack",
+      "2D",
+      "Platformer",
+      "PC",
+      "2000s",
+      "Metanet",
+      "Ninja",
+      "Scifi",
+      "Gold",
+      "Robots"
+    ],
+    "tagline": "500 maps by DW40 for N v1.4",
+    "text": [""],
+    "images": ["", "", ""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
+    "id": "DMHFFM",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Hellforge Speedmapping Session 2 MAP01 fallen malkuth",
+    "thumbreel": true,
+    "theme": "doom",
+    "tagPin": "Ascent to Valhalla",
+    "tags": [
+      "DOOM",
+      "GZDoom",
+      "Single Map",
+      "Speedmap",
+      "Community Project",
+      "Hellforge",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Scifi",
+      "Hell",
+      "Storm",
+      "Danlex"
+    ],
+    "tagline": "First BanjoDave DOOM map",
+    "text": [""],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
+    "id": "TEST",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Wrath",
+    "thumbreel": true,
+    "theme": "fireblu",
+    "tags": [
+      "Art",
+      "Physical Art",
+      "Hell",
+      "Acrylic Paint",
+      "Canvas",
+      "Fire",
+      "Hell",
+      "Storm",
+      "Blood",
+      "Water",
+      "Dark"
+    ],
+    "tagline": "Acrylic on Canvas",
+    "text": ["Acrylic on Canvas"],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
+    "id": "BDDAFF",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Frost Fortress",
+    "thumbreel": true,
+    "theme": "ice",
+    "tags": [
+      "Art",
+      "Physical Art",
+      "Hell",
+      "Acrylic Paint",
+      "Canvas",
+      "Fire",
+      "Hell",
+      "Storm",
+      "Blood",
+      "Water",
+      "Dark"
+    ],
+    "tagline": "Digital art commission for LostFrost",
+    "text": ["Acrylic on Canvas"],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
+    "id": "BWC1",
+    "accessLevel": 1,
+    "date": "",
+    "title": "ACCESS RESTRICTED",
+    "thumbreel": true,
+    "theme": "bwc",
+    "tags": [
+      "Art",
+      "Physical Art",
+      "Hell",
+      "Acrylic Paint",
+      "Canvas",
+      "Fire",
+      "Hell",
+      "Storm",
+      "Blood",
+      "Water",
+      "Dark"
+    ],
+    "tagline": "Level 1 Security Clearance Required",
+    "text": [""],
+    "images": [""],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  }
+]
