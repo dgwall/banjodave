@@ -9,7 +9,7 @@ const calculateRotation = (e, element) => {
   return { x: x * -10, y: y * 10 };
 };
 
-const Card = ({ data }) => {
+const CardExpanded = ({ data }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [smoothTransition, setSmoothTransition] = useState(true);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -45,9 +45,7 @@ const Card = ({ data }) => {
     filter: `invert(${Math.abs(rotation.x) / 100}) brightness(${
       1 + (Math.abs(rotation.x) + rotation.y) / 30
     })`,
-    transform: `scale(${!smoothTransition ? "1.1" : "1"}) rotateY(${
-      rotation.x
-    }deg) rotateX(${rotation.y}deg)`,
+    transform: `rotateY(${rotation.x}deg) rotateX(${rotation.y}deg)`,
     transition: `${smoothTransition ? "1s" : "0s"}`,
     boxShadow: `${-rotation.x / 20}rem ${
       rotation.y / 20
@@ -63,24 +61,39 @@ const Card = ({ data }) => {
   };
 
   return (
-    <div
-      className={`card-container ${isImageLoaded ? "fade-in" : ""}`}
-      onMouseEnter={handleMouseEnter}
-      onMouseMove={handleMouseMove}
-      onMouseLeave={resetRotation}
-    >
-      <div className="card" style={cardStyle}>
-        {data.accessLevel > 0 && (
-          <div className="card-holo" style={holoStyle}></div>
-        )}
-        <div className={`card-border border-${data.accessLevel}`}></div>
+    <div className="card-expanded">
+      <div
+        className={`card-container ${isImageLoaded ? "fade-in" : ""}`}
+        onMouseEnter={handleMouseEnter}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={resetRotation}
+      >
+        <div className="card" style={cardStyle}>
+          {data.accessLevel > 0 && (
+            <div className="card-holo" style={holoStyle}></div>
+          )}
+          <div className={`card-border border-${data.accessLevel}`}></div>
+        </div>
       </div>
-      <div className={`card-caption caption-${data.accessLevel}`}>
-        {data.title}
-        <div>{data.tagline}</div>
+      <div className={`card-detail caption-${data.accessLevel}`}>
+        <div className="card-title">{data.title}</div>
+        <div className="card-tagline">{data.tagline}</div>
+        <div className="card-text">
+          {data.text
+            ? data.text.map((text, index) => <p key={index}>{text}</p>)
+            : null}
+        </div>
+        <div className="buttons">
+          {data.buttons &&
+            data.buttons.map((button, index) => (
+              <a key={index} href={button.href} className="button">
+                {button.label}
+              </a>
+            ))}
+        </div>
       </div>
     </div>
   );
 };
 
-export default Card;
+export default CardExpanded;

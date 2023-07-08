@@ -32,7 +32,8 @@ const routes = [
   { path: "/shop", mainClass: "", Component: Shop },
   { path: "/about", mainClass: "", Component: About },
   { path: "/bwc", mainClass: "-bwc", Component: BWC },
-  { path: "/cards/*", mainClass: "-cards", Component: Cards },
+  { path: "/cards", mainClass: "-cards", Component: Cards },
+  { path: "/cards/:cardId", mainClass: "-cards", Component: Cards },
 ];
 
 function App() {

@@ -25,12 +25,13 @@
 }
 
 .main-cards .buttons button {
-  margin-top: 10vmin;
-  width: 100%;
+  width: 80%;
+  margin: auto;
+  margin-top: 5vmin;
   height: 6vmin;
   background: rgba(255, 255, 255, 0.1);
   border: 1px solid #c0c0c0;
-  color: #fff;
+  color: var;
   text-align: center;
   font-size: 3vmin;
   transition-duration: 0.4s;
@@ -38,7 +39,7 @@
   display: inline-block;
   border-radius: 1vmin;
   cursor: pointer;
-  box-shadow: 0 0 15px #c0c0c0;
+  box-shadow: 0 0 15px #c0c0c041;
   text-shadow: 0 0 10px #c0c0c0;
 }
 
