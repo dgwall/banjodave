@@ -2,7 +2,7 @@
   {
     "id": "DMBDBD",
     "accessLevel": 0,
-    "date": "2019-12-0X",
+    "date": "2019-12-XX",
     "title": "BanjoDOOM",
     "theme": "doom",
     "tagPin": "DOOM",
@@ -139,7 +139,7 @@
     "id": "DMHFFM",
     "accessLevel": 1,
     "date": "",
-    "title": "Hellforge Speedmapping Session 2 MAP01 fallen malkuth",
+    "title": "fallen malkuth",
     "thumbreel": true,
     "theme": "doom",
     "tagPin": "Ascent to Valhalla",
@@ -353,7 +353,7 @@
     "buttons": [
       {
         "type": "download",
-        "href": "",
+        "href": "/",
         "label": "Download "
       }
     ]

@@ -17,4 +17,34 @@ export const cardThemes = [
     fg: "#465162",
     hl: "#6379ac",
   },
+  {
+    name: "storm",
+    bg: "#434343",
+    fg: "#fefefe",
+    hl: "#090892",
+  },
+  {
+    name: "magma",
+    bg: "#2a1905",
+    fg: "#c35000",
+    hl: "#bb851b",
+  },
+  {
+    name: "fireblu",
+    bg: "#000100",
+    fg: "#7faaca",
+    hl: "#f2854d",
+  },
+  {
+    name: "n",
+    bg: "#cacad0",
+    fg: "#797988",
+    hl: "#e1c63c",
+  },
+  {
+    name: "bwc",
+    bg: "#131313",
+    fg: "#eeeeee",
+    hl: "#ee2288",
+  },
 ];

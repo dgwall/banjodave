@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import filterSimilarProducts from "../../components/menus/filterSimilarProducts";
 import Card from "../../components/items/Card";
@@ -7,7 +6,7 @@ import CardExpanded from "../../components/items/CardExpanded";
 import "./Cards.css";
 import { cardThemes } from "./cardThemes";
 
-const ITEMS_PER_PAGE = 12;
+const ITEMS_PER_PAGE = 6;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -19,6 +18,7 @@ function Cards() {
   const [totalPages, setTotalPages] = useState(0);
   const [selectedCard, setSelectedCard] = useState(null);
   const [similarCards, setSimilarCards] = useState([]);
+  const [viewMode, setViewMode] = useState("suggested");
 
   // get card id from the url
   const { cardId } = useParams();
@@ -29,17 +29,16 @@ function Cards() {
   // fetch data and set state when component mounts
   useEffect(() => {
     const fetchData = async () => {
-      const response = await axios.get("/PSYCHOGORILLA.json");
-      const sortedData = response.data.sort((a, b) =>
-        a.title.localeCompare(b.title)
-      );
+      const response = await fetch("/PSYCHOGORILLA.json");
+      const data = await response.json();
+      const sortedData = data.sort((b, a) => a.date.localeCompare(b.date));
       setCards(sortedData);
       setSimilarCards(sortedData);
       setTotalPages(Math.ceil(sortedData.length / ITEMS_PER_PAGE));
     };
 
     fetchData();
-  }, []); // Empty array means it runs only on mount and unmount
+  }, []);
 
   // handle changes in cardId
   useEffect(() => {
@@ -47,15 +46,20 @@ function Cards() {
       const card = cards.find((card) => card.id.toString() === cardId);
       setSelectedCard(card);
     }
-  }, [cards, cardId]); // Dependency array includes cardId and cards
+  }, [cards, cardId]);
 
   // get similar cards when selected card or all cards change
   useEffect(() => {
     if (selectedCard) {
-      const similarItems = filterSimilarProducts(cards, selectedCard);
-      setSimilarCards(similarItems);
+      if (viewMode === "newest") {
+        setSimilarCards(cards);
+      } else {
+        const similarItems = filterSimilarProducts(cards, selectedCard);
+        setSimilarCards(similarItems);
+      }
+      setCurrentPage(1);
     }
-  }, [selectedCard, cards]);
+  }, [selectedCard, cards, viewMode]);
 
   // handler for card click
   const handleCardClick = (card) => {
@@ -72,6 +76,25 @@ function Cards() {
   // handler for forward button
   const handleForward = () => {
     setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
+  };
+
+  // handler for viewMode button
+  const handleViewMode = () => {
+    setViewMode((prevMode) => (prevMode === "newest" ? "suggested" : "newest"));
+  };
+
+  function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+  }
+
+  const handleShuffle = () => {
+    const shuffled = shuffleArray([...similarCards]);
+    setSimilarCards(shuffled);
+    setCurrentPage(1);
   };
 
   // calculate the beginning and end index for pagination
@@ -135,7 +158,7 @@ function Cards() {
   }
 
   return (
-    <div>
+    <div style={{ width: "100%" }}>
       {selectedCard && (
         <div
           className="card-selected"
@@ -151,23 +174,41 @@ function Cards() {
           <CardExpanded data={selectedCard} />
         </div>
       )}
+
       <div className="cards-container">
-        {similarCards.slice(begin, end).map((card) => (
-          <div
-            key={card.id}
-            onClick={() => handleCardClick(card)}
-            style={{ display: "inline-block" }}
-          >
-            <Card data={card} />
-          </div>
+        {similarCards.slice(begin, end).map((card, index) => (
+          <React.Fragment key={card.id}>
+            <div onClick={() => handleCardClick(card)}>
+              <Card data={card} />
+            </div>
+            {index === Math.floor(ITEMS_PER_PAGE / 2) - 1 && (
+              <div className="break">&nbsp;</div>
+            )}
+          </React.Fragment>
         ))}
       </div>
 
-      <div className="buttons">
-        {currentPage !== 1 && <button onClick={handleBack}>Back</button>}
-        {currentPage !== totalPages - 1 && (
-          <button onClick={handleForward}>More</button>
-        )}
+      <div className="view-buttons">
+        <button
+          onClick={handleBack}
+          disabled={currentPage === 1 ? true : false}
+        >
+          &lt;
+        </button>
+
+        <button
+          onClick={handleForward}
+          disabled={currentPage === totalPages - 1 ? true : false}
+        >
+          &gt;
+        </button>
+      </div>
+
+      <div className="view-buttons">
+        <button onClick={handleViewMode}>
+          {viewMode === "newest" ? "view similar" : "view newest"}
+        </button>
+        <button onClick={handleShuffle}>shuffle!</button>
       </div>
     </div>
   );

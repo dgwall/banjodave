@@ -48,7 +48,7 @@ const Card = ({ data }) => {
     transform: `scale(${!smoothTransition ? "1.1" : "1"}) rotateY(${
       rotation.x
     }deg) rotateX(${rotation.y}deg)`,
-    transition: `${smoothTransition ? "1s" : "0s"}`,
+    transition: `transform ${smoothTransition ? "1s" : "0s"}`,
     boxShadow: `${-rotation.x / 20}rem ${
       rotation.y / 20
     }rem 0.5rem rgba(0, 0, 0, 0.75)`,
@@ -68,6 +68,7 @@ const Card = ({ data }) => {
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={resetRotation}
+      title={data.title}
     >
       <div className="card" style={cardStyle}>
         {data.accessLevel > 0 && (
@@ -77,7 +78,6 @@ const Card = ({ data }) => {
       </div>
       <div className={`card-caption caption-${data.accessLevel}`}>
         {data.title}
-        <div>{data.tagline}</div>
       </div>
     </div>
   );
