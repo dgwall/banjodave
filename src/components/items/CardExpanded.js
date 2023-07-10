@@ -60,10 +60,17 @@ const CardExpanded = ({ data }) => {
     opacity: `${(rotation.y / 10 + Math.abs(rotation.x) / 15) / 3}`,
   };
 
+  const containerStyle = {
+    backgroundPositionX: `${-rotation.x}px`,
+    backgroundPositionY: `${-rotation.y}px`,
+    transition: `${smoothTransition ? "1s" : "0s"}`,
+  };
+
   return (
     <div className="card-expanded">
       <div
         className={`card-container ${isImageLoaded ? "fade-in" : ""}`}
+        style={containerStyle}
         onMouseEnter={handleMouseEnter}
         onMouseMove={handleMouseMove}
         onMouseLeave={resetRotation}
