@@ -139,6 +139,7 @@
 
 .main-cards .card-selected .card-container {
   margin: 2vmin 0 2vmin 2vmin;
+  cursor: default;
 }
 
 .main-cards .cards-container .card-container {
@@ -226,7 +227,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-color);
+  background: radial-gradient(
+    circle at top left,
+    var(--hl-color),
+    var(--bg-color) 30%
+  );
   color: var(--fg-color);
   width: calc(100% - 4vmin);
   margin: 2vmin;
@@ -320,7 +325,7 @@
   text-align: justify;
   padding: 0 2vmin;
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
-  background-color: rgba(0, 0, 0, 0.05);
+  background-color: rgba(0, 0, 0, 0.1);
   border-radius: 1vmin;
   margin: 2vmin;
 }
@@ -361,24 +366,27 @@
   padding: 12px;
   border-radius: 1vmin;
   border: none;
-  background: #dddddd10;
+  background: radial-gradient(circle at center, transparent, #111 33%);
   color: #fff;
-  box-shadow: 0 0 1rem #dddddd30 inset;
+  box-shadow: 0 0 0.5rem #000000c0 inset;
   transition: 0.5s;
 }
 
 .main-cards input::placeholder {
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .main-cards input:hover {
-  box-shadow: 0 0 1rem #dddddd50 inset;
+  background: #dddddd08;
+  box-shadow: 0 0 1rem #dddddd10 inset;
   transition: 0.5s;
 }
 
 .main-cards input:focus {
-  box-shadow: 0 0 1rem #ddddddaa inset;
+  background: #dddddd18;
+  box-shadow: 0 0 0.2rem #ddddddaa inset;
   outline: 3px double rgba(70, 181, 255, 0.5);
+  backdrop-filter: blur(2px);
   transition: 0s;
 }
 
@@ -405,31 +413,26 @@
 
 .main-cards .card-rarity {
   position: absolute;
-  top: 3.5%;
-  left: 4%;
-  width: 3vmin;
-  height: 3vmin;
+  bottom: 3.5%;
+  right: 3.8%;
+  width: 1.2vmax;
+  height: 1.2vmax;
   object-fit: contain;
 }
 
 .main-cards .card-id {
   position: absolute;
   bottom: 3.2%;
-  left: 3.8%;
-  font-size: 1.2vmin;
-  background-color: rgba(0, 0, 0, 0.75);
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8vmax;
   color: #fff;
   opacity: 0.8;
 }
 
-.main-cards .card-sig {
-  position: absolute;
-  bottom: 3.5%;
-  right: 3.8%;
-  width: 1.2vmin;
-  height: 1.2vmin;
-  object-fit: contain;
-  opacity: 0.8;
+.main-cards .card-id span {
+  background-color: rgba(0, 0, 0, 0.75);
 }
 
 @keyframes fadeIn {
@@ -450,7 +453,7 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1280px) {
   .main-cards .card-expanded {
     flex-direction: column;
   }
@@ -459,6 +462,14 @@
     min-width: 95%;
     min-height: 50vh;
     margin: 2vmin;
+  }
+
+  .main-cards .card-selected {
+    background: radial-gradient(
+      circle at top center,
+      var(--hl-color),
+      var(--bg-color) 60%
+    );
   }
 
   .main-cards .break {

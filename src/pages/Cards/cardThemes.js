@@ -19,7 +19,7 @@ export const cardThemes = [
   },
   {
     name: "storm",
-    bg: "#434343",
+    bg: "#212121",
     fg: "#fefefe",
     hl: "#090892",
   },

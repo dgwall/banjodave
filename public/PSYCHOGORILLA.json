@@ -208,12 +208,14 @@
     "id": "BWC1",
     "accessLevel": 1,
     "date": "",
-    "title": "SECRET",
+    "title": "BWC L1 Access Token",
     "thumbreel": true,
     "theme": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 1"],
-    "tagline": "Free Tier BWC Access Required",
-    "text": [""],
+    "tagline": "BWC Access Level 1",
+    "text": [
+      "Free Tier BWC Access Preview. Bonus content available for free through Patreon."
+    ],
     "images": [""],
     "buttons": [
       {
@@ -227,12 +229,12 @@
     "id": "BWC2",
     "accessLevel": 2,
     "date": "",
-    "title": "TOP SECRET",
+    "title": "BWC L2 Access Card",
     "thumbreel": true,
     "theme": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 2"],
-    "tagline": "Level 2 BWC Access Required",
-    "text": [""],
+    "tagline": "BWC Access Level 2",
+    "text": ["Early access, previews, archived, and other bonus content."],
     "images": [""],
     "buttons": [
       {
@@ -246,12 +248,14 @@
     "id": "BWC3",
     "accessLevel": 3,
     "date": "",
-    "title": "ABOVE TOP SECRET",
+    "title": "BWC L3 Special Access Card",
     "thumbreel": true,
     "theme": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 3"],
-    "tagline": "Level 3 BWC Access Required",
-    "text": [""],
+    "tagline": "BWC Access Level 3",
+    "text": [
+      "Unlock all banjo content, get 0DG games for free, and more with the BWC Black Card."
+    ],
     "images": [""],
     "buttons": [
       {

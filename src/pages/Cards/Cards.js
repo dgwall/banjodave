@@ -82,6 +82,7 @@ function Cards() {
     setSelectedCard(card);
     setViewMode("similar");
     setCurrentPage(1);
+    setSearchTerm("");
     navigate(`/cards/${card.id}`);
   };
 
@@ -152,7 +153,7 @@ function Cards() {
         </div>
       ) : (
         <>
-          <h1>Banjo Cards</h1>
+          <h1>Banjo Cards Preview</h1>
           {cards.length} Cards
         </>
       )}
@@ -160,6 +161,7 @@ function Cards() {
       <div className="view-buttons">
         <input
           type="text"
+          name="search"
           value={searchTerm}
           onChange={handleSearchChange}
           onKeyDown={handleSearchKeyPress}
