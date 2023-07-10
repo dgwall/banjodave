@@ -16,6 +16,15 @@
   transition: opacity 500ms;
 }
 
+.main-cards h1 {
+  font-weight: normal;
+  line-height: normal;
+  font-size: 4rem;
+  margin: 0;
+  margin-top: 5vh;
+  text-shadow: 0 0 2rem rgba(245, 205, 125, 1), 0 -3px 2px black;
+}
+
 .main-cards .view-buttons {
   width: calc(100% - 4vmin);
   display: flex;
@@ -129,7 +138,7 @@
 }
 
 .main-cards .card-selected .card-container {
-  margin: 2vmin 0 0 2vmin;
+  margin: 2vmin 0 2vmin 2vmin;
 }
 
 .main-cards .cards-container .card-container {
@@ -217,11 +226,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--bg-a-color);
+  background-color: var(--bg-color);
   color: var(--fg-color);
-  padding-bottom: 5vh;
-  border-bottom: 1px solid black;
-  width: 100%;
+  width: calc(100% - 4vmin);
+  margin: 2vmin;
+  border-radius: 1vmin;
+  box-shadow: 0 0.25rem 1.5rem black;
 }
 
 .main-cards .card-selected .card {
@@ -309,6 +319,10 @@
   text-indent: 3rem;
   text-align: justify;
   padding: 0 2vmin;
+  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 1vmin;
+  margin: 2vmin;
 }
 
 .main-cards .buttons {
@@ -324,7 +338,6 @@
   align-items: center;
   text-align: center;
   width: 100%;
-  height: 100%;
   background: linear-gradient(to bottom, var(--hl-color), var(--hl-a-color));
   padding: 12px;
   font-size: 1.2rem;
@@ -334,7 +347,7 @@
   cursor: pointer;
   color: var(--bt-color);
   border-bottom: 2px solid var(--hl-b-color);
-  margin: 0 2vmin;
+  margin: 2vmin;
 }
 
 .main-cards input {
@@ -351,10 +364,22 @@
   background: #dddddd10;
   color: #fff;
   box-shadow: 0 0 1rem #dddddd30 inset;
+  transition: 0.5s;
 }
 
 .main-cards input::placeholder {
   opacity: 0.3;
+}
+
+.main-cards input:hover {
+  box-shadow: 0 0 1rem #dddddd50 inset;
+  transition: 0.5s;
+}
+
+.main-cards input:focus {
+  box-shadow: 0 0 1rem #ddddddaa inset;
+  outline: 3px double rgba(70, 181, 255, 0.5);
+  transition: 0s;
 }
 
 .main-cards .buttons a:hover,
@@ -382,8 +407,8 @@
   position: absolute;
   top: 3.5%;
   left: 4%;
-  width: 2vmin;
-  height: 2vmin;
+  width: 3vmin;
+  height: 3vmin;
   object-fit: contain;
 }
 
@@ -392,7 +417,7 @@
   bottom: 3.2%;
   left: 3.8%;
   font-size: 1.2vmin;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.75);
   color: #fff;
   opacity: 0.8;
 }
@@ -401,8 +426,8 @@
   position: absolute;
   bottom: 3.5%;
   right: 3.8%;
-  width: 2vmin;
-  height: 2vmin;
+  width: 1.2vmin;
+  height: 1.2vmin;
   object-fit: contain;
   opacity: 0.8;
 }
@@ -434,7 +459,6 @@
     min-width: 95%;
     min-height: 50vh;
     margin: 2vmin;
-    margin-bottom: 0;
   }
 
   .main-cards .break {

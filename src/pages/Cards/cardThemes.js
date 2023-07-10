@@ -47,4 +47,22 @@ export const cardThemes = [
     fg: "#eeeeee",
     hl: "#ee2288",
   },
+  {
+    name: "emerald",
+    bg: "#b7d6d8",
+    fg: "#165051",
+    hl: "#0fd17a",
+  },
+  {
+    name: "league",
+    bg: "#000027",
+    fg: "#5e7eff",
+    hl: "#ff2507",
+  },
+  {
+    name: "",
+    bg: "#",
+    fg: "#",
+    hl: "#",
+  },
 ];

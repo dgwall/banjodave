@@ -39,7 +39,7 @@ function Cards() {
         setSimilarCards(searchedCards);
         setViewMode("search");
         setLastSearch(searchTerm);
-      }, 1000);
+      }, 500);
     }
     return () => clearTimeout(searchInterval);
   }, [searchTerm, lastSearch, isSearchFocused, cards]);
@@ -136,12 +136,11 @@ function Cards() {
 
   return (
     <>
-      {selectedCard && (
+      {selectedCard ? (
         <div
           className="card-selected"
           style={{
             "--bg-color": selectedTheme?.bg,
-            "--bg-a-color": selectedTheme?.bg,
             "--fg-color": selectedTheme?.fg,
             "--hl-color": selectedTheme?.hl,
             "--bt-color": buttonTextColor,
@@ -151,6 +150,11 @@ function Cards() {
         >
           <CardExpanded data={selectedCard} />
         </div>
+      ) : (
+        <>
+          <h1>Banjo Cards</h1>
+          {cards.length} Cards
+        </>
       )}
 
       <div className="view-buttons">
@@ -204,19 +208,22 @@ function Cards() {
             <Card data={card} />
           </div>
         ))}
+        {!similarCards.length && "No cards found."}
       </div>
 
       <div className="view-buttons">
         <button
           onClick={handleBack}
-          disabled={currentPage === 1 ? true : false}
+          disabled={!similarCards.length || currentPage === 1 ? true : false}
         >
           &lt;
         </button>
 
         <button
           onClick={handleForward}
-          disabled={currentPage === totalPages ? true : false}
+          disabled={
+            !similarCards.length || currentPage === totalPages ? true : false
+          }
         >
           &gt;
         </button>

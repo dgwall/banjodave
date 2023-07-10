@@ -67,7 +67,7 @@ const Card = ({ data }) => {
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={resetRotation}
-      title={data.title}
+      title={`${data.title} ${data.tagline && `- ${data.tagline}`}`}
     >
       <div className="card" style={cardStyle}>
         {data.accessLevel > 0 && (

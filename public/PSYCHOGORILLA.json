@@ -270,13 +270,14 @@
     "theme": "ice",
     "tags": ["Art", "Digital Art", "Commission", "Canvas", "Ice", "Bright"],
     "tagline": "Digital art commission for @GateGuard",
-    "text": ["Acrylic on Canvas"],
-    "images": [""],
+    "text": [
+      "Lost frost fortress. Digital art with acrylic on canvas. Commissioned by @GateGuard."
+    ],
     "buttons": [
       {
-        "type": "download",
-        "href": "",
-        "label": "Download "
+        "type": "external",
+        "href": "https://twitter.com/GateGuard111",
+        "label": "@GateGuard on Twitter"
       }
     ]
   },
@@ -349,13 +350,15 @@
       "Writing"
     ],
     "tagline": "March 2021",
-    "text": [""],
+    "text": [
+      "rootootoot, Mapwich 2, Vanish Glide, Things, Orb, ULTRACLUB4K, Podcasts, ガキの使い, Nintendo 64, 森林浴, Productivity."
+    ],
     "images": [""],
     "buttons": [
       {
         "type": "download",
         "href": "/",
-        "label": "Download "
+        "label": "Download BanjoZine-001.pdf"
       }
     ]
   },
@@ -395,13 +398,193 @@
       "Card Game"
     ],
     "tagline": "July 2021",
-    "text": [""],
+    "text": [
+      "MALAGARD, Blazing Beachhead, Lullaby by Danlex, Cosmic Snake, Fissure, Advanced Tech, '90s Games, GameCube, Gruntz, Star____?, The Mushroom King, Πυῤῥώνειοι ὑποτυπώσεις & मूलमध्यमककारिका, ドラゴンボールＺ 愛する者のために... ベジータ散る!!, དུག་གསུམ་."
+    ],
     "images": [""],
     "buttons": [
       {
         "type": "download",
         "href": "",
         "label": "Download "
+      }
+    ]
+  },
+  {
+    "id": "BDMTEC",
+    "accessLevel": 1,
+    "date": "2022-02-22",
+    "title": "Emerald City",
+    "tagline": "",
+    "theme": "emerald",
+    "tags": ["Music", "Music Track", "Green", "Electronic", "Mellow"],
+    "text": [""],
+    "media": [""],
+    "buttons": [
+      {
+        "type": "",
+        "href": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "DABLB1",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Iron Badge",
+    "tagline": "BanjoLeague Award",
+    "theme": "league",
+    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
+    "media": [""],
+    "buttons": [
+      {
+        "type": "",
+        "href": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "DABLB8",
+    "accessLevel": 3,
+    "date": "",
+    "title": "Prime Badge",
+    "tagline": "BanjoLeague Award",
+    "theme": "league",
+    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
+    "media": [""],
+    "buttons": [
+      {
+        "type": "",
+        "href": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "DABLB2",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Bronze Badge",
+    "tagline": "BanjoLeague Award",
+    "theme": "league",
+    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
+    "text": [""],
+    "media": [""],
+    "buttons": [
+      {
+        "type": "",
+        "href": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "DABLB7",
+    "accessLevel": 2,
+    "date": "",
+    "title": "Split Prime Badge",
+    "tagline": "BanjoLeague Award",
+    "theme": "league",
+    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
+    "text": [""],
+    "media": [""],
+    "buttons": [
+      {
+        "type": "",
+        "href": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "DABLB6",
+    "accessLevel": 2,
+    "date": "",
+    "title": "Diamond Badge",
+    "tagline": "BanjoLeague Award",
+    "theme": "league",
+    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
+    "text": [""],
+    "media": [""],
+    "buttons": [
+      {
+        "type": "",
+        "href": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "DABLB0",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Prime Sticker",
+    "tagline": "BanjoLeague Award",
+    "theme": "league",
+    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
+    "text": [""],
+    "media": [""],
+    "buttons": [
+      {
+        "type": "",
+        "href": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "DABLB3",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Silver Badge",
+    "tagline": "BanjoLeague Award",
+    "theme": "league",
+    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
+    "text": [""],
+    "media": [""],
+    "buttons": [
+      {
+        "type": "",
+        "href": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "DABLB4",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Gold Badge",
+    "tagline": "BanjoLeague Award",
+    "theme": "league",
+    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
+    "text": [""],
+    "media": [""],
+    "buttons": [
+      {
+        "type": "",
+        "href": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "DABLB5",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Platinum Badge",
+    "tagline": "BanjoLeague Award",
+    "theme": "league",
+    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
+    "text": [""],
+    "media": [""],
+    "buttons": [
+      {
+        "type": "",
+        "href": "",
+        "label": ""
       }
     ]
   }

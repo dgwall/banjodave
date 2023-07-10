@@ -18,16 +18,16 @@ export function searchCards(cards, searchTerm) {
   const hits = cards.map((card) => {
     let hitCount = 0;
 
-    if (card.id.toLowerCase().includes(term)) hitCount += 8;
-    if (card.title.toLowerCase().includes(term)) hitCount += 6;
+    if (card.id && card.id.toLowerCase().includes(term)) hitCount += 8;
+    if (card.title && card.title.toLowerCase().includes(term)) hitCount += 6;
     if (card.tagline && card.tagline.toLowerCase().includes(term))
       hitCount += 4;
     if (card.tags && card.tags.some((tag) => tag.toLowerCase().includes(term)))
       hitCount += 2;
-
-    card.text.forEach((textBlock) => {
-      if (textBlock.toLowerCase().includes(term)) hitCount++;
-    });
+    if (card.text)
+      card.text.forEach((textBlock) => {
+        if (textBlock.toLowerCase().includes(term)) hitCount++;
+      });
 
     return {
       ...card,
@@ -63,7 +63,14 @@ export function sortCards(cards, viewMode, selectedCard, searchTerm) {
 export async function fetchCards() {
   const response = await fetch("/PSYCHOGORILLA.json");
   const data = await response.json();
-  const sortedData = data.sort((b, a) => a.date.localeCompare(b.date));
+
+  // First sort by ID
+  const sortedByIdData = data.sort((a, b) => a.id.localeCompare(b.id));
+
+  // Then sort by date
+  const sortedData = sortedByIdData.sort((b, a) =>
+    a.date.localeCompare(b.date)
+  );
 
   // Calculate total pages for pagination
   const totalPages = Math.ceil(sortedData.length / ITEMS_PER_PAGE);

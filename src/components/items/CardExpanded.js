@@ -100,11 +100,13 @@ const CardExpanded = ({ data }) => {
       <div className={`card-detail caption-${data.accessLevel}`}>
         <div className="card-title">{data.title}</div>
         <div className="card-tagline">{data.tagline}</div>
-        <div className="card-text">
-          {data.text
-            ? data.text.map((text, index) => <p key={index}>{text}</p>)
-            : null}
-        </div>
+        {data.text ? (
+          <div className="card-text">
+            {data.text.map((text, index) => (
+              <p key={index}>{text}</p>
+            ))}
+          </div>
+        ) : null}
         <div className="buttons">
           {data.buttons &&
             data.buttons.map((button, index) => (
