@@ -1,12 +1,17 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
-import filterSimilarProducts from "../../components/menus/filterSimilarProducts";
 import Card from "../../components/items/Card";
 import CardExpanded from "../../components/items/CardExpanded";
 import "./Cards.css";
 import { cardThemes } from "./cardThemes";
 import { getButtonColor, darkenColor } from "../../components/utils/colorUtils";
+import {
+  fetchCards,
+  sortCards,
+  searchCards,
+} from "../../components/menus/CardService";
 
+const ITEMS_HOMEPAGE = 12;
 const ITEMS_PER_PAGE = 6;
 
 const getTheme = (themeName) => {
@@ -20,6 +25,24 @@ function Cards() {
   const [selectedCard, setSelectedCard] = useState(null);
   const [similarCards, setSimilarCards] = useState([]);
   const [viewMode, setViewMode] = useState("newest");
+  const [searchTerm, setSearchTerm] = useState("");
+  const [lastSearch, setLastSearch] = useState("");
+  const [isSearchFocused, setSearchFocused] = useState(false);
+
+  const searchInputRef = useRef(null);
+
+  useEffect(() => {
+    let searchInterval;
+    if (isSearchFocused && searchTerm !== lastSearch) {
+      searchInterval = setTimeout(() => {
+        const searchedCards = searchCards(cards, searchTerm);
+        setSimilarCards(searchedCards);
+        setViewMode("search");
+        setLastSearch(searchTerm);
+      }, 1000);
+    }
+    return () => clearTimeout(searchInterval);
+  }, [searchTerm, lastSearch, isSearchFocused, cards]);
 
   // get card id from the url
   const { cardId } = useParams();
@@ -27,33 +50,13 @@ function Cards() {
   // function for navigation
   const navigate = useNavigate();
 
-  const sortCards = useCallback(
-    (cards) => {
-      switch (viewMode) {
-        case "similar":
-          return filterSimilarProducts(cards, selectedCard);
-        case "alphabetical":
-          return [...cards].sort((a, b) => a.title.localeCompare(b.title));
-        case "newest":
-          return [...cards];
-        case "shuffle":
-          return shuffleArray([...cards]);
-        default:
-          return cards;
-      }
-    },
-    [selectedCard, viewMode]
-  );
-
   // fetch data and set state when component mounts
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch("/PSYCHOGORILLA.json");
-      const data = await response.json();
-      const sortedData = data.sort((b, a) => a.date.localeCompare(b.date));
-      setCards(sortedData);
-      setSimilarCards(sortedData);
-      setTotalPages(Math.ceil(sortedData.length / ITEMS_PER_PAGE));
+      const { cards, totalPages } = await fetchCards();
+      setCards(cards);
+      setSimilarCards(cards);
+      setTotalPages(totalPages);
     };
 
     fetchData();
@@ -61,10 +64,10 @@ function Cards() {
 
   // sort the cards when viewMode changes
   useEffect(() => {
-    const sortedCards = sortCards(cards);
+    const sortedCards = sortCards(cards, viewMode, selectedCard, searchTerm);
     setSimilarCards(sortedCards);
     setCurrentPage(1);
-  }, [selectedCard, cards, viewMode, sortCards]);
+  }, [selectedCard, cards, viewMode, searchTerm]);
 
   // handle changes in cardId
   useEffect(() => {
@@ -92,13 +95,25 @@ function Cards() {
     setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
   };
 
-  function shuffleArray(array) {
-    for (let i = array.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [array[i], array[j]] = [array[j], array[i]];
+  const handleSearchChange = (event) => {
+    setSearchTerm(event.target.value);
+  };
+
+  const handleSearchKeyPress = (event) => {
+    if (event.key === "Enter") {
+      const searchedCards = searchCards(cards, searchTerm);
+      setSimilarCards(searchedCards);
+      setViewMode("search");
     }
-    return array;
-  }
+  };
+
+  const handleSearchFocus = () => {
+    setSearchFocused(true);
+  };
+
+  const handleSearchBlur = () => {
+    setSearchFocused(false);
+  };
 
   // Calculate colors
   const selectedTheme = selectedCard ? getTheme(selectedCard.theme) : {};
@@ -106,12 +121,21 @@ function Cards() {
   const hlAColor = darkenColor(selectedTheme.hl, 10);
   const hlBColor = darkenColor(selectedTheme.hl, 30);
 
+  // calculate total pages for pagination
+  useEffect(() => {
+    selectedCard
+      ? setTotalPages(Math.ceil(similarCards.length / ITEMS_PER_PAGE))
+      : setTotalPages(Math.ceil(similarCards.length / ITEMS_HOMEPAGE));
+  }, [similarCards, selectedCard]);
+
   // calculate the beginning and end index for pagination
-  const begin = (currentPage - 1) * ITEMS_PER_PAGE;
-  const end = begin + ITEMS_PER_PAGE;
+  const begin = selectedCard
+    ? (currentPage - 1) * ITEMS_PER_PAGE
+    : (currentPage - 1) * ITEMS_HOMEPAGE;
+  const end = selectedCard ? begin + ITEMS_PER_PAGE : begin + ITEMS_HOMEPAGE;
 
   return (
-    <div style={{ width: "100%" }}>
+    <>
       {selectedCard && (
         <div
           className="card-selected"
@@ -129,16 +153,56 @@ function Cards() {
         </div>
       )}
 
+      <div className="view-buttons">
+        <input
+          type="text"
+          value={searchTerm}
+          onChange={handleSearchChange}
+          onKeyDown={handleSearchKeyPress}
+          onFocus={handleSearchFocus}
+          onBlur={handleSearchBlur}
+          placeholder="Search..."
+          ref={searchInputRef}
+        />
+      </div>
+
+      <div className="view-buttons">
+        {selectedCard && (
+          <button
+            onClick={() => {
+              setViewMode("similar");
+              setSearchTerm("");
+            }}
+            disabled={viewMode === "similar" ? true : false}
+          >
+            Similar
+          </button>
+        )}
+        <button
+          onClick={() => {
+            setViewMode("newest");
+            setSearchTerm("");
+          }}
+          disabled={viewMode === "newest" ? true : false}
+        >
+          Newest
+        </button>
+        <button
+          onClick={() => {
+            setViewMode("shuffle");
+            setSearchTerm("");
+          }}
+          disabled={viewMode === "shuffle" ? true : false}
+        >
+          Random
+        </button>
+      </div>
+
       <div className="cards-container">
         {similarCards.slice(begin, end).map((card, index) => (
-          <React.Fragment key={card.id}>
-            <div onClick={() => handleCardClick(card)}>
-              <Card data={card} />
-            </div>
-            {index === Math.floor(ITEMS_PER_PAGE / 2) - 1 && (
-              <div className="break">&nbsp;</div>
-            )}
-          </React.Fragment>
+          <div onClick={() => handleCardClick(card)} key={card.id}>
+            <Card data={card} />
+          </div>
         ))}
       </div>
 
@@ -152,41 +216,12 @@ function Cards() {
 
         <button
           onClick={handleForward}
-          disabled={currentPage === totalPages - 1 ? true : false}
+          disabled={currentPage === totalPages ? true : false}
         >
           &gt;
         </button>
       </div>
-
-      <div className="view-buttons">
-        {selectedCard && (
-          <button
-            onClick={() => setViewMode("similar")}
-            disabled={viewMode === "similar" ? true : false}
-          >
-            Similar
-          </button>
-        )}
-        <button
-          onClick={() => setViewMode("newest")}
-          disabled={viewMode === "newest" ? true : false}
-        >
-          Newest
-        </button>
-        <button
-          onClick={() => setViewMode("alphabetical")}
-          disabled={viewMode === "alphabetical" ? true : false}
-        >
-          A-Z
-        </button>
-        <button
-          onClick={() => setViewMode("shuffle")}
-          disabled={viewMode === "shuffle" ? true : false}
-        >
-          Random
-        </button>
-      </div>
-    </div>
+    </>
   );
 }
 

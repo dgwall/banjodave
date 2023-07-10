@@ -17,6 +17,10 @@ button {
   font-family: "Dosis", sans-serif;
 }
 
+input {
+  font-family: "Dosis", sans-serif;
+}
+
 .page {
   max-width: 1280px;
   margin: 0 auto;
