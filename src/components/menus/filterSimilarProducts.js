@@ -3,16 +3,22 @@ const filterSimilarProducts = (products, selectedProduct) => {
 
   const similarItems = products.reduce((acc, product) => {
     if (product.id !== selectedProduct.id) {
-      const commonTagsLength = product.tags.reduce(
-        (count, tag) => count + (selectedProductTagsSet.has(tag) ? 1 : 0),
-        0
-      );
-      acc.push({ ...product, commonTagsLength });
+      let sharedTagsWeightedSum = 0;
+      product.tags.forEach((tag, index) => {
+        if (selectedProductTagsSet.has(tag)) {
+          // Compute a weight based on the position of the tag
+          const weight = (product.tags.length - index) / product.tags.length;
+          sharedTagsWeightedSum += weight;
+        }
+      });
+      acc.push({ ...product, sharedTagsWeightedSum });
     }
     return acc;
   }, []);
 
-  similarItems.sort((a, b) => b.commonTagsLength - a.commonTagsLength);
+  similarItems.sort(
+    (a, b) => b.sharedTagsWeightedSum - a.sharedTagsWeightedSum
+  );
 
   return similarItems;
 };

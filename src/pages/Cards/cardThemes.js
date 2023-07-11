@@ -37,9 +37,9 @@ export const cardThemes = [
   },
   {
     name: "n",
-    bg: "#cacad0",
-    fg: "#797988",
-    hl: "#e1c63c",
+    bg: "#797988",
+    fg: "#ffffff",
+    hl: "#cacad0",
   },
   {
     name: "bwc",
@@ -60,9 +60,9 @@ export const cardThemes = [
     hl: "#ff2507",
   },
   {
-    name: "",
-    bg: "#",
-    fg: "#",
-    hl: "#",
+    name: "salt",
+    bg: "#7b7e87",
+    fg: "#ddd7c9",
+    hl: "#ffffff",
   },
 ];

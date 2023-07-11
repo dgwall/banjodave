@@ -74,13 +74,18 @@ const Card = ({ data }) => {
           <div className="card-holo" style={holoStyle}></div>
         )}
         <img
-          src={`/img/cards/bwc-${data.accessLevel}.png`}
-          alt={`BWC Level ${data.accessLevel}`}
-          className="card-rarity"
+          src={`/img/icon/${data.icon}.png`}
+          alt={`${data.icon} icon`}
+          className="card-category"
         />
         <div className="card-id">
           <span>{data.id}</span>
         </div>
+        <img
+          src={`/img/cards/bwc-${data.accessLevel}.png`}
+          alt={`BWC Level ${data.accessLevel}`}
+          className="card-rarity"
+        />
         <div className={`card-border border-${data.accessLevel}`}></div>
       </div>
       <div className={`card-caption caption-${data.accessLevel}`}>

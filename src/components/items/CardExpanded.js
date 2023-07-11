@@ -12,8 +12,8 @@ const calculateRotation = (e, element) => {
   let x = 0.5 - (clientX - left) / width;
   let y = 0.6 - (clientY - top) / height;
   // Cap rotation values
-  x = Math.max(Math.min(x, 0.9), -0.9);
-  y = Math.max(Math.min(y, 0.9), -0.9);
+  x = Math.max(Math.min(x, 1), -1);
+  y = Math.max(Math.min(y, 1), -1);
   return { x: x * -10, y: y * 10 };
 };
 
@@ -106,13 +106,18 @@ const CardExpanded = ({ data }) => {
             <div className="card-holo" style={holoStyle}></div>
           )}
           <img
-            src={`/img/cards/bwc-${data.accessLevel}.png`}
-            alt={`BWC Level ${data.accessLevel}`}
-            className="card-rarity"
+            src={`/img/icon/${data.icon}.png`}
+            alt={`${data.icon} icon`}
+            className="card-category"
           />
           <div className="card-id">
             <span>{data.id}</span>
           </div>
+          <img
+            src={`/img/cards/bwc-${data.accessLevel}.png`}
+            alt={`BWC Level ${data.accessLevel}`}
+            className="card-rarity"
+          />
           <div className={`card-border border-${data.accessLevel}`}></div>
         </div>
       </div>

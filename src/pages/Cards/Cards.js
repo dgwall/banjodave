@@ -1,3 +1,5 @@
+// TODO: All images to webp
+
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import Card from "../../components/items/Card";
@@ -11,8 +13,8 @@ import {
   searchCards,
 } from "../../components/menus/CardService";
 
-const ITEMS_HOMEPAGE = 12;
-const ITEMS_PER_PAGE = 6;
+const ITEMS_HOMEPAGE = 30;
+const ITEMS_PER_PAGE = 8;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -86,12 +88,19 @@ function Cards() {
     navigate(`/cards/${card.id}`);
   };
 
-  // handler for back button
+  // handler for page buttons
+  const handleFirst = () => {
+    setCurrentPage(1);
+  };
+
+  const handleLast = () => {
+    setCurrentPage(totalPages);
+  };
+
   const handleBack = () => {
     setCurrentPage((prevPage) => Math.max(prevPage - 1, 1));
   };
 
-  // handler for forward button
   const handleForward = () => {
     setCurrentPage((prevPage) => Math.min(prevPage + 1, totalPages));
   };
@@ -153,8 +162,8 @@ function Cards() {
         </div>
       ) : (
         <>
-          <h1>Banjo Cards Preview</h1>
-          {cards.length} Cards
+          <h1>digital banjeetz card collection</h1>
+          {cards.length} cards 0 crypto
         </>
       )}
 
@@ -181,7 +190,7 @@ function Cards() {
             }}
             disabled={viewMode === "similar" ? true : false}
           >
-            Similar
+            <img src="/img/icon/zap.svg" alt="Zap icon" /> Similar
           </button>
         )}
         <button
@@ -191,7 +200,7 @@ function Cards() {
           }}
           disabled={viewMode === "newest" ? true : false}
         >
-          Newest
+          <img src="/img/icon/time.svg" alt="Clock icon" /> Newest
         </button>
         <button
           onClick={() => {
@@ -200,7 +209,7 @@ function Cards() {
           }}
           disabled={viewMode === "shuffle" ? true : false}
         >
-          Random
+          <img src="/img/icon/shuffle.svg" alt="Shuffle icon" /> Shuffle
         </button>
       </div>
 
@@ -215,10 +224,17 @@ function Cards() {
 
       <div className="view-buttons">
         <button
+          onClick={handleFirst}
+          disabled={!similarCards.length || currentPage === 1 ? true : false}
+        >
+          <img src="/img/icon/chevrons-left.svg" alt="Back to page 1" />
+        </button>
+
+        <button
           onClick={handleBack}
           disabled={!similarCards.length || currentPage === 1 ? true : false}
         >
-          &lt;
+          <img src="/img/icon/chevron-left.svg" alt="Back 1 page" />
         </button>
 
         <button
@@ -227,7 +243,16 @@ function Cards() {
             !similarCards.length || currentPage === totalPages ? true : false
           }
         >
-          &gt;
+          <img src="/img/icon/chevron-right.svg" alt="Back 1 page" />
+        </button>
+
+        <button
+          onClick={handleLast}
+          disabled={
+            !similarCards.length || currentPage === totalPages ? true : false
+          }
+        >
+          <img src="/img/icon/chevrons-right.svg" alt="Last page" />
         </button>
       </div>
     </>

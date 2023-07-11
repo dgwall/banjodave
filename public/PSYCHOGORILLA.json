@@ -5,6 +5,7 @@
     "date": "2019-12-XX",
     "title": "BanjoDOOM",
     "theme": "doom",
+    "icon": "doom",
     "tagPin": "DOOM",
     "tags": [
       "DOOM",
@@ -30,6 +31,7 @@
     "title": "Blazing Beachhead",
     "theme": "magma",
     "thumbreel": "true",
+    "icon": "doom",
     "tagPin": "Blazing Beachhead",
     "tags": [
       "Blazing Beachhead",
@@ -62,6 +64,7 @@
     "title": "Mapwich 2: Ascent to Valhalla",
     "thumbreel": true,
     "theme": "storm",
+    "icon": "doom",
     "tagPin": "Ascent to Valhalla",
     "tags": [
       "DOOM",
@@ -106,6 +109,7 @@
     "title": "rootootoot",
     "thumbreel": false,
     "theme": "n",
+    "icon": "n",
     "tagPin": "rootootoot",
     "tags": [
       "N",
@@ -126,7 +130,9 @@
       "Robots"
     ],
     "tagline": "500 maps by DW40 for N v1.4",
-    "text": [""],
+    "text": [
+      "In 2018, I set out on the monumental task of compiling every map I've ever crafted. From this extensive collection, I painstakingly curated my top 500 - a showcase of my best work. These maps were then meticulously structured into an episodic format matching the original game reflecting a progression in both difficulty and complexity."
+    ],
     "images": ["", "", ""],
     "buttons": [
       {
@@ -144,6 +150,7 @@
     "thumbreel": true,
     "theme": "doom",
     "tagPin": "Ascent to Valhalla",
+    "icon": "doom",
     "tags": [
       "DOOM",
       "GZDoom",
@@ -181,6 +188,7 @@
     "title": "Wrath",
     "thumbreel": true,
     "theme": "fireblu",
+    "icon": "art",
     "tags": [
       "Art",
       "Physical Art",
@@ -211,10 +219,11 @@
     "title": "BWC L1 Access Token",
     "thumbreel": true,
     "theme": "bwc",
+    "icon": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 1"],
-    "tagline": "BWC Access Level 1",
+    "tagline": "BWC Public Access",
     "text": [
-      "Free Tier BWC Access Preview. Bonus content available for free through Patreon."
+      "Free-tier BWC preview. Bonus content available for free through Patreon."
     ],
     "images": [""],
     "buttons": [
@@ -229,9 +238,10 @@
     "id": "BWC2",
     "accessLevel": 2,
     "date": "",
-    "title": "BWC L2 Access Card",
+    "title": "BWC L2 Access Card (Platinum)",
     "thumbreel": true,
     "theme": "bwc",
+    "icon": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 2"],
     "tagline": "BWC Access Level 2",
     "text": ["Early access, previews, archived, and other bonus content."],
@@ -248,9 +258,10 @@
     "id": "BWC3",
     "accessLevel": 3,
     "date": "",
-    "title": "BWC L3 Special Access Card",
+    "title": "BWC L3 Special Access Card (Black)",
     "thumbreel": true,
     "theme": "bwc",
+    "icon": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 3"],
     "tagline": "BWC Access Level 3",
     "text": [
@@ -272,6 +283,7 @@
     "title": "Frost Fortress",
     "thumbreel": true,
     "theme": "ice",
+    "icon": "art",
     "tags": ["Art", "Digital Art", "Commission", "Canvas", "Ice", "Bright"],
     "tagline": "Digital art commission for @GateGuard",
     "text": [
@@ -291,7 +303,8 @@
     "date": "",
     "title": "Pebblemoth #034",
     "thumbreel": true,
-    "theme": "pebblemoth",
+    "theme": "salt",
+    "icon": "pebblemoth-egg",
     "tags": [
       "Pebblemoth",
       "AI Assisted",
@@ -319,6 +332,7 @@
     "date": "",
     "title": "BanjoZine Issue #1",
     "thumbreel": true,
+    "icon": "zine",
     "theme": "zine",
     "tags": [
       "Banjo House",
@@ -373,6 +387,7 @@
     "title": "BanjoZine Issue #2",
     "thumbreel": true,
     "theme": "zine",
+    "icon": "zine",
     "tags": [
       "Banjo House",
       "BanjoZine",
@@ -419,6 +434,7 @@
     "accessLevel": 1,
     "date": "2022-02-22",
     "title": "Emerald City",
+    "icon": "music",
     "tagline": "",
     "theme": "emerald",
     "tags": ["Music", "Music Track", "Green", "Electronic", "Mellow"],
@@ -439,6 +455,7 @@
     "title": "Iron Badge",
     "tagline": "BanjoLeague Award",
     "theme": "league",
+    "icon": "league",
     "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
     "media": [""],
     "buttons": [
@@ -456,6 +473,7 @@
     "title": "Prime Badge",
     "tagline": "BanjoLeague Award",
     "theme": "league",
+    "icon": "league",
     "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
     "media": [""],
     "buttons": [
@@ -473,6 +491,7 @@
     "title": "Bronze Badge",
     "tagline": "BanjoLeague Award",
     "theme": "league",
+    "icon": "league",
     "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
     "text": [""],
     "media": [""],
@@ -491,6 +510,7 @@
     "title": "Split Prime Badge",
     "tagline": "BanjoLeague Award",
     "theme": "league",
+    "icon": "league",
     "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
     "text": [""],
     "media": [""],
@@ -509,6 +529,7 @@
     "title": "Diamond Badge",
     "tagline": "BanjoLeague Award",
     "theme": "league",
+    "icon": "league",
     "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
     "text": [""],
     "media": [""],
@@ -527,6 +548,7 @@
     "title": "Prime Sticker",
     "tagline": "BanjoLeague Award",
     "theme": "league",
+    "icon": "league",
     "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
     "text": [""],
     "media": [""],
@@ -545,6 +567,7 @@
     "title": "Silver Badge",
     "tagline": "BanjoLeague Award",
     "theme": "league",
+    "icon": "league",
     "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
     "text": [""],
     "media": [""],
@@ -563,6 +586,7 @@
     "title": "Gold Badge",
     "tagline": "BanjoLeague Award",
     "theme": "league",
+    "icon": "league",
     "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
     "text": [""],
     "media": [""],
@@ -581,6 +605,7 @@
     "title": "Platinum Badge",
     "tagline": "BanjoLeague Award",
     "theme": "league",
+    "icon": "league",
     "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
     "text": [""],
     "media": [""],
