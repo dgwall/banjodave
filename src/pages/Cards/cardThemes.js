@@ -65,4 +65,34 @@ export const cardThemes = [
     fg: "#ddd7c9",
     hl: "#ffffff",
   },
+  {
+    name: "iridescent",
+    bg: "#f4bae8",
+    fg: "#959595",
+    hl: "#db70f3",
+  },
+  {
+    name: "space",
+    bg: "#08000a",
+    fg: "#9365a2",
+    hl: "#482f1c",
+  },
+  {
+    name: "darkforest",
+    bg: "#11120a",
+    fg: "#d1b68b",
+    hl: "#346621",
+  },
+  {
+    name: "dark",
+    bg: "#13110e",
+    fg: "#cccccc",
+    hl: "#6a6b42",
+  },
+  {
+    name: "arcade",
+    bg: "#ecd21a",
+    fg: "#000000",
+    hl: "#ffffff",
+  },
 ];

@@ -224,14 +224,6 @@
     "tagline": "BWC Public Access",
     "text": [
       "Free-tier BWC preview. Bonus content available for free through Patreon."
-    ],
-    "images": [""],
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
     ]
   },
   {
@@ -244,15 +236,7 @@
     "icon": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 2"],
     "tagline": "BWC Access Level 2",
-    "text": ["Early access, previews, archived, and other bonus content."],
-    "images": [""],
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
-    ]
+    "text": ["Early access, previews, archived, and other bonus content."]
   },
   {
     "id": "BWC3",
@@ -266,14 +250,6 @@
     "tagline": "BWC Access Level 3",
     "text": [
       "Unlock all banjo content, get 0DG games for free, and more with the BWC Black Card."
-    ],
-    "images": [""],
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
     ]
   },
   {
@@ -281,7 +257,6 @@
     "accessLevel": 0,
     "date": "",
     "title": "Frost Fortress",
-    "thumbreel": true,
     "theme": "ice",
     "icon": "art",
     "tags": ["Art", "Digital Art", "Commission", "Canvas", "Ice", "Bright"],
@@ -316,15 +291,7 @@
       "Throne"
     ],
     "tagline": "Salt in Gemini",
-    "text": [""],
-    "images": [""],
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
-    ]
+    "text": [""]
   },
   {
     "id": "BHZ001",
@@ -420,7 +387,6 @@
     "text": [
       "MALAGARD, Blazing Beachhead, Lullaby by Danlex, Cosmic Snake, Fissure, Advanced Tech, '90s Games, GameCube, Gruntz, Star____?, The Mushroom King, Πυῤῥώνειοι ὑποτυπώσεις & मूलमध्यमककारिका, ドラゴンボールＺ 愛する者のために... ベジータ散る!!, དུག་གསུམ་."
     ],
-    "images": [""],
     "buttons": [
       {
         "type": "download",
@@ -439,7 +405,6 @@
     "theme": "emerald",
     "tags": ["Music", "Music Track", "Green", "Electronic", "Mellow"],
     "text": [""],
-    "media": [""],
     "buttons": [
       {
         "type": "",
@@ -453,16 +418,16 @@
     "accessLevel": 0,
     "date": "",
     "title": "Iron Badge",
-    "tagline": "BanjoLeague Award",
+    "tagline": "Banjo League Award",
     "theme": "league",
     "icon": "league",
-    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
-    "media": [""],
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for submissions to a leaderboard."],
     "buttons": [
       {
-        "type": "",
-        "href": "",
-        "label": ""
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
       }
     ]
   },
@@ -471,16 +436,16 @@
     "accessLevel": 3,
     "date": "",
     "title": "Prime Badge",
-    "tagline": "BanjoLeague Award",
+    "tagline": "Banjo League Award",
     "theme": "league",
     "icon": "league",
-    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
-    "media": [""],
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for holding the site record."],
     "buttons": [
       {
-        "type": "",
-        "href": "",
-        "label": ""
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
       }
     ]
   },
@@ -489,17 +454,16 @@
     "accessLevel": 0,
     "date": "",
     "title": "Bronze Badge",
-    "tagline": "BanjoLeague Award",
+    "tagline": "Banjo League Award",
     "theme": "league",
     "icon": "league",
-    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
-    "text": [""],
-    "media": [""],
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for achieving 50% of the site record."],
     "buttons": [
       {
-        "type": "",
-        "href": "",
-        "label": ""
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
       }
     ]
   },
@@ -508,17 +472,16 @@
     "accessLevel": 2,
     "date": "",
     "title": "Split Prime Badge",
-    "tagline": "BanjoLeague Award",
+    "tagline": "Banjo League Award",
     "theme": "league",
     "icon": "league",
-    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
-    "text": [""],
-    "media": [""],
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for sharing a site record."],
     "buttons": [
       {
-        "type": "",
-        "href": "",
-        "label": ""
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
       }
     ]
   },
@@ -527,55 +490,52 @@
     "accessLevel": 2,
     "date": "",
     "title": "Diamond Badge",
-    "tagline": "BanjoLeague Award",
+    "tagline": "Banjo League Award",
     "theme": "league",
     "icon": "league",
-    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
-    "text": [""],
-    "media": [""],
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for achieving 95% of the site record."],
     "buttons": [
       {
-        "type": "",
-        "href": "",
-        "label": ""
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
       }
     ]
   },
   {
     "id": "DABLB0",
-    "accessLevel": 0,
+    "accessLevel": 1,
     "date": "",
     "title": "Prime Sticker",
-    "tagline": "BanjoLeague Award",
+    "tagline": "Banjo League Award",
     "theme": "league",
     "icon": "league",
-    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
-    "text": [""],
-    "media": [""],
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for having the only submission on a leaderboard."],
     "buttons": [
       {
-        "type": "",
-        "href": "",
-        "label": ""
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
       }
     ]
   },
   {
     "id": "DABLB3",
-    "accessLevel": 0,
+    "accessLevel": 1,
     "date": "",
     "title": "Silver Badge",
-    "tagline": "BanjoLeague Award",
+    "tagline": "Banjo League Award",
     "theme": "league",
     "icon": "league",
-    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
-    "text": [""],
-    "media": [""],
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for achieving 70% of the site record."],
     "buttons": [
       {
-        "type": "",
-        "href": "",
-        "label": ""
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
       }
     ]
   },
@@ -584,36 +544,763 @@
     "accessLevel": 1,
     "date": "",
     "title": "Gold Badge",
-    "tagline": "BanjoLeague Award",
+    "tagline": "Banjo League Award",
     "theme": "league",
     "icon": "league",
-    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
-    "text": [""],
-    "media": [""],
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for achieving 80% of the site record."],
     "buttons": [
       {
-        "type": "",
-        "href": "",
-        "label": ""
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
       }
     ]
   },
   {
     "id": "DABLB5",
-    "accessLevel": 1,
+    "accessLevel": 2,
     "date": "",
     "title": "Platinum Badge",
-    "tagline": "BanjoLeague Award",
+    "tagline": "Banjo League Award",
     "theme": "league",
     "icon": "league",
-    "tags": ["Digital Art", "Sprite", "BanjoLeague", "Badge", "Award"],
-    "text": [""],
-    "media": [""],
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for achieving 90% of the site record."],
     "buttons": [
       {
-        "type": "",
-        "href": "",
-        "label": ""
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
+      }
+    ]
+  },
+  {
+    "id": "0DBAAC",
+    "accessLevel": 1,
+    "date": "",
+    "title": "alpha cart",
+    "tagline": "Banjo's Arcade alpha cartridge",
+    "theme": "arcade",
+    "icon": "arcade",
+    "text": [
+      "What kind of electric pearl is coalescing on the circuitry inside this plastic shell?"
+    ],
+    "tags": [
+      "0DGames",
+      "Game Dev",
+      "Banjo's Arcade",
+      "alpha",
+      "beta",
+      "PC",
+      "Retro",
+      "Cartridge"
+    ]
+  },
+  {
+    "id": "0DBADC",
+    "accessLevel": 2,
+    "date": "",
+    "title": "damaged cart",
+    "tagline": "Banjo's Arcade damaged cartridge",
+    "theme": "arcade",
+    "icon": "arcade",
+    "text": [
+      "The label on this sunbleached cartridge has somehow been completely scraped off. Who knows which game was held on this long-lost relic?"
+    ],
+    "tags": [
+      "0DGames",
+      "Game Dev",
+      "Banjo's Arcade",
+      "Digital Art",
+      "Cartridge",
+      "Corrupt",
+      "Damaged",
+      "Degredation",
+      "PC",
+      "Retro"
+    ]
+  },
+  {
+    "id": "0DBAB1",
+    "accessLevel": 0,
+    "date": "",
+    "title": "hiecom beta cart",
+    "tagline": "Banjo's Arcade Hierophant Commandant beta cartridge",
+    "theme": "arcade",
+    "icon": "arcade",
+    "tags": [
+      "0DGames",
+      "Banjo's Arcade",
+      "Game Dev",
+      "beta",
+      "Hierophant Commandant",
+      "PC",
+      "Retro",
+      "Cartridge",
+      "Ghosts",
+      "Magic"
+    ]
+  },
+  {
+    "id": "0DBAB2",
+    "accessLevel": 0,
+    "date": "",
+    "title": "navexe beta cart",
+    "tagline": "Banjo's Arcade notavirus.exe beta cartridge",
+    "theme": "arcade",
+    "icon": "arcade",
+    "tags": [
+      "0DGames",
+      "Banjo's Arcade",
+      "Game Dev",
+      "beta",
+      "notavirus.exe",
+      "PC",
+      "Retro",
+      "Cartridge"
+    ]
+  },
+  {
+    "id": "BLD000",
+    "accessLevel": 1,
+    "date": "",
+    "title": "No Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "text": ["Awarded for a first-try completion."],
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Halo",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD001",
+    "accessLevel": 0,
+    "date": "",
+    "title": "One Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD002",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Two Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD003",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Three Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD004",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Four Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD005",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Five Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD006",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Six Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD007",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Seven Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD008",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Eight Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD009",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Nine Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD010",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Ten Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD011",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Twenty Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD012",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Thirty Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD013",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Forty Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD014",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Fifty Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD015",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Sixty Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD016",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Seventy Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD017",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Eighty Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD018",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Ninety Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD019",
+    "accessLevel": 1,
+    "date": "",
+    "title": "One Hundred Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD020",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Two Hundred Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD021",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Three Hundred Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD022",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Four Hundred Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD023",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Five Hundred Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD024",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Six Hundred Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD025",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Seven Hundred Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD026",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Eight Hundred Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD027",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Nine Hundred Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD028",
+    "accessLevel": 2,
+    "date": "",
+    "title": "One Thousand Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLD029",
+    "accessLevel": 3,
+    "date": "",
+    "title": "Ten Thousand Defeatz",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Skull",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLC001",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Beatz Token",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "text": ["Awarded for beating an objective."],
+    "tags": [
+      "Beatz",
+      "Completez",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Checkbox",
+      "Award"
+    ]
+  },
+  {
+    "id": "BLC002",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Completez Token",
+    "tagline": "Banjo League Completez Award",
+    "theme": "league",
+    "icon": "league",
+    "text": ["Awarded for 100% completion."],
+    "tags": [
+      "Completez",
+      "Beatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Checkbox",
+      "Award"
+    ]
+  },
+  {
+    "id": "DACCEL",
+    "accessLevel": 0,
+    "date": "2022-03-30",
+    "title": "Celadon Capsule",
+    "tagline": "BFD Capsule Series",
+    "theme": "emerald",
+    "icon": "capsule",
+    "tags": ["Capsule", "BFD", "Celadon", "Digital Art", "Green"]
+  },
+  {
+    "id": "DACCEE",
+    "accessLevel": 2,
+    "date": "2022-04-01",
+    "title": "Celestial Capsule",
+    "tagline": "BFD Capsule Series",
+    "theme": "iridescent",
+    "icon": "capsule",
+    "text": ["Summons a real tulpa that tells mostly-true fortunes."],
+    "tags": ["Capsule", "BFD", "Celadon", "Digital Art", "Iridescent"]
+  },
+  {
+    "id": "DABLAD",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Banjeetz Life and Death",
+    "tagline": "Twitter Header",
+    "theme": "darkforest",
+    "icon": "ai",
+    "tags": ["Digital Art", "Twitter", "AI Assisted", "Logo", "Banjeetz"],
+    "buttons": [
+      {
+        "type": "download",
+        "url": "/",
+        "label": "Download wallpaper-mobile-banjo-logo-dark-rays.png 1080x1920 534 KB"
+      }
+    ]
+  },
+  {
+    "id": "DAWHAN",
+    "accessLevel": 1,
+    "date": "2023-01-06",
+    "title": "Realm of White Animals",
+    "tagline": "Where animals wait to be summoned by stage magicians.",
+    "theme": "space",
+    "icon": "art",
+    "text": ["Concept art for Banjo's Arcade Kósmoptasía."],
+    "tags": ["Digital Art", "Space", "Magic", "Kósmoptasía", "Concept Art"],
+    "buttons": [
+      {
+        "type": "download",
+        "url": "/",
+        "label": "Download wallpaper-mobile-banjo-logo-dark-rays.png 1080x1920 534 KB"
+      }
+    ]
+  },
+  {
+    "id": "DABGDR",
+    "accessLevel": 0,
+    "date": "2022-11-23",
+    "title": "Dark Logo Wallpaper",
+    "tagline": "Banjo logo mobile wallpaper.",
+    "theme": "dark",
+    "icon": "art",
+    "text": [""],
+    "tags": ["Digital Art", "Space", "Magic", "Kósmoptasía", "Concept Art"],
+    "buttons": [
+      {
+        "type": "download",
+        "url": "/",
+        "label": "Download wallpaper-mobile-banjo-logo-dark-rays.png 1080x1920 534 KB"
+      }
+    ]
+  },
+  {
+    "id": "BLSOON",
+    "accessLevel": 0,
+    "date": "2022-12-11",
+    "title": "Coming Soon",
+    "tagline": "Banjo League Coming Soon",
+    "theme": "league",
+    "icon": "league",
+    "text": [
+      "Banjo League is a place to track your game completion progress and compete against other players for the best scores and times."
+    ],
+    "tags": ["Banjo League", "Preview", "Shield", "Logo"],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
       }
     ]
   }

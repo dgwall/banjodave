@@ -13,8 +13,9 @@ import {
   searchCards,
 } from "../../components/menus/CardService";
 
-const ITEMS_HOMEPAGE = 30;
+const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
+const ACCESS_LEVEL = 0;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -158,12 +159,16 @@ function Cards() {
             "--hl-b-color": hlBColor,
           }}
         >
-          <CardExpanded data={selectedCard} />
+          <CardExpanded data={selectedCard} access={ACCESS_LEVEL} />
         </div>
       ) : (
         <>
-          <h1>digital banjeetz card collection</h1>
-          {cards.length} cards 0 crypto
+          <h1>
+            banjo warez corp presents banjeetz' not nfts but that type vibe
+            digital card collection portfolio thing or like a platform w paid
+            content thingy
+          </h1>
+          0 patrons {cards.length} cards 0 crypto
         </>
       )}
 
@@ -181,7 +186,7 @@ function Cards() {
         />
       </div>
 
-      <div className="view-buttons">
+      <div className="view-buttons sort-buttons">
         {selectedCard && (
           <button
             onClick={() => {
@@ -211,15 +216,6 @@ function Cards() {
         >
           <img src="/img/icon/shuffle.svg" alt="Shuffle icon" /> Shuffle
         </button>
-      </div>
-
-      <div className="cards-container">
-        {similarCards.slice(begin, end).map((card, index) => (
-          <div onClick={() => handleCardClick(card)} key={card.id}>
-            <Card data={card} />
-          </div>
-        ))}
-        {!similarCards.length && "No cards found."}
       </div>
 
       <div className="view-buttons">
@@ -254,6 +250,15 @@ function Cards() {
         >
           <img src="/img/icon/chevrons-right.svg" alt="Last page" />
         </button>
+      </div>
+
+      <div className="cards-container">
+        {similarCards.slice(begin, end).map((card, index) => (
+          <div onClick={() => handleCardClick(card)} key={card.id}>
+            <Card data={card} access={ACCESS_LEVEL} />
+          </div>
+        ))}
+        {!similarCards.length && "No cards found."}
       </div>
     </>
   );

@@ -35,8 +35,8 @@ export const menuItems = [
   },
   {
     path: "/league",
-    label: "Compete in the BanjoLeague",
-    text: "BanjoLeague",
+    label: "Compete in the Banjo League",
+    text: "Banjo League",
     icon: "league",
     move: false,
   },

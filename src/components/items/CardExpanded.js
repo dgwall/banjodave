@@ -17,7 +17,7 @@ const calculateRotation = (e, element) => {
   return { x: x * -10, y: y * 10 };
 };
 
-const CardExpanded = ({ data }) => {
+const CardExpanded = ({ data, access }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [smoothTransition, setSmoothTransition] = useState(true);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -105,6 +105,10 @@ const CardExpanded = ({ data }) => {
           {data.accessLevel > 0 && (
             <div className="card-holo" style={holoStyle}></div>
           )}
+          <div className={`card-border border-${data.accessLevel}`}></div>{" "}
+          {data.accessLevel > 0 && data.accessLevel > access && (
+            <div className={`card-locked locked-${data.accessLevel}`}></div>
+          )}
           <img
             src={`/img/icon/${data.icon}.png`}
             alt={`${data.icon} icon`}
@@ -118,7 +122,6 @@ const CardExpanded = ({ data }) => {
             alt={`BWC Level ${data.accessLevel}`}
             className="card-rarity"
           />
-          <div className={`card-border border-${data.accessLevel}`}></div>
         </div>
       </div>
 

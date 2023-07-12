@@ -264,7 +264,8 @@
   background-repeat: no-repeat;
 }
 
-.main-cards .card-border {
+.main-cards .card-border,
+.main-cards .card-locked {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -283,6 +284,16 @@
 }
 .main-cards .border-3 {
   background-image: url("../../../public/img/cards/border-3.png");
+}
+
+.main-cards .locked-1 {
+  background-image: url("../../../public/img/cards/border-bwc-1.png");
+}
+.main-cards .locked-2 {
+  background-image: url("../../../public/img/cards/border-bwc-2.png");
+}
+.main-cards .locked-3 {
+  background-image: url("../../../public/img/cards/border-bwc-3.png");
 }
 
 .main-cards .card-expanded {
@@ -419,8 +430,8 @@
   position: absolute;
   bottom: 3.5%;
   right: 3.8%;
-  width: 1.2vmax;
-  height: 1.2vmax;
+  width: 1.4vmax;
+  height: 1.4vmax;
   padding: 2px;
   object-fit: contain;
 }
@@ -430,8 +441,8 @@
   position: absolute;
   bottom: 3.5%;
   left: 3.8%;
-  width: 1.2vmax;
-  height: 1.2vmax;
+  width: 1.4vmax;
+  height: 1.4vmax;
   padding: 2px;
   object-fit: contain;
 }
@@ -449,6 +460,11 @@
 
 .main-cards .card-id span {
   background-color: rgba(0, 0, 0, 0.75);
+}
+
+.main-cards .view-buttons.sort-buttons img {
+  margin: 0;
+  margin-right: 0.5rem;
 }
 
 @keyframes fadeIn {
@@ -503,6 +519,11 @@
   }
   .main-cards .card-container .card-caption {
     max-width: 22vw;
+  }
+
+  .main-cards .card-expanded .card-detail .card-text {
+    text-indent: 0;
+    text-align: center;
   }
 }
 
