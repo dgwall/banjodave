@@ -17,11 +17,21 @@
 }
 
 .main-cards h1 {
-  font-weight: normal;
-  line-height: normal;
-  font-size: 4rem;
   margin: 0;
   margin-top: 5vh;
+  font-size: 4rem;
+}
+
+.main-cards h2 {
+  margin: 0;
+  font-size: 2rem;
+  margin-bottom: 5vh;
+}
+
+.main-cards h1,
+.main-cards h2 {
+  font-weight: normal;
+  line-height: normal;
   text-shadow: 0 0 2rem rgba(245, 205, 125, 1), 0 -3px 2px black;
   text-align: center;
 }
@@ -50,7 +60,6 @@
   cursor: pointer;
   color: black;
   border-bottom: 2px solid gray;
-  margin-bottom: 1vmin;
 }
 .main-cards .view-buttons button img {
   height: 1.5rem;
@@ -118,7 +127,8 @@
   align-items: center;
   position: relative; /* Added position property */
   z-index: 0; /* Set z-index to 0 */
-  background: url("../../../public/img/bg-cards.png") no-repeat top center fixed,
+  background: url("../../../public/img/bg-cards.webp") no-repeat top center
+      fixed,
     linear-gradient(to bottom, black, #222);
 }
 
@@ -274,26 +284,26 @@
 }
 
 .main-cards .border-0 {
-  background-image: url("../../../public/img/cards/border-0.png");
+  background-image: url("../../../public/img/cards/border-0.webp");
 }
 .main-cards .border-1 {
-  background-image: url("../../../public/img/cards/border-1.png");
+  background-image: url("../../../public/img/cards/border-1.webp");
 }
 .main-cards .border-2 {
-  background-image: url("../../../public/img/cards/border-2.png");
+  background-image: url("../../../public/img/cards/border-2.webp");
 }
 .main-cards .border-3 {
-  background-image: url("../../../public/img/cards/border-3.png");
+  background-image: url("../../../public/img/cards/border-3.webp");
 }
 
 .main-cards .locked-1 {
-  background-image: url("../../../public/img/cards/border-bwc-1.png");
+  background-image: url("../../../public/img/cards/border-bwc-1.webp");
 }
 .main-cards .locked-2 {
-  background-image: url("../../../public/img/cards/border-bwc-2.png");
+  background-image: url("../../../public/img/cards/border-bwc-2.webp");
 }
 .main-cards .locked-3 {
-  background-image: url("../../../public/img/cards/border-bwc-3.png");
+  background-image: url("../../../public/img/cards/border-bwc-3.webp");
 }
 
 .main-cards .card-expanded {
@@ -303,7 +313,7 @@
 }
 
 .main-cards .card-expanded .card-container {
-  background-image: url("../../../public/img/bg-card-selected.png");
+  background-image: url("../../../public/img/bg-card-selected.webp");
   background-color: #333;
   border: 2px solid #000;
   display: flex;

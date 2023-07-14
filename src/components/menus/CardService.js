@@ -17,7 +17,15 @@ export function searchCards(cards, searchTerm) {
   const term = searchTerm.toLowerCase();
   const hits = cards.map((card) => {
     let hitCount = 0;
+    const regex = new RegExp(`\\b${term}\\b`, "i"); // Matches the whole word
 
+    if (card.id && regex.test(card.id)) hitCount += 8;
+    if (card.title && regex.test(card.title)) hitCount += 4;
+    if (card.tagline && regex.test(card.tagline)) hitCount += 2;
+    if (card.tags && card.tags.some((tag) => tag.toLowerCase() === term))
+      hitCount += 10;
+
+    // Original scoring for partial matches
     if (card.id && card.id.toLowerCase().includes(term)) hitCount += 8;
     if (card.title && card.title.toLowerCase().includes(term)) hitCount += 6;
     if (card.tagline && card.tagline.toLowerCase().includes(term))
@@ -76,4 +84,26 @@ export async function fetchCards() {
   const totalPages = Math.ceil(sortedData.length / ITEMS_PER_PAGE);
 
   return { cards: sortedData, totalPages };
+}
+
+// Tag cloud
+export function getTopTags(cards) {
+  const tagCounts = {};
+
+  cards.forEach((card) => {
+    if (card.tags) {
+      card.tags.forEach((tag) => {
+        tagCounts[tag] = (tagCounts[tag] || 0) + 1;
+      });
+    }
+  });
+
+  const tagCountsArray = Object.entries(tagCounts);
+
+  const topTags = tagCountsArray
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, 30)
+    .map(([name, count]) => ({ name, count })); // Keep track of tag name and count
+
+  return topTags;
 }

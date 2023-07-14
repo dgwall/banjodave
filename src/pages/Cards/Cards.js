@@ -11,6 +11,7 @@ import {
   fetchCards,
   sortCards,
   searchCards,
+  getTopTags,
 } from "../../components/menus/CardService";
 
 const ITEMS_HOMEPAGE = 36;
@@ -34,6 +35,8 @@ function Cards() {
 
   const searchInputRef = useRef(null);
 
+  const topTags = getTopTags(cards);
+
   useEffect(() => {
     let searchInterval;
     if (isSearchFocused && searchTerm !== lastSearch) {
@@ -56,7 +59,7 @@ function Cards() {
   // fetch data and set state when component mounts
   useEffect(() => {
     const fetchData = async () => {
-      const { cards, totalPages } = await fetchCards();
+      const { cards, totalPages } = await fetchCards(ACCESS_LEVEL);
       setCards(cards);
       setSimilarCards(cards);
       setTotalPages(totalPages);
@@ -163,12 +166,27 @@ function Cards() {
         </div>
       ) : (
         <>
-          <h1>
-            banjo warez corp presents banjeetz' not nfts but that type vibe
-            digital card collection portfolio thing or like a platform w paid
-            content thingy
-          </h1>
-          0 patrons {cards.length} cards 0 crypto
+          <h1>Banjeetz × BWC</h1>
+          <h2>Digital Content Holo-Cards Preview</h2>
+          <div>
+            <s>0 patrons</s>
+          </div>
+          <div>{cards.length} cards</div>
+          <div>0 crypto</div>
+          <div
+            style={{
+              fontSize: "small",
+              textAlign: "center",
+              width: "50%",
+              marginTop: "1rem",
+            }}
+          >
+            Top tags:{" "}
+            {topTags.map(
+              (tag, index) =>
+                `${tag.name}${index === topTags.length - 1 ? "..." : ", "}`
+            )}
+          </div>
         </>
       )}
 
@@ -260,6 +278,42 @@ function Cards() {
         ))}
         {!similarCards.length && "No cards found."}
       </div>
+
+      {!selectedCard && (
+        <div className="view-buttons">
+          <button
+            onClick={handleFirst}
+            disabled={!similarCards.length || currentPage === 1 ? true : false}
+          >
+            <img src="/img/icon/chevrons-left.svg" alt="Back to page 1" />
+          </button>
+
+          <button
+            onClick={handleBack}
+            disabled={!similarCards.length || currentPage === 1 ? true : false}
+          >
+            <img src="/img/icon/chevron-left.svg" alt="Back 1 page" />
+          </button>
+
+          <button
+            onClick={handleForward}
+            disabled={
+              !similarCards.length || currentPage === totalPages ? true : false
+            }
+          >
+            <img src="/img/icon/chevron-right.svg" alt="Back 1 page" />
+          </button>
+
+          <button
+            onClick={handleLast}
+            disabled={
+              !similarCards.length || currentPage === totalPages ? true : false
+            }
+          >
+            <img src="/img/icon/chevrons-right.svg" alt="Last page" />
+          </button>
+        </div>
+      )}
     </>
   );
 }

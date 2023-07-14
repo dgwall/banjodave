@@ -22,6 +22,9 @@
     "tagline": "DOOM Mapping",
     "text": [
       "I started making maps for DOOM II in December of 2019, looking for a convenient way to start dabbling in 3D level design. I have a lot of nostalgia for DOOM too having installed it on all of the school PCs that I used when I was a student. You will need a copy of DOOM2.wad and a source port to be able to play my levels."
+    ],
+    "buttons": [
+      { "type": "internal", "href": "/DOOM", "label": "Browse DOOM Maps" }
     ]
   },
   {
@@ -296,8 +299,9 @@
   {
     "id": "BHZ001",
     "accessLevel": 1,
-    "date": "",
+    "date": "2021-03-20",
     "title": "BanjoZine Issue #1",
+    "tagline": "March 2021",
     "thumbreel": true,
     "icon": "zine",
     "theme": "zine",
@@ -334,7 +338,6 @@
       "Publication",
       "Writing"
     ],
-    "tagline": "March 2021",
     "text": [
       "rootootoot, Mapwich 2, Vanish Glide, Things, Orb, ULTRACLUB4K, Podcasts, ガキの使い, Nintendo 64, 森林浴, Productivity."
     ],
@@ -350,7 +353,7 @@
   {
     "id": "BHZ002",
     "accessLevel": 1,
-    "date": "",
+    "date": "2021-06-15",
     "title": "BanjoZine Issue #2",
     "thumbreel": true,
     "theme": "zine",
@@ -383,7 +386,7 @@
       "Bop Drumps",
       "Card Game"
     ],
-    "tagline": "July 2021",
+    "tagline": "June 2021",
     "text": [
       "MALAGARD, Blazing Beachhead, Lullaby by Danlex, Cosmic Snake, Fissure, Advanced Tech, '90s Games, GameCube, Gruntz, Star____?, The Mushroom King, Πυῤῥώνειοι ὑποτυπώσεις & मूलमध्यमककारिका, ドラゴンボールＺ 愛する者のために... ベジータ散る!!, དུག་གསུམ་."
     ],
@@ -404,14 +407,7 @@
     "tagline": "",
     "theme": "emerald",
     "tags": ["Music", "Music Track", "Green", "Electronic", "Mellow"],
-    "text": [""],
-    "buttons": [
-      {
-        "type": "",
-        "href": "",
-        "label": ""
-      }
-    ]
+    "text": [""]
   },
   {
     "id": "DABLB1",
@@ -631,6 +627,7 @@
     "icon": "arcade",
     "tags": [
       "0DGames",
+      "Game",
       "Banjo's Arcade",
       "Game Dev",
       "beta",
@@ -652,6 +649,7 @@
     "icon": "arcade",
     "tags": [
       "0DGames",
+      "Game",
       "Banjo's Arcade",
       "Game Dev",
       "beta",
@@ -1288,7 +1286,7 @@
     "id": "BLSOON",
     "accessLevel": 0,
     "date": "2022-12-11",
-    "title": "Coming Soon",
+    "title": "Banjo League",
     "tagline": "Banjo League Coming Soon",
     "theme": "league",
     "icon": "league",
@@ -1303,5 +1301,298 @@
         "label": "Go to Banjo League"
       }
     ]
+  },
+  {
+    "id": "WGMCSH",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Weary Goblin Mudhole Club",
+    "tagline": "Coming Soon",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "text": ["Details coming soon."],
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Shield", "Logo", "RPG"]
+  },
+  {
+    "id": "PEBMOT",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Pebblemoths",
+    "tagline": "Creatures with mystical powers of the Zodiac.",
+    "theme": "pebblemoth",
+    "icon": "pebblemoth-egg",
+    "text": ["Details coming soon."],
+    "tags": ["Pebblemoth", "Preview"]
+  },
+  {
+    "id": "DABJXL",
+    "accessLevel": 1,
+    "date": "",
+    "title": "BJX",
+    "tagline": "BanjoCoin Exchange.",
+    "theme": "bjx",
+    "icon": "bjx",
+    "text": ["A very real and not fake at all lucrative trading opportunity."],
+    "tags": ["BanjoCoin", "Digital Art", "Logo", "Crypto"]
+  },
+  {
+    "id": "DADISC",
+    "accessLevel": 1,
+    "date": "",
+    "title": "Discontent",
+    "tagline": "A discarded Discord clone.",
+    "theme": "dark",
+    "icon": "art",
+    "text": [
+      "I designed a logo for and worked on creating a Discord knock-off. I had user account creation and email verification working, and made the front-end for the chatrooms with Chakra UI."
+    ],
+    "tags": [
+      "Discontent",
+      "Web Dev",
+      "Digital Art",
+      "UI",
+      "Front End",
+      "Website",
+      "Discord"
+    ]
+  },
+  {
+    "id": "MTRUDE",
+    "accessLevel": 0,
+    "date": "",
+    "title": "Rudeolf",
+    "tagline": "Rudeolf the red-nosed raindeer.",
+    "theme": "basic-red",
+    "icon": "music",
+    "tags": ["Music", "Music Track", "Stupid", "Meme", "Remix"]
+  },
+  {
+    "id": "CBDB01",
+    "accessLevel": 1,
+    "date": "2021-03-20",
+    "title": "BALL",
+    "tagline": "Bop Drumps beta card #1",
+    "theme": "white",
+    "icon": "cards",
+    "text": ["BALL [POP]", "3 silly", "2 strong", "3 mass", "4 mystery"],
+    "tags": [
+      "Ball",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "POP"
+    ]
+  },
+  {
+    "id": "CBDB02",
+    "accessLevel": 0,
+    "date": "2021-03-20",
+    "title": "BOOP-BOOP",
+    "tagline": "Bop Drumps beta card #2",
+    "theme": "white",
+    "icon": "cards",
+    "text": ["BOOP-BOOP", "1 silly", "8 strong", "6 mass", "2 mystery"],
+    "tags": [
+      "BOOP-BOOP",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "robot"
+    ]
+  },
+  {
+    "id": "CBDB03",
+    "accessLevel": 1,
+    "date": "2021-03-20",
+    "title": "EVIL JELLY",
+    "tagline": "Bop Drumps beta card #3",
+    "theme": "white",
+    "icon": "cards",
+    "text": ["EVIL JELLY [FLY]", "5 silly", "1 strong", "1 mass", "3 mystery"],
+    "tags": [
+      "EVIL JELLY",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "fly",
+      "jelly bean"
+    ]
+  },
+  {
+    "id": "CBDB04",
+    "accessLevel": 0,
+    "date": "2021-06-15",
+    "title": "HELL RAIDER",
+    "tagline": "Bop Drumps beta card #4",
+    "theme": "white",
+    "icon": "cards",
+    "text": ["HELL RAIDER", "0 silly", "10 strong", "8 mass", "6 mystery"],
+    "tags": [
+      "HELL RAIDER",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "hell",
+      "shmup"
+    ]
+  },
+  {
+    "id": "CBDB05",
+    "accessLevel": 0,
+    "date": "2021-06-15",
+    "title": "MUSHROOM BOY",
+    "tagline": "Bop Drumps beta card #5",
+    "theme": "white",
+    "icon": "cards",
+    "text": ["MUSHROOM BOY", "4 silly", "2 strong", "3 mass", "4 mystery"],
+    "tags": [
+      "MUSHROOM BOY",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "mushroom",
+      "happy"
+    ]
+  },
+  {
+    "id": "CBDB06",
+    "accessLevel": 0,
+    "date": "2021-06-15",
+    "title": "JAMES",
+    "tagline": "Bop Drumps beta card #6",
+    "theme": "white",
+    "icon": "cards",
+    "text": ["JAMES", "5 silly", "4 strong", "4 mass", "2 mystery"],
+    "tags": [
+      "JAMES",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview"
+    ]
+  },
+  {
+    "id": "CBDB07",
+    "accessLevel": 1,
+    "date": "2023-07-13",
+    "title": "GNOME BOY",
+    "tagline": "Bop Drumps beta card #7",
+    "theme": "white",
+    "icon": "cards",
+    "text": ["GNOME BOY [POP]", "3 silly", "4 strong", "3 mass", "5 mystery"],
+    "tags": [
+      "Gnome Boy",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "POP"
+    ]
+  },
+  {
+    "id": "CBDB08",
+    "accessLevel": 2,
+    "date": "2023-07-13",
+    "title": "GEM GUARDIAN",
+    "tagline": "Bop Drumps beta card #8",
+    "theme": "white",
+    "icon": "cards",
+    "text": [
+      "GEM GUARDIAN [GEM]",
+      "3 silly",
+      "7 strong",
+      "5 mass",
+      "7 mystery"
+    ],
+    "tags": [
+      "Gem Guardian",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "POP",
+      "GEM"
+    ]
+  },
+  {
+    "id": "CBDB09",
+    "accessLevel": 0,
+    "date": "2023-07-13",
+    "title": "TOPOLOGY MIKE",
+    "tagline": "Bop Drumps beta card #9",
+    "theme": "white",
+    "icon": "cards",
+    "text": ["TOPOLOGY MIKE", "2 silly", "6 strong", "0 mass", "8 mystery"],
+    "tags": [
+      "TOPOLOGY MIKE",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "sad"
+    ]
+  },
+  {
+    "id": "PMP001",
+    "accessLevel": 3,
+    "date": "2022-05-23",
+    "title": "Shadowchromatic Pebblemoth",
+    "tagline": "Pebblemoth Promo #1",
+    "theme": "pebblemoth",
+    "icon": "pebblemoth-egg",
+    "tags": [
+      "Shadowchromatic",
+      "Pebblemoth",
+      "Promo Card",
+      "Pebblemoth Card",
+      "Card",
+      "Trading Card",
+      "Dark",
+      "Rainbow",
+      "Shadow",
+      "Colourful"
+    ]
+  },
+  {
+    "id": "WGA001",
+    "accessLevel": 1,
+    "date": "2015-XX-XX",
+    "title": "Weary Goblin Mudhole Club",
+    "tagline": "Weary Goblin Mudhole Club Alpha #1",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
   }
 ]

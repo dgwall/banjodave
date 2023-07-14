@@ -15,7 +15,7 @@ const Card = ({ data, access }) => {
 
   useEffect(() => {
     const img = new Image();
-    img.src = `/img/thumbnails/${data.id}.jpg`;
+    img.src = `/img/thumbnails/${data.id}.webp`;
     img.onload = () => setIsImageLoaded(true);
   }, [data.id]);
 
@@ -40,7 +40,7 @@ const Card = ({ data, access }) => {
 
   // Calculating styles
   const cardStyle = {
-    backgroundImage: `url("/img/thumbnails/${data.id}.jpg")`,
+    backgroundImage: `url("/img/thumbnails/${data.id}.webp")`,
     filter: `invert(${Math.abs(rotation.x) / 100}) brightness(${
       1 + (Math.abs(rotation.x) + rotation.y) / 30
     })`,
@@ -54,7 +54,7 @@ const Card = ({ data, access }) => {
   };
 
   const holoStyle = {
-    backgroundImage: `url("/img/cards/holo-${data.accessLevel}.png")`,
+    backgroundImage: `url("/img/cards/holo-${data.accessLevel}.webp")`,
     backgroundPositionX: `${(rotation.x / 20) * 30}%`,
     backgroundPositionY: `${(-rotation.y / 20) * 30}%`,
     filter: `hue-rotate(${rotation.x * data.accessLevel * 10}deg)`,
@@ -78,15 +78,17 @@ const Card = ({ data, access }) => {
           <div className={`card-locked locked-${data.accessLevel}`}></div>
         )}
         <img
-          src={`/img/icon/${data.icon}.png`}
+          src={`/img/icon/${data.icon}.webp`}
           alt={`${data.icon} icon`}
           className="card-category"
         />
         <div className="card-id">
-          <span>{data.id}</span>
+          <span>
+            {data.date.substring(0, 4)}-{data.id}
+          </span>
         </div>
         <img
-          src={`/img/cards/bwc-${data.accessLevel}.png`}
+          src={`/img/cards/bwc-${data.accessLevel}.webp`}
           alt={`BWC Level ${data.accessLevel}`}
           className="card-rarity"
         />

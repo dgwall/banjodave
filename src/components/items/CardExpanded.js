@@ -1,6 +1,4 @@
-// TODO: Some duplicate code here (see Card.js). Should extract to
-//         another component: Card3d.
-//       Create carousel with controls to contain card and media.
+// TODO: Create carousel with controls to contain card and media.
 
 import React, { useState, useEffect, useRef } from "react";
 
@@ -25,7 +23,7 @@ const CardExpanded = ({ data, access }) => {
 
   useEffect(() => {
     const img = new Image();
-    img.src = `/img/thumbnails/${data.id}.jpg`;
+    img.src = `/img/thumbnails/${data.id}.webp`;
     img.onload = () => setIsImageLoaded(true);
     const preventDefault = (e) => e.preventDefault();
     const cardContainer = cardContainerRef.current;
@@ -63,7 +61,7 @@ const CardExpanded = ({ data, access }) => {
 
   // Calculating styles
   const cardStyle = {
-    backgroundImage: `url("/img/thumbnails/${data.id}.jpg")`,
+    backgroundImage: `url("/img/thumbnails/${data.id}.webp")`,
     filter: `invert(${Math.abs(rotation.x) / 100}) brightness(${
       1 + (Math.abs(rotation.x) + rotation.y) / 30
     })`,
@@ -75,7 +73,7 @@ const CardExpanded = ({ data, access }) => {
   };
 
   const holoStyle = {
-    backgroundImage: `url("/img/cards/holo-${data.accessLevel}.png")`,
+    backgroundImage: `url("/img/cards/holo-${data.accessLevel}.webp")`,
     backgroundPositionX: `${(rotation.x / 20) * 30}%`,
     backgroundPositionY: `${(-rotation.y / 20) * 30}%`,
     filter: `hue-rotate(${rotation.x * data.accessLevel * 10}deg)`,
@@ -110,15 +108,17 @@ const CardExpanded = ({ data, access }) => {
             <div className={`card-locked locked-${data.accessLevel}`}></div>
           )}
           <img
-            src={`/img/icon/${data.icon}.png`}
+            src={`/img/icon/${data.icon}.webp`}
             alt={`${data.icon} icon`}
             className="card-category"
           />
           <div className="card-id">
-            <span>{data.id}</span>
+            <span>
+              {data.date.substring(0, 4)}-{data.id}
+            </span>
           </div>
           <img
-            src={`/img/cards/bwc-${data.accessLevel}.png`}
+            src={`/img/cards/bwc-${data.accessLevel}.webp`}
             alt={`BWC Level ${data.accessLevel}`}
             className="card-rarity"
           />
@@ -128,21 +128,44 @@ const CardExpanded = ({ data, access }) => {
       <div className={`card-detail caption-${data.accessLevel}`}>
         <div className="card-title">{data.title}</div>
         <div className="card-tagline">{data.tagline}</div>
-        {data.text ? (
+        {data.accessLevel <= access ? (
+          <>
+            {data.text ? (
+              <div className="card-text">
+                {data.text.map((text, index) => (
+                  <p key={index}>{text}</p>
+                ))}
+              </div>
+            ) : null}
+            <div className="buttons">
+              {data.buttons &&
+                data.buttons.map((button, index) => (
+                  <a key={index} href={button.href} className="button">
+                    {button.label}
+                  </a>
+                ))}
+            </div>
+          </>
+        ) : (
           <div className="card-text">
-            {data.text.map((text, index) => (
-              <p key={index}>{text}</p>
-            ))}
+            <p>
+              Access to this LVL{data.accessLevel} item has been restricted on
+              the authority of BWC
+            </p>
+            {data.accessLevel === 1 ? (
+              <p>
+                LVL1 Access will be available for free, simply by logging in
+                with a Patreon account.
+              </p>
+            ) : data.accessLevel === 2 ? (
+              <p>LVL2 Access will be available with a low-tier Patreon sub.</p>
+            ) : data.accessLevel === 3 ? (
+              <p>LVL3 Access will be available with a high-tier Patreon sub.</p>
+            ) : (
+              {}
+            )}
           </div>
-        ) : null}
-        <div className="buttons">
-          {data.buttons &&
-            data.buttons.map((button, index) => (
-              <a key={index} href={button.href} className="button">
-                {button.label}
-              </a>
-            ))}
-        </div>
+        )}
       </div>
     </div>
   );
