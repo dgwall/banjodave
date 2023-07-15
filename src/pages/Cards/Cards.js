@@ -1,5 +1,3 @@
-// TODO: All images to webp
-
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import Card from "../../components/items/Card";
@@ -16,7 +14,7 @@ import {
 
 const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
-const ACCESS_LEVEL = 0;
+const ACCESS_LEVEL = 3;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -24,6 +22,8 @@ const getTheme = (themeName) => {
 
 function Cards() {
   const [cards, setCards] = useState([]);
+  const [isShowingRestrictedCards, setIsShowingRestrictedCards] =
+    useState(true);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [selectedCard, setSelectedCard] = useState(null);
@@ -158,6 +158,27 @@ function Cards() {
     : (currentPage - 1) * ITEMS_HOMEPAGE;
   const end = selectedCard ? begin + ITEMS_PER_PAGE : begin + ITEMS_HOMEPAGE;
 
+  // this will toggle the showing of restricted cards
+  const removeRestrictedCards = () => {
+    setIsShowingRestrictedCards((prevState) => !prevState);
+  };
+
+  useEffect(() => {
+    let displayedCards = [...cards];
+    if (!isShowingRestrictedCards) {
+      displayedCards = cards.filter((card) => card.accessLevel <= ACCESS_LEVEL);
+    }
+
+    // Sort cards based on viewMode after filtering
+    const sortedCards = sortCards(
+      displayedCards,
+      viewMode,
+      selectedCard,
+      searchTerm
+    );
+    setSimilarCards(sortedCards);
+  }, [cards, isShowingRestrictedCards, viewMode, selectedCard, searchTerm]);
+
   return (
     <>
       {selectedCard ? (
@@ -212,6 +233,21 @@ function Cards() {
           placeholder="Search..."
           ref={searchInputRef}
         />
+      </div>
+
+      <div className="view-buttons">
+        <button disabled>
+          <img src="/img/icon/contract.svg" alt="Shrink" /> Group Decks (coming
+          soon)
+        </button>
+        <button onClick={removeRestrictedCards}>
+          <img
+            src="/img/icon/bwc.webp"
+            alt="BWC icon"
+            style={{ filter: "invert(100%)" }}
+          />{" "}
+          {isShowingRestrictedCards ? "Hide Locked" : "Show Locked"}
+        </button>
       </div>
 
       <div className="view-buttons sort-buttons">

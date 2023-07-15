@@ -67,7 +67,7 @@ export function sortCards(cards, viewMode, selectedCard, searchTerm) {
   }
 }
 
-// Fetch card data from server
+// Fetch card data from "server"
 export async function fetchCards(accessLevel) {
   const response = await fetch("/PSYCHOGORILLA.json");
   let data = await response.json();
