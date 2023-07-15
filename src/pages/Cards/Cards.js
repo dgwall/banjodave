@@ -14,7 +14,7 @@ import {
 
 const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
-const ACCESS_LEVEL = 3;
+const ACCESS_LEVEL = 0;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -236,9 +236,8 @@ function Cards() {
       </div>
 
       <div className="view-buttons">
-        <button disabled>
-          <img src="/img/icon/contract.svg" alt="Shrink" /> Group Decks (coming
-          soon)
+        <button disabled title="Functionality to be implemented">
+          <img src="/img/icon/contract.svg" alt="Shrink" /> Group Decks
         </button>
         <button onClick={removeRestrictedCards}>
           <img

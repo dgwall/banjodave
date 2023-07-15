@@ -74,7 +74,10 @@ const Card = ({ data, access }) => {
         {data.accessLevel > 0 && (
           <div className="card-holo" style={holoStyle}></div>
         )}
-        <div className={`card-border border-${data.accessLevel}`}></div>
+        <div
+          className={`card-border border-${data.accessLevel}`}
+          style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
+        ></div>
         {data.accessLevel > 0 && data.accessLevel > access && (
           <div className={`card-locked locked-${data.accessLevel}`}></div>
         )}
