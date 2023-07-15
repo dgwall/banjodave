@@ -107,4 +107,10 @@ export const cardThemes = [
     fg: "#000000",
     hl: "#c0c0c0",
   },
+  {
+    name: "wgmc",
+    bg: "#322725",
+    fg: "#5f8c36",
+    hl: "#365626",
+  },
 ];

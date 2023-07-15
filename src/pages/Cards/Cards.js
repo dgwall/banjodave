@@ -3,7 +3,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import Card from "../../components/items/Card";
-import CardSimple from "../../components/items/CardSimple";
 import CardExpanded from "../../components/items/CardExpanded";
 import "./Cards.css";
 import { cardThemes } from "./cardThemes";
@@ -17,7 +16,7 @@ import {
 
 const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
-const ACCESS_LEVEL = 3;
+const ACCESS_LEVEL = 0;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};

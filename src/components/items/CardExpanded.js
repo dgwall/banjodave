@@ -10,8 +10,8 @@ const calculateRotation = (e, element) => {
   let x = 0.5 - (clientX - left) / width;
   let y = 0.6 - (clientY - top) / height;
   // Cap rotation values
-  x = Math.max(Math.min(x, 1), -1);
-  y = Math.max(Math.min(y, 1), -1);
+  x = Math.max(Math.min(x, 2), -2);
+  y = Math.max(Math.min(y, 2), -2);
   return { x: x * -10, y: y * 10 };
 };
 
@@ -78,6 +78,7 @@ const CardExpanded = ({ data, access }) => {
     backgroundPositionY: `${(-rotation.y / 20) * 30}%`,
     filter: `hue-rotate(${rotation.x * data.accessLevel * 10}deg)`,
     opacity: `${(rotation.y / 10 + Math.abs(rotation.x) / 15) / 3}`,
+    transition: `${smoothTransition ? "1s" : "0s"}`,
   };
 
   const containerStyle = {

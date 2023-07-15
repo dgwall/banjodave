@@ -298,7 +298,7 @@
   },
   {
     "id": "BHZ001",
-    "accessLevel": 1,
+    "accessLevel": 0,
     "date": "2021-03-20",
     "title": "BanjoZine Issue #1",
     "tagline": "March 2021",
@@ -312,6 +312,7 @@
       "2020s",
       "N",
       "DOOM",
+      "Skull",
       "Mapwich 2",
       "Community Project",
       "DOOM II",
@@ -352,7 +353,7 @@
   },
   {
     "id": "BHZ002",
-    "accessLevel": 1,
+    "accessLevel": 0,
     "date": "2021-06-15",
     "title": "BanjoZine Issue #2",
     "thumbreel": true,
@@ -366,6 +367,7 @@
       "Publication",
       "Writing",
       "DOOM",
+      "Skull",
       "DOOM II",
       "Blazing Beachhead",
       "Danlex",
@@ -412,7 +414,7 @@
   {
     "id": "DABLB1",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-19",
     "title": "Iron Badge",
     "tagline": "Banjo League Award",
     "theme": "league",
@@ -430,7 +432,7 @@
   {
     "id": "DABLB8",
     "accessLevel": 3,
-    "date": "",
+    "date": "2022-12-19",
     "title": "Prime Badge",
     "tagline": "Banjo League Award",
     "theme": "league",
@@ -448,7 +450,7 @@
   {
     "id": "DABLB2",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-11-28",
     "title": "Bronze Badge",
     "tagline": "Banjo League Award",
     "theme": "league",
@@ -466,7 +468,7 @@
   {
     "id": "DABLB7",
     "accessLevel": 2,
-    "date": "",
+    "date": "2022-12-19",
     "title": "Split Prime Badge",
     "tagline": "Banjo League Award",
     "theme": "league",
@@ -484,7 +486,7 @@
   {
     "id": "DABLB6",
     "accessLevel": 2,
-    "date": "",
+    "date": "2022-12-18",
     "title": "Diamond Badge",
     "tagline": "Banjo League Award",
     "theme": "league",
@@ -502,7 +504,7 @@
   {
     "id": "DABLB0",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-19",
     "title": "Prime Sticker",
     "tagline": "Banjo League Award",
     "theme": "league",
@@ -520,7 +522,7 @@
   {
     "id": "DABLB3",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-11-28",
     "title": "Silver Badge",
     "tagline": "Banjo League Award",
     "theme": "league",
@@ -538,7 +540,7 @@
   {
     "id": "DABLB4",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-11-28",
     "title": "Gold Badge",
     "tagline": "Banjo League Award",
     "theme": "league",
@@ -556,7 +558,7 @@
   {
     "id": "DABLB5",
     "accessLevel": 2,
-    "date": "",
+    "date": "2022-11-28",
     "title": "Platinum Badge",
     "tagline": "Banjo League Award",
     "theme": "league",
@@ -574,7 +576,7 @@
   {
     "id": "0DBAAC",
     "accessLevel": 1,
-    "date": "",
+    "date": "2023-06-13",
     "title": "alpha cart",
     "tagline": "Banjo's Arcade alpha cartridge",
     "theme": "arcade",
@@ -596,13 +598,13 @@
   {
     "id": "0DBADC",
     "accessLevel": 2,
-    "date": "",
+    "date": "2023-06-13",
     "title": "damaged cart",
     "tagline": "Banjo's Arcade damaged cartridge",
     "theme": "arcade",
     "icon": "arcade",
     "text": [
-      "The label on this sunbleached cartridge has somehow been completely scraped off. Who knows which game was held on this long-lost relic?"
+      "The label on this sunbleached cartridge has somehow been completely scraped off. We are trying to recover the ROM from long-lost relic."
     ],
     "tags": [
       "0DGames",
@@ -620,11 +622,14 @@
   {
     "id": "0DBAB1",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-04-22",
     "title": "hiecom beta cart",
     "tagline": "Banjo's Arcade Hierophant Commandant beta cartridge",
     "theme": "arcade",
     "icon": "arcade",
+    "text": [
+      "Your village is facing an onslaught of ghosts from above! Use your hierophant magic powers to shoot golden cross missiles from your temples and save the village. For fans of Missile Command."
+    ],
     "tags": [
       "0DGames",
       "Game",
@@ -642,11 +647,14 @@
   {
     "id": "0DBAB2",
     "accessLevel": 0,
-    "date": "",
+    "date": "2023-01-03",
     "title": "navexe beta cart",
     "tagline": "Banjo's Arcade notavirus.exe beta cartridge",
     "theme": "arcade",
     "icon": "arcade",
+    "text": [
+      "Take control of a computer virus ripping up a filesystem. Collect 9 different types of powerup, and reflect and spin your virus ball to destroy files, folders, and archives without falling into the firewall. For fans of Arkanoid."
+    ],
     "tags": [
       "0DGames",
       "Game",
@@ -662,7 +670,7 @@
   {
     "id": "BLD000",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-23",
     "title": "No Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -680,7 +688,7 @@
   {
     "id": "BLD001",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-04",
     "title": "One Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -697,7 +705,7 @@
   {
     "id": "BLD002",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Two Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -714,7 +722,7 @@
   {
     "id": "BLD003",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Three Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -731,7 +739,7 @@
   {
     "id": "BLD004",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Four Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -748,7 +756,7 @@
   {
     "id": "BLD005",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Five Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -765,7 +773,7 @@
   {
     "id": "BLD006",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Six Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -782,7 +790,7 @@
   {
     "id": "BLD007",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Seven Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -799,7 +807,7 @@
   {
     "id": "BLD008",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Eight Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -816,7 +824,7 @@
   {
     "id": "BLD009",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Nine Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -833,7 +841,7 @@
   {
     "id": "BLD010",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Ten Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -850,7 +858,7 @@
   {
     "id": "BLD011",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Twenty Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -867,7 +875,7 @@
   {
     "id": "BLD012",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Thirty Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -884,7 +892,7 @@
   {
     "id": "BLD013",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Forty Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -901,7 +909,7 @@
   {
     "id": "BLD014",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Fifty Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -918,7 +926,7 @@
   {
     "id": "BLD015",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Sixty Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -935,7 +943,7 @@
   {
     "id": "BLD016",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Seventy Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -952,7 +960,7 @@
   {
     "id": "BLD017",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Eighty Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -969,7 +977,7 @@
   {
     "id": "BLD018",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Ninety Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -986,7 +994,7 @@
   {
     "id": "BLD019",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-23",
     "title": "One Hundred Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1003,7 +1011,7 @@
   {
     "id": "BLD020",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Two Hundred Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1020,7 +1028,7 @@
   {
     "id": "BLD021",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Three Hundred Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1037,7 +1045,7 @@
   {
     "id": "BLD022",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Four Hundred Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1054,7 +1062,7 @@
   {
     "id": "BLD023",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Five Hundred Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1071,7 +1079,7 @@
   {
     "id": "BLD024",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Six Hundred Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1088,7 +1096,7 @@
   {
     "id": "BLD025",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Seven Hundred Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1105,7 +1113,7 @@
   {
     "id": "BLD026",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Eight Hundred Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1122,7 +1130,7 @@
   {
     "id": "BLD027",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-23",
     "title": "Nine Hundred Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1139,7 +1147,7 @@
   {
     "id": "BLD028",
     "accessLevel": 2,
-    "date": "",
+    "date": "2022-12-23",
     "title": "One Thousand Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1156,7 +1164,7 @@
   {
     "id": "BLD029",
     "accessLevel": 3,
-    "date": "",
+    "date": "2023-06-26",
     "title": "Ten Thousand Defeatz",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1173,7 +1181,7 @@
   {
     "id": "BLC001",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-12-18",
     "title": "Beatz Token",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1192,7 +1200,7 @@
   {
     "id": "BLC002",
     "accessLevel": 1,
-    "date": "",
+    "date": "2022-12-19",
     "title": "Completez Token",
     "tagline": "Banjo League Completez Award",
     "theme": "league",
@@ -1814,5 +1822,48 @@
     "theme": "wgmc",
     "icon": "wgmc",
     "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+  },
+  {
+    "id": "CBOPDR",
+    "accessLevel": 0,
+    "date": "2021-03-20",
+    "title": "BOP DRUMPS",
+    "tagline": "A throwback card game.",
+    "theme": "white",
+    "icon": "cards",
+    "text": ["Know how to play?"],
+    "tags": [
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview"
+    ]
+  },
+  {
+    "id": "0DBANJ",
+    "accessLevel": 0,
+    "date": "2022-04-22",
+    "title": "Banjo's Arcade",
+    "tagline": "Cutting edge retro throwbacks..",
+    "theme": "arcade",
+    "icon": "arcade",
+    "text": [
+      "Prepare to reignite your passion for classic gaming with Banjo's Arcade, a treasure trove of retro-remakes delivered straight to your Windows device!"
+    ],
+    "tags": [
+      "Banjo's Arcade",
+      "0DGames",
+      "Retro",
+      "Remake",
+      "Windows",
+      "PC",
+      "Game",
+      "Game Series",
+      "Arcade",
+      "Arcade Games"
+    ]
   }
 ]

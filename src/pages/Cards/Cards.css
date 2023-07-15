@@ -283,8 +283,8 @@
   background-position: 50% 50%;
 }
 
-.main-cards .card-expanded .card-locked {
-  backdrop-filter: blur(2px);
+.main-cards .card-locked {
+  opacity: 0.95;
 }
 
 .main-cards .border-0 {
@@ -515,6 +515,7 @@
 .fade-in {
   animation-name: fadeIn;
   animation-duration: 1s;
+  opacity: 1;
 }
 
 .main-cards .break {

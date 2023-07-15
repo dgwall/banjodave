@@ -59,6 +59,7 @@ const Card = ({ data, access }) => {
     backgroundPositionY: `${(-rotation.y / 20) * 30}%`,
     filter: `hue-rotate(${rotation.x * data.accessLevel * 10}deg)`,
     opacity: `${(rotation.y / 10 + Math.abs(rotation.x) / 15) / 3}`,
+    transition: `${smoothTransition ? "1s" : "0s"}`,
   };
 
   return (
