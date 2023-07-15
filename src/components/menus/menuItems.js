@@ -27,23 +27,9 @@ export const menuItems = [
     move: true,
   },
   {
-    path: "/zine",
-    label: "BanjoZine",
-    text: "BanjoZine",
-    icon: "zine",
-    move: false,
-  },
-  {
-    path: "/league",
-    label: "Compete in the Banjo League",
-    text: "Banjo League",
-    icon: "league",
-    move: false,
-  },
-  {
     path: "/bwc",
-    label: "BWC",
-    text: "BWC",
+    label: "Banjeetz x ",
+    text: "Banjeetz x BWC",
     icon: "bwc",
     move: false,
   },
@@ -69,3 +55,22 @@ export const menuItems = [
     move: false,
   },
 ];
+
+/*
+
+  {
+    path: "/zine",
+    label: "BanjoZine",
+    text: "BanjoZine",
+    icon: "zine",
+    move: false,
+  },
+  {
+    path: "/league",
+    label: "Compete in the Banjo League",
+    text: "Banjo League",
+    icon: "league",
+    move: false,
+  },
+
+*/

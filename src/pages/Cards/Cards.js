@@ -1,8 +1,9 @@
 // TODO: All images to webp
 
 import React, { useState, useEffect, useRef } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useNavigate, useParams, useLocation } from "react-router-dom";
 import Card from "../../components/items/Card";
+import CardSimple from "../../components/items/CardSimple";
 import CardExpanded from "../../components/items/CardExpanded";
 import "./Cards.css";
 import { cardThemes } from "./cardThemes";
@@ -16,7 +17,7 @@ import {
 
 const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
-const ACCESS_LEVEL = 0;
+const ACCESS_LEVEL = 3;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -53,6 +54,9 @@ function Cards() {
   // get card id from the url
   const { cardId } = useParams();
 
+  // get the current location
+  const location = useLocation();
+
   // function for navigation
   const navigate = useNavigate();
 
@@ -81,7 +85,14 @@ function Cards() {
       const card = cards.find((card) => card.id.toString() === cardId);
       setSelectedCard(card);
     }
-  }, [cards, cardId]);
+    // reset state when the location pathname becomes "/"
+    else if (location.pathname === "/bwc") {
+      setSelectedCard(null);
+      setViewMode("newest");
+      setCurrentPage(1);
+      setSearchTerm("");
+    }
+  }, [cards, cardId, location]);
 
   // handler for card click
   const handleCardClick = (card) => {
@@ -89,7 +100,7 @@ function Cards() {
     setViewMode("similar");
     setCurrentPage(1);
     setSearchTerm("");
-    navigate(`/cards/${card.id}`);
+    navigate(`/bwc/${card.id}`);
   };
 
   // handler for page buttons
@@ -166,8 +177,8 @@ function Cards() {
         </div>
       ) : (
         <>
-          <h1>Banjeetz × BWC</h1>
-          <h2>Digital Content Holo-Cards Preview</h2>
+          <h1>Banjeetz × BWC Preview</h1>
+          <h2>Digital Content Holo-Cards</h2>
           <div>
             <s>0 patrons</s>
           </div>

@@ -1250,7 +1250,7 @@
     "id": "DAWHAN",
     "accessLevel": 1,
     "date": "2023-01-06",
-    "title": "Realm of White Animals",
+    "title": "Realm of Magic Animals",
     "tagline": "Where animals wait to be summoned by stage magicians.",
     "theme": "space",
     "icon": "art",
@@ -1587,12 +1587,232 @@
   },
   {
     "id": "WGA001",
-    "accessLevel": 1,
+    "accessLevel": 0,
     "date": "2015-XX-XX",
-    "title": "Weary Goblin Mudhole Club",
+    "title": "WGMC Alpha #1",
     "tagline": "Weary Goblin Mudhole Club Alpha #1",
     "theme": "wgmc",
     "icon": "wgmc",
     "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA002",
+    "accessLevel": 0,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #2",
+    "tagline": "Weary Goblin Mudhole Club Alpha #2",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA003",
+    "accessLevel": 0,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #3",
+    "tagline": "Weary Goblin Mudhole Club Alpha #3",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA004",
+    "accessLevel": 0,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #4",
+    "tagline": "Weary Goblin Mudhole Club Alpha #4",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA005",
+    "accessLevel": 0,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #5",
+    "tagline": "Weary Goblin Mudhole Club Alpha #5",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA006",
+    "accessLevel": 1,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #6",
+    "tagline": "Weary Goblin Mudhole Club Alpha #6",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA007",
+    "accessLevel": 0,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #7",
+    "tagline": "Weary Goblin Mudhole Club Alpha #7",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA008",
+    "accessLevel": 1,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #8",
+    "tagline": "Weary Goblin Mudhole Club Alpha #8",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA009",
+    "accessLevel": 1,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #9",
+    "tagline": "Weary Goblin Mudhole Club Alpha #9",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA010",
+    "accessLevel": 2,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #10",
+    "tagline": "Weary Goblin Mudhole Club Alpha #10",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA011",
+    "accessLevel": 2,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #11",
+    "tagline": "Weary Goblin Mudhole Club Alpha #11",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA012",
+    "accessLevel": 1,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #12",
+    "tagline": "Weary Goblin Mudhole Club Alpha #12",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGA013",
+    "accessLevel": 3,
+    "date": "2015-XX-XX",
+    "title": "WGMC Alpha #13",
+    "tagline": "Weary Goblin Mudhole Club Alpha #13",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGB001",
+    "accessLevel": 1,
+    "date": "2023-01-07",
+    "title": "WGMC Beta #1",
+    "tagline": "Weary Goblin Mudhole Club Beta #1",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGB002",
+    "accessLevel": 2,
+    "date": "2023-01-07",
+    "title": "WGMC Beta #2",
+    "tagline": "Weary Goblin Mudhole Club Beta #2",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGB003",
+    "accessLevel": 3,
+    "date": "2023-01-07",
+    "title": "WGMC Beta #3",
+    "tagline": "Weary Goblin Mudhole Club Beta #3",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGB004",
+    "accessLevel": 0,
+    "date": "2023-01-07",
+    "title": "WGMC Beta #4",
+    "tagline": "Weary Goblin Mudhole Club Beta #4",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGB005",
+    "accessLevel": 2,
+    "date": "2023-01-07",
+    "title": "WGMC Beta #5",
+    "tagline": "Weary Goblin Mudhole Club Beta #5",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGB006",
+    "accessLevel": 1,
+    "date": "2023-01-07",
+    "title": "WGMC Beta #6",
+    "tagline": "Weary Goblin Mudhole Club Beta #6",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGB007",
+    "accessLevel": 0,
+    "date": "2023-01-07",
+    "title": "WGMC Beta #7",
+    "tagline": "Weary Goblin Mudhole Club Beta #7",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGB008",
+    "accessLevel": 0,
+    "date": "2023-01-07",
+    "title": "WGMC Beta #8",
+    "tagline": "Weary Goblin Mudhole Club Beta #8",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGBG01",
+    "accessLevel": 0,
+    "date": "2023-01-07",
+    "title": "WGMC Beta Grub",
+    "tagline": "Weary Goblin Mudhole Club Beta Grub",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+  },
+  {
+    "id": "WGBG02",
+    "accessLevel": 1,
+    "date": "2023-01-07",
+    "title": "WGMC Beta Golden Grub",
+    "tagline": "Weary Goblin Mudhole Club Beta Golden Grub",
+    "theme": "wgmc",
+    "icon": "wgmc",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
   }
 ]

@@ -68,9 +68,18 @@ export function sortCards(cards, viewMode, selectedCard, searchTerm) {
 }
 
 // Fetch card data from server
-export async function fetchCards() {
+export async function fetchCards(accessLevel) {
   const response = await fetch("/PSYCHOGORILLA.json");
-  const data = await response.json();
+  let data = await response.json();
+
+  // Filter properties based on access level
+  data = data.map((card) => {
+    if (card.accessLevel > accessLevel) {
+      const { text, buttons, media, ...filteredCard } = card;
+      return filteredCard;
+    }
+    return card;
+  });
 
   // First sort by ID
   const sortedByIdData = data.sort((a, b) => a.id.localeCompare(b.id));
