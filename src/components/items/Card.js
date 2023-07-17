@@ -74,28 +74,39 @@ const Card = ({ data, access }) => {
         {data.accessLevel > 0 && (
           <div className="card-holo" style={holoStyle}></div>
         )}
-        <div
-          className={`card-border border-${data.accessLevel}`}
-          style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
-        ></div>
+        {data.type && data.type === "Deck" ? (
+          <div
+            className={`card-border border-deck`}
+            style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
+          ></div>
+        ) : (
+          <div
+            className={`card-border border-${data.accessLevel}`}
+            style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
+          ></div>
+        )}
         {data.accessLevel > 0 && data.accessLevel > access && (
           <div className={`card-locked locked-${data.accessLevel}`}></div>
         )}
-        <img
-          src={`/img/icon/${data.icon}.webp`}
-          alt={`${data.icon} icon`}
-          className="card-category"
-        />
-        <div className="card-id">
-          <span>
-            {data.date.substring(0, 4)}-{data.id}
-          </span>
-        </div>
-        <img
-          src={`/img/cards/bwc-${data.accessLevel}.webp`}
-          alt={`BWC Level ${data.accessLevel}`}
-          className="card-rarity"
-        />
+        {data.type && data.type !== "Deck" && (
+          <>
+            <img
+              src={`/img/icon/${data.icon}.webp`}
+              alt={`${data.icon} icon`}
+              className="card-category"
+            />
+            <div className="card-id">
+              <span>
+                {data.date.substring(0, 4)}-{data.id}
+              </span>
+            </div>
+            <img
+              src={`/img/cards/bwc-${data.accessLevel}.webp`}
+              alt={`BWC Level ${data.accessLevel}`}
+              className="card-rarity"
+            />
+          </>
+        )}
       </div>
       <div className={`card-caption caption-${data.accessLevel}`}>
         {data.title}

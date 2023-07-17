@@ -1,21 +1,3 @@
-.fade-enter {
-  opacity: 0;
-}
-
-.fade-enter-active {
-  opacity: 1;
-  transition: opacity 500ms;
-}
-
-.fade-exit {
-  opacity: 1;
-}
-
-.fade-exit-active {
-  opacity: 0;
-  transition: opacity 500ms;
-}
-
 .main-cards h1 {
   margin: 0;
   margin-top: 5vh;
@@ -252,7 +234,8 @@
 }
 
 .main-cards .card-selected .card {
-  max-height: 500px;
+  max-width: 286px;
+  max-height: 400px;
   height: 100%;
 }
 
@@ -286,6 +269,10 @@
   opacity: 0.95;
 }
 
+.main-cards .card-selected .card-locked {
+  backdrop-filter: blur(5px);
+}
+
 .main-cards .border-0 {
   background-image: url("../../../public/img/cards/border-0.webp");
 }
@@ -297,6 +284,9 @@
 }
 .main-cards .border-3 {
   background-image: url("../../../public/img/cards/border-3.webp");
+}
+.main-cards .border-deck {
+  background-image: url("../../../public/img/cards/border-deck.webp");
 }
 
 .main-cards .locked-1 {
@@ -441,10 +431,12 @@
 .main-cards .card-rarity {
   background-color: #000;
   position: absolute;
-  bottom: 3.4%;
+  bottom: 3.2%;
   right: 3.8%;
-  width: 1.4vmax;
-  height: 1.4vmax;
+  width: 2vmax;
+  height: 2vmax;
+  max-width: 32px;
+  max-height: 32px;
   padding: 2px;
   object-fit: contain;
 }
@@ -452,10 +444,25 @@
 .main-cards .card-category {
   background-color: #000;
   position: absolute;
-  bottom: 3.4%;
+  bottom: 3.2%;
   left: 3.8%;
-  width: 1.4vmax;
-  height: 1.4vmax;
+  width: 2vmax;
+  height: 2vmax;
+  max-width: 32px;
+  max-height: 32px;
+  padding: 2px;
+  object-fit: contain;
+}
+
+.main-cards .card-deck {
+  background-color: #000;
+  position: absolute;
+  top: 3.2%;
+  left: 3.8%;
+  width: 2vmax;
+  height: 2vmax;
+  max-width: 32px;
+  max-height: 32px;
   padding: 2px;
   object-fit: contain;
 }
@@ -511,10 +518,8 @@
   }
 }
 
-.fade-in {
-  animation-name: fadeIn;
-  animation-duration: 1s;
-  opacity: 1;
+.main-cards .card {
+  animation-duration: 0s;
 }
 
 .main-cards .break {
@@ -527,7 +532,7 @@
   }
 
   .main-cards .card-expanded .card-container {
-    min-height: 50vh;
+    min-height: 60vh;
     margin: 2vmin;
     margin-right: 4vmax;
   }
@@ -563,7 +568,7 @@
   }
   .main-cards .card-selected .card {
     width: 100%;
-    max-width: 30vw;
+    height: auto;
   }
 }
 

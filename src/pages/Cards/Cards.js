@@ -29,6 +29,7 @@ function Cards() {
   const [selectedCard, setSelectedCard] = useState(null);
   const [similarCards, setSimilarCards] = useState([]);
   const [viewMode, setViewMode] = useState("newest");
+  const [groupMode, setGroupMode] = useState("card");
   const [searchTerm, setSearchTerm] = useState("");
   const [lastSearch, setLastSearch] = useState("");
   const [isSearchFocused, setSearchFocused] = useState(false);
@@ -97,6 +98,7 @@ function Cards() {
   const handleCardClick = (card) => {
     setSelectedCard(card);
     setViewMode("similar");
+    setGroupMode("card");
     setCurrentPage(1);
     setSearchTerm("");
     navigate(`/bwc/${card.id}`);
@@ -163,12 +165,29 @@ function Cards() {
     setIsShowingRestrictedCards((prevState) => !prevState);
   };
 
-  useEffect(() => {
-    let displayedCards = [...cards];
-    if (!isShowingRestrictedCards) {
-      displayedCards = cards.filter((card) => card.accessLevel <= ACCESS_LEVEL);
-    }
+  const toggleGroupMode = () => {
+    setGroupMode((prevState) => (prevState === "card" ? "deck" : "card"));
+  };
 
+  useEffect(() => {
+    let accessFilteredCards = [...cards];
+    if (!isShowingRestrictedCards) {
+      accessFilteredCards = cards.filter(
+        (card) => card.accessLevel <= ACCESS_LEVEL
+      );
+    }
+    let displayedCards = accessFilteredCards;
+    if (groupMode === "card") {
+      displayedCards = accessFilteredCards.filter(
+        (card) => card.type === "Card"
+      );
+    } else if (groupMode === "deck") {
+      displayedCards = accessFilteredCards.filter(
+        (card) => card.type === "Deck"
+      );
+    }
+    setCurrentPage(1);
+    setSearchTerm("");
     // Sort cards based on viewMode after filtering
     const sortedCards = sortCards(
       displayedCards,
@@ -177,7 +196,14 @@ function Cards() {
       searchTerm
     );
     setSimilarCards(sortedCards);
-  }, [cards, isShowingRestrictedCards, viewMode, selectedCard, searchTerm]);
+  }, [
+    cards,
+    isShowingRestrictedCards,
+    viewMode,
+    selectedCard,
+    searchTerm,
+    groupMode,
+  ]);
 
   return (
     <>
@@ -236,16 +262,37 @@ function Cards() {
       </div>
 
       <div className="view-buttons">
-        <button disabled title="Functionality to be implemented">
-          <img src="/img/icon/contract.svg" alt="Shrink" /> Group Decks
+        <button onClick={toggleGroupMode}>
+          {groupMode === "card" ? (
+            <>
+              <img src="/img/icon/contract.svg" alt="Shrink" /> Deck View
+            </>
+          ) : (
+            <>
+              <img src="/img/icon/expand.svg" alt="Expand" /> Card View
+            </>
+          )}
         </button>
         <button onClick={removeRestrictedCards}>
-          <img
-            src="/img/icon/bwc.webp"
-            alt="BWC icon"
-            style={{ filter: "invert(100%)" }}
-          />{" "}
-          {isShowingRestrictedCards ? "Hide Locked" : "Show Locked"}
+          {isShowingRestrictedCards ? (
+            <>
+              <img
+                src="/img/icon/bwc-inverted.webp"
+                alt="BWC icon"
+                style={{ filter: "invert(100%)" }}
+              />{" "}
+              Hide Locked
+            </>
+          ) : (
+            <>
+              <img
+                src="/img/icon/bwc.webp"
+                alt="BWC icon"
+                style={{ filter: "invert(100%)" }}
+              />{" "}
+              Show Locked
+            </>
+          )}
         </button>
       </div>
 

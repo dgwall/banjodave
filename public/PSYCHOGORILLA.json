@@ -1,6 +1,8 @@
 [
   {
     "id": "DMBDBD",
+    "type": "Deck",
+    "deck": "BanjoDOOM",
     "accessLevel": 0,
     "date": "2019-12-XX",
     "title": "BanjoDOOM",
@@ -29,6 +31,8 @@
   },
   {
     "id": "DMBDBB",
+    "type": "Card",
+    "deck": "BanjoDOOM",
     "accessLevel": 0,
     "date": "2020-06-09",
     "title": "Blazing Beachhead",
@@ -62,6 +66,8 @@
   },
   {
     "id": "DMHMAV",
+    "type": "Card",
+    "deck": "BanjoDOOM",
     "accessLevel": 0,
     "date": "",
     "title": "Mapwich 2: Ascent to Valhalla",
@@ -96,7 +102,6 @@
     "text": [
       "This map was MAP01 of MALAGARD 2 before I decided to remake it. Uses Tango's Supercharge gameplay mod as a base."
     ],
-    "images": ["Security Station", "Barracks", "Data Center"],
     "buttons": [
       {
         "type": "download",
@@ -107,6 +112,8 @@
   },
   {
     "id": "DW40RO",
+    "type": "Card",
+    "deck": "N",
     "accessLevel": 0,
     "date": "",
     "title": "rootootoot",
@@ -136,7 +143,6 @@
     "text": [
       "In 2018, I set out on the monumental task of compiling every map I've ever crafted. From this extensive collection, I painstakingly curated my top 500 - a showcase of my best work. These maps were then meticulously structured into an episodic format matching the original game reflecting a progression in both difficulty and complexity."
     ],
-    "images": ["", "", ""],
     "buttons": [
       {
         "type": "download",
@@ -147,6 +153,8 @@
   },
   {
     "id": "DMHFFM",
+    "type": "Card",
+    "deck": "BanjoDOOM",
     "accessLevel": 1,
     "date": "",
     "title": "fallen malkuth",
@@ -174,8 +182,6 @@
       "Danlex"
     ],
     "tagline": "First BanjoDave DOOM map",
-    "text": [""],
-    "images": [""],
     "buttons": [
       {
         "type": "download",
@@ -185,7 +191,9 @@
     ]
   },
   {
-    "id": "TEST",
+    "id": "PAWRAT",
+    "type": "Card",
+    "deck": "Physical Art",
     "accessLevel": 0,
     "date": "",
     "title": "Wrath",
@@ -206,7 +214,6 @@
     ],
     "tagline": "Acrylic on Canvas",
     "text": ["Acrylic on Canvas"],
-    "images": [""],
     "buttons": [
       {
         "type": "download",
@@ -217,8 +224,10 @@
   },
   {
     "id": "BWC1",
+    "type": "Card",
+    "deck": "BWC",
     "accessLevel": 1,
-    "date": "",
+    "date": "2023-07-13",
     "title": "BWC L1 Access Token",
     "thumbreel": true,
     "theme": "bwc",
@@ -231,8 +240,10 @@
   },
   {
     "id": "BWC2",
+    "type": "Card",
+    "deck": "BWC",
     "accessLevel": 2,
-    "date": "",
+    "date": "2023-07-13",
     "title": "BWC L2 Access Card (Platinum)",
     "thumbreel": true,
     "theme": "bwc",
@@ -243,8 +254,10 @@
   },
   {
     "id": "BWC3",
+    "type": "Card",
+    "deck": "BWC",
     "accessLevel": 3,
-    "date": "",
+    "date": "2023-07-13",
     "title": "BWC L3 Special Access Card (Black)",
     "thumbreel": true,
     "theme": "bwc",
@@ -257,8 +270,10 @@
   },
   {
     "id": "BDDAFF",
+    "type": "Card",
+    "deck": "Digital Art",
     "accessLevel": 0,
-    "date": "",
+    "date": "2023-01-04",
     "title": "Frost Fortress",
     "theme": "ice",
     "icon": "art",
@@ -277,6 +292,8 @@
   },
   {
     "id": "BHC034",
+    "type": "Card",
+    "deck": "Pebblemoths",
     "accessLevel": 0,
     "date": "",
     "title": "Pebblemoth #034",
@@ -293,16 +310,16 @@
       "Bismuth",
       "Throne"
     ],
-    "tagline": "Salt in Gemini",
-    "text": [""]
+    "tagline": "Salt in Gemini"
   },
   {
     "id": "BHZ001",
+    "type": "Card",
+    "deck": "BanjoZine",
     "accessLevel": 0,
     "date": "2021-03-20",
     "title": "BanjoZine Issue #1",
     "tagline": "March 2021",
-    "thumbreel": true,
     "icon": "zine",
     "theme": "zine",
     "tags": [
@@ -342,7 +359,6 @@
     "text": [
       "rootootoot, Mapwich 2, Vanish Glide, Things, Orb, ULTRACLUB4K, Podcasts, ガキの使い, Nintendo 64, 森林浴, Productivity."
     ],
-    "images": [""],
     "buttons": [
       {
         "type": "download",
@@ -353,10 +369,11 @@
   },
   {
     "id": "BHZ002",
+    "type": "Card",
+    "deck": "BanjoZine",
     "accessLevel": 0,
     "date": "2021-06-15",
     "title": "BanjoZine Issue #2",
-    "thumbreel": true,
     "theme": "zine",
     "icon": "zine",
     "tags": [
@@ -402,17 +419,20 @@
   },
   {
     "id": "BDMTEC",
+    "type": "Card",
+    "deck": "Music Track",
     "accessLevel": 1,
     "date": "2022-02-22",
     "title": "Emerald City",
     "icon": "music",
     "tagline": "",
     "theme": "emerald",
-    "tags": ["Music", "Music Track", "Green", "Electronic", "Mellow"],
-    "text": [""]
+    "tags": ["Music", "Music Track", "Green", "Electronic", "Mellow"]
   },
   {
     "id": "DABLB1",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-19",
     "title": "Iron Badge",
@@ -431,6 +451,8 @@
   },
   {
     "id": "DABLB8",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 3,
     "date": "2022-12-19",
     "title": "Prime Badge",
@@ -449,6 +471,8 @@
   },
   {
     "id": "DABLB2",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-11-28",
     "title": "Bronze Badge",
@@ -467,6 +491,8 @@
   },
   {
     "id": "DABLB7",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 2,
     "date": "2022-12-19",
     "title": "Split Prime Badge",
@@ -485,6 +511,8 @@
   },
   {
     "id": "DABLB6",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 2,
     "date": "2022-12-18",
     "title": "Diamond Badge",
@@ -503,6 +531,8 @@
   },
   {
     "id": "DABLB0",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-19",
     "title": "Prime Sticker",
@@ -521,6 +551,8 @@
   },
   {
     "id": "DABLB3",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-11-28",
     "title": "Silver Badge",
@@ -539,6 +571,8 @@
   },
   {
     "id": "DABLB4",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-11-28",
     "title": "Gold Badge",
@@ -557,6 +591,8 @@
   },
   {
     "id": "DABLB5",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 2,
     "date": "2022-11-28",
     "title": "Platinum Badge",
@@ -575,6 +611,8 @@
   },
   {
     "id": "0DBAAC",
+    "type": "Card",
+    "deck": "Banjo's Arcade",
     "accessLevel": 1,
     "date": "2023-06-13",
     "title": "alpha cart",
@@ -597,6 +635,8 @@
   },
   {
     "id": "0DBADC",
+    "type": "Card",
+    "deck": "Banjo's Arcade",
     "accessLevel": 2,
     "date": "2023-06-13",
     "title": "damaged cart",
@@ -621,6 +661,8 @@
   },
   {
     "id": "0DBAB1",
+    "type": "Card",
+    "deck": "Banjo's Arcade",
     "accessLevel": 0,
     "date": "2022-04-22",
     "title": "hiecom beta cart",
@@ -646,6 +688,8 @@
   },
   {
     "id": "0DBAB2",
+    "type": "Card",
+    "deck": "Banjo's Arcade",
     "accessLevel": 0,
     "date": "2023-01-03",
     "title": "navexe beta cart",
@@ -669,6 +713,8 @@
   },
   {
     "id": "BLD000",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-23",
     "title": "No Defeatz",
@@ -687,6 +733,8 @@
   },
   {
     "id": "BLD001",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-04",
     "title": "One Defeatz",
@@ -704,6 +752,8 @@
   },
   {
     "id": "BLD002",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Two Defeatz",
@@ -721,6 +771,8 @@
   },
   {
     "id": "BLD003",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Three Defeatz",
@@ -738,6 +790,8 @@
   },
   {
     "id": "BLD004",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Four Defeatz",
@@ -755,6 +809,8 @@
   },
   {
     "id": "BLD005",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Five Defeatz",
@@ -772,6 +828,8 @@
   },
   {
     "id": "BLD006",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Six Defeatz",
@@ -789,6 +847,8 @@
   },
   {
     "id": "BLD007",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Seven Defeatz",
@@ -806,6 +866,8 @@
   },
   {
     "id": "BLD008",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Eight Defeatz",
@@ -823,6 +885,8 @@
   },
   {
     "id": "BLD009",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Nine Defeatz",
@@ -840,6 +904,8 @@
   },
   {
     "id": "BLD010",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Ten Defeatz",
@@ -857,6 +923,8 @@
   },
   {
     "id": "BLD011",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Twenty Defeatz",
@@ -874,6 +942,8 @@
   },
   {
     "id": "BLD012",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Thirty Defeatz",
@@ -891,6 +961,8 @@
   },
   {
     "id": "BLD013",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Forty Defeatz",
@@ -908,6 +980,8 @@
   },
   {
     "id": "BLD014",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Fifty Defeatz",
@@ -925,6 +999,8 @@
   },
   {
     "id": "BLD015",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Sixty Defeatz",
@@ -942,6 +1018,8 @@
   },
   {
     "id": "BLD016",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Seventy Defeatz",
@@ -959,6 +1037,8 @@
   },
   {
     "id": "BLD017",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Eighty Defeatz",
@@ -976,6 +1056,8 @@
   },
   {
     "id": "BLD018",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-23",
     "title": "Ninety Defeatz",
@@ -993,6 +1075,8 @@
   },
   {
     "id": "BLD019",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-23",
     "title": "One Hundred Defeatz",
@@ -1010,6 +1094,8 @@
   },
   {
     "id": "BLD020",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-23",
     "title": "Two Hundred Defeatz",
@@ -1027,6 +1113,8 @@
   },
   {
     "id": "BLD021",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-23",
     "title": "Three Hundred Defeatz",
@@ -1044,6 +1132,8 @@
   },
   {
     "id": "BLD022",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-23",
     "title": "Four Hundred Defeatz",
@@ -1061,6 +1151,8 @@
   },
   {
     "id": "BLD023",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-23",
     "title": "Five Hundred Defeatz",
@@ -1078,6 +1170,8 @@
   },
   {
     "id": "BLD024",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-23",
     "title": "Six Hundred Defeatz",
@@ -1095,6 +1189,8 @@
   },
   {
     "id": "BLD025",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-23",
     "title": "Seven Hundred Defeatz",
@@ -1112,6 +1208,8 @@
   },
   {
     "id": "BLD026",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-23",
     "title": "Eight Hundred Defeatz",
@@ -1129,6 +1227,8 @@
   },
   {
     "id": "BLD027",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-23",
     "title": "Nine Hundred Defeatz",
@@ -1146,6 +1246,8 @@
   },
   {
     "id": "BLD028",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 2,
     "date": "2022-12-23",
     "title": "One Thousand Defeatz",
@@ -1163,6 +1265,8 @@
   },
   {
     "id": "BLD029",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 3,
     "date": "2023-06-26",
     "title": "Ten Thousand Defeatz",
@@ -1180,6 +1284,8 @@
   },
   {
     "id": "BLC001",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-18",
     "title": "Beatz Token",
@@ -1199,6 +1305,8 @@
   },
   {
     "id": "BLC002",
+    "type": "Card",
+    "deck": "Banjo League",
     "accessLevel": 1,
     "date": "2022-12-19",
     "title": "Completez Token",
@@ -1218,6 +1326,8 @@
   },
   {
     "id": "DACCEL",
+    "type": "Card",
+    "deck": "BFD Capsules",
     "accessLevel": 0,
     "date": "2022-03-30",
     "title": "Celadon Capsule",
@@ -1228,6 +1338,8 @@
   },
   {
     "id": "DACCEE",
+    "type": "Card",
+    "deck": "BFD Capsules",
     "accessLevel": 2,
     "date": "2022-04-01",
     "title": "Celestial Capsule",
@@ -1239,6 +1351,8 @@
   },
   {
     "id": "DABLAD",
+    "type": "Card",
+    "deck": "Digital Art",
     "accessLevel": 1,
     "date": "",
     "title": "Banjeetz Life and Death",
@@ -1256,7 +1370,9 @@
   },
   {
     "id": "DAWHAN",
-    "accessLevel": 1,
+    "type": "Card",
+    "deck": "Digital Art",
+    "accessLevel": 0,
     "date": "2023-01-06",
     "title": "Realm of Magic Animals",
     "tagline": "Where animals wait to be summoned by stage magicians.",
@@ -1274,13 +1390,14 @@
   },
   {
     "id": "DABGDR",
+    "type": "Card",
+    "deck": "Digital Art",
     "accessLevel": 0,
     "date": "2022-11-23",
     "title": "Dark Logo Wallpaper",
     "tagline": "Banjo logo mobile wallpaper.",
     "theme": "dark",
     "icon": "art",
-    "text": [""],
     "tags": ["Digital Art", "Space", "Magic", "Kósmoptasía", "Concept Art"],
     "buttons": [
       {
@@ -1292,16 +1409,27 @@
   },
   {
     "id": "BLSOON",
+    "type": "Deck",
+    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-11",
     "title": "Banjo League",
-    "tagline": "Banjo League Coming Soon",
+    "tagline": "Banjo League",
     "theme": "league",
     "icon": "league",
     "text": [
       "Banjo League is a place to track your game completion progress and compete against other players for the best scores and times."
     ],
-    "tags": ["Banjo League", "Preview", "Shield", "Logo"],
+    "tags": [
+      "Banjo League",
+      "Gaming",
+      "Competitive",
+      "Tournament",
+      "Community",
+      "Preview",
+      "Shield",
+      "Logo"
+    ],
     "buttons": [
       {
         "type": "external",
@@ -1312,8 +1440,10 @@
   },
   {
     "id": "WGMCSH",
-    "accessLevel": 1,
-    "date": "",
+    "type": "Deck",
+    "deck": "WGMC",
+    "accessLevel": 0,
+    "date": "2023-07-16",
     "title": "Weary Goblin Mudhole Club",
     "tagline": "Coming Soon",
     "theme": "wgmc",
@@ -1323,8 +1453,10 @@
   },
   {
     "id": "PEBMOT",
-    "accessLevel": 1,
-    "date": "",
+    "type": "Deck",
+    "deck": "Pebblemoths",
+    "accessLevel": 0,
+    "date": "2023-07-16",
     "title": "Pebblemoths",
     "tagline": "Creatures with mystical powers of the Zodiac.",
     "theme": "pebblemoth",
@@ -1334,6 +1466,8 @@
   },
   {
     "id": "DABJXL",
+    "type": "Card",
+    "deck": "Misc",
     "accessLevel": 1,
     "date": "",
     "title": "BJX",
@@ -1345,6 +1479,8 @@
   },
   {
     "id": "DADISC",
+    "type": "Card",
+    "deck": "Websites",
     "accessLevel": 1,
     "date": "",
     "title": "Discontent",
@@ -1366,6 +1502,8 @@
   },
   {
     "id": "MTRUDE",
+    "type": "Card",
+    "deck": "Music Tracks",
     "accessLevel": 0,
     "date": "",
     "title": "Rudeolf",
@@ -1376,6 +1514,8 @@
   },
   {
     "id": "CBDB01",
+    "type": "Card",
+    "deck": "Bop Drumps",
     "accessLevel": 1,
     "date": "2021-03-20",
     "title": "BALL",
@@ -1392,11 +1532,14 @@
       "Card Game",
       "beta",
       "preview",
-      "POP"
+      "POP",
+      "surprised"
     ]
   },
   {
     "id": "CBDB02",
+    "type": "Card",
+    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-03-20",
     "title": "BOOP-BOOP",
@@ -1413,11 +1556,14 @@
       "Card Game",
       "beta",
       "preview",
-      "robot"
+      "robot",
+      "happy"
     ]
   },
   {
     "id": "CBDB03",
+    "type": "Card",
+    "deck": "Bop Drumps",
     "accessLevel": 1,
     "date": "2021-03-20",
     "title": "EVIL JELLY",
@@ -1435,11 +1581,15 @@
       "beta",
       "preview",
       "fly",
-      "jelly bean"
+      "jelly bean",
+      "evil",
+      "angry"
     ]
   },
   {
     "id": "CBDB04",
+    "type": "Card",
+    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-06-15",
     "title": "HELL RAIDER",
@@ -1462,6 +1612,8 @@
   },
   {
     "id": "CBDB05",
+    "type": "Card",
+    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-06-15",
     "title": "MUSHROOM BOY",
@@ -1484,6 +1636,8 @@
   },
   {
     "id": "CBDB06",
+    "type": "Card",
+    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-06-15",
     "title": "JAMES",
@@ -1499,11 +1653,14 @@
       "Sketch",
       "Card Game",
       "beta",
-      "preview"
+      "preview",
+      "stickman"
     ]
   },
   {
     "id": "CBDB07",
+    "type": "Card",
+    "deck": "Bop Drumps",
     "accessLevel": 1,
     "date": "2023-07-13",
     "title": "GNOME BOY",
@@ -1525,6 +1682,8 @@
   },
   {
     "id": "CBDB08",
+    "type": "Card",
+    "deck": "Bop Drumps",
     "accessLevel": 2,
     "date": "2023-07-13",
     "title": "GEM GUARDIAN",
@@ -1548,11 +1707,16 @@
       "beta",
       "preview",
       "POP",
-      "GEM"
+      "GEM",
+      "happy",
+      "moth",
+      "pebblemoth"
     ]
   },
   {
     "id": "CBDB09",
+    "type": "Card",
+    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2023-07-13",
     "title": "TOPOLOGY MIKE",
@@ -1574,6 +1738,8 @@
   },
   {
     "id": "PMP001",
+    "type": "Card",
+    "deck": "Bop Drumps",
     "accessLevel": 3,
     "date": "2022-05-23",
     "title": "Shadowchromatic Pebblemoth",
@@ -1595,6 +1761,8 @@
   },
   {
     "id": "WGA001",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #1",
@@ -1605,6 +1773,8 @@
   },
   {
     "id": "WGA002",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #2",
@@ -1615,6 +1785,8 @@
   },
   {
     "id": "WGA003",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #3",
@@ -1625,6 +1797,8 @@
   },
   {
     "id": "WGA004",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #4",
@@ -1635,6 +1809,8 @@
   },
   {
     "id": "WGA005",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #5",
@@ -1645,6 +1821,8 @@
   },
   {
     "id": "WGA006",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 1,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #6",
@@ -1655,6 +1833,8 @@
   },
   {
     "id": "WGA007",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #7",
@@ -1665,6 +1845,8 @@
   },
   {
     "id": "WGA008",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 1,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #8",
@@ -1675,6 +1857,8 @@
   },
   {
     "id": "WGA009",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 1,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #9",
@@ -1685,6 +1869,8 @@
   },
   {
     "id": "WGA010",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 2,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #10",
@@ -1695,6 +1881,8 @@
   },
   {
     "id": "WGA011",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 2,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #11",
@@ -1705,6 +1893,8 @@
   },
   {
     "id": "WGA012",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 1,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #12",
@@ -1715,6 +1905,8 @@
   },
   {
     "id": "WGA013",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 3,
     "date": "2015-XX-XX",
     "title": "WGMC Alpha #13",
@@ -1725,6 +1917,8 @@
   },
   {
     "id": "WGB001",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 1,
     "date": "2023-01-07",
     "title": "WGMC Beta #1",
@@ -1735,6 +1929,8 @@
   },
   {
     "id": "WGB002",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 2,
     "date": "2023-01-07",
     "title": "WGMC Beta #2",
@@ -1745,6 +1941,8 @@
   },
   {
     "id": "WGB003",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 3,
     "date": "2023-01-07",
     "title": "WGMC Beta #3",
@@ -1755,6 +1953,8 @@
   },
   {
     "id": "WGB004",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2023-01-07",
     "title": "WGMC Beta #4",
@@ -1765,6 +1965,8 @@
   },
   {
     "id": "WGB005",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 2,
     "date": "2023-01-07",
     "title": "WGMC Beta #5",
@@ -1775,6 +1977,8 @@
   },
   {
     "id": "WGB006",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 1,
     "date": "2023-01-07",
     "title": "WGMC Beta #6",
@@ -1785,6 +1989,8 @@
   },
   {
     "id": "WGB007",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2023-01-07",
     "title": "WGMC Beta #7",
@@ -1795,6 +2001,8 @@
   },
   {
     "id": "WGB008",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2023-01-07",
     "title": "WGMC Beta #8",
@@ -1805,6 +2013,8 @@
   },
   {
     "id": "WGBG01",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2023-01-07",
     "title": "WGMC Beta Grub",
@@ -1815,6 +2025,8 @@
   },
   {
     "id": "WGBG02",
+    "type": "Card",
+    "deck": "WGMC",
     "accessLevel": 1,
     "date": "2023-01-07",
     "title": "WGMC Beta Golden Grub",
@@ -1825,6 +2037,8 @@
   },
   {
     "id": "CBOPDR",
+    "type": "Deck",
+    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-03-20",
     "title": "BOP DRUMPS",
@@ -1844,10 +2058,12 @@
   },
   {
     "id": "0DBANJ",
+    "type": "Deck",
+    "deck": "Banjo's Arcade",
     "accessLevel": 0,
     "date": "2022-04-22",
     "title": "Banjo's Arcade",
-    "tagline": "Cutting edge retro throwbacks..",
+    "tagline": "Cutting edge retro throwbacks...",
     "theme": "arcade",
     "icon": "arcade",
     "text": [
@@ -1864,6 +2080,52 @@
       "Game Series",
       "Arcade",
       "Arcade Games"
+    ]
+  },
+  {
+    "id": "DAAOPT",
+    "type": "Card",
+    "deck": "Archive",
+    "accessLevel": 2,
+    "date": "2005-05-11",
+    "title": "Optical Illusion.bmp",
+    "tagline": "The 18 year long collab",
+    "theme": "white",
+    "icon": "home",
+    "text": [
+      "One of the oldest computer files I have dates back to 2005. A friend of mine discovered that if you adjust the size of an image in a certain way, you can create all kinds of intriguing visual effects. I have to agree with him, it's quite true. This particular file from 2005, a simple copy and paste job, seems to naturally fit into the concept of a 3D Holo-Card. It reveals a fascinating pattern as it undergoes the transformation."
+    ],
+    "tags": [
+      "Digital Art",
+      "Art",
+      "MS Paint",
+      "Archive",
+      "Optical Illusion",
+      "2000s"
+    ]
+  },
+  {
+    "id": "DAASPA",
+    "type": "Card",
+    "deck": "Archive",
+    "accessLevel": 1,
+    "date": "2005-03-20",
+    "title": "SPACE WARZ",
+    "tagline": "2005 stickman gore series",
+    "theme": "white",
+    "icon": "home",
+    "tags": [
+      "Stickman Gore",
+      "Physical Art",
+      "Art",
+      "Drawing",
+      "Stickman",
+      "Scifi",
+      "Cartoon",
+      "Sketch",
+      "Alien",
+      "Archive",
+      "2000s"
     ]
   }
 ]
