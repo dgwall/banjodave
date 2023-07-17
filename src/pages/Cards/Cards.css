@@ -605,18 +605,13 @@
   }
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.main-cards .cards-container .card-container {
+  opacity: 0;
+  transition: opacity 1s ease;
 }
 
-.fade-in {
-  animation: fadeIn 0.5s linear;
-  animation-iteration-count: 0;
+.main-cards .cards-container .card-container.fade-in {
+  opacity: 1;
 }
 
 .main-cards .card {
