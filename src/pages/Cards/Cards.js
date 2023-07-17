@@ -14,7 +14,7 @@ import {
 
 const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
-const ACCESS_LEVEL = 3;
+const ACCESS_LEVEL = 0;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -285,7 +285,10 @@ function Cards() {
             </>
           )}
         </button>
-        <button onClick={removeRestrictedCards}>
+        <button
+          onClick={removeRestrictedCards}
+          disabled={ACCESS_LEVEL === 3 ? true : false}
+        >
           {isShowingRestrictedCards ? (
             <>
               <img

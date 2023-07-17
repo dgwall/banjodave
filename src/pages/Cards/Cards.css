@@ -613,6 +613,11 @@
   }
 }
 
+.fade-in {
+  animation: fadeIn 0.5s linear;
+  animation-iteration-count: 0;
+}
+
 .main-cards .card {
   animation-duration: 0s;
 }
