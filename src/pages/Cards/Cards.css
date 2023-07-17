@@ -133,11 +133,15 @@
 .main-cards .card-container {
   display: inline-block;
   perspective: 20em;
-  position: relative; /* Added position property */
+  position: relative;
   vertical-align: top;
-  z-index: 1; /* Changed from -1 to 1 */
+  z-index: 1;
   border-radius: 1vmin;
   cursor: pointer;
+}
+
+.main-cards .carousel-container {
+  z-index: 1;
 }
 
 .main-cards .carousel-container,
@@ -158,6 +162,7 @@
   align-items: center;
   height: 100%;
   margin: auto;
+  perspective: 20em;
 }
 
 .main-cards audio,
@@ -523,8 +528,8 @@
   position: absolute;
   bottom: 3.2%;
   right: 3.8%;
-  width: 2vmax;
-  height: 2vmax;
+  width: 1.5rem !important;
+  height: 1.5rem;
   max-width: 32px;
   max-height: 32px;
   padding: 2px;
@@ -536,8 +541,8 @@
   position: absolute;
   bottom: 3.2%;
   left: 3.8%;
-  width: 2vmax;
-  height: 2vmax;
+  width: 1.5rem !important;
+  height: 1.5rem;
   max-width: 32px;
   max-height: 32px;
   padding: 2px;
@@ -563,7 +568,7 @@
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 0.8vmax;
+  font-size: 1.5vmin;
   color: #fff;
   opacity: 0.8;
 }

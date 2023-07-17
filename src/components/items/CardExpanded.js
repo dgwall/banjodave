@@ -1,5 +1,3 @@
-// TODO: Create carousel with controls to contain card and media.
-
 import React, { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import MediaCarousel from "../menus/MediaCarousel";
