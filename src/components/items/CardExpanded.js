@@ -19,6 +19,7 @@ const CardExpanded = ({ data, access, deck }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [smoothTransition, setSmoothTransition] = useState(true);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
   const cardContainerRef = useRef();
 
   useEffect(() => {
@@ -26,6 +27,26 @@ const CardExpanded = ({ data, access, deck }) => {
     img.src = `/img/thumbnails/${data.id}.webp`;
     img.onload = () => setIsImageLoaded(true);
   }, [data.id]);
+
+  // Function to sort deck array
+  const sortedDeck = [...deck].sort((a, b) => {
+    if (a[sortConfig.key] < b[sortConfig.key]) {
+      return sortConfig.direction === "asc" ? -1 : 1;
+    }
+    if (a[sortConfig.key] > b[sortConfig.key]) {
+      return sortConfig.direction === "asc" ? 1 : -1;
+    }
+    return 0;
+  });
+
+  // Function to handle sorting
+  const requestSort = (key) => {
+    let direction = "asc";
+    if (sortConfig.key === key && sortConfig.direction === "asc") {
+      direction = "desc";
+    }
+    setSortConfig({ key, direction });
+  };
 
   // Move handler
   const handleMove = (e) => {
@@ -140,22 +161,42 @@ const CardExpanded = ({ data, access, deck }) => {
         )}
 
         {data.type === "Deck" && (
-          <div className="deck-list-container">
-            <div className="deck-list">
-              {deck &&
-                deck.map((card, index) => (
-                  <Link to={`/bwc/${card.id}`}>
-                    <div key={index}>
+          <>
+            <div className="deck-sort">
+              Sort deck by:
+              <div className="min" onClick={() => requestSort("accessLevel")}>
+                LVL
+              </div>
+              <div className="min" onClick={() => requestSort("date")}>
+                Date
+              </div>
+              <div className="min" onClick={() => requestSort("id")}>
+                ID
+              </div>
+              <div onClick={() => requestSort("title")}>Title</div>
+            </div>
+            <table className="deck-list-container">
+              <tbody className="deck-list">
+                {sortedDeck.map((card, index) => (
+                  <tr key={index}>
+                    <td className="min">
                       <img
                         src={`/img/cards/bwc-${card.accessLevel}.webp`}
                         alt={`BWC Level ${card.accessLevel}`}
-                      />{" "}
-                      {card.date.substring(0, 4)}-{card.id}: {card.title}
-                    </div>
-                  </Link>
+                      />
+                    </td>
+                    <td className="min">{card.date}</td>
+                    <td className="min">
+                      <Link to={`/bwc/${card.id}`} className="rowlink">
+                        {card.id}
+                      </Link>
+                    </td>
+                    <td>{card.title}</td>
+                  </tr>
                 ))}
-            </div>
-          </div>
+              </tbody>
+            </table>
+          </>
         )}
       </div>
     </div>

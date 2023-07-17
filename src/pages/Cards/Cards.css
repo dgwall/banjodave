@@ -177,6 +177,9 @@
 }
 
 .main-cards .control-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 5%;
 }
 
@@ -605,6 +608,26 @@
   }
 }
 
+table,
+thead,
+tbody,
+tfoot,
+tr,
+th,
+td {
+  height: auto;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-collapse: inherit;
+  border-spacing: 0;
+  border-color: inherit;
+  text-align: left;
+  font-weight: inherit;
+  -webkit-border-horizontal-spacing: 0;
+  -webkit-border-vertical-spacing: 0;
+}
+
 .main-cards .cards-container .card-container {
   opacity: 0;
   transition: opacity 1s ease;
@@ -630,38 +653,103 @@
 }
 
 .main-cards .deck-list {
+  display: block;
   background-color: #00000060;
   overflow-y: scroll;
   height: 13rem;
   font-family: monospace;
+  border-collapse: collapse;
+  border-spacing: 0;
+  position: relative;
+  color: var(--bt-color);
 }
 
-.main-cards .deck-list div {
-  padding: 0.2rem;
-  margin: 0;
+.deck-sort {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
+  margin-left: 2vmin;
+  margin-bottom: 1vmin;
+  margin-top: 0;
+  font-size: small;
 }
 
-.deck-list > a:not(:first-child) > div {
+.deck-sort div:first-child {
+  margin-left: 2vmin;
+}
+
+.deck-sort div:last-child {
+  margin-right: 2vmin;
+}
+
+.deck-sort div {
+  cursor: pointer;
+  padding: 0.5vmin 1vmin;
+  margin: 0 1vmin;
+  border: 1px solid #ffffff11;
+  border-radius: 1vmin;
+  color: var(--fg-color);
+}
+
+.deck-sort div:hover {
+  color: var(--bt-color);
+  border-color: var(--hl-color);
+}
+
+.deck-list .rowlink::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1rem;
+}
+
+.deck-list tr:not(:first-child) {
   border-top: 1px solid #ffffff11;
 }
 
-.main-cards .deck-list div img {
+.deck-list td {
+  margin: 0;
+}
+
+thead,
+tbody tr {
+  display: table;
+  width: 100%;
+}
+
+.main-cards .deck-list img {
   height: 1rem;
   width: 1rem;
   object-fit: contain;
-  margin-right: 0.2rem;
+  vertical-align: middle;
 }
 
-.main-cards .deck-list a {
-  color: var(--bt-color);
+.deck-list a {
   text-decoration: none;
+  height: 100%;
+  color: var(--bt-color);
 }
 
-.main-cards .deck-list a:hover div {
-  background-color: #ffffff11;
+.deck-list tr:hover a {
+  color: var(--hl-color);
+}
+
+.deck-list td,
+.deck-list th {
+  width: auto;
+  padding: 0 1rem;
+}
+
+.deck-list .min {
+  width: 1%;
+  white-space: nowrap;
+}
+
+.main-cards .deck-list tr:hover {
+  background-color: var(--bt-color);
   border-color: transparent;
   color: var(--hl-color);
 }

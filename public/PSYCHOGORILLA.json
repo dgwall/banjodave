@@ -8,7 +8,6 @@
     "title": "BanjoDOOM",
     "theme": "doom",
     "icon": "doom",
-    "tagPin": "DOOM",
     "tags": [
       "DOOM",
       "Mapping",
@@ -30,16 +29,14 @@
     ]
   },
   {
-    "id": "DMBDBB",
+    "id": "DMBLBH",
     "type": "Card",
     "deck": "BanjoDOOM",
     "accessLevel": 0,
     "date": "2020-06-09",
     "title": "Blazing Beachhead",
     "theme": "magma",
-    "thumbreel": "true",
     "icon": "doom",
-    "tagPin": "Blazing Beachhead",
     "tags": [
       "Blazing Beachhead",
       "DOOM",
@@ -65,16 +62,47 @@
     ]
   },
   {
+    "id": "DMDUMB",
+    "type": "Card",
+    "deck": "BanjoDOOM",
+    "accessLevel": 0,
+    "date": "2020-06-09",
+    "title": "Deep Underground Military Bunker",
+    "tagline": "A strange mist is making people crazy in this secret base, and your prison door just unlocked itself.",
+    "theme": "dark-red",
+    "icon": "doom",
+    "tags": [
+      "Blazing Beachhead",
+      "DOOM",
+      "GZDoom",
+      "Single Map",
+      "Mods",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "BanjoDOOM",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Scifi",
+      "Hell",
+      "Magma",
+      "Fire"
+    ],
+    "text": [
+      "Uses only dynamic lightning. This map was MAP01 of MALAGARD 2 before I decided to remake it. Uses Tango's Supercharge gameplay mod as a base."
+    ]
+  },
+  {
     "id": "DMHMAV",
     "type": "Card",
     "deck": "BanjoDOOM",
     "accessLevel": 0,
-    "date": "",
+    "date": "2020-10-17",
     "title": "Mapwich 2: Ascent to Valhalla",
-    "thumbreel": true,
     "theme": "storm",
     "icon": "doom",
-    "tagPin": "Ascent to Valhalla",
     "tags": [
       "DOOM",
       "GZDoom",
@@ -100,7 +128,8 @@
     ],
     "tagline": "Climb storm-lashed cliffs on your way to a monumental fortress. Collab with Danlex.",
     "text": [
-      "This map was MAP01 of MALAGARD 2 before I decided to remake it. Uses Tango's Supercharge gameplay mod as a base."
+      "Come eat the Mapwich! Mappers are randomly assigned into pairs to collaborate on a map utilising ukiro's beautiful texture pack OTEX and Tango's Supercharge gameplay mod.",
+      "Danlex and I created this towering map for MAP11 in Mapwich 2. Starting on the beach you must discover a way to progress up the cliffside. Emerging from a cave you will discover a huge white and gold palace jutting out from the sea. Forge a path over the precarious cliffside and prepare yourself to battle atop the the palace."
     ],
     "buttons": [
       {
@@ -111,16 +140,58 @@
     ]
   },
   {
+    "id": "DMMALA",
+    "type": "Card",
+    "deck": "BanjoDOOM",
+    "accessLevel": 0,
+    "date": "2019-12-17",
+    "title": "MALAGARD",
+    "theme": "doom",
+    "icon": "doom",
+    "tags": [
+      "DOOM",
+      "GZDoom",
+      "Single Map",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "BanjoDOOM",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Scifi",
+      "Hell",
+      "Ruins",
+      "Castle",
+      "Beach",
+      "Lava"
+    ],
+    "tagline": "Navigate the mysterious ruins and bulwarks on a demon-infested island.",
+    "text": [
+      "I've been making maps for 2D games for a while but I thought it was time to expand into Doom. I started learning how to use doom builder late October and am proud to release my first map! This is a 45-50 minute map that only works in GZDoom as far as I know. Uses stock Doom II textures. Difficulty levels available. Jump and crouch disabled. Mouselook optional. Save points are built in to the map so making your own saves is cheating.",
+
+      "I tried to keep this map very classic in style, so no slopes or dynamic lights etc were used. I did have to use 3d floors for ceilings in places but that was more due to being naive about sectors and how the sky worked. If I were to remake this I would probably include more void sectors to improve performance. That being said, one of my favourite things about the map is the long lines of sight and being able to see parts of the map that are coming up next. I'm looking forward to making more maps in the future. I had a lot of fun making this so I hope you enjoy playing and let me know what you think!",
+
+      "Special thanks to Bridgeburner's The Hellforge for answering my questions and providing a place to hang out. Thanks to the tutorials on DragonFly's website. Thanks to Major Arlene for playtesting."
+    ],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download MALAGARD.wad 7.27 MB"
+      }
+    ]
+  },
+  {
     "id": "DW40RO",
     "type": "Card",
     "deck": "N",
     "accessLevel": 0,
     "date": "",
     "title": "rootootoot",
-    "thumbreel": false,
     "theme": "n",
     "icon": "n",
-    "tagPin": "rootootoot",
     "tags": [
       "N",
       "Mapping",
@@ -162,11 +233,9 @@
     "type": "Card",
     "deck": "BanjoDOOM",
     "accessLevel": 1,
-    "date": "",
+    "date": "2019-12-07",
     "title": "fallen malkuth",
-    "thumbreel": true,
     "theme": "doom",
-    "tagPin": "Ascent to Valhalla",
     "icon": "doom",
     "tags": [
       "DOOM",
@@ -197,13 +266,84 @@
     ]
   },
   {
+    "id": "DMHFBC",
+    "type": "Card",
+    "deck": "BanjoDOOM",
+    "accessLevel": 1,
+    "date": "2020-10-14",
+    "title": "Bob Choblin",
+    "theme": "doom",
+    "icon": "doom",
+    "tags": [
+      "DOOM",
+      "GZDoom",
+      "Single Map",
+      "Speedmap",
+      "Community Project",
+      "Hellforge",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Abstract",
+      "Blue",
+      "90 Degrees"
+    ],
+    "tagline": "Knock the king off of his plinth",
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
+    "id": "DMHFDF",
+    "type": "Card",
+    "deck": "BanjoDOOM",
+    "accessLevel": 1,
+    "date": "2020-09-06",
+    "title": "DireFlu",
+    "theme": "fireblu",
+    "icon": "doom",
+    "tags": [
+      "DOOM",
+      "GZDoom",
+      "Single Map",
+      "Speedmap",
+      "Community Project",
+      "Hellforge",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Fireblu",
+      "Hard",
+      "Very Hard"
+    ],
+    "tagline": "Unfair speedmap",
+    "buttons": [
+      {
+        "type": "download",
+        "href": "",
+        "label": "Download "
+      }
+    ]
+  },
+  {
     "id": "PAWRAT",
     "type": "Card",
     "deck": "Physical Art",
     "accessLevel": 0,
-    "date": "",
+    "date": "2023-18-01",
     "title": "Wrath",
-    "thumbreel": true,
     "theme": "fireblu",
     "icon": "art",
     "tags": [
@@ -235,7 +375,6 @@
     "accessLevel": 1,
     "date": "2023-07-13",
     "title": "BWC L1 Access Token",
-    "thumbreel": true,
     "theme": "bwc",
     "icon": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 1"],
@@ -251,7 +390,6 @@
     "accessLevel": 2,
     "date": "2023-07-13",
     "title": "BWC L2 Access Card (Platinum)",
-    "thumbreel": true,
     "theme": "bwc",
     "icon": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 2"],
@@ -265,7 +403,6 @@
     "accessLevel": 3,
     "date": "2023-07-13",
     "title": "BWC L3 Special Access Card (Black)",
-    "thumbreel": true,
     "theme": "bwc",
     "icon": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 3"],
@@ -283,7 +420,15 @@
     "title": "Frost Fortress",
     "theme": "ice",
     "icon": "art",
-    "tags": ["Art", "Digital Art", "Commission", "Canvas", "Ice", "Bright"],
+    "tags": [
+      "Art",
+      "Digital Art",
+      "Commission",
+      "Canvas",
+      "Ice",
+      "Castle",
+      "Bright"
+    ],
     "tagline": "Digital art commission for @GateGuard",
     "text": [
       "Lost frost fortress. Digital art with acrylic on canvas. Commissioned by @GateGuard."
@@ -303,7 +448,6 @@
     "accessLevel": 0,
     "date": "",
     "title": "Pebblemoth #034",
-    "thumbreel": true,
     "theme": "salt",
     "icon": "pebblemoth-egg",
     "tags": [

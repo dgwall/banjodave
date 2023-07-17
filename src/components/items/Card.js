@@ -47,7 +47,7 @@ const Card = ({ data, access }) => {
     transform: `scale(${!smoothTransition ? "1.1" : "1"}) rotateY(${
       rotation.x
     }deg) rotateX(${rotation.y}deg)`,
-    transition: `transform ${smoothTransition ? "1s" : "0s"}`,
+    transition: `${smoothTransition ? "1s" : "0s"}`,
     boxShadow: `${-rotation.x / 20}rem ${rotation.y / 20}rem ${
       ((Math.abs(rotation.x) / 20 + Math.abs(rotation.y) / 20) / 2) * 5
     }rem rgba(0, 0, 0, 0.75)`,

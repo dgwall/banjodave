@@ -121,7 +121,7 @@ const MediaCarousel = ({
     <div className="carousel-container">
       <Carousel
         showThumbs={false}
-        swipeable={true}
+        swipeable={false}
         dynamicHeight={true}
         onChange={handleSwipe}
         selectedItem={activeIndex}

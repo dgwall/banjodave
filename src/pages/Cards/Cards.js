@@ -83,6 +83,7 @@ function Cards() {
         cards
           .filter((c) => c.deck === selectedCard.deck && c.type !== "Deck")
           .sort((a, b) => a.id.localeCompare(b.id))
+          .sort((a, b) => b.date.localeCompare(a.date))
       );
     }
   }, [selectedCard, cards, viewMode, searchTerm]);
@@ -195,7 +196,6 @@ function Cards() {
       );
     }
     setCurrentPage(1);
-    setSearchTerm("");
     // Sort cards based on viewMode after filtering
     const sortedCards = sortCards(
       displayedCards,
