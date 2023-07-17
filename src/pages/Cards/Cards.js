@@ -14,7 +14,7 @@ import {
 
 const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
-const ACCESS_LEVEL = 0;
+const ACCESS_LEVEL = 3;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -28,6 +28,7 @@ function Cards() {
   const [totalPages, setTotalPages] = useState(0);
   const [selectedCard, setSelectedCard] = useState(null);
   const [similarCards, setSimilarCards] = useState([]);
+  const [cardsInDeck, setCardsInDeck] = useState([]);
   const [viewMode, setViewMode] = useState("newest");
   const [groupMode, setGroupMode] = useState("card");
   const [searchTerm, setSearchTerm] = useState("");
@@ -77,6 +78,13 @@ function Cards() {
     const sortedCards = sortCards(cards, viewMode, selectedCard, searchTerm);
     setSimilarCards(sortedCards);
     setCurrentPage(1);
+    if (selectedCard && selectedCard.type === "Deck") {
+      setCardsInDeck(
+        cards
+          .filter((c) => c.deck === selectedCard.deck && c.type !== "Deck")
+          .sort((a, b) => a.id.localeCompare(b.id))
+      );
+    }
   }, [selectedCard, cards, viewMode, searchTerm]);
 
   // handle changes in cardId
@@ -97,8 +105,8 @@ function Cards() {
   // handler for card click
   const handleCardClick = (card) => {
     setSelectedCard(card);
-    setViewMode("similar");
     setGroupMode("card");
+    setViewMode("similar");
     setCurrentPage(1);
     setSearchTerm("");
     navigate(`/bwc/${card.id}`);
@@ -219,7 +227,11 @@ function Cards() {
             "--hl-b-color": hlBColor,
           }}
         >
-          <CardExpanded data={selectedCard} access={ACCESS_LEVEL} />
+          <CardExpanded
+            data={selectedCard}
+            access={ACCESS_LEVEL}
+            deck={cardsInDeck}
+          />
         </div>
       ) : (
         <>

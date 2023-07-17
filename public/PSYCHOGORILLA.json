@@ -143,6 +143,12 @@
     "text": [
       "In 2018, I set out on the monumental task of compiling every map I've ever crafted. From this extensive collection, I painstakingly curated my top 500 - a showcase of my best work. These maps were then meticulously structured into an episodic format matching the original game reflecting a progression in both difficulty and complexity."
     ],
+    "media": [
+      { "type": "image", "src": "a.png", "alt": "The first level" },
+      { "type": "video", "src": "rYsqk3uxWBQ", "alt": "Full Playthrough" },
+      { "type": "audio", "src": "soundtrack.mp3", "alt": "OST" },
+      { "type": "youtube", "src": "j0KJTtfEGeA", "alt": "rootootoot 0" }
+    ],
     "buttons": [
       {
         "type": "download",
@@ -1739,7 +1745,7 @@
   {
     "id": "PMP001",
     "type": "Card",
-    "deck": "Bop Drumps",
+    "deck": "Pebblemoths",
     "accessLevel": 3,
     "date": "2022-05-23",
     "title": "Shadowchromatic Pebblemoth",

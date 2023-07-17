@@ -1,3 +1,7 @@
+.main-cards {
+  color-scheme: dark;
+}
+
 .main-cards h1 {
   margin: 0;
   margin-top: 5vh;
@@ -136,13 +140,99 @@
   cursor: pointer;
 }
 
+.main-cards .carousel-container,
+.carousel-root,
+.carousel,
+.slider-wrapper,
+.axis-horizontal,
+.slider {
+  height: 100% !important;
+  width: 100%;
+  text-align: center;
+  min-height: 60vh;
+}
+
+.main-cards .slide {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  margin: auto;
+}
+
+.main-cards audio,
+.main-cards video,
+.main-cards iframe {
+  width: 80%;
+  border-radius: 1vmin;
+}
+
+.main-cards iframe {
+  aspect-ratio: 1.77778;
+}
+
+.main-cards .control-arrow {
+  width: 5%;
+}
+
+.main-cards .control-next {
+  background: linear-gradient(to right, transparent, black) !important;
+}
+
+.main-cards .control-next:hover {
+  background: linear-gradient(to right, transparent, #ffffff11) !important;
+}
+
+.main-cards .control-prev {
+  background: linear-gradient(to left, transparent, black) !important;
+}
+
+.main-cards .control-prev:hover {
+  background: linear-gradient(to left, transparent, #ffffff11) !important;
+}
+
 .main-cards .card-selected .card-container {
   margin: 2vmin 0 2vmin 2vmin;
   cursor: default;
+  overflow: hidden;
 }
 
 .main-cards .cards-container .card-container {
   margin-bottom: 2vmin;
+}
+
+.main-cards .indicator-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1vmin;
+  padding: 1vmin;
+  margin: 0 1vmin;
+  opacity: 0.5;
+  background-color: #00000060;
+  border: 1px solid #ffffff33;
+  cursor: pointer;
+}
+
+.main-cards .indicator-item--active,
+.main-cards .indicator-item:hover {
+  opacity: 1;
+}
+
+.main-cards .indicator-item--active {
+  border: 1px solid #ffffff;
+}
+
+.main-cards .indicator-item:hover {
+  border: 1px solid #ffffff66;
+}
+
+.main-cards .indicator-item img {
+  max-width: 32px;
+  max-height: 32px;
+  width: 1rem;
+  height: 1rem;
+  object-fit: contain;
 }
 
 .main-cards .card {
@@ -526,6 +616,49 @@
   display: none;
 }
 
+.main-cards .deck-list-container {
+  overflow: hidden;
+  margin: 0 2vmin;
+  border-radius: 1vmin;
+  border: 1px solid #ffffff33;
+}
+
+.main-cards .deck-list {
+  background-color: #00000060;
+  overflow-y: scroll;
+  height: 13rem;
+  font-family: monospace;
+}
+
+.main-cards .deck-list div {
+  padding: 0.2rem;
+  margin: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.deck-list > a:not(:first-child) > div {
+  border-top: 1px solid #ffffff11;
+}
+
+.main-cards .deck-list div img {
+  height: 1rem;
+  width: 1rem;
+  object-fit: contain;
+  margin-right: 0.2rem;
+}
+
+.main-cards .deck-list a {
+  color: var(--hl-color);
+  text-decoration: none;
+}
+
+.main-cards .deck-list a:hover div {
+  background-color: #ffffff11;
+  border-color: transparent;
+}
+
 @media screen and (max-width: 1280px) {
   .main-cards .card-expanded {
     flex-direction: column;
@@ -585,5 +718,8 @@
   }
   .main-cards .card-selected .card {
     max-width: 30vw;
+  }
+  .main-cards .deck-list-container {
+    margin-bottom: 2vmin;
   }
 }

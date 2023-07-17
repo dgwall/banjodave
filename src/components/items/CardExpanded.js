@@ -1,6 +1,8 @@
 // TODO: Create carousel with controls to contain card and media.
 
 import React, { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
+import MediaCarousel from "../menus/MediaCarousel";
 
 // Helper function to calculate rotation
 const calculateRotation = (e, element) => {
@@ -15,7 +17,7 @@ const calculateRotation = (e, element) => {
   return { x: x * -10, y: y * 10 };
 };
 
-const CardExpanded = ({ data, access }) => {
+const CardExpanded = ({ data, access, deck }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [smoothTransition, setSmoothTransition] = useState(true);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -100,44 +102,14 @@ const CardExpanded = ({ data, access }) => {
         onTouchMove={handleMove}
         onTouchEnd={resetRotation}
       >
-        <div className="card" style={cardStyle}>
-          {data.accessLevel > 0 && (
-            <div className="card-holo" style={holoStyle}></div>
-          )}
-          {data.type && data.type === "Deck" ? (
-            <div
-              className={`card-border border-deck`}
-              style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
-            ></div>
-          ) : (
-            <div
-              className={`card-border border-${data.accessLevel}`}
-              style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
-            ></div>
-          )}
-          {data.accessLevel > 0 && data.accessLevel > access && (
-            <div className={`card-locked locked-${data.accessLevel}`}></div>
-          )}{" "}
-          {data.type && data.type !== "Deck" && (
-            <>
-              <img
-                src={`/img/icon/${data.icon}.webp`}
-                alt={`${data.icon} icon`}
-                className="card-category"
-              />
-              <div className="card-id">
-                <span>
-                  {data.date.substring(0, 4)}-{data.id}
-                </span>
-              </div>
-              <img
-                src={`/img/cards/bwc-${data.accessLevel}.webp`}
-                alt={`BWC Level ${data.accessLevel}`}
-                className="card-rarity"
-              />
-            </>
-          )}
-        </div>
+        <MediaCarousel
+          cardData={data}
+          access={access}
+          deck={deck}
+          smoothTransition={smoothTransition}
+          cardStyle={cardStyle}
+          holoStyle={holoStyle}
+        />
       </div>
 
       <div className={`card-detail caption-${data.accessLevel}`}>
@@ -179,6 +151,25 @@ const CardExpanded = ({ data, access }) => {
             ) : (
               {}
             )}
+          </div>
+        )}
+
+        {data.type === "Deck" && (
+          <div className="deck-list-container">
+            <div className="deck-list">
+              {deck &&
+                deck.map((card, index) => (
+                  <Link to={`/bwc/${card.id}`}>
+                    <div key={index}>
+                      <img
+                        src={`/img/cards/bwc-${card.accessLevel}.webp`}
+                        alt={`BWC Level ${card.accessLevel}`}
+                      />{" "}
+                      {card.date.substring(0, 4)}-{card.id}: {card.title}
+                    </div>
+                  </Link>
+                ))}
+            </div>
           </div>
         )}
       </div>
