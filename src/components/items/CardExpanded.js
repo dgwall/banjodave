@@ -25,19 +25,6 @@ const CardExpanded = ({ data, access, deck }) => {
     const img = new Image();
     img.src = `/img/thumbnails/${data.id}.webp`;
     img.onload = () => setIsImageLoaded(true);
-    const preventDefault = (e) => e.preventDefault();
-    const cardContainer = cardContainerRef.current;
-    cardContainer.addEventListener("touchstart", preventDefault, {
-      passive: false,
-    });
-    cardContainer.addEventListener("touchmove", preventDefault, {
-      passive: false,
-    });
-
-    return () => {
-      cardContainer.removeEventListener("touchstart", preventDefault);
-      cardContainer.removeEventListener("touchmove", preventDefault);
-    };
   }, [data.id]);
 
   // Move handler

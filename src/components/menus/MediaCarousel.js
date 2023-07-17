@@ -26,6 +26,10 @@ const CustomIndicator = ({ onClick, isSelected, index, mediaType }) => (
   </li>
 );
 
+const preventTouch = (event) => {
+  event.preventDefault();
+};
+
 const MediaCarousel = ({
   cardData,
   access,
@@ -66,7 +70,7 @@ const MediaCarousel = ({
 
   const renderCard = () => {
     return (
-      <div className="card" style={cardStyle}>
+      <div className="card" style={cardStyle} onTouchMove={preventTouch}>
         {cardData.accessLevel > 0 && (
           <div className="card-holo" style={holoStyle}></div>
         )}

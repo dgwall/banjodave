@@ -575,6 +575,7 @@
 
 .main-cards .card-id span {
   background-color: rgba(0, 0, 0, 0.75);
+  padding: 0 0.2rem;
 }
 
 .main-cards .view-buttons.sort-buttons img {
@@ -660,13 +661,14 @@
 }
 
 .main-cards .deck-list a {
-  color: var(--hl-color);
+  color: var(--bt-color);
   text-decoration: none;
 }
 
 .main-cards .deck-list a:hover div {
   background-color: #ffffff11;
   border-color: transparent;
+  color: var(--hl-color);
 }
 
 @media screen and (max-width: 1280px) {
