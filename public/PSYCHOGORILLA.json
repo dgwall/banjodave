@@ -170,16 +170,31 @@
     "tagline": "Navigate the mysterious ruins and bulwarks on a demon-infested island.",
     "text": [
       "I've been making maps for 2D games for a while but I thought it was time to expand into Doom. I started learning how to use doom builder late October and am proud to release my first map! This is a 45-50 minute map that only works in GZDoom as far as I know. Uses stock Doom II textures. Difficulty levels available. Jump and crouch disabled. Mouselook optional. Save points are built in to the map so making your own saves is cheating.",
-
       "I tried to keep this map very classic in style, so no slopes or dynamic lights etc were used. I did have to use 3d floors for ceilings in places but that was more due to being naive about sectors and how the sky worked. If I were to remake this I would probably include more void sectors to improve performance. That being said, one of my favourite things about the map is the long lines of sight and being able to see parts of the map that are coming up next. I'm looking forward to making more maps in the future. I had a lot of fun making this so I hope you enjoy playing and let me know what you think!",
-
       "Special thanks to Bridgeburner's The Hellforge for answering my questions and providing a place to hang out. Thanks to the tutorials on DragonFly's website. Thanks to Major Arlene for playtesting."
     ],
     "buttons": [
       {
         "type": "download",
-        "href": "",
-        "label": "Download MALAGARD.wad 7.27 MB"
+        "href": "https://www.doomworld.com/applications/core/interface/file/attachment.php?id=71569",
+        "label": "Download MALAGARD.zip 1.2 MB"
+      },
+      {
+        "type": "external",
+        "href": "https://www.doomworld.com/forum/topic/110861-malagard-single-map-for-doom-ii/",
+        "label": "Doomworld Thread"
+      }
+    ],
+    "media": [
+      {
+        "type": "youtube",
+        "src": "49R2czv7OvM",
+        "alt": "MALAGARD Trailer (Single DOOM II Map)"
+      },
+      {
+        "type": "youtube",
+        "src": "XeTlhgpNu3I",
+        "alt": "MALAGARD Full Playthrough"
       }
     ]
   },
@@ -1513,7 +1528,7 @@
     "buttons": [
       {
         "type": "download",
-        "url": "/",
+        "href": "/",
         "label": "Download wallpaper-mobile-banjo-logo-dark-rays.png 1080x1920 534 KB"
       }
     ]
@@ -1533,7 +1548,7 @@
     "buttons": [
       {
         "type": "download",
-        "url": "/",
+        "href": "/",
         "label": "Download wallpaper-mobile-banjo-logo-dark-rays.png 1080x1920 534 KB"
       }
     ]
@@ -1552,7 +1567,7 @@
     "buttons": [
       {
         "type": "download",
-        "url": "/",
+        "href": "/",
         "label": "Download wallpaper-mobile-banjo-logo-dark-rays.png 1080x1920 534 KB"
       }
     ]

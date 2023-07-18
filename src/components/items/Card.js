@@ -1,10 +1,14 @@
 import React, { useState, useEffect } from "react";
 
 // Helper function to calculate rotation
-const calculateRotation = (e, element) => {
+const calculateRotation = (e, element, type) => {
   const { width, height, top, left } = element.getBoundingClientRect();
-  const x = 0.5 - (e.clientX - left) / width;
-  const y = 0.6 - (e.clientY - top) / height;
+  let x = 0.5 - (e.clientX - left) / width;
+  let y = 0.6 - (e.clientY - top) / height;
+  if (type === "Deck") {
+    x /= 2;
+    y /= 2;
+  }
   return { x: x * -10, y: y * 10 };
 };
 
@@ -22,7 +26,7 @@ const Card = ({ data, access }) => {
   // Mouse move handler
   const handleMouseMove = (e) => {
     setSmoothTransition(false);
-    const newRotation = calculateRotation(e, e.target);
+    const newRotation = calculateRotation(e, e.target, data.type);
     setRotation(newRotation);
   };
 
@@ -44,13 +48,14 @@ const Card = ({ data, access }) => {
     filter: `invert(${Math.abs(rotation.x) / 100}) brightness(${
       1 + (Math.abs(rotation.x) + rotation.y) / 30
     })`,
-    transform: `scale(${!smoothTransition ? "1.1" : "1"}) rotateY(${
-      rotation.x
-    }deg) rotateX(${rotation.y}deg)`,
+    transform: `scale(${
+      !smoothTransition ? (data.type === "Deck" ? "1.05" : "1.1") : "1"
+    }) rotateY(${rotation.x}deg) rotateX(${rotation.y}deg)`,
     transition: `${smoothTransition ? "1s" : "0s"}`,
     boxShadow: `${-rotation.x / 20}rem ${rotation.y / 20}rem ${
       ((Math.abs(rotation.x) / 20 + Math.abs(rotation.y) / 20) / 2) * 5
     }rem rgba(0, 0, 0, 0.75)`,
+    borderRadius: `${data.type === "Deck" ? "0.5vmin" : "1.5vmin"}`,
   };
 
   const holoStyle = {
@@ -95,16 +100,16 @@ const Card = ({ data, access }) => {
               alt={`${data.icon} icon`}
               className="card-category"
             />
-            <div className="card-id">
-              <span>
-                {data.date.substring(0, 4)}-{data.id}
-              </span>
-            </div>
             <img
               src={`/img/cards/bwc-${data.accessLevel}.webp`}
               alt={`BWC Level ${data.accessLevel}`}
               className="card-rarity"
             />
+            <div className="card-id">
+              <span>
+                {data.date.substring(0, 4)}-{data.id}
+              </span>
+            </div>
           </>
         )}
       </div>

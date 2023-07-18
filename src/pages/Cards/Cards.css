@@ -67,7 +67,7 @@
 }
 
 .main-cards .view-buttons button:focus:not(:disabled) {
-  outline: 3px double rgba(70, 181, 255, 0.5);
+  outline: 3px double rgba(70, 255, 240, 0.5);
 }
 
 .main-cards .view-buttons button:active:not(:disabled) {
@@ -248,11 +248,18 @@
   background-size: cover;
   background-position: center center;
   aspect-ratio: 0.7143;
-  border-radius: 1.5vmin;
   overflow: hidden;
   pointer-events: none;
   text-align: left;
   z-index: 1; /* Changed from -1 to 1 */
+}
+
+.card-card {
+  border-radius: 1.5vmin;
+}
+
+.card-deck {
+  border-radius: 0.5vmin;
 }
 
 .main-cards .card-container:hover .card-caption {
@@ -500,7 +507,7 @@
 .main-cards input:focus {
   background: #dddddd18;
   box-shadow: 0 0 0.2rem #ddddddaa inset;
-  outline: 3px double rgba(70, 181, 255, 0.5);
+  outline: 3px double rgba(70, 255, 240, 0.5);
   backdrop-filter: blur(2px);
   transition: 0s;
 }
@@ -571,9 +578,10 @@
   left: 0;
   width: 100%;
   text-align: center;
-  font-size: 1.5vmin;
+  font-size: 1.2vmin;
   color: #fff;
   opacity: 0.8;
+  font-family: monospace;
 }
 
 .main-cards .card-id span {

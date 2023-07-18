@@ -78,6 +78,7 @@ const CardExpanded = ({ data, access, deck }) => {
     boxShadow: `${-rotation.x / 20}rem ${
       rotation.y / 20
     }rem 0.5rem rgba(0, 0, 0, 0.75)`,
+    borderRadius: `${data.type === "Deck" ? "0.5vmin" : "1.5vmin"}`,
   };
 
   const holoStyle = {

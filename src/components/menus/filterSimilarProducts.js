@@ -1,7 +1,7 @@
 const filterSimilarProducts = (products, selectedProduct) => {
-  const selectedProductTagsSet = new Set(
-    selectedProduct.tags.map((tag) => tag.toLowerCase())
-  );
+  const selectedProductTagsSet = selectedProduct
+    ? new Set(selectedProduct.tags.map((tag) => tag.toLowerCase()))
+    : [];
 
   const similarItems = products.reduce((acc, product) => {
     if (product.id !== selectedProduct.id) {
