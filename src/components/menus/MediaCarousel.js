@@ -90,15 +90,12 @@ const MediaCarousel = ({
       case MEDIA_TYPE.IMAGE:
         return (
           <a
+            key={media.src}
             href={`/img/card-content/img/${media.src}`}
             target="_blank"
             rel="noreferrer"
           >
-            <img
-              key={media.src}
-              src={`/img/card-content/img/${media.src}`}
-              alt={media.alt}
-            />
+            <img src={`/img/card-content/img/${media.src}`} alt={media.alt} />
           </a>
         );
 

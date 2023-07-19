@@ -2330,17 +2330,6 @@
     ]
   },
   {
-    "id": "",
-    "type": "",
-    "title": "",
-    "tagline": "",
-    "deck": "",
-    "accessLevel": 0,
-    "date": "",
-    "theme": "",
-    "icon": ""
-  },
-  {
     "id": "NNNNNN",
     "type": "Deck",
     "title": "N",
@@ -2773,7 +2762,7 @@
     "theme": "oa",
     "icon": "website",
     "text": [
-      "A website I created just to brush up on my HTML and CSS but most importantly to learn more about editing utilising SVGs. Uses a visually engaging parallax scrolling effect."
+      "A website I created just to brush up on my HTML and CSS but more importantly to learn more about editing and utilising SVGs. Uses a visually engaging parallax scrolling effect."
     ],
     "media": [
       {
@@ -2797,5 +2786,48 @@
       "Sunset",
       "Web Development"
     ]
+  },
+  {
+    "id": "GDGJMS",
+    "type": "Card",
+    "title": "Malice Striker",
+    "tagline": "Play as the great serpent Nidhogg who chews the roots of Yggdrasil until Ragnarok.",
+    "deck": "Game Jams",
+    "accessLevel": 0,
+    "date": "2023-02-05",
+    "theme": "brown",
+    "icon": "game",
+    "text": [
+      "Made for Global Game Jam 2023 (the theme was \"roots\") at an in-person event in Dundee. Very glad to have gotten out of my comfort zone to attend. Make sure the roots don't manage to tap the wells of energy, while also consuming the souls of sinners to preserve your health.",
+      "Team: Me (Programming), with Ewan Gowans (Sound Effects), Alastair Low (Art Assets), Michael Shaw (Music)."
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://globalgamejam.org/2023/games/malice-striker-9",
+        "label": "View on Global Game Jam"
+      }
+    ],
+    "tags": [
+      "Global Game Jam",
+      "Game Jam",
+      "Game",
+      "Community Project",
+      "Snake",
+      "Mythical",
+      "Lowtek",
+      "Roots"
+    ]
+  },
+  {
+    "id": "",
+    "type": "",
+    "title": "",
+    "tagline": "",
+    "deck": "",
+    "accessLevel": 0,
+    "date": "",
+    "theme": "",
+    "icon": ""
   }
 ]

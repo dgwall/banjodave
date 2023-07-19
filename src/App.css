@@ -14,7 +14,22 @@ body {
 }
 
 button {
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
   font-family: "Dosis", sans-serif;
+  cursor: pointer;
+  outline: inherit;
+}
+
+button:active,
+button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
 }
 
 input {

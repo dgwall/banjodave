@@ -91,6 +91,7 @@ const CardExpanded = ({ data, access, deck }) => {
   };
 
   const containerStyle = {
+    backgroundImage: `url("/img/bg-card-selected.webp")`,
     backgroundPositionX: `${-rotation.x}px`,
     backgroundPositionY: `${-rotation.y}px`,
     transition: `${smoothTransition ? "1s" : "0s"}`,
@@ -168,7 +169,7 @@ const CardExpanded = ({ data, access, deck }) => {
         )}
 
         {data.type === "Deck" && (
-          <>
+          <div className="deck-sort-container">
             <div className="deck-sort">
               <div className="deck-list-header">
                 {sortedDeck.length} {data.title} Cards
@@ -211,7 +212,7 @@ const CardExpanded = ({ data, access, deck }) => {
                 ))}
               </tbody>
             </table>
-          </>
+          </div>
         )}
       </div>
     </div>

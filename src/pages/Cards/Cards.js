@@ -223,7 +223,7 @@ function Cards() {
   return (
     <>
       {selectedCard ? (
-        <div
+        <section
           className="card-selected"
           style={{
             "--bg-color": selectedTheme?.bg,
@@ -233,41 +233,48 @@ function Cards() {
             "--hl-a-color": hlAColor,
             "--hl-b-color": hlBColor,
           }}
+          tabIndex="0"
+          aria-label="Selected Card View"
+          role="contentinfo"
         >
           <CardExpanded
             data={selectedCard}
             access={ACCESS_LEVEL}
             deck={cardsInDeck}
           />
-        </div>
+        </section>
       ) : (
         <>
-          <h1>(Under Construction)</h1>
-          <h1>Banjeetz × BWC Preview</h1>
-          <h2>Digital Content Holo-Cards</h2>
-          <div>
-            <s>0 patrons</s>
-          </div>
-          <div>{cards.length} cards</div>
-          <div>0 crypto</div>
-          <div
-            style={{
-              fontSize: "small",
-              textAlign: "center",
-              width: "50%",
-              marginTop: "1rem",
-            }}
-          >
-            Top tags:{" "}
-            {topTags.map(
-              (tag, index) =>
-                `${tag.name}${index === topTags.length - 1 ? "..." : ", "}`
-            )}
-          </div>
+          <header role="banner">
+            <h1>(Under Construction)</h1>
+            <h1>Banjeetz × BWC Preview</h1>
+            <h2>Digital Content Holo-Cards</h2>
+          </header>
+          <main role="main">
+            <div>
+              <s>0 patrons</s>
+            </div>
+            <div>{cards.length} cards</div>
+            <div>0 crypto</div>
+            <div
+              style={{
+                fontSize: "small",
+                textAlign: "center",
+                width: "50%",
+                marginTop: "1rem",
+              }}
+            >
+              Top tags:{" "}
+              {topTags.map(
+                (tag, index) =>
+                  `${tag.name}${index === topTags.length - 1 ? "..." : ", "}`
+              )}
+            </div>
+          </main>
         </>
       )}
 
-      <div className="view-buttons">
+      <nav className="view-buttons">
         <input
           type="text"
           name="search"
@@ -278,8 +285,9 @@ function Cards() {
           onBlur={handleSearchBlur}
           placeholder="Search..."
           ref={searchInputRef}
+          aria-label="Search"
         />
-      </div>
+      </nav>
 
       <div className="view-buttons">
         <button onClick={toggleGroupMode}>
@@ -385,11 +393,16 @@ function Cards() {
         </button>
       </div>
 
-      <div className="cards-container">
+      <div className="cards-container" role="grid">
         {similarCards.slice(begin, end).map((card, index) => (
-          <div onClick={() => handleCardClick(card)} key={card.id}>
+          <button
+            onClick={() => handleCardClick(card)}
+            key={card.id}
+            tabIndex={0}
+            role="gridcell"
+          >
             <Card data={card} access={ACCESS_LEVEL} />
-          </div>
+          </button>
         ))}
         {!similarCards.length && "No cards found."}
       </div>
