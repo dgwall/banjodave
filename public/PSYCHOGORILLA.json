@@ -56,6 +56,23 @@
       "Magma",
       "Fire"
     ],
+    "media": [
+      {
+        "type": "image",
+        "src": "doom-bb-1.jpg",
+        "alt": "The beach that is blazing"
+      },
+      {
+        "type": "image",
+        "src": "doom-bb-2.jpg",
+        "alt": "Demon hordes on the ashen plains"
+      },
+      {
+        "type": "image",
+        "src": "doom-bb-3.jpg",
+        "alt": "The demon trenches"
+      }
+    ],
     "tagline": "An expansive magma shoreline with hordes of modded enemies",
     "text": [
       "I created this map to teach myself the basics of DECORATE and UDMF. It is a remake of the very beginning of my first proper map MALAGARD. Initially I was going to remake the entirety of MALAGARD in this style but ran into some issues. I designed this map to be a humungous space to explore but it quickly became too big and the node builder began to express unusual buggy sector behaviour and I had to cut the map short. I'm not sure the modifications I made to the player and enemies have entirely worked out but the map remains an interesting and unique experience."
@@ -195,6 +212,21 @@
         "type": "youtube",
         "src": "XeTlhgpNu3I",
         "alt": "MALAGARD Full Playthrough"
+      },
+      {
+        "type": "image",
+        "src": "doom-m-1.jpg",
+        "alt": "Assault the island"
+      },
+      {
+        "type": "image",
+        "src": "doom-m-2.jpg",
+        "alt": "Mysterious ruins"
+      },
+      {
+        "type": "image",
+        "src": "doom-m-3.jpg",
+        "alt": "The view from atop Blood Keep"
       }
     ]
   },
@@ -287,7 +319,7 @@
     "accessLevel": 1,
     "date": "2020-10-14",
     "title": "Bob Choblin",
-    "theme": "doom",
+    "theme": "blue",
     "icon": "doom",
     "tags": [
       "DOOM",
@@ -583,16 +615,30 @@
     ]
   },
   {
-    "id": "BDMTEC",
+    "id": "MTEMCI",
     "type": "Card",
-    "deck": "Music Track",
-    "accessLevel": 1,
+    "deck": "Music",
+    "accessLevel": 0,
     "date": "2022-02-22",
     "title": "Emerald City",
     "icon": "music",
     "tagline": "",
     "theme": "emerald",
-    "tags": ["Music", "Music Track", "Green", "Electronic", "Mellow"]
+    "tags": ["Music", "Music Track", "Green", "Electronic", "Mellow"],
+    "media": [
+      {
+        "type": "audio",
+        "src": "Banjeetz_Emerald-City",
+        "alt": "Emerald City by Banjeetz (mp3)"
+      }
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://soundcloud.com/anjoave/emerald-city",
+        "label": "Listen on SoundCloud"
+      }
+    ]
   },
   {
     "id": "DABLB1",
@@ -1630,7 +1676,7 @@
     "tags": ["Pebblemoth", "Preview"]
   },
   {
-    "id": "DABJXL",
+    "id": "BJXLTD",
     "type": "Card",
     "deck": "Misc",
     "accessLevel": 1,
@@ -1653,7 +1699,7 @@
     "theme": "dark",
     "icon": "website",
     "text": [
-      "I designed a logo for and worked on creating a Discord knock-off. I had user account creation and email verification working, and made the front-end for the chatrooms with Chakra UI."
+      "I designed a logo for and worked on creating a Discord knock-off. I had user account creation and email verification working using Zustand for state management, and made the front-end for the chatrooms with Chakra UI."
     ],
     "media": [
       {
@@ -1680,7 +1726,7 @@
   {
     "id": "MTRUDE",
     "type": "Card",
-    "deck": "Music Tracks",
+    "deck": "Music",
     "accessLevel": 0,
     "date": "2015-06-21",
     "title": "Rudeolf",
@@ -1695,7 +1741,7 @@
       {
         "type": "audio",
         "src": "BanjoDave_Rudeolf",
-        "alt": "BanjoDave_Rudeolf.mp3"
+        "alt": "Rudeolf by BanjoDave (mp3)"
       }
     ],
     "buttons": [
@@ -2818,16 +2864,5 @@
       "Lowtek",
       "Roots"
     ]
-  },
-  {
-    "id": "",
-    "type": "",
-    "title": "",
-    "tagline": "",
-    "deck": "",
-    "accessLevel": 0,
-    "date": "",
-    "theme": "",
-    "icon": ""
   }
 ]

@@ -78,6 +78,18 @@ export const cardThemes = [
     hl: "#482f1c",
   },
   {
+    name: "pebblemoth",
+    bg: "#08000a",
+    fg: "#907060",
+    hl: "#9365a2",
+  },
+  {
+    name: "bjx",
+    bg: "#eaeaea",
+    fg: "#080808",
+    hl: "#c5b42f",
+  },
+  {
     name: "darkforest",
     bg: "#11120a",
     fg: "#d1b68b",
@@ -130,5 +142,11 @@ export const cardThemes = [
     bg: "#6f533d",
     fg: "#ffffff",
     hl: "#008080",
+  },
+  {
+    name: "blue",
+    bg: "#5e6e89",
+    fg: "#0d3159",
+    hl: "#c9f2af",
   },
 ];

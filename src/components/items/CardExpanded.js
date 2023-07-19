@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import MediaCarousel from "../menus/MediaCarousel";
 
 // Helper function to calculate rotation
-const calculateRotation = (e, element) => {
+const calculateRotation = (e, element, type) => {
   const clientX = e.type.startsWith("touch") ? e.touches[0].clientX : e.clientX;
   const clientY = e.type.startsWith("touch") ? e.touches[0].clientY : e.clientY;
   const { width, height, top, left } = element.getBoundingClientRect();
@@ -12,6 +12,10 @@ const calculateRotation = (e, element) => {
   // Cap rotation values
   x = Math.max(Math.min(x, 2), -2);
   y = Math.max(Math.min(y, 2), -2);
+  if (type === "Deck") {
+    x /= 2;
+    y /= 2;
+  }
   return { x: x * -10, y: y * 10 };
 };
 
@@ -51,7 +55,7 @@ const CardExpanded = ({ data, access, deck }) => {
   // Move handler
   const handleMove = (e) => {
     setSmoothTransition(false);
-    const newRotation = calculateRotation(e, e.currentTarget);
+    const newRotation = calculateRotation(e, e.currentTarget, data.type);
     setRotation(newRotation);
   };
 

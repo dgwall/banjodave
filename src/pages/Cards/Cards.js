@@ -92,13 +92,18 @@ function Cards() {
   useEffect(() => {
     if (cards.length && cardId) {
       const card = cards.find((card) => card.id.toString() === cardId);
-      setSelectedCard(card);
-      setViewMode("similar");
+      if (card) {
+        setSelectedCard(card);
+        setViewMode("similar");
 
-      if (card.type === "Deck") {
-        setGroupMode("deck");
+        if (card.type === "Deck") {
+          setGroupMode("deck");
+        } else {
+          setGroupMode("card");
+        }
       } else {
-        setGroupMode("card");
+        // Handle the case where the card does not exist
+        navigate("/bwc"); // Redirect to the main page or a 404 page
       }
     }
     // reset state when the location pathname becomes "/"
@@ -109,7 +114,7 @@ function Cards() {
       setCurrentPage(1);
       setSearchTerm("");
     }
-  }, [cards, cardId, location]);
+  }, [cards, cardId, location, navigate]);
 
   // handler for card click
   const handleCardClick = (card) => {
@@ -181,9 +186,11 @@ function Cards() {
     setIsShowingRestrictedCards((prevState) => !prevState);
   };
 
+  /*
   const toggleGroupMode = () => {
     setGroupMode((prevState) => (prevState === "card" ? "deck" : "card"));
   };
+  */
 
   useEffect(() => {
     let accessFilteredCards = [...cards];
@@ -193,6 +200,7 @@ function Cards() {
       );
     }
     let displayedCards = accessFilteredCards;
+    /*
     if (groupMode === "card") {
       displayedCards = accessFilteredCards.filter(
         (card) => card.type === "Card"
@@ -201,7 +209,7 @@ function Cards() {
       displayedCards = accessFilteredCards.filter(
         (card) => card.type === "Deck"
       );
-    }
+    }*/
     setCurrentPage(1);
     // Sort cards based on viewMode after filtering
     const sortedCards = sortCards(
@@ -289,6 +297,7 @@ function Cards() {
         />
       </nav>
 
+      {/*
       <div className="view-buttons">
         <button onClick={toggleGroupMode}>
           {groupMode === "card" ? (
@@ -300,32 +309,8 @@ function Cards() {
               <img src="/img/icon/expand.svg" alt="Expand" /> Card View
             </>
           )}
-        </button>
-        <button
-          onClick={removeRestrictedCards}
-          disabled={ACCESS_LEVEL === 3 ? true : false}
-        >
-          {isShowingRestrictedCards ? (
-            <>
-              <img
-                src="/img/icon/bwc-inverted.webp"
-                alt="BWC icon"
-                style={{ filter: "invert(100%)" }}
-              />{" "}
-              Hide Locked
-            </>
-          ) : (
-            <>
-              <img
-                src="/img/icon/bwc.webp"
-                alt="BWC icon"
-                style={{ filter: "invert(100%)" }}
-              />{" "}
-              Show Locked
-            </>
-          )}
-        </button>
-      </div>
+          </button>
+      </div>*/}
 
       <div className="view-buttons sort-buttons">
         {selectedCard && (
@@ -357,6 +342,43 @@ function Cards() {
         >
           <img src="/img/icon/shuffle.svg" alt="Shuffle icon" /> Shuffle
         </button>
+        <button
+          onClick={removeRestrictedCards}
+          disabled={ACCESS_LEVEL === 3 ? true : false}
+        >
+          {isShowingRestrictedCards ? (
+            <>
+              <img
+                src="/img/icon/bwc-inverted.webp"
+                alt="BWC icon"
+                style={{ filter: "invert(100%)" }}
+              />{" "}
+              Hide Locked
+            </>
+          ) : (
+            <>
+              <img
+                src="/img/icon/bwc.webp"
+                alt="BWC icon"
+                style={{ filter: "invert(100%)" }}
+              />{" "}
+              Show Locked
+            </>
+          )}
+        </button>
+      </div>
+
+      <div className="cards-container" role="grid">
+        {similarCards.slice(begin, end).map((card, index) => (
+          <button
+            onClick={() => handleCardClick(card)}
+            key={card.id}
+            tabIndex={0}
+            role="gridcell"
+          >
+            <Card data={card} access={ACCESS_LEVEL} />
+          </button>
+        ))}
       </div>
 
       <div className="view-buttons">
@@ -373,6 +395,15 @@ function Cards() {
         >
           <img src="/img/icon/chevron-left.svg" alt="Back 1 page" />
         </button>
+
+        <div
+          className="page-number"
+          style={{ color: !totalPages && "#be6868" }}
+        >
+          {totalPages
+            ? `Page ${currentPage} / ${totalPages}`
+            : "No cards found"}
+        </div>
 
         <button
           onClick={handleForward}
@@ -392,56 +423,6 @@ function Cards() {
           <img src="/img/icon/chevrons-right.svg" alt="Last page" />
         </button>
       </div>
-
-      <div className="cards-container" role="grid">
-        {similarCards.slice(begin, end).map((card, index) => (
-          <button
-            onClick={() => handleCardClick(card)}
-            key={card.id}
-            tabIndex={0}
-            role="gridcell"
-          >
-            <Card data={card} access={ACCESS_LEVEL} />
-          </button>
-        ))}
-        {!similarCards.length && "No cards found."}
-      </div>
-
-      {!selectedCard && (
-        <div className="view-buttons">
-          <button
-            onClick={handleFirst}
-            disabled={!similarCards.length || currentPage === 1 ? true : false}
-          >
-            <img src="/img/icon/chevrons-left.svg" alt="Back to page 1" />
-          </button>
-
-          <button
-            onClick={handleBack}
-            disabled={!similarCards.length || currentPage === 1 ? true : false}
-          >
-            <img src="/img/icon/chevron-left.svg" alt="Back 1 page" />
-          </button>
-
-          <button
-            onClick={handleForward}
-            disabled={
-              !similarCards.length || currentPage === totalPages ? true : false
-            }
-          >
-            <img src="/img/icon/chevron-right.svg" alt="Back 1 page" />
-          </button>
-
-          <button
-            onClick={handleLast}
-            disabled={
-              !similarCards.length || currentPage === totalPages ? true : false
-            }
-          >
-            <img src="/img/icon/chevrons-right.svg" alt="Last page" />
-          </button>
-        </div>
-      )}
     </>
   );
 }

@@ -69,7 +69,9 @@ const Card = ({ data, access }) => {
 
   return (
     <div
-      className={`card-container ${isImageLoaded ? "fade-in" : ""}`}
+      className={`card-container ${isImageLoaded ? "fade-in" : ""} ${
+        data.type === "Deck" && "deck-container"
+      }`}
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={resetRotation}
@@ -113,7 +115,11 @@ const Card = ({ data, access }) => {
           </>
         )}
       </div>
-      <div className={`card-caption caption-${data.accessLevel}`}>
+      <div
+        className={`card-caption caption-${data.accessLevel} ${
+          data.type === "Deck" && "deck-caption"
+        }`}
+      >
         {data.title}
       </div>
     </div>

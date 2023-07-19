@@ -95,7 +95,13 @@ const MediaCarousel = ({
             target="_blank"
             rel="noreferrer"
           >
-            <img src={`/img/card-content/img/${media.src}`} alt={media.alt} />
+            <img
+              src={`/img/card-content/img/${media.src}`}
+              alt={media.alt}
+              className="carousel-image"
+            />
+            <br />
+            {media.alt}
           </a>
         );
 

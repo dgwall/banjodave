@@ -27,6 +27,7 @@
   display: flex;
   flex-direction: row;
   margin: 1vmin;
+  vertical-align: top;
 }
 
 .main-cards .view-buttons button {
@@ -47,6 +48,22 @@
   color: black;
   border-bottom: 2px solid gray;
 }
+
+.main-cards .view-buttons .page-number {
+  border: 1px solid #ffffff22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  margin: 0 1vmin;
+  padding: 12px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  border-radius: 1vmin;
+  color: #bbb;
+}
+
 .main-cards .view-buttons button img {
   height: 1.5rem;
   width: 1.5rem;
@@ -138,6 +155,7 @@
   z-index: 1;
   border-radius: 1vmin;
   cursor: pointer;
+  border: 1px solid transparent;
 }
 
 .main-cards .carousel-container {
@@ -168,8 +186,13 @@
 .main-cards audio,
 .main-cards video,
 .main-cards iframe {
-  width: 80%;
+  max-width: 80%;
   border-radius: 1vmin;
+}
+
+.main-cards .carousel-image {
+  border-radius: 1vmin;
+  margin: 1.5vmin 0;
 }
 
 .main-cards iframe {
@@ -206,7 +229,7 @@
 }
 
 .main-cards .cards-container .card-container {
-  margin-bottom: 2vmin;
+  margin-bottom: 0.5vmin;
 }
 
 .main-cards .indicator-item {
@@ -225,6 +248,7 @@
 .main-cards .indicator-item--active,
 .main-cards .indicator-item:hover {
   opacity: 1;
+  border: 1px solid #ffffff33;
 }
 
 .main-cards .indicator-item--active {
@@ -232,7 +256,7 @@
 }
 
 .main-cards .indicator-item:hover {
-  border: 1px solid #ffffff66;
+  border: 1px solid #ffffff;
 }
 
 .main-cards .indicator-item img {
@@ -284,9 +308,15 @@
   text-shadow: 0 -1px 0 black;
 }
 
-.main-cards .thumbreel {
-  position: absolute;
-  z-index: 2;
+.main-cards .deck-container {
+  background-color: #be996811;
+  border-radius: 0.5vmin;
+  border: 1px solid #ffffff33;
+}
+
+.main-cards .deck-container .deck-caption {
+  font-variant: small-caps;
+  color: #d8b990 !important;
 }
 
 .main-cards .card-container .caption-0 {
@@ -416,6 +446,7 @@
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-bottom: 2vmin;
 }
 
 .main-cards .card-expanded .card-detail .card-title {
@@ -432,16 +463,17 @@
   font-size: 1.5rem;
   text-align: center;
   padding: 0 2vmin;
+  margin-bottom: 2vmin;
 }
 
 .main-cards .card-expanded .card-detail .card-text {
   text-indent: 3rem;
   text-align: justify;
   padding: 0 2vmin;
-  box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.35);
   background-color: rgba(255, 255, 255, 0.075);
   border-radius: 1vmin;
-  margin: 2vmin;
+  margin: 0 2vmin;
   border: 1px solid #ffffff11;
 }
 
@@ -467,7 +499,9 @@
   cursor: pointer;
   color: var(--bt-color);
   border-bottom: 2px solid var(--hl-b-color);
-  margin: 2vmin;
+  box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.35);
+  position: relative;
+  margin: 2vmin 2vmin 0 2vmin;
 }
 
 .main-cards input {
@@ -516,8 +550,10 @@
 .main-cards .buttons a:active {
   position: relative;
   top: 2px;
-  border-bottom: none;
+  border-bottom: 2px solid transparent;
   background: var(--hl-b-color);
+  box-shadow: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .main-cards .buttons a:not(:last-child) {
@@ -632,6 +668,7 @@ td {
 }
 
 .main-cards .cards-container .card-container {
+  padding: 0.5vmin;
   opacity: 0;
   transition: opacity 1s ease;
 }
@@ -651,8 +688,8 @@ td {
 .deck-sort-container {
   border-radius: 1vmin;
   overflow: hidden;
-  margin: 0 2vmin 0 2vmin;
-  box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.5);
+  margin: 2vmin 2vmin 0 2vmin;
+  box-shadow: 0 0.1rem 0.25rem rgba(0, 0, 0, 0.35);
 }
 
 .main-cards .deck-list-container {
@@ -664,7 +701,7 @@ td {
   display: block;
   background-color: #00000035;
   overflow-y: scroll;
-  max-height: 13rem;
+  max-height: 12.2rem;
   font-family: monospace;
   border-collapse: collapse;
   border-spacing: 0;
@@ -717,7 +754,7 @@ td {
   left: 0;
   width: 100%;
   height: 100%;
-  max-height: 2rem;
+  max-height: calc(1rem + 2px);
 }
 
 .deck-list tr:not(:first-child) {
@@ -790,6 +827,11 @@ tbody tr {
   object-fit: contain;
 }
 
+.main-cards .slide a {
+  text-decoration: none;
+  color: #eee;
+}
+
 .main-cards main div {
   text-align: center;
   margin: auto;
@@ -800,6 +842,15 @@ tbody tr {
   outline: 3px double #67ffc5;
   transition: 0s;
   border-radius: 0.5vmin;
+}
+
+.main-cards .control-dots {
+  opacity: 0.3;
+  transition: opacity 0.2s;
+}
+
+.main-cards .control-dots:hover {
+  opacity: 1;
 }
 
 @media screen and (max-width: 1280px) {
@@ -861,8 +912,5 @@ tbody tr {
   }
   .main-cards .card-selected .card {
     max-width: 30vw;
-  }
-  .main-cards .deck-sort-container {
-    margin-bottom: 2vmin;
   }
 }
