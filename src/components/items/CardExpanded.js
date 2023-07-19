@@ -134,7 +134,13 @@ const CardExpanded = ({ data, access, deck }) => {
             <div className="buttons">
               {data.buttons &&
                 data.buttons.map((button, index) => (
-                  <a key={index} href={button.href} className="button">
+                  <a
+                    key={index}
+                    href={button.href}
+                    className="button"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     {button.label}
                   </a>
                 ))}
@@ -164,17 +170,25 @@ const CardExpanded = ({ data, access, deck }) => {
         {data.type === "Deck" && (
           <>
             <div className="deck-sort">
-              Sort deck by:
-              <div className="min" onClick={() => requestSort("accessLevel")}>
+              <div className="deck-list-header">
+                {sortedDeck.length} {data.title} Cards
+              </div>
+              <div className="sort">Sort by:</div>
+              <div
+                className="sort-by"
+                onClick={() => requestSort("accessLevel")}
+              >
                 LVL
               </div>
-              <div className="min" onClick={() => requestSort("date")}>
+              <div className="sort-by" onClick={() => requestSort("date")}>
                 Date
               </div>
-              <div className="min" onClick={() => requestSort("id")}>
+              <div className="sort-by" onClick={() => requestSort("id")}>
                 ID
               </div>
-              <div onClick={() => requestSort("title")}>Title</div>
+              <div className="sort-by" onClick={() => requestSort("title")}>
+                Title
+              </div>
             </div>
             <table className="deck-list-container">
               <tbody className="deck-list">

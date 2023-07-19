@@ -66,7 +66,7 @@
     "type": "Card",
     "deck": "BanjoDOOM",
     "accessLevel": 0,
-    "date": "2020-06-09",
+    "date": "2020-10-29",
     "title": "Deep Underground Military Bunker",
     "tagline": "A strange mist is making people crazy in this secret base, and your prison door just unlocked itself.",
     "theme": "dark-red",
@@ -199,11 +199,11 @@
     ]
   },
   {
-    "id": "DW40RO",
+    "id": "NROOTT",
     "type": "Card",
     "deck": "N",
     "accessLevel": 0,
-    "date": "",
+    "date": "2018-06-10",
     "title": "rootootoot",
     "theme": "n",
     "icon": "n",
@@ -357,7 +357,7 @@
     "type": "Card",
     "deck": "Physical Art",
     "accessLevel": 0,
-    "date": "2023-18-01",
+    "date": "2023-01-18",
     "title": "Wrath",
     "theme": "fireblu",
     "icon": "art",
@@ -461,7 +461,7 @@
     "type": "Card",
     "deck": "Pebblemoths",
     "accessLevel": 0,
-    "date": "",
+    "date": "2022-09-06",
     "title": "Pebblemoth #034",
     "theme": "salt",
     "icon": "pebblemoth-egg",
@@ -718,7 +718,7 @@
     "id": "DABLB3",
     "type": "Card",
     "deck": "Banjo League",
-    "accessLevel": 1,
+    "accessLevel": 0,
     "date": "2022-11-28",
     "title": "Silver Badge",
     "tagline": "Banjo League Award",
@@ -1518,12 +1518,12 @@
     "id": "DABLAD",
     "type": "Card",
     "deck": "Digital Art",
-    "accessLevel": 1,
-    "date": "",
+    "accessLevel": 0,
+    "date": "2022-11-14",
     "title": "Banjeetz Life and Death",
     "tagline": "Twitter Header",
     "theme": "darkforest",
-    "icon": "ai",
+    "icon": "art",
     "tags": ["Digital Art", "Twitter", "AI Assisted", "Logo", "Banjeetz"],
     "buttons": [
       {
@@ -1634,8 +1634,8 @@
     "type": "Card",
     "deck": "Misc",
     "accessLevel": 1,
-    "date": "",
-    "title": "BJX",
+    "date": "2023-01-27",
+    "title": "BJX Trading Ltd.",
     "tagline": "BanjoCoin Exchange.",
     "theme": "bjx",
     "icon": "bjx",
@@ -1643,17 +1643,29 @@
     "tags": ["BanjoCoin", "Digital Art", "Logo", "Crypto"]
   },
   {
-    "id": "DADISC",
+    "id": "WEBDIS",
     "type": "Card",
     "deck": "Websites",
     "accessLevel": 1,
-    "date": "",
+    "date": "2023-01-10",
     "title": "Discontent",
     "tagline": "A discarded Discord clone.",
     "theme": "dark",
-    "icon": "art",
+    "icon": "website",
     "text": [
       "I designed a logo for and worked on creating a Discord knock-off. I had user account creation and email verification working, and made the front-end for the chatrooms with Chakra UI."
+    ],
+    "media": [
+      {
+        "type": "image",
+        "src": "discontent-logo-banner.png",
+        "alt": "Discontent Logo Banner"
+      },
+      {
+        "type": "image",
+        "src": "discontent-screenshot.png",
+        "alt": "Discontent Screenshot"
+      }
     ],
     "tags": [
       "Discontent",
@@ -1670,12 +1682,29 @@
     "type": "Card",
     "deck": "Music Tracks",
     "accessLevel": 0,
-    "date": "",
+    "date": "2015-06-21",
     "title": "Rudeolf",
-    "tagline": "Rudeolf the red-nosed raindeer.",
+    "tagline": "rudolph the red-nosed reindeer all of the other reindeer",
     "theme": "basic-red",
     "icon": "music",
-    "tags": ["Music", "Music Track", "Stupid", "Meme", "Remix"]
+    "text": [
+      "Lyrics: rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer you'll go down in history (yeah)"
+    ],
+    "tags": ["Music", "Music Track", "Stupid", "Meme", "Remix", "Soundcloud"],
+    "media": [
+      {
+        "type": "audio",
+        "src": "BanjoDave_Rudeolf",
+        "alt": "BanjoDave_Rudeolf.mp3"
+      }
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://soundcloud.com/anjoave/rudeolf",
+        "label": "Listen on SoundCloud"
+      }
+    ]
   },
   {
     "id": "CBDB01",
@@ -1827,7 +1856,7 @@
     "type": "Card",
     "deck": "Bop Drumps",
     "accessLevel": 1,
-    "date": "2023-07-13",
+    "date": "2021-08-10",
     "title": "GNOME BOY",
     "tagline": "Bop Drumps beta card #7",
     "theme": "white",
@@ -1850,7 +1879,7 @@
     "type": "Card",
     "deck": "Bop Drumps",
     "accessLevel": 2,
-    "date": "2023-07-13",
+    "date": "2021-08-10",
     "title": "GEM GUARDIAN",
     "tagline": "Bop Drumps beta card #8",
     "theme": "white",
@@ -1883,7 +1912,7 @@
     "type": "Card",
     "deck": "Bop Drumps",
     "accessLevel": 0,
-    "date": "2023-07-13",
+    "date": "2021-08-10",
     "title": "TOPOLOGY MIKE",
     "tagline": "Bop Drumps beta card #9",
     "theme": "white",
@@ -2253,7 +2282,7 @@
     "deck": "Archive",
     "accessLevel": 2,
     "date": "2005-05-11",
-    "title": "Optical Illusion.bmp",
+    "title": "Optical Illusion",
     "tagline": "The 18 year long collab",
     "theme": "white",
     "icon": "home",
@@ -2279,6 +2308,13 @@
     "tagline": "2005 stickman gore series",
     "theme": "white",
     "icon": "home",
+    "media": [
+      {
+        "type": "image",
+        "src": "scan-space-warz.jpg",
+        "alt": "SPACE WARZ Scan"
+      }
+    ],
     "tags": [
       "Stickman Gore",
       "Physical Art",
@@ -2291,6 +2327,475 @@
       "Alien",
       "Archive",
       "2000s"
+    ]
+  },
+  {
+    "id": "",
+    "type": "",
+    "title": "",
+    "tagline": "",
+    "deck": "",
+    "accessLevel": 0,
+    "date": "",
+    "theme": "",
+    "icon": ""
+  },
+  {
+    "id": "NNNNNN",
+    "type": "Deck",
+    "title": "N",
+    "tagline": "N Maps by DW40",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2019-06-05",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "In N by Metanet Software, you step into the agile shoes of a ninja, gifted with unparalleled speed, dexterity, and a lifespan of 1.5 minutes. Your world is a universe governed by physics, where momentum is your ally and trajectory your guiding star. Amidst your fleeting existence, you are called upon to navigate through rooms teeming with lethal robotic adversaries and an array of hazards, while always seeking the allure of gold.",
+      "The heart of N beats in its vibrant community, where disciples of the game exercise their creativity in crafting and sharing custom maps to NUMA. These user-generated levels add a spectrum of novel challenges, turning this platformer into an ever-evolving digital playground where each new map is a testament to the collective creativity and ingenuity of its players.",
+      "The maps on this website and on NUMA are designed for version 1.4 of the game, released in 2005. You can find a free download of this version here."
+    ],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "/n_v1pc.zip",
+        "label": "Download N v1.4 for PC (n_v1pc.zip) 1.26 MB"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14400",
+    "type": "Card",
+    "title": "6*10mm #00",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2019-06-05",
+    "theme": "n",
+    "icon": "n",
+    "text": ["noble, ennui, Grassman, Falling Beam, Six Grays, Troubadour"],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/72be71024daee08841",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14401",
+    "type": "Card",
+    "title": "6*10mm #01",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2022-07-02",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "moontower, SOLAR DESTRUCTOR, everplace, goa'uld, reign in tears in rain, sons of fire"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/cf37a1407a392188e3",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14402",
+    "type": "Card",
+    "title": "6*10mm #02",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2022-07-09",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "Anubis, Asgard Hyperdrive, breath on my own, holy orb, FN P90, cragon"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/009c010db8407cd3b2",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14403",
+    "type": "Card",
+    "title": "6*10mm #03",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2022-08-03",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "a sound out of nowhere, fly with me, silkygray falacy, fragmentation parade, Ghost in the Smell, holographic caper"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/26de5caaa3baa97b07",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14404",
+    "type": "Card",
+    "title": "6*10mm #04",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2022-08-10",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "evil lyre, cauldron of slaughter, dragonoidal, digital smokables, WHAM MAW, Cactaceae"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/c118b15b550ac24cbb",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14405",
+    "type": "Card",
+    "title": "6*10mm #05",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2022-08-24",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "triangle schranz, looseY JUICY, ascendant, splooter splodge, honey click, skeleton fren"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/001271f41c29695594",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14406",
+    "type": "Card",
+    "title": "6*10mm #06",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2022-08-31",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "phonk face, garbage collection, ARRHYTHMIA, emissary of the dark tower, growth factor, took it too fario bros"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/7fc49c06b0ac135dd1",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14407",
+    "type": "Card",
+    "title": "6*10mm #07",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2022-09-07",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "hump day in hell, close waive, estyle, feeling things, goblin forest, burn the sun"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/fa9bd523109a0c3b52",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14408",
+    "type": "Card",
+    "title": "6*10mm #08",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2022-10-12",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "dead if you do, betteroffagon, galesoon, Tower of Havel, Tommy Hellfinger, Intrusion Countermeasures Electronics"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/8109136229ec723ee7",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14409",
+    "type": "Card",
+    "title": "6*10mm #09",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2022-10-19",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "frugal, Technical drone metal, alison, 2007, Nothing said, Christ Conscious"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/15ab6e0c05edb45876",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14410",
+    "type": "Card",
+    "title": "6*10mm #10",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2022-10-26",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "these fries are bussin on god fr fr, Howling outside your door, all they do is turn, Chasers, buy and forget, capture this"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/b69a7189da6971109c",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "N14411",
+    "type": "Card",
+    "title": "6*10mm #11",
+    "tagline": "6 maps made in an hour",
+    "deck": "N",
+    "accessLevel": 0,
+    "date": "2023-05-26",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "The Theme is Roots, Compo-cross, the claaaw, Wraith Chafe, The Small Boss aka Fists of Mid, Chocolope"
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/b91cbbebaba8a67823",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Speedmap",
+      "6*10mm",
+      "144*10mm",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "NFISSR",
+    "type": "Card",
+    "title": "Fissure",
+    "tagline": "Lost mappack for N v1.4 from 2007 containing my oldest maps.",
+    "deck": "N",
+    "accessLevel": 1,
+    "date": "2007-08-17",
+    "theme": "n",
+    "icon": "n",
+    "text": [
+      "I rediscovered an old file burned onto a CD-R containing some of my oldest N maps dating back to 2007. Recently I filled in the gaps with more old maps and compiled the final version of this forgotten project. 175 maps."
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/3c577347015a57ee1c",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "tags": [
+      "Fissure",
+      "Throwback",
+      "Lost Maps",
+      "Archive",
+      "CD",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ]
+  },
+  {
+    "id": "WEBOUT",
+    "type": "Card",
+    "title": "Outback Adventures",
+    "tagline": "Discover the beauty of Australia",
+    "deck": "Websites",
+    "accessLevel": 1,
+    "date": "2023-02-04",
+    "theme": "oa",
+    "icon": "website",
+    "text": [
+      "A website I created just to brush up on my HTML and CSS but most importantly to learn more about editing utilising SVGs. Uses a visually engaging parallax scrolling effect."
+    ],
+    "media": [
+      {
+        "type": "image",
+        "src": "website-outback-adventures.jpg",
+        "alt": "Outback Adventures Screenshot"
+      }
+    ],
+    "buttons": [
+      {
+        "type": "internal",
+        "href": "/portfolio/oa/",
+        "label": "Visit Outback Adventures"
+      }
+    ],
+    "tags": [
+      "Website",
+      "Professional",
+      "Australia",
+      "Adventure",
+      "Sunset",
+      "Web Development"
     ]
   }
 ]

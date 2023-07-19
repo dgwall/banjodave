@@ -89,18 +89,24 @@ const MediaCarousel = ({
     switch (media.type) {
       case MEDIA_TYPE.IMAGE:
         return (
-          <img
-            key={media.src}
-            src={`/img/card-img/${media.src}.webp`}
-            alt={media.alt}
-          />
+          <a
+            href={`/img/card-content/img/${media.src}`}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              key={media.src}
+              src={`/img/card-content/img/${media.src}`}
+              alt={media.alt}
+            />
+          </a>
         );
 
       case MEDIA_TYPE.VIDEO:
         return (
           <video
             key={media.src}
-            src={`/img/card-vid/${media.src}.webm`}
+            src={`/img/card-content/vid/${media.src}.webm`}
             controls
           />
         );
@@ -109,7 +115,7 @@ const MediaCarousel = ({
         return (
           <audio
             key={media.src}
-            src={`/img/card-mp3/${media.src}.mp3`}
+            src={`/img/card-content/mp3/${media.src}.mp3`}
             controls
           />
         );
@@ -120,7 +126,6 @@ const MediaCarousel = ({
             key={media.src}
             src={`https://www.youtube.com/embed/${media.src}`}
             title="YouTube video player"
-            frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
           ></iframe>

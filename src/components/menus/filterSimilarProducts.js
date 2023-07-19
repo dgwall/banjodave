@@ -1,4 +1,6 @@
 const filterSimilarProducts = (products, selectedProduct) => {
+  if (!selectedProduct.tags) return products;
+
   const selectedProductTagsSet = selectedProduct
     ? new Set(selectedProduct.tags.map((tag) => tag.toLowerCase()))
     : [];
@@ -6,15 +8,16 @@ const filterSimilarProducts = (products, selectedProduct) => {
   const similarItems = products.reduce((acc, product) => {
     if (product.id !== selectedProduct.id) {
       let sharedTagsWeightedSum = 0;
-      product.tags.forEach((tag, index) => {
-        const lowerCaseTag = tag.toLowerCase();
-        if (selectedProductTagsSet.has(lowerCaseTag)) {
-          // Compute a weight based on the position of the tag
-          const weight =
-            (product.tags.length + 1 - index) / product.tags.length;
-          sharedTagsWeightedSum += weight;
-        }
-      });
+      product.tags &&
+        product.tags.forEach((tag, index) => {
+          const lowerCaseTag = tag.toLowerCase();
+          if (selectedProductTagsSet.has(lowerCaseTag)) {
+            // Compute a weight based on the position of the tag
+            const weight =
+              (product.tags.length + 1 - index) / product.tags.length;
+            sharedTagsWeightedSum += weight;
+          }
+        });
       acc.push({ ...product, sharedTagsWeightedSum });
     }
     return acc;

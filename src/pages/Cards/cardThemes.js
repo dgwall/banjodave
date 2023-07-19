@@ -119,4 +119,10 @@ export const cardThemes = [
     fg: "#5f8c36",
     hl: "#365626",
   },
+  {
+    name: "oa",
+    bg: "#265b7a",
+    fg: "#eeeffe",
+    hl: "#c07436",
+  },
 ];

@@ -93,11 +93,19 @@ function Cards() {
     if (cards.length && cardId) {
       const card = cards.find((card) => card.id.toString() === cardId);
       setSelectedCard(card);
+      setViewMode("similar");
+
+      if (card.type === "Deck") {
+        setGroupMode("deck");
+      } else {
+        setGroupMode("card");
+      }
     }
     // reset state when the location pathname becomes "/"
     else if (location.pathname === "/bwc") {
       setSelectedCard(null);
       setViewMode("newest");
+      setGroupMode("card");
       setCurrentPage(1);
       setSearchTerm("");
     }
@@ -234,6 +242,7 @@ function Cards() {
         </div>
       ) : (
         <>
+          <h1>(Under Construction)</h1>
           <h1>Banjeetz × BWC Preview</h1>
           <h2>Digital Content Holo-Cards</h2>
           <div>
