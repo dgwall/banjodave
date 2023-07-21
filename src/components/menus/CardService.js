@@ -58,10 +58,10 @@ export function sortCards(cards, viewMode, selectedCard, searchTerm) {
       return filterSimilarProducts(cards, selectedCard);
     case "alphabetical":
       return [...cards].sort((a, b) => a.title.localeCompare(b.title));
-    case "newest":
-      return [...cards];
     case "shuffle":
+    case "reshuffle":
       return shuffleArray([...cards]);
+    case "newest":
     default:
       return cards;
   }

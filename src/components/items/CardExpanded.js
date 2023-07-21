@@ -13,8 +13,8 @@ const calculateRotation = (e, element, type) => {
   x = Math.max(Math.min(x, 2), -2);
   y = Math.max(Math.min(y, 2), -2);
   if (type === "Deck") {
-    x /= 2;
-    y /= 2;
+    x /= 3;
+    y /= 3;
   }
   return { x: x * -10, y: y * 10 };
 };
@@ -125,7 +125,9 @@ const CardExpanded = ({ data, access, deck }) => {
       </div>
 
       <div className={`card-detail caption-${data.accessLevel}`}>
-        <div className="card-title">{data.title}</div>
+        <div className={`card-title ${data.type === "Deck" && "deck-title"}`}>
+          {data.title}
+        </div>
         <div className="card-tagline">{data.tagline}</div>
         {data.accessLevel <= access ? (
           <>

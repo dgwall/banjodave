@@ -4,7 +4,7 @@
     "type": "Deck",
     "deck": "BanjoDOOM",
     "accessLevel": 0,
-    "date": "2019-12-XX",
+    "date": "2020-10-29",
     "title": "BanjoDOOM",
     "theme": "doom",
     "icon": "doom",
@@ -39,6 +39,7 @@
     "icon": "doom",
     "tags": [
       "Blazing Beachhead",
+      "Magma",
       "DOOM",
       "GZDoom",
       "Single Map",
@@ -53,7 +54,6 @@
       "1990s",
       "Scifi",
       "Hell",
-      "Magma",
       "Fire"
     ],
     "media": [
@@ -89,7 +89,10 @@
     "theme": "dark-red",
     "icon": "doom",
     "tags": [
-      "Blazing Beachhead",
+      "Deep Underground Military Bunker",
+      "Underground",
+      "Military",
+      "Conspiracy",
       "DOOM",
       "GZDoom",
       "Single Map",
@@ -102,10 +105,7 @@
       "Retro",
       "FPS",
       "1990s",
-      "Scifi",
-      "Hell",
-      "Magma",
-      "Fire"
+      "Scifi"
     ],
     "text": [
       "Uses only dynamic lightning. This map was MAP01 of MALAGARD 2 before I decided to remake it. Uses Tango's Supercharge gameplay mod as a base."
@@ -121,7 +121,10 @@
     "theme": "storm",
     "icon": "doom",
     "tags": [
+      "Storm",
+      "Danlex",
       "DOOM",
+      "Supercharge",
       "GZDoom",
       "Zandronum",
       "Hellforge",
@@ -129,7 +132,6 @@
       "Collab",
       "Single Map",
       "Mods",
-      "Supercharge",
       "DOOM II",
       "Mapping",
       "DOOM Mapping",
@@ -137,11 +139,9 @@
       "PC",
       "Retro",
       "FPS",
-      "1990s",
-      "Scifi",
       "Hell",
-      "Storm",
-      "Danlex"
+      "1990s",
+      "Scifi"
     ],
     "tagline": "Climb storm-lashed cliffs on your way to a monumental fortress. Collab with Danlex.",
     "text": [
@@ -166,6 +166,10 @@
     "theme": "doom",
     "icon": "doom",
     "tags": [
+      "Ruins",
+      "Castle",
+      "Beach",
+      "Lava",
       "DOOM",
       "GZDoom",
       "Single Map",
@@ -178,11 +182,7 @@
       "FPS",
       "1990s",
       "Scifi",
-      "Hell",
-      "Ruins",
-      "Castle",
-      "Beach",
-      "Lava"
+      "Hell"
     ],
     "tagline": "Navigate the mysterious ruins and bulwarks on a demon-infested island.",
     "text": [
@@ -240,10 +240,10 @@
     "theme": "n",
     "icon": "n",
     "tags": [
+      "rootootoot",
       "N",
       "Mapping",
       "N Mapping",
-      "rootootoot",
       "Map Pack",
       "N Map Pack",
       "Large N Map Pack",
@@ -255,7 +255,7 @@
       "Ninja",
       "Scifi",
       "Gold",
-      "Robots"
+      "Robot"
     ],
     "tagline": "500 maps by DW40 for N v1.4",
     "text": [
@@ -285,10 +285,11 @@
     "theme": "doom",
     "icon": "doom",
     "tags": [
+      "Speedmap",
       "DOOM",
       "GZDoom",
       "Single Map",
-      "Speedmap",
+      "Storm",
       "Community Project",
       "Hellforge",
       "DOOM II",
@@ -299,9 +300,7 @@
       "FPS",
       "1990s",
       "Scifi",
-      "Hell",
-      "Storm",
-      "Danlex"
+      "Hell"
     ],
     "tagline": "First BanjoDave DOOM map",
     "buttons": [
@@ -322,10 +321,13 @@
     "theme": "blue",
     "icon": "doom",
     "tags": [
+      "Speedmap",
+      "Abstract",
+      "Blue",
       "DOOM",
+      "90 Degrees",
       "GZDoom",
       "Single Map",
-      "Speedmap",
       "Community Project",
       "Hellforge",
       "DOOM II",
@@ -334,10 +336,7 @@
       "PC",
       "Retro",
       "FPS",
-      "1990s",
-      "Abstract",
-      "Blue",
-      "90 Degrees"
+      "1990s"
     ],
     "tagline": "Knock the king off of his plinth",
     "buttons": [
@@ -358,10 +357,12 @@
     "theme": "fireblu",
     "icon": "doom",
     "tags": [
+      "Very Hard",
+      "Fireblu",
+      "Speedmap",
       "DOOM",
       "GZDoom",
       "Single Map",
-      "Speedmap",
       "Community Project",
       "Hellforge",
       "DOOM II",
@@ -371,9 +372,7 @@
       "Retro",
       "FPS",
       "1990s",
-      "Fireblu",
-      "Hard",
-      "Very Hard"
+      "Hard"
     ],
     "tagline": "Unfair speedmap",
     "buttons": [
@@ -416,7 +415,7 @@
     ]
   },
   {
-    "id": "BWC1",
+    "id": "BWCAL1",
     "type": "Card",
     "deck": "BWC",
     "accessLevel": 1,
@@ -431,7 +430,7 @@
     ]
   },
   {
-    "id": "BWC2",
+    "id": "BWCAL2",
     "type": "Card",
     "deck": "BWC",
     "accessLevel": 2,
@@ -444,7 +443,7 @@
     "text": ["Early access, previews, archived, and other bonus content."]
   },
   {
-    "id": "BWC3",
+    "id": "BWCAL3",
     "type": "Card",
     "deck": "BWC",
     "accessLevel": 3,
@@ -520,38 +519,37 @@
     "icon": "zine",
     "theme": "zine",
     "tags": [
-      "Banjo House",
       "BanjoZine",
-      "Spring",
-      "2020s",
-      "N",
-      "DOOM",
-      "Skull",
+      "Banjo House",
       "Mapwich 2",
-      "Community Project",
       "DOOM II",
       "Super Smash Bros. Melee",
       "Sheik",
-      "Art",
-      "Music",
-      "Emo Rap",
-      "Trance",
-      "Hardstyle",
-      "ULTRACLUB4K",
       "Wicca Phase Springs Eternal",
       "døves",
       "Cremation Lily",
+      "ULTRACLUB4K",
+      "DOOM",
+      "N",
+      "Skull",
+      "Nintendo 64",
+      "Bop Drumps",
+      "Gaki no Tsukai",
+      "Spring",
+      "2020s",
+      "Emo Rap",
+      "Trance",
+      "Hardstyle",
       "Podcast",
       "TV",
-      "Gaki no Tsukai",
-      "Lifestyle",
+      "Art",
+      "Music",
+      "Writing",
+      "Card Game",
+      "Publication",
       "Health",
       "Magick",
-      "Bop Drumps",
-      "Card Game",
-      "Nintendo 64",
-      "Publication",
-      "Writing"
+      "Lifestyle"
     ],
     "text": [
       "rootootoot, Mapwich 2, Vanish Glide, Things, Orb, ULTRACLUB4K, Podcasts, ガキの使い, Nintendo 64, 森林浴, Productivity."
@@ -574,33 +572,34 @@
     "theme": "zine",
     "icon": "zine",
     "tags": [
-      "Banjo House",
       "BanjoZine",
-      "Summer",
-      "2020s",
-      "Publication",
-      "Writing",
-      "DOOM",
-      "Skull",
-      "DOOM II",
+      "Banjo House",
       "Blazing Beachhead",
       "Danlex",
-      "N",
       "Cosmic Snake",
       "MALAGARD",
-      "Art",
-      "Fissure",
-      "1990s",
-      "Nintendo GameCube",
+      "Dragon Ball Z",
       "Gruntz",
+      "Nintendo GameCube",
+      "Bop Drumps",
+      "DOOM",
+      "Skull",
+      "Fissure",
+      "N",
+      "Virgo",
+      "DOOM II",
+      "Summer",
+      "2020s",
+      "1990s",
       "PC",
       "TV",
+      "Art",
       "Scifi",
+      "Writing",
+      "Card Game",
+      "Publication",
       "Philosophy",
-      "Buddhism",
-      "Dragon Ball Z",
-      "Bop Drumps",
-      "Card Game"
+      "Buddhism"
     ],
     "tagline": "June 2021",
     "text": [
@@ -955,10 +954,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -974,10 +973,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -993,10 +992,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1012,10 +1011,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1031,10 +1030,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1050,10 +1049,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1069,10 +1068,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1088,10 +1087,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1107,10 +1106,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1126,10 +1125,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1145,10 +1144,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1164,10 +1163,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1183,10 +1182,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1202,10 +1201,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1221,10 +1220,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1240,10 +1239,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1259,10 +1258,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1278,10 +1277,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1297,10 +1296,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1316,10 +1315,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1335,10 +1334,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1354,10 +1353,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1373,10 +1372,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1392,10 +1391,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1411,10 +1410,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1430,10 +1429,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1449,10 +1448,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1468,10 +1467,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1487,10 +1486,10 @@
     "tags": [
       "Defeatz",
       "Banjo League",
-      "Digital Art",
       "Sprite",
       "Skull",
-      "Award"
+      "Award",
+      "Digital Art"
     ]
   },
   {
@@ -1590,12 +1589,25 @@
     "theme": "space",
     "icon": "art",
     "text": ["Concept art for Banjo's Arcade Kósmoptasía."],
-    "tags": ["Digital Art", "Space", "Magic", "Kósmoptasía", "Concept Art"],
-    "buttons": [
+    "tags": [
+      "Space",
+      "Magic",
+      "Animal",
+      "Cat",
+      "Rabbit",
+      "Dove",
+      "Kósmoptasía",
+      "Concept Art",
+      "Digital Art",
+      "Art",
+      "Banjo's Arcade",
+      "Preview"
+    ],
+    "media": [
       {
-        "type": "download",
-        "href": "/",
-        "label": "Download wallpaper-mobile-banjo-logo-dark-rays.png 1080x1920 534 KB"
+        "type": "image",
+        "src": "art-realm-of-magic-animals.png",
+        "alt": "Realm of Magic Animals"
       }
     ]
   },
@@ -1623,7 +1635,7 @@
     "type": "Deck",
     "deck": "Banjo League",
     "accessLevel": 0,
-    "date": "2022-12-11",
+    "date": "2023-06-26",
     "title": "Banjo League",
     "tagline": "Banjo League",
     "theme": "league",
@@ -1654,7 +1666,7 @@
     "type": "Deck",
     "deck": "WGMC",
     "accessLevel": 0,
-    "date": "2023-07-16",
+    "date": "2023-01-07",
     "title": "Weary Goblin Mudhole Club",
     "tagline": "Coming Soon",
     "theme": "wgmc",
@@ -1667,7 +1679,7 @@
     "type": "Deck",
     "deck": "Pebblemoths",
     "accessLevel": 0,
-    "date": "2023-07-16",
+    "date": "2022-09-06",
     "title": "Pebblemoths",
     "tagline": "Creatures with mystical powers of the Zodiac.",
     "theme": "pebblemoth",
@@ -1682,10 +1694,12 @@
     "accessLevel": 1,
     "date": "2023-01-27",
     "title": "BJX Trading Ltd.",
-    "tagline": "BanjoCoin Exchange.",
+    "tagline": "A very real and not fake at all lucrative trading opportunity",
     "theme": "bjx",
     "icon": "bjx",
-    "text": ["A very real and not fake at all lucrative trading opportunity."],
+    "text": [
+      "I'm pleased to announce BJX Trading Ltd. - a banjocurrency exchange and banjo hedge fund offering futures and options trading for a variety of digital banjos. We also offer leveraged banjos and derivatives. The future of investing, BJX, you in?"
+    ],
     "tags": ["BanjoCoin", "Digital Art", "Logo", "Crypto"]
   },
   {
@@ -2009,7 +2023,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #1",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA002",
@@ -2021,7 +2035,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #2",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA003",
@@ -2033,7 +2047,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #3",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA004",
@@ -2045,7 +2059,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #4",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA005",
@@ -2057,7 +2071,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #5",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA006",
@@ -2069,7 +2083,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #6",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA007",
@@ -2081,7 +2095,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #7",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA008",
@@ -2093,7 +2107,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #8",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA009",
@@ -2105,7 +2119,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #9",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA010",
@@ -2117,7 +2131,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #10",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA011",
@@ -2129,7 +2143,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #11",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA012",
@@ -2141,7 +2155,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #12",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGA013",
@@ -2153,7 +2167,7 @@
     "tagline": "Weary Goblin Mudhole Club Alpha #13",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Alpha", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
   },
   {
     "id": "WGB001",
@@ -2165,7 +2179,7 @@
     "tagline": "Weary Goblin Mudhole Club Beta #1",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
   },
   {
     "id": "WGB002",
@@ -2177,7 +2191,7 @@
     "tagline": "Weary Goblin Mudhole Club Beta #2",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
   },
   {
     "id": "WGB003",
@@ -2189,7 +2203,7 @@
     "tagline": "Weary Goblin Mudhole Club Beta #3",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
   },
   {
     "id": "WGB004",
@@ -2201,7 +2215,7 @@
     "tagline": "Weary Goblin Mudhole Club Beta #4",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
   },
   {
     "id": "WGB005",
@@ -2213,7 +2227,7 @@
     "tagline": "Weary Goblin Mudhole Club Beta #5",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
   },
   {
     "id": "WGB006",
@@ -2225,7 +2239,7 @@
     "tagline": "Weary Goblin Mudhole Club Beta #6",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
   },
   {
     "id": "WGB007",
@@ -2237,7 +2251,7 @@
     "tagline": "Weary Goblin Mudhole Club Beta #7",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
   },
   {
     "id": "WGB008",
@@ -2249,7 +2263,7 @@
     "tagline": "Weary Goblin Mudhole Club Beta #8",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
   },
   {
     "id": "WGBG01",
@@ -2261,7 +2275,7 @@
     "tagline": "Weary Goblin Mudhole Club Beta Grub",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+    "tags": ["Grub", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
   },
   {
     "id": "WGBG02",
@@ -2273,14 +2287,21 @@
     "tagline": "Weary Goblin Mudhole Club Beta Golden Grub",
     "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Beta", "Goblin", "RPG"]
+    "tags": [
+      "Golden Grub",
+      "Grub",
+      "RPG",
+      "Weary Goblin Mudhole Club",
+      "Preview",
+      "Beta"
+    ]
   },
   {
     "id": "CBOPDR",
     "type": "Deck",
     "deck": "Bop Drumps",
     "accessLevel": 0,
-    "date": "2021-03-20",
+    "date": "2021-08-10",
     "title": "BOP DRUMPS",
     "tagline": "A throwback card game.",
     "theme": "white",
@@ -2301,7 +2322,7 @@
     "type": "Deck",
     "deck": "Banjo's Arcade",
     "accessLevel": 0,
-    "date": "2022-04-22",
+    "date": "2023-06-13",
     "title": "Banjo's Arcade",
     "tagline": "Cutting edge retro throwbacks...",
     "theme": "arcade",
@@ -2368,8 +2389,10 @@
       "Drawing",
       "Stickman",
       "Scifi",
+      "Space",
       "Cartoon",
       "Sketch",
+      "Scan",
       "Alien",
       "Archive",
       "2000s"
@@ -2382,7 +2405,7 @@
     "tagline": "N Maps by DW40",
     "deck": "N",
     "accessLevel": 0,
-    "date": "2019-06-05",
+    "date": "2023-05-26",
     "theme": "n",
     "icon": "n",
     "text": [
@@ -2854,6 +2877,13 @@
         "label": "View on Global Game Jam"
       }
     ],
+    "media": [
+      {
+        "type": "video",
+        "src": "game-malice-striker",
+        "alt": "Gameplay footage"
+      }
+    ],
     "tags": [
       "Global Game Jam",
       "Game Jam",
@@ -2863,6 +2893,51 @@
       "Mythical",
       "Lowtek",
       "Roots"
+    ]
+  },
+  {
+    "id": "MTCOSN",
+    "type": "Card",
+    "title": "Excerpt from Cosmic Snake",
+    "tagline": "Degenrate post-totalist neoantiquitarian prophecy from ~1.4 kAE (Late Stelliferous Era)",
+    "deck": "Music",
+    "accessLevel": 1,
+    "date": "2022-02-22",
+    "theme": "charcoal",
+    "icon": "music",
+    "text": [
+      "Excerpt from 宇宙蛇 Cosmic Snake, an album by an unknown artist from RS 5444-2265-8-11983871-1317 3, NGC 4258, Canes Venatici II, Virgo Supercluster with a total runtime of 7 years, 4 days, 21 hours. This section marks the end of the second era."
+    ],
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://soundcloud.com/anjoave/excerpt-from-cosmic-snake",
+        "label": "Listen on SoundCloud"
+      }
+    ],
+    "media": [
+      {
+        "type": "audio",
+        "src": "unknown_cosmic-snake",
+        "alt": "Cosmic Snake by Unknown"
+      },
+      {
+        "type": "image",
+        "src": "music-cosmic-snake.png",
+        "alt": "Cosmic Snake full album artwork"
+      }
+    ],
+    "tags": [
+      "Cosmic Snake",
+      "Virgo",
+      "Space",
+      "Music Track",
+      "Music",
+      "Ambient",
+      "Snake",
+      "Mythical",
+      "Scifi",
+      "Epic"
     ]
   }
 ]

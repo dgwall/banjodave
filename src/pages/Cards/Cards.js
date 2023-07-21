@@ -1,3 +1,5 @@
+// TODO: Create sort & filter dropdown with options: "Sort by: Similar (default if no card selected), Date (default otherwise). Shuffle. Show: [Cards/Decks/Both]. Toggle: [Show Locked Cards]
+
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import Card from "../../components/items/Card";
@@ -20,6 +22,56 @@ const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
 };
 
+function PaginationButtons({
+  currentPage,
+  totalPages,
+  similarCards,
+  handleFirst,
+  handleBack,
+  handleForward,
+  handleLast,
+}) {
+  return (
+    <div className="view-buttons">
+      <button
+        onClick={handleFirst}
+        disabled={!similarCards.length || currentPage === 1 ? true : false}
+      >
+        <img src="/img/icon/chevrons-left.svg" alt="Back to page 1" />
+      </button>
+
+      <button
+        onClick={handleBack}
+        disabled={!similarCards.length || currentPage === 1 ? true : false}
+      >
+        <img src="/img/icon/chevron-left.svg" alt="Back 1 page" />
+      </button>
+
+      <div className="page-number" style={{ color: !totalPages && "#be6868" }}>
+        {totalPages ? `Page ${currentPage} / ${totalPages}` : "No cards found"}
+      </div>
+
+      <button
+        onClick={handleForward}
+        disabled={
+          !similarCards.length || currentPage === totalPages ? true : false
+        }
+      >
+        <img src="/img/icon/chevron-right.svg" alt="Back 1 page" />
+      </button>
+
+      <button
+        onClick={handleLast}
+        disabled={
+          !similarCards.length || currentPage === totalPages ? true : false
+        }
+      >
+        <img src="/img/icon/chevrons-right.svg" alt="Last page" />
+      </button>
+    </div>
+  );
+}
+
 function Cards() {
   const [cards, setCards] = useState([]);
   const [isShowingRestrictedCards, setIsShowingRestrictedCards] =
@@ -30,10 +82,11 @@ function Cards() {
   const [similarCards, setSimilarCards] = useState([]);
   const [cardsInDeck, setCardsInDeck] = useState([]);
   const [viewMode, setViewMode] = useState("newest");
-  const [groupMode, setGroupMode] = useState("card");
+  const [groupMode, setGroupMode] = useState("both");
   const [searchTerm, setSearchTerm] = useState("");
   const [lastSearch, setLastSearch] = useState("");
   const [isSearchFocused, setSearchFocused] = useState(false);
+  const [dropdownVisible, setDropdownVisible] = useState(false);
 
   const searchInputRef = useRef(null);
 
@@ -95,12 +148,6 @@ function Cards() {
       if (card) {
         setSelectedCard(card);
         setViewMode("similar");
-
-        if (card.type === "Deck") {
-          setGroupMode("deck");
-        } else {
-          setGroupMode("card");
-        }
       } else {
         // Handle the case where the card does not exist
         navigate("/bwc"); // Redirect to the main page or a 404 page
@@ -110,7 +157,7 @@ function Cards() {
     else if (location.pathname === "/bwc") {
       setSelectedCard(null);
       setViewMode("newest");
-      setGroupMode("card");
+      setGroupMode("both");
       setCurrentPage(1);
       setSearchTerm("");
     }
@@ -162,6 +209,11 @@ function Cards() {
     setSearchFocused(false);
   };
 
+  const handleSortChange = (event) => {
+    setSearchTerm("");
+    setViewMode(event.target.value);
+  };
+
   // Calculate colors
   const selectedTheme = selectedCard ? getTheme(selectedCard.theme) : {};
   const buttonTextColor = getButtonColor(selectedTheme.hl);
@@ -186,12 +238,6 @@ function Cards() {
     setIsShowingRestrictedCards((prevState) => !prevState);
   };
 
-  /*
-  const toggleGroupMode = () => {
-    setGroupMode((prevState) => (prevState === "card" ? "deck" : "card"));
-  };
-  */
-
   useEffect(() => {
     let accessFilteredCards = [...cards];
     if (!isShowingRestrictedCards) {
@@ -200,7 +246,6 @@ function Cards() {
       );
     }
     let displayedCards = accessFilteredCards;
-    /*
     if (groupMode === "card") {
       displayedCards = accessFilteredCards.filter(
         (card) => card.type === "Card"
@@ -209,7 +254,7 @@ function Cards() {
       displayedCards = accessFilteredCards.filter(
         (card) => card.type === "Deck"
       );
-    }*/
+    }
     setCurrentPage(1);
     // Sort cards based on viewMode after filtering
     const sortedCards = sortCards(
@@ -254,14 +299,14 @@ function Cards() {
       ) : (
         <>
           <header role="banner">
-            <h1>(Under Construction)</h1>
             <h1>Banjeetz × BWC Preview</h1>
-            <h2>Digital Content Holo-Cards</h2>
+            <h2>Digital Content Holo-Cards (Under Construction)</h2>
           </header>
           <main role="main">
             <div>
-              <s>0 patrons</s>
+              <s>0 members</s>
             </div>
+            <div style={{ fontSize: "small" }}>(coming soon)</div>
             <div>{cards.length} cards</div>
             <div>0 crypto</div>
             <div
@@ -282,7 +327,7 @@ function Cards() {
         </>
       )}
 
-      <nav className="view-buttons">
+      <nav className="view-buttons view-tools">
         <input
           type="text"
           name="search"
@@ -291,82 +336,103 @@ function Cards() {
           onKeyDown={handleSearchKeyPress}
           onFocus={handleSearchFocus}
           onBlur={handleSearchBlur}
-          placeholder="Search..."
+          placeholder="🔎 Search..."
           ref={searchInputRef}
           aria-label="Search"
         />
+        <button
+          onClick={() => setDropdownVisible(!dropdownVisible)}
+          className="sort-filter"
+        >
+          <img src="/img/icon/sort.webp" alt="Sort icon" />
+        </button>
       </nav>
 
-      {/*
-      <div className="view-buttons">
-        <button onClick={toggleGroupMode}>
-          {groupMode === "card" ? (
-            <>
-              <img src="/img/icon/contract.svg" alt="Shrink" /> Deck View
-            </>
-          ) : (
-            <>
-              <img src="/img/icon/expand.svg" alt="Expand" /> Card View
-            </>
+      <div className="view-tools-dropdown-container">
+        <div
+          className={`view-tools-dropdown ${dropdownVisible ? "show" : "hide"}`}
+        >
+          {selectedCard && (
+            <button
+              value="similar"
+              onClick={handleSortChange}
+              disabled={viewMode === "similar" ? true : false}
+            >
+              Similar ✨
+            </button>
           )}
-          </button>
-      </div>*/}
-
-      <div className="view-buttons sort-buttons">
-        {selectedCard && (
           <button
-            onClick={() => {
-              setViewMode("similar");
-              setSearchTerm("");
-            }}
-            disabled={viewMode === "similar" ? true : false}
+            value="newest"
+            onClick={handleSortChange}
+            disabled={viewMode === "newest" ? true : false}
           >
-            <img src="/img/icon/zap.svg" alt="Zap icon" /> Similar
+            Newest 🕒
           </button>
-        )}
-        <button
-          onClick={() => {
-            setViewMode("newest");
-            setSearchTerm("");
-          }}
-          disabled={viewMode === "newest" ? true : false}
-        >
-          <img src="/img/icon/time.svg" alt="Clock icon" /> Newest
-        </button>
-        <button
-          onClick={() => {
-            setViewMode("shuffle");
-            setSearchTerm("");
-          }}
-          disabled={viewMode === "shuffle" ? true : false}
-        >
-          <img src="/img/icon/shuffle.svg" alt="Shuffle icon" /> Shuffle
-        </button>
-        <button
-          onClick={removeRestrictedCards}
-          disabled={ACCESS_LEVEL === 3 ? true : false}
-        >
-          {isShowingRestrictedCards ? (
+          <button
+            value="alphabetical"
+            onClick={handleSortChange}
+            disabled={viewMode === "alphabetical" ? true : false}
+          >
+            Alphabetical 🔤
+          </button>
+          <button
+            value={viewMode === "reshuffle" ? "shuffle" : "reshuffle"}
+            onClick={handleSortChange}
+          >
+            Shuffle! 🎲
+          </button>
+          <hr />
+          <button
+            value="similar"
+            onClick={() => {
+              setGroupMode("card");
+            }}
+            disabled={groupMode === "card" ? true : false}
+          >
+            Cards Only 📄
+          </button>
+          <button
+            value="newest"
+            onClick={() => {
+              setGroupMode("deck");
+            }}
+            disabled={groupMode === "deck" ? true : false}
+          >
+            Decks Only 📁
+          </button>
+          <button
+            value="alphabetical"
+            onClick={() => {
+              setGroupMode("both");
+            }}
+            disabled={groupMode === "both" ? true : false}
+          >
+            Show Both 🗃️
+          </button>
+          {groupMode !== "deck" && (
             <>
-              <img
-                src="/img/icon/bwc-inverted.webp"
-                alt="BWC icon"
-                style={{ filter: "invert(100%)" }}
-              />{" "}
-              Hide Locked
-            </>
-          ) : (
-            <>
-              <img
-                src="/img/icon/bwc.webp"
-                alt="BWC icon"
-                style={{ filter: "invert(100%)" }}
-              />{" "}
-              Show Locked
+              <hr />
+              <button onClick={removeRestrictedCards}>
+                {isShowingRestrictedCards
+                  ? "Hide Locked Cards 🙈"
+                  : "Show Locked Cards 👀"}
+              </button>
             </>
           )}
-        </button>
+        </div>
       </div>
+
+      {!selectedCard && (
+        <PaginationButtons
+          currentPage={currentPage}
+          totalPages={totalPages}
+          similarCards={similarCards}
+          handleFirst={handleFirst}
+          handleBack={handleBack}
+          handleForward={handleForward}
+          handleLast={handleLast}
+        />
+      )}
 
       <div className="cards-container" role="grid">
         {similarCards.slice(begin, end).map((card, index) => (
@@ -381,48 +447,15 @@ function Cards() {
         ))}
       </div>
 
-      <div className="view-buttons">
-        <button
-          onClick={handleFirst}
-          disabled={!similarCards.length || currentPage === 1 ? true : false}
-        >
-          <img src="/img/icon/chevrons-left.svg" alt="Back to page 1" />
-        </button>
-
-        <button
-          onClick={handleBack}
-          disabled={!similarCards.length || currentPage === 1 ? true : false}
-        >
-          <img src="/img/icon/chevron-left.svg" alt="Back 1 page" />
-        </button>
-
-        <div
-          className="page-number"
-          style={{ color: !totalPages && "#be6868" }}
-        >
-          {totalPages
-            ? `Page ${currentPage} / ${totalPages}`
-            : "No cards found"}
-        </div>
-
-        <button
-          onClick={handleForward}
-          disabled={
-            !similarCards.length || currentPage === totalPages ? true : false
-          }
-        >
-          <img src="/img/icon/chevron-right.svg" alt="Back 1 page" />
-        </button>
-
-        <button
-          onClick={handleLast}
-          disabled={
-            !similarCards.length || currentPage === totalPages ? true : false
-          }
-        >
-          <img src="/img/icon/chevrons-right.svg" alt="Last page" />
-        </button>
-      </div>
+      <PaginationButtons
+        currentPage={currentPage}
+        totalPages={totalPages}
+        similarCards={similarCards}
+        handleFirst={handleFirst}
+        handleBack={handleBack}
+        handleForward={handleForward}
+        handleLast={handleLast}
+      />
     </>
   );
 }

@@ -6,8 +6,8 @@ const calculateRotation = (e, element, type) => {
   let x = 0.5 - (e.clientX - left) / width;
   let y = 0.6 - (e.clientY - top) / height;
   if (type === "Deck") {
-    x /= 2;
-    y /= 2;
+    x /= 3;
+    y /= 3;
   }
   return { x: x * -10, y: y * 10 };
 };
@@ -49,7 +49,7 @@ const Card = ({ data, access }) => {
       1 + (Math.abs(rotation.x) + rotation.y) / 30
     })`,
     transform: `scale(${
-      !smoothTransition ? (data.type === "Deck" ? "1.05" : "1.1") : "1"
+      !smoothTransition ? (data.type === "Deck" ? "1.01" : "1.1") : "1"
     }) rotateY(${rotation.x}deg) rotateX(${rotation.y}deg)`,
     transition: `${smoothTransition ? "1s" : "0s"}`,
     boxShadow: `${-rotation.x / 20}rem ${rotation.y / 20}rem ${
