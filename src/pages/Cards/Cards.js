@@ -1,5 +1,3 @@
-// TODO: Create sort & filter dropdown with options: "Sort by: Similar (default if no card selected), Date (default otherwise). Shuffle. Show: [Cards/Decks/Both]. Toggle: [Show Locked Cards]
-
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import Card from "../../components/items/Card";
@@ -30,6 +28,7 @@ function PaginationButtons({
   handleBack,
   handleForward,
   handleLast,
+  error,
 }) {
   return (
     <div className="view-buttons">
@@ -48,7 +47,11 @@ function PaginationButtons({
       </button>
 
       <div className="page-number" style={{ color: !totalPages && "#be6868" }}>
-        {totalPages ? `Page ${currentPage} / ${totalPages}` : "No cards found"}
+        {totalPages
+          ? `Page ${currentPage} / ${totalPages}`
+          : error
+          ? error
+          : "No cards found"}
       </div>
 
       <button
@@ -87,6 +90,7 @@ function Cards() {
   const [lastSearch, setLastSearch] = useState("");
   const [isSearchFocused, setSearchFocused] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const searchInputRef = useRef(null);
 
@@ -105,6 +109,39 @@ function Cards() {
     return () => clearTimeout(searchInterval);
   }, [searchTerm, lastSearch, isSearchFocused, cards]);
 
+  // This function checks if the focus was outside of the dropdown
+  const handleFocusOutside = (event) => {
+    const dropdownElement = document.querySelector(".view-tools-dropdown");
+
+    if (dropdownElement && !dropdownElement.contains(event.target)) {
+      setDropdownVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    // Skip keyboard navigation if dropdown hidden
+    const dropdownElement = document.querySelector(".view-tools-dropdown");
+    const focusableElements = dropdownElement.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    focusableElements.forEach((element) => {
+      element.tabIndex = dropdownVisible ? 0 : -1;
+    });
+
+    // Closing dropdown if we click outside or focus outside
+    if (dropdownVisible) {
+      document.addEventListener("mousedown", handleFocusOutside);
+      document.addEventListener("focusin", handleFocusOutside);
+    } else {
+      document.removeEventListener("mousedown", handleFocusOutside);
+      document.removeEventListener("focusin", handleFocusOutside);
+    }
+    return () => {
+      document.removeEventListener("mousedown", handleFocusOutside);
+      document.removeEventListener("focusin", handleFocusOutside);
+    };
+  }, [dropdownVisible]);
+
   // get card id from the url
   const { cardId } = useParams();
 
@@ -117,10 +154,16 @@ function Cards() {
   // fetch data and set state when component mounts
   useEffect(() => {
     const fetchData = async () => {
-      const { cards, totalPages } = await fetchCards(ACCESS_LEVEL);
-      setCards(cards);
-      setSimilarCards(cards);
-      setTotalPages(totalPages);
+      try {
+        const { cards, totalPages } = await fetchCards(ACCESS_LEVEL);
+        setCards(cards);
+        setSimilarCards(cards);
+        setTotalPages(totalPages);
+      } catch (error) {
+        setErrorMessage(
+          "Failed to fetch cards. Please refresh the page or try again later."
+        );
+      }
     };
 
     fetchData();
@@ -343,7 +386,20 @@ function Cards() {
         <button
           onClick={() => setDropdownVisible(!dropdownVisible)}
           className="sort-filter"
+          disabled={dropdownVisible}
         >
+          <div>
+            {viewMode === "similar" && "Similar"}
+            {viewMode === "newest" && "Newest"}
+            {viewMode === "alphabetical" && "A-Z"}
+            {viewMode === "shuffle" || viewMode === "reshuffle" ? "Random" : ""}
+            {groupMode === "card" && " cards"}
+            {groupMode === "deck"
+              ? " decks"
+              : !isShowingRestrictedCards
+              ? " 🙈"
+              : ""}
+          </div>
           <img src="/img/icon/sort.webp" alt="Sort icon" />
         </button>
       </nav>
@@ -373,7 +429,7 @@ function Cards() {
             onClick={handleSortChange}
             disabled={viewMode === "alphabetical" ? true : false}
           >
-            Alphabetical 🔤
+            Alphabetical 🔠
           </button>
           <button
             value={viewMode === "reshuffle" ? "shuffle" : "reshuffle"}
@@ -431,6 +487,7 @@ function Cards() {
           handleBack={handleBack}
           handleForward={handleForward}
           handleLast={handleLast}
+          error={errorMessage}
         />
       )}
 
@@ -455,6 +512,7 @@ function Cards() {
         handleBack={handleBack}
         handleForward={handleForward}
         handleLast={handleLast}
+        error={errorMessage}
       />
     </>
   );

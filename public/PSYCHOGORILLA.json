@@ -2917,8 +2917,8 @@
     ],
     "media": [
       {
-        "type": "audio",
-        "src": "unknown_cosmic-snake",
+        "type": "audio-ext",
+        "src": "https://s3.eu-north-1.amazonaws.com/banjodave.com/music/unknown_cosmic-snake.mp3",
         "alt": "Cosmic Snake by Unknown"
       },
       {

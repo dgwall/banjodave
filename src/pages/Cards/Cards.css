@@ -240,6 +240,7 @@
   background-color: #c5c5c50a;
   border-radius: 0.5vmin;
   border: 1px solid #ffffff11;
+  box-shadow: 0 1px 1px #000;
 }
 
 .main-cards .indicator-item {
@@ -325,7 +326,7 @@
 .main-cards .cards-container .deck-container {
   background-color: #be996811;
   border-radius: 0.5vmin;
-  border: 1px solid #cf964b77;
+  border: 1px solid #cf964b55;
 }
 
 .main-cards .deck-container .deck-caption {
@@ -524,7 +525,6 @@
 }
 
 .main-cards input {
-  width: 900%;
   font-size: 1.2rem;
   display: flex;
   justify-content: center;
@@ -882,6 +882,7 @@ tbody tr {
 
 .main-cards .sort-filter {
   position: relative;
+  justify-content: flex-end !important;
 }
 
 .main-cards .view-tools-dropdown-container {
@@ -897,13 +898,15 @@ tbody tr {
   pointer-events: none;
   background-color: lightgray;
   border-radius: 1vmin;
-  width: 30vmin;
+  width: 40vmin;
   padding: 1vmin;
   z-index: 10;
   color: #fff;
   transition: opacity 0.2s;
   position: absolute;
   font-size: small;
+  box-shadow: 0 0.2rem 0.2rem #00000066;
+  border: 1px solid #000;
 }
 
 .main-cards .view-tools-dropdown button {
@@ -919,7 +922,6 @@ tbody tr {
   color: #333;
   border-radius: 0.5vmin;
   justify-content: flex-end;
-  position: relative;
 }
 
 .main-cards .view-tools-dropdown hr {
@@ -939,10 +941,18 @@ tbody tr {
   margin: 0;
 }
 
-.main-cards .view-tools-dropdown button:active {
-  margin: 0;
-  position: static !important;
-  border: 1px solid gray;
+.main-cards .view-tools-dropdown button:active,
+.main-cards .view-tools-dropdown button:focus {
+  border: 1px solid #eee;
+  background-color: #fff;
+}
+
+.main-cards .view-tools-dropdown button:hover:not(:disabled) {
+  background-color: lightgray;
+}
+
+.main-cards .sort-filter div {
+  margin: auto;
 }
 
 @media screen and (max-width: 1280px) {
@@ -989,6 +999,13 @@ tbody tr {
     width: 100%;
     height: auto;
   }
+  .main-cards input {
+    width: 150%;
+  }
+
+  .main-cards .sort-filter div {
+    font-size: small;
+  }
 }
 
 @media not screen and (max-width: 1280px) {
@@ -1004,5 +1021,12 @@ tbody tr {
   }
   .main-cards .card-selected .card {
     max-width: 30vw;
+  }
+  .main-cards input {
+    width: 900%;
+  }
+
+  .main-cards .sort-filter div {
+    font-size: smaller;
   }
 }

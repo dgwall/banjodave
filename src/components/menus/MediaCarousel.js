@@ -5,8 +5,11 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 // Define constants for media types to avoid typos in string usage
 const MEDIA_TYPE = {
   IMAGE: "image",
+  IMAGE_EXT: "image-ext",
   VIDEO: "video",
+  VIDEO_EXT: "video-ext",
   AUDIO: "audio",
+  AUDIO_EXT: "audio-ext",
   YOUTUBE: "youtube",
 };
 
@@ -32,12 +35,15 @@ const CustomIndicator = ({
     key={index}
     role="button"
     tabIndex={0}
-    aria-label={`Go to ${mediaType}`}
+    aria-label={`Go to ${mediaType.replace("-ext", "")}`}
     // Add a title attribute for tooltips
     title={mediaAlt}
   >
     {/* Display icon according to media type */}
-    <img src={`/img/icon/${mediaType}.webp`} alt={`${mediaType} icon`} />
+    <img
+      src={`/img/icon/${mediaType.replace("-ext", "")}.webp`}
+      alt={`${mediaType.replace("-ext", "")} icon`}
+    />
   </li>
 );
 
@@ -105,6 +111,15 @@ const MediaCarousel = ({
           </a>
         );
 
+      case MEDIA_TYPE.IMAGE_EXT:
+        return (
+          <a key={media.src} href={media.src} target="_blank" rel="noreferrer">
+            <img src={media.src} alt={media.alt} className="carousel-image" />
+            <br />
+            {media.alt}
+          </a>
+        );
+
       case MEDIA_TYPE.VIDEO:
         return (
           <video
@@ -114,6 +129,9 @@ const MediaCarousel = ({
           />
         );
 
+      case MEDIA_TYPE.VIDEO_EXT:
+        return <video key={media.src} src={media.src} controls />;
+
       case MEDIA_TYPE.AUDIO:
         return (
           <audio
@@ -122,6 +140,9 @@ const MediaCarousel = ({
             controls
           />
         );
+
+      case MEDIA_TYPE.AUDIO_EXT:
+        return <audio key={media.src} src={media.src} controls />;
 
       case MEDIA_TYPE.YOUTUBE:
         return (
