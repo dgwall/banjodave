@@ -30,8 +30,8 @@ const routes = [
   { path: "/thank-you", mainClass: "", Component: Support },
   { path: "/shop", mainClass: "", Component: Shop },
   { path: "/about", mainClass: "", Component: About },
-  { path: "/bwc", mainClass: "-cards", Component: Cards },
-  { path: "/bwc/:cardId", mainClass: "-cards", Component: Cards },
+  { path: "/bfd", mainClass: "-cards", Component: Cards },
+  { path: "/bfd/:cardId", mainClass: "-cards", Component: Cards },
 ];
 
 function App() {

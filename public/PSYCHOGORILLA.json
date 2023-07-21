@@ -426,7 +426,7 @@
     "tags": ["BWC", "Restricted Access", "Level 1"],
     "tagline": "BWC Public Access",
     "text": [
-      "Free-tier BWC preview. Bonus content available for free through Patreon."
+      "Free-tier BWC preview. Bonus BFD content and more available for free through Patreon."
     ]
   },
   {
@@ -440,7 +440,9 @@
     "icon": "bwc",
     "tags": ["BWC", "Restricted Access", "Level 2"],
     "tagline": "BWC Access Level 2",
-    "text": ["Early access, previews, archived, and other bonus content."]
+    "text": [
+      "Unlocks LVL2 BFDs, early access games and levels, previews, updates, archives, and other bonus content."
+    ]
   },
   {
     "id": "BWCAL3",
@@ -454,7 +456,7 @@
     "tags": ["BWC", "Restricted Access", "Level 3"],
     "tagline": "BWC Access Level 3",
     "text": [
-      "Unlock all banjo content, get 0DG games for free, and more with the BWC Black Card."
+      "Access all levels of BFD, get 0DG games for free, and more with the BWC Black Card."
     ]
   },
   {
@@ -640,7 +642,7 @@
     ]
   },
   {
-    "id": "DABLB1",
+    "id": "BLB001",
     "type": "Card",
     "deck": "Banjo League",
     "accessLevel": 0,
@@ -660,7 +662,7 @@
     ]
   },
   {
-    "id": "DABLB8",
+    "id": "BLB008",
     "type": "Card",
     "deck": "Banjo League",
     "accessLevel": 3,
@@ -680,7 +682,7 @@
     ]
   },
   {
-    "id": "DABLB2",
+    "id": "BLB002",
     "type": "Card",
     "deck": "Banjo League",
     "accessLevel": 0,
@@ -700,7 +702,7 @@
     ]
   },
   {
-    "id": "DABLB7",
+    "id": "BLB007",
     "type": "Card",
     "deck": "Banjo League",
     "accessLevel": 2,
@@ -720,7 +722,7 @@
     ]
   },
   {
-    "id": "DABLB6",
+    "id": "BLB006",
     "type": "Card",
     "deck": "Banjo League",
     "accessLevel": 2,
@@ -740,7 +742,7 @@
     ]
   },
   {
-    "id": "DABLB0",
+    "id": "BLB000",
     "type": "Card",
     "deck": "Banjo League",
     "accessLevel": 1,
@@ -760,7 +762,7 @@
     ]
   },
   {
-    "id": "DABLB3",
+    "id": "BLB003",
     "type": "Card",
     "deck": "Banjo League",
     "accessLevel": 0,
@@ -780,7 +782,7 @@
     ]
   },
   {
-    "id": "DABLB4",
+    "id": "BLB004",
     "type": "Card",
     "deck": "Banjo League",
     "accessLevel": 1,
@@ -800,7 +802,7 @@
     ]
   },
   {
-    "id": "DABLB5",
+    "id": "BLB005",
     "type": "Card",
     "deck": "Banjo League",
     "accessLevel": 2,

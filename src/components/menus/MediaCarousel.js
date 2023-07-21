@@ -183,7 +183,7 @@ const MediaCarousel = ({
           ></div>
         )}
 
-        {/* BWC Lock */}
+        {/* BFD Lock */}
         {cardData.accessLevel > 0 && cardData.accessLevel > access && (
           <div className={`card-locked locked-${cardData.accessLevel}`}></div>
         )}

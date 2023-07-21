@@ -385,6 +385,7 @@
 .main-cards .card-container:hover {
   z-index: 2; /* Increased z-index when card-container is hovered */
   border-color: #ffffff66;
+  box-shadow: none;
 }
 
 .main-cards .card-container:hover .card {
@@ -898,13 +899,11 @@ tbody tr {
   pointer-events: none;
   background-color: lightgray;
   border-radius: 1vmin;
-  width: 40vmin;
   padding: 1vmin;
   z-index: 10;
   color: #fff;
   transition: opacity 0.2s;
   position: absolute;
-  font-size: small;
   box-shadow: 0 0.2rem 0.2rem #00000066;
   border: 1px solid #000;
 }
@@ -914,7 +913,6 @@ tbody tr {
   width: 100%;
   display: flex;
   align-items: center;
-  font-size: small;
   padding: 1vmin;
   margin: 0.2vmin 0 !important;
   border: 1px solid gray;
@@ -1006,6 +1004,9 @@ tbody tr {
   .main-cards .sort-filter div {
     font-size: small;
   }
+  .main-cards .view-tools-dropdown {
+    width: 37.22vw;
+  }
 }
 
 @media not screen and (max-width: 1280px) {
@@ -1025,8 +1026,10 @@ tbody tr {
   .main-cards input {
     width: 900%;
   }
-
   .main-cards .sort-filter div {
     font-size: smaller;
+  }
+  .main-cards .view-tools-dropdown {
+    width: 20vw;
   }
 }

@@ -27,9 +27,9 @@ export const menuItems = [
     move: true,
   },
   {
-    path: "/bwc",
-    label: "Banjeetz x ",
-    text: "Banjeetz x BWC",
+    path: "/bfd",
+    label: "Banjeetz x BFD",
+    text: "Banjeetz x BFD",
     icon: "bwc",
     move: false,
   },

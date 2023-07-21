@@ -156,7 +156,7 @@ const CardExpanded = ({ data, access, deck }) => {
         ) : (
           <div className="card-text">
             <p>
-              Access to this LVL{data.accessLevel} item has been restricted on
+              Access to this LVL{data.accessLevel} BFD has been restricted on
               the authority of BWC
             </p>
             {data.accessLevel === 1 ? (
@@ -165,7 +165,7 @@ const CardExpanded = ({ data, access, deck }) => {
                 with a Patreon account.
               </p>
             ) : data.accessLevel === 2 ? (
-              <p>LVL2 Access will be available with a low-tier Patreon sub.</p>
+              <p>LVL2 Access will be available with a Patreon sub.</p>
             ) : data.accessLevel === 3 ? (
               <p>LVL3 Access will be available with a high-tier Patreon sub.</p>
             ) : (

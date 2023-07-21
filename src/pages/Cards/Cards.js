@@ -193,11 +193,11 @@ function Cards() {
         setViewMode("similar");
       } else {
         // Handle the case where the card does not exist
-        navigate("/bwc"); // Redirect to the main page or a 404 page
+        navigate("/bfd"); // Redirect to the main page or a 404 page
       }
     }
     // reset state when the location pathname becomes "/"
-    else if (location.pathname === "/bwc") {
+    else if (location.pathname === "/bfd") {
       setSelectedCard(null);
       setViewMode("newest");
       setGroupMode("both");
@@ -212,7 +212,7 @@ function Cards() {
     setViewMode("similar");
     setCurrentPage(1);
     setSearchTerm("");
-    navigate(`/bwc/${card.id}`);
+    navigate(`/bfd/${card.id}`);
   };
 
   // handler for page buttons
@@ -254,6 +254,7 @@ function Cards() {
 
   const handleSortChange = (event) => {
     setSearchTerm("");
+    setDropdownVisible(false);
     setViewMode(event.target.value);
   };
 
@@ -342,7 +343,7 @@ function Cards() {
       ) : (
         <>
           <header role="banner">
-            <h1>Banjeetz × BWC Preview</h1>
+            <h1>Banjeetz × BFD Preview</h1>
             <h2>Digital Content Holo-Cards (Under Construction)</h2>
           </header>
           <main role="main">
@@ -442,6 +443,7 @@ function Cards() {
             value="similar"
             onClick={() => {
               setGroupMode("card");
+              setDropdownVisible(false);
             }}
             disabled={groupMode === "card" ? true : false}
           >
@@ -451,6 +453,7 @@ function Cards() {
             value="newest"
             onClick={() => {
               setGroupMode("deck");
+              setDropdownVisible(false);
             }}
             disabled={groupMode === "deck" ? true : false}
           >
@@ -460,6 +463,7 @@ function Cards() {
             value="alphabetical"
             onClick={() => {
               setGroupMode("both");
+              setDropdownVisible(false);
             }}
             disabled={groupMode === "both" ? true : false}
           >
@@ -468,7 +472,12 @@ function Cards() {
           {groupMode !== "deck" && (
             <>
               <hr />
-              <button onClick={removeRestrictedCards}>
+              <button
+                onClick={(e) => {
+                  removeRestrictedCards(e);
+                  setDropdownVisible(false);
+                }}
+              >
                 {isShowingRestrictedCards
                   ? "Hide Locked Cards 🙈"
                   : "Show Locked Cards 👀"}
