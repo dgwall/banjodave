@@ -329,6 +329,11 @@
   border: 1px solid #cf964b55;
 }
 
+.main-cards .cards-container .deck-container:hover {
+  background-color: #dfbb8c27;
+  border: 1px solid #dbc8af55;
+}
+
 .main-cards .deck-container .deck-caption {
   font-variant: small-caps;
   color: #d8b990 !important;
@@ -534,7 +539,7 @@
   padding: 12px;
   border-radius: 1vmin;
   border: 1px solid #ffffff22;
-  background: linear-gradient(to right, transparent, #111);
+  background: linear-gradient(to left, transparent, #111);
   color: #fff;
   box-shadow: 0 0 0.5rem #000000c0 inset;
   transition: 0.5s;
@@ -576,11 +581,11 @@
 }
 
 .main-cards .buttons a:not(:last-child) {
-  margin-right: 12px;
+  margin-right: 1vmin;
 }
 
 .main-cards .buttons a:not(:first-child) {
-  margin-left: 12px;
+  margin-left: 1vmin;
 }
 
 .main-cards .card-rarity {

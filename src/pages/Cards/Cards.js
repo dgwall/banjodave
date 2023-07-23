@@ -14,7 +14,7 @@ import {
 
 const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
-const ACCESS_LEVEL = 1;
+const ACCESS_LEVEL = 0;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -99,6 +99,10 @@ function Cards() {
   useEffect(() => {
     let searchInterval;
     if (isSearchFocused && searchTerm !== lastSearch) {
+      if (!searchTerm) {
+        setViewMode("newest");
+        return;
+      }
       searchInterval = setTimeout(() => {
         const searchedCards = searchCards(cards, searchTerm);
         setSimilarCards(searchedCards);
@@ -106,7 +110,7 @@ function Cards() {
         setLastSearch(searchTerm);
       }, 500);
     }
-    return () => clearTimeout(searchInterval);
+    return () => clearTimeout(searchInterval); // always clear timeout
   }, [searchTerm, lastSearch, isSearchFocused, cards]);
 
   // This function checks if the focus was outside of the dropdown
@@ -390,10 +394,13 @@ function Cards() {
           disabled={dropdownVisible}
         >
           <div>
+            {viewMode === "search" && "Searching"}
             {viewMode === "similar" && "Similar"}
             {viewMode === "newest" && "Newest"}
             {viewMode === "alphabetical" && "A-Z"}
-            {viewMode === "shuffle" || viewMode === "reshuffle" ? "Random" : ""}
+            {viewMode === "shuffle" || viewMode === "reshuffle"
+              ? "Shuffled"
+              : ""}
             {groupMode === "card" && " cards"}
             {groupMode === "deck"
               ? " decks"

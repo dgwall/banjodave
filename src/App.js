@@ -16,6 +16,7 @@ const Shop = React.lazy(() => import("./pages/Shop"));
 const About = React.lazy(() => import("./pages/About"));
 const Cards = React.lazy(() => import("./pages/Cards/Cards"));
 const BanjosArcade = React.lazy(() => import("./pages/Games/BanjosArcade"));
+const Bwc = React.lazy(() => import("./pages/BWC/BWC"));
 
 const routes = [
   { path: "/", mainClass: "", Component: Home },
@@ -32,6 +33,7 @@ const routes = [
   { path: "/about", mainClass: "", Component: About },
   { path: "/bfd", mainClass: "-cards", Component: Cards },
   { path: "/bfd/:cardId", mainClass: "-cards", Component: Cards },
+  { path: "/bwc", mainClass: "-bwc", Component: Bwc },
 ];
 
 function App() {

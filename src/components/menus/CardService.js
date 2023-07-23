@@ -26,15 +26,18 @@ export function searchCards(cards, searchTerm) {
       hitCount += 10;
 
     // Original scoring for partial matches
-    if (card.id && card.id.toLowerCase().includes(term)) hitCount += 8;
-    if (card.title && card.title.toLowerCase().includes(term)) hitCount += 6;
-    if (card.tagline && card.tagline.toLowerCase().includes(term))
+    if (card.id?.toLowerCase().includes(term)) hitCount += 8;
+    if (card.title?.toLowerCase().includes(term)) hitCount += 6;
+    if (
+      typeof card.tagline === "string" &&
+      card.tagline.toLowerCase().includes(term)
+    )
       hitCount += 4;
-    if (card.tags && card.tags.some((tag) => tag.toLowerCase().includes(term)))
+    if (card.tags?.some((tag) => tag.toLowerCase().includes(term)))
       hitCount += 2;
     if (card.text)
       card.text.forEach((textBlock) => {
-        if (textBlock.toLowerCase().includes(term)) hitCount++;
+        if (textBlock?.toLowerCase().includes(term)) hitCount++;
       });
 
     return {

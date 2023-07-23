@@ -24,6 +24,7 @@ const CardExpanded = ({ data, access, deck }) => {
   const [smoothTransition, setSmoothTransition] = useState(true);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [sortConfig, setSortConfig] = useState({ key: null, direction: "asc" });
+  const [clipboardStatus, setClipboardStatus] = useState(null);
   const cardContainerRef = useRef();
 
   useEffect(() => {
@@ -101,6 +102,30 @@ const CardExpanded = ({ data, access, deck }) => {
     transition: `${smoothTransition ? "1s" : "0s"}`,
   };
 
+  const copyToClipboard = async (text) => {
+    if (navigator.clipboard) {
+      try {
+        await navigator.clipboard.writeText(text);
+        setClipboardStatus("Copied!");
+        setTimeout(() => setClipboardStatus(null), 1000); // Clear the status after 1s
+      } catch (err) {
+        setClipboardStatus("Failed to copy");
+        setTimeout(() => setClipboardStatus(null), 1000); // Clear the status after 1s
+        console.error("Failed to copy text: ", err);
+      }
+    }
+  };
+
+  const handleClick = (event, href, type) => {
+    event.preventDefault();
+
+    if (type === "clipboard") {
+      copyToClipboard(href);
+    } else {
+      window.open(href, "_blank", "noopener,noreferrer");
+    }
+  };
+
   return (
     <div className="card-expanded">
       <div
@@ -143,12 +168,15 @@ const CardExpanded = ({ data, access, deck }) => {
                 data.buttons.map((button, index) => (
                   <a
                     key={index}
-                    href={button.href}
+                    href={button.type !== "clipboard" ? button.href : undefined}
                     className="button"
-                    target="_blank"
-                    rel="noreferrer"
+                    onClick={(event) =>
+                      handleClick(event, button.href, button.type)
+                    }
                   >
-                    {button.label}
+                    {(button.type === "clipboard"
+                      ? clipboardStatus
+                      : undefined) ?? button.label}
                   </a>
                 ))}
             </div>
@@ -209,7 +237,7 @@ const CardExpanded = ({ data, access, deck }) => {
                     </td>
                     <td className="min">{card.date}</td>
                     <td className="min">
-                      <Link to={`/bwc/${card.id}`} className="rowlink">
+                      <Link to={`/bfd/${card.id}`} className="rowlink">
                         {card.id}
                       </Link>
                     </td>

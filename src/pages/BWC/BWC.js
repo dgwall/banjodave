@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 //import { Link } from "react-router-dom";
 import "./BWC.css";
-import BwcTracker from "../../components/menus/BwcTracker";
 
 const correctSequence = [216, 216, 72, 180];
 
@@ -82,7 +81,7 @@ const generateEmojiKeys = (selectedImages, handleClick) =>
     </div>
   ));
 
-const AccessScreen = ({ access, accessLabel, secretCode, data }) => (
+const AccessScreen = ({ access, accessLabel, secretCode }) => (
   <div className="monitor">
     <div className="screen">
       <div className="center">
@@ -107,17 +106,16 @@ const AccessScreen = ({ access, accessLabel, secretCode, data }) => (
               Congratulations on figuring out the password, bypassing security
               protocol, or finding the GitHub!
               <br />
-              Send secret code <u className="sEcUrItY"> {secretCode} </u> to
-              BanjoDave right now for a BWC Black Keycard granting free L3 BWC
-              Access for life.
+              The first three people to send secret code{" "}
+              <u className="sEcUrItY"> {secretCode} </u> to BanjoDave will
+              receive a BWC Black Keycard granting free LVL3 Access for life.
             </p>
-            <BwcTracker data={data} access={1} />
           </div>
         )}
         {access === "2" ? (
           <>
             <div className="data">
-              <BwcTracker data={data} access={2} />
+              <u className="sEcUrItY"> {secretCode} </u>
             </div>
           </>
         ) : (
@@ -309,13 +307,6 @@ function EmojiPassword() {
   const [selectedImages, setSelectedImages] = useState(Array(4).fill(-1));
   const [access, setAccess] = useState(0);
   const [aroma, setAroma] = useState(0);
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("/MAPLESMOKE.json")
-      .then((response) => response.json())
-      .then((data) => setData(data));
-  }, []);
 
   useEffect(() => {
     if (
@@ -357,20 +348,17 @@ function EmojiPassword() {
         <AccessScreen
           access="3"
           accessLabel="TOP SECRET//SAR-MULTIPLE PROGRAMS//WAIVED"
-          data={data}
         />
       ) : access === 2 ? (
         <AccessScreen
           access="2"
           accessLabel="TOP SECRET//SAR-MAPLE SMOKE/SAR-SILENT TUNE"
-          data={data}
         />
       ) : access === 1 ? (
         <AccessScreen
           access="1"
           accessLabel="SECRET//SPECIAL ACCESS REQUIRED-SILENT TUNE"
           secretCode="CERULEAN LIBRARY"
-          data={data}
         />
       ) : (
         <MainScreen selectedImages={selectedImages} handleClick={handleClick} />

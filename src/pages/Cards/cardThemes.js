@@ -155,4 +155,34 @@ export const cardThemes = [
     fg: "#cfcfcf",
     hl: "#606060",
   },
+  {
+    name: "banjo",
+    bg: "#cfcbc5",
+    fg: "#000000",
+    hl: "#fcd116",
+  },
+  {
+    name: "coral",
+    bg: "#edece9",
+    fg: "#b88b6a",
+    hl: "#bf6523",
+  },
+  {
+    name: "crystal",
+    bg: "#f8f8f8",
+    fg: "#747474",
+    hl: "#6c8791",
+  },
+  {
+    name: "crimson",
+    bg: "#d11f39",
+    fg: "#000000",
+    hl: "#e2dadb",
+  },
+  {
+    name: "sky",
+    bg: "#85ace5",
+    fg: "#fafaf8",
+    hl: "#c2d1f0",
+  },
 ];
