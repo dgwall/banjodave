@@ -3046,6 +3046,7 @@
     "tagline": [
       "Played like two handed rock-paper-scissors, a game invented at Melee invitational Shoot the Gun"
     ],
+    "text": ["When deciding which movie to watch in the big lounge at STG2, everyone put their suggestions on Discord to a vote with heart reacts. Jude started reacting with gun emojis to mark go-to-bed worthy suggestions. From elsewhere in the building this activity was noticed by a watchful Zeppo, fingers ready to dankly introduce the chicken react, an inscrutable omen, to the mix."],
     "media": [
       {
         "type": "image",
@@ -3118,6 +3119,9 @@
       "Machermore Castle",
       "Scotland",
       "Smash",
+      "Melee",
+      "Smash Tournament",
+      "Tournament",
       "Photograph",
       "Sky",
       "Landscape"
@@ -3235,7 +3239,7 @@
     "accessLevel": 1,
     "date": "2023-01-10",
     "title": "Discontent",
-    "tagline": "A discarded Discord clone.",
+    "tagline": "A discarded Discord clone",
     "theme": "dark",
     "icon": "website",
     "text": [

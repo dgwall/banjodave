@@ -18,7 +18,7 @@ const CardSimple = ({ data, access }) => {
   const holoStyle = {
     backgroundImage: `url("/img/cards/holo-${data.accessLevel}.webp")`,
     filter: `hue-rotate(${data.accessLevel * 50}deg)`,
-    opacity: `${1 / 15 / 3}`,
+    opacity: "0.15",
   };
 
   return (
