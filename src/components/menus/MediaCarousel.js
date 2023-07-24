@@ -248,7 +248,7 @@ const MediaCarousel = ({
           );
         }}
       >
-        {/* Render the card and media items */}
+        {/* Render the card and media items inside carousel */}
         {renderCard()}
         {cardData.media.map(renderMediaItem)}
       </Carousel>

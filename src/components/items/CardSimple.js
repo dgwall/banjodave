@@ -9,37 +9,62 @@ const CardSimple = ({ data, access }) => {
     img.onload = () => setIsImageLoaded(true);
   }, [data.id]);
 
+  // Calculating styles
+  const cardStyle = {
+    backgroundImage: `url("/img/thumbnails/${data.id}.webp")`,
+    borderRadius: `${data.type === "Deck" ? "0.5vmin" : "1.5vmin"}`,
+  };
+
+  const holoStyle = {
+    backgroundImage: `url("/img/cards/holo-${data.accessLevel}.webp")`,
+    filter: `hue-rotate(${data.accessLevel * 50}deg)`,
+    opacity: `${1 / 15 / 3}`,
+  };
+
   return (
-    <div className="card-container neon-effect">
-      <div
-        className={`card simple-card border-${data.accessLevel} ${
-          isImageLoaded ? "fade-in" : ""
-        }`}
-        style={{
-          backgroundImage: `url("/img/thumbnails/${data.id}.webp")`,
-        }}
-      >
-        <div className={`card-border border-${data.accessLevel}`}></div>
+    <div
+      className={`card-container ${isImageLoaded ? "fade-in" : ""} ${
+        data.type === "Deck" && "deck-container"
+      }`}
+      title={`${data.tagline ? data.tagline : data.title}`}
+    >
+      <div className="card" style={cardStyle}>
+        {data.accessLevel > 0 && (
+          <div className="card-holo" style={holoStyle}></div>
+        )}
+        {data.type && data.type === "Deck" ? (
+          <div className={`card-border border-deck`}></div>
+        ) : (
+          <div className={`card-border border-${data.accessLevel}`}></div>
+        )}
         {data.accessLevel > 0 && data.accessLevel > access && (
           <div className={`card-locked locked-${data.accessLevel}`}></div>
         )}
-        <img
-          src={`/img/icon/${data.icon}.webp`}
-          alt={`${data.icon} icon`}
-          className="card-category"
-        />
-        <div className="card-id">
-          <span>
-            {data.date.substring(0, 4)}-{data.id}
-          </span>
-        </div>
-        <img
-          src={`/img/cards/bwc-${data.accessLevel}.webp`}
-          alt={`BWC Level ${data.accessLevel}`}
-          className="card-rarity"
-        />
+        {data.type && data.type !== "Deck" && (
+          <>
+            <img
+              src={`/img/icon/${data.icon}.webp`}
+              alt={`${data.icon} icon`}
+              className="card-category"
+            />
+            <img
+              src={`/img/cards/bwc-${data.accessLevel}.webp`}
+              alt={`BWC Level ${data.accessLevel}`}
+              className="card-rarity"
+            />
+            <div className="card-id">
+              <span>
+                {data.date.substring(0, 4)}-{data.id}
+              </span>
+            </div>
+          </>
+        )}
       </div>
-      <div className={`card-caption caption-${data.accessLevel}`}>
+      <div
+        className={`card-caption caption-${data.accessLevel} ${
+          data.type === "Deck" && "deck-caption"
+        }`}
+      >
         {data.title}
       </div>
     </div>

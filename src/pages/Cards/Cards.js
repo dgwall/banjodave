@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
 import Card from "../../components/items/Card";
+import CardSimple from "../../components/items/CardSimple";
 import CardExpanded from "../../components/items/CardExpanded";
 import "./Cards.css";
 import { cardThemes } from "./cardThemes";
@@ -14,7 +15,7 @@ import {
 
 const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
-const ACCESS_LEVEL = 0;
+const ACCESS_LEVEL = 3;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -91,6 +92,7 @@ function Cards() {
   const [isSearchFocused, setSearchFocused] = useState(false);
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
+  const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1280);
 
   const searchInputRef = useRef(null);
 
@@ -171,6 +173,16 @@ function Cards() {
     };
 
     fetchData();
+  }, []);
+
+  // determine window size
+  useEffect(() => {
+    const handleResize = () => {
+      setIsSmallScreen(window.innerWidth < 1280);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   // sort the cards when viewMode changes
@@ -515,7 +527,11 @@ function Cards() {
             tabIndex={0}
             role="gridcell"
           >
-            <Card data={card} access={ACCESS_LEVEL} />
+            {isSmallScreen ? (
+              <CardSimple data={card} access={ACCESS_LEVEL} />
+            ) : (
+              <Card data={card} access={ACCESS_LEVEL} />
+            )}
           </button>
         ))}
       </div>

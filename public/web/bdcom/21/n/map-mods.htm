@@ -1,0 +1,100 @@
+<head>
+	<title>Map Modifiers - N Mapping - BanjoDave</title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../default.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+	<link rel="icon" type="image/png" href="../img/favicon.png" />
+</head>
+
+<body>
+<div class="container">
+
+<div class="head"><a href="../index.htm"><img src="../img/banner.png" title="BanjoDave"></a></div>
+
+<div class="content">
+
+
+
+<div class="hr"><img src="../img/hr.png"></div>
+
+  <h1>Map Modifiers</h1>
+
+  <div class="body-text">
+  <p class="center">Some .exe programs written in Processing, to apply modifications to maps for n v1.4.</p>
+  </div>
+
+  <div class="hr"><img src="../img/hr.png"></div>
+
+  <h2>Red Gold</h2>
+
+    <div class="body-text">
+      <p>This isn't a program but check out what happens if you replace all the gold in N with mines. If you want to do this to maps yourself, just run this find and replace on the map data: Find [!0^], replace with [!12^]. All of the v1.4 Metanet maps with RED GOLD applied can be found on <a href="https://packs.droni.es/aa8c137baf89ae3ebe" target="_blank" class="ex">packs.droni.es</a>.</p>
+    </div>
+
+    <div class="frame-container"><iframe class="vid" src="https://www.youtube-nocookie.com/embed/31_GkYTiwec" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+  <div class="hr"><img src="../img/hr.png"></div>
+
+  <h2>Chaos Edition</h2>
+
+    <div class="body-text">
+    <p>This program will add random NReality mods to each map given to it. Paste your maps into the input.txt file, run the program, then play. Requires NReality of course.</p>
+
+    <h3>Download</h3>
+    <p class="center"><a href="file/Nv1.4_Chaos_Edition.zip" class="dl" download>Chaos Edition</a> <span class="dl-desc">[Nv1.4_Chaos_Edition.zip 4.59 MB]</span></p>
+    </div>
+
+    <div class="frame-container"><iframe class="vid" src="https://www.youtube-nocookie.com/embed/ZKVUO7f3ZCw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+  <div class="hr"><img src="../img/hr.png"></div>
+
+  <h2>Corruption</h2>
+
+    <div class="body-text">
+    <p>I wrote this program to corrupt a set of maps. It takes the tiles and items and shifts the bits of data up or down one. This feature is also a part of Chaos Edition. Creates some interesting challenges and glitches. Occasionally will create maps that crash N, so be aware of that.</p>
+
+    <h3>Download</h3>
+    <p class="center"><a href="file/Nv1.4_CORRUPTION.zip" class="dl" download>CORRUPTION</a> <span class="dl-desc">[Nv1.4_CORRUPTION.zip 8.67 MB]</span></p>
+    </div>
+</div>
+
+<div class="footer"><p>Copyright &copy; 2021-2022 BanjoDave. All Rights Reserved.</p></div>
+
+</div>
+
+<span class="close"><div id="myModal" class="modal">
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div></span>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.title;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>

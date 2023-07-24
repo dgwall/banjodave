@@ -162,6 +162,12 @@ export const cardThemes = [
     hl: "#fcd116",
   },
   {
+    name: "banjo-dark",
+    bg: "#111111",
+    fg: "#fcd116",
+    hl: "#cfcbc5",
+  },
+  {
     name: "coral",
     bg: "#edece9",
     fg: "#b88b6a",

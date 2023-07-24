@@ -10,11 +10,10 @@ function shuffleArray(array) {
   return array;
 }
 
-// Search for cards
 export function searchCards(cards, searchTerm) {
   if (!searchTerm) return [...cards];
 
-  const term = searchTerm.toLowerCase();
+  const term = searchTerm.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
   const hits = cards.map((card) => {
     let hitCount = 0;
     const regex = new RegExp(`\\b${term}\\b`, "i"); // Matches the whole word

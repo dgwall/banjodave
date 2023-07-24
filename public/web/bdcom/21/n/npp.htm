@@ -1,0 +1,113 @@
+<head>
+	<title>N++ - N Mapping - BanjoDave</title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../default.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+	<link rel="icon" type="image/png" href="../img/favicon.png" />
+</head>
+
+<body>
+<div class="container">
+
+<div class="head"><a href="../index.htm"><img src="../img/banner.png" title="BanjoDave"></a></div>
+
+<div class="content">
+  <h1>N++</h1>
+
+  <div class="body-text">
+  <p class="center">I've published a number of maps as BanjoDave on <a href="https://nplusplus.org/" target="_blank" class="ex">N++</a>.</p>
+  </div>
+
+  <div class="hr"><img src="../img/hr.png"></div>
+
+  <h2>Poster</h2>
+
+    <div class="body-text">
+    <div class="modals">
+      <img class="myImages" id="myImg" src="../img/screen-n-npp-poster.png" title="N++ Poster" style="width:100%;max-width:200px">
+    </div>
+
+    <h3>Download</h3>
+    <p class="center"><a href="file/nplusplus-poster.png" class="dl" download>nplusplus-poster.png</a> <span class="dl-desc">[9920x7016 3.49 MB]</span></p>
+    </div>
+
+  <div class="hr"><img src="../img/hr.png"></div>
+
+  <h2>Featured Maps</h2>
+
+    <div class="body-text">
+    	<p class="center">The following maps of mine have been featured in-game and on <a href="https://metanetsoftware.tumblr.com/" target="_blank" class="ex">Metanet Software's tumblr</a>.</p>
+
+      <div class="modals">
+        <img class="myImages" id="myImg" src="../img/screen-n-npp-5i1.jpg" title="5-in-1 B-00" style="width:100%;max-width:200px">
+      </div>
+
+    	<p class="center"><b>5-in-1 B-00</b> <i>"lightning fast reflexes and precision ground handling will be needed when zigzagging through this gorgeous level, however, slowing down to get the gold is allowed."</i> -scottm</p>
+
+      <div class="modals">
+        <img class="myImages" id="myImg" src="../img/screen-n-npp-b.jpg" title="Breath" style="width:100%;max-width:200px">
+      </div>
+
+      <p class="center"><b>Breath</b></p>
+
+      <div class="modals">
+        <img class="myImages" id="myImg" src="../img/screen-n-npp-bd.jpg" title="Becoming Dust" style="width:100%;max-width:200px">
+      </div>
+
+      <p class="center"><b>Becoming Dust</b> 5th place 2019 Halloween mapping contest</p>
+
+      <div class="modals">
+        <img class="myImages" id="myImg" src="../img/screen-n-npp-mmm.png" title="MEGA MEGA MEGA" style="width:100%;max-width:200px">
+      </div>
+
+      <p class="center"><b>MEGA MEGA MEGA</b> <i>"Super uber ultra omega! Monolith fortress, concept in concept, recursive magnificence! The weak-minded will feel crushed by the weight of all this awesome might, and work to worm their way skyward. However, the strong, the brave, they who are blessed with the MEGA, will find themselves at home and at peace within the deepest bowels of the beast."</i> -DarkStuff</p>
+
+      <div class="modals">
+        <img class="myImages" id="myImg" src="../img/screen-n-npp-whhhhh.jpg" title="whoa ha hup hup hup haaaoooo" style="width:100%;max-width:200px">
+      </div>
+
+      <p class="center"><b>whoa ha hup hup hup haaaoooo</b> <i>"Yeah I know what you want. I get it. You saw the title. I won’t! You can’t make me. There’s not a single fun bone in my body. Go on. Git.""</i> -DarkStuff</p>
+    </div>
+
+</div>
+
+<div class="footer"><p>Copyright &copy; 2021-2022 BanjoDave. All Rights Reserved.</p></div>
+
+</div>
+
+<span class="close"><div id="myModal" class="modal">
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div></span>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.title;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>

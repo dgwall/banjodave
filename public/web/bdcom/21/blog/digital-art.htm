@@ -1,0 +1,66 @@
+<head>
+	<title>Digital Art - Blog and Miscellaneous - BanjoDave</title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../default.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+	<link rel="icon" type="image/png" href="../img/favicon.png" />
+</head>
+
+<body>
+<div class="container">
+
+<div class="head"><a href="../index.htm"><img src="../img/banner.png" title="BanjoDave"></a></div>
+
+<div class="content">
+  <h1>Digital Art</h1>
+
+  <div class="modals"><img class="myImages" id="myImg" src="file/space-stephoidea.jpg" title="Space Stephoidea" style="max-width:90%"></div>
+  <div class="modals"><img class="myImages" id="myImg" src="file/宇宙蛇.png" title="宇宙蛇" style="max-width:90%"></div>
+  <div class="modals"><img class="myImages" id="myImg" src="file/three-poisons.png" title="Three Poisons" style="max-width:90%"></div>
+  <div class="modals"><img class="myImages" id="myImg" src="file/✨.gif" title="✨" style="max-width:90%"></div>
+  <div class="frame-container"><iframe class="vid" src="https://www.youtube-nocookie.com/embed/cAeFM7gUeb4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+  <div class="modals"><img class="myImages" id="myImg" src="file/treees.png" title="1-bit Trees" style="max-width:90%"></div>
+  <div class="modals"><img class="myImages" id="myImg" src="file/rafe.gif" title="rafe" style="max-width:90%"></div>
+
+</div>
+
+
+<div class="footer"><p>Copyright &copy; 2021 BanjoDave. All Rights Reserved.</p></div>
+
+</div>
+
+<span class="close"><div id="myModal" class="modal">
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div></span>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.title;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+</body>

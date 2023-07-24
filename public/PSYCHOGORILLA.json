@@ -55,7 +55,7 @@
     "type": "Card",
     "deck": "Banjo's Arcade",
     "accessLevel": 0,
-    "date": "2023-01-03",
+    "date": "2022-10-31",
     "title": "navexe beta cart",
     "tagline": "Banjo's Arcade notavirus.exe beta cartridge",
     "theme": "arcade",
@@ -106,9 +106,9 @@
     "type": "Deck",
     "deck": "Banjo's Arcade",
     "accessLevel": 0,
-    "date": "2023-06-13",
+    "date": "2023-XX-XX",
     "title": "Banjo's Arcade",
-    "tagline": "Cutting edge retro throwbacks...",
+    "tagline": "Cutting edge retro throwbacks",
     "theme": "arcade",
     "icon": "arcade",
     "text": [
@@ -132,7 +132,7 @@
     "type": "Deck",
     "deck": "Digital Art",
     "accessLevel": 0,
-    "date": "2023-01-06",
+    "date": "2023-XX-XX",
     "title": "Digital Art",
     "tagline": "Making art on my computer",
     "theme": "banjo",
@@ -250,7 +250,7 @@
     "title": "BanjoZine",
     "deck": "BanjoZine",
     "accessLevel": 0,
-    "date": "2021-06-15",
+    "date": "2021-XX-XX",
     "theme": "zine",
     "icon": "zine",
     "text": [
@@ -272,7 +272,7 @@
     "type": "Deck",
     "deck": "BJX",
     "accessLevel": 0,
-    "date": "2023-01-27",
+    "date": "2023-XX-XX",
     "title": "BJX Trading Ltd.",
     "tagline": "A very real and not fake at all lucrative trading opportunity",
     "theme": "bjx",
@@ -1087,7 +1087,7 @@
     "type": "Deck",
     "deck": "Banjo League",
     "accessLevel": 0,
-    "date": "2023-06-26",
+    "date": "2023-XX-XX",
     "title": "Banjo League",
     "tagline": "Banjo League",
     "theme": "league",
@@ -1316,7 +1316,7 @@
     "title": "Banjo Warez Corporation",
     "deck": "BWC",
     "accessLevel": 0,
-    "date": "2023-07-13",
+    "date": "2023-XX-XX",
     "theme": "bwc",
     "icon": "bwc",
     "tagline": ["A top-secret shadowy organization"],
@@ -1551,9 +1551,9 @@
     "type": "Deck",
     "deck": "Bop Drumps",
     "accessLevel": 0,
-    "date": "2021-08-10",
+    "date": "2021-XX-XX",
     "title": "BOP DRUMPS",
-    "tagline": "A throwback card game.",
+    "tagline": "A throwback card game",
     "theme": "white",
     "icon": "cards",
     "text": ["Know how to play?"],
@@ -1842,7 +1842,7 @@
     "accessLevel": 0,
     "date": "2023-01-06",
     "title": "Realm of Magic Animals",
-    "tagline": "Where animals wait to be summoned by stage magicians.",
+    "tagline": "Where animals wait to be summoned by stage magicians",
     "theme": "space",
     "icon": "art",
     "text": ["Concept art for Banjo's Arcade Kósmoptasía."],
@@ -1910,11 +1910,30 @@
     ]
   },
   {
+    "id": "DAENMA",
+    "type": "Card",
+    "deck": "Digital Art",
+    "accessLevel": 1,
+    "date": "2022-02-12",
+    "title": "Energy Marble",
+    "tagline": "This glass orb is effulgent with a strange energy",
+    "theme": "dark",
+    "icon": "art",
+    "tags": ["Rainbow", "Marble", "Orb", "Digital Art"],
+    "media": [
+      {
+        "type": "image",
+        "src": "art-energy-marble.png",
+        "alt": "Energy Marble"
+      }
+    ]
+  },
+  {
     "id": "DMBDBD",
     "type": "Deck",
     "deck": "BanjoDOOM",
     "accessLevel": 0,
-    "date": "2023-03-30",
+    "date": "2023-XX-XX",
     "title": "BanjoDOOM",
     "theme": "doom",
     "icon": "doom",
@@ -2022,7 +2041,7 @@
     "accessLevel": 0,
     "date": "2020-10-29",
     "title": "Deep Underground Military Bunker",
-    "tagline": "A strange mist is making people crazy in this secret base, and your prison door just unlocked itself.",
+    "tagline": "A strange mist is making people crazy in this secret base, and your prison door just unlocked itself",
     "theme": "dark-red",
     "icon": "doom",
     "tags": [
@@ -2076,7 +2095,7 @@
       "FPS",
       "1990s"
     ],
-    "tagline": "Knock the king off of his plinth",
+    "tagline": "Regicide in an abstract brutalist blue void",
     "buttons": [
       {
         "type": "download",
@@ -2189,7 +2208,7 @@
       "1990s",
       "Scifi"
     ],
-    "tagline": "Climb storm-lashed cliffs on your way to a monumental fortress. Collab with Danlex.",
+    "tagline": "Climb storm-lashed cliffs on your way to a monumental fortress in this collab with Danlex",
     "text": [
       "Come eat the Mapwich! Mappers are randomly assigned into pairs to collaborate on a map utilising ukiro's beautiful texture pack OTEX and Tango's Supercharge gameplay mod.",
       "Danlex and I created this towering map for MAP11 in Mapwich 2. Starting on the beach you must discover a way to progress up the cliffside. Emerging from a cave you will discover a huge white and gold palace jutting out from the sea. Forge a path over the precarious cliffside and prepare yourself to battle atop the the palace."
@@ -2230,7 +2249,7 @@
       "Scifi",
       "Hell"
     ],
-    "tagline": "Navigate the mysterious ruins and bulwarks on a demon-infested island.",
+    "tagline": "Navigate the mysterious ruins and bulwarks on a demon-infested island",
     "text": [
       "I've been making maps for 2D games for a while but I thought it was time to expand into Doom. I started learning how to use doom builder late October and am proud to release my first map! This is a 45-50 minute map that only works in GZDoom as far as I know. Uses stock Doom II textures. Difficulty levels available. Jump and crouch disabled. Mouselook optional. Save points are built in to the map so making your own saves is cheating.",
       "I tried to keep this map very classic in style, so no slopes or dynamic lights etc were used. I did have to use 3d floors for ceilings in places but that was more due to being naive about sectors and how the sky worked. If I were to remake this I would probably include more void sectors to improve performance. That being said, one of my favourite things about the map is the long lines of sight and being able to see parts of the map that are coming up next. I'm looking forward to making more maps in the future. I had a lot of fun making this so I hope you enjoy playing and let me know what you think!",
@@ -2777,7 +2796,7 @@
     "id": "NFISSR",
     "type": "Card",
     "title": "Fissure",
-    "tagline": "Lost mappack for N v1.4 from 2007 containing my oldest maps.",
+    "tagline": "Lost mappack for N v1.4 from 2007 containing my oldest maps",
     "deck": "N",
     "accessLevel": 1,
     "date": "2007-08-17",
@@ -2946,7 +2965,7 @@
     "tagline": "N Maps by DW40",
     "deck": "N",
     "accessLevel": 0,
-    "date": "2023-05-26",
+    "date": "2023-XX-XX",
     "theme": "n",
     "icon": "n",
     "text": [
@@ -3037,17 +3056,6 @@
     "tags": ["Smash", "Meme", "Nonsense", "Gif"]
   },
   {
-    "id": "NSWKFC",
-    "type": "Card",
-    "title": "WE TRIED THE WORST RATED KFC IN DUMFRIES 🤢🤢🤢",
-    "deck": "Nonsense",
-    "accessLevel": 1,
-    "date": "2022-11-29",
-    "theme": "dark",
-    "icon": "meme",
-    "tags": ["Smash", "YouTube", "EdgyMurphy", "Cleo", "Meme", "Nonsense"]
-  },
-  {
     "id": "PAWRAT",
     "type": "Card",
     "deck": "Physical Art",
@@ -3083,7 +3091,7 @@
     "type": "Deck",
     "deck": "Pebblemoths",
     "accessLevel": 0,
-    "date": "2022-09-06",
+    "date": "2022-XX-XX",
     "title": "Pebblemoths",
     "tagline": "Creatures with mystical powers of the Zodiac",
     "theme": "pebblemoth",
@@ -3102,7 +3110,9 @@
     "theme": "sky",
     "icon": "image",
     "text": ["! TO ADD !"],
-    "media": [{"type": "image", "src": "photo-machermore-castle.jpg", "alt": ""}],
+    "media": [
+      { "type": "image", "src": "photo-machermore-castle.jpg", "alt": "" }
+    ],
     "tags": [
       "Shoot the Gun",
       "Machermore Castle",
@@ -3138,19 +3148,46 @@
     "id": "PMC112",
     "type": "Card",
     "title": "Pebblemoth #112",
-    "tagline": "pigrubus apicula ▲-♄-♓︎-⚥",
+    "tagline": "Pigrubus apicula ▲-♄-♓︎-⚥",
     "deck": "Pebblemoths",
     "accessLevel": 1,
     "date": "2022-10-24",
     "theme": "crimson",
     "icon": "pebblemoth-egg",
-    "text": ["."],
+    "text": [
+      "Pebblemoth #112: Pigrubus apicula",
+      "▲: Uncommon / ♄-♓︎: Saturn in  Pisces / ⚥: Dioecious"
+    ],
     "tags": [
       "Crimson",
       "Indolence",
       "Bee",
       "Saturn",
       "Pisces",
+      "Monoecy",
+      "Uncommon",
+      "Pebblemoth",
+      "Pebblemoth Card"
+    ]
+  },
+  {
+    "id": "PMC111",
+    "type": "Card",
+    "title": "Pebblemoth #111",
+    "tagline": "Umbrofusces coercipressus ▲-♄-♐︎-⚤",
+    "deck": "Pebblemoths",
+    "accessLevel": 1,
+    "date": "2022-10-24",
+    "theme": "crimson",
+    "icon": "pebblemoth-egg",
+    "text": ["! BWC TO ADD !"],
+    "tags": [
+      "Dark Brown",
+      "Oppression",
+      "Cypress",
+      "Saturn",
+      "Sagittarius",
+      "Dioecy",
       "Uncommon",
       "Pebblemoth",
       "Pebblemoth Card"
@@ -3185,7 +3222,7 @@
     "title": "Web Development",
     "deck": "Websites",
     "accessLevel": 0,
-    "date": "2023-03-01",
+    "date": "2023-XX-XX",
     "theme": "dark",
     "icon": "website",
     "tagline": ["I started making websites when I was 12"],
@@ -3280,6 +3317,53 @@
       }
     ],
     "tags": ["Professional", "Portfolio", "Web Dev", "Website", "Work", "Job"]
+  },
+  {
+    "id": "WEBB22",
+    "type": "Card",
+    "title": "BanjoDave.com 2021-2022",
+    "deck": "Websites",
+    "accessLevel": 0,
+    "date": "2022-11-01",
+    "theme": "banjo-dark",
+    "icon": "website",
+    "buttons": [
+      {
+        "type": "internal",
+        "href": "/web/bdcom/21/index.htm",
+        "label": "Visit archived website"
+      }
+    ],
+    "tags": ["BanjoDave", "Website", "Portfolio", "HTML", "CSS", "Web Dev"]
+  },
+  {
+    "id": "WEBBUC",
+    "type": "Card",
+    "title": "BanjoDave.com Under Construction 2021",
+    "deck": "Websites",
+    "accessLevel": 0,
+    "date": "2021-02-22",
+    "theme": "arcade",
+    "icon": "website",
+    "text": [
+      "Before I had content on this domain, the front page looked like this."
+    ],
+    "buttons": [
+      {
+        "type": "internal",
+        "href": "/web/bdcom/21/blog/under-construction/index.htm",
+        "label": "Visit archived website"
+      }
+    ],
+    "tags": [
+      "BanjoDave",
+      "Website",
+      "Under Construction",
+      "Digital Art",
+      "HTML",
+      "CSS",
+      "Web Dev"
+    ]
   },
   {
     "id": "WGA001",
@@ -3442,7 +3526,7 @@
     "type": "Card",
     "deck": "WGMC",
     "accessLevel": 1,
-    "date": "2023-01-07",
+    "date": "2022-03-27",
     "title": "WGMC Beta #1",
     "tagline": "Weary Goblin Mudhole Club Beta #1",
     "theme": "wgmc",
@@ -3454,7 +3538,7 @@
     "type": "Card",
     "deck": "WGMC",
     "accessLevel": 2,
-    "date": "2023-01-07",
+    "date": "2022-03-27",
     "title": "WGMC Beta #2",
     "tagline": "Weary Goblin Mudhole Club Beta #2",
     "theme": "wgmc",
@@ -3466,7 +3550,7 @@
     "type": "Card",
     "deck": "WGMC",
     "accessLevel": 3,
-    "date": "2023-01-07",
+    "date": "2022-03-27",
     "title": "WGMC Beta #3",
     "tagline": "Weary Goblin Mudhole Club Beta #3",
     "theme": "wgmc",
@@ -3478,7 +3562,7 @@
     "type": "Card",
     "deck": "WGMC",
     "accessLevel": 0,
-    "date": "2023-01-07",
+    "date": "2022-03-27",
     "title": "WGMC Beta #4",
     "tagline": "Weary Goblin Mudhole Club Beta #4",
     "theme": "wgmc",
@@ -3490,7 +3574,7 @@
     "type": "Card",
     "deck": "WGMC",
     "accessLevel": 2,
-    "date": "2023-01-07",
+    "date": "2022-03-27",
     "title": "WGMC Beta #5",
     "tagline": "Weary Goblin Mudhole Club Beta #5",
     "theme": "wgmc",
@@ -3502,7 +3586,7 @@
     "type": "Card",
     "deck": "WGMC",
     "accessLevel": 1,
-    "date": "2023-01-07",
+    "date": "2022-03-27",
     "title": "WGMC Beta #6",
     "tagline": "Weary Goblin Mudhole Club Beta #6",
     "theme": "wgmc",
@@ -3514,7 +3598,7 @@
     "type": "Card",
     "deck": "WGMC",
     "accessLevel": 0,
-    "date": "2023-01-07",
+    "date": "2022-03-27",
     "title": "WGMC Beta #7",
     "tagline": "Weary Goblin Mudhole Club Beta #7",
     "theme": "wgmc",
@@ -3526,7 +3610,7 @@
     "type": "Card",
     "deck": "WGMC",
     "accessLevel": 0,
-    "date": "2023-01-07",
+    "date": "2022-03-27",
     "title": "WGMC Beta #8",
     "tagline": "Weary Goblin Mudhole Club Beta #8",
     "theme": "wgmc",
@@ -3538,7 +3622,7 @@
     "type": "Card",
     "deck": "WGMC",
     "accessLevel": 0,
-    "date": "2023-01-07",
+    "date": "2022-03-27",
     "title": "WGMC Beta Grub",
     "tagline": "Weary Goblin Mudhole Club Beta Grub",
     "theme": "wgmc",
@@ -3550,7 +3634,7 @@
     "type": "Card",
     "deck": "WGMC",
     "accessLevel": 1,
-    "date": "2023-01-07",
+    "date": "2022-03-27",
     "title": "WGMC Beta Golden Grub",
     "tagline": "Weary Goblin Mudhole Club Beta Golden Grub",
     "theme": "wgmc",
@@ -3569,7 +3653,7 @@
     "type": "Deck",
     "deck": "WGMC",
     "accessLevel": 0,
-    "date": "2023-01-07",
+    "date": "2022-XX-XX",
     "title": "Weary Goblin Mudhole Club",
     "tagline": "Coming Soon",
     "theme": "wgmc",

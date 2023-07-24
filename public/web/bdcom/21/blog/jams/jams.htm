@@ -1,0 +1,111 @@
+<head>
+	<title>Game Jams - Game Jams and Unfinished Games - BanjoDave</title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../../default.css">
+	<link rel="shortcut icon" href="../../img/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../../img/favicon.ico" />
+	<link rel="icon" type="image/png" href="../../img/favicon.png" />
+</head>
+
+<body>
+<div class="container">
+
+<div class="head"><a href="../../index.htm"><img src="../../img/banner.png" title="BanjoDave"></a></div>
+
+<div class="content">
+  <h1>Game Jams</h1>
+
+  <div class="body-text">
+  <p class="center">While I don't enter as many as I perhaps should, I sometimes enjoy the challenge of a game jam: creating a game in just a few days.</p>
+  </div>
+
+    <div class="frame-container"><iframe class="vid" name="frame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+    <div class="thumbs">
+      <a href="https://www.youtube-nocookie.com/embed/gjiy6OhxcD0" target="frame"><img src="../../img/thumb-jams-fottp.png" title="Fall of the 20 Pillars [GameMaker 20 Jam]"></a>
+      <a href="https://www.youtube-nocookie.com/embed/XTmtI49vUHk" target="frame"><img src="../../img/thumb-jams-obgp.png" title="official birdybird game 100 nuggie playthrough"></a>
+      <a href="https://www.youtube-nocookie.com/embed/duX-rm8PtFY" target="frame"><img src="../../img/thumb-jams-e1.png" title="#gmtkjam​ Progress Night 1"></a>
+      <a href="https://www.youtube-nocookie.com/embed/e2So08j-n14" target="frame"><img src="../../img/thumb-jams-e2.png" title="#GMTKJam​ submission ~eeevvooo~ download in description"></a>
+    </div>
+
+  <div class="hr"><img src="../../img/hr.png"></div>
+
+  <h2>Fall of the 20 Pillars</h2>
+
+    <div class="body-text">
+    <p>For the GameMaker 20 Jam, I got the beginnings of a top down shooter made. The player controlled ship has destructible wings which, if destroyed, make the ship harder to control. I only spent a couple hours on this and didn't get too much done for this jam as I spent the whole first day making DOOM maps instead. Video is available above.</p>
+    </div>
+
+  <div class="hr"><img src="../../img/hr.png"></div>
+
+  <h2>COLLAT</h2>
+
+    <div class="body-text">
+
+    <div class="modals">
+      <img class="myImages" id="myImg" src="../../img/screen-jams-collat1.png" title="COLLAT Title Screen" style="width:100%;max-width:200px">
+      <img class="myImages" id="myImg" src="../../img/screen-jams-collat2.png" title="An enemy!" style="width:100%;max-width:200px">
+      <img class="myImages" id="myImg" src="../../img/screen-jams-collat3.png" title="Gibs" style="width:100%;max-width:200px">
+      <img class="myImages" id="myImg" src="../../img/screen-jams-collat4.png" title="Enemies surround explosive barrels" style="width:100%;max-width:200px">
+    </div>
+
+    <p>This was for GMTKJam 2019. The theme was "Just One". I made a little keyboard and mouse shooter. Move your little guy around the screen, pick up the gun with only one bullet, and clear the screen of enemies. The game can be downloaded from <a href="https://banjodave.itch.io/collat" target="_blank" class="ex">itch.io</a>.</p>
+    </div>
+
+  <div class="hr"><img src="../../img/hr.png"></div>
+
+  <h2>birdybirdgame</h2>
+
+    <div class="body-text">
+    <p>A short platformer made for a friend's Discord server. Your character has multiple jumps. There are 100 nuggies to collect. Four levels and a final boss. Video above or <a href="file/birdybirdgame_v1.exe" class="dl" download>download here</a> <span class="dl-desc">[birdybirdgame_v1.exe 12.9 MB]</span>.</p>
+    </div>
+
+  <div class="hr"><img src="../../img/hr.png"></div>
+
+  <h2>eeevvooo</h2>
+
+    <div class="body-text">
+    <p>Made for the first Game Maker's Toolkit Jam in 2017. The theme was "Downwell's Dual Purpose Design". In this platformer I created a throwing spear which acts as a weapon but also can be utilised to aid movement. A thrown spear can be bounced off of to gain height. The timing of this jam coincided with a viewing party for The 2017 Evolution Championship Series so I didn't get as much done as I'd hoped. The music was made by my friend Sheezy. Video above. The game can be downloaded from <a href="https://banjodave.itch.io/eeevvooo" target="_blank" class="ex">itch.io</a>.</p>
+    </div>
+
+</div>
+
+<div class="footer"><p>Copyright &copy; 2021 BanjoDave. All Rights Reserved.</p></div>
+
+</div>
+
+<span class="close"><div id="myModal" class="modal">
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div></span>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.title;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>

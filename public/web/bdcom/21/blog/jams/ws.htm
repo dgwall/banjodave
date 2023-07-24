@@ -1,0 +1,92 @@
+<head>
+	<title>Wired Steel - Game Jams and Unfinished Games - BanjoDave</title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../../default.css">
+	<link rel="shortcut icon" href="../../img/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../../img/favicon.ico" />
+	<link rel="icon" type="image/png" href="../../img/favicon.png" />
+</head>
+
+<body>
+<div class="container">
+
+<div class="head"><a href="../../index.htm"><img src="../../img/banner.png" title="BanjoDave"></a></div>
+
+<div class="content">
+  <h1>Wired Steel</h1>
+
+  <div class="body-text">
+  <p class="center">In 2016 I attempted to create a game with movement mechanics similar to that of Super Smash Bros. Melee. I successfully created a boxy robot character maneuverable with an xbox controller with nuanced mechanics of movement.</p>
+  </div>
+
+    <div class="frame-container"><iframe class="vid" name="frame" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; picture-in-picture" allowfullscreen></iframe></div>
+
+    <div class="thumbs">
+      <a href="https://www.youtube-nocookie.com/embed/scUEfcAIuZQ" target="frame"><img src="../../img/thumb-jams-ws-d.png" title="Dance"></a>
+      <a href="https://www.youtube-nocookie.com/embed/dplG2FHjDcY" target="frame"><img src="../../img/thumb-jams-ws-dm.png" title="Wired Steel - Damage Model"></a>
+      <a href="https://www.youtube-nocookie.com/embed/lRwF4JEgshk" target="frame"><img src="../../img/thumb-jams-ws-1.png" title="Melee inspired game - Development Update #1"></a>
+      <a href="https://www.youtube-nocookie.com/embed/JV1DgotI9FE" target="frame"><img src="../../img/thumb-jams-ws-2.png" title="Game Dev Update #2 - Melee inspired game and new bullet hell shmup"></a>
+      <a href="https://www.youtube-nocookie.com/embed/edw7HIoE3tg" target="frame"><img src="../../img/thumb-jams-ws-2019.png" title="2019 09 14 20 10 08"></a>
+    </div>
+
+  <div class="hr"><img src="../../img/hr.png"></div>
+
+  <h2>Features</h2>
+
+    <div class="body-text">
+    <p>I programmed the demo with the following features:</p>
+    <ul>
+      <li>Procedural damage model
+      <li>Randomized characters
+      <li>Jump squat and double-jump
+      <li>Ledge grabbing
+      <li>Directional air dodging
+      <li>Wavedashing
+      <li>Dash dancing
+      <li>Shield, lightshield, powershield, and shield roll
+      <li>Tumble fall, teching, and tech-rolls
+    </ul>
+    <p>In the end, the code became rather messy and I resolved to refactor it into a more manageable structure, but I never quite got around to it. I have still not fully abandoned the Wired Steel idea however, and the little robot may just re-appear in a future platformer that I have been planning.</p>
+    </div>
+
+</div>
+
+<div class="footer"><p>Copyright &copy; 2021 BanjoDave. All Rights Reserved.</p></div>
+
+</div>
+
+<span class="close"><div id="myModal" class="modal">
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div></span>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.title;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>

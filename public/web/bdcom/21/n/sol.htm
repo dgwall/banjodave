@@ -1,0 +1,79 @@
+<head>
+	<title>sol - N Mapping - BanjoDave</title>
+  <meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="../default.css">
+	<link rel="shortcut icon" href="../img/favicon.ico" />
+	<link rel="icon" type="image/x-icon" href="../img/favicon.ico" />
+	<link rel="icon" type="image/png" href="../img/favicon.png" />
+</head>
+
+<body>
+<div class="container">
+
+<div class="head"><a href="../index.htm"><img src="../img/banner.png" title="BanjoDave"></a></div>
+
+<div class="content">
+  <h1>🚧 sol 🚧</h1>
+
+  <div class="body-text">
+  <p class="center">Mappack for <a href="http://www.thewayoftheninja.org/n_history.html" target="_blank" class="ex">N v1.4</a> by <a href="https://www.metanetsoftware.com" target="_blank" class="ex">Metanet Software</a></p>
+  </div>
+
+    <div class="body-text">
+    <p>sol began as an attempt to create a 3 column experience to replace the official level set, introducing the player to the concepts of N as they play. Now I use this pack to explore common mapping tropes in an attempt to provide as much variety in a pack as I can.</p>
+  	<p>Maps are currently being released episode by episode on <a href="https://www.nmaps.net/browse?q=author%3ADW40+sol" target="_blank" class="ex">NUMA</a> with a full release coming in the future.</p>
+
+    <div class="modals">
+      <img class="myImages" id="myImg" src="../img/screen-n-s.png" title="sol" style="width:100%;max-width:200px">
+      <img class="myImages" id="myImg" src="../img/screen-n-s1.png" title="sol 0-0.a illuminate" style="width:100%;max-width:200px">
+      <img class="myImages" id="myImg" src="../img/screen-n-s2.png" title="sol 0-1.a preliminary" style="width:100%;max-width:200px">
+      <img class="myImages" id="myImg" src="../img/screen-n-s3.png" title="sol 0-2.c icarus" style="width:100%;max-width:200px">
+      <img class="myImages" id="myImg" src="../img/screen-n-s4.png" title="sol 0-6.e hellfire" style="width:100%;max-width:200px">
+    </div>
+
+    <h3>Links</h3>
+  	<p class="center">🚧 sol <a href="https://www.nmaps.net/browse?q=author%3ADW40+sol+0" target="_blank" class="ex">NUMA</a> <span class="dl-desc">[8/10 episodes]</span> 🚧<br>
+    🚧 sxl * 🚧</p>
+    </div>
+
+</div>
+
+<div class="footer"><p>Copyright &copy; 2021-2022 BanjoDave. All Rights Reserved.</p></div>
+
+</div>
+
+<span class="close"><div id="myModal" class="modal">
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div></span>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.title;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+
+</body>

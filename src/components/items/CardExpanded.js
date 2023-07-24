@@ -19,6 +19,12 @@ const calculateRotation = (e, element, type) => {
   return { x: x * -10, y: y * 10 };
 };
 
+// Function to prevent the touch move event
+// This is to avoid unwanted behavior on touch devices
+const preventTouch = (event) => {
+  event.preventDefault();
+};
+
 const CardExpanded = ({ data, access, deck }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [smoothTransition, setSmoothTransition] = useState(true);
@@ -55,10 +61,24 @@ const CardExpanded = ({ data, access, deck }) => {
 
   // Move handler
   const handleMove = (e) => {
+    e.preventDefault();
     setSmoothTransition(false);
     const newRotation = calculateRotation(e, e.currentTarget, data.type);
     setRotation(newRotation);
   };
+
+  // Prevent touch move on the carousel container to stop page from scrolling when interacting with carousel
+  useEffect(() => {
+    const container = document.querySelector(".card-container");
+    if (container) {
+      container.addEventListener("touchmove", preventTouch, { passive: false });
+    }
+    return () => {
+      if (container) {
+        container.removeEventListener("touchmove", preventTouch);
+      }
+    };
+  }, []);
 
   // Enter handler
   const handleEnter = (e) => {
