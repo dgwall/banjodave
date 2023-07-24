@@ -18,6 +18,19 @@ const Cards = React.lazy(() => import("./pages/Cards/Cards"));
 const BanjosArcade = React.lazy(() => import("./pages/Games/BanjosArcade"));
 const Bwc = React.lazy(() => import("./pages/BWC/BWC"));
 
+const NotFound = () => {
+  return (
+    <div className="main">
+      <div className="page">
+        <header>404 - Page Not Found</header>
+        <div className="overview">
+          The page you are looking for does not exist.
+        </div>
+      </div>
+    </div>
+  );
+};
+
 const routes = [
   { path: "/", mainClass: "", Component: Home },
   { path: "/games", mainClass: "-games", Component: Games },
@@ -34,6 +47,7 @@ const routes = [
   { path: "/bfd", mainClass: "-cards", Component: Cards },
   { path: "/bfd/:cardId", mainClass: "-cards", Component: Cards },
   { path: "/bwc", mainClass: "-bwc", Component: Bwc },
+  { path: "*", mainClass: "", Component: NotFound },
 ];
 
 function App() {
