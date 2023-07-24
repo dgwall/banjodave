@@ -16,7 +16,7 @@ import {
 
 const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
-const ACCESS_LEVEL = 3;
+const ACCESS_LEVEL = 1;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -340,6 +340,7 @@ function Cards() {
         {selectedCard && (
           <>
             <title>{`BFD ${selectedCard?.title}`}</title>
+            <meta content="BanjoDave.com" property="og:site_name" />
             <meta
               name="description"
               content={`BFD ${selectedCard?.title} on BanjoDave.com. ${selectedCard?.tagline}.`}
@@ -352,9 +353,9 @@ function Cards() {
               property="og:image"
               content={`/img/thumbnails/${selectedCard.id}.webp`}
             />
+            <meta name="twitter:card" content="summary_large_image" />
             <meta property="og:description" content={selectedCard?.tagline} />
             <meta name="theme-color" content={selectedTheme?.hl} />
-            <meta name="twitter:card" content="summary_large_image" />
           </>
         )}
       </Helmet>
