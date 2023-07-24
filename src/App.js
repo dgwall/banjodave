@@ -1,5 +1,6 @@
 import React, { Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HelmetProvider } from "react-helmet-async";
 import "./App.css";
 import Header from "./components/menus/Header/Header";
 import Footer from "./components/menus/Footer/Footer";
@@ -52,40 +53,44 @@ const routes = [
 
 function App() {
   return (
-    <Router>
-      <ScrollToTop />
-      <Header />
-      <Suspense
-        fallback={
-          <div className="main">
-            <div className="page">
-              <div className="loading">
-                <img src="/img/orb.gif" alt="orb" loading="lazy" />
-                <br />
-                Loading...
-              </div>
-            </div>
-          </div>
-        }
-      >
-        <Routes>
-          {routes.map(({ path, mainClass, Component }) => (
-            <Route
-              path={path}
-              key={path}
-              element={
-                <main className={`main${mainClass}`}>
-                  <div className="page">
-                    <Component />
+    <React.StrictMode>
+      <HelmetProvider>
+        <Router>
+          <ScrollToTop />
+          <Header />
+          <Suspense
+            fallback={
+              <div className="main">
+                <div className="page">
+                  <div className="loading">
+                    <img src="/img/orb.gif" alt="orb" loading="lazy" />
+                    <br />
+                    Loading...
                   </div>
-                </main>
-              }
-            />
-          ))}
-        </Routes>
-      </Suspense>
-      <Footer />
-    </Router>
+                </div>
+              </div>
+            }
+          >
+            <Routes>
+              {routes.map(({ path, mainClass, Component }) => (
+                <Route
+                  path={path}
+                  key={path}
+                  element={
+                    <main className={`main${mainClass}`}>
+                      <div className="page">
+                        <Component />
+                      </div>
+                    </main>
+                  }
+                />
+              ))}
+            </Routes>
+          </Suspense>
+          <Footer />
+        </Router>
+      </HelmetProvider>
+    </React.StrictMode>
   );
 }
 

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { useNavigate, useParams, useLocation } from "react-router-dom";
+import { Helmet } from "react-helmet-async";
 import Card from "../../components/items/Card";
 import CardSimple from "../../components/items/CardSimple";
 import CardExpanded from "../../components/items/CardExpanded";
@@ -335,6 +336,24 @@ function Cards() {
 
   return (
     <>
+      <Helmet>
+        {selectedCard && (
+          <>
+            <meta
+              property="og:title"
+              content={`${selectedCard?.title} on BanjoDave.com`}
+            />
+            <meta
+              property="og:image"
+              content={`/img/thumbnails/${selectedCard.id}.webp`}
+            />
+            <meta property="og:description" content={selectedCard?.tagline} />
+            <meta name="theme-color" content={selectedTheme?.hl} />
+            <meta name="twitter:card" content="summary_large_image" />
+          </>
+        )}
+      </Helmet>
+
       {selectedCard ? (
         <section
           className="card-selected"
