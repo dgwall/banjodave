@@ -339,6 +339,11 @@ function Cards() {
       <Helmet>
         {selectedCard && (
           <>
+            <title>{`BFD ${selectedCard?.title}`}</title>
+            <meta
+              name="description"
+              content={`BFD ${selectedCard?.title} on BanjoDave.com. ${selectedCard?.tagline}.`}
+            />
             <meta
               property="og:title"
               content={`${selectedCard?.title} on BanjoDave.com`}
