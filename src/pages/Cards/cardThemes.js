@@ -191,4 +191,10 @@ export const cardThemes = [
     fg: "#fafaf8",
     hl: "#c2d1f0",
   },
+  {
+    name: "citrus",
+    bg: "#ce6237",
+    fg: "#fcc6a1",
+    hl: "#f6902c",
+  },
 ];

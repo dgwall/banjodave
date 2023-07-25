@@ -544,7 +544,12 @@ function Cards() {
         />
       )}
 
-      <div className="cards-container" role="grid">
+      <div
+        className={`cards-container ${
+          !isSmallScreen && "cards-container-large"
+        }`}
+        role="grid"
+      >
         {similarCards.slice(begin, end).map((card, index) => (
           <button
             onClick={() => handleCardClick(card)}

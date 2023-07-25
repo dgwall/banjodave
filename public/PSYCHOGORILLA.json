@@ -152,6 +152,7 @@
     "tags": [
       "BanjoZine",
       "Banjo House",
+      "Zine",
       "Mapwich 2",
       "DOOM II",
       "Super Smash Bros. Melee",
@@ -205,6 +206,7 @@
     "tags": [
       "BanjoZine",
       "Banjo House",
+      "Zine",
       "Blazing Beachhead",
       "Danlex",
       "Cosmic Snake",
@@ -259,8 +261,9 @@
     ],
     "tags": [
       "BanjoZine",
-      "Publication",
       "BanjoHouse",
+      "Zine",
+      "Publication",
       "Game",
       "Philosophy",
       "Media",
@@ -1570,7 +1573,7 @@
   {
     "id": "DAAOPT",
     "type": "Card",
-    "deck": "Archive",
+    "deck": "Archived",
     "accessLevel": 2,
     "date": "2005-05-11",
     "title": "Optical Illusion",
@@ -1584,7 +1587,7 @@
       "Digital Art",
       "Art",
       "MS Paint",
-      "Archive",
+      "Archived",
       "Optical Illusion",
       "2000s"
     ]
@@ -1592,7 +1595,7 @@
   {
     "id": "DAASPA",
     "type": "Card",
-    "deck": "Archive",
+    "deck": "Archived",
     "accessLevel": 1,
     "date": "2005-03-20",
     "title": "SPACE WARZ",
@@ -1618,7 +1621,7 @@
       "Sketch",
       "Scan",
       "Alien",
-      "Archive",
+      "Archived",
       "2000s"
     ]
   },
@@ -1699,6 +1702,21 @@
     ]
   },
   {
+    "id": "CAPSUL",
+    "type": "Deck",
+    "deck": "BFD Capsules",
+    "accessLevel": 0,
+    "date": "2023-XX-XX",
+    "title": "BFD Capsules",
+    "tagline": "BFD Capsule Series, You can only choose one.",
+    "theme": "dark",
+    "icon": "capsule",
+    "text": [
+      "This is your last chance. After this, there is no turning back. You take any of these pills—nothing special happens. You don't—same thing. Remember: all I'm offering is the truth. Nothing more."
+    ],
+    "tags": ["Capsule", "BFD", "Twitter", "Digital Art"]
+  },
+  {
     "id": "DACCEE",
     "type": "Card",
     "deck": "BFD Capsules",
@@ -1709,7 +1727,7 @@
     "theme": "iridescent",
     "icon": "capsule",
     "text": ["Summons a real tulpa that tells mostly-true fortunes."],
-    "tags": ["Capsule", "BFD", "Celadon", "Digital Art", "Iridescent"]
+    "tags": ["Celestial", "Iridescent", "Digital Art", "Capsule", "BFD"]
   },
   {
     "id": "DACCEL",
@@ -1721,7 +1739,8 @@
     "tagline": "BFD Capsule Series, you can only choose one",
     "theme": "emerald",
     "icon": "capsule",
-    "tags": ["Capsule", "BFD", "Celadon", "Digital Art", "Green"]
+    "text": ["???"],
+    "tags": ["Celadon", "Green", "Digital Art", "Capsule", "BFD"]
   },
   {
     "id": "DACCOR",
@@ -1734,7 +1753,20 @@
     "theme": "coral",
     "icon": "capsule",
     "text": ["Instant AAA industry-leading game dev knowledge."],
-    "tags": ["Capsule", "BFD", "Coral", "Pixelated", "Digital Art"]
+    "tags": ["Coral", "Pixelated", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCIT",
+    "type": "Card",
+    "title": "Citrus Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 1,
+    "date": "2022-11-23",
+    "theme": "citrus",
+    "icon": "capsule",
+    "text": ["Juicy."],
+    "tags": ["Citrus", "Orange", "Nonsense", "Capsule", "BFD", "Digital Art"]
   },
   {
     "id": "DACCRI",
@@ -1747,7 +1779,145 @@
     "theme": "crimson",
     "icon": "capsule",
     "text": ["Infinitely regenerating blood."],
-    "tags": ["Capsule", "BFD", "Crimson", "Blood", "Digital Art"]
+    "tags": ["Crimson", "Blood", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCEA",
+    "type": "Card",
+    "title": "Ceramic Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 0,
+    "date": "2023-01-17",
+    "theme": "ceramic",
+    "icon": "capsule",
+    "text": ["???"],
+    "tags": ["Ceramic", "China", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCER",
+    "type": "Card",
+    "title": "Cerulean Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 1,
+    "date": "2022-03-30",
+    "theme": "cerulean",
+    "icon": "capsule",
+    "text": ["Can read any book in one hour."],
+    "tags": ["Cerulean", "Blue", "Gold", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCHA",
+    "type": "Card",
+    "title": "Chartreuse Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 0,
+    "date": "2022-03-30",
+    "theme": "yellow-green",
+    "icon": "capsule",
+    "text": ["Instantly gain 10 years of practice on one instrument."],
+    "tags": ["Chartreuse", "Yellow", "Green", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCHE",
+    "type": "Card",
+    "title": "Cherry Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 0,
+    "date": "2022-03-30",
+    "theme": "cherry",
+    "icon": "capsule",
+    "text": ["+500k YouTube subscribers."],
+    "tags": ["Cherry", "Chatoyant", "Red", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCHO",
+    "type": "Card",
+    "title": "Chrome Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 1,
+    "date": "2023-01-15",
+    "theme": "chrome",
+    "icon": "capsule",
+    "text": ["???"],
+    "tags": ["Chrome", "Metallic", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCHR",
+    "type": "Card",
+    "title": "Charcoal Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 2,
+    "date": "2022-03-30",
+    "theme": "bwc",
+    "icon": "capsule",
+    "text": ["Free games for life."],
+    "tags": [
+      "Charcoal",
+      "Black",
+      "BWC",
+      "Rainbow",
+      "Capsule",
+      "BFD",
+      "Digital Art"
+    ]
+  },
+  {
+    "id": "DACCOB",
+    "type": "Card",
+    "title": "Cobalt Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 0,
+    "date": "2022-03-30",
+    "theme": "blue",
+    "icon": "capsule",
+    "text": ["Discover the next AI tech breakthrough."],
+    "tags": ["Cobalt", "Blue", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCOE",
+    "type": "Card",
+    "title": "Colourless Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 0,
+    "date": "2023-01-17",
+    "theme": "white",
+    "icon": "capsule",
+    "text": ["???"],
+    "tags": ["White", "Zine", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCOL",
+    "type": "Card",
+    "title": "Colourful Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 1,
+    "date": "2022-04-02",
+    "theme": "tuttifrutti",
+    "icon": "capsule",
+    "text": ["Any visual art you make comes out exactly how you imagined."],
+    "tags": ["Rainbow", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCOO",
+    "type": "Card",
+    "title": "Corroded Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 0,
+    "date": "2023-01-01",
+    "theme": "charcoal",
+    "icon": "capsule",
+    "text": ["X-ray vision for underground artifacts."],
+    "tags": ["Corroded", "Old", "Archived", "BFD", "Digital Art"]
   },
   {
     "id": "DACCRY",
@@ -1759,8 +1929,73 @@
     "date": "2022-11-23",
     "theme": "crystal",
     "icon": "capsule",
-    "text": ["."],
-    "tags": ["Capsule", "BFD", "Crystal", "Gem", "Diamond", "Digital Art"]
+    "text": ["???"],
+    "tags": ["Crystal", "Gem", "Diamond", "Capsule", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCOP",
+    "type": "Card",
+    "title": "Copper Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 0,
+    "date": "2022-03-30",
+    "theme": "copper",
+    "icon": "capsule",
+    "text": ["Can't be knocked out."],
+    "tags": ["Copper", "DOOM", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCOU",
+    "type": "Card",
+    "title": "Corrupt Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 1,
+    "date": "2023-01-18",
+    "theme": "copper",
+    "icon": "capsule",
+    "text": ["???"],
+    "tags": ["Glitch", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCRE",
+    "type": "Card",
+    "title": "Creepy Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 0,
+    "date": "2022-04-03",
+    "theme": "space",
+    "icon": "capsule",
+    "text": ["Read someone's mind once a day."],
+    "tags": ["Static", "Noise", "Spooky", "Horror", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCRU",
+    "type": "Card",
+    "title": "Crusty Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 0,
+    "date": "2023-01-14",
+    "theme": "crusty",
+    "icon": "capsule",
+    "text": ["???"],
+    "tags": ["Crusty", "Gross", "BFD", "Digital Art"]
+  },
+  {
+    "id": "DACCYA",
+    "type": "Card",
+    "title": "Cyan Capsule",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "deck": "BFD Capsules",
+    "accessLevel": 1,
+    "date": "2022-03-30",
+    "theme": "cyan",
+    "icon": "capsule",
+    "text": ["1 Petabyte USB flash drive."],
+    "tags": ["Cyan", "Blue", "BFD", "Digital Art"]
   },
   {
     "id": "DAFRFO",
@@ -2816,7 +3051,7 @@
       "Fissure",
       "Throwback",
       "Lost Maps",
-      "Archive",
+      "Archived",
       "CD",
       "N",
       "Metanet",
@@ -3037,16 +3272,18 @@
   {
     "id": "NSHGCG",
     "type": "Card",
-    "title": "heart-gun-chicken gif",
+    "title": ":Chicgun:",
     "deck": "Nonsense",
     "accessLevel": 0,
     "date": "2022-11-23",
-    "theme": "white",
+    "theme": "basic-red",
     "icon": "meme",
     "tagline": [
       "Played like two handed rock-paper-scissors, a game invented at Melee invitational Shoot the Gun"
     ],
-    "text": ["When deciding which movie to watch in the big lounge at STG2, everyone put their suggestions on Discord to a vote with heart reacts. Jude started reacting with gun emojis to mark go-to-bed worthy suggestions. From elsewhere in the building this activity was noticed by a watchful Zeppo, fingers ready to dankly introduce the chicken react, an inscrutable omen, to the mix..."],
+    "text": [
+      "When deciding which movie to watch in the big lounge at STG2, everyone put their suggestions on Discord to a vote with heart reacts. Jude started reacting with gun emojis to mark go-to-bed worthy suggestions. From elsewhere in the building this activity was noticed by a watchful Zeppo, fingers ready to introduce the chicken react, an inscrutable omen, to the mix..."
+    ],
     "media": [
       {
         "type": "image",
@@ -3054,7 +3291,17 @@
         "alt": "heartgunchicken"
       }
     ],
-    "tags": ["Smash", "Meme", "Nonsense", "Gif"]
+    "tags": [
+      "Smash",
+      "Meme",
+      "Discord",
+      "Emoji",
+      "Shoot the Gun",
+      "STG2",
+      "Nonsense",
+      "Gif",
+      "Animated"
+    ]
   },
   {
     "id": "PAWRAT",
@@ -3160,7 +3407,7 @@
     "icon": "pebblemoth-egg",
     "text": [
       "Pebblemoth #112: Pigrubus apicula",
-      "▲: Uncommon / ♄-♓︎: Saturn in  Pisces / ⚥: Dioecious"
+      "▲: Uncommon / ♄-♓︎: Saturn in  Pisces / ⚥: Monoecious"
     ],
     "tags": [
       "Crimson",
@@ -3258,13 +3505,15 @@
       }
     ],
     "tags": [
+      "Discord",
       "Discontent",
       "Web Dev",
       "Digital Art",
       "UI",
       "Front End",
-      "Website",
-      "Discord"
+      "Back End",
+      "React",
+      "Website"
     ]
   },
   {

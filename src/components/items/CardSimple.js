@@ -1,17 +1,11 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, memo } from "react";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
-const CardSimple = ({ data, access }) => {
+const CardSimple = memo(({ data, access }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
 
-  useEffect(() => {
-    const img = new Image();
-    img.src = `/img/thumbnails/${data.id}.webp`;
-    img.onload = () => setIsImageLoaded(true);
-  }, [data.id]);
-
-  // Calculating styles
   const cardStyle = {
-    backgroundImage: `url("/img/thumbnails/${data.id}.webp")`,
+    background: `url("/img/thumbnails/${data.id}.webp") no-repeat center center / cover`,
     borderRadius: `${data.type === "Deck" ? "0.5vmin" : "1.5vmin"}`,
   };
 
@@ -29,6 +23,12 @@ const CardSimple = ({ data, access }) => {
       title={`${data.tagline ? data.tagline : data.title}`}
     >
       <div className="card" style={cardStyle}>
+        <img
+          src={`/img/thumbnails/${data.id}.webp`}
+          style={{ display: "none" }}
+          onLoad={() => setIsImageLoaded(true)}
+          alt=""
+        />
         {data.accessLevel > 0 && (
           <div className="card-holo" style={holoStyle}></div>
         )}
@@ -69,6 +69,6 @@ const CardSimple = ({ data, access }) => {
       </div>
     </div>
   );
-};
+});
 
 export default CardSimple;

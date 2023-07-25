@@ -693,6 +693,9 @@ td {
 
 .main-cards .cards-container .card-container {
   padding: 0.5vmin;
+}
+
+.main-cards .cards-container-large .card-container {
   opacity: 0;
   transition: opacity 1s ease;
 }
