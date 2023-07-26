@@ -11,7 +11,6 @@ const CardSimple = memo(({ data, access }) => {
 
   const holoStyle = {
     backgroundImage: `url("/img/cards/holo-${data.accessLevel}.webp")`,
-    filter: `hue-rotate(${data.accessLevel * 50}deg)`,
     opacity: "0.15",
   };
 

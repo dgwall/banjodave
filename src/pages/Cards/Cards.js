@@ -16,7 +16,7 @@ import {
 
 const ITEMS_HOMEPAGE = 36;
 const ITEMS_PER_PAGE = 8;
-const ACCESS_LEVEL = 1;
+const ACCESS_LEVEL = 0;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};

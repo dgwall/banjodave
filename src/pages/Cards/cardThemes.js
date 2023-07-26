@@ -108,6 +108,12 @@ export const cardThemes = [
     hl: "#ffffff",
   },
   {
+    name: "basic",
+    bg: "#eeeeee",
+    fg: "#5a574c",
+    hl: "#e6d794",
+  },
+  {
     name: "basic-red",
     bg: "#ffffff",
     fg: "#000000",
@@ -169,8 +175,8 @@ export const cardThemes = [
   },
   {
     name: "coral",
-    bg: "#edece9",
-    fg: "#b88b6a",
+    bg: "#b88b6a",
+    fg: "#edece9",
     hl: "#bf6523",
   },
   {
@@ -196,5 +202,65 @@ export const cardThemes = [
     bg: "#ce6237",
     fg: "#fcc6a1",
     hl: "#f6902c",
+  },
+  {
+    name: "ceramic",
+    bg: "#cbccce",
+    fg: "#636876",
+    hl: "#808696",
+  },
+  {
+    name: "chrome",
+    bg: "#2c2f32",
+    fg: "#84889e",
+    hl: "#cfcdb8",
+  },
+  {
+    name: "crusty",
+    bg: "#7c8c51",
+    fg: "#4b401c",
+    hl: "#7a6525",
+  },
+  {
+    name: "tuttifrutti",
+    bg: "#7d02b9",
+    fg: "#e2a5a5",
+    hl: "#e4ef6a",
+  },
+  {
+    name: "cerulean",
+    bg: "#005c82",
+    fg: "#e8e8e3",
+    hl: "#ceaa1d",
+  },
+  {
+    name: "yellow-green",
+    bg: "#489a00",
+    fg: "#adf16b",
+    hl: "#70e200",
+  },
+  {
+    name: "cherry",
+    bg: "#d56a86",
+    fg: "#9f2434",
+    hl: "#d56a86",
+  },
+  {
+    name: "copper",
+    bg: "#a5753f",
+    fg: "#d6c3b4",
+    hl: "#734a27",
+  },
+  {
+    name: "cyan",
+    bg: "#e8e8e3",
+    fg: "#3db5b7",
+    hl: "#3db5b7",
+  },
+  {
+    name: "melee",
+    bg: "#3a363e",
+    fg: "#d2d2d5",
+    hl: "#be2017",
   },
 ];

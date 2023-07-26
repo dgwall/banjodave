@@ -3,7 +3,7 @@
     "id": "0DBAAC",
     "type": "Card",
     "deck": "Banjo's Arcade",
-    "accessLevel": 1,
+    "accessLevel": 2,
     "date": "2023-06-13",
     "title": "alpha cart",
     "tagline": "Banjo's Arcade alpha cartridge",
@@ -136,7 +136,7 @@
     "title": "Digital Art",
     "tagline": "Making art on my computer",
     "theme": "banjo",
-    "icon": "art",
+    "icon": "art-digital",
     "tags": ["Digital Art"]
   },
   {
@@ -1579,7 +1579,7 @@
     "title": "Optical Illusion",
     "tagline": "The 18 year long collab",
     "theme": "white",
-    "icon": "home",
+    "icon": "art-digital",
     "text": [
       "One of the oldest computer files I have dates back to 2005. A friend of mine discovered that if you adjust the size of an image in a certain way, you can create all kinds of intriguing visual effects. I have to agree with him, it's quite true. This particular file from 2005, a simple copy and paste job, seems to naturally fit into the concept of a 3D Holo-Card. It reveals a fascinating pattern as it undergoes the transformation."
     ],
@@ -1601,7 +1601,7 @@
     "title": "SPACE WARZ",
     "tagline": "2005 stickman gore series",
     "theme": "white",
-    "icon": "home",
+    "icon": "art",
     "media": [
       {
         "type": "image",
@@ -1633,7 +1633,7 @@
     "date": "2022-11-13",
     "title": "Banjo Sig Logo",
     "theme": "banjo",
-    "icon": "art",
+    "icon": "art-digital",
     "tags": ["Logo", "Banjo", "Digital Art", "Product Design"],
     "text": [
       "I took some time in 2022 to develop a new signature for Banjo. In my game dev artstyle from the time, I drew inspiration from magick sigils and graffiti to represent the 5 letters of Banjo in one glyph."
@@ -1659,7 +1659,7 @@
     "date": "2022-11-14",
     "title": "Banjo Sig Logo Twitter Edit",
     "theme": "banjo",
-    "icon": "art",
+    "icon": "art-digital",
     "tags": [
       "Logo",
       "Banjo",
@@ -1681,7 +1681,7 @@
     "title": "Banjeetz Life and Death",
     "tagline": "Twitter Header",
     "theme": "darkforest",
-    "icon": "art",
+    "icon": "art-digital",
     "tags": [
       "Digital Art",
       "Twitter",
@@ -1739,7 +1739,7 @@
     "tagline": "BFD Capsule Series, you can only choose one",
     "theme": "emerald",
     "icon": "capsule",
-    "text": ["???"],
+    "text": ["Perfect green thumb. Any plant you care for thrives."],
     "tags": ["Celadon", "Green", "Digital Art", "Capsule", "BFD"]
   },
   {
@@ -1791,7 +1791,7 @@
     "date": "2023-01-17",
     "theme": "ceramic",
     "icon": "capsule",
-    "text": ["???"],
+    "text": ["Immune to all contagions."],
     "tags": ["Ceramic", "China", "Capsule", "BFD", "Digital Art"]
   },
   {
@@ -1843,7 +1843,7 @@
     "date": "2023-01-15",
     "theme": "chrome",
     "icon": "capsule",
-    "text": ["???"],
+    "text": ["Can't be knocked out."],
     "tags": ["Chrome", "Metallic", "Capsule", "BFD", "Digital Art"]
   },
   {
@@ -1856,7 +1856,9 @@
     "date": "2022-03-30",
     "theme": "bwc",
     "icon": "capsule",
-    "text": ["Free games for life."],
+    "text": [
+      "Any and all public media is instantly and freely available for life."
+    ],
     "tags": [
       "Charcoal",
       "Black",
@@ -1890,7 +1892,7 @@
     "date": "2023-01-17",
     "theme": "white",
     "icon": "capsule",
-    "text": ["???"],
+    "text": ["Invisible at will, for as long as you can hold your breath."],
     "tags": ["White", "Zine", "Capsule", "BFD", "Digital Art"]
   },
   {
@@ -1929,7 +1931,7 @@
     "date": "2022-11-23",
     "theme": "crystal",
     "icon": "capsule",
-    "text": ["???"],
+    "text": ["Sell it."],
     "tags": ["Crystal", "Gem", "Diamond", "Capsule", "BFD", "Digital Art"]
   },
   {
@@ -1942,7 +1944,7 @@
     "date": "2022-03-30",
     "theme": "copper",
     "icon": "capsule",
-    "text": ["Can't be knocked out."],
+    "text": ["Guaranteed 3rd place in everything you enter."],
     "tags": ["Copper", "DOOM", "BFD", "Digital Art"]
   },
   {
@@ -1951,11 +1953,11 @@
     "title": "Corrupt Capsule",
     "tagline": "BFD Capsule Series, you can only choose one",
     "deck": "BFD Capsules",
-    "accessLevel": 1,
+    "accessLevel": 2,
     "date": "2023-01-18",
-    "theme": "copper",
+    "theme": "charcoal",
     "icon": "capsule",
-    "text": ["???"],
+    "text": ["Break any encryption."],
     "tags": ["Glitch", "BFD", "Digital Art"]
   },
   {
@@ -1981,7 +1983,9 @@
     "date": "2023-01-14",
     "theme": "crusty",
     "icon": "capsule",
-    "text": ["???"],
+    "text": [
+      "Absorbs all of your grossness, so you are always clean and well-groomed."
+    ],
     "tags": ["Crusty", "Gross", "BFD", "Digital Art"]
   },
   {
@@ -2005,7 +2009,7 @@
     "date": "2023-01-04",
     "title": "Frost Fortress",
     "theme": "ice",
-    "icon": "art",
+    "icon": "art-digital",
     "tags": [
       "Art",
       "Digital Art",
@@ -2057,7 +2061,7 @@
     "accessLevel": 1,
     "date": "2023-01-07",
     "theme": "pebblemoth",
-    "icon": "art",
+    "icon": "art-digital",
     "text": [
       "I made my own versions of various astrological and alchemical symbols for the Pebblemoth project. The card image is the result of rotating and overlaying all of these images. I have also included a gif which cycles through the symbols."
     ],
@@ -2079,7 +2083,7 @@
     "title": "Realm of Magic Animals",
     "tagline": "Where animals wait to be summoned by stage magicians",
     "theme": "space",
-    "icon": "art",
+    "icon": "art-digital",
     "text": ["Concept art for Banjo's Arcade Kósmoptasía."],
     "tags": [
       "Space",
@@ -2111,7 +2115,7 @@
     "date": "2022-11-23",
     "title": "Dark Logo Wallpaper",
     "theme": "dark",
-    "icon": "art",
+    "icon": "art-digital",
     "tags": ["Logo", "Dark", "Wallpaper", "Digital Art"],
     "media": [
       {
@@ -2134,7 +2138,7 @@
     "date": "2022-11-23",
     "title": "Light Logo Wallpaper",
     "theme": "banjo",
-    "icon": "art",
+    "icon": "art-digital",
     "tags": ["Logo", "Light", "Wallpaper", "Digital Art"],
     "media": [
       {
@@ -2153,7 +2157,7 @@
     "title": "Energy Marble",
     "tagline": "This glass orb is effulgent with a strange energy",
     "theme": "dark",
-    "icon": "art",
+    "icon": "art-digital",
     "tags": ["Rainbow", "Marble", "Orb", "Digital Art"],
     "media": [
       {
@@ -2556,6 +2560,11 @@
         "type": "video",
         "src": "game-malice-striker",
         "alt": "Gameplay footage"
+      },
+      {
+        "type": "image",
+        "src": "photo-ggj23.jpg",
+        "alt": "GGJ23 Group Photo"
       }
     ],
     "tags": [
@@ -3350,13 +3359,13 @@
   {
     "id": "PHMACH",
     "type": "Card",
-    "title": "Shoot the Gun @ Machermore Castle",
+    "title": "Shoot the Gun 3",
     "tagline": "",
-    "deck": "Photographs",
+    "deck": "Melee",
     "accessLevel": 0,
     "date": "2022-11-05",
     "theme": "sky",
-    "icon": "image",
+    "icon": "smash",
     "text": ["! TO ADD !"],
     "media": [
       { "type": "image", "src": "photo-machermore-castle.jpg", "alt": "" }
@@ -3913,5 +3922,307 @@
     "icon": "wgmc",
     "text": ["Details coming soon."],
     "tags": ["Weary Goblin Mudhole Club", "Preview", "Shield", "Logo", "RPG"]
+  },
+  {
+    "id": "GPFFPA",
+    "type": "Card",
+    "deck": "Gameplay",
+    "accessLevel": 1,
+    "date": "2008-08-30",
+    "title": "The Fancy Pants Adventures Playthrough",
+    "tagline": "My first videos to YouTube",
+    "theme": "basic",
+    "icon": "gameplay",
+    "text": [
+      "My real first YouTube video was a Let's Play of one of the Fancy Pants Adventures games where out of nerves and not knowing what to say I'm pretty sure I gave out my full name and location, so it was deleted. Shout out to HyperCam, and the Banjo-Kazooie OST."
+    ],
+    "media": [
+      {
+        "type": "youtube",
+        "src": "KzzzIES0jJw",
+        "alt": "Flash Game - The Fancy Pants Adventures: World 2"
+      },
+      {
+        "type": "youtube",
+        "src": "IWQAGXGBxlk",
+        "alt": "Flash Game - The Fancy Pants Adventures: World 1"
+      }
+    ],
+    "tags": [
+      "The Fancy Pants Adventures",
+      "Flash Game",
+      "Gameplay",
+      "Longplay",
+      "Archived",
+      "Stickman",
+      "Playthrough",
+      "YouTube"
+    ]
+  },
+  {
+    "id": "MTSAAC",
+    "type": "Card",
+    "deck": "Music",
+    "accessLevel": 2,
+    "date": "2022-08-05",
+    "title": "OceanLab - Satellite (Acoustic Cover)",
+    "theme": "cerulean",
+    "icon": "music",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "Acoustic Cover",
+      "Satellite",
+      "Guitar",
+      "Cringe",
+      "Trance",
+      "Above & Beyond",
+      "OceanLab",
+      "Music",
+      "Music Track",
+      "Recording",
+      "Ultraclub4k"
+    ]
+  },
+  {
+    "id": "LVWDTT",
+    "type": "Card",
+    "deck": "Lore",
+    "accessLevel": 2,
+    "date": "1998-12-12",
+    "title": "Why did the tortoise cross the road?",
+    "tagline": "My first time telling a joke on stage at some holiday place",
+    "theme": "coral",
+    "icon": "video",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "1990s",
+      "Comedy",
+      "Lore",
+      "Archived",
+      "Home Video",
+      "Joke",
+      "Funny"
+    ]
+  },
+  {
+    "id": "MTLZAC",
+    "type": "Card",
+    "deck": "Music",
+    "accessLevel": 2,
+    "date": "2019-10-15",
+    "title": "Lil Zubin - do u rly think i need u (Acoustic Cover)",
+    "theme": "basic",
+    "icon": "music",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "Acoustic Cover",
+      "Zubin",
+      "Cringe",
+      "Fantasy Camp",
+      "do u rly think i need u",
+      "Guitar",
+      "Emo Trap",
+      "Music",
+      "Music Track",
+      "Recording",
+      "Video"
+    ]
+  },
+  {
+    "id": "LVSMNM",
+    "type": "Card",
+    "deck": "Lore",
+    "accessLevel": 1,
+    "date": "2006-XX-XX",
+    "title": "Norbert the Magnificent",
+    "tagline": "A claymation",
+    "theme": "basic",
+    "icon": "video",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "Stop Motion",
+      "Claymation",
+      "Norbert the Magnificent",
+      "Magic",
+      "Funny",
+      "Archived",
+      "Lore",
+      "Video"
+    ]
+  },
+  {
+    "id": "LVGYGC",
+    "type": "Card",
+    "deck": "Lore",
+    "accessLevel": 1,
+    "date": "2018-08-11",
+    "title": "Gran Yeets GameCube",
+    "tagline": "yeet",
+    "theme": "basic",
+    "icon": "video",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "Nintendo GameCube",
+      "Gran",
+      "Family",
+      "Yeet",
+      "Meme",
+      "Lore",
+      "Destruction",
+      "Snapchat",
+      "Video"
+    ]
+  },
+  {
+    "id": "LVGSAF",
+    "type": "Card",
+    "deck": "Lore",
+    "accessLevel": 1,
+    "date": "2018-06-16",
+    "title": "Glasgow School of Art Fire",
+    "tagline": "It's Lit!",
+    "theme": "magma",
+    "icon": "video",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "Glasgow",
+      "Sheezy",
+      "Linney",
+      "Fire",
+      "Total Recall",
+      "Meme",
+      "Lore",
+      "Destruction",
+      "Snapchat",
+      "Video"
+    ]
+  },
+  {
+    "id": "MTBTAC",
+    "type": "Card",
+    "deck": "Music",
+    "accessLevel": 2,
+    "date": "2018-04-10",
+    "title": "BROCKHAMPTON - WASTE (Acoustic Cover Clip)",
+    "theme": "basic",
+    "icon": "music",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "Acoustic Cover",
+      "Cringe",
+      "BROCKHAMPTON",
+      "WASTE",
+      "SATURATION",
+      "Bearface",
+      "Guitar",
+      "Music",
+      "Music Clip",
+      "Recording",
+      "Snapchat",
+      "Video"
+    ]
+  },
+  {
+    "id": "STAWA4",
+    "type": "Card",
+    "deck": "Melee",
+    "accessLevel": 0,
+    "date": "2018-07-01",
+    "title": "Awakening IV",
+    "tagline": "Tournament in Zorneding, Germany",
+    "theme": "melee",
+    "icon": "smash",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "Germany",
+      "Melee",
+      "Super Smash Bros.",
+      "Super Smash Bros. Melee",
+      "Smash",
+      "Tournament",
+      "Competition",
+      "Blog",
+      "Photo",
+      "Snapchat",
+      "Video"
+    ]
+  },
+  {
+    "id": "LVSFCH",
+    "type": "Card",
+    "deck": "Lore",
+    "accessLevel": 2,
+    "date": "2019-06-15",
+    "title": "Eating weird things 2019",
+    "tagline": "Cookies with garlic and herb sauce, and raw Huel",
+    "theme": "basic",
+    "icon": "meme",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "Dominos",
+      "Huel",
+      "Cringe",
+      "Cookie",
+      "Eating",
+      "Meme",
+      "Nonsense",
+      "Snapchat"
+    ]
+  },
+  {
+    "id": "GPCA17",
+    "type": "Deck",
+    "deck": "Cringe Archive",
+    "accessLevel": 0,
+    "date": "2017-12-20",
+    "title": "Cringe Archive 2017",
+    "tagline": "I tried streaming and content creation",
+    "theme": "arcade",
+    "icon": "gameplay",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "Cringe",
+      "BanjoDave",
+      "Cringe Archive",
+      "2017",
+      "Twitch",
+      "YouTube",
+      "Discord",
+      "Highscore",
+      "Zelda",
+      "Ocarina of Time",
+      "Master Quest",
+      "Super Monkey Ball",
+      "Sonic the Hedgehog",
+      "N++",
+      "OSRS",
+      "RuneScape",
+      "Super Mario 64",
+      "Gameplay",
+      "Livestream",
+      "Commentary",
+      "Webcam"
+    ]
+  },
+  {
+    "id": "LVRCT3",
+    "type": "Card",
+    "deck": "Gameplay",
+    "accessLevel": 0,
+    "date": "2008-10-20",
+    "title": "RCT3 Carnage",
+    "tagline": "Not playing as intended",
+    "theme": "sky",
+    "icon": "gameplay",
+    "text": ["!BWC TO ADD!"],
+    "tags": [
+      "Archived",
+      "RCT3",
+      "RollerCoaster Tycoon",
+      "Meme",
+      "Funny",
+      "Lore",
+      "Evil"
+    ]
   }
 ]
