@@ -1,41 +1,25 @@
 [
   {
-    "id": "0DBAAC",
-    "type": "Card",
-    "deck": "Banjo's Arcade",
-    "accessLevel": 2,
-    "date": "2023-06-13",
-    "title": "alpha cart",
-    "tagline": "Banjo's Arcade alpha cartridge",
-    "theme": "arcade",
-    "icon": "arcade",
-    "text": [
-      "What kind of electric pearl is coalescing on the circuitry inside this plastic shell?"
-    ],
-    "tags": [
-      "0DGames",
-      "Game Dev",
-      "Banjo's Arcade",
-      "alpha",
-      "beta",
-      "PC",
-      "Retro",
-      "Cartridge"
-    ]
-  },
-  {
-    "id": "0DBAB1",
-    "type": "Card",
-    "deck": "Banjo's Arcade",
     "accessLevel": 0,
-    "date": "2022-04-22",
-    "title": "hiecom beta cart",
-    "tagline": "Banjo's Arcade Hierophant Commandant beta cartridge",
-    "theme": "arcade",
-    "icon": "arcade",
-    "text": [
-      "Your village is facing an onslaught of ghosts from above! Use your hierophant magic powers to shoot golden cross missiles from your temples and save the village. For fans of Missile Command."
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://banjodave.itch.io/banjos-arcade-hierophant-commandant",
+        "label": "View on itch.io"
+      }
     ],
+    "date": "2022-04-22",
+    "deck": "Banjo's Arcade",
+    "icon": "arcade",
+    "id": "0DBAB1",
+    "media": [
+      {
+        "type": "video",
+        "src": "game-hiecom-beta",
+        "alt": "Hierophant Commandant preview"
+      }
+    ],
+    "tagline": "Banjo's Arcade Hierophant Commandant beta cartridge",
     "tags": [
       "0DGames",
       "Game",
@@ -48,21 +32,35 @@
       "Cartridge",
       "Ghosts",
       "Magic"
-    ]
+    ],
+    "text": [
+      "Your village is facing an onslaught of ghosts from above! Use your hierophant magic powers to shoot golden cross missiles from your temples and save the village. For fans of Missile Command."
+    ],
+    "theme": "arcade",
+    "title": "hiecom beta cart",
+    "type": "Card"
   },
   {
-    "id": "0DBAB2",
-    "type": "Card",
-    "deck": "Banjo's Arcade",
     "accessLevel": 0,
-    "date": "2022-10-31",
-    "title": "navexe beta cart",
-    "tagline": "Banjo's Arcade notavirus.exe beta cartridge",
-    "theme": "arcade",
-    "icon": "arcade",
-    "text": [
-      "Take control of a computer virus ripping up a filesystem. Collect 9 different types of powerup, and reflect and spin your virus ball to destroy files, folders, and archives without falling into the firewall. For fans of Arkanoid."
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://banjodave.itch.io/banjos-arcade-notavirusexe",
+        "label": "View on itch.io"
+      }
     ],
+    "date": "2022-10-31",
+    "deck": "Banjo's Arcade",
+    "icon": "arcade",
+    "id": "0DBAB2",
+    "media": [
+      {
+        "type": "video",
+        "src": "game-navexe-beta",
+        "alt": "notavirus.exe preview"
+      }
+    ],
+    "tagline": "Banjo's Arcade notavirus.exe beta cartridge",
     "tags": [
       "0DGames",
       "Game",
@@ -73,47 +71,21 @@
       "PC",
       "Retro",
       "Cartridge"
-    ]
-  },
-  {
-    "id": "0DBADC",
-    "type": "Card",
-    "deck": "Banjo's Arcade",
-    "accessLevel": 2,
-    "date": "2023-06-13",
-    "title": "damaged cart",
-    "tagline": "Banjo's Arcade damaged cartridge",
-    "theme": "arcade",
-    "icon": "arcade",
-    "text": [
-      "The label on this sunbleached cartridge has somehow been completely scraped off. We are trying to recover the ROM from long-lost relic."
     ],
-    "tags": [
-      "0DGames",
-      "Game Dev",
-      "Banjo's Arcade",
-      "Digital Art",
-      "Cartridge",
-      "Corrupt",
-      "Damaged",
-      "Degredation",
-      "PC",
-      "Retro"
-    ]
+    "text": [
+      "Take control of a computer virus ripping up a filesystem. Collect 9 different types of powerup, and reflect and spin your virus ball to destroy files, folders, and archives without falling into the firewall. For fans of Arkanoid."
+    ],
+    "theme": "arcade",
+    "title": "navexe beta cart",
+    "type": "Card"
   },
   {
-    "id": "0DBANJ",
-    "type": "Deck",
-    "deck": "Banjo's Arcade",
     "accessLevel": 0,
     "date": "2023-XX-XX",
-    "title": "Banjo's Arcade",
-    "tagline": "Cutting edge retro throwbacks",
-    "theme": "arcade",
+    "deck": "Banjo's Arcade",
     "icon": "arcade",
-    "text": [
-      "Prepare to reignite your passion for classic gaming with Banjo's Arcade, a treasure trove of retro-remakes delivered straight to your Windows device!"
-    ],
+    "id": "0DBANJ",
+    "tagline": "Cutting edge retro throwbacks",
     "tags": [
       "Banjo's Arcade",
       "0DGames",
@@ -125,30 +97,59 @@
       "Game Series",
       "Arcade",
       "Arcade Games"
-    ]
+    ],
+    "text": [
+      "Prepare to reignite your passion for classic gaming with Banjo's Arcade, a treasure trove of retro-remakes delivered straight to your Windows device!"
+    ],
+    "theme": "arcade",
+    "title": "Banjo's Arcade",
+    "type": "Deck"
   },
   {
-    "id": "ARTDIG",
-    "type": "Deck",
-    "deck": "Digital Art",
     "accessLevel": 0,
     "date": "2023-XX-XX",
-    "title": "Digital Art",
-    "tagline": "Making art on my computer",
-    "theme": "banjo",
+    "deck": "Digital Art",
     "icon": "art-digital",
-    "tags": ["Digital Art"]
+    "id": "ARTDIG",
+    "tagline": "Making art on my computer",
+    "tags": ["Digital Art"],
+    "theme": "banjo",
+    "title": "Digital Art",
+    "type": "Deck"
   },
   {
-    "id": "BHZ001",
-    "type": "Card",
-    "deck": "BanjoZine",
     "accessLevel": 0,
+    "date": "2022-XX-XX",
+    "deck": "Physical Art",
+    "icon": "art",
+    "id": "ARTPHY",
+    "tagline": "irl forms",
+    "tags": ["Physical Art"],
+    "theme": "banjo",
+    "title": "Physical Art",
+    "type": "Deck"
+  },
+  {
+    "accessLevel": 0,
+    "buttons": [
+      {
+        "type": "download",
+        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/BanjoZine/BanjoZine-Issue-001.pdf",
+        "label": "Download BanjoZine-Issue-001.pdf"
+      }
+    ],
     "date": "2021-03-20",
-    "title": "BanjoZine Issue #1",
-    "tagline": "March 2021",
+    "deck": "BanjoZine",
     "icon": "zine",
-    "theme": "zine",
+    "id": "BHZ001",
+    "media": [
+      {
+        "type": "video",
+        "src": "zine-1",
+        "alt": ""
+      }
+    ],
+    "tagline": "March 2021",
     "tags": [
       "BanjoZine",
       "Banjo House",
@@ -186,23 +187,31 @@
     "text": [
       "rootootoot, Mapwich 2, Vanish Glide, Things, Orb, ULTRACLUB4K, Podcasts, ガキの使い, Nintendo 64, 森林浴, Productivity."
     ],
+    "theme": "zine",
+    "title": "BanjoZine Issue #1",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
     "buttons": [
       {
         "type": "download",
-        "href": "/",
-        "label": "Download BanjoZine-001.pdf"
+        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/BanjoZine/BanjoZine-Issue-002.pdf",
+        "label": "Download BanjoZine-Issue-002.pdf"
       }
-    ]
-  },
-  {
-    "id": "BHZ002",
-    "type": "Card",
-    "deck": "BanjoZine",
-    "accessLevel": 0,
+    ],
     "date": "2021-06-15",
-    "title": "BanjoZine Issue #2",
-    "theme": "zine",
+    "deck": "BanjoZine",
     "icon": "zine",
+    "id": "BHZ002",
+    "media": [
+      {
+        "type": "video",
+        "src": "zine-2",
+        "alt": ""
+      }
+    ],
+    "tagline": "June 2021",
     "tags": [
       "BanjoZine",
       "Banjo House",
@@ -234,31 +243,19 @@
       "Philosophy",
       "Buddhism"
     ],
-    "tagline": "June 2021",
     "text": [
       "MALAGARD, Blazing Beachhead, Lullaby by Danlex, Cosmic Snake, Fissure, Advanced Tech, '90s Games, GameCube, Gruntz, Star____?, The Mushroom King, Πυῤῥώνειοι ὑποτυπώσεις & मूलमध्यमककारिका, ドラゴンボールＺ 愛する者のために... ベジータ散る!!, དུག་གསུམ་."
     ],
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
-    ]
+    "theme": "zine",
+    "title": "BanjoZine Issue #2",
+    "type": "Card"
   },
   {
-    "id": "BHZINE",
-    "type": "Deck",
-    "title": "BanjoZine",
-    "deck": "BanjoZine",
     "accessLevel": 0,
     "date": "2021-XX-XX",
-    "theme": "zine",
+    "deck": "BanjoZine",
     "icon": "zine",
-    "text": [
-      "BanjoZine: the underground intersection of games, philosophy, and media. Established in March 2021, this digital cryptex delves into pop culture revelations, the arcane secrets of game design, and the abyss of philosophical discourse. As nightfall descends, embark on an unexpected odyssey.",
-      "Do you yearn for a deeper connection with the unseen forces of BanjoZine? The ancient pact of Patreon awaits! Gazing into the dark crystal pool of previews, patrons scry pages of upcoming issues, while those of higher ranks can manifest physical copies into existence. Through support and shared energies, patrons become essential conduits of creation, fanning our ever-burning black flame, and propelling our nocturnal journey further into the unknown."
-    ],
+    "id": "BHZINE",
     "tags": [
       "BanjoZine",
       "BanjoHouse",
@@ -268,21 +265,22 @@
       "Philosophy",
       "Media",
       "Puzzle"
-    ]
+    ],
+    "text": [
+      "BanjoZine: the underground intersection of games, philosophy, and media. Established in March 2021, this digital cryptex delves into pop culture revelations, the arcane secrets of game design, and the abyss of philosophical discourse. As nightfall descends, embark on an unexpected odyssey.",
+      "Do you yearn for a deeper connection with the unseen forces of BanjoZine? The ancient pact of Patreon awaits! Gazing into the dark crystal pool of previews, patrons scry pages of upcoming issues, while those of higher ranks can manifest physical copies into existence. Through support and shared energies, patrons become essential conduits of creation, fanning our ever-burning black flame, and propelling our nocturnal journey further into the unknown."
+    ],
+    "theme": "zine",
+    "title": "BanjoZine",
+    "type": "Deck"
   },
   {
-    "id": "BJXLTD",
-    "type": "Deck",
-    "deck": "BJX",
     "accessLevel": 0,
     "date": "2023-XX-XX",
-    "title": "BJX Trading Ltd.",
-    "tagline": "A very real and not fake at all lucrative trading opportunity",
-    "theme": "bjx",
+    "deck": "BJX",
     "icon": "bjx",
-    "text": [
-      "I'm pleased to announce BJX Trading Ltd. - a banjocurrency exchange and banjo hedge fund offering futures and options trading for a variety of digital banjos. We also offer leveraged banjos and derivatives. The future of investing, BJX, you in?"
-    ],
+    "id": "BJXLTD",
+    "tagline": "A very real and not fake at all lucrative trading opportunity",
     "tags": [
       "BanjoCoin",
       "Digital Art",
@@ -290,260 +288,102 @@
       "Crypto",
       "Fake Company",
       "Fake"
-    ]
+    ],
+    "text": [
+      "I'm pleased to announce BJX Trading Ltd. - a banjocurrency exchange and banjo hedge fund offering futures and options trading for a variety of digital banjos. We also offer leveraged banjos and derivatives. The future of investing, BJX, you in?"
+    ],
+    "theme": "bjx",
+    "title": "BJX Trading Ltd.",
+    "type": "Deck"
   },
   {
-    "id": "BLB000",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-19",
-    "title": "Prime Sticker",
-    "tagline": "Banjo League Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
-    "text": ["Awarded for having the only submission on a leaderboard."],
+    "accessLevel": 0,
     "buttons": [
       {
         "type": "external",
         "href": "/league",
         "label": "Go to Banjo League"
       }
-    ]
-  },
-  {
-    "id": "BLB001",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
+    ],
     "date": "2022-12-19",
-    "title": "Iron Badge",
-    "tagline": "Banjo League Award",
-    "theme": "league",
+    "deck": "Banjo League",
     "icon": "league",
+    "id": "BLB001",
+    "tagline": "Banjo League Award",
     "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
     "text": ["Awarded for submissions to a leaderboard."],
+    "theme": "league",
+    "title": "Iron Badge",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
     "buttons": [
       {
         "type": "external",
         "href": "/league",
         "label": "Go to Banjo League"
       }
-    ]
-  },
-  {
-    "id": "BLB002",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
+    ],
     "date": "2022-11-28",
-    "title": "Bronze Badge",
-    "tagline": "Banjo League Award",
-    "theme": "league",
+    "deck": "Banjo League",
     "icon": "league",
+    "id": "BLB002",
+    "tagline": "Banjo League Award",
     "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
     "text": ["Awarded for achieving 50% of the site record."],
+    "theme": "league",
+    "title": "Bronze Badge",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
     "buttons": [
       {
         "type": "external",
         "href": "/league",
         "label": "Go to Banjo League"
       }
-    ]
-  },
-  {
-    "id": "BLB003",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
+    ],
     "date": "2022-11-28",
-    "title": "Silver Badge",
-    "tagline": "Banjo League Award",
-    "theme": "league",
+    "deck": "Banjo League",
     "icon": "league",
+    "id": "BLB003",
+    "tagline": "Banjo League Award",
     "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
     "text": ["Awarded for achieving 70% of the site record."],
-    "buttons": [
-      {
-        "type": "external",
-        "href": "/league",
-        "label": "Go to Banjo League"
-      }
-    ]
-  },
-  {
-    "id": "BLB004",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-11-28",
-    "title": "Gold Badge",
-    "tagline": "Banjo League Award",
     "theme": "league",
-    "icon": "league",
-    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
-    "text": ["Awarded for achieving 80% of the site record."],
-    "buttons": [
-      {
-        "type": "external",
-        "href": "/league",
-        "label": "Go to Banjo League"
-      }
-    ]
+    "title": "Silver Badge",
+    "type": "Card"
   },
   {
-    "id": "BLB005",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 2,
-    "date": "2022-11-28",
-    "title": "Platinum Badge",
-    "tagline": "Banjo League Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
-    "text": ["Awarded for achieving 90% of the site record."],
-    "buttons": [
-      {
-        "type": "external",
-        "href": "/league",
-        "label": "Go to Banjo League"
-      }
-    ]
-  },
-  {
-    "id": "BLB006",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 2,
-    "date": "2022-12-18",
-    "title": "Diamond Badge",
-    "tagline": "Banjo League Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
-    "text": ["Awarded for achieving 95% of the site record."],
-    "buttons": [
-      {
-        "type": "external",
-        "href": "/league",
-        "label": "Go to Banjo League"
-      }
-    ]
-  },
-  {
-    "id": "BLB007",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 2,
-    "date": "2022-12-19",
-    "title": "Split Prime Badge",
-    "tagline": "Banjo League Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
-    "text": ["Awarded for sharing a site record."],
-    "buttons": [
-      {
-        "type": "external",
-        "href": "/league",
-        "label": "Go to Banjo League"
-      }
-    ]
-  },
-  {
-    "id": "BLB008",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 3,
-    "date": "2022-12-19",
-    "title": "Prime Badge",
-    "tagline": "Banjo League Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
-    "text": ["Awarded for holding the site record."],
-    "buttons": [
-      {
-        "type": "external",
-        "href": "/league",
-        "label": "Go to Banjo League"
-      }
-    ]
-  },
-  {
-    "id": "BLC001",
-    "type": "Card",
-    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-18",
-    "title": "Beatz Token",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
+    "deck": "Banjo League",
     "icon": "league",
+    "id": "BLC001",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Beatz",
+      "Completez",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Checkbox",
+      "Award"
+    ],
     "text": ["Awarded for beating an objective."],
-    "tags": [
-      "Beatz",
-      "Completez",
-      "Banjo League",
-      "Digital Art",
-      "Sprite",
-      "Checkbox",
-      "Award"
-    ]
-  },
-  {
-    "id": "BLC002",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-19",
-    "title": "Completez Token",
-    "tagline": "Banjo League Completez Award",
     "theme": "league",
-    "icon": "league",
-    "text": ["Awarded for 100% completion."],
-    "tags": [
-      "Completez",
-      "Beatz",
-      "Banjo League",
-      "Digital Art",
-      "Sprite",
-      "Checkbox",
-      "Award"
-    ]
+    "title": "Beatz Token",
+    "type": "Card"
   },
   {
-    "id": "BLD000",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "title": "No Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "text": ["Awarded for a first-try completion."],
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Digital Art",
-      "Sprite",
-      "Halo",
-      "Award"
-    ]
-  },
-  {
-    "id": "BLD001",
-    "type": "Card",
-    "deck": "Banjo League",
     "accessLevel": 0,
     "date": "2022-12-04",
-    "title": "One Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
+    "deck": "Banjo League",
     "icon": "league",
+    "id": "BLD001",
+    "tagline": "Banjo League Completez Award",
     "tags": [
       "Defeatz",
       "Banjo League",
@@ -551,553 +391,348 @@
       "Skull",
       "Award",
       "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD002",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Two Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD003",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Three Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD004",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Four Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD005",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Five Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD006",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Six Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD007",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Seven Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD008",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Eight Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD009",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Nine Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD010",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Ten Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD011",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Twenty Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD012",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Thirty Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD013",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Forty Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD014",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Fifty Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD015",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Sixty Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD016",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Seventy Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD017",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Eighty Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD018",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-23",
-    "title": "Ninety Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD019",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "title": "One Hundred Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD020",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "title": "Two Hundred Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD021",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "title": "Three Hundred Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD022",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "title": "Four Hundred Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD023",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "title": "Five Hundred Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD024",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "title": "Six Hundred Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD025",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "title": "Seven Hundred Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD026",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "title": "Eight Hundred Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD027",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "title": "Nine Hundred Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD028",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 2,
-    "date": "2022-12-23",
-    "title": "One Thousand Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLD029",
-    "type": "Card",
-    "deck": "Banjo League",
-    "accessLevel": 3,
-    "date": "2023-06-26",
-    "title": "Ten Thousand Defeatz",
-    "tagline": "Banjo League Completez Award",
-    "theme": "league",
-    "icon": "league",
-    "tags": [
-      "Defeatz",
-      "Banjo League",
-      "Sprite",
-      "Skull",
-      "Award",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "BLSOON",
-    "type": "Deck",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2023-XX-XX",
-    "title": "Banjo League",
-    "tagline": "Banjo League",
-    "theme": "league",
-    "icon": "league",
-    "text": [
-      "Banjo League is a place to track your game completion progress and compete against other players for the best scores and times."
     ],
+    "theme": "league",
+    "title": "One Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD002",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Two Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD003",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Three Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD004",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Four Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD005",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Five Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD006",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Six Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD007",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Seven Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD008",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Eight Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD009",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Nine Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD010",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Ten Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD011",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Twenty Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD012",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Thirty Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD013",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Forty Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD014",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Fifty Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD015",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Sixty Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD016",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Seventy Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD017",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Eighty Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD018",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Ninety Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
+      }
+    ],
+    "date": "2023-XX-XX",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLSOON",
+    "tagline": "Banjo League",
     "tags": [
       "Banjo League",
       "Gaming",
@@ -1108,192 +743,38 @@
       "Shield",
       "Logo"
     ],
+    "text": [
+      "Banjo League is a place to track your game completion progress and compete against other players for the best scores and times."
+    ],
+    "theme": "league",
+    "title": "Banjo League",
+    "type": "Deck"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-12-14",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLW000",
+    "tagline": ["Surrounds the avatars of the top 33% of overall players"],
+    "tags": ["Wreath", "Award", "League", "Competition", "BanjoLeague"],
+    "theme": "league",
+    "title": "Runner-Up Wreath",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
     "buttons": [
       {
-        "type": "external",
-        "href": "/league",
-        "label": "Go to Banjo League"
+        "type": "internal",
+        "href": "/BWC",
+        "label": "GOTO BWC"
       }
-    ]
-  },
-  {
-    "id": "BLT001",
-    "type": "Card",
-    "title": "Bronze Trophy",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-23",
-    "theme": "league",
-    "icon": "league",
-    "tagline": ["Awarded to the 3rd best player of a specific game"],
-    "tags": [
-      "Trophy",
-      "Award",
-      "Bronze",
-      "League",
-      "Competition",
-      "BanjoLeague"
-    ]
-  },
-  {
-    "id": "BLT002",
-    "type": "Card",
-    "title": "Silver Trophy",
-    "deck": "Banjo League",
-    "accessLevel": 2,
-    "date": "2022-12-23",
-    "theme": "league",
-    "icon": "league",
-    "tagline": ["Awarded to the 2nd best player of a specific game"],
-    "tags": [
-      "Trophy",
-      "Award",
-      "Silver",
-      "League",
-      "Competition",
-      "BanjoLeague"
-    ]
-  },
-  {
-    "id": "BLT003",
-    "type": "Card",
-    "title": "Gold Trophy",
-    "deck": "Banjo League",
-    "accessLevel": 3,
-    "date": "2022-12-23",
-    "theme": "league",
-    "icon": "league",
-    "tagline": ["Awarded to the best player of a specific game"],
-    "tags": ["Trophy", "Award", "Gold", "League", "Competition", "BanjoLeague"]
-  },
-  {
-    "id": "BLW000",
-    "type": "Card",
-    "title": "Runner-Up Wreath",
-    "deck": "Banjo League",
-    "accessLevel": 0,
-    "date": "2022-12-14",
-    "theme": "league",
-    "icon": "league",
-    "tagline": ["Surrounds the avatars of the top 33% of overall players"],
-    "tags": ["Wreath", "Award", "League", "Competition", "BanjoLeague"]
-  },
-  {
-    "id": "BLW001",
-    "type": "Card",
-    "title": "Bronze Wreath",
-    "deck": "Banjo League",
-    "accessLevel": 1,
-    "date": "2022-12-14",
-    "theme": "league",
-    "icon": "league",
-    "tagline": ["Surrounds the avatar of the ranking 3rd overall player"],
-    "tags": [
-      "Wreath",
-      "Award",
-      "League",
-      "Bronze",
-      "Competition",
-      "BanjoLeague"
-    ]
-  },
-  {
-    "id": "BLW002",
-    "type": "Card",
-    "title": "Silver Wreath",
-    "deck": "Banjo League",
-    "accessLevel": 2,
-    "date": "2022-12-14",
-    "theme": "league",
-    "icon": "league",
-    "tagline": ["Surrounds the avatar of the ranking 2nd overall player"],
-    "tags": [
-      "Wreath",
-      "Award",
-      "League",
-      "Silver",
-      "Competition",
-      "BanjoLeague"
-    ]
-  },
-  {
-    "id": "BLW003",
-    "type": "Card",
-    "title": "Gold Wreath",
-    "deck": "Banjo League",
-    "accessLevel": 3,
-    "date": "2022-12-14",
-    "theme": "league",
-    "icon": "league",
-    "tagline": ["Surrounds the avatar of the ranking 1st overall player"],
-    "tags": ["Wreath", "Award", "League", "Gold", "Competition", "BanjoLeague"]
-  },
-  {
-    "id": "BLW00B",
-    "type": "Card",
-    "title": "Banjo Wreath",
-    "deck": "Banjo League",
-    "accessLevel": 3,
-    "date": "2023-01-01",
-    "theme": "league",
-    "icon": "league",
-    "tagline": ["Surrounds the avatar of the most Banjeetz overall player"],
-    "tags": ["Wreath", "Award", "League", "Competition", "BanjoLeague"]
-  },
-  {
-    "id": "BWCAL1",
-    "type": "Card",
-    "deck": "BWC",
-    "accessLevel": 1,
-    "date": "2023-07-13",
-    "title": "BWC L1 Access Token",
-    "theme": "bwc",
-    "icon": "bwc",
-    "tags": ["BWC", "Restricted Access", "Level 1"],
-    "tagline": "BWC Public Access",
-    "text": [
-      "Free-tier BWC preview. Bonus BFD content and more available for free through Patreon."
-    ]
-  },
-  {
-    "id": "BWCAL2",
-    "type": "Card",
-    "deck": "BWC",
-    "accessLevel": 2,
-    "date": "2023-07-13",
-    "title": "BWC L2 Access Card (Platinum)",
-    "theme": "bwc",
-    "icon": "bwc",
-    "tags": ["BWC", "Restricted Access", "Level 2"],
-    "tagline": "BWC Access Level 2",
-    "text": [
-      "Unlocks LVL2 BFDs, early access games and levels, previews, updates, archives, and other bonus content."
-    ]
-  },
-  {
-    "id": "BWCAL3",
-    "type": "Card",
-    "deck": "BWC",
-    "accessLevel": 3,
-    "date": "2023-07-13",
-    "title": "BWC L3 Special Access Card (Black)",
-    "theme": "bwc",
-    "icon": "bwc",
-    "tags": ["BWC", "Restricted Access", "Level 3"],
-    "tagline": "BWC Access Level 3",
-    "text": [
-      "Access all levels of BFD, get 0DG games for free, and more with the BWC Black Card."
-    ]
-  },
-  {
-    "id": "BWCKEY",
-    "type": "Card",
-    "title": "BWC Special Access Program",
-    "deck": "BWC",
-    "accessLevel": 0,
+    ],
     "date": "2023-06-27",
-    "theme": "bwc",
+    "deck": "BWC",
     "icon": "bwc",
+    "id": "BWCKEY",
     "tagline": ["A mysterious keypad with cursed emojis"],
     "tags": [
       "BWC",
@@ -1305,61 +786,29 @@
       "Emoji",
       "Cursed"
     ],
-    "buttons": [
-      {
-        "type": "internal",
-        "href": "/BWC",
-        "label": "GOTO BWC"
-      }
-    ]
+    "theme": "bwc",
+    "title": "BWC Special Access Program",
+    "type": "Card"
   },
   {
-    "id": "BWCORP",
-    "type": "Deck",
-    "title": "Banjo Warez Corporation",
-    "deck": "BWC",
     "accessLevel": 0,
     "date": "2023-XX-XX",
-    "theme": "bwc",
+    "deck": "BWC",
     "icon": "bwc",
+    "id": "BWCORP",
     "tagline": ["A top-secret shadowy organization"],
-    "tags": ["BWC", "Patreon", "Security", "Fake Company", "Fake"]
+    "tags": ["BWC", "Patreon", "Security", "Fake Company", "Fake"],
+    "theme": "bwc",
+    "title": "Banjo Warez Corporation",
+    "type": "Deck"
   },
   {
-    "id": "CBDB01",
-    "type": "Card",
-    "deck": "Bop Drumps",
-    "accessLevel": 1,
-    "date": "2021-03-20",
-    "title": "BALL",
-    "tagline": "Bop Drumps beta card #1",
-    "theme": "white",
-    "icon": "cards",
-    "text": ["BALL [POP]", "3 silly", "2 strong", "3 mass", "4 mystery"],
-    "tags": [
-      "Ball",
-      "Bop Drumps",
-      "Bop Drumps beta",
-      "Card",
-      "Sketch",
-      "Card Game",
-      "beta",
-      "preview",
-      "POP",
-      "surprised"
-    ]
-  },
-  {
-    "id": "CBDB02",
-    "type": "Card",
-    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-03-20",
-    "title": "BOOP-BOOP",
-    "tagline": "Bop Drumps beta card #2",
-    "theme": "white",
+    "deck": "Bop Drumps",
     "icon": "cards",
-    "text": ["BOOP-BOOP", "1 silly", "8 strong", "6 mass", "2 mystery"],
+    "id": "CBDB02",
+    "tagline": "Bop Drumps beta card #2",
     "tags": [
       "BOOP-BOOP",
       "Bop Drumps",
@@ -1371,45 +820,19 @@
       "preview",
       "robot",
       "happy"
-    ]
-  },
-  {
-    "id": "CBDB03",
-    "type": "Card",
-    "deck": "Bop Drumps",
-    "accessLevel": 1,
-    "date": "2021-03-20",
-    "title": "EVIL JELLY",
-    "tagline": "Bop Drumps beta card #3",
+    ],
+    "text": ["BOOP-BOOP", "1 silly", "8 strong", "6 mass", "2 mystery"],
     "theme": "white",
-    "icon": "cards",
-    "text": ["EVIL JELLY [FLY]", "5 silly", "1 strong", "1 mass", "3 mystery"],
-    "tags": [
-      "EVIL JELLY",
-      "Bop Drumps",
-      "Bop Drumps beta",
-      "Card",
-      "Sketch",
-      "Card Game",
-      "beta",
-      "preview",
-      "fly",
-      "jelly bean",
-      "evil",
-      "angry"
-    ]
+    "title": "BOOP-BOOP",
+    "type": "Card"
   },
   {
-    "id": "CBDB04",
-    "type": "Card",
-    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-06-15",
-    "title": "HELL RAIDER",
-    "tagline": "Bop Drumps beta card #4",
-    "theme": "white",
+    "deck": "Bop Drumps",
     "icon": "cards",
-    "text": ["HELL RAIDER", "0 silly", "10 strong", "8 mass", "6 mystery"],
+    "id": "CBDB04",
+    "tagline": "Bop Drumps beta card #4",
     "tags": [
       "HELL RAIDER",
       "Bop Drumps",
@@ -1421,19 +844,19 @@
       "preview",
       "hell",
       "shmup"
-    ]
+    ],
+    "text": ["HELL RAIDER", "0 silly", "10 strong", "8 mass", "6 mystery"],
+    "theme": "white",
+    "title": "HELL RAIDER",
+    "type": "Card"
   },
   {
-    "id": "CBDB05",
-    "type": "Card",
-    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-06-15",
-    "title": "MUSHROOM BOY",
-    "tagline": "Bop Drumps beta card #5",
-    "theme": "white",
+    "deck": "Bop Drumps",
     "icon": "cards",
-    "text": ["MUSHROOM BOY", "4 silly", "2 strong", "3 mass", "4 mystery"],
+    "id": "CBDB05",
+    "tagline": "Bop Drumps beta card #5",
     "tags": [
       "MUSHROOM BOY",
       "Bop Drumps",
@@ -1445,19 +868,19 @@
       "preview",
       "mushroom",
       "happy"
-    ]
+    ],
+    "text": ["MUSHROOM BOY", "4 silly", "2 strong", "3 mass", "4 mystery"],
+    "theme": "white",
+    "title": "MUSHROOM BOY",
+    "type": "Card"
   },
   {
-    "id": "CBDB06",
-    "type": "Card",
-    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-06-15",
-    "title": "JAMES",
-    "tagline": "Bop Drumps beta card #6",
-    "theme": "white",
+    "deck": "Bop Drumps",
     "icon": "cards",
-    "text": ["JAMES", "5 silly", "4 strong", "4 mass", "2 mystery"],
+    "id": "CBDB06",
+    "tagline": "Bop Drumps beta card #6",
     "tags": [
       "JAMES",
       "Bop Drumps",
@@ -1468,75 +891,19 @@
       "beta",
       "preview",
       "stickman"
-    ]
-  },
-  {
-    "id": "CBDB07",
-    "type": "Card",
-    "deck": "Bop Drumps",
-    "accessLevel": 1,
-    "date": "2021-08-10",
-    "title": "GNOME BOY",
-    "tagline": "Bop Drumps beta card #7",
-    "theme": "white",
-    "icon": "cards",
-    "text": ["GNOME BOY [POP]", "3 silly", "4 strong", "3 mass", "5 mystery"],
-    "tags": [
-      "Gnome Boy",
-      "Bop Drumps",
-      "Bop Drumps beta",
-      "Card",
-      "Sketch",
-      "Card Game",
-      "beta",
-      "preview",
-      "POP"
-    ]
-  },
-  {
-    "id": "CBDB08",
-    "type": "Card",
-    "deck": "Bop Drumps",
-    "accessLevel": 2,
-    "date": "2021-08-10",
-    "title": "GEM GUARDIAN",
-    "tagline": "Bop Drumps beta card #8",
-    "theme": "white",
-    "icon": "cards",
-    "text": [
-      "GEM GUARDIAN [GEM]",
-      "3 silly",
-      "7 strong",
-      "5 mass",
-      "7 mystery"
     ],
-    "tags": [
-      "Gem Guardian",
-      "Bop Drumps",
-      "Bop Drumps beta",
-      "Card",
-      "Sketch",
-      "Card Game",
-      "beta",
-      "preview",
-      "POP",
-      "GEM",
-      "happy",
-      "moth",
-      "pebblemoth"
-    ]
+    "text": ["JAMES", "5 silly", "4 strong", "4 mass", "2 mystery"],
+    "theme": "white",
+    "title": "JAMES",
+    "type": "Card"
   },
   {
-    "id": "CBDB09",
-    "type": "Card",
-    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-08-10",
-    "title": "TOPOLOGY MIKE",
-    "tagline": "Bop Drumps beta card #9",
-    "theme": "white",
+    "deck": "Bop Drumps",
     "icon": "cards",
-    "text": ["TOPOLOGY MIKE", "2 silly", "6 strong", "0 mass", "8 mystery"],
+    "id": "CBDB09",
+    "tagline": "Bop Drumps beta card #9",
     "tags": [
       "TOPOLOGY MIKE",
       "Bop Drumps",
@@ -1547,19 +914,19 @@
       "beta",
       "preview",
       "sad"
-    ]
+    ],
+    "text": ["TOPOLOGY MIKE", "2 silly", "6 strong", "0 mass", "8 mystery"],
+    "theme": "white",
+    "title": "TOPOLOGY MIKE",
+    "type": "Card"
   },
   {
-    "id": "CBOPDR",
-    "type": "Deck",
-    "deck": "Bop Drumps",
     "accessLevel": 0,
     "date": "2021-XX-XX",
-    "title": "BOP DRUMPS",
-    "tagline": "A throwback card game",
-    "theme": "white",
+    "deck": "Bop Drumps",
     "icon": "cards",
-    "text": ["Know how to play?"],
+    "id": "CBOPDR",
+    "tagline": "A throwback card game",
     "tags": [
       "Bop Drumps",
       "Bop Drumps beta",
@@ -1568,76 +935,18 @@
       "Card Game",
       "beta",
       "preview"
-    ]
-  },
-  {
-    "id": "DAAOPT",
-    "type": "Card",
-    "deck": "Archived",
-    "accessLevel": 2,
-    "date": "2005-05-11",
-    "title": "Optical Illusion",
-    "tagline": "The 18 year long collab",
-    "theme": "white",
-    "icon": "art-digital",
-    "text": [
-      "One of the oldest computer files I have dates back to 2005. A friend of mine discovered that if you adjust the size of an image in a certain way, you can create all kinds of intriguing visual effects. I have to agree with him, it's quite true. This particular file from 2005, a simple copy and paste job, seems to naturally fit into the concept of a 3D Holo-Card. It reveals a fascinating pattern as it undergoes the transformation."
     ],
-    "tags": [
-      "Digital Art",
-      "Art",
-      "MS Paint",
-      "Archived",
-      "Optical Illusion",
-      "2000s"
-    ]
-  },
-  {
-    "id": "DAASPA",
-    "type": "Card",
-    "deck": "Archived",
-    "accessLevel": 1,
-    "date": "2005-03-20",
-    "title": "SPACE WARZ",
-    "tagline": "2005 stickman gore series",
+    "text": ["Know how to play?"],
     "theme": "white",
-    "icon": "art",
-    "media": [
-      {
-        "type": "image",
-        "src": "scan-space-warz.jpg",
-        "alt": "SPACE WARZ Scan"
-      }
-    ],
-    "tags": [
-      "Stickman Gore",
-      "Physical Art",
-      "Art",
-      "Drawing",
-      "Stickman",
-      "Scifi",
-      "Space",
-      "Cartoon",
-      "Sketch",
-      "Scan",
-      "Alien",
-      "Archived",
-      "2000s"
-    ]
+    "title": "BOP DRUMPS",
+    "type": "Deck"
   },
   {
-    "id": "DABASL",
-    "type": "Card",
-    "deck": "Digital Art",
     "accessLevel": 0,
     "date": "2022-11-13",
-    "title": "Banjo Sig Logo",
-    "theme": "banjo",
+    "deck": "Digital Art",
     "icon": "art-digital",
-    "tags": ["Logo", "Banjo", "Digital Art", "Product Design"],
-    "text": [
-      "I took some time in 2022 to develop a new signature for Banjo. In my game dev artstyle from the time, I drew inspiration from magick sigils and graffiti to represent the 5 letters of Banjo in one glyph."
-    ],
+    "id": "DABASL",
     "media": [
       {
         "type": "image",
@@ -1649,17 +958,21 @@
         "src": "logo-banjo-sig-dark.png",
         "alt": "Dark version logo"
       }
-    ]
+    ],
+    "tags": ["Logo", "Banjo", "Digital Art", "Product Design"],
+    "text": [
+      "I took some time in 2022 to develop a new signature for Banjo. In my game dev artstyle from the time, I drew inspiration from magick sigils and graffiti to represent the 5 letters of Banjo in one glyph."
+    ],
+    "theme": "banjo",
+    "title": "Banjo Sig Logo",
+    "type": "Card"
   },
   {
-    "id": "DABATL",
-    "type": "Card",
-    "deck": "Digital Art",
     "accessLevel": 0,
     "date": "2022-11-14",
-    "title": "Banjo Sig Logo Twitter Edit",
-    "theme": "banjo",
+    "deck": "Digital Art",
     "icon": "art-digital",
+    "id": "DABATL",
     "tags": [
       "Logo",
       "Banjo",
@@ -1670,18 +983,25 @@
     ],
     "text": [
       "I thought that this concave effect looked great on the logo so I decided this would be my profile picture on Twitter and Discord for a while. Right now it appears in the top left corner of BanjoDave.com."
-    ]
+    ],
+    "theme": "banjo",
+    "title": "Banjo Sig Logo Twitter Edit",
+    "type": "Card"
   },
   {
-    "id": "DABLAD",
-    "type": "Card",
-    "deck": "Digital Art",
     "accessLevel": 0,
     "date": "2021-12-08",
-    "title": "Banjeetz Life and Death",
-    "tagline": "Twitter Header",
-    "theme": "darkforest",
+    "deck": "Digital Art",
     "icon": "art-digital",
+    "id": "DABLAD",
+    "media": [
+      {
+        "type": "image",
+        "src": "logo-banjeetz-life-and-death.jpg",
+        "alt": "Banjeetz Life and Death"
+      }
+    ],
+    "tagline": "Twitter Header",
     "tags": [
       "Digital Art",
       "Twitter",
@@ -1693,323 +1013,197 @@
     "text": [
       "I used online AI tools to transform a blackletter \"Banjeetz\" logo into this. I used 20 hellish prompts and 20 inverse heveanly prompts to generate two images and did various things in post-processing to combine them."
     ],
-    "media": [
-      {
-        "type": "image",
-        "src": "logo-banjeetz-life-and-death.jpg",
-        "alt": "Banjeetz Life and Death"
-      }
-    ]
+    "theme": "darkforest",
+    "title": "Banjeetz Life and Death",
+    "type": "Card"
   },
   {
-    "id": "CAPSUL",
-    "type": "Deck",
-    "deck": "BFD Capsules",
     "accessLevel": 0,
     "date": "2023-XX-XX",
-    "title": "BFD Capsules",
-    "tagline": "BFD Capsule Series, You can only choose one.",
-    "theme": "dark",
+    "deck": "BFD Capsules",
     "icon": "capsule",
+    "id": "CAPSUL",
+    "tagline": "BFD Capsule Series, You can only choose one.",
+    "tags": ["Capsule", "BFD", "Twitter", "Digital Art"],
     "text": [
       "This is your last chance. After this, there is no turning back. You take any of these pills—nothing special happens. You don't—same thing. Remember: all I'm offering is the truth. Nothing more."
     ],
-    "tags": ["Capsule", "BFD", "Twitter", "Digital Art"]
+    "theme": "dark",
+    "title": "BFD Capsules",
+    "type": "Deck"
   },
   {
-    "id": "DACCEE",
-    "type": "Card",
+    "accessLevel": 0,
+    "date": "2022-03-30",
     "deck": "BFD Capsules",
-    "accessLevel": 2,
-    "date": "2022-04-01",
-    "title": "Celestial Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "theme": "iridescent",
     "icon": "capsule",
-    "text": ["Summons a real tulpa that tells mostly-true fortunes."],
-    "tags": ["Celestial", "Iridescent", "Digital Art", "Capsule", "BFD"]
-  },
-  {
     "id": "DACCEL",
-    "type": "Card",
-    "deck": "BFD Capsules",
-    "accessLevel": 0,
-    "date": "2022-03-30",
-    "title": "Celadon Capsule",
     "tagline": "BFD Capsule Series, you can only choose one",
-    "theme": "emerald",
-    "icon": "capsule",
+    "tags": ["Celadon", "Green", "Digital Art", "Capsule", "BFD"],
     "text": ["Perfect green thumb. Any plant you care for thrives."],
-    "tags": ["Celadon", "Green", "Digital Art", "Capsule", "BFD"]
+    "theme": "emerald",
+    "title": "Celadon Capsule",
+    "type": "Card"
   },
   {
+    "accessLevel": 0,
+    "date": "2022-11-23",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
     "id": "DACCOR",
-    "type": "Card",
-    "title": "Coral Capsule",
     "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 0,
-    "date": "2022-11-23",
-    "theme": "coral",
-    "icon": "capsule",
+    "tags": ["Coral", "Pixelated", "Capsule", "BFD", "Digital Art"],
     "text": ["Instant AAA industry-leading game dev knowledge."],
-    "tags": ["Coral", "Pixelated", "Capsule", "BFD", "Digital Art"]
+    "theme": "coral",
+    "title": "Coral Capsule",
+    "type": "Card"
   },
   {
-    "id": "DACCIT",
-    "type": "Card",
-    "title": "Citrus Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 1,
+    "accessLevel": 0,
     "date": "2022-11-23",
-    "theme": "citrus",
+    "deck": "BFD Capsules",
     "icon": "capsule",
-    "text": ["Juicy."],
-    "tags": ["Citrus", "Orange", "Nonsense", "Capsule", "BFD", "Digital Art"]
-  },
-  {
     "id": "DACCRI",
-    "type": "Card",
-    "title": "Crimson Capsule",
     "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 0,
-    "date": "2022-11-23",
-    "theme": "crimson",
-    "icon": "capsule",
+    "tags": ["Crimson", "Blood", "Capsule", "BFD", "Digital Art"],
     "text": ["Infinitely regenerating blood."],
-    "tags": ["Crimson", "Blood", "Capsule", "BFD", "Digital Art"]
+    "theme": "crimson",
+    "title": "Crimson Capsule",
+    "type": "Card"
   },
   {
+    "accessLevel": 0,
+    "date": "2023-01-17",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
     "id": "DACCEA",
-    "type": "Card",
-    "title": "Ceramic Capsule",
     "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 0,
-    "date": "2023-01-17",
-    "theme": "ceramic",
-    "icon": "capsule",
+    "tags": ["Ceramic", "China", "Capsule", "BFD", "Digital Art"],
     "text": ["Immune to all contagions."],
-    "tags": ["Ceramic", "China", "Capsule", "BFD", "Digital Art"]
+    "theme": "ceramic",
+    "title": "Ceramic Capsule",
+    "type": "Card"
   },
   {
-    "id": "DACCER",
-    "type": "Card",
-    "title": "Cerulean Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 1,
+    "accessLevel": 0,
     "date": "2022-03-30",
-    "theme": "cerulean",
+    "deck": "BFD Capsules",
     "icon": "capsule",
-    "text": ["Can read any book in one hour."],
-    "tags": ["Cerulean", "Blue", "Gold", "Capsule", "BFD", "Digital Art"]
-  },
-  {
     "id": "DACCHA",
-    "type": "Card",
-    "title": "Chartreuse Capsule",
     "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 0,
-    "date": "2022-03-30",
-    "theme": "yellow-green",
-    "icon": "capsule",
+    "tags": ["Chartreuse", "Yellow", "Green", "Capsule", "BFD", "Digital Art"],
     "text": ["Instantly gain 10 years of practice on one instrument."],
-    "tags": ["Chartreuse", "Yellow", "Green", "Capsule", "BFD", "Digital Art"]
+    "theme": "yellow-green",
+    "title": "Chartreuse Capsule",
+    "type": "Card"
   },
   {
+    "accessLevel": 0,
+    "date": "2022-03-30",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
     "id": "DACCHE",
-    "type": "Card",
-    "title": "Cherry Capsule",
     "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 0,
-    "date": "2022-03-30",
-    "theme": "cherry",
-    "icon": "capsule",
+    "tags": ["Cherry", "Chatoyant", "Red", "Capsule", "BFD", "Digital Art"],
     "text": ["+500k YouTube subscribers."],
-    "tags": ["Cherry", "Chatoyant", "Red", "Capsule", "BFD", "Digital Art"]
+    "theme": "cherry",
+    "title": "Cherry Capsule",
+    "type": "Card"
   },
   {
-    "id": "DACCHO",
-    "type": "Card",
-    "title": "Chrome Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 1,
-    "date": "2023-01-15",
-    "theme": "chrome",
-    "icon": "capsule",
-    "text": ["Can't be knocked out."],
-    "tags": ["Chrome", "Metallic", "Capsule", "BFD", "Digital Art"]
-  },
-  {
-    "id": "DACCHR",
-    "type": "Card",
-    "title": "Charcoal Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 2,
-    "date": "2022-03-30",
-    "theme": "bwc",
-    "icon": "capsule",
-    "text": [
-      "Any and all public media is instantly and freely available for life."
-    ],
-    "tags": [
-      "Charcoal",
-      "Black",
-      "BWC",
-      "Rainbow",
-      "Capsule",
-      "BFD",
-      "Digital Art"
-    ]
-  },
-  {
-    "id": "DACCOB",
-    "type": "Card",
-    "title": "Cobalt Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
     "accessLevel": 0,
     "date": "2022-03-30",
-    "theme": "blue",
+    "deck": "BFD Capsules",
     "icon": "capsule",
+    "id": "DACCOB",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Cobalt", "Blue", "Capsule", "BFD", "Digital Art"],
     "text": ["Discover the next AI tech breakthrough."],
-    "tags": ["Cobalt", "Blue", "Capsule", "BFD", "Digital Art"]
+    "theme": "blue",
+    "title": "Cobalt Capsule",
+    "type": "Card"
   },
   {
-    "id": "DACCOE",
-    "type": "Card",
-    "title": "Colourless Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
     "accessLevel": 0,
     "date": "2023-01-17",
-    "theme": "white",
+    "deck": "BFD Capsules",
     "icon": "capsule",
+    "id": "DACCOE",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["White", "Zine", "Capsule", "BFD", "Digital Art"],
     "text": ["Invisible at will, for as long as you can hold your breath."],
-    "tags": ["White", "Zine", "Capsule", "BFD", "Digital Art"]
+    "theme": "white",
+    "title": "Colourless Capsule",
+    "type": "Card"
   },
   {
-    "id": "DACCOL",
-    "type": "Card",
-    "title": "Colourful Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 1,
-    "date": "2022-04-02",
-    "theme": "tuttifrutti",
-    "icon": "capsule",
-    "text": ["Any visual art you make comes out exactly how you imagined."],
-    "tags": ["Rainbow", "Capsule", "BFD", "Digital Art"]
-  },
-  {
-    "id": "DACCOO",
-    "type": "Card",
-    "title": "Corroded Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
     "accessLevel": 0,
     "date": "2023-01-01",
-    "theme": "charcoal",
+    "deck": "BFD Capsules",
     "icon": "capsule",
+    "id": "DACCOO",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Corroded", "Old", "Archived", "BFD", "Digital Art"],
     "text": ["X-ray vision for underground artifacts."],
-    "tags": ["Corroded", "Old", "Archived", "BFD", "Digital Art"]
+    "theme": "charcoal",
+    "title": "Corroded Capsule",
+    "type": "Card"
   },
   {
-    "id": "DACCRY",
-    "type": "Card",
-    "title": "Crystal Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 1,
-    "date": "2022-11-23",
-    "theme": "crystal",
-    "icon": "capsule",
-    "text": ["Sell it."],
-    "tags": ["Crystal", "Gem", "Diamond", "Capsule", "BFD", "Digital Art"]
-  },
-  {
-    "id": "DACCOP",
-    "type": "Card",
-    "title": "Copper Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
     "accessLevel": 0,
     "date": "2022-03-30",
-    "theme": "copper",
+    "deck": "BFD Capsules",
     "icon": "capsule",
+    "id": "DACCOP",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Copper", "DOOM", "BFD", "Digital Art"],
     "text": ["Guaranteed 3rd place in everything you enter."],
-    "tags": ["Copper", "DOOM", "BFD", "Digital Art"]
+    "theme": "copper",
+    "title": "Copper Capsule",
+    "type": "Card"
   },
   {
-    "id": "DACCOU",
-    "type": "Card",
-    "title": "Corrupt Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 2,
-    "date": "2023-01-18",
-    "theme": "charcoal",
-    "icon": "capsule",
-    "text": ["Break any encryption."],
-    "tags": ["Glitch", "BFD", "Digital Art"]
-  },
-  {
-    "id": "DACCRE",
-    "type": "Card",
-    "title": "Creepy Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
     "accessLevel": 0,
     "date": "2022-04-03",
-    "theme": "space",
+    "deck": "BFD Capsules",
     "icon": "capsule",
+    "id": "DACCRE",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Static", "Noise", "Spooky", "Horror", "BFD", "Digital Art"],
     "text": ["Read someone's mind once a day."],
-    "tags": ["Static", "Noise", "Spooky", "Horror", "BFD", "Digital Art"]
+    "theme": "space",
+    "title": "Creepy Capsule",
+    "type": "Card"
   },
   {
-    "id": "DACCRU",
-    "type": "Card",
-    "title": "Crusty Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
     "accessLevel": 0,
     "date": "2023-01-14",
-    "theme": "crusty",
+    "deck": "BFD Capsules",
     "icon": "capsule",
+    "id": "DACCRU",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Crusty", "Gross", "BFD", "Digital Art"],
     "text": [
       "Absorbs all of your grossness, so you are always clean and well-groomed."
     ],
-    "tags": ["Crusty", "Gross", "BFD", "Digital Art"]
+    "theme": "crusty",
+    "title": "Crusty Capsule",
+    "type": "Card"
   },
   {
-    "id": "DACCYA",
-    "type": "Card",
-    "title": "Cyan Capsule",
-    "tagline": "BFD Capsule Series, you can only choose one",
-    "deck": "BFD Capsules",
-    "accessLevel": 1,
-    "date": "2022-03-30",
-    "theme": "cyan",
-    "icon": "capsule",
-    "text": ["1 Petabyte USB flash drive."],
-    "tags": ["Cyan", "Blue", "BFD", "Digital Art"]
-  },
-  {
-    "id": "DAFRFO",
-    "type": "Card",
-    "deck": "Digital Art",
     "accessLevel": 0,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://twitter.com/GateGuard111",
+        "label": "@GateGuard on Twitter"
+      }
+    ],
     "date": "2023-01-04",
-    "title": "Frost Fortress",
-    "theme": "ice",
+    "deck": "Digital Art",
     "icon": "art-digital",
+    "id": "DAFRFO",
+    "tagline": "Digital art commission for @GateGuard",
     "tags": [
       "Art",
       "Digital Art",
@@ -2019,72 +1213,27 @@
       "Castle",
       "Bright"
     ],
-    "tagline": "Digital art commission for @GateGuard",
     "text": [
-      "Lost frost fortress. Digital art with acrylic on canvas. Commissioned by @GateGuard."
+      "Lost frost fortress. Digital art over acrylic on canvas. Commissioned by @GateGuard."
     ],
-    "buttons": [
-      {
-        "type": "external",
-        "href": "https://twitter.com/GateGuard111",
-        "label": "@GateGuard on Twitter"
-      }
-    ]
+    "theme": "ice",
+    "title": "Frost Fortress",
+    "type": "Card"
   },
   {
-    "id": "DAMAGI",
-    "type": "Card",
-    "title": "Magick",
-    "deck": "Magick",
-    "accessLevel": 2,
-    "date": "2022-02-19",
-    "theme": "charcoal",
-    "icon": "house",
-    "text": ["! BWC TO ADD !"],
-    "tags": [
-      "Magick",
-      "Magic",
-      "Thelema",
-      "Sigil",
-      "Astrology",
-      "Buddhism",
-      "Philosophy",
-      "I-Ching",
-      "Symbol"
-    ]
-  },
-  {
-    "id": "DAPLMA",
-    "type": "Card",
-    "title": "Planets Mandala",
+    "accessLevel": 0,
+    "date": "2023-01-06",
     "deck": "Digital Art",
-    "accessLevel": 1,
-    "date": "2023-01-07",
-    "theme": "pebblemoth",
     "icon": "art-digital",
-    "text": [
-      "I made my own versions of various astrological and alchemical symbols for the Pebblemoth project. The card image is the result of rotating and overlaying all of these images. I have also included a gif which cycles through the symbols."
-    ],
+    "id": "DAWHAN",
     "media": [
       {
         "type": "image",
-        "src": "art-planets.gif",
-        "alt": "Gif of glyphs"
+        "src": "art-realm-of-magic-animals.png",
+        "alt": "Realm of Magic Animals"
       }
     ],
-    "tags": ["Astrology", "Alchemy", "Planets", "Magick", "Pebblemoth"]
-  },
-  {
-    "id": "DAWHAN",
-    "type": "Card",
-    "deck": "Digital Art",
-    "accessLevel": 0,
-    "date": "2023-01-06",
-    "title": "Realm of Magic Animals",
     "tagline": "Where animals wait to be summoned by stage magicians",
-    "theme": "space",
-    "icon": "art-digital",
-    "text": ["Concept art for Banjo's Arcade Kósmoptasía."],
     "tags": [
       "Space",
       "Magic",
@@ -2099,24 +1248,17 @@
       "Banjo's Arcade",
       "Preview"
     ],
-    "media": [
-      {
-        "type": "image",
-        "src": "art-realm-of-magic-animals.png",
-        "alt": "Realm of Magic Animals"
-      }
-    ]
+    "text": ["Concept art for Banjo's Arcade Kósmoptasía."],
+    "theme": "space",
+    "title": "Realm of Magic Animals",
+    "type": "Card"
   },
   {
-    "id": "DAWPLD",
-    "type": "Card",
-    "deck": "Digital Art",
     "accessLevel": 0,
     "date": "2022-11-23",
-    "title": "Dark Logo Wallpaper",
-    "theme": "dark",
+    "deck": "Digital Art",
     "icon": "art-digital",
-    "tags": ["Logo", "Dark", "Wallpaper", "Digital Art"],
+    "id": "DAWPLD",
     "media": [
       {
         "type": "image",
@@ -2128,54 +1270,44 @@
         "src": "wallpaper-mobile-logo-dark.png",
         "alt": "Mobile Wallpaper"
       }
-    ]
+    ],
+    "tags": ["Logo", "Dark", "Wallpaper", "Digital Art"],
+    "theme": "dark",
+    "title": "Dark Logo Wallpaper",
+    "type": "Card"
   },
   {
-    "id": "DAWPLL",
-    "type": "Card",
-    "deck": "Digital Art",
     "accessLevel": 0,
     "date": "2022-11-23",
-    "title": "Light Logo Wallpaper",
-    "theme": "banjo",
+    "deck": "Digital Art",
     "icon": "art-digital",
-    "tags": ["Logo", "Light", "Wallpaper", "Digital Art"],
+    "id": "DAWPLL",
     "media": [
       {
         "type": "image",
         "src": "wallpaper-desktop-logo-light.png",
         "alt": "Desktop Wallpaper"
       }
-    ]
+    ],
+    "tags": ["Logo", "Light", "Wallpaper", "Digital Art"],
+    "theme": "banjo",
+    "title": "Light Logo Wallpaper",
+    "type": "Card"
   },
   {
-    "id": "DAENMA",
-    "type": "Card",
-    "deck": "Digital Art",
-    "accessLevel": 1,
-    "date": "2022-02-12",
-    "title": "Energy Marble",
-    "tagline": "This glass orb is effulgent with a strange energy",
-    "theme": "dark",
-    "icon": "art-digital",
-    "tags": ["Rainbow", "Marble", "Orb", "Digital Art"],
-    "media": [
-      {
-        "type": "image",
-        "src": "art-energy-marble.png",
-        "alt": "Energy Marble"
-      }
-    ]
-  },
-  {
-    "id": "DMBDBD",
-    "type": "Deck",
-    "deck": "BanjoDOOM",
     "accessLevel": 0,
+    "buttons": [
+      {
+        "type": "internal",
+        "href": "/DOOM",
+        "label": "Browse DOOM Maps"
+      }
+    ],
     "date": "2023-XX-XX",
-    "title": "BanjoDOOM",
-    "theme": "doom",
+    "deck": "BanjoDOOM",
     "icon": "doom",
+    "id": "DMBDBD",
+    "tagline": "DOOM Mapping",
     "tags": [
       "DOOM",
       "Mapping",
@@ -2188,27 +1320,49 @@
       "Scifi",
       "Hell"
     ],
-    "tagline": "DOOM Mapping",
     "text": [
       "I started making maps for DOOM II in December of 2019, looking for a convenient way to start dabbling in 3D level design. I have a lot of nostalgia for DOOM too having installed it on all of the school PCs that I used when I was a student. You will need a copy of DOOM2.wad and a source port to be able to play my levels."
     ],
-    "buttons": [
-      {
-        "type": "internal",
-        "href": "/DOOM",
-        "label": "Browse DOOM Maps"
-      }
-    ]
+    "theme": "doom",
+    "title": "BanjoDOOM",
+    "type": "Deck"
   },
   {
-    "id": "DMBLBH",
-    "type": "Card",
-    "deck": "BanjoDOOM",
     "accessLevel": 0,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/BanjoDave_Blazing-Beachhead.wad",
+        "label": "Download BanjoDave_Blazing-Beachhead.wad 5.62 MB"
+      }
+    ],
     "date": "2020-06-09",
-    "title": "Blazing Beachhead",
-    "theme": "magma",
+    "deck": "BanjoDOOM",
     "icon": "doom",
+    "id": "DMBLBH",
+    "media": [
+      {
+        "type": "youtube",
+        "src": "L9FiRvLo41Y",
+        "alt": ""
+      },
+      {
+        "type": "image",
+        "src": "doom-bb-1.jpg",
+        "alt": "The beach that is blazing"
+      },
+      {
+        "type": "image",
+        "src": "doom-bb-2.jpg",
+        "alt": "Demon hordes on the ashen plains"
+      },
+      {
+        "type": "image",
+        "src": "doom-bb-3.jpg",
+        "alt": "The demon trenches"
+      }
+    ],
+    "tagline": "An expansive magma shoreline with hordes of modded enemies",
     "tags": [
       "Blazing Beachhead",
       "Magma",
@@ -2228,61 +1382,34 @@
       "Hell",
       "Fire"
     ],
-    "media": [
-      {
-        "type": "image",
-        "src": "doom-bb-1.jpg",
-        "alt": "The beach that is blazing"
-      },
-      {
-        "type": "image",
-        "src": "doom-bb-2.jpg",
-        "alt": "Demon hordes on the ashen plains"
-      },
-      {
-        "type": "image",
-        "src": "doom-bb-3.jpg",
-        "alt": "The demon trenches"
-      }
-    ],
-    "tagline": "An expansive magma shoreline with hordes of modded enemies",
     "text": [
       "I created this map to teach myself the basics of DECORATE and UDMF. It is a remake of the very beginning of my first proper map MALAGARD. Initially I was going to remake the entirety of MALAGARD in this style but ran into some issues. I designed this map to be a humungous space to explore but it quickly became too big and the node builder began to express unusual buggy sector behaviour and I had to cut the map short. I'm not sure the modifications I made to the player and enemies have entirely worked out but the map remains an interesting and unique experience."
-    ]
+    ],
+    "theme": "magma",
+    "title": "Blazing Beachhead",
+    "type": "Card"
   },
   {
-    "id": "DMDFBV",
-    "type": "Card",
-    "title": "DOWNFALL Beta",
-    "deck": "BanjoDOOM",
-    "accessLevel": 2,
-    "date": "2023-03-30",
-    "theme": "doom",
-    "icon": "doom",
-    "text": ["!BWC TO ADD!"],
-    "tags": [
-      "DOWNFALL",
-      "Early Access",
-      "DOOM II",
-      "DOOM",
-      "Beta",
-      "Preview",
-      "Leak",
-      "Hitscan",
-      "Secret Base",
-      "Underground"
-    ]
-  },
-  {
-    "id": "DMDUMB",
-    "type": "Card",
-    "deck": "BanjoDOOM",
     "accessLevel": 0,
+    "buttons": [
+      {
+        "type": "download",
+        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/DUMB.pk3",
+        "label": "Download DUMB.pk3 18.1 MB"
+      }
+    ],
     "date": "2020-10-29",
-    "title": "Deep Underground Military Bunker",
-    "tagline": "A strange mist is making people crazy in this secret base, and your prison door just unlocked itself",
-    "theme": "dark-red",
+    "deck": "BanjoDOOM",
     "icon": "doom",
+    "id": "DMDUMB",
+    "media": [
+      {
+        "type": "youtube",
+        "src": "S7IEeKL9zyk",
+        "alt": "DOOM II Deep Underground Military Bunker by BanjoDave"
+      }
+    ],
+    "tagline": "A strange mist is making people crazy in this secret base, and your prison door just unlocked itself",
     "tags": [
       "Deep Underground Military Bunker",
       "Underground",
@@ -2305,125 +1432,32 @@
     ],
     "text": [
       "Uses only dynamic lightning. This map was MAP01 of MALAGARD 2 before I decided to remake it. Uses Tango's Supercharge gameplay mod as a base."
-    ]
-  },
-  {
-    "id": "DMHFBC",
-    "type": "Card",
-    "deck": "BanjoDOOM",
-    "accessLevel": 1,
-    "date": "2020-10-14",
-    "title": "Bob Choblin",
-    "theme": "blue",
-    "icon": "doom",
-    "tags": [
-      "Speedmap",
-      "Abstract",
-      "Blue",
-      "DOOM",
-      "90 Degrees",
-      "GZDoom",
-      "Single Map",
-      "Community Project",
-      "Hellforge",
-      "DOOM II",
-      "Mapping",
-      "DOOM Mapping",
-      "PC",
-      "Retro",
-      "FPS",
-      "1990s"
     ],
-    "tagline": "Regicide in an abstract brutalist blue void",
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
-    ]
+    "theme": "dark-red",
+    "title": "Deep Underground Military Bunker",
+    "type": "Card"
   },
   {
-    "id": "DMHFDF",
-    "type": "Card",
-    "deck": "BanjoDOOM",
-    "accessLevel": 1,
-    "date": "2020-09-06",
-    "title": "DireFlu",
-    "theme": "fireblu",
-    "icon": "doom",
-    "tags": [
-      "Very Hard",
-      "Fireblu",
-      "Speedmap",
-      "DOOM",
-      "GZDoom",
-      "Single Map",
-      "Community Project",
-      "Hellforge",
-      "DOOM II",
-      "Mapping",
-      "DOOM Mapping",
-      "PC",
-      "Retro",
-      "FPS",
-      "1990s",
-      "Hard"
-    ],
-    "tagline": "Unfair speedmap",
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
-    ]
-  },
-  {
-    "id": "DMHFFM",
-    "type": "Card",
-    "deck": "BanjoDOOM",
-    "accessLevel": 1,
-    "date": "2019-12-07",
-    "title": "fallen malkuth",
-    "theme": "doom",
-    "icon": "doom",
-    "tags": [
-      "Speedmap",
-      "DOOM",
-      "GZDoom",
-      "Single Map",
-      "Storm",
-      "Community Project",
-      "Hellforge",
-      "DOOM II",
-      "Mapping",
-      "DOOM Mapping",
-      "PC",
-      "Retro",
-      "FPS",
-      "1990s",
-      "Scifi",
-      "Hell"
-    ],
-    "tagline": "First BanjoDave DOOM map",
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
-    ]
-  },
-  {
-    "id": "DMHMAV",
-    "type": "Card",
-    "deck": "BanjoDOOM",
     "accessLevel": 0,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://www.doomworld.com/forum/topic/117485-come-eat-the-mapwich-2-public-beta-out-now/",
+        "label": "Mapwich 2 Doomworld thread"
+      }
+    ],
     "date": "2020-10-17",
-    "title": "Mapwich 2: Ascent to Valhalla",
-    "theme": "storm",
+    "deck": "BanjoDOOM",
     "icon": "doom",
+    "id": "DMHMAV",
+    "media": [
+      {
+        "type": "youtube",
+        "src": "Iwej00kGFCY",
+        "alt": ""
+      }
+    ],
+    "tagline": "Climb storm-lashed cliffs on your way to a monumental fortress in this collab with Danlex",
     "tags": [
       "Storm",
       "Danlex",
@@ -2447,53 +1481,16 @@
       "1990s",
       "Scifi"
     ],
-    "tagline": "Climb storm-lashed cliffs on your way to a monumental fortress in this collab with Danlex",
     "text": [
       "Come eat the Mapwich! Mappers are randomly assigned into pairs to collaborate on a map utilising ukiro's beautiful texture pack OTEX and Tango's Supercharge gameplay mod.",
       "Danlex and I created this towering map for MAP11 in Mapwich 2. Starting on the beach you must discover a way to progress up the cliffside. Emerging from a cave you will discover a huge white and gold palace jutting out from the sea. Forge a path over the precarious cliffside and prepare yourself to battle atop the the palace."
     ],
-    "buttons": [
-      {
-        "type": "download",
-        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/doom/DUMB.pk3",
-        "label": "Download DUMB.pk3 18.1 MB"
-      }
-    ]
+    "theme": "storm",
+    "title": "Mapwich 2: Ascent to Valhalla",
+    "type": "Card"
   },
   {
-    "id": "DMMALA",
-    "type": "Card",
-    "deck": "BanjoDOOM",
     "accessLevel": 0,
-    "date": "2019-12-17",
-    "title": "MALAGARD",
-    "theme": "doom",
-    "icon": "doom",
-    "tags": [
-      "Ruins",
-      "Castle",
-      "Beach",
-      "Lava",
-      "DOOM",
-      "GZDoom",
-      "Single Map",
-      "DOOM II",
-      "Mapping",
-      "DOOM Mapping",
-      "BanjoDOOM",
-      "PC",
-      "Retro",
-      "FPS",
-      "1990s",
-      "Scifi",
-      "Hell"
-    ],
-    "tagline": "Navigate the mysterious ruins and bulwarks on a demon-infested island",
-    "text": [
-      "I've been making maps for 2D games for a while but I thought it was time to expand into Doom. I started learning how to use doom builder late October and am proud to release my first map! This is a 45-50 minute map that only works in GZDoom as far as I know. Uses stock Doom II textures. Difficulty levels available. Jump and crouch disabled. Mouselook optional. Save points are built in to the map so making your own saves is cheating.",
-      "I tried to keep this map very classic in style, so no slopes or dynamic lights etc were used. I did have to use 3d floors for ceilings in places but that was more due to being naive about sectors and how the sky worked. If I were to remake this I would probably include more void sectors to improve performance. That being said, one of my favourite things about the map is the long lines of sight and being able to see parts of the map that are coming up next. I'm looking forward to making more maps in the future. I had a lot of fun making this so I hope you enjoy playing and let me know what you think!",
-      "Special thanks to Bridgeburner's The Hellforge for answering my questions and providing a place to hang out. Thanks to the tutorials on DragonFly's website. Thanks to Major Arlene for playtesting."
-    ],
     "buttons": [
       {
         "type": "download",
@@ -2506,6 +1503,10 @@
         "label": "Doomworld Thread"
       }
     ],
+    "date": "2019-12-17",
+    "deck": "BanjoDOOM",
+    "icon": "doom",
+    "id": "DMMALA",
     "media": [
       {
         "type": "youtube",
@@ -2532,22 +1533,38 @@
         "src": "doom-m-3.jpg",
         "alt": "The view from atop Blood Keep"
       }
-    ]
+    ],
+    "tagline": "Navigate the mysterious ruins and bulwarks on a demon-infested island",
+    "tags": [
+      "Ruins",
+      "Castle",
+      "Beach",
+      "Lava",
+      "DOOM",
+      "GZDoom",
+      "Single Map",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "BanjoDOOM",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Scifi",
+      "Hell"
+    ],
+    "text": [
+      "I've been making maps for 2D games for a while but I thought it was time to expand into Doom. I started learning how to use doom builder late October and am proud to release my first map! This is a 45-50 minute map that only works in GZDoom as far as I know. Uses stock Doom II textures. Difficulty levels available. Jump and crouch disabled. Mouselook optional. Save points are built in to the map so making your own saves is cheating.",
+      "I tried to keep this map very classic in style, so no slopes or dynamic lights etc were used. I did have to use 3d floors for ceilings in places but that was more due to being naive about sectors and how the sky worked. If I were to remake this I would probably include more void sectors to improve performance. That being said, one of my favourite things about the map is the long lines of sight and being able to see parts of the map that are coming up next. I'm looking forward to making more maps in the future. I had a lot of fun making this so I hope you enjoy playing and let me know what you think!",
+      "Special thanks to Bridgeburner's The Hellforge for answering my questions and providing a place to hang out. Thanks to the tutorials on DragonFly's website. Thanks to Major Arlene for playtesting."
+    ],
+    "theme": "doom",
+    "title": "MALAGARD",
+    "type": "Card"
   },
   {
-    "id": "GDGJMS",
-    "type": "Card",
-    "title": "Malice Striker",
-    "tagline": "Play as the great serpent Nidhogg who chews the roots of Yggdrasil until Ragnarok",
-    "deck": "Game Jams",
     "accessLevel": 0,
-    "date": "2023-02-05",
-    "theme": "brown",
-    "icon": "game",
-    "text": [
-      "Made for Global Game Jam 2023 (the theme was \"roots\") at an in-person event in Dundee. Very glad to have gotten out of my comfort zone to attend. Make sure the roots don't manage to tap the wells of energy, while also consuming the souls of sinners to preserve your health.",
-      "Team: Me (Programming), with Ewan Gowans (Sound Effects), Alastair Low (Art Assets), Michael Shaw (Music)."
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2555,6 +1572,10 @@
         "label": "View on Global Game Jam"
       }
     ],
+    "date": "2023-02-05",
+    "deck": "Game Jams",
+    "icon": "game",
+    "id": "GDGJMS",
     "media": [
       {
         "type": "video",
@@ -2567,6 +1588,7 @@
         "alt": "GGJ23 Group Photo"
       }
     ],
+    "tagline": "Play as the great serpent Nidhogg who chews the roots of Yggdrasil until Ragnarok",
     "tags": [
       "Global Game Jam",
       "Game Jam",
@@ -2576,64 +1598,28 @@
       "Mythical",
       "Lowtek",
       "Roots"
-    ]
+    ],
+    "text": [
+      "Made for Global Game Jam 2023 (the theme was \"roots\") at an in-person event in Dundee. Very glad to have gotten out of my comfort zone to attend. Make sure the roots don't manage to tap the wells of energy, while also consuming the souls of sinners to preserve your health.",
+      "Team: Me (Programming), with Ewan Gowans (Sound Effects), Alastair Low (Art Assets), Michael Shaw (Music)."
+    ],
+    "theme": "brown",
+    "title": "Malice Striker",
+    "type": "Card"
   },
   {
-    "id": "MTCOSN",
-    "type": "Card",
-    "title": "Excerpt from Cosmic Snake",
-    "tagline": "Degenrate post-totalist neoantiquitarian prophecy from ~1.4 kAE (Late Stelliferous Era)",
-    "deck": "Music",
-    "accessLevel": 1,
-    "date": "2022-02-22",
-    "theme": "charcoal",
-    "icon": "music",
-    "text": [
-      "Excerpt from 宇宙蛇 Cosmic Snake, an album by an unknown artist from RS 5444-2265-8-11983871-1317 3, NGC 4258, Canes Venatici II, Virgo Supercluster with a total runtime of 7 years, 4 days, 21 hours. This section marks the end of the second era."
-    ],
+    "accessLevel": 0,
     "buttons": [
       {
         "type": "external",
-        "href": "https://soundcloud.com/anjoave/excerpt-from-cosmic-snake",
+        "href": "https://soundcloud.com/anjoave/emerald-city",
         "label": "Listen on SoundCloud"
       }
     ],
-    "media": [
-      {
-        "type": "audio-ext",
-        "src": "https://s3.eu-north-1.amazonaws.com/banjodave.com/music/unknown_cosmic-snake.mp3",
-        "alt": "Cosmic Snake by Unknown"
-      },
-      {
-        "type": "image",
-        "src": "music-cosmic-snake.png",
-        "alt": "Cosmic Snake full album artwork"
-      }
-    ],
-    "tags": [
-      "Cosmic Snake",
-      "Virgo",
-      "Space",
-      "Music Track",
-      "Music",
-      "Ambient",
-      "Snake",
-      "Mythical",
-      "Scifi",
-      "Epic"
-    ]
-  },
-  {
-    "id": "MTEMCI",
-    "type": "Card",
-    "deck": "Music",
-    "accessLevel": 0,
     "date": "2022-02-22",
-    "title": "Emerald City",
+    "deck": "Music",
     "icon": "music",
-    "tagline": "",
-    "theme": "emerald",
-    "tags": ["Music", "Music Track", "Green", "Electronic", "Mellow"],
+    "id": "MTEMCI",
     "media": [
       {
         "type": "audio",
@@ -2641,28 +1627,25 @@
         "alt": "Emerald City by Banjeetz (mp3)"
       }
     ],
+    "tagline": "",
+    "tags": ["Music", "Music Track", "Green", "Electronic", "Mellow"],
+    "theme": "emerald",
+    "title": "Emerald City",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
     "buttons": [
       {
         "type": "external",
-        "href": "https://soundcloud.com/anjoave/emerald-city",
+        "href": "https://soundcloud.com/anjoave/rudeolf",
         "label": "Listen on SoundCloud"
       }
-    ]
-  },
-  {
-    "id": "MTRUDE",
-    "type": "Card",
-    "deck": "Music",
-    "accessLevel": 0,
-    "date": "2015-06-21",
-    "title": "Rudeolf",
-    "tagline": "rudolph the red-nosed reindeer all of the other reindeer",
-    "theme": "basic-red",
-    "icon": "music",
-    "text": [
-      "Lyrics: rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer you'll go down in history (yeah)"
     ],
-    "tags": ["Music", "Music Track", "Stupid", "Meme", "Remix", "Soundcloud"],
+    "date": "2015-06-21",
+    "deck": "Music",
+    "icon": "music",
+    "id": "MTRUDE",
     "media": [
       {
         "type": "audio",
@@ -2670,25 +1653,17 @@
         "alt": "Rudeolf by BanjoDave (mp3)"
       }
     ],
-    "buttons": [
-      {
-        "type": "external",
-        "href": "https://soundcloud.com/anjoave/rudeolf",
-        "label": "Listen on SoundCloud"
-      }
-    ]
+    "tagline": "rudolph the red-nosed reindeer all of the other reindeer",
+    "tags": ["Music", "Music Track", "Stupid", "Meme", "Remix", "Soundcloud"],
+    "text": [
+      "Lyrics: rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer rudolph the red-nosed reindeer all of the other reindeer you'll go down in history (yeah)"
+    ],
+    "theme": "basic-red",
+    "title": "Rudeolf",
+    "type": "Card"
   },
   {
-    "id": "N14400",
-    "type": "Card",
-    "title": "6*10mm #00",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2019-06-05",
-    "theme": "n",
-    "icon": "n",
-    "text": ["noble, ennui, Grassman, Falling Beam, Six Grays, Troubadour"],
     "buttons": [
       {
         "type": "external",
@@ -2696,6 +1671,18 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2019-06-05",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14400",
+    "media": [
+      {
+        "type": "video",
+        "src": "n-6x10mm00",
+        "alt": ""
+      }
+    ],
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -2703,22 +1690,16 @@
       "N",
       "Metanet",
       "Mapping",
-      "N Mapping"
-    ]
+      "N Mapping",
+      "YouTube"
+    ],
+    "text": ["noble, ennui, Grassman, Falling Beam, Six Grays, Troubadour"],
+    "theme": "n",
+    "title": "6*10mm #00",
+    "type": "Card"
   },
   {
-    "id": "N14401",
-    "type": "Card",
-    "title": "6*10mm #01",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2022-07-02",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "moontower, SOLAR DESTRUCTOR, everplace, goa'uld, reign in tears in rain, sons of fire"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2726,6 +1707,11 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2022-07-02",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14401",
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -2734,21 +1720,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "moontower, SOLAR DESTRUCTOR, everplace, goa'uld, reign in tears in rain, sons of fire"
+    ],
+    "theme": "n",
+    "title": "6*10mm #01",
+    "type": "Card"
   },
   {
-    "id": "N14402",
-    "type": "Card",
-    "title": "6*10mm #02",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2022-07-09",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "Anubis, Asgard Hyperdrive, breath on my own, holy orb, FN P90, cragon"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2756,6 +1737,11 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2022-07-09",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14402",
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -2764,21 +1750,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "Anubis, Asgard Hyperdrive, breath on my own, holy orb, FN P90, cragon"
+    ],
+    "theme": "n",
+    "title": "6*10mm #02",
+    "type": "Card"
   },
   {
-    "id": "N14403",
-    "type": "Card",
-    "title": "6*10mm #03",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2022-08-03",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "a sound out of nowhere, fly with me, silkygray falacy, fragmentation parade, Ghost in the Smell, holographic caper"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2786,6 +1767,11 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2022-08-03",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14403",
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -2794,21 +1780,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "a sound out of nowhere, fly with me, silkygray falacy, fragmentation parade, Ghost in the Smell, holographic caper"
+    ],
+    "theme": "n",
+    "title": "6*10mm #03",
+    "type": "Card"
   },
   {
-    "id": "N14404",
-    "type": "Card",
-    "title": "6*10mm #04",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2022-08-10",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "evil lyre, cauldron of slaughter, dragonoidal, digital smokables, WHAM MAW, Cactaceae"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2816,6 +1797,18 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2022-08-10",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14404",
+    "media": [
+      {
+        "type": "video",
+        "src": "n-6x10mm04",
+        "alt": ""
+      }
+    ],
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -2824,21 +1817,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "evil lyre, cauldron of slaughter, dragonoidal, digital smokables, WHAM MAW, Cactaceae"
+    ],
+    "theme": "n",
+    "title": "6*10mm #04",
+    "type": "Card"
   },
   {
-    "id": "N14405",
-    "type": "Card",
-    "title": "6*10mm #05",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2022-08-24",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "triangle schranz, looseY JUICY, ascendant, splooter splodge, honey click, skeleton fren"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2846,6 +1834,18 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2022-08-24",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14405",
+    "media": [
+      {
+        "type": "video",
+        "src": "n-6x10mm05",
+        "alt": ""
+      }
+    ],
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -2854,21 +1854,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "triangle schranz, looseY JUICY, ascendant, splooter splodge, honey click, skeleton fren"
+    ],
+    "theme": "n",
+    "title": "6*10mm #05",
+    "type": "Card"
   },
   {
-    "id": "N14406",
-    "type": "Card",
-    "title": "6*10mm #06",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2022-08-31",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "phonk face, garbage collection, ARRHYTHMIA, emissary of the dark tower, growth factor, took it too fario bros"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2876,6 +1871,18 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2022-08-31",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14406",
+    "media": [
+      {
+        "type": "video",
+        "src": "n-6x10mm06",
+        "alt": ""
+      }
+    ],
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -2884,21 +1891,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "phonk face, garbage collection, ARRHYTHMIA, emissary of the dark tower, growth factor, took it too fario bros"
+    ],
+    "theme": "n",
+    "title": "6*10mm #06",
+    "type": "Card"
   },
   {
-    "id": "N14407",
-    "type": "Card",
-    "title": "6*10mm #07",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2022-09-07",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "hump day in hell, close waive, estyle, feeling things, goblin forest, burn the sun"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2906,6 +1908,18 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2022-09-07",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14407",
+    "media": [
+      {
+        "type": "video",
+        "src": "n-6x10mm07",
+        "alt": ""
+      }
+    ],
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -2914,21 +1928,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "hump day in hell, close waive, estyle, feeling things, goblin forest, burn the sun"
+    ],
+    "theme": "n",
+    "title": "6*10mm #07",
+    "type": "Card"
   },
   {
-    "id": "N14408",
-    "type": "Card",
-    "title": "6*10mm #08",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2022-10-12",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "dead if you do, betteroffagon, galesoon, Tower of Havel, Tommy Hellfinger, Intrusion Countermeasures Electronics"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2936,6 +1945,18 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2022-10-12",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14408",
+    "media": [
+      {
+        "type": "video",
+        "src": "n-6x10mm08",
+        "alt": ""
+      }
+    ],
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -2944,21 +1965,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "dead if you do, betteroffagon, galesoon, Tower of Havel, Tommy Hellfinger, Intrusion Countermeasures Electronics"
+    ],
+    "theme": "n",
+    "title": "6*10mm #08",
+    "type": "Card"
   },
   {
-    "id": "N14409",
-    "type": "Card",
-    "title": "6*10mm #09",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2022-10-19",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "frugal, Technical drone metal, alison, 2007, Nothing said, Christ Conscious"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2966,6 +1982,18 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2022-10-19",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14409",
+    "media": [
+      {
+        "type": "video",
+        "src": "n-6x10mm09",
+        "alt": ""
+      }
+    ],
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -2974,21 +2002,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "frugal, Technical drone metal, alison, 2007, Nothing said, Christ Conscious"
+    ],
+    "theme": "n",
+    "title": "6*10mm #09",
+    "type": "Card"
   },
   {
-    "id": "N14410",
-    "type": "Card",
-    "title": "6*10mm #10",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2022-10-26",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "these fries are bussin on god fr fr, Howling outside your door, all they do is turn, Chasers, buy and forget, capture this"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -2996,6 +2019,18 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2022-10-26",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14410",
+    "media": [
+      {
+        "type": "video",
+        "src": "n-6x10mm10",
+        "alt": ""
+      }
+    ],
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -3004,21 +2039,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "these fries are bussin on god fr fr, Howling outside your door, all they do is turn, Chasers, buy and forget, capture this"
+    ],
+    "theme": "n",
+    "title": "6*10mm #10",
+    "type": "Card"
   },
   {
-    "id": "N14411",
-    "type": "Card",
-    "title": "6*10mm #11",
-    "tagline": "6 maps made in an hour",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2023-05-26",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "The Theme is Roots, Compo-cross, the claaaw, Wraith Chafe, The Small Boss aka Fists of Mid, Chocolope"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -3026,6 +2056,11 @@
         "label": "Browse maps on packs"
       }
     ],
+    "date": "2023-05-26",
+    "deck": "N",
+    "icon": "n",
+    "id": "N14411",
+    "tagline": "6 maps made in an hour",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -3034,50 +2069,16 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
-  },
-  {
-    "id": "NFISSR",
-    "type": "Card",
-    "title": "Fissure",
-    "tagline": "Lost mappack for N v1.4 from 2007 containing my oldest maps",
-    "deck": "N",
-    "accessLevel": 1,
-    "date": "2007-08-17",
-    "theme": "n",
-    "icon": "n",
+    ],
     "text": [
-      "I rediscovered an old file burned onto a CD-R containing some of my oldest N maps dating back to 2007. Recently I filled in the gaps with more old maps and compiled the final version of this forgotten project. 175 maps."
+      "The Theme is Roots, Compo-cross, the claaaw, Wraith Chafe, The Small Boss aka Fists of Mid, Chocolope"
     ],
-    "buttons": [
-      {
-        "type": "external",
-        "href": "https://packs.droni.es/3c577347015a57ee1c",
-        "label": "Browse maps on packs"
-      }
-    ],
-    "tags": [
-      "Fissure",
-      "Throwback",
-      "Lost Maps",
-      "Archived",
-      "CD",
-      "N",
-      "Metanet",
-      "Mapping",
-      "N Mapping"
-    ]
+    "theme": "n",
+    "title": "6*10mm #11",
+    "type": "Card"
   },
   {
-    "id": "NMBMAW",
-    "type": "Card",
-    "title": "Awesomely",
-    "tagline": "NUMA Bitesized Map",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2007-09-05",
-    "theme": "n",
-    "icon": "n",
     "buttons": [
       {
         "type": "external",
@@ -3090,28 +2091,18 @@
         "label": "Copy map data to clipboard"
       }
     ],
-    "tags": ["Awesomely", "Bitesized Map", "Fissure", "N Mapping", "N"]
+    "date": "2007-09-05",
+    "deck": "N",
+    "icon": "n",
+    "id": "NMBMAW",
+    "tagline": "NUMA Bitesized Map",
+    "tags": ["Awesomely", "Bitesized Map", "Fissure", "N Mapping", "N"],
+    "theme": "n",
+    "title": "Awesomely",
+    "type": "Card"
   },
   {
-    "id": "NMBMDX",
-    "type": "Card",
-    "title": "Drone X-Ray",
-    "tagline": "NUMA Bitesized Map",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2007-04-07",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "Nominated for the 2007 Dronie Awards for Most Innovative Use of Objects or Tiles. I was experimenting with the order in which objects are layered, and found that sandwiching a thwump between a zap or chaingun drone and a laser drone gave an interesting effect."
-    ],
-    "media": [
-      {
-        "type": "image",
-        "src": "n-drone-x-ray.png",
-        "alt": "The X-Ray in action"
-      }
-    ],
     "buttons": [
       {
         "type": "external",
@@ -3124,6 +2115,18 @@
         "label": "Copy map data to clipboard"
       }
     ],
+    "date": "2007-04-07",
+    "deck": "N",
+    "icon": "n",
+    "id": "NMBMDX",
+    "media": [
+      {
+        "type": "image",
+        "src": "n-drone-x-ray.png",
+        "alt": "The X-Ray in action"
+      }
+    ],
+    "tagline": "NUMA Bitesized Map",
     "tags": [
       "Drone X-Ray",
       "Bitesized Map",
@@ -3133,22 +2136,16 @@
       "Awards",
       "N Mapping",
       "N"
-    ]
+    ],
+    "text": [
+      "Nominated for the 2007 Dronie Awards for Most Innovative Use of Objects or Tiles. I was experimenting with the order in which objects are layered, and found that sandwiching a thwump between a zap or chaingun drone and a laser drone gave an interesting effect."
+    ],
+    "theme": "n",
+    "title": "Drone X-Ray",
+    "type": "Card"
   },
   {
-    "id": "NMFMMM",
-    "type": "Card",
-    "title": "###d###",
-    "tagline": "NUMA Featured Map",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2007-09-01",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "\"This map was a major influence on me back in the day. It's pretentious as fuck and not really very well put together, probably (it's been aaaaaaaaaaaaaages since I've played it; this review is only happening because flag sucks large fat penis), but fuck if I didn't love that back then. In fact, this map was the direct inspiration for a specific map of mine, made for a Halloween comp a couple years back. See if you can find it!",
-      "\"Also, ghosts or something. Peace.\" — gloomp"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -3161,6 +2158,11 @@
         "label": "Copy map data to clipboard"
       }
     ],
+    "date": "2007-09-01",
+    "deck": "N",
+    "icon": "n",
+    "id": "NMFMMM",
+    "tagline": "NUMA Featured Map",
     "tags": [
       "###d###",
       "Featured Map",
@@ -3172,22 +2174,17 @@
       "Glitch",
       "N Mapping",
       "N"
-    ]
+    ],
+    "text": [
+      "\"This map was a major influence on me back in the day. It's pretentious as fuck and not really very well put together, probably (it's been aaaaaaaaaaaaaages since I've played it; this review is only happening because flag sucks large fat penis), but fuck if I didn't love that back then. In fact, this map was the direct inspiration for a specific map of mine, made for a Halloween comp a couple years back. See if you can find it!",
+      "\"Also, ghosts or something. Peace.\" — gloomp"
+    ],
+    "theme": "n",
+    "title": "###d###",
+    "type": "Card"
   },
   {
-    "id": "NMFMXO",
-    "type": "Card",
-    "title": "XO",
-    "tagline": "NUMA Featured Map",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2015-07-09",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "\"I love DW40 maps. He sees N in a very different way to me. His heavily object-based mapping allows him to see potential in empty spaces, and create deeply interesting and enjoyable structures in ways nobody else does.",
-      "\"The top section of this map serves as a prime example of this. Creative, challenging, complex, and unique - this map was the first in a long time to make me stop and actually think \"How do I do this?\".\" — _destiny^-"
-    ],
     "buttons": [
       {
         "type": "external",
@@ -3200,23 +2197,22 @@
         "label": "Copy map data to clipboard"
       }
     ],
-    "tags": ["XO", "Featured Map", "Destiny", "N Mapping", "N", "Fauna"]
+    "date": "2015-07-09",
+    "deck": "N",
+    "icon": "n",
+    "id": "NMFMXO",
+    "tagline": "NUMA Featured Map",
+    "tags": ["XO", "Featured Map", "Destiny", "N Mapping", "N", "Fauna"],
+    "text": [
+      "\"I love DW40 maps. He sees N in a very different way to me. His heavily object-based mapping allows him to see potential in empty spaces, and create deeply interesting and enjoyable structures in ways nobody else does.",
+      "\"The top section of this map serves as a prime example of this. Creative, challenging, complex, and unique - this map was the first in a long time to make me stop and actually think \"How do I do this?\".\" — _destiny^-"
+    ],
+    "theme": "n",
+    "title": "XO",
+    "type": "Card"
   },
   {
-    "id": "NNNNNN",
-    "type": "Deck",
-    "title": "N",
-    "tagline": "N Maps by DW40",
-    "deck": "N",
     "accessLevel": 0,
-    "date": "2023-XX-XX",
-    "theme": "n",
-    "icon": "n",
-    "text": [
-      "In N by Metanet Software, you step into the agile shoes of a ninja, gifted with unparalleled speed, dexterity, and a lifespan of 1.5 minutes. Your world is a universe governed by physics, where momentum is your ally and trajectory your guiding star. Amidst your fleeting existence, you are called upon to navigate through rooms teeming with lethal robotic adversaries and an array of hazards, while always seeking the allure of gold.",
-      "The heart of N beats in its vibrant community, where disciples of the game exercise their creativity in crafting and sharing custom maps to NUMA. These user-generated levels add a spectrum of novel challenges, turning this platformer into an ever-evolving digital playground where each new map is a testament to the collective creativity and ingenuity of its players.",
-      "The maps on this website and on NUMA are designed for version 1.4 of the game, released in 2005. You can find a free download of this version below."
-    ],
     "buttons": [
       {
         "type": "download",
@@ -3224,6 +2220,11 @@
         "label": "Download N v1.4 for PC (n_v1pc.zip) 1.26 MB"
       }
     ],
+    "date": "2023-XX-XX",
+    "deck": "N",
+    "icon": "n",
+    "id": "NNNNNN",
+    "tagline": "N Maps by DW40",
     "tags": [
       "Speedmap",
       "6*10mm",
@@ -3232,17 +2233,35 @@
       "Metanet",
       "Mapping",
       "N Mapping"
-    ]
+    ],
+    "text": [
+      "In N by Metanet Software, you step into the agile shoes of a ninja, gifted with unparalleled speed, dexterity, and a lifespan of 1.5 minutes. Your world is a universe governed by physics, where momentum is your ally and trajectory your guiding star. Amidst your fleeting existence, you are called upon to navigate through rooms teeming with lethal robotic adversaries and an array of hazards, while always seeking the allure of gold.",
+      "The heart of N beats in its vibrant community, where disciples of the game exercise their creativity in crafting and sharing custom maps to NUMA. These user-generated levels add a spectrum of novel challenges, turning this platformer into an ever-evolving digital playground where each new map is a testament to the collective creativity and ingenuity of its players.",
+      "The maps on this website and on NUMA are designed for version 1.4 of the game, released in 2005. You can find a free download of this version below."
+    ],
+    "theme": "n",
+    "title": "N",
+    "type": "Deck"
   },
   {
-    "id": "NROOTT",
-    "type": "Card",
-    "deck": "N",
     "accessLevel": 0,
+    "buttons": [
+      {
+        "type": "download",
+        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar",
+        "label": "Download game pre-packaged with levels [DW40_rootootoot.rar 1.27 MB]"
+      },
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/97dd3e2b23ffd254ea",
+        "label": "Browse maps on packs"
+      }
+    ],
     "date": "2018-06-10",
-    "title": "rootootoot complete",
-    "theme": "n",
+    "deck": "N",
     "icon": "n",
+    "id": "NROOTT",
+    "tagline": "500 maps by DW40 for N v1.4",
     "tags": [
       "rootootoot",
       "N",
@@ -3261,38 +2280,19 @@
       "Gold",
       "Robot"
     ],
-    "tagline": "500 maps by DW40 for N v1.4",
     "text": [
       "In 2018, I set out on the monumental task of compiling every map I've ever crafted. From this extensive collection, I painstakingly curated my top 500 - a showcase of my best work. These maps were then meticulously structured into an episodic format matching the original game reflecting a progression in both difficulty and complexity."
     ],
-    "buttons": [
-      {
-        "type": "download",
-        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40_rootootoot.rar",
-        "label": "Download game pre-packaged with levels [DW40_rootootoot.rar 1.27 MB]"
-      },
-      {
-        "type": "external",
-        "href": "https://packs.droni.es/97dd3e2b23ffd254ea",
-        "label": "Browse maps on packs"
-      }
-    ]
+    "theme": "n",
+    "title": "rootootoot complete",
+    "type": "Card"
   },
   {
-    "id": "NSHGCG",
-    "type": "Card",
-    "title": ":Chicgun:",
-    "deck": "Nonsense",
     "accessLevel": 0,
     "date": "2022-11-23",
-    "theme": "basic-red",
-    "icon": "meme",
-    "tagline": [
-      "Played like two handed rock-paper-scissors, a game invented at Melee invitational Shoot the Gun"
-    ],
-    "text": [
-      "When deciding which movie to watch in the big lounge at STG2, everyone put their suggestions on Discord to a vote with heart reacts. Jude started reacting with gun emojis to mark go-to-bed worthy suggestions. From elsewhere in the building this activity was noticed by a watchful Zeppo, fingers ready to introduce the chicken react, an inscrutable omen, to the mix..."
-    ],
+    "deck": "Nonsense",
+    "icon": "image",
+    "id": "NSHGCG",
     "media": [
       {
         "type": "image",
@@ -3300,27 +2300,41 @@
         "alt": "heartgunchicken"
       }
     ],
+    "tagline": [
+      "Played like two handed rock-paper-scissors, a game invented at Melee invitational Shoot the Gun"
+    ],
     "tags": [
       "Smash",
       "Meme",
       "Discord",
       "Emoji",
       "Shoot the Gun",
-      "STG2",
+      "STG3",
       "Nonsense",
       "Gif",
       "Animated"
-    ]
+    ],
+    "text": [
+      "When deciding which movie to watch in the big lounge at STG3, everyone put their suggestions on Discord to a vote with heart reacts. Jude started reacting with gun emojis to mark go-to-bed worthy suggestions. From elsewhere in the building this activity was noticed by a watchful Zeppo, fingers ready to introduce the chicken react, an inscrutable omen, to the mix..."
+    ],
+    "theme": "basic-red",
+    "title": ":Chicgun:",
+    "type": "Card"
   },
   {
-    "id": "PAWRAT",
-    "type": "Card",
-    "deck": "Physical Art",
     "accessLevel": 0,
-    "date": "2023-01-18",
-    "title": "Wrath",
-    "theme": "fireblu",
+    "date": "2022-12-09",
+    "deck": "Physical Art",
     "icon": "art",
+    "id": "PAWRAT",
+    "media": [
+      {
+        "type": "image",
+        "src": "art-wrath.jpg",
+        "alt": "Wrath"
+      }
+    ],
+    "tagline": "Acrylic on Canvas",
     "tags": [
       "Art",
       "Physical Art",
@@ -3333,45 +2347,83 @@
       "Water",
       "Dark"
     ],
-    "tagline": "Acrylic on Canvas",
-    "text": ["Acrylic on Canvas"],
-    "buttons": [
-      {
-        "type": "download",
-        "href": "",
-        "label": "Download "
-      }
-    ]
+    "theme": "fireblu",
+    "title": "Wrath",
+    "type": "Card"
   },
   {
-    "id": "PEBMOT",
-    "type": "Deck",
-    "deck": "Pebblemoths",
+    "accessLevel": 0,
+    "date": "2022-06-08",
+    "deck": "Physical Art",
+    "icon": "art",
+    "id": "PAWISD",
+    "media": [
+      {
+        "type": "image",
+        "src": "art-wisdom.jpg",
+        "alt": "Virtueless Wisdom"
+      }
+    ],
+    "tagline": "Acrylic on Canvas",
+    "tags": ["Wisdom", "Art", "Physical Art", "Acrylic Paint", "Canvas"],
+    "theme": "coral",
+    "title": "Virtueless Wisdom",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-06-08",
+    "deck": "Physical Art",
+    "icon": "art",
+    "id": "PAVIRT",
+    "media": [
+      {
+        "type": "image",
+        "src": "art-virtue.jpg",
+        "alt": "Wisdomless Virtue"
+      }
+    ],
+    "tagline": "Acrylic and Oil Pastel on Canvas",
+    "tags": ["Virtue", "Art", "Physical Art", "Acrylic Paint", "Canvas"],
+    "theme": "cherry",
+    "title": "Wisdomless Virtue",
+    "type": "Card"
+  },
+  {
     "accessLevel": 0,
     "date": "2022-XX-XX",
-    "title": "Pebblemoths",
-    "tagline": "Creatures with mystical powers of the Zodiac",
-    "theme": "pebblemoth",
+    "deck": "Pebblemoths",
     "icon": "pebblemoth-egg",
+    "id": "PEBMOT",
+    "tagline": "Creatures with mystical powers of the Zodiac",
+    "tags": ["Pebblemoth", "Preview"],
     "text": ["Details coming soon."],
-    "tags": ["Pebblemoth", "Preview"]
+    "theme": "pebblemoth",
+    "title": "Pebblemoths",
+    "type": "Deck"
   },
   {
-    "id": "PHMACH",
-    "type": "Card",
-    "title": "Shoot the Gun 3",
-    "tagline": "",
-    "deck": "Melee",
     "accessLevel": 0,
-    "date": "2022-11-05",
-    "theme": "sky",
+    "date": "2022-11-08",
+    "deck": "Melee",
     "icon": "smash",
-    "text": ["! TO ADD !"],
+    "id": "PHMACH",
     "media": [
-      { "type": "image", "src": "photo-machermore-castle.jpg", "alt": "" }
+      {
+        "type": "youtube",
+        "src": "UDXwATvmxTw ",
+        "alt": ""
+      },
+      {
+        "type": "image",
+        "src": "photo-machermore-castle.jpg",
+        "alt": "Took this photo standing outside the venue talking to Zeppo and Karhu."
+      }
     ],
+    "tagline": "Invitational at Machermore Castle, Scotland",
     "tags": [
       "Shoot the Gun",
+      "STG3",
       "Machermore Castle",
       "Scotland",
       "Smash",
@@ -3381,17 +2433,21 @@
       "Photograph",
       "Sky",
       "Landscape"
-    ]
+    ],
+    "text": [
+      "17th place out of 24 in Singles. 7th place out of 11 in Doubles with Ac_Anon. The way I threw is typical Banjo. Big ups Mars the red Falco."
+    ],
+    "theme": "sky",
+    "title": "Shoot the Gun 3",
+    "type": "Card"
   },
   {
-    "id": "PMC034",
-    "type": "Card",
-    "deck": "Pebblemoths",
     "accessLevel": 0,
     "date": "2022-09-06",
-    "title": "Pebblemoth #034",
-    "theme": "salt",
+    "deck": "Pebblemoths",
     "icon": "pebblemoth-egg",
+    "id": "PMC034",
+    "tagline": "Salt in Gemini",
     "tags": [
       "Pebblemoth",
       "AI Assisted",
@@ -3402,193 +2458,24 @@
       "Bismuth",
       "Throne"
     ],
-    "tagline": "Salt in Gemini"
+    "theme": "salt",
+    "title": "Pebblemoth #034",
+    "type": "Card"
   },
   {
-    "id": "PMC112",
-    "type": "Card",
-    "title": "Pebblemoth #112",
-    "tagline": "Pigrubus apicula ▲-♄-♓︎-⚥",
-    "deck": "Pebblemoths",
-    "accessLevel": 1,
-    "date": "2022-10-24",
-    "theme": "crimson",
-    "icon": "pebblemoth-egg",
-    "text": [
-      "Pebblemoth #112: Pigrubus apicula",
-      "▲: Uncommon / ♄-♓︎: Saturn in  Pisces / ⚥: Monoecious"
-    ],
-    "tags": [
-      "Crimson",
-      "Indolence",
-      "Bee",
-      "Saturn",
-      "Pisces",
-      "Monoecy",
-      "Uncommon",
-      "Pebblemoth",
-      "Pebblemoth Card"
-    ]
-  },
-  {
-    "id": "PMC111",
-    "type": "Card",
-    "title": "Pebblemoth #111",
-    "tagline": "Umbrofusces coercipressus ▲-♄-♐︎-⚤",
-    "deck": "Pebblemoths",
-    "accessLevel": 1,
-    "date": "2022-10-24",
-    "theme": "crimson",
-    "icon": "pebblemoth-egg",
-    "text": ["! BWC TO ADD !"],
-    "tags": [
-      "Dark Brown",
-      "Oppression",
-      "Cypress",
-      "Saturn",
-      "Sagittarius",
-      "Dioecy",
-      "Uncommon",
-      "Pebblemoth",
-      "Pebblemoth Card"
-    ]
-  },
-  {
-    "id": "PMP001",
-    "type": "Card",
-    "deck": "Pebblemoths",
-    "accessLevel": 3,
-    "date": "2022-05-23",
-    "title": "Shadowchromatic Pebblemoth",
-    "tagline": "Pebblemoth Promo #1",
-    "theme": "pebblemoth",
-    "icon": "pebblemoth-egg",
-    "tags": [
-      "Shadowchromatic",
-      "Pebblemoth",
-      "Promo Card",
-      "Pebblemoth Card",
-      "Card",
-      "Trading Card",
-      "Dark",
-      "Rainbow",
-      "Shadow",
-      "Colourful"
-    ]
-  },
-  {
-    "id": "WEBDEV",
-    "type": "Deck",
-    "title": "Web Development",
-    "deck": "Websites",
     "accessLevel": 0,
     "date": "2023-XX-XX",
-    "theme": "dark",
+    "deck": "Websites",
     "icon": "website",
+    "id": "WEBDEV",
     "tagline": ["I started making websites when I was 12"],
-    "tags": ["Web Dev", "Website", "Professional", "HTML", "CSS", "JavaScript"]
-  },
-  {
-    "id": "WEBDIS",
-    "type": "Card",
-    "deck": "Websites",
-    "accessLevel": 1,
-    "date": "2023-01-10",
-    "title": "Discontent",
-    "tagline": "A discarded Discord clone",
+    "tags": ["Web Dev", "Website", "Professional", "HTML", "CSS", "JavaScript"],
     "theme": "dark",
-    "icon": "website",
-    "text": [
-      "I designed a logo for and worked on creating a Discord knock-off. I had user account creation and email verification working using Zustand for state management, and made the front-end for the chatrooms with Chakra UI."
-    ],
-    "media": [
-      {
-        "type": "image",
-        "src": "discontent-logo-banner.png",
-        "alt": "Discontent Logo Banner"
-      },
-      {
-        "type": "image",
-        "src": "discontent-screenshot.png",
-        "alt": "Discontent Screenshot"
-      }
-    ],
-    "tags": [
-      "Discord",
-      "Discontent",
-      "Web Dev",
-      "Digital Art",
-      "UI",
-      "Front End",
-      "Back End",
-      "React",
-      "Website"
-    ]
+    "title": "Web Development",
+    "type": "Deck"
   },
   {
-    "id": "WEBOUT",
-    "type": "Card",
-    "title": "Outback Adventures",
-    "tagline": "Discover the beauty of Australia",
-    "deck": "Websites",
-    "accessLevel": 1,
-    "date": "2023-02-04",
-    "theme": "oa",
-    "icon": "website",
-    "text": [
-      "A website I created just to brush up on my HTML and CSS but more importantly to learn more about editing and utilising SVGs. Uses a visually engaging parallax scrolling effect."
-    ],
-    "media": [
-      {
-        "type": "image",
-        "src": "website-outback-adventures.jpg",
-        "alt": "Outback Adventures Screenshot"
-      }
-    ],
-    "buttons": [
-      {
-        "type": "internal",
-        "href": "/portfolio/oa/",
-        "label": "Visit Outback Adventures"
-      }
-    ],
-    "tags": [
-      "Website",
-      "Professional",
-      "Australia",
-      "Adventure",
-      "Sunset",
-      "Web Development"
-    ]
-  },
-  {
-    "id": "WEBPOR",
-    "type": "Card",
-    "title": "Developer Portfolio",
-    "deck": "Websites",
-    "accessLevel": 1,
-    "date": "2023-03-01",
-    "theme": "white",
-    "icon": "website",
-    "tagline": ["My CV points to this developer portfolio website"],
-    "media": [
-      {
-        "type": "image",
-        "src": "web-portfolio-dark.png",
-        "alt": "Dark theme as seen on mobile"
-      }
-    ],
-    "tags": ["Professional", "Portfolio", "Web Dev", "Website", "Work", "Job"]
-  },
-  {
-    "id": "WEBB22",
-    "type": "Card",
-    "title": "BanjoDave.com 2021-2022",
-    "deck": "Websites",
     "accessLevel": 0,
-    "date": "2022-11-01",
-    "theme": "banjo-dark",
-    "icon": "website",
     "buttons": [
       {
         "type": "internal",
@@ -3596,20 +2483,17 @@
         "label": "Visit archived website"
       }
     ],
-    "tags": ["BanjoDave", "Website", "Portfolio", "HTML", "CSS", "Web Dev"]
+    "date": "2022-11-01",
+    "deck": "Websites",
+    "icon": "website",
+    "id": "WEBB22",
+    "tags": ["BanjoDave", "Website", "Portfolio", "HTML", "CSS", "Web Dev"],
+    "theme": "banjo-dark",
+    "title": "BanjoDave.com 2021-2022",
+    "type": "Card"
   },
   {
-    "id": "WEBBUC",
-    "type": "Card",
-    "title": "BanjoDave.com Under Construction 2021",
-    "deck": "Websites",
     "accessLevel": 0,
-    "date": "2021-02-22",
-    "theme": "arcade",
-    "icon": "website",
-    "text": [
-      "Before I had content on this domain, the front page looked like this."
-    ],
     "buttons": [
       {
         "type": "internal",
@@ -3617,6 +2501,10 @@
         "label": "Visit archived website"
       }
     ],
+    "date": "2021-02-22",
+    "deck": "Websites",
+    "icon": "website",
+    "id": "WEBBUC",
     "tags": [
       "BanjoDave",
       "Website",
@@ -3625,514 +2513,166 @@
       "HTML",
       "CSS",
       "Web Dev"
-    ]
+    ],
+    "text": [
+      "Before I had content on this domain, the front page looked like this."
+    ],
+    "theme": "arcade",
+    "title": "BanjoDave.com Under Construction 2021",
+    "type": "Card"
   },
   {
+    "accessLevel": 0,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
     "id": "WGA001",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 0,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #1",
     "tagline": "Weary Goblin Mudhole Club Alpha #1",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
     "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
+    "title": "WGMC Alpha #1",
+    "type": "Card"
   },
   {
+    "accessLevel": 0,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
     "id": "WGA002",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 0,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #2",
     "tagline": "Weary Goblin Mudhole Club Alpha #2",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
     "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
+    "title": "WGMC Alpha #2",
+    "type": "Card"
   },
   {
+    "accessLevel": 0,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
     "id": "WGA003",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 0,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #3",
     "tagline": "Weary Goblin Mudhole Club Alpha #3",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
     "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
+    "title": "WGMC Alpha #3",
+    "type": "Card"
   },
   {
+    "accessLevel": 0,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
     "id": "WGA004",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 0,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #4",
     "tagline": "Weary Goblin Mudhole Club Alpha #4",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
     "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
+    "title": "WGMC Alpha #4",
+    "type": "Card"
   },
   {
+    "accessLevel": 0,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
     "id": "WGA005",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 0,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #5",
     "tagline": "Weary Goblin Mudhole Club Alpha #5",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
     "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
+    "title": "WGMC Alpha #5",
+    "type": "Card"
   },
   {
-    "id": "WGA006",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 1,
+    "accessLevel": 0,
     "date": "2015-XX-XX",
-    "title": "WGMC Alpha #6",
-    "tagline": "Weary Goblin Mudhole Club Alpha #6",
-    "theme": "wgmc",
+    "deck": "WGMC",
     "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
-  },
-  {
     "id": "WGA007",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 0,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #7",
     "tagline": "Weary Goblin Mudhole Club Alpha #7",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
     "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
+    "title": "WGMC Alpha #7",
+    "type": "Card"
   },
   {
-    "id": "WGA008",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 1,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #8",
-    "tagline": "Weary Goblin Mudhole Club Alpha #8",
-    "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
-  },
-  {
-    "id": "WGA009",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 1,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #9",
-    "tagline": "Weary Goblin Mudhole Club Alpha #9",
-    "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
-  },
-  {
-    "id": "WGA010",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 2,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #10",
-    "tagline": "Weary Goblin Mudhole Club Alpha #10",
-    "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
-  },
-  {
-    "id": "WGA011",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 2,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #11",
-    "tagline": "Weary Goblin Mudhole Club Alpha #11",
-    "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
-  },
-  {
-    "id": "WGA012",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 1,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #12",
-    "tagline": "Weary Goblin Mudhole Club Alpha #12",
-    "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
-  },
-  {
-    "id": "WGA013",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 3,
-    "date": "2015-XX-XX",
-    "title": "WGMC Alpha #13",
-    "tagline": "Weary Goblin Mudhole Club Alpha #13",
-    "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"]
-  },
-  {
-    "id": "WGB001",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 1,
+    "accessLevel": 0,
     "date": "2022-03-27",
-    "title": "WGMC Beta #1",
-    "tagline": "Weary Goblin Mudhole Club Beta #1",
-    "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
-  },
-  {
-    "id": "WGB002",
-    "type": "Card",
     "deck": "WGMC",
-    "accessLevel": 2,
-    "date": "2022-03-27",
-    "title": "WGMC Beta #2",
-    "tagline": "Weary Goblin Mudhole Club Beta #2",
-    "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
-  },
-  {
-    "id": "WGB003",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 3,
-    "date": "2022-03-27",
-    "title": "WGMC Beta #3",
-    "tagline": "Weary Goblin Mudhole Club Beta #3",
-    "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
-  },
-  {
     "id": "WGB004",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 0,
-    "date": "2022-03-27",
-    "title": "WGMC Beta #4",
     "tagline": "Weary Goblin Mudhole Club Beta #4",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"],
     "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
+    "title": "WGMC Beta #4",
+    "type": "Card"
   },
   {
-    "id": "WGB005",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 2,
+    "accessLevel": 0,
     "date": "2022-03-27",
-    "title": "WGMC Beta #5",
-    "tagline": "Weary Goblin Mudhole Club Beta #5",
-    "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
-  },
-  {
-    "id": "WGB006",
-    "type": "Card",
     "deck": "WGMC",
-    "accessLevel": 1,
-    "date": "2022-03-27",
-    "title": "WGMC Beta #6",
-    "tagline": "Weary Goblin Mudhole Club Beta #6",
-    "theme": "wgmc",
     "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
-  },
-  {
     "id": "WGB007",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 0,
-    "date": "2022-03-27",
-    "title": "WGMC Beta #7",
     "tagline": "Weary Goblin Mudhole Club Beta #7",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"],
     "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
+    "title": "WGMC Beta #7",
+    "type": "Card"
   },
   {
+    "accessLevel": 0,
+    "date": "2022-03-27",
+    "deck": "WGMC",
+    "icon": "wgmc",
     "id": "WGB008",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 0,
-    "date": "2022-03-27",
-    "title": "WGMC Beta #8",
     "tagline": "Weary Goblin Mudhole Club Beta #8",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"],
     "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
+    "title": "WGMC Beta #8",
+    "type": "Card"
   },
   {
-    "id": "WGBG01",
-    "type": "Card",
-    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2022-03-27",
-    "title": "WGMC Beta Grub",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGBG01",
     "tagline": "Weary Goblin Mudhole Club Beta Grub",
+    "tags": ["Grub", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"],
     "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": ["Grub", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"]
+    "title": "WGMC Beta Grub",
+    "type": "Card"
   },
   {
-    "id": "WGBG02",
-    "type": "Card",
-    "deck": "WGMC",
-    "accessLevel": 1,
-    "date": "2022-03-27",
-    "title": "WGMC Beta Golden Grub",
-    "tagline": "Weary Goblin Mudhole Club Beta Golden Grub",
-    "theme": "wgmc",
-    "icon": "wgmc",
-    "tags": [
-      "Golden Grub",
-      "Grub",
-      "RPG",
-      "Weary Goblin Mudhole Club",
-      "Preview",
-      "Beta"
-    ]
-  },
-  {
-    "id": "WGMCSH",
-    "type": "Deck",
-    "deck": "WGMC",
     "accessLevel": 0,
     "date": "2022-XX-XX",
-    "title": "Weary Goblin Mudhole Club",
-    "tagline": "Coming Soon",
-    "theme": "wgmc",
+    "deck": "WGMC",
     "icon": "wgmc",
+    "id": "WGMCSH",
+    "tagline": "Coming Soon",
+    "tags": ["Weary Goblin Mudhole Club", "Preview", "Shield", "Logo", "RPG"],
     "text": ["Details coming soon."],
-    "tags": ["Weary Goblin Mudhole Club", "Preview", "Shield", "Logo", "RPG"]
+    "theme": "wgmc",
+    "title": "Weary Goblin Mudhole Club",
+    "type": "Deck"
   },
   {
-    "id": "GPFFPA",
-    "type": "Card",
-    "deck": "Gameplay",
-    "accessLevel": 1,
-    "date": "2008-08-30",
-    "title": "The Fancy Pants Adventures Playthrough",
-    "tagline": "My first videos to YouTube",
-    "theme": "basic",
-    "icon": "gameplay",
-    "text": [
-      "My real first YouTube video was a Let's Play of one of the Fancy Pants Adventures games where out of nerves and not knowing what to say I'm pretty sure I gave out my full name and location, so it was deleted. Shout out to HyperCam, and the Banjo-Kazooie OST."
-    ],
-    "media": [
-      {
-        "type": "youtube",
-        "src": "KzzzIES0jJw",
-        "alt": "Flash Game - The Fancy Pants Adventures: World 2"
-      },
-      {
-        "type": "youtube",
-        "src": "IWQAGXGBxlk",
-        "alt": "Flash Game - The Fancy Pants Adventures: World 1"
-      }
-    ],
-    "tags": [
-      "The Fancy Pants Adventures",
-      "Flash Game",
-      "Gameplay",
-      "Longplay",
-      "Archived",
-      "Stickman",
-      "Playthrough",
-      "YouTube"
-    ]
-  },
-  {
-    "id": "MTSAAC",
-    "type": "Card",
-    "deck": "Music",
-    "accessLevel": 2,
-    "date": "2022-08-05",
-    "title": "OceanLab - Satellite (Acoustic Cover)",
-    "theme": "cerulean",
-    "icon": "music",
-    "text": ["!BWC TO ADD!"],
-    "tags": [
-      "Acoustic Cover",
-      "Satellite",
-      "Guitar",
-      "Cringe",
-      "Trance",
-      "Above & Beyond",
-      "OceanLab",
-      "Music",
-      "Music Track",
-      "Recording",
-      "Ultraclub4k"
-    ]
-  },
-  {
-    "id": "LVWDTT",
-    "type": "Card",
-    "deck": "Lore",
-    "accessLevel": 2,
-    "date": "1998-12-12",
-    "title": "Why did the tortoise cross the road?",
-    "tagline": "My first time telling a joke on stage at some holiday place",
-    "theme": "coral",
-    "icon": "video",
-    "text": ["!BWC TO ADD!"],
-    "tags": [
-      "1990s",
-      "Comedy",
-      "Lore",
-      "Archived",
-      "Home Video",
-      "Joke",
-      "Funny"
-    ]
-  },
-  {
-    "id": "MTLZAC",
-    "type": "Card",
-    "deck": "Music",
-    "accessLevel": 2,
-    "date": "2019-10-15",
-    "title": "Lil Zubin - do u rly think i need u (Acoustic Cover)",
-    "theme": "basic",
-    "icon": "music",
-    "text": ["!BWC TO ADD!"],
-    "tags": [
-      "Acoustic Cover",
-      "Zubin",
-      "Cringe",
-      "Fantasy Camp",
-      "do u rly think i need u",
-      "Guitar",
-      "Emo Trap",
-      "Music",
-      "Music Track",
-      "Recording",
-      "Video"
-    ]
-  },
-  {
-    "id": "LVSMNM",
-    "type": "Card",
-    "deck": "Lore",
-    "accessLevel": 1,
-    "date": "2006-XX-XX",
-    "title": "Norbert the Magnificent",
-    "tagline": "A claymation",
-    "theme": "basic",
-    "icon": "video",
-    "text": ["!BWC TO ADD!"],
-    "tags": [
-      "Stop Motion",
-      "Claymation",
-      "Norbert the Magnificent",
-      "Magic",
-      "Funny",
-      "Archived",
-      "Lore",
-      "Video"
-    ]
-  },
-  {
-    "id": "LVGYGC",
-    "type": "Card",
-    "deck": "Lore",
-    "accessLevel": 1,
-    "date": "2018-08-11",
-    "title": "Gran Yeets GameCube",
-    "tagline": "yeet",
-    "theme": "basic",
-    "icon": "video",
-    "text": ["!BWC TO ADD!"],
-    "tags": [
-      "Nintendo GameCube",
-      "Gran",
-      "Family",
-      "Yeet",
-      "Meme",
-      "Lore",
-      "Destruction",
-      "Snapchat",
-      "Video"
-    ]
-  },
-  {
-    "id": "LVGSAF",
-    "type": "Card",
-    "deck": "Lore",
-    "accessLevel": 1,
-    "date": "2018-06-16",
-    "title": "Glasgow School of Art Fire",
-    "tagline": "It's Lit!",
-    "theme": "magma",
-    "icon": "video",
-    "text": ["!BWC TO ADD!"],
-    "tags": [
-      "Glasgow",
-      "Sheezy",
-      "Linney",
-      "Fire",
-      "Total Recall",
-      "Meme",
-      "Lore",
-      "Destruction",
-      "Snapchat",
-      "Video"
-    ]
-  },
-  {
-    "id": "MTBTAC",
-    "type": "Card",
-    "deck": "Music",
-    "accessLevel": 2,
-    "date": "2018-04-10",
-    "title": "BROCKHAMPTON - WASTE (Acoustic Cover Clip)",
-    "theme": "basic",
-    "icon": "music",
-    "text": ["!BWC TO ADD!"],
-    "tags": [
-      "Acoustic Cover",
-      "Cringe",
-      "BROCKHAMPTON",
-      "WASTE",
-      "SATURATION",
-      "Bearface",
-      "Guitar",
-      "Music",
-      "Music Clip",
-      "Recording",
-      "Snapchat",
-      "Video"
-    ]
-  },
-  {
-    "id": "STAWA4",
-    "type": "Card",
-    "deck": "Melee",
     "accessLevel": 0,
     "date": "2018-07-01",
-    "title": "Awakening IV",
-    "tagline": "Tournament in Zorneding, Germany",
-    "theme": "melee",
+    "deck": "Melee",
     "icon": "smash",
-    "text": ["!BWC TO ADD!"],
+    "id": "STAWA4",
+    "media": [
+      {
+        "type": "image",
+        "src": "melee-awakening-4.jpg",
+        "alt": "I found my way back to the hotel by using this dome as a reference point. It was a rare night."
+      },
+      {
+        "type": "video",
+        "src": "melee-awakening-4",
+        "alt": ""
+      }
+    ],
+    "tagline": "Tournament in Zorneding, Germany",
     "tags": [
       "Germany",
       "Melee",
@@ -4145,41 +2685,19 @@
       "Photo",
       "Snapchat",
       "Video"
-    ]
+    ],
+    "text": ["97th place out of 206."],
+    "theme": "melee",
+    "title": "Awakening IV",
+    "type": "Card"
   },
   {
-    "id": "LVSFCH",
-    "type": "Card",
-    "deck": "Lore",
-    "accessLevel": 2,
-    "date": "2019-06-15",
-    "title": "Eating weird things 2019",
-    "tagline": "Cookies with garlic and herb sauce, and raw Huel",
-    "theme": "basic",
-    "icon": "meme",
-    "text": ["!BWC TO ADD!"],
-    "tags": [
-      "Dominos",
-      "Huel",
-      "Cringe",
-      "Cookie",
-      "Eating",
-      "Meme",
-      "Nonsense",
-      "Snapchat"
-    ]
-  },
-  {
-    "id": "GPCA17",
-    "type": "Deck",
-    "deck": "Cringe Archive",
     "accessLevel": 0,
     "date": "2017-12-20",
-    "title": "Cringe Archive 2017",
-    "tagline": "I tried streaming and content creation",
-    "theme": "arcade",
+    "deck": "Cringe Archive",
     "icon": "gameplay",
-    "text": ["!BWC TO ADD!"],
+    "id": "GPCA17",
+    "tagline": "I tried streaming and content creation",
     "tags": [
       "Cringe",
       "BanjoDave",
@@ -4202,19 +2720,28 @@
       "Livestream",
       "Commentary",
       "Webcam"
-    ]
+    ],
+    "text": [
+      "In 2017 I tried my hand at streaming regularly on Twitch. I also edited these streams for upload to YouTube. I didn't really have the right skillset for streaming at the time, and looking back, it's not good content. F to C- grade stuff. From these videos you can expect a lot of mumbling, muted reactions, long silences, and honestly just sh*te patter as I beat some old games, and try to get some highscores. Thanks to everyone who supported me on Twitch and Discord at this time, when I had moved into my first non-student flat, trying to land a steady job in a new city."
+    ],
+    "theme": "arcade",
+    "title": "Cringe Archive 2017",
+    "type": "Deck"
   },
   {
-    "id": "LVRCT3",
-    "type": "Card",
-    "deck": "Gameplay",
     "accessLevel": 0,
     "date": "2008-10-20",
-    "title": "RCT3 Carnage",
-    "tagline": "Not playing as intended",
-    "theme": "sky",
+    "deck": "Gameplay",
     "icon": "gameplay",
-    "text": ["!BWC TO ADD!"],
+    "id": "LVRCT3",
+    "media": [
+      {
+        "type": "youtube",
+        "src": "gIuAWGhXdKM",
+        "alt": "RCT3 - Carnage"
+      }
+    ],
+    "tagline": "Not playing as intended",
     "tags": [
       "Archived",
       "RCT3",
@@ -4223,6 +2750,1982 @@
       "Funny",
       "Lore",
       "Evil"
-    ]
+    ],
+    "text": ["I had a lot more fun doing this than playing the campaign."],
+    "theme": "basic-red",
+    "title": "RCT3 Carnage",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
+      }
+    ],
+    "date": "2022-12-19",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLB000",
+    "tagline": "Banjo League Award",
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for having the only submission on a leaderboard."],
+    "theme": "league",
+    "title": "Prime Sticker",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
+      }
+    ],
+    "date": "2022-11-28",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLB004",
+    "tagline": "Banjo League Award",
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for achieving 80% of the site record."],
+    "theme": "league",
+    "title": "Gold Badge",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-19",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLC002",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Completez",
+      "Beatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Checkbox",
+      "Award"
+    ],
+    "text": ["Awarded for 100% completion."],
+    "theme": "league",
+    "title": "Completez Token",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD000",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Digital Art",
+      "Sprite",
+      "Halo",
+      "Award"
+    ],
+    "text": ["Awarded for a first-try completion."],
+    "theme": "league",
+    "title": "No Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD019",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "One Hundred Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD020",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Two Hundred Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD021",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Three Hundred Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD022",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Four Hundred Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD023",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Five Hundred Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD024",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Six Hundred Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD025",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Seven Hundred Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD026",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Eight Hundred Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD027",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Nine Hundred Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLT001",
+    "tagline": ["Awarded to the 3rd best player of a specific game"],
+    "tags": [
+      "Trophy",
+      "Award",
+      "Bronze",
+      "League",
+      "Competition",
+      "BanjoLeague"
+    ],
+    "theme": "league",
+    "title": "Bronze Trophy",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-12-14",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLW001",
+    "tagline": ["Surrounds the avatar of the ranking 3rd overall player"],
+    "tags": [
+      "Wreath",
+      "Award",
+      "League",
+      "Bronze",
+      "Competition",
+      "BanjoLeague"
+    ],
+    "theme": "league",
+    "title": "Bronze Wreath",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2023-07-13",
+    "deck": "BWC",
+    "icon": "bwc",
+    "id": "BWCAL1",
+    "tagline": "BWC Public Access",
+    "tags": ["BWC", "Restricted Access", "Level 1"],
+    "text": [
+      "Free-tier BWC preview. Bonus BFD content and more available for free through Patreon."
+    ],
+    "theme": "bwc",
+    "title": "BWC L1 Access Token",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2021-03-20",
+    "deck": "Bop Drumps",
+    "icon": "cards",
+    "id": "CBDB01",
+    "tagline": "Bop Drumps beta card #1",
+    "tags": [
+      "Ball",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "POP",
+      "surprised"
+    ],
+    "text": ["BALL [POP]", "3 silly", "2 strong", "3 mass", "4 mystery"],
+    "theme": "white",
+    "title": "BALL",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2021-03-20",
+    "deck": "Bop Drumps",
+    "icon": "cards",
+    "id": "CBDB03",
+    "tagline": "Bop Drumps beta card #3",
+    "tags": [
+      "EVIL JELLY",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "fly",
+      "jelly bean",
+      "evil",
+      "angry"
+    ],
+    "text": ["EVIL JELLY [FLY]", "5 silly", "1 strong", "1 mass", "3 mystery"],
+    "theme": "white",
+    "title": "EVIL JELLY",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2021-08-10",
+    "deck": "Bop Drumps",
+    "icon": "cards",
+    "id": "CBDB07",
+    "tagline": "Bop Drumps beta card #7",
+    "tags": [
+      "Gnome Boy",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "POP"
+    ],
+    "text": ["GNOME BOY [POP]", "3 silly", "4 strong", "3 mass", "5 mystery"],
+    "theme": "white",
+    "title": "GNOME BOY",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2005-03-20",
+    "deck": "Archived",
+    "icon": "art",
+    "id": "DAASPA",
+    "media": [
+      {
+        "type": "image",
+        "src": "scan-space-warz.jpg",
+        "alt": "SPACE WARZ Scan"
+      }
+    ],
+    "tagline": "2005 stickman gore series",
+    "tags": [
+      "Stickman Gore",
+      "Physical Art",
+      "Art",
+      "Drawing",
+      "Stickman",
+      "Scifi",
+      "Space",
+      "Cartoon",
+      "Sketch",
+      "Scan",
+      "Alien",
+      "Archived",
+      "2000s"
+    ],
+    "theme": "white",
+    "title": "SPACE WARZ",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-11-23",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
+    "id": "DACCIT",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Citrus", "Orange", "Nonsense", "Capsule", "BFD", "Digital Art"],
+    "text": ["Juicy."],
+    "theme": "citrus",
+    "title": "Citrus Capsule",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-03-30",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
+    "id": "DACCER",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Cerulean", "Blue", "Gold", "Capsule", "BFD", "Digital Art"],
+    "text": ["Can read any book in one hour."],
+    "theme": "cerulean",
+    "title": "Cerulean Capsule",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2023-01-15",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
+    "id": "DACCHO",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Chrome", "Metallic", "Capsule", "BFD", "Digital Art"],
+    "text": ["Can't be knocked out."],
+    "theme": "chrome",
+    "title": "Chrome Capsule",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-04-02",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
+    "id": "DACCOL",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Rainbow", "Capsule", "BFD", "Digital Art"],
+    "text": ["Any visual art you make comes out exactly how you imagined."],
+    "theme": "tuttifrutti",
+    "title": "Colourful Capsule",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-11-23",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
+    "id": "DACCRY",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Crystal", "Gem", "Diamond", "Capsule", "BFD", "Digital Art"],
+    "text": ["Sell it."],
+    "theme": "crystal",
+    "title": "Crystal Capsule",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-03-30",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
+    "id": "DACCYA",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Cyan", "Blue", "BFD", "Digital Art"],
+    "text": ["1 Petabyte USB flash drive."],
+    "theme": "cyan",
+    "title": "Cyan Capsule",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2023-01-07",
+    "deck": "Digital Art",
+    "icon": "art-digital",
+    "id": "DAPLMA",
+    "media": [
+      {
+        "type": "image",
+        "src": "art-planets.gif",
+        "alt": "Gif of glyphs"
+      }
+    ],
+    "tags": ["Astrology", "Alchemy", "Planets", "Magick", "Pebblemoth"],
+    "text": [
+      "I made my own versions of various astrological and alchemical symbols for the Pebblemoth project. The card image is the result of rotating and overlaying all of these images. I have also included a gif which cycles through the symbols."
+    ],
+    "theme": "pebblemoth",
+    "title": "Planets Mandala",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2020-12-23",
+    "deck": "Digital Art",
+    "icon": "art-digital",
+    "id": "DALOAD",
+    "media": [
+      {
+        "type": "image",
+        "src": "orb-loading.gif",
+        "alt": "Loading Orb"
+      }
+    ],
+    "tags": ["Orb", "Animated", "Gif", "Wallpaper", "Digital Art"],
+    "theme": "banjo",
+    "title": "Loading Orb",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-02-12",
+    "deck": "Digital Art",
+    "icon": "art-digital",
+    "id": "DAENMA",
+    "media": [
+      {
+        "type": "image",
+        "src": "art-energy-marble.png",
+        "alt": "Energy Marble"
+      }
+    ],
+    "tagline": "This glass orb is effulgent with a strange energy",
+    "tags": ["Rainbow", "Marble", "Orb", "Digital Art"],
+    "theme": "dark",
+    "title": "Energy Marble",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "buttons": [
+      {
+        "type": "download",
+        "href": "/img/card-content/dl/HSS5a.zip",
+        "label": "Download HSS5a.zip 16.1 MB"
+      }
+    ],
+    "date": "2020-10-14",
+    "deck": "BanjoDOOM",
+    "icon": "doom",
+    "id": "DMHFBC",
+    "tagline": "Hellforge Speedmapping Session 5 MAP22",
+    "tags": [
+      "Speedmap",
+      "Abstract",
+      "Blue",
+      "DOOM",
+      "90 Degrees",
+      "GZDoom",
+      "Single Map",
+      "Community Project",
+      "Hellforge",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s"
+    ],
+    "text": [
+      "Theme: All 90 degree angles.",
+      "Made while enjoying some cans of Hobgoblin ale. A strange map with very punishing pain sectors and a bizzare huge foggy ending."
+    ],
+    "theme": "blue",
+    "title": "Bob Choblin",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "buttons": [
+      {
+        "type": "download",
+        "href": "/img/card-content/dl/HFSMS09b.zip",
+        "label": "Download HFSMS09b.zip 15.7 MB"
+      }
+    ],
+    "date": "2020-09-06",
+    "deck": "BanjoDOOM",
+    "icon": "doom",
+    "id": "DMHFDF",
+    "tagline": "Hellforge Speedmapping Session 9 MAP17",
+    "tags": [
+      "Very Hard",
+      "Fireblu",
+      "Speedmap",
+      "DOOM",
+      "GZDoom",
+      "Single Map",
+      "Community Project",
+      "Hellforge",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Hard"
+    ],
+    "text": [
+      "Theme: Projectile hell (only projectile throwing monsters) and Weapon slot 9 - Barrels.",
+      "I based the theme of this map on the fireblu texture dividing it into two sides, one red and one blue. Starting in the blue side, you will face imps, hell knighs, and cacodemons with your shotgun and chaingun. After passing through the white and fireblu portal room and getting your plasma rifle and rocket launcher, you will enter the red side which is filled with barons, arachnotrons, revenants and cyberdemons."
+    ],
+    "theme": "fireblu",
+    "title": "DireFlu",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "buttons": [
+      {
+        "type": "download",
+        "href": "/img/card-content/dl/HFSMS2a.zip",
+        "label": "Download HFSMS2a.zip 4.05 MB"
+      }
+    ],
+    "date": "2019-12-07",
+    "deck": "BanjoDOOM",
+    "icon": "doom",
+    "id": "DMHFFM",
+    "tagline": "Hellforge Speedmapping Session 2 MAP01",
+    "tags": [
+      "Speedmap",
+      "DOOM",
+      "GZDoom",
+      "Single Map",
+      "Storm",
+      "Community Project",
+      "Hellforge",
+      "DOOM II",
+      "Mapping",
+      "DOOM Mapping",
+      "PC",
+      "Retro",
+      "FPS",
+      "1990s",
+      "Scifi",
+      "Hell"
+    ],
+    "text": [
+      "Theme: Ruins/medieval.",
+      "Technically my first official release for Doom. Made when I was still learning the basics of Doom Builder, I challenged myself to join a speed mapping session. This is a pretty basic map, tight on ammunition."
+    ],
+    "theme": "doom",
+    "title": "fallen malkuth",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://soundcloud.com/anjoave/excerpt-from-cosmic-snake",
+        "label": "Listen on SoundCloud"
+      }
+    ],
+    "date": "2022-02-22",
+    "deck": "Music",
+    "icon": "music",
+    "id": "MTCOSN",
+    "media": [
+      {
+        "type": "audio-ext",
+        "src": "https://s3.eu-north-1.amazonaws.com/banjodave.com/music/unknown_cosmic-snake.mp3",
+        "alt": "Cosmic Snake by Unknown"
+      },
+      {
+        "type": "image",
+        "src": "music-cosmic-snake.png",
+        "alt": "Cosmic Snake full album artwork"
+      }
+    ],
+    "tagline": "Degenrate post-totalist neoantiquitarian prophecy from ~1.4 kAE (Late Stelliferous Era)",
+    "tags": [
+      "Cosmic Snake",
+      "Virgo",
+      "Space",
+      "Music Track",
+      "Music",
+      "Ambient",
+      "Snake",
+      "Mythical",
+      "Scifi",
+      "Epic"
+    ],
+    "text": [
+      "Excerpt from 宇宙蛇 Cosmic Snake, an album by an unknown artist from RS 5444-2265-8-11983871-1317 3, NGC 4258, Canes Venatici II, Virgo Supercluster with a total runtime of 7 years, 4 days, 21 hours. This section marks the end of the second era."
+    ],
+    "theme": "charcoal",
+    "title": "Excerpt from Cosmic Snake",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://packs.droni.es/3c577347015a57ee1c",
+        "label": "Browse maps on packs"
+      }
+    ],
+    "date": "2007-08-17",
+    "deck": "N",
+    "icon": "n",
+    "id": "NFISSR",
+    "tagline": "Lost mappack for N v1.4 from 2007 containing my oldest maps",
+    "tags": [
+      "Fissure",
+      "Throwback",
+      "Lost Maps",
+      "Archived",
+      "CD",
+      "N",
+      "Metanet",
+      "Mapping",
+      "N Mapping"
+    ],
+    "text": [
+      "I rediscovered an old file burned onto a CD-R containing some of my oldest N maps dating back to 2007. Recently I filled in the gaps with more old maps and compiled the final version of this forgotten project. 175 maps."
+    ],
+    "theme": "n",
+    "title": "Fissure",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-10-24",
+    "deck": "Pebblemoths",
+    "icon": "pebblemoth-egg",
+    "id": "PMC112",
+    "tagline": "Pigrubus apicula ▲-♄-♓︎-⚥",
+    "tags": [
+      "Crimson",
+      "Indolence",
+      "Bee",
+      "Saturn",
+      "Pisces",
+      "Monoecy",
+      "Uncommon",
+      "Pebblemoth",
+      "Pebblemoth Card"
+    ],
+    "text": [
+      "Pebblemoth #112: Pigrubus apicula",
+      "▲: Uncommon / ♄-♓︎: Saturn in  Pisces / ⚥: Monoecious"
+    ],
+    "theme": "crimson",
+    "title": "Pebblemoth #112",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-10-24",
+    "deck": "Pebblemoths",
+    "icon": "pebblemoth-egg",
+    "id": "PMC111",
+    "tagline": "Umbrofusces coercipressus ▲-♄-♐︎-⚤",
+    "tags": [
+      "Dark Brown",
+      "Oppression",
+      "Cypress",
+      "Saturn",
+      "Sagittarius",
+      "Dioecy",
+      "Uncommon",
+      "Pebblemoth",
+      "Pebblemoth Card"
+    ],
+    "text": ["! BWC TO ADD !"],
+    "theme": "crimson",
+    "title": "Pebblemoth #111",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2023-01-10",
+    "deck": "Websites",
+    "icon": "website",
+    "id": "WEBDIS",
+    "media": [
+      {
+        "type": "image",
+        "src": "discontent-logo-banner.png",
+        "alt": "Discontent Logo Banner"
+      },
+      {
+        "type": "image",
+        "src": "discontent-screenshot.png",
+        "alt": "Discontent Screenshot"
+      }
+    ],
+    "tagline": "A discarded Discord clone",
+    "tags": [
+      "Discord",
+      "Discontent",
+      "Web Dev",
+      "Digital Art",
+      "UI",
+      "Front End",
+      "Back End",
+      "React",
+      "Website"
+    ],
+    "text": [
+      "I designed a logo for and worked on creating a Discord knock-off. I had user account creation and email verification working using Zustand for state management, and made the front-end for the chatrooms with Chakra UI."
+    ],
+    "theme": "dark",
+    "title": "Discontent",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "buttons": [
+      {
+        "type": "internal",
+        "href": "/portfolio/oa/",
+        "label": "Visit Outback Adventures"
+      }
+    ],
+    "date": "2023-02-04",
+    "deck": "Websites",
+    "icon": "website",
+    "id": "WEBOUT",
+    "media": [
+      {
+        "type": "image",
+        "src": "website-outback-adventures.jpg",
+        "alt": "Outback Adventures Screenshot"
+      }
+    ],
+    "tagline": "Discover the beauty of Australia",
+    "tags": [
+      "Website",
+      "Professional",
+      "Australia",
+      "Adventure",
+      "Sunset",
+      "Web Development"
+    ],
+    "text": [
+      "A website I created just to brush up on my HTML and CSS but more importantly to learn more about editing and utilising SVGs. Uses a visually engaging parallax scrolling effect."
+    ],
+    "theme": "oa",
+    "title": "Outback Adventures",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2023-03-01",
+    "deck": "Websites",
+    "icon": "website",
+    "id": "WEBPOR",
+    "media": [
+      {
+        "type": "image",
+        "src": "web-portfolio-dark.png",
+        "alt": "Dark theme as seen on mobile"
+      }
+    ],
+    "tagline": ["My CV points to this developer portfolio website"],
+    "tags": ["Professional", "Portfolio", "Web Dev", "Website", "Work", "Job"],
+    "theme": "white",
+    "title": "Developer Portfolio",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGA006",
+    "tagline": "Weary Goblin Mudhole Club Alpha #6",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
+    "theme": "wgmc",
+    "title": "WGMC Alpha #6",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGA008",
+    "tagline": "Weary Goblin Mudhole Club Alpha #8",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
+    "theme": "wgmc",
+    "title": "WGMC Alpha #8",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGA009",
+    "tagline": "Weary Goblin Mudhole Club Alpha #9",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
+    "theme": "wgmc",
+    "title": "WGMC Alpha #9",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGA012",
+    "tagline": "Weary Goblin Mudhole Club Alpha #12",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
+    "theme": "wgmc",
+    "title": "WGMC Alpha #12",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-03-27",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGB001",
+    "tagline": "Weary Goblin Mudhole Club Beta #1",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"],
+    "theme": "wgmc",
+    "title": "WGMC Beta #1",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-03-27",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGB006",
+    "tagline": "Weary Goblin Mudhole Club Beta #6",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"],
+    "theme": "wgmc",
+    "title": "WGMC Beta #6",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-03-27",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGBG02",
+    "tagline": "Weary Goblin Mudhole Club Beta Golden Grub",
+    "tags": [
+      "Golden Grub",
+      "Grub",
+      "RPG",
+      "Weary Goblin Mudhole Club",
+      "Preview",
+      "Beta"
+    ],
+    "theme": "wgmc",
+    "title": "WGMC Beta Golden Grub",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2008-08-30",
+    "deck": "Gameplay",
+    "icon": "gameplay",
+    "id": "GPFFPA",
+    "media": [
+      {
+        "type": "youtube",
+        "src": "KzzzIES0jJw",
+        "alt": "Flash Game - The Fancy Pants Adventures: World 2"
+      },
+      {
+        "type": "youtube",
+        "src": "IWQAGXGBxlk",
+        "alt": "Flash Game - The Fancy Pants Adventures: World 1"
+      }
+    ],
+    "tagline": "My first videos to YouTube",
+    "tags": [
+      "The Fancy Pants Adventures",
+      "Flash Game",
+      "Gameplay",
+      "Longplay",
+      "Archived",
+      "Stickman",
+      "Playthrough",
+      "YouTube"
+    ],
+    "text": [
+      "My real first YouTube video was a Let's Play of one of the Fancy Pants Adventures games where out of nerves and not knowing what to say I'm pretty sure I gave out my full name and location, so it was deleted. Shout out to HyperCam, and the Banjo-Kazooie OST."
+    ],
+    "theme": "basic",
+    "title": "The Fancy Pants Adventures Playthrough",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2006-XX-XX",
+    "deck": "Lore",
+    "icon": "video",
+    "id": "LVSMNM",
+    "media": [
+      {
+        "type": "youtube",
+        "src": "YQuNGe1pW2o",
+        "alt": "Norbert the Magnificent"
+      }
+    ],
+    "tagline": "A claymation",
+    "tags": [
+      "Stop Motion",
+      "Claymation",
+      "Norbert the Magnificent",
+      "Magic",
+      "Funny",
+      "Family",
+      "Sister",
+      "Archived",
+      "Lore",
+      "Video"
+    ],
+    "text": [
+      "A really old claymation me and my sister made. I was inspired by Knox's Korner."
+    ],
+    "theme": "basic",
+    "title": "Norbert the Magnificent",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2018-08-11",
+    "deck": "Lore",
+    "icon": "video",
+    "id": "LVGYGC",
+    "media": [
+      {
+        "type": "video",
+        "src": "meme-gran",
+        "alt": "Gran Yeets GameCube"
+      }
+    ],
+    "tagline": "yeet",
+    "tags": [
+      "Nintendo GameCube",
+      "GameCube",
+      "Nintendo",
+      "Gran",
+      "Family",
+      "Yeet",
+      "Meme",
+      "Lore",
+      "Destruction",
+      "Snapchat",
+      "Video"
+    ],
+    "text": [
+      "My GameCube stopped working due to overuse I guess (the device being about 17 years old at this point (jeez)). The lens doesn't read discs reliably, so of course I did the natural thing and asked my Gran to yeet it."
+    ],
+    "theme": "basic",
+    "title": "Gran Yeets GameCube",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "https://open.spotify.com/playlist/1mTdz7GRH4WLEGlWeinZ5l?si=9OegtntKQz6n3Hluw9-FpA&nd=1",
+        "label": "Listen on Spotify"
+      }
+    ],
+    "date": "2022-10-25",
+    "deck": "Music",
+    "icon": "music",
+    "id": "MPBW22",
+    "tagline": "Halloween playlist",
+    "tags": [
+      "Spooky",
+      "Horror",
+      "Skeleton",
+      "Skull",
+      "Metal",
+      "Dungeon Synth",
+      "Phonk",
+      "Halloween",
+      "Music Playlist",
+      "Spotify",
+      "AI Assisted",
+      "Evil"
+    ],
+    "text": [
+      "Sardonic horror phonk, morose dungeon synth, and crushing metal to doom your Halloween."
+    ],
+    "theme": "halloween",
+    "title": "Banjoween '22",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2023-06-13",
+    "deck": "Banjo's Arcade",
+    "icon": "arcade",
+    "id": "0DBAAC",
+    "tagline": "Banjo's Arcade alpha cartridge",
+    "tags": [
+      "0DGames",
+      "Game Dev",
+      "Banjo's Arcade",
+      "alpha",
+      "beta",
+      "PC",
+      "Retro",
+      "Cartridge"
+    ],
+    "text": [
+      "What kind of electric pearl is coalescing on the circuitry inside this plastic shell?"
+    ],
+    "theme": "arcade",
+    "title": "alpha cart",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2023-06-13",
+    "deck": "Banjo's Arcade",
+    "icon": "arcade",
+    "id": "0DBADC",
+    "tagline": "Banjo's Arcade damaged cartridge",
+    "tags": [
+      "0DGames",
+      "Game Dev",
+      "Banjo's Arcade",
+      "Digital Art",
+      "Cartridge",
+      "Corrupt",
+      "Damaged",
+      "Degredation",
+      "PC",
+      "Retro"
+    ],
+    "text": [
+      "The label on this sunbleached cartridge has somehow been completely scraped off. We are trying to recover the ROM from long-lost relic."
+    ],
+    "theme": "arcade",
+    "title": "damaged cart",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
+      }
+    ],
+    "date": "2022-11-28",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLB005",
+    "tagline": "Banjo League Award",
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for achieving 90% of the site record."],
+    "theme": "league",
+    "title": "Platinum Badge",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
+      }
+    ],
+    "date": "2022-12-18",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLB006",
+    "tagline": "Banjo League Award",
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for achieving 95% of the site record."],
+    "theme": "league",
+    "title": "Diamond Badge",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
+      }
+    ],
+    "date": "2022-12-19",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLB007",
+    "tagline": "Banjo League Award",
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for sharing a site record."],
+    "theme": "league",
+    "title": "Split Prime Badge",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD028",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "One Thousand Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLT002",
+    "tagline": ["Awarded to the 2nd best player of a specific game"],
+    "tags": [
+      "Trophy",
+      "Award",
+      "Silver",
+      "League",
+      "Competition",
+      "BanjoLeague"
+    ],
+    "theme": "league",
+    "title": "Silver Trophy",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2022-12-14",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLW002",
+    "tagline": ["Surrounds the avatar of the ranking 2nd overall player"],
+    "tags": [
+      "Wreath",
+      "Award",
+      "League",
+      "Silver",
+      "Competition",
+      "BanjoLeague"
+    ],
+    "theme": "league",
+    "title": "Silver Wreath",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2023-07-13",
+    "deck": "BWC",
+    "icon": "bwc",
+    "id": "BWCAL2",
+    "tagline": "BWC Access Level 2",
+    "tags": ["BWC", "Restricted Access", "Level 2"],
+    "text": [
+      "Unlocks LVL2 BFDs, early access games and levels, previews, updates, archives, and other bonus content."
+    ],
+    "theme": "bwc",
+    "title": "BWC L2 Access Card (Platinum)",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2021-08-10",
+    "deck": "Bop Drumps",
+    "icon": "cards",
+    "id": "CBDB08",
+    "tagline": "Bop Drumps beta card #8",
+    "tags": [
+      "Gem Guardian",
+      "Bop Drumps",
+      "Bop Drumps beta",
+      "Card",
+      "Sketch",
+      "Card Game",
+      "beta",
+      "preview",
+      "POP",
+      "GEM",
+      "happy",
+      "moth",
+      "pebblemoth"
+    ],
+    "text": [
+      "GEM GUARDIAN [GEM]",
+      "3 silly",
+      "7 strong",
+      "5 mass",
+      "7 mystery"
+    ],
+    "theme": "white",
+    "title": "GEM GUARDIAN",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2005-05-11",
+    "deck": "Archived",
+    "icon": "art-digital",
+    "id": "DAAOPT",
+    "tagline": "The 18 year long collab",
+    "tags": [
+      "Digital Art",
+      "Art",
+      "MS Paint",
+      "Archived",
+      "Optical Illusion",
+      "2000s"
+    ],
+    "text": [
+      "One of the oldest computer files I have dates back to 2005. A friend of mine discovered that if you adjust the size of an image in a certain way, you can create all kinds of intriguing visual effects. I have to agree with him, it's quite true. This particular file from 2005, a simple copy and paste job, seems to naturally fit into the concept of a 3D Holo-Card. It reveals a fascinating pattern as it undergoes the transformation."
+    ],
+    "theme": "white",
+    "title": "Optical Illusion",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2022-04-01",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
+    "id": "DACCEE",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Celestial", "Iridescent", "Digital Art", "Capsule", "BFD"],
+    "text": ["Summons a real tulpa that tells mostly-true fortunes."],
+    "theme": "iridescent",
+    "title": "Celestial Capsule",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2022-03-30",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
+    "id": "DACCHR",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": [
+      "Charcoal",
+      "Black",
+      "BWC",
+      "Rainbow",
+      "Capsule",
+      "BFD",
+      "Digital Art"
+    ],
+    "text": [
+      "Any and all public media is instantly and freely available for life."
+    ],
+    "theme": "bwc",
+    "title": "Charcoal Capsule",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2023-01-18",
+    "deck": "BFD Capsules",
+    "icon": "capsule",
+    "id": "DACCOU",
+    "tagline": "BFD Capsule Series, you can only choose one",
+    "tags": ["Glitch", "BFD", "Digital Art"],
+    "text": ["Break any encryption."],
+    "theme": "charcoal",
+    "title": "Corrupt Capsule",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2022-02-19",
+    "deck": "Magick",
+    "icon": "house",
+    "id": "DAMAGI",
+    "tags": [
+      "Magick",
+      "Magic",
+      "Thelema",
+      "Sigil",
+      "Astrology",
+      "Buddhism",
+      "Philosophy",
+      "I-Ching",
+      "Symbol"
+    ],
+    "text": ["! BWC TO ADD !"],
+    "theme": "charcoal",
+    "title": "Magick",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2023-03-30",
+    "deck": "BanjoDOOM",
+    "icon": "doom",
+    "id": "DMDFBV",
+    "tags": [
+      "DOWNFALL",
+      "Early Access",
+      "DOOM II",
+      "DOOM",
+      "Beta",
+      "Preview",
+      "Leak",
+      "Hitscan",
+      "Secret Base",
+      "Underground"
+    ],
+    "text": ["!BWC TO ADD!"],
+    "theme": "doom",
+    "title": "DOWNFALL Beta",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGA010",
+    "tagline": "Weary Goblin Mudhole Club Alpha #10",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
+    "theme": "wgmc",
+    "title": "WGMC Alpha #10",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGA011",
+    "tagline": "Weary Goblin Mudhole Club Alpha #11",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
+    "theme": "wgmc",
+    "title": "WGMC Alpha #11",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2022-03-27",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGB002",
+    "tagline": "Weary Goblin Mudhole Club Beta #2",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"],
+    "theme": "wgmc",
+    "title": "WGMC Beta #2",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2022-03-27",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGB005",
+    "tagline": "Weary Goblin Mudhole Club Beta #5",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"],
+    "theme": "wgmc",
+    "title": "WGMC Beta #5",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2022-08-05",
+    "deck": "Music",
+    "icon": "music",
+    "id": "MTSAAC",
+    "tags": [
+      "Acoustic Cover",
+      "Satellite",
+      "Guitar",
+      "Cringe",
+      "Trance",
+      "Above & Beyond",
+      "OceanLab",
+      "Music",
+      "Music Track",
+      "Recording",
+      "Ultraclub4k"
+    ],
+    "text": ["!BWC TO ADD!"],
+    "theme": "cerulean",
+    "title": "OceanLab - Satellite (Acoustic Cover)",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "1998-12-12",
+    "deck": "Lore",
+    "icon": "video",
+    "id": "LVWDTT",
+    "tagline": "My first time telling a joke on stage at some holiday place",
+    "tags": [
+      "1990s",
+      "Comedy",
+      "Lore",
+      "Archived",
+      "Home Video",
+      "Joke",
+      "Funny"
+    ],
+    "text": ["!BWC TO ADD!"],
+    "theme": "coral",
+    "title": "Why did the tortoise cross the road?",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2019-10-15",
+    "deck": "Music",
+    "icon": "music",
+    "id": "MTLZAC",
+    "tags": [
+      "Acoustic Cover",
+      "Zubin",
+      "Cringe",
+      "Fantasy Camp",
+      "do u rly think i need u",
+      "Guitar",
+      "Emo Trap",
+      "Music",
+      "Music Track",
+      "Recording",
+      "Video"
+    ],
+    "text": ["!BWC TO ADD!"],
+    "theme": "basic",
+    "title": "Lil Zubin - do u rly think i need u (Acoustic Cover)",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2018-06-16",
+    "deck": "Lore",
+    "icon": "video",
+    "id": "LVGSAF",
+    "tagline": "It's Lit!",
+    "tags": [
+      "Glasgow",
+      "Sheezy",
+      "Linney",
+      "Fire",
+      "Total Recall",
+      "Meme",
+      "Lore",
+      "Destruction",
+      "Snapchat",
+      "Video"
+    ],
+    "text": [
+      "After a showing of Total Recall (1990), we were asked to leave the theatre by the fire exit. Outside, at some point during the film and entirely unbeknownst to us, a fire had started nearby at the Glasgow School of Art and was blazing by the time we exited. Apparently, failure to address concerns raised by a smaller fire four years prior allowed this incident, the cause of which was never determined, to rip through most of the building and damage the neighbouring concert venue. Big shout out to the emergency services, and apologies for making light of this tragic cultural loss which displaced local residents, but it was quite exciting at the time."
+    ],
+    "theme": "magma",
+    "title": "Total Recall & The GSoA Fire",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2018-04-10",
+    "deck": "Music",
+    "icon": "music",
+    "id": "MTBTAC",
+    "tags": [
+      "Acoustic Cover",
+      "Cringe",
+      "BROCKHAMPTON",
+      "WASTE",
+      "SATURATION",
+      "Bearface",
+      "Guitar",
+      "Music",
+      "Music Clip",
+      "Recording",
+      "Snapchat",
+      "Video"
+    ],
+    "text": ["!BWC TO ADD!"],
+    "theme": "basic",
+    "title": "BROCKHAMPTON - WASTE (Acoustic Cover Clip)",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2019-06-15",
+    "deck": "Lore",
+    "icon": "video",
+    "id": "LVSFCH",
+    "tagline": "Cookies with garlic and herb sauce, and raw Huel",
+    "tags": [
+      "Dominos",
+      "Huel",
+      "Cringe",
+      "Cookie",
+      "Eating",
+      "Meme",
+      "Nonsense",
+      "Snapchat"
+    ],
+    "text": ["!BWC TO ADD!"],
+    "theme": "basic",
+    "title": "Eating weird things 2019",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2017-07-19",
+    "deck": "Cringe Archive",
+    "icon": "gameplay",
+    "id": "GPCASU",
+    "tagline": "Cringe Archive 2017",
+    "tags": [
+      "Super Monkey Ball",
+      "Cringe",
+      "BanjoDave",
+      "Cringe Archive",
+      "2017",
+      "Twitch",
+      "YouTube",
+      "Discord",
+      "Highscore",
+      "Gameplay",
+      "Livestream",
+      "Commentary",
+      "Webcam"
+    ],
+    "text": "Runtime 2:56:21",
+    "theme": "arcade",
+    "title": "Super Monkey Ball",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2017-09-09",
+    "deck": "Cringe Archive",
+    "icon": "gameplay",
+    "id": "GPCANP",
+    "tagline": "Cringe Archive 2017",
+    "tags": [
+      "N++",
+      "N",
+      "Cringe",
+      "BanjoDave",
+      "Cringe Archive",
+      "2017",
+      "Twitch",
+      "YouTube",
+      "Discord",
+      "Highscore",
+      "Gameplay",
+      "Livestream",
+      "Commentary",
+      "Webcam"
+    ],
+    "text": "Runtime 1:39:18",
+    "theme": "arcade",
+    "title": "N++",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2017-07-10",
+    "deck": "Cringe Archive",
+    "icon": "gameplay",
+    "id": "GPCASO",
+    "tagline": "Cringe Archive 2017",
+    "tags": [
+      "Sonic the Hedgehog",
+      "Sonic 1",
+      "Cringe",
+      "BanjoDave",
+      "Cringe Archive",
+      "2017",
+      "Twitch",
+      "YouTube",
+      "Discord",
+      "Highscore",
+      "Gameplay",
+      "Livestream",
+      "Commentary",
+      "Webcam"
+    ],
+    "text": "Runtime 1:22:26",
+    "theme": "arcade",
+    "title": "Sonic the Hedgehog",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2017-09-13",
+    "deck": "Cringe Archive",
+    "icon": "gameplay",
+    "id": "GPCAOL",
+    "tagline": "Cringe Archive 2017",
+    "tags": [
+      "RuneScape",
+      "OSRS",
+      "Cringe",
+      "BanjoDave",
+      "Cringe Archive",
+      "2017",
+      "Twitch",
+      "YouTube",
+      "Discord",
+      "Highscore",
+      "Gameplay",
+      "Livestream",
+      "Commentary",
+      "Webcam"
+    ],
+    "text": "Runtime 0:51:07",
+    "theme": "arcade",
+    "title": "Old School RuneScape",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2017-07-09",
+    "deck": "Cringe Archive",
+    "icon": "gameplay",
+    "id": "GPCASN",
+    "tagline": "Cringe Archive 2017",
+    "tags": [
+      "Sonic the Hedgehog",
+      "Sonic Adventure 2",
+      "SEGA",
+      "Cringe",
+      "BanjoDave",
+      "Cringe Archive",
+      "2017",
+      "Twitch",
+      "YouTube",
+      "Discord",
+      "Highscore",
+      "Gameplay",
+      "Livestream",
+      "Commentary",
+      "Webcam"
+    ],
+    "text": "Runtime 0:37:29",
+    "theme": "arcade",
+    "title": "Sonic Adventure 2: Battle",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2017-04-30",
+    "deck": "Cringe Archive",
+    "icon": "gameplay",
+    "id": "GPCATH",
+    "tagline": "Cringe Archive 2017",
+    "tags": [
+      "Zelda",
+      "Ocarina of Time",
+      "Nintendo",
+      "Master Quest",
+      "Cringe",
+      "BanjoDave",
+      "Cringe Archive",
+      "2017",
+      "Twitch",
+      "YouTube",
+      "Discord",
+      "Highscore",
+      "Gameplay",
+      "Livestream",
+      "Commentary",
+      "Webcam"
+    ],
+    "text": "Runtime 0:37:24",
+    "theme": "arcade",
+    "title": "The Legend of Zelda: Ocarina of Time Master Quest",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 2,
+    "date": "2017-09-12",
+    "deck": "Cringe Archive",
+    "icon": "gameplay",
+    "id": "GPCASP",
+    "tagline": "Cringe Archive 2017",
+    "tags": [
+      "Super Mario 64",
+      "Mario",
+      "Nintendo 64",
+      "Nintendo",
+      "Cringe",
+      "BanjoDave",
+      "Cringe Archive",
+      "2017",
+      "Twitch",
+      "YouTube",
+      "Discord",
+      "Highscore",
+      "Gameplay",
+      "Livestream",
+      "Commentary",
+      "Webcam"
+    ],
+    "text": "Runtime 0:14:07",
+    "theme": "arcade",
+    "title": "Super Mario 64",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 3,
+    "buttons": [
+      {
+        "type": "external",
+        "href": "/league",
+        "label": "Go to Banjo League"
+      }
+    ],
+    "date": "2022-12-19",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLB008",
+    "tagline": "Banjo League Award",
+    "tags": ["Digital Art", "Sprite", "Banjo League", "Badge", "Award"],
+    "text": ["Awarded for holding the site record."],
+    "theme": "league",
+    "title": "Prime Badge",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 3,
+    "date": "2023-06-26",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLD029",
+    "tagline": "Banjo League Completez Award",
+    "tags": [
+      "Defeatz",
+      "Banjo League",
+      "Sprite",
+      "Skull",
+      "Award",
+      "Digital Art"
+    ],
+    "theme": "league",
+    "title": "Ten Thousand Defeatz",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 3,
+    "date": "2022-12-23",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLT003",
+    "tagline": ["Awarded to the best player of a specific game"],
+    "tags": ["Trophy", "Award", "Gold", "League", "Competition", "BanjoLeague"],
+    "theme": "league",
+    "title": "Gold Trophy",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 3,
+    "date": "2022-12-14",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLW003",
+    "tagline": ["Surrounds the avatar of the ranking 1st overall player"],
+    "tags": ["Wreath", "Award", "League", "Gold", "Competition", "BanjoLeague"],
+    "theme": "league",
+    "title": "Gold Wreath",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 3,
+    "date": "2023-01-01",
+    "deck": "Banjo League",
+    "icon": "league",
+    "id": "BLW00B",
+    "tagline": ["Surrounds the avatar of the most Banjeetz overall player"],
+    "tags": ["Wreath", "Award", "League", "Competition", "BanjoLeague"],
+    "theme": "league",
+    "title": "Banjo Wreath",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 3,
+    "date": "2023-07-13",
+    "deck": "BWC",
+    "icon": "bwc",
+    "id": "BWCAL3",
+    "tagline": "BWC Access Level 3",
+    "tags": ["BWC", "Restricted Access", "Level 3"],
+    "text": [
+      "Access all levels of BFD, get 0DG games for free, and more with the BWC Black Card."
+    ],
+    "theme": "bwc",
+    "title": "BWC L3 Special Access Card (Black)",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 3,
+    "date": "2022-05-23",
+    "deck": "Pebblemoths",
+    "icon": "pebblemoth-egg",
+    "id": "PMP001",
+    "tagline": "Pebblemoth Promo #1",
+    "tags": [
+      "Shadowchromatic",
+      "Pebblemoth",
+      "Promo Card",
+      "Pebblemoth Card",
+      "Card",
+      "Trading Card",
+      "Dark",
+      "Rainbow",
+      "Shadow",
+      "Colourful"
+    ],
+    "theme": "pebblemoth",
+    "title": "Shadowchromatic Pebblemoth",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 3,
+    "date": "2015-XX-XX",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGA013",
+    "tagline": "Weary Goblin Mudhole Club Alpha #13",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Alpha"],
+    "theme": "wgmc",
+    "title": "WGMC Alpha #13",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 3,
+    "date": "2022-03-27",
+    "deck": "WGMC",
+    "icon": "wgmc",
+    "id": "WGB003",
+    "tagline": "Weary Goblin Mudhole Club Beta #3",
+    "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"],
+    "theme": "wgmc",
+    "title": "WGMC Beta #3",
+    "type": "Card"
   }
 ]

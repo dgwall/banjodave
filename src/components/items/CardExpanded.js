@@ -213,9 +213,15 @@ const CardExpanded = ({ data, access, deck }) => {
                 with a Patreon account.
               </p>
             ) : data.accessLevel === 2 ? (
-              <p>LVL2 Access will be available with a Patreon sub.</p>
+              <p>
+                LVL2 Access will be available with a Patreon sub, and grants the
+                creation of up to 3 custom cards in the Community Deck.
+              </p>
             ) : data.accessLevel === 3 ? (
-              <p>LVL3 Access will be available with a high-tier Patreon sub.</p>
+              <p>
+                LVL3 Access will be available with a high-tier Patreon sub, and
+                grants the creation of your own unique Custom Deck.
+              </p>
             ) : (
               {}
             )}
