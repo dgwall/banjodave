@@ -22,6 +22,14 @@
   text-align: center;
 }
 
+.main-cards .tag {
+  cursor: pointer;
+}
+
+.main-cards .tag:hover {
+  text-decoration: underline;
+}
+
 .main-cards .view-buttons {
   width: calc(100% - 4vmin);
   display: flex;
@@ -194,15 +202,25 @@
 .main-cards video,
 .main-cards iframe {
   max-width: 80%;
-  height: 80%;
-  max-height: 50vh;
   border-radius: 1vmin;
+}
+
+.main-cards video {
+  max-height: 50vh;
+  height: 80%;
   object-fit: contain;
 }
 
 .main-cards .carousel-image {
   border-radius: 1vmin;
   margin: 1.5vmin 0;
+}
+
+.main-cards .deck-card-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 1rem;
+  width: 100%;
 }
 
 .main-cards iframe {
@@ -213,23 +231,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 5%;
-}
-
-.main-cards .control-next {
-  background: linear-gradient(to right, transparent, #00000080) !important;
-}
-
-.main-cards .control-next:hover {
-  background: linear-gradient(to right, transparent, #ffffff11) !important;
-}
-
-.main-cards .control-prev {
-  background: linear-gradient(to left, transparent, black) !important;
-}
-
-.main-cards .control-prev:hover {
-  background: linear-gradient(to left, transparent, #00000080) !important;
+  width: 10%;
 }
 
 .main-cards .card-selected .card-container {
@@ -827,6 +829,7 @@ tbody tr {
   width: 1rem;
   object-fit: contain;
   vertical-align: middle;
+  margin: 0 0.5rem;
 }
 
 .deck-list a {
@@ -842,7 +845,17 @@ tbody tr {
 .deck-list td,
 .deck-list th {
   width: auto;
-  padding: 0 1rem;
+  padding: 0;
+}
+
+.deck-list td .deck-card-id {
+  background-color: var(--hl-color);
+  color: var(--bt-color);
+  opacity: 0.75;
+}
+
+.deck-list td .deck-card-tagline {
+  opacity: 0.5;
 }
 
 .deck-list .min {

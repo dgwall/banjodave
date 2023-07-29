@@ -132,6 +132,12 @@ export const cardThemes = [
     hl: "#ff0000",
   },
   {
+    name: "black",
+    bg: "#000000",
+    fg: "#ffffff",
+    hl: "#000000",
+  },
+  {
     name: "white",
     bg: "#ffffff",
     fg: "#000000",

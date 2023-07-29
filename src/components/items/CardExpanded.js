@@ -178,9 +178,11 @@ const CardExpanded = ({ data, access, deck }) => {
           <>
             {data.text ? (
               <div className="card-text">
-                {data.text.map((text, index) => (
-                  <p key={index}>{text}</p>
-                ))}
+                {Array.isArray(data.text) ? (
+                  data.text.map((text, index) => <p key={index}>{text}</p>)
+                ) : (
+                  <p>{data.text}</p>
+                )}
               </div>
             ) : null}
             <div className="buttons">
@@ -256,18 +258,20 @@ const CardExpanded = ({ data, access, deck }) => {
                 {sortedDeck.map((card, index) => (
                   <tr key={index}>
                     <td className="min">
-                      <img
-                        src={`/img/cards/bwc-${card.accessLevel}.webp`}
-                        alt={`BWC Level ${card.accessLevel}`}
-                      />
-                    </td>
-                    <td className="min">{card.date}</td>
-                    <td className="min">
                       <Link to={`/bfd/${card.id}`} className="rowlink">
-                        {card.id}
+                        <img
+                          src={`/img/cards/bwc-${card.accessLevel}.webp`}
+                          alt={`BWC Level ${card.accessLevel}`}
+                        />
+                        <span className="deck-card-id">
+                          {card.date}-{card.id}
+                        </span>{" "}
+                        {card.title}{" "}
+                        {card.tagline && (
+                          <span className="deck-card-tagline">{`[${card.tagline}]`}</span>
+                        )}
                       </Link>
                     </td>
-                    <td>{card.title}</td>
                   </tr>
                 ))}
               </tbody>

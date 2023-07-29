@@ -101,7 +101,7 @@ function Cards() {
 
   useEffect(() => {
     let searchInterval;
-    if (isSearchFocused && searchTerm !== lastSearch) {
+    if (searchTerm !== lastSearch) {
       if (!searchTerm) {
         setViewMode("newest");
         return;
@@ -402,10 +402,14 @@ function Cards() {
               }}
             >
               Top tags:{" "}
-              {topTags.map(
-                (tag, index) =>
-                  `${tag.name}${index === topTags.length - 1 ? "..." : ", "}`
-              )}
+              {topTags.map((tag, index) => (
+                <span key={tag.name}>
+                  <span className="tag" onClick={() => setSearchTerm(tag.name)}>
+                    {tag.name}
+                  </span>
+                  {index === topTags.length - 1 ? "..." : ", "}
+                </span>
+              ))}
             </div>
           </main>
         </>

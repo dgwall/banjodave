@@ -81,7 +81,7 @@
   },
   {
     "accessLevel": 0,
-    "date": "2023-XX-XX",
+    "date": "2022-04-22",
     "deck": "Banjo's Arcade",
     "icon": "arcade",
     "id": "0DBANJ",
@@ -107,7 +107,7 @@
   },
   {
     "accessLevel": 0,
-    "date": "2023-XX-XX",
+    "date": "2020-12-23",
     "deck": "Digital Art",
     "icon": "art-digital",
     "id": "ARTDIG",
@@ -119,7 +119,7 @@
   },
   {
     "accessLevel": 0,
-    "date": "2022-XX-XX",
+    "date": "2022-06-08",
     "deck": "Physical Art",
     "icon": "art",
     "id": "ARTPHY",
@@ -252,7 +252,7 @@
   },
   {
     "accessLevel": 0,
-    "date": "2021-XX-XX",
+    "date": "2021-06-15",
     "deck": "BanjoZine",
     "icon": "zine",
     "id": "BHZINE",
@@ -728,7 +728,7 @@
         "label": "Go to Banjo League"
       }
     ],
-    "date": "2023-XX-XX",
+    "date": "2022-11-28",
     "deck": "Banjo League",
     "icon": "league",
     "id": "BLSOON",
@@ -792,7 +792,7 @@
   },
   {
     "accessLevel": 0,
-    "date": "2023-XX-XX",
+    "date": "2023-07-13",
     "deck": "BWC",
     "icon": "bwc",
     "id": "BWCORP",
@@ -922,7 +922,7 @@
   },
   {
     "accessLevel": 0,
-    "date": "2021-XX-XX",
+    "date": "2021-03-20",
     "deck": "Bop Drumps",
     "icon": "cards",
     "id": "CBOPDR",
@@ -1019,7 +1019,7 @@
   },
   {
     "accessLevel": 0,
-    "date": "2023-XX-XX",
+    "date": "2022-03-30",
     "deck": "BFD Capsules",
     "icon": "capsule",
     "id": "CAPSUL",
@@ -1303,7 +1303,7 @@
         "label": "Browse DOOM Maps"
       }
     ],
-    "date": "2023-XX-XX",
+    "date": "2019-12-07",
     "deck": "BanjoDOOM",
     "icon": "doom",
     "id": "DMBDBD",
@@ -1487,6 +1487,36 @@
     ],
     "theme": "storm",
     "title": "Mapwich 2: Ascent to Valhalla",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-07-16",
+    "deck": "AI",
+    "icon": "ai",
+    "id": "AIPLKI",
+    "media": [
+      {
+        "type": "image",
+        "src": "ai-planet-killer.png",
+        "alt": "Planet Killer"
+      }
+    ],
+    "tagline": "A pac-man type character re-imagined as a planet killer",
+    "tags": [
+      "Planet Killer",
+      "Space",
+      "Apocalypse",
+      "AI Art",
+      "AI Assisted",
+      "AI",
+      "DALL-E",
+      "Scifi",
+      "Twitter"
+    ],
+    "text": ["This was from when I first got DALL·E access."],
+    "theme": "space",
+    "title": "Planet Killer",
     "type": "Card"
   },
   {
@@ -2220,7 +2250,7 @@
         "label": "Download N v1.4 for PC (n_v1pc.zip) 1.26 MB"
       }
     ],
-    "date": "2023-XX-XX",
+    "date": "2007-04-07",
     "deck": "N",
     "icon": "n",
     "id": "NNNNNN",
@@ -2391,9 +2421,9 @@
   },
   {
     "accessLevel": 0,
-    "date": "2022-XX-XX",
+    "date": "2022-05-23",
     "deck": "Pebblemoths",
-    "icon": "pebblemoth-egg",
+    "icon": "pebblemoth",
     "id": "PEBMOT",
     "tagline": "Creatures with mystical powers of the Zodiac",
     "tags": ["Pebblemoth", "Preview"],
@@ -2407,12 +2437,12 @@
     "date": "2022-11-08",
     "deck": "Melee",
     "icon": "smash",
-    "id": "PHMACH",
+    "id": "SMSTG3",
     "media": [
       {
         "type": "youtube",
-        "src": "UDXwATvmxTw ",
-        "alt": ""
+        "src": "UDXwATvmxTw",
+        "alt": "Banjo vs Mars Restream"
       },
       {
         "type": "image",
@@ -2424,6 +2454,10 @@
     "tags": [
       "Shoot the Gun",
       "STG3",
+      "Zeppo",
+      "Karhu",
+      "EdgyMurphy",
+      "Mars",
       "Machermore Castle",
       "Scotland",
       "Smash",
@@ -2435,7 +2469,7 @@
       "Landscape"
     ],
     "text": [
-      "17th place out of 24 in Singles. 7th place out of 11 in Doubles with Ac_Anon. The way I threw is typical Banjo. Big ups Mars the red Falco."
+      "17th place out of 24 in Singles. 7th place out of 11 in Doubles with Ac_Anon. The way I threw is typical Banjo. Big ups to Mars the red Falco, and big ups to the entire Scottish Melee scene."
     ],
     "theme": "sky",
     "title": "Shoot the Gun 3",
@@ -2443,9 +2477,72 @@
   },
   {
     "accessLevel": 0,
+    "date": "2022-05-17",
+    "deck": "Melee",
+    "icon": "smash",
+    "id": "SMSTG2",
+    "media": [
+      {
+        "type": "youtube",
+        "src": "cUvTNe-Uc9Y",
+        "alt": "Shoot The Gun 2"
+      }
+    ],
+    "tagline": "Invitational in Dumfries, Scotland",
+    "tags": [
+      "Shoot the Gun",
+      "STG2",
+      "EdgyMurphy",
+      "Dumfries",
+      "Scotland",
+      "Smash",
+      "Melee",
+      "Smash Tournament",
+      "Tournament"
+    ],
+    "text": [
+      "17th place out of 19 in Singles. 7th place out of 9 in Doubles with Roryx. The trailer by EdgyMurphy is super sick, includes some combos from yours truly, and is well worth watching."
+    ],
+    "theme": "melee",
+    "title": "Shoot the Gun 2",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2022-04-23",
+    "deck": "Digital Art",
+    "icon": "art-digital",
+    "id": "DATHPO",
+    "media": [
+      {
+        "type": "image",
+        "src": "art-three-poisons.png",
+        "alt": "Three Poisons"
+      }
+    ],
+    "tags": [
+      "Shoot the Gun",
+      "STG2",
+      "EdgyMurphy",
+      "Dumfries",
+      "Scotland",
+      "Smash",
+      "Melee",
+      "Smash Tournament",
+      "Tournament"
+    ],
+    "text": [
+      "These animals represent ignorance, attachment, and aversion: the center of the Buddhist bhavacakra."
+    ],
+    "theme": "black",
+    "title": "Three Poisons",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
     "date": "2022-09-06",
     "deck": "Pebblemoths",
-    "icon": "pebblemoth-egg",
+    "icon": "pebblemoth",
     "id": "PMC034",
     "tagline": "Salt in Gemini",
     "tags": [
@@ -2464,7 +2561,7 @@
   },
   {
     "accessLevel": 0,
-    "date": "2023-XX-XX",
+    "date": "2021-02-22",
     "deck": "Websites",
     "icon": "website",
     "id": "WEBDEV",
@@ -2508,6 +2605,7 @@
     "tags": [
       "BanjoDave",
       "Website",
+      "Orb",
       "Under Construction",
       "Digital Art",
       "HTML",
@@ -2643,7 +2741,7 @@
   },
   {
     "accessLevel": 0,
-    "date": "2022-XX-XX",
+    "date": "2015-XX-XX",
     "deck": "WGMC",
     "icon": "wgmc",
     "id": "WGMCSH",
@@ -2664,12 +2762,12 @@
       {
         "type": "image",
         "src": "melee-awakening-4.jpg",
-        "alt": "I found my way back to the hotel by using this dome as a reference point. It was a rare night."
+        "alt": "After drinking and karaoke I found my way back to the hotel by using this dome as a reference point. It was a rare night."
       },
       {
         "type": "video",
         "src": "melee-awakening-4",
-        "alt": ""
+        "alt": "I think that's Apache in front"
       }
     ],
     "tagline": "Tournament in Zorneding, Germany",
@@ -2686,7 +2784,9 @@
       "Snapchat",
       "Video"
     ],
-    "text": ["97th place out of 206."],
+    "text": [
+      "97th place out of 206. I booked my flight for the wrong day and had to pay at the airport to get it changed on the day. I got that money back though by not paying for train tickets in Germany, come at me EBA."
+    ],
     "theme": "melee",
     "title": "Awakening IV",
     "type": "Card"
@@ -3504,7 +3604,7 @@
     "accessLevel": 1,
     "date": "2022-10-24",
     "deck": "Pebblemoths",
-    "icon": "pebblemoth-egg",
+    "icon": "pebblemoth",
     "id": "PMC112",
     "tagline": "Pigrubus apicula ▲-♄-♓︎-⚥",
     "tags": [
@@ -3520,7 +3620,10 @@
     ],
     "text": [
       "Pebblemoth #112: Pigrubus apicula",
-      "▲: Uncommon / ♄-♓︎: Saturn in  Pisces / ⚥: Monoecious"
+      "▲ Uncommon",
+      "♄ Saturn",
+      "♓︎ Pisces",
+      "⚥ Monoecious"
     ],
     "theme": "crimson",
     "title": "Pebblemoth #112",
@@ -3530,7 +3633,7 @@
     "accessLevel": 1,
     "date": "2022-10-24",
     "deck": "Pebblemoths",
-    "icon": "pebblemoth-egg",
+    "icon": "pebblemoth",
     "id": "PMC111",
     "tagline": "Umbrofusces coercipressus ▲-♄-♐︎-⚤",
     "tags": [
@@ -3544,7 +3647,13 @@
       "Pebblemoth",
       "Pebblemoth Card"
     ],
-    "text": ["! BWC TO ADD !"],
+    "text": [
+      "Pebblemoth #111: Umbrofusces coercipressus",
+      "▲ Uncommon",
+      "♄ Saturn",
+      "♐︎ Sagittarius",
+      "⚤ Dioecious"
+    ],
     "theme": "crimson",
     "title": "Pebblemoth #111",
     "type": "Card"
@@ -4685,7 +4794,7 @@
     "accessLevel": 3,
     "date": "2022-05-23",
     "deck": "Pebblemoths",
-    "icon": "pebblemoth-egg",
+    "icon": "pebblemoth",
     "id": "PMP001",
     "tagline": "Pebblemoth Promo #1",
     "tags": [
@@ -4726,6 +4835,35 @@
     "tags": ["Goblin", "RPG", "Weary Goblin Mudhole Club", "Preview", "Beta"],
     "theme": "wgmc",
     "title": "WGMC Beta #3",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2021-04-21",
+    "deck": "Game Scraps",
+    "icon": "game-scrap",
+    "id": "ANMUKI",
+    "tagline": "Long Live the Mushroom King",
+    "tags": ["Sprite", "Mushroom", "Gif", "Animation", "Mushroom Boy", "Mushroom King", "Slug", "Mario", "Powerup"],
+    "media": [
+      {
+        "type": "image",
+        "src": "ani-mk.gif",
+        "alt": "Mushroom Boy powers up into Mushroom King"
+      },
+      {
+        "type": "image",
+        "src": "gs_mk1.png",
+        "alt": "Spore Pods and figuring out scale"
+      },
+      {
+        "type": "image",
+        "src": "gs_mk2.png",
+        "alt": "Secret Slug Sleuthing Sandwiched Shroom Stacks"
+      }
+    ],
+    "theme": "sky",
+    "title": "Mushroom King",
     "type": "Card"
   }
 ]
