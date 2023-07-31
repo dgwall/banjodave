@@ -387,12 +387,25 @@ function Cards() {
             <h2>Digital Content Holo-Cards (Under Construction)</h2>
           </header>
           <main role="main">
-            <div>
-              <s>0 members</s>
+            <div
+              style={{
+                textAlign: "center",
+                width: "50%",
+                marginTop: "1rem",
+              }}
+            >
+              <p>
+                Explore BFD Cards – decidedly non-NFT interactive cards offering
+                games, videos, music, art, blogs, and more, to explore and
+                share.
+              </p>
+              <p>
+                As a Patreon member, not only do you unlock more Banjo content,
+                you also get the chance to contribute. Craft your own cards for
+                the Community Deck or, if you're a high-tier member, create your
+                own custom deck.
+              </p>
             </div>
-            <div style={{ fontSize: "small" }}>(coming soon)</div>
-            <div>{cards.length} cards</div>
-            <div>0 crypto</div>
             <div
               style={{
                 fontSize: "small",

@@ -4865,5 +4865,24 @@
     "theme": "sky",
     "title": "Mushroom King",
     "type": "Card"
+  },
+  {
+    "accessLevel": 0,
+    "date": "2023-04-20",
+    "deck": "Founder's Deck",
+    "icon": "art",
+    "id": "FDGWLH",
+    "tags": ["Dundee", "Art", "Scotland", "Design"],
+    "media": [
+      {
+        "type": "image",
+        "src": "founders-gwlh-1.jpg",
+        "alt": "Lumphinnans Harbour"
+      }
+    ],
+    "text": ["Acrylic on canvas. 51cm x 51cm unframed."],
+    "theme": "basic",
+    "title": "Graham Wallace Art - Lumphinnans Harbour",
+    "type": "Card"
   }
 ]

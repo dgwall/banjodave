@@ -201,11 +201,19 @@ const MediaCarousel = ({
                 {cardData.date}-{cardData.id}
               </span>
             </div>
-            <img
-              src={`/img/cards/bwc-${cardData.accessLevel}.webp`}
-              alt={`BWC Level ${cardData.accessLevel}`}
-              className="card-rarity"
-            />
+            {cardData.deck === "Founder's Deck" ? (
+              <img
+                src="/img/icon/founders.webp"
+                alt="Founder's Deck"
+                className="card-rarity"
+              />
+            ) : (
+              <img
+                src={`/img/cards/bwc-${cardData.accessLevel}.webp`}
+                alt={`BWC Level ${cardData.accessLevel}`}
+                className="card-rarity"
+              />
+            )}
           </>
         )}
       </div>
