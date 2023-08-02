@@ -107,10 +107,12 @@ const CardExpanded = ({ data, access, deck }) => {
   };
 
   const holoStyle = {
-    backgroundImage: `url("/img/cards/holo-${data.accessLevel}.webp")`,
-    backgroundPositionX: `${(rotation.x / 20) * 30}%`,
-    backgroundPositionY: `${(-rotation.y / 20) * 30}%`,
-    filter: `hue-rotate(${rotation.x * data.accessLevel * 10}deg)`,
+    backgroundImage: `url("/img/cards/holo-${
+      data.deck === "Founder's Deck" ? "c" : data.accessLevel
+    }.webp")`,
+    backgroundPositionX: `${(rotation.x / 10) * 15}%`,
+    backgroundPositionY: `${(-rotation.y / 10) * 15}%`,
+    filter: `hue-rotate(${rotation.x * (data.accessLevel + 0.1) * 5}deg)`,
     opacity: `${(rotation.y / 10 + Math.abs(rotation.x) / 15) / 3}`,
     transition: `${smoothTransition ? "1s" : "0s"}`,
   };

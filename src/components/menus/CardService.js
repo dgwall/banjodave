@@ -14,10 +14,9 @@ export function searchCards(cards, searchTerm) {
   if (!searchTerm) return [...cards];
 
   const term = searchTerm.toLowerCase().replace(/[.*+?^${}()|[\]\\]/g, "\\$&"); // $& means the whole matched string
-  const regex = new RegExp(`\\b${term}\\b`, "i"); // Matches the whole word
-
   const hits = cards.map((card) => {
     let hitCount = 0;
+    const regex = new RegExp(`\\b${term}\\b`, "i"); // Matches the whole word
 
     if (card.id && regex.test(card.id)) hitCount += 8;
     if (card.title && regex.test(card.title)) hitCount += 4;
@@ -35,10 +34,15 @@ export function searchCards(cards, searchTerm) {
       hitCount += 4;
     if (card.tags?.some((tag) => tag.toLowerCase().includes(term)))
       hitCount += 2;
-    if (card.text)
-      card.text.forEach((textBlock) => {
-        if (textBlock?.toLowerCase().includes(term)) hitCount++;
-      });
+    if (card.text) {
+      if (Array.isArray(card.text)) {
+        card.text.forEach((textBlock) => {
+          if (textBlock?.toLowerCase().includes(term)) hitCount++;
+        });
+      } else if (typeof card.text === "string") {
+        if (card.text.toLowerCase().includes(term)) hitCount++;
+      }
+    }
 
     return {
       ...card,

@@ -166,7 +166,7 @@ const MediaCarousel = ({
     return (
       <div className="card" style={cardStyle} onTouchMove={preventTouch}>
         {/* Holographic effect */}
-        {cardData.accessLevel > 0 && (
+        {(cardData.accessLevel > 0 || cardData.deck === "Founder's Deck") && (
           <div className="card-holo" style={holoStyle}></div>
         )}
 
