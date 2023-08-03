@@ -123,3 +123,8 @@ export function getTopTags(cards) {
 
   return topTags;
 }
+
+export function getDeckId(cards, title) {
+  const card = cards.find((card) => card.title === title);
+  return card ? card.id : null;
+}

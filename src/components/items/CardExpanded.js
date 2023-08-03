@@ -25,7 +25,7 @@ const preventTouch = (event) => {
   event.preventDefault();
 };
 
-const CardExpanded = ({ data, access, deck }) => {
+const CardExpanded = ({ data, access, deck, parentDeck }) => {
   const [rotation, setRotation] = useState({ x: 0, y: 0 });
   const [smoothTransition, setSmoothTransition] = useState(true);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -177,6 +177,18 @@ const CardExpanded = ({ data, access, deck }) => {
           lenticularStyle={lenticularStyle}
         />
       </div>
+
+      {data.type === "Card" && (
+        <div className="deck-icon">
+          <Link to={`/bfd/${parentDeck}`}>
+            <img
+              src="/img/icon/deck.webp"
+              alt="Deck"
+              title="Go to this Card's Deck"
+            />
+          </Link>
+        </div>
+      )}
 
       <div className={`card-detail caption-${data.accessLevel}`}>
         <div className={`card-title ${data.type === "Deck" && "deck-title"}`}>

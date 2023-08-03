@@ -3412,6 +3412,7 @@
     "deck": "Lore",
     "icon": "video",
     "id": "LVSMNM",
+    "lenticular": true,
     "media": [
       {
         "type": "youtube",
@@ -3433,7 +3434,7 @@
       "Video"
     ],
     "text": [
-      "A really old claymation me and my sister made. I was inspired by Knox's Korner."
+      "A really old claymation my sister and I made. I was inspired by Knox's Korner."
     ],
     "theme": "basic",
     "title": "Norbert the Magnificent",
@@ -4589,14 +4590,7 @@
     "deck": "Gameplay",
     "icon": "game",
     "id": "GPVALO",
-    "tags": [
-      "valorant",
-      "clips",
-      "meme",
-      "gameplay",
-      "youtube",
-      "playlist"
-    ],
+    "tags": ["valorant", "clips", "meme", "gameplay", "youtube", "playlist"],
     "text": [
       "I played VAL for 3 months before I had to uninstall it when I started playing it during the time I had blocked out for studying. Anyway I mostly played Deathmatch and Spike Rush, and hadn't played a PC shooter other than DOOM and HEXEN before this, so expect bullshit instead of godlike plays here. I can't believe how much I spent on skins and I still get the urge to re-download."
     ],
@@ -4686,7 +4680,9 @@
         "alt": "random fight animation"
       }
     ],
-    "text": ["Just some animation practice. I made some basic fighting pose animations, and randomly cycled through them for two characters."],
+    "text": [
+      "Just some animation practice. I made some basic fighting pose animations, and randomly cycled through them for two characters."
+    ],
     "theme": "fireblu",
     "title": "random fight animation",
     "type": "Card"

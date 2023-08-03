@@ -474,6 +474,7 @@
   align-items: center;
   justify-content: center;
   min-height: 60vh;
+  position: relative;
 }
 
 .main-cards .card-expanded .card-detail {
@@ -982,6 +983,22 @@ tbody tr {
 
 .main-cards .sort-filter div {
   margin: auto;
+}
+
+.main-cards .deck-icon {
+  background-color: #000;
+  border-radius: 0.5vw;
+  position: absolute;
+  right: 3vmin;
+  top: 3vmin;
+}
+
+.main-cards .deck-icon img {
+  padding: 0.2vmin;
+  display: block;
+  max-width: 3vmax;
+  aspect-ratio: 1;
+  object-fit: contain;
 }
 
 @media screen and (max-width: 1280px) {

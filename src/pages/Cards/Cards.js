@@ -11,11 +11,12 @@ import {
   sortCards,
   searchCards,
   getTopTags,
+  getDeckId,
 } from "../../components/menus/CardService";
 
 const ITEMS_HOMEPAGE = 18;
 const ITEMS_PER_PAGE = 9;
-const ACCESS_LEVEL = 1;
+const ACCESS_LEVEL = 0;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -85,6 +86,7 @@ function Cards() {
   const [selectedCard, setSelectedCard] = useState(null);
   const [similarCards, setSimilarCards] = useState([]);
   const [cardsInDeck, setCardsInDeck] = useState([]);
+  const [deckId, setDeckId] = useState("");
   const [viewMode, setViewMode] = useState("newest");
   const [groupMode, setGroupMode] = useState("both");
   const [searchTerm, setSearchTerm] = useState("");
@@ -195,13 +197,18 @@ function Cards() {
     const sortedCards = sortCards(cards, viewMode, selectedCard, searchTerm);
     setSimilarCards(sortedCards);
     setCurrentPage(1);
-    if (selectedCard && selectedCard.type === "Deck") {
-      setCardsInDeck(
-        cards
-          .filter((c) => c.deck === selectedCard.deck && c.type !== "Deck")
-          .sort((a, b) => a.id.localeCompare(b.id))
-          .sort((a, b) => b.date.localeCompare(a.date))
-      );
+    if (selectedCard) {
+      if (selectedCard.type === "Deck") {
+        setCardsInDeck(
+          cards
+            .filter((c) => c.deck === selectedCard.deck && c.type !== "Deck")
+            .sort((a, b) => a.id.localeCompare(b.id))
+            .sort((a, b) => b.date.localeCompare(a.date))
+        );
+      }
+      if (selectedCard.type === "Card") {
+        setDeckId(getDeckId(cards, selectedCard?.deck));
+      }
     }
   }, [selectedCard, cards, viewMode, searchTerm]);
 
@@ -382,6 +389,7 @@ function Cards() {
             data={selectedCard}
             access={ACCESS_LEVEL}
             deck={cardsInDeck}
+            parentDeck={deckId}
           />
         </section>
       ) : (
@@ -402,33 +410,56 @@ function Cards() {
               <p>_,.-⚚-.,_</p>
               <p>✦✧✶✧✦</p>
               <p>
-                🀄 𝕰𝖝𝖕𝖑𝖔𝖗𝖊 Ψ 𝕭𝕱𝕯 𝕮𝖆𝖗𝖉𝖘 ⊕ decidedly 𝖓𝖔𝖓-NFT 🃏 interactive cards
-                offering games🎮, videos🎥, music🎧, art🎨, blogs✍️, and more🔮,
-                to ΣxPlOrE aNd ShArΣ
+                🀄 𝕰𝖝𝖕𝖑𝖔𝖗𝖊 Ψ 𝕭𝕱𝕯 𝕮𝖆𝖗𝖉𝖘 ⊕{" "}
+                <span
+                  style={{
+                    fontFamily: "monospace",
+                    background: "#000",
+                    color: "lightgreen",
+                  }}
+                >
+                  {cards.filter((card) => card.type === "Card").length}
+                </span>{" "}
+                decidedly 𝖓𝖔𝖓-NFT 🃏 interactive cards offering games🎮,
+                videos🎥, music🎧, art🎨, blogs✍️, and more🔮, to ΣxPlOrE aNd
+                ShArΣ
               </p>
               <p>⚡⣿ ⣠⠞⠁⚙⠈⠳⣄ ⣿⚡</p>
               <p>
-                As a ☽𝝦atreon member☾, not only do you unl🔓ck more{" "}
+                As a <s>☽𝝦atreon member☾</s>{" "}
+                <span style={{ fontSize: "x-small" }}>(coming soon™)</span>, not
+                only do you unl🔓ck more{" "}
                 <img src="/img/sig-small.webp" alt="Banjo" title="Banjo" />{" "}
                 content, you also get the chance to 𝓒𝓡𝓔𝓐𝓣𝓔 🛠️ your own cards for
-                the「〒 Community Deck」or, if you're a{" "}
-                <span style={{ color: "#FF0000" }}>h</span>
-                <span style={{ color: "#FF6600" }}>i</span>
-                <span style={{ color: "#FFCC00" }}>g</span>
-                <span style={{ color: "#99CC00" }}>h</span>
-                <span style={{ color: "#33CC00" }}>-</span>
-                <span style={{ color: "#00CCCC" }}>t</span>
-                <span style={{ color: "#0066CC" }}>i</span>
-                <span style={{ color: "#3333CC" }}>e</span>
-                <span style={{ color: "#9900CC" }}>r</span> member, create your
-                own「🏯 Custom Deck.」⌬
+                the
+                <span style={{ fontVariant: "small-caps" }}>
+                  「〒 Community Deck」
+                </span>
+                or, if you're a{" "}
+                <span style={{ fontVariant: "small-caps" }}>
+                  <span style={{ color: "#FF0000" }}>l</span>
+                  <span style={{ color: "#FF6600" }}>v</span>
+                  <span style={{ color: "#FFCC00" }}>l</span>
+                  <span style={{ color: "#99CC00" }}>3</span>
+                  <span style={{ color: "#33CC00" }}>t</span>
+                  <span style={{ color: "#00CCCC" }}>h</span>
+                  <span style={{ color: "#0066CC" }}>r</span>
+                  <span style={{ color: "#3333CC" }}>e</span>
+                  <span style={{ color: "#9900CC" }}>e</span>{" "}
+                  <span style={{ color: "#666666" }}>member</span>
+                </span>
+                , create your own
+                <span style={{ fontVariant: "small-caps" }}>
+                  「🏯 Custom Deck」
+                </span>
+                ⌬
               </p>
               <p>
                 ꧁(✿◠‿◠(◕‿◕)♥‿♥｡)꧂
                 <br />
                 ░▒▓▒▓█▓▒▓▒░
               </p>
-              <p>྾</p>
+              <p style={{ fontSize: "x-large" }}>྾</p>
             </div>
             <div
               style={{
@@ -615,6 +646,80 @@ function Cards() {
         handleLast={handleLast}
         error={errorMessage}
       />
+
+      <nav className="view-buttons">
+        {!selectedCard && (
+          <div className="page-number">
+            <img
+              src="/img/icon/zap.svg"
+              alt="icons"
+              style={{ filter: "invert(100%)", paddingRight: "0.5rem" }}
+            />
+            Quick Links:
+          </div>
+        )}
+        {selectedCard && (
+          <button
+            onClick={() => {
+              setViewMode("similar");
+              setGroupMode("both");
+              setIsShowingRestrictedCards(true);
+              setCurrentPage(1);
+              setSearchTerm("");
+            }}
+          >
+            <img src="/img/icon/star.svg" alt="Star" />
+          </button>
+        )}
+        <button
+          onClick={() => {
+            setViewMode("alphabetical");
+            setGroupMode("deck");
+            setIsShowingRestrictedCards(true);
+            setCurrentPage(1);
+            setSearchTerm("");
+          }}
+        >
+          <img src="/img/icon/archive.svg" alt="icons" />
+        </button>
+        {selectedCard && (
+          <div className="page-number">
+            <img
+              src="/img/icon/zap.svg"
+              alt="icons"
+              style={{ filter: "invert(100%)", paddingRight: "0.5rem" }}
+            />
+            Quick Links
+            <img
+              src="/img/icon/zap.svg"
+              alt="icons"
+              style={{ filter: "invert(100%)", paddingLeft: "0.5rem" }}
+            />
+          </div>
+        )}
+        <button
+          onClick={() => {
+            setViewMode("newest");
+            setGroupMode("card");
+            setIsShowingRestrictedCards(false);
+            setCurrentPage(1);
+            setSearchTerm("");
+          }}
+        >
+          <img src="/img/icon/time.svg" alt="Clock" />
+        </button>
+        <button
+          onClick={() => {
+            setViewMode(`${viewMode === "shuffle" ? "reshuffle" : "shuffle"}`);
+            setGroupMode("both");
+            setIsShowingRestrictedCards(true);
+            setCurrentPage(1);
+            setSearchTerm("");
+          }}
+        >
+          <img src="/img/icon/shuffle.svg" alt="Shuffle" />
+        </button>
+      </nav>
     </>
   );
 }
