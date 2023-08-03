@@ -396,6 +396,7 @@ function Cards() {
                 textAlign: "center",
                 width: "50%",
                 marginTop: "1rem",
+                fontSize: "large",
               }}
             >
               <p>_,.-⚚-.,_</p>

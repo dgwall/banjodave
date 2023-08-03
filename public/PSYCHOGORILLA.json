@@ -3445,6 +3445,7 @@
     "deck": "Lore",
     "icon": "video",
     "id": "LVGYGC",
+    "lenticular": true,
     "media": [
       {
         "type": "video",
