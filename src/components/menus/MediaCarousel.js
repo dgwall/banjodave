@@ -11,6 +11,7 @@ const MEDIA_TYPE = {
   AUDIO: "audio",
   AUDIO_EXT: "audio-ext",
   YOUTUBE: "youtube",
+  YOUTUBE_PL: "youtube-pl",
 };
 
 // Component for Custom Indicator used in Carousel
@@ -62,6 +63,7 @@ const MediaCarousel = ({
   smoothTransition,
   cardStyle,
   holoStyle,
+  lenticularStyle,
 }) => {
   // Use React useState hook to keep track of currently active slide
   const [activeIndex, setActiveIndex] = useState(0);
@@ -155,6 +157,19 @@ const MediaCarousel = ({
           ></iframe>
         );
 
+      case MEDIA_TYPE.YOUTUBE_PL:
+        return (
+          <iframe
+            width="560"
+            height="315"
+            src={`https://www.youtube.com/embed/videoseries?list=${media.src}`}
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowFullScreen
+          ></iframe>
+        );
+
       // Return null if media type doesn't match any cases
       default:
         return null;
@@ -166,6 +181,9 @@ const MediaCarousel = ({
     return (
       <div className="card" style={cardStyle} onTouchMove={preventTouch}>
         {/* Holographic effect */}
+        {cardData.lenticular && (
+          <div className="card-lenticular" style={lenticularStyle}></div>
+        )}
         {(cardData.accessLevel > 0 || cardData.deck === "Founder's Deck") && (
           <div className="card-holo" style={holoStyle}></div>
         )}

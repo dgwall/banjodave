@@ -220,6 +220,7 @@
       "Danlex",
       "Cosmic Snake",
       "MALAGARD",
+      "Dragon Ball",
       "Dragon Ball Z",
       "Gruntz",
       "Nintendo GameCube",
@@ -2041,6 +2042,7 @@
     "deck": "Nonsense",
     "icon": "image",
     "id": "NSHGCG",
+    "lenticular": true,
     "media": [
       {
         "type": "image",
@@ -2897,6 +2899,7 @@
     "date": "2020-12-23",
     "deck": "Digital Art",
     "icon": "art-digital",
+    "lenticular": true,
     "id": "DALOAD",
     "media": [
       {
@@ -4272,7 +4275,14 @@
     "icon": "league",
     "id": "BLT003",
     "tagline": ["Awarded to the best player of a specific game"],
-    "tags": ["Trophy", "Award", "Gold", "League", "Competition", "Banjo League"],
+    "tags": [
+      "Trophy",
+      "Award",
+      "Gold",
+      "League",
+      "Competition",
+      "Banjo League"
+    ],
     "theme": "league",
     "title": "Gold Trophy",
     "type": "Card"
@@ -4284,7 +4294,14 @@
     "icon": "league",
     "id": "BLW003",
     "tagline": ["Surrounds the avatar of the ranking 1st overall player"],
-    "tags": ["Wreath", "Award", "League", "Gold", "Competition", "Banjo League"],
+    "tags": [
+      "Wreath",
+      "Award",
+      "League",
+      "Gold",
+      "Competition",
+      "Banjo League"
+    ],
     "theme": "league",
     "title": "Gold Wreath",
     "type": "Card"
@@ -4322,6 +4339,7 @@
     "deck": "Pebblemoths",
     "icon": "pebblemoth",
     "id": "PMP001",
+    "lenticular": true,
     "tagline": "Pebblemoth Promo #1",
     "tags": [
       "Shadowchromatic",
@@ -4369,8 +4387,19 @@
     "deck": "Game Scraps",
     "icon": "game-scrap",
     "id": "ANMUKI",
+    "lenticular": true,
     "tagline": "Long Live the Mushroom King",
-    "tags": ["Sprite", "Mushroom", "Gif", "Animation", "Mushroom Boy", "Mushroom King", "Slug", "Mario", "Powerup"],
+    "tags": [
+      "Sprite",
+      "Mushroom",
+      "Gif",
+      "Animation",
+      "Mushroom Boy",
+      "Mushroom King",
+      "Slug",
+      "Mario",
+      "Powerup"
+    ],
     "media": [
       {
         "type": "image",
@@ -4413,71 +4442,252 @@
   },
   {
     "accessLevel": 0,
-    "buttons": [{"type": "download", "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/games/musicstuffsome-eyeball-editable.gmk", "label": "Download .gmk Project File"},
-    {"type": "download", "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/games/musicstuffsome-eyeball-bouncyball.exe", "label": "Download eyeball bouncyball"}],
+    "buttons": [
+      {
+        "type": "download",
+        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/games/musicstuffsome-eyeball-editable.gmk",
+        "label": "Download .gmk Project File"
+      },
+      {
+        "type": "download",
+        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/games/musicstuffsome-eyeball-bouncyball.exe",
+        "label": "Download eyeball bouncyball"
+      }
+    ],
     "date": "2013-08-22",
     "deck": "Founder's Deck",
     "icon": "game",
     "id": "FDMSEB",
-    "tags": ["eyeball bouncyball", "platformer", "yoyo games", "musicstuffsome", "Archived", "game", "game scrap", "game dev", "Founder"],
-    "text": ["latest version added all the game race levels 😊"],
-    "theme": "basic",
+    "tags": [
+      "eyeball bouncyball",
+      "platformer",
+      "yoyo games",
+      "musicstuffsome",
+      "Archived",
+      "game",
+      "game scrap",
+      "game dev",
+      "Founder"
+    ],
+    "text": [
+      "From YoYo Games Archive: \"latest version added all the game race levels 😊\""
+    ],
+    "theme": "arcade",
     "title": "musicstuffsome - eyeball bouncyball",
     "type": "Card"
   },
   {
     "accessLevel": 0,
     "buttons": [
-    {"type": "download", "href": "/img/card-content/dl/musicstuffsome-rolly-pollys-pogo-stick-challenge.exe", "label": "Download rolly pollys pogo stick challenge"}],
+      {
+        "type": "download",
+        "href": "/img/card-content/dl/musicstuffsome-rolly-pollys-pogo-stick-challenge.exe",
+        "label": "Download rolly pollys pogo stick challenge"
+      }
+    ],
     "date": "2009-11-11",
     "deck": "Founder's Deck",
     "icon": "game",
     "id": "FDMSRP",
-    "tags": ["rolly polly", "platformer", "yoyo games", "musicstuffsome", "Archived", "game", "game scrap", "game dev", "Founder"],
-    "text": ["Bounce on your pogostick through 32 levels of fun and sheer randomnessnessness(if thats a word) to allow rolly polly- the freindly tornado to collect all 32 fragments of the DNA of toast and acheive ultimate well being.you on the other hand are likely to have a sezzuie and get RSI by that time .Are you up for a challange?"],
-    "theme": "basic",
+    "tags": [
+      "rolly polly",
+      "platformer",
+      "yoyo games",
+      "musicstuffsome",
+      "Archived",
+      "game",
+      "game scrap",
+      "game dev",
+      "Founder"
+    ],
+    "text": [
+      "From YoYo Games Archive: \"Bounce on your pogostick through 32 levels of fun and sheer randomnessnessness(if thats a word) to allow rolly polly- the freindly tornado to collect all 32 fragments of the DNA of toast and acheive ultimate well being.you on the other hand are likely to have a sezzuie and get RSI by that time .Are you up for a challange?\""
+    ],
+    "theme": "arcade",
     "title": "musicstuffsome - rolly pollys pogo stick challenge",
     "type": "Card"
   },
   {
     "accessLevel": 0,
     "buttons": [
-    {"type": "download", "href": "/img/card-content/dl/musicstuffsome-ASCI-kicking-warriors.exe", "label": "Download ASCI kicking warriors"}],
+      {
+        "type": "download",
+        "href": "/img/card-content/dl/musicstuffsome-ASCI-kicking-warriors.exe",
+        "label": "Download ASCI kicking warriors"
+      }
+    ],
     "date": "2014-06-29",
     "deck": "Founder's Deck",
     "icon": "game",
     "id": "FDMSAW",
-    "tags": ["ascii", "fighting game", "shmup", "yoyo games", "musicstuffsome", "Archived", "game", "game scrap", "game dev", "Founder"],
-    "text": ["Changes in version 1.02",
-    "+++++++++++++++++++++++",
-    ". Game UI is now designed to be predominantly controled by controlers",
-    ". Real time character select",
-    ". The first ammo mechanic",
-    ". Randomised themed music now impliemnted into the the 3 stages",
-    ". Slightly updated instructions !",
-    ". Character changes for",
-    "A.)Hopperspace- fixed a bug regarding gravity",
-    "B.)Cajonja - teleport now only costs 2 ammo",
-    "- Button 2 is now a new move the \"bullet drop\"",
-    "c.)Gyah - left/right spray now only costs 1 ammo",
-    "D.)Ribbet - wavedash has modified propetys to make it more useful"],
-    "theme": "basic",
+    "tags": [
+      "ascii",
+      "fighting game",
+      "shmup",
+      "yoyo games",
+      "musicstuffsome",
+      "Archived",
+      "game",
+      "game scrap",
+      "game dev",
+      "Founder"
+    ],
+    "text": [
+      "From YoYo Games Archive: \"Changes in version 1.02",
+      "+++++++++++++++++++++++",
+      ". Game UI is now designed to be predominantly controled by controlers",
+      ". Real time character select",
+      ". The first ammo mechanic",
+      ". Randomised themed music now impliemnted into the the 3 stages",
+      ". Slightly updated instructions !",
+      ". Character changes for",
+      "A.)Hopperspace- fixed a bug regarding gravity",
+      "B.)Cajonja - teleport now only costs 2 ammo",
+      "- Button 2 is now a new move the \"bullet drop\"",
+      "c.)Gyah - left/right spray now only costs 1 ammo",
+      "D.)Ribbet - wavedash has modified propetys to make it more useful\""
+    ],
+    "theme": "white",
     "title": "musicstuffsome - ASCI kicking warriors",
     "type": "Card"
   },
   {
     "accessLevel": 1,
     "buttons": [
-    {"type": "download", "href": "/img/card-content/dl/BanjoDave-Bulletbullet.exe", "label": "Download Bulletbullet"}],
+      {
+        "type": "download",
+        "href": "/img/card-content/dl/BanjoDave-Bulletbullet.exe",
+        "label": "Download Bulletbullet"
+      }
+    ],
     "date": "2010-05-02",
     "deck": "Games Pre-2020",
     "icon": "game",
     "id": "GDBUBU",
-    "tags": ["bulletbullet", "yoyo games", "shmup", "beta", "Archived", "game", "game scrap", "game dev"],
-    "text": ["Top down shooter I am working on. Also my first GM game. Music by SabrePulse. Controls: Z-shoot, arrows-move, M-mute, SPACE-pause.",
-  "My apologies for using this song, and some art assets, without permission."],
+    "tags": [
+      "bulletbullet",
+      "yoyo games",
+      "shmup",
+      "beta",
+      "Archived",
+      "game",
+      "game scrap",
+      "game dev"
+    ],
+    "text": [
+      "From YoYo Games Archive: \"Top down shooter I am working on. Also my first GM game. Music by SabrePulse. Controls: Z-shoot, arrows-move, M-mute, SPACE-pause.\"",
+      "My apologies for using this song, and some art assets, without permission."
+    ],
     "theme": "dark",
     "title": "Bulletbullet",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2022-11-02",
+    "deck": "Gameplay",
+    "icon": "game",
+    "id": "GPVALO",
+    "tags": [
+      "valorant",
+      "clips",
+      "meme",
+      "gameplay",
+      "youtube",
+      "playlist"
+    ],
+    "text": [
+      "I played VAL for 3 months before I had to uninstall it when I started playing it during the time I had blocked out for studying. Anyway I mostly played Deathmatch and Spike Rush, and hadn't played a PC shooter other than DOOM and HEXEN before this, so expect bullshit instead of godlike plays here. I can't believe how much I spent on skins and I still get the urge to re-download."
+    ],
+    "media": [
+      {
+        "type": "youtube-pl",
+        "src": "PLA9qfvzdq-uHvGS4pnkqw3SK2iw4TTGXL",
+        "alt": "Valorant Clips"
+      }
+    ],
+    "theme": "melee",
+    "title": "Valorant Clips",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2021-08-01",
+    "deck": "Digital Art",
+    "icon": "art-digital",
+    "id": "DARAPP",
+    "lenticular": true,
+    "tags": [
+      "ufo",
+      "alien",
+      "noise field",
+      "abstract",
+      "animation",
+      "digital art"
+    ],
+    "media": [
+      {
+        "type": "youtube",
+        "src": "AuokDfzYtXw",
+        "alt": "Real Alien"
+      }
+    ],
+    "theme": "space",
+    "title": "Real Alien",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2021-01-07",
+    "deck": "Digital Art",
+    "icon": "art-digital",
+    "lenticular": true,
+    "id": "DADEGE",
+    "tags": [
+      "demon",
+      "scary",
+      "buddhism",
+      "noise field",
+      "abstract",
+      "animation",
+      "digital art"
+    ],
+    "media": [
+      {
+        "type": "youtube",
+        "src": "cAeFM7gUeb4",
+        "alt": "Field of Wrath - Demon Generator"
+      }
+    ],
+    "theme": "magma",
+    "title": "Field of Wrath - Demon Generator",
+    "type": "Card"
+  },
+  {
+    "accessLevel": 1,
+    "date": "2019-09-24",
+    "deck": "Digital Art",
+    "icon": "art-digital",
+    "id": "DARAFI",
+    "tags": [
+      "fighting game",
+      "game scrap",
+      "dragon ball",
+      "Dragon Ball Super",
+      "video",
+      "animation",
+      "digital art"
+    ],
+    "media": [
+      {
+        "type": "video",
+        "src": "ani-random-fight",
+        "alt": "random fight animation"
+      }
+    ],
+    "text": ["Just some animation practice. I made some basic fighting pose animations, and randomly cycled through them for two characters."],
+    "theme": "fireblu",
+    "title": "random fight animation",
     "type": "Card"
   }
 ]

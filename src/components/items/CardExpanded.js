@@ -124,6 +124,12 @@ const CardExpanded = ({ data, access, deck }) => {
     transition: `${smoothTransition ? "1s" : "0s"}`,
   };
 
+  const lenticularStyle = {
+    backgroundImage: `url("/img/thumbnails/${data.id}-L.webp")`,
+    opacity: `${Math.abs(rotation.x) / 5}`,
+    transition: `${smoothTransition ? "1s" : "0s"}`,
+  };
+
   const copyToClipboard = async (text) => {
     if (navigator.clipboard) {
       try {
@@ -168,6 +174,7 @@ const CardExpanded = ({ data, access, deck }) => {
           smoothTransition={smoothTransition}
           cardStyle={cardStyle}
           holoStyle={holoStyle}
+          lenticularStyle={lenticularStyle}
         />
       </div>
 

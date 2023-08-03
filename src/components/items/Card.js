@@ -69,6 +69,12 @@ const Card = ({ data, access }) => {
     transition: `${smoothTransition ? "1s" : "0s"}`,
   };
 
+  const lenticularStyle = {
+    backgroundImage: `url("/img/thumbnails/${data.id}-L.webp")`,
+    opacity: `${Math.abs(rotation.x) / 4.5}`,
+    transition: `${smoothTransition ? "1s" : "0s"}`,
+  };
+
   return (
     <div
       className={`card-container ${isImageLoaded ? "fade-in" : ""} ${
@@ -80,6 +86,9 @@ const Card = ({ data, access }) => {
       title={`${data.tagline ? data.tagline : data.title}`}
     >
       <div className="card" style={cardStyle}>
+        {data.lenticular && (
+          <div className="card-lenticular" style={lenticularStyle}></div>
+        )}
         {(data.accessLevel > 0 || data.deck === "Founder's Deck") && (
           <div className="card-holo" style={holoStyle}></div>
         )}

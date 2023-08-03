@@ -118,8 +118,13 @@ function Cards() {
   // This function checks if the focus was outside of the dropdown
   const handleFocusOutside = (event) => {
     const dropdownElement = document.querySelector(".view-tools-dropdown");
+    const sortFilterButton = document.querySelector(".sort-filter");
 
-    if (dropdownElement && !dropdownElement.contains(event.target)) {
+    if (
+      dropdownElement &&
+      !dropdownElement.contains(event.target) &&
+      event.target !== sortFilterButton
+    ) {
       setDropdownVisible(false);
     }
   };
@@ -393,17 +398,36 @@ function Cards() {
                 marginTop: "1rem",
               }}
             >
+              <p>_,.-⚚-.,_</p>
+              <p>✦✧✶✧✦</p>
               <p>
-                Explore BFD Cards – decidedly non-NFT interactive cards offering
-                games, videos, music, art, blogs, and more, to explore and
-                share.
+                🀄 𝕰𝖝𝖕𝖑𝖔𝖗𝖊 Ψ 𝕭𝕱𝕯 𝕮𝖆𝖗𝖉𝖘 ⊕ decidedly 𝖓𝖔𝖓-NFT 🃏 interactive cards
+                offering games🎮, videos🎥, music🎧, art🎨, blogs✍️, and more🔮,
+                to ΣxPlOrE aNd ShArΣ
+              </p>
+              <p>⚡⣿ ⣠⠞⠁⚙⠈⠳⣄ ⣿⚡</p>
+              <p>
+                As a ☽𝝦atreon member☾, not only do you unl🔓ck more{" "}
+                <img src="/img/sig-small.webp" alt="Banjo" title="Banjo" />{" "}
+                content, you also get the chance to 𝓒𝓡𝓔𝓐𝓣𝓔 🛠️ your own cards for
+                the「〒 Community Deck」or, if you're a{" "}
+                <span style={{ color: "#FF0000" }}>h</span>
+                <span style={{ color: "#FF6600" }}>i</span>
+                <span style={{ color: "#FFCC00" }}>g</span>
+                <span style={{ color: "#99CC00" }}>h</span>
+                <span style={{ color: "#33CC00" }}>-</span>
+                <span style={{ color: "#00CCCC" }}>t</span>
+                <span style={{ color: "#0066CC" }}>i</span>
+                <span style={{ color: "#3333CC" }}>e</span>
+                <span style={{ color: "#9900CC" }}>r</span> member, create your
+                own「🏯 Custom Deck.」⌬
               </p>
               <p>
-                As a Patreon member, not only do you unlock more Banjo content,
-                you also get the chance to contribute. Craft your own cards for
-                the Community Deck or, if you're a high-tier member, create your
-                own custom deck.
+                ꧁(✿◠‿◠(◕‿◕)♥‿♥｡)꧂
+                <br />
+                ░▒▓▒▓█▓▒▓▒░
               </p>
+              <p>྾</p>
             </div>
             <div
               style={{
@@ -442,8 +466,7 @@ function Cards() {
         />
         <button
           onClick={() => setDropdownVisible(!dropdownVisible)}
-          className="sort-filter"
-          disabled={dropdownVisible}
+          className={`sort-filter ${dropdownVisible && "disabled"}`}
         >
           <div>
             {viewMode === "search" && "Searching"}
