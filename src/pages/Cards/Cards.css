@@ -614,10 +614,14 @@
   object-fit: contain;
 }
 
+.main-cards .card-rarity.lenticular {
+  background-color: #fff;
+}
+
 .main-cards .card-category {
   background-color: #000;
   position: absolute;
-  bottom: 3.2%;
+  top: 3.2%;
   left: 3.8%;
   width: 1.5rem !important;
   height: 1.5rem;
@@ -642,10 +646,10 @@
 
 .main-cards .card-id {
   position: absolute;
-  bottom: 3.1%;
-  left: 0;
+  top: 3.2%;
+  left: calc(3.8% + 1.5rem);
   width: 100%;
-  text-align: center;
+  text-align: left;
   font-size: 1.2vmin;
   color: #fff;
   opacity: 0.8;
@@ -987,10 +991,15 @@ tbody tr {
 
 .main-cards .deck-icon {
   background-color: #000;
-  border-radius: 0.5vw;
+  border-radius: 0.25vw;
   position: absolute;
   right: 3vmin;
   top: 3vmin;
+  opacity: 0.7;
+}
+
+.main-cards .deck-icon:hover {
+  opacity: 1;
 }
 
 .main-cards .deck-icon img {

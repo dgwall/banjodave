@@ -108,22 +108,17 @@ const Card = ({ data, access }) => {
         )}
         {data.type && data.type !== "Deck" && (
           <>
-            <img
-              src={`/img/icon/${data.icon}.webp`}
-              alt={`${data.icon} icon`}
-              className="card-category"
-            />
             {data.deck === "Founder's Deck" ? (
               <img
                 src="/img/icon/founders.webp"
                 alt="Founder's Deck"
-                className="card-rarity"
+                className="card-category"
               />
             ) : (
               <img
-                src={`/img/cards/bwc-${data.accessLevel}.webp`}
-                alt={`BWC Level ${data.accessLevel}`}
-                className="card-rarity"
+                src={`/img/icon/${data.icon}.webp`}
+                alt={`${data.icon} icon`}
+                className="card-category"
               />
             )}
             <div className="card-id">

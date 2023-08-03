@@ -491,7 +491,7 @@
       }
     ],
     "date": "2023-06-27",
-    "deck": "BWC",
+    "deck": "Banjo Warez Corporation",
     "icon": "bwc",
     "id": "BWCKEY",
     "tagline": ["A mysterious keypad with cursed emojis"],
@@ -512,7 +512,7 @@
   {
     "accessLevel": 0,
     "date": "2023-07-13",
-    "deck": "BWC",
+    "deck": "Banjo Warez Corporation",
     "icon": "bwc",
     "id": "BWCORP",
     "tagline": ["A top-secret shadowy organization"],
@@ -2482,12 +2482,12 @@
       {
         "type": "image",
         "src": "melee-awakening-4.jpg",
-        "alt": "After drinking and karaoke I found my way back to the hotel by using this dome as a reference point. It was a rare night."
+        "alt": "After drinking and karaoke I found my way back to the hotel by using this dome as a reference point."
       },
       {
         "type": "video",
         "src": "melee-awakening-4",
-        "alt": "I think that's Apache in front"
+        "alt": "I think that's Apache in front."
       }
     ],
     "tagline": "Tournament in Zorneding, Germany",
@@ -2677,7 +2677,7 @@
   {
     "accessLevel": 1,
     "date": "2023-07-13",
-    "deck": "BWC",
+    "deck": "Banjo Warez Corporation",
     "icon": "bwc",
     "id": "BWCAL1",
     "tagline": "BWC Public Access",
@@ -3680,7 +3680,7 @@
   {
     "accessLevel": 2,
     "date": "2023-07-13",
-    "deck": "BWC",
+    "deck": "Banjo Warez Corporation",
     "icon": "bwc",
     "id": "BWCAL2",
     "tagline": "BWC Access Level 2",
@@ -4323,7 +4323,7 @@
   {
     "accessLevel": 3,
     "date": "2023-07-13",
-    "deck": "BWC",
+    "deck": "Banjo Warez Corporation",
     "icon": "bwc",
     "id": "BWCAL3",
     "tagline": "BWC Access Level 3",

@@ -229,7 +229,7 @@ const MediaCarousel = ({
               <img
                 src={`/img/cards/bwc-${cardData.accessLevel}.webp`}
                 alt={`BWC Level ${cardData.accessLevel}`}
-                className="card-rarity"
+                className={`card-rarity ${cardData.lenticular && "lenticular"}`}
               />
             )}
           </>

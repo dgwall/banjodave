@@ -16,7 +16,7 @@ import {
 
 const ITEMS_HOMEPAGE = 18;
 const ITEMS_PER_PAGE = 9;
-const ACCESS_LEVEL = 0;
+const ACCESS_LEVEL = 1;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -455,6 +455,19 @@ function Cards() {
                 ⌬
               </p>
               <p>
+                In this preview stage, all users are granted{" "}
+                <span style={{ fontVariant: "small-caps" }}>
+                  <span style={{ color: "#50C878" }}>l</span>
+                  <span style={{ color: "#59C971" }}>v</span>
+                  <span style={{ color: "#63CA6B" }}>l</span>
+                  <span style={{ color: "#6DCC64" }}>1</span>
+                  <span style={{ color: "#78CD5E" }}>o</span>
+                  <span style={{ color: "#82CF57" }}>n</span>
+                  <span style={{ color: "#8CD050" }}>e</span>{" "}
+                  <span style={{ color: "#666666" }}>access</span>
+                </span>
+              </p>
+              <p>
                 ꧁(✿◠‿◠(◕‿◕)♥‿♥｡)꧂
                 <br />
                 ░▒▓▒▓█▓▒▓▒░
@@ -667,6 +680,7 @@ function Cards() {
               setCurrentPage(1);
               setSearchTerm("");
             }}
+            title="Recommended"
           >
             <img src="/img/icon/star.svg" alt="Star" />
           </button>
@@ -679,6 +693,7 @@ function Cards() {
             setCurrentPage(1);
             setSearchTerm("");
           }}
+          title="A-Z categories"
         >
           <img src="/img/icon/archive.svg" alt="icons" />
         </button>
@@ -705,6 +720,7 @@ function Cards() {
             setCurrentPage(1);
             setSearchTerm("");
           }}
+          title="Most recent unlocked cards"
         >
           <img src="/img/icon/time.svg" alt="Clock" />
         </button>
@@ -716,6 +732,7 @@ function Cards() {
             setCurrentPage(1);
             setSearchTerm("");
           }}
+          title="Shuffle all"
         >
           <img src="/img/icon/shuffle.svg" alt="Shuffle" />
         </button>
