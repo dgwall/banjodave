@@ -248,9 +248,9 @@
 
 .main-cards .cards-container .card-container {
   margin-bottom: 0.5vmin;
-  background-color: #c5c5c50a;
+  background-color: #22222288;
   border-radius: 0.5vmin;
-  border: 1px solid #ffffff11;
+  border: 1px solid #cccccc11;
   box-shadow: 0 1px 1px #000;
 }
 
@@ -343,7 +343,7 @@
 }
 
 .main-cards .cards-container .deck-container {
-  background-color: #be996811;
+  background-color: #5f4c3288;
   border-radius: 0.5vmin;
   border: 1px solid #cf964b55;
 }

@@ -647,9 +647,7 @@ function Cards() {
       )}
 
       <div
-        className={`cards-container ${
-          !isSmallScreen && "cards-container-large"
-        }`}
+        className="cards-container cards-container-large"
         role="grid"
       >
         {similarCards.slice(begin, end).map((card, index) => (
@@ -659,11 +657,7 @@ function Cards() {
             tabIndex={0}
             role="gridcell"
           >
-            {isSmallScreen ? (
               <Card data={card} access={ACCESS_LEVEL} />
-            ) : (
-              <Card data={card} access={ACCESS_LEVEL} />
-            )}
           </button>
         ))}
       </div>
