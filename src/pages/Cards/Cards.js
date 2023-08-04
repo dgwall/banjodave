@@ -415,7 +415,7 @@ function Cards() {
                   style={{
                     fontFamily: "monospace",
                     background: "#000",
-                    color: "lightgreen",
+                    color: "#00FFC0",
                   }}
                 >
                   {cards.filter((card) => card.type === "Card").length}
@@ -455,16 +455,35 @@ function Cards() {
                 ⌬
               </p>
               <p>
-                In this preview stage, all users are granted{" "}
-                <span style={{ fontVariant: "small-caps" }}>
-                  <span style={{ color: "#50C878" }}>l</span>
-                  <span style={{ color: "#59C971" }}>v</span>
-                  <span style={{ color: "#63CA6B" }}>l</span>
-                  <span style={{ color: "#6DCC64" }}>1</span>
-                  <span style={{ color: "#78CD5E" }}>o</span>
-                  <span style={{ color: "#82CF57" }}>n</span>
-                  <span style={{ color: "#8CD050" }}>e</span>{" "}
-                  <span style={{ color: "#666666" }}>access</span>
+                <span
+                  style={{
+                    background: "linear-gradient(to left, #DDB7BD, #00FF7F)",
+                    WebkitBackgroundClip: "text",
+                    MozBackgroundClip: "text",
+                    backgroundClip: "text",
+                    color: "transparent",
+                  }}
+                >
+                  <span style={{ fontVariant: "small-caps" }}>
+                    &gt; lvl1one preview access granted{" "}
+                  </span>
+                </span>
+                <span style={{ color: "#666666", fontSize: "smaller" }}>
+                  [
+                  <span
+                    style={{
+                      fontFamily: "monospace",
+                      background: "#000",
+                      color: "#00FFC0",
+                    }}
+                  >
+                    {
+                      cards.filter(
+                        (card) => card.type === "Card" && card.accessLevel <= 1
+                      ).length
+                    }
+                  </span>
+                  x𝕭𝕱𝕯]
                 </span>
               </p>
               <p>
@@ -574,7 +593,7 @@ function Cards() {
             }}
             disabled={groupMode === "card" ? true : false}
           >
-            Cards Only 📄
+            Cards Only 🎴
           </button>
           <button
             value="newest"

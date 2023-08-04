@@ -89,7 +89,8 @@ const Card = ({ data, access }) => {
         {data.lenticular && (
           <div className="card-lenticular" style={lenticularStyle}></div>
         )}
-        {(data.accessLevel > 0 || data.deck === "Founder's Deck") && (
+        {((data.accessLevel > 0 && data.accessLevel <= access) ||
+          data.deck === "Founder's Deck") && (
           <div className="card-holo" style={holoStyle}></div>
         )}
         {data.type && data.type === "Deck" ? (
@@ -98,43 +99,46 @@ const Card = ({ data, access }) => {
             style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
           ></div>
         ) : (
-          <div
-            className={`card-border border-${data.accessLevel}`}
-            style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
-          ></div>
-        )}
-        {data.accessLevel > 0 && data.accessLevel > access && (
-          <div className={`card-locked locked-${data.accessLevel}`}></div>
-        )}
-        {data.type && data.type !== "Deck" && (
           <>
-            {data.deck === "Founder's Deck" ? (
-              <img
-                src="/img/icon/founders.webp"
-                alt="Founder's Deck"
-                className="card-category"
-              />
+            {data.accessLevel > 0 && data.accessLevel > access ? (
+              <div className={`card-locked locked-${data.accessLevel}`}></div>
             ) : (
-              <img
-                src={`/img/icon/${data.icon}.webp`}
-                alt={`${data.icon} icon`}
-                className="card-category"
-              />
+              <div
+                className={`card-border border-${data.accessLevel}`}
+                style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
+              ></div>
             )}
-            <div className="card-id">
-              <span>
-                {data.date.substring(0, 4)}-{data.id}
-              </span>
-            </div>
           </>
         )}
+        {data.type &&
+          data.type !== "Deck" &&
+          data.deck === "Founder's Deck" && (
+            <img
+              src="/img/icon/founders.webp"
+              alt="Founder's Deck"
+              className="card-category"
+            />
+          )}
       </div>
       <div
         className={`card-caption caption-${data.accessLevel} ${
           data.type === "Deck" && "deck-caption"
         }`}
       >
-        {data.title}
+        {data.type === "Deck" ? (
+          <img
+            src={`/img/icon/deck.webp`}
+            alt={`Deck icon`}
+            className="card-category-title"
+          />
+        ) : (
+          <img
+            src={`/img/icon/${data.icon}.webp`}
+            alt={`${data.icon} icon`}
+            className="card-category-title"
+          />
+        )}
+        <div>{data.title}</div>
       </div>
     </div>
   );

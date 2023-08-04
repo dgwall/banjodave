@@ -2039,7 +2039,7 @@
   {
     "accessLevel": 0,
     "date": "2022-11-23",
-    "deck": "Nonsense",
+    "deck": "Melee",
     "icon": "image",
     "id": "NSHGCG",
     "lenticular": true,
@@ -2765,7 +2765,7 @@
   {
     "accessLevel": 1,
     "date": "2005-03-20",
-    "deck": "Archived",
+    "deck": "Physical Art",
     "icon": "art",
     "id": "DAASPA",
     "media": [
@@ -3728,7 +3728,7 @@
   {
     "accessLevel": 2,
     "date": "2005-05-11",
-    "deck": "Archived",
+    "deck": "Digital Art",
     "icon": "art-digital",
     "id": "DAAOPT",
     "tagline": "The 18 year long collab",
@@ -4588,7 +4588,7 @@
     "accessLevel": 1,
     "date": "2022-11-02",
     "deck": "Gameplay",
-    "icon": "game",
+    "icon": "gameplay",
     "id": "GPVALO",
     "tags": ["valorant", "clips", "meme", "gameplay", "youtube", "playlist"],
     "text": [
@@ -4608,7 +4608,7 @@
   {
     "accessLevel": 1,
     "date": "2021-08-01",
-    "deck": "Digital Art",
+    "deck": "Animation",
     "icon": "art-digital",
     "id": "DARAPP",
     "lenticular": true,
@@ -4634,7 +4634,7 @@
   {
     "accessLevel": 1,
     "date": "2021-01-07",
-    "deck": "Digital Art",
+    "deck": "Animation",
     "icon": "art-digital",
     "lenticular": true,
     "id": "DADEGE",
@@ -4661,7 +4661,7 @@
   {
     "accessLevel": 1,
     "date": "2019-09-24",
-    "deck": "Digital Art",
+    "deck": "Animation",
     "icon": "art-digital",
     "id": "DARAFI",
     "tags": [

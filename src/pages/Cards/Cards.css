@@ -328,10 +328,18 @@
   width: 100%;
   opacity: 0.8;
   transition: 1s;
+  text-shadow: 0 -1px 0 black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.main-cards .card-caption div {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  text-shadow: 0 -1px 0 black;
+  text-align: right;
+  width: 100%;
 }
 
 .main-cards .cards-container .deck-container {
@@ -629,6 +637,18 @@
   max-height: 32px;
   padding: 2px;
   object-fit: contain;
+}
+
+.main-cards .card-category-title {
+  display: inline-block;
+  width: 4vmin !important;
+  height: 4vmin;
+  max-width: 24px;
+  max-height: 24px;
+  margin-right: 0.6vmin;
+  object-fit: contain;
+  z-index: -1;
+  opacity: 0.6;
 }
 
 .main-cards .card-deck {
