@@ -79,7 +79,7 @@ const Card = ({ data, access }) => {
     <div
       className={`card-container ${isImageLoaded ? "fade-in" : ""} ${
         data.type === "Deck" && "deck-container"
-      }`}
+      } ${data.accessLevel > access && "container-lock"}`}
       onMouseEnter={handleMouseEnter}
       onMouseMove={handleMouseMove}
       onMouseLeave={resetRotation}
@@ -116,7 +116,7 @@ const Card = ({ data, access }) => {
             <img
               src="/img/icon/founders.webp"
               alt="Founder's Deck"
-              className="card-category"
+              className="card-rarity"
             />
           )}
       </div>

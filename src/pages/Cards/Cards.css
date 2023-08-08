@@ -23,11 +23,17 @@
 }
 
 .main-cards .tag {
+  display: inline-block;
   cursor: pointer;
+  border: 1px solid white;
+  padding: 0.1rem;
+  margin: 0.1rem;
+  border-radius: 0.25rem;
+  opacity: 0.5;
 }
 
 .main-cards .tag:hover {
-  text-decoration: underline;
+  opacity: 1;
 }
 
 .main-cards .view-buttons {
@@ -177,6 +183,10 @@
   border-radius: 1vmin;
   cursor: pointer;
   border: 1px solid transparent;
+}
+
+.main-cards .container-lock {
+  filter: opacity(20%);
 }
 
 .main-cards .carousel-container {
@@ -345,12 +355,22 @@
 .main-cards .cards-container .deck-container {
   background-color: #5f4c3288;
   border-radius: 0.5vmin;
-  border: 1px solid #cf964b55;
+  border: 2px solid #cf964b55;
+}
+
+.main-cards .deck-container .border-deck {
+  border-radius: 0 0% 0 0;
+  border-top: 1px solid #ffffff00;
+}
+
+.main-cards .deck-container:hover .border-deck {
+  border-radius: 0 100% 0 0;
+  border-top: 1px solid #ffffff88;
 }
 
 .main-cards .cards-container .deck-container:hover {
   background-color: #dfbb8c27;
-  border: 1px solid #dbc8af55;
+  border: 2px solid #dbc8af55;
 }
 
 .main-cards .deck-container .deck-caption {

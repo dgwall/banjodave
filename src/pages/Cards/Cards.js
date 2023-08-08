@@ -12,6 +12,7 @@ import {
   searchCards,
   getTopTags,
   getDeckId,
+  getRandomTags,
 } from "../../components/menus/CardService";
 
 const ITEMS_HOMEPAGE = 18;
@@ -430,7 +431,7 @@ function Cards() {
                 <span style={{ fontSize: "x-small" }}>(coming soon™)</span>, not
                 only do you unl🔓ck more{" "}
                 <img src="/img/sig-small.webp" alt="Banjo" title="Banjo" />{" "}
-                content, you also get the chance to 𝓒𝓡𝓔𝓐𝓣𝓔 🛠️ your own cards for
+                content, you also get the chance to 𝓒𝓡𝓐𝓕𝓣 🛠️ your own cards for
                 the
                 <span style={{ fontVariant: "small-caps" }}>
                   「〒 Community Deck」
@@ -507,7 +508,7 @@ function Cards() {
                   <span className="tag" onClick={() => setSearchTerm(tag.name)}>
                     {tag.name}
                   </span>
-                  {index === topTags.length - 1 ? "..." : ", "}
+                  {index === topTags.length - 1 && "..."}
                 </span>
               ))}
             </div>
@@ -524,7 +525,7 @@ function Cards() {
           onKeyDown={handleSearchKeyPress}
           onFocus={handleSearchFocus}
           onBlur={handleSearchBlur}
-          placeholder="🔎 Search..."
+          placeholder={`🔎 Search... (e.g. ${getRandomTags(cards)})`}
           ref={searchInputRef}
           aria-label="Search"
         />
@@ -713,12 +714,6 @@ function Cards() {
         </button>
         {selectedCard && (
           <div className="page-number">
-            <img
-              src="/img/icon/zap.svg"
-              alt="icons"
-              style={{ filter: "invert(100%)", paddingRight: "0.5rem" }}
-            />
-            Quick Links
             <img
               src="/img/icon/zap.svg"
               alt="icons"

@@ -107,7 +107,7 @@ export function getTopTags(cards) {
   const tagCounts = {};
 
   cards.forEach((card) => {
-    if (card.tags) {
+    if (card.tags && card.accessLevel === 0) {
       card.tags.forEach((tag) => {
         tagCounts[tag] = (tagCounts[tag] || 0) + 1;
       });
@@ -118,7 +118,7 @@ export function getTopTags(cards) {
 
   const topTags = tagCountsArray
     .sort((a, b) => b[1] - a[1])
-    .slice(0, 50)
+    .slice(0, 30)
     .map(([name, count]) => ({ name, count })); // Keep track of tag name and count
 
   return topTags;
@@ -127,4 +127,26 @@ export function getTopTags(cards) {
 export function getDeckId(cards, title) {
   const card = cards.find((card) => card.title === title);
   return card ? card.id : null;
+}
+
+export function getRandomTags(cards) {
+  const allTags = [];
+
+  // Collect all tags from cards and convert them to lowercase
+  cards.forEach((card) => {
+    if (card.tags) {
+      allTags.push(...card.tags.map((tag) => tag.toLowerCase()));
+    }
+  });
+
+  // Remove duplicates (since converting to lowercase might cause some tags to become identical)
+  const uniqueTags = Array.from(new Set(allTags));
+
+  // Shuffle all unique tags
+  const shuffledTags = shuffleArray(uniqueTags);
+
+  // Select first 5 tags from shuffled array
+  const selectedTags = shuffledTags.slice(0, 5);
+
+  return selectedTags.join(", ");
 }
