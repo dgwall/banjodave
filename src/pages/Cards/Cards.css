@@ -34,6 +34,8 @@
 
 .main-cards .tag:hover {
   opacity: 1;
+  background-color: white;
+  color: #000;
 }
 
 .main-cards .view-buttons {
@@ -353,19 +355,13 @@
 }
 
 .main-cards .cards-container .deck-container {
-  background-color: #5f4c3288;
+  background: radial-gradient(circle at bottom, #8a6c428e, #5f4c3288 50%);
   border-radius: 0.5vmin;
   border: 2px solid #cf964b55;
 }
 
-.main-cards .deck-container .border-deck {
-  border-radius: 0 0% 0 0;
-  border-top: 1px solid #ffffff00;
-}
-
-.main-cards .deck-container:hover .border-deck {
-  border-radius: 0 100% 0 0;
-  border-top: 1px solid #ffffff88;
+.main-cards .card-container .border-deck {
+  border-top: 2px solid #ffffff88;
 }
 
 .main-cards .cards-container .deck-container:hover {

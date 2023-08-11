@@ -103,11 +103,11 @@ export async function fetchCards(accessLevel) {
 }
 
 // Tag cloud
-export function getTopTags(cards) {
+export function getTopTags(cards, access) {
   const tagCounts = {};
 
   cards.forEach((card) => {
-    if (card.tags && card.accessLevel === 0) {
+    if (card.tags && card.accessLevel <= access) {
       card.tags.forEach((tag) => {
         tagCounts[tag] = (tagCounts[tag] || 0) + 1;
       });
@@ -129,13 +129,14 @@ export function getDeckId(cards, title) {
   return card ? card.id : null;
 }
 
-export function getRandomTags(cards) {
+export function getRandomTags(cards, access) {
   const allTags = [];
 
   // Collect all tags from cards and convert them to lowercase
   cards.forEach((card) => {
-    if (card.tags) {
+    if (card.tags && card.accessLevel <= access) {
       allTags.push(...card.tags.map((tag) => tag.toLowerCase()));
+      allTags.push(card.title.toLowerCase());
     }
   });
 
@@ -146,7 +147,7 @@ export function getRandomTags(cards) {
   const shuffledTags = shuffleArray(uniqueTags);
 
   // Select first 5 tags from shuffled array
-  const selectedTags = shuffledTags.slice(0, 5);
+  const selectedTags = shuffledTags.slice(0, 15);
 
   return selectedTags.join(", ");
 }

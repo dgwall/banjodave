@@ -64,6 +64,7 @@ const MediaCarousel = ({
   cardStyle,
   holoStyle,
   lenticularStyle,
+  borderDeckStyle,
 }) => {
   // Use React useState hook to keep track of currently active slide
   const [activeIndex, setActiveIndex] = useState(0);
@@ -192,7 +193,7 @@ const MediaCarousel = ({
         {cardData.type && cardData.type === "Deck" ? (
           <div
             className={`card-border border-deck`}
-            style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
+            style={borderDeckStyle}
           ></div>
         ) : (
           <div

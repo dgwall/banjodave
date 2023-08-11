@@ -45,22 +45,35 @@ const Card = ({ data, access }) => {
   // Calculating styles
   const cardStyle = {
     backgroundImage: `url("/img/thumbnails/${data.id}.webp")`,
-    filter: `invert(${Math.abs(rotation.x) / 100}) brightness(${
-      1 + (Math.abs(rotation.x) + rotation.y) / 30
-    })`,
-    transform: `scale(${
-      !smoothTransition ? (data.type === "Deck" ? "1.01" : "1.1") : "1"
-    }) rotateY(${rotation.x}deg) rotateX(${rotation.y}deg)`,
+    filter: `${
+      data.type !== "Deck" &&
+      `invert(${Math.abs(rotation.x) / 100}) brightness(${
+        1 + (Math.abs(rotation.x) + rotation.y) / 30
+      })`
+    }`,
+    transform: `${
+      data.type !== "Deck" &&
+      `scale(${
+        !smoothTransition ? (data.type === "Deck" ? "1.01" : "1.1") : "1"
+      }) rotateY(${rotation.x}deg) rotateX(${rotation.y}deg)`
+    }`,
     transition: `${smoothTransition ? "1s" : "0s"}`,
-    boxShadow: `${-rotation.x / 20}rem ${rotation.y / 20}rem ${
-      ((Math.abs(rotation.x) / 20 + Math.abs(rotation.y) / 20) / 2) * 5
-    }rem rgba(0, 0, 0, 0.75)`,
+    boxShadow: `${
+      data.type !== "Deck" &&
+      `${-rotation.x / 20}rem ${rotation.y / 20}rem ${
+        ((Math.abs(rotation.x) / 20 + Math.abs(rotation.y) / 20) / 2) * 5
+      }rem rgba(0, 0, 0, 0.75)`
+    }`,
     borderRadius: `${data.type === "Deck" ? "0.5vmin" : "1.5vmin"}`,
   };
 
   const holoStyle = {
     backgroundImage: `url("/img/cards/holo-${
-      data.deck === "Founder's Deck" ? "c" : data.accessLevel
+      data.type !== "Deck"
+        ? data.deck === "Founder's Deck"
+          ? "c"
+          : data.accessLevel
+        : ""
     }.webp")`,
     backgroundPositionX: `${(rotation.x / 10) * 15}%`,
     backgroundPositionY: `${(-rotation.y / 10) * 15}%`,
@@ -73,6 +86,18 @@ const Card = ({ data, access }) => {
     backgroundImage: `url("/img/thumbnails/${data.id}-L.webp")`,
     opacity: `${Math.abs(rotation.x) / 4.5}`,
     transition: `${smoothTransition ? "1s" : "0s"}`,
+  };
+
+  const borderDeckStyle = {
+    transform: `translateY(${Math.max(0, -rotation.y * 165)}% )`,
+    transition: `${smoothTransition ? "1s" : "0s"}`,
+    borderRadius: `${Math.max(
+      0,
+      ((rotation.x * 2 + -rotation.y / 2) / 3) * 60
+    )}% ${Math.max(0, ((-rotation.x * 2 + -rotation.y / 2) / 3) * 60)}% 0 0`,
+    boxShadow: `0 0 ${-rotation.y}rem #00000066`,
+    height: `${100 - Math.max(0, Math.min(40, -rotation.y * 100))}%`,
+    opacity: `${(rotation.y + 1.1) / 1.2}`,
   };
 
   return (
@@ -96,7 +121,7 @@ const Card = ({ data, access }) => {
         {data.type && data.type === "Deck" ? (
           <div
             className={`card-border border-deck`}
-            style={{ transition: `${smoothTransition ? "1s" : "0s"}` }}
+            style={borderDeckStyle}
           ></div>
         ) : (
           <>

@@ -99,7 +99,7 @@ function Cards() {
 
   const searchInputRef = useRef(null);
 
-  const topTags = getTopTags(cards);
+  const topTags = getTopTags(cards, ACCESS_LEVEL);
 
   useEffect(() => {
     let searchInterval;
@@ -396,7 +396,7 @@ function Cards() {
       ) : (
         <>
           <header role="banner">
-            <h1>Banjeetz × BFD Preview</h1>
+            <h1>Banjeetz × 𝕭𝕱𝕯 Preview</h1>
             <h2>Digital Content Holo-Cards (Under Construction)</h2>
           </header>
           <main role="main">
@@ -502,13 +502,15 @@ function Cards() {
                 marginTop: "1rem",
               }}
             >
-              Top tags:{" "}
+              Top tags
+              <br />
               {topTags.map((tag, index) => (
-                <span key={tag.name}>
-                  <span className="tag" onClick={() => setSearchTerm(tag.name)}>
-                    {tag.name}
-                  </span>
-                  {index === topTags.length - 1 && "..."}
+                <span
+                  key={tag.name}
+                  className="tag"
+                  onClick={() => setSearchTerm(tag.name)}
+                >
+                  {tag.name}
                 </span>
               ))}
             </div>
@@ -525,7 +527,7 @@ function Cards() {
           onKeyDown={handleSearchKeyPress}
           onFocus={handleSearchFocus}
           onBlur={handleSearchBlur}
-          placeholder={`🔎 Search... (e.g. ${getRandomTags(cards)})`}
+          placeholder={`🔎 Search (e.g. ${getRandomTags(cards, ACCESS_LEVEL)})`}
           ref={searchInputRef}
           aria-label="Search"
         />

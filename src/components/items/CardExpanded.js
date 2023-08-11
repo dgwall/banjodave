@@ -130,6 +130,18 @@ const CardExpanded = ({ data, access, deck, parentDeck }) => {
     transition: `${smoothTransition ? "1s" : "0s"}`,
   };
 
+  const borderDeckStyle = {
+    transform: `translateY(${Math.max(0, -rotation.y * 165)}% )`,
+    transition: `${smoothTransition ? "1s" : "0s"}`,
+    borderRadius: `${Math.max(
+      0,
+      ((rotation.x * 2 + -rotation.y / 2) / 3) * 60
+    )}% ${Math.max(0, ((-rotation.x * 2 + -rotation.y / 2) / 3) * 60)}% 0 0`,
+    boxShadow: `0 0 ${-rotation.y}rem #00000066`,
+    height: `${100 - Math.max(0, Math.min(40, -rotation.y * 100))}%`,
+    opacity: `${(rotation.y + 1.1) / 1.2}`,
+  };
+
   const copyToClipboard = async (text) => {
     if (navigator.clipboard) {
       try {
@@ -175,6 +187,7 @@ const CardExpanded = ({ data, access, deck, parentDeck }) => {
           cardStyle={cardStyle}
           holoStyle={holoStyle}
           lenticularStyle={lenticularStyle}
+          borderDeckStyle={borderDeckStyle}
         />
       </div>
 

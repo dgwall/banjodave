@@ -6,10 +6,10 @@ export const menuItems = [
     text: "Home",
   },
   {
-    path: "/0dgames",
-    label: "Play 0DGames",
-    text: "0DGames",
-    icon: "0d",
+    path: "/bfd",
+    label: "Banjeetz × 𝕭𝕱𝕯",
+    text: "Banjeetz × 𝕭𝕱𝕯",
+    icon: "bwc",
     move: true,
   },
   {
@@ -27,10 +27,10 @@ export const menuItems = [
     move: true,
   },
   {
-    path: "/bfd",
-    label: "Banjeetz x BFD",
-    text: "Banjeetz x BFD",
-    icon: "bwc",
+    path: "/0dgames",
+    label: "Play 0DGames",
+    text: "0DGames",
+    icon: "0d",
     move: false,
   },
   {
