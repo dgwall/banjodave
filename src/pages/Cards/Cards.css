@@ -354,6 +354,13 @@
   width: 100%;
 }
 
+.view-buttons.quick-links button {
+  flex-direction: column;
+}
+.view-buttons.quick-links button div {
+  font-size: xx-small;
+}
+
 .main-cards .cards-container .deck-container {
   background: radial-gradient(circle at bottom, #8a6c428e, #5f4c3288 50%);
   border-radius: 0.5vmin;

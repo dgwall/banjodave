@@ -677,7 +677,7 @@ function Cards() {
         error={errorMessage}
       />
 
-      <nav className="view-buttons">
+      <nav className="view-buttons quick-links">
         {!selectedCard && (
           <div className="page-number">
             <img
@@ -700,6 +700,7 @@ function Cards() {
             title="Recommended"
           >
             <img src="/img/icon/star.svg" alt="Star" />
+            {!isSmallScreen && <div>Recommended</div>}
           </button>
         )}
         <button
@@ -713,6 +714,7 @@ function Cards() {
           title="A-Z categories"
         >
           <img src="/img/icon/archive.svg" alt="icons" />
+          {!isSmallScreen && <div>A-Z categories</div>}
         </button>
         {selectedCard && (
           <div className="page-number">
@@ -734,6 +736,7 @@ function Cards() {
           title="Most recent unlocked cards"
         >
           <img src="/img/icon/time.svg" alt="Clock" />
+          {!isSmallScreen && <div>Recently available</div>}
         </button>
         <button
           onClick={() => {
@@ -746,6 +749,7 @@ function Cards() {
           title="Shuffle all"
         >
           <img src="/img/icon/shuffle.svg" alt="Shuffle" />
+          {!isSmallScreen && <div>Shuffle all</div>}
         </button>
       </nav>
     </>

@@ -89,15 +89,15 @@ const Card = ({ data, access }) => {
   };
 
   const borderDeckStyle = {
-    transform: `translateY(${Math.max(0, -rotation.y * 165)}% )`,
     transition: `${smoothTransition ? "1s" : "0s"}`,
-    borderRadius: `${Math.max(
-      0,
-      ((rotation.x * 2 + -rotation.y / 2) / 3) * 60
-    )}% ${Math.max(0, ((-rotation.x * 2 + -rotation.y / 2) / 3) * 60)}% 0 0`,
-    boxShadow: `0 0 ${-rotation.y}rem #00000066`,
-    height: `${100 - Math.max(0, Math.min(40, -rotation.y * 100))}%`,
-    opacity: `${(rotation.y + 1.1) / 1.2}`,
+    borderRadius: `
+    ${Math.max(0, ((rotation.x - rotation.y) / 2) * 60)}%
+    ${Math.max(0, ((-rotation.x - rotation.y) / 2) * 60)}%
+    ${Math.max(0, ((-rotation.x + rotation.y) / 2) * 50)}%
+    ${Math.max(0, ((rotation.x + rotation.y) / 2) * 50)}%`,
+    boxShadow: `0 0 ${
+      (Math.abs(rotation.x) + Math.abs(rotation.y)) / 2
+    }rem #00000066`,
   };
 
   return (
