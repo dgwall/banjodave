@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 //import { Link } from "react-router-dom";
 import "./BWC.css";
+import { Helmet } from "react-helmet";
 
 const correctSequence = [216, 216, 72, 180];
 
@@ -106,7 +107,7 @@ const AccessScreen = ({ access, accessLabel, secretCode }) => (
               Congratulations on figuring out the password, bypassing security
               protocol, or finding the GitHub!
               <br />
-              The first three people to send secret code{" "}
+              The first three people to send secret code:{" "}
               <u className="sEcUrItY"> {secretCode} </u> to BanjoDave will
               receive a BWC Black Keycard granting free LVL3 Access for life.
             </p>
@@ -344,6 +345,9 @@ function EmojiPassword() {
 
   return (
     <>
+      <Helmet>
+        <title>BWC Special Access Device</title>
+      </Helmet>
       {access === 3 ? (
         <AccessScreen
           access="3"

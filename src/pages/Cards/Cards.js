@@ -81,7 +81,7 @@ function PaginationButtons({
 function Cards() {
   const [cards, setCards] = useState([]);
   const [isShowingRestrictedCards, setIsShowingRestrictedCards] =
-    useState(true);
+    useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const [totalPages, setTotalPages] = useState(0);
   const [selectedCard, setSelectedCard] = useState(null);
@@ -96,6 +96,7 @@ function Cards() {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const [errorMessage, setErrorMessage] = useState(null);
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 1280);
+  const [searchSuggestions, setSearchSuggestions] = useState("");
 
   const searchInputRef = useRef(null);
 
@@ -196,6 +197,7 @@ function Cards() {
   // sort the cards when viewMode changes
   useEffect(() => {
     const sortedCards = sortCards(cards, viewMode, selectedCard, searchTerm);
+    setSearchSuggestions(getRandomTags(cards, ACCESS_LEVEL));
     setSimilarCards(sortedCards);
     setCurrentPage(1);
     if (selectedCard) {
@@ -348,7 +350,7 @@ function Cards() {
   return (
     <>
       <Helmet>
-        {selectedCard && (
+        {selectedCard ? (
           <>
             <title>{`BFD ${selectedCard?.title}`}</title>
             <meta content="BanjoDave.com" property="og:site_name" />
@@ -368,6 +370,8 @@ function Cards() {
             <meta property="og:description" content={selectedCard?.tagline} />
             <meta name="theme-color" content={selectedTheme?.hl} />
           </>
+        ) : (
+          <title>Banjeetz x BFD Holo-Cards</title>
         )}
       </Helmet>
 
@@ -407,6 +411,7 @@ function Cards() {
                 marginTop: "1rem",
                 fontSize: "large",
               }}
+              className="overview"
             >
               <p>_,.-⚚-.,_</p>
               <p>✦✧✶✧✦</p>
@@ -421,18 +426,23 @@ function Cards() {
                 >
                   {cards.filter((card) => card.type === "Card").length}
                 </span>{" "}
-                decidedly 𝖓𝖔𝖓-NFT 🃏 interactive cards offering games🎮,
-                videos🎥, music🎧, art🎨, blogs✍️, and more🔮, to ΣxPlOrE aNd
-                ShArΣ
+                decidedly <span>𝖓𝖔𝖓-NFT</span> 🃏 interactive cards offering{" "}
+                <span>games🎮</span>, <span>videos🎥</span>,{" "}
+                <span>music🎧</span>, <span>art🎨</span>, <span>blogs✍️</span>,
+                and
+                <span>more🔮</span>, to <span>ΣxPlOrE aNd ShArΣ</span>
               </p>
               <p>⚡⣿ ⣠⠞⠁⚙⠈⠳⣄ ⣿⚡</p>
               <p>
-                As a <s>☽𝝦atreon member☾</s>{" "}
+                As a{" "}
+                <span>
+                  ☽<s>𝝦atreon member</s>☾
+                </span>{" "}
                 <span style={{ fontSize: "x-small" }}>(coming soon™)</span>, not
-                only do you unl🔓ck more{" "}
+                only do you <span>unl🔓ck</span> more{" "}
                 <img src="/img/sig-small.webp" alt="Banjo" title="Banjo" />{" "}
-                content, you also get the chance to 𝓒𝓡𝓐𝓕𝓣 🛠️ your own cards for
-                the
+                content, you also get the chance to <span>𝓒𝓡𝓐𝓕𝓣 🛠️</span> your
+                own cards for the
                 <span style={{ fontVariant: "small-caps" }}>
                   「〒 Community Deck」
                 </span>
@@ -527,7 +537,7 @@ function Cards() {
           onKeyDown={handleSearchKeyPress}
           onFocus={handleSearchFocus}
           onBlur={handleSearchBlur}
-          placeholder={`🔎 Search (e.g. ${getRandomTags(cards, ACCESS_LEVEL)})`}
+          placeholder={`🔎 Search (e.g. ${searchSuggestions})`}
           ref={searchInputRef}
           aria-label="Search"
         />

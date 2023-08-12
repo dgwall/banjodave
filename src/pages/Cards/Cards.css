@@ -329,6 +329,10 @@
   color: #fff;
 }
 
+.main-cards .overview span {
+  white-space: nowrap;
+}
+
 .main-cards .card-container .card-caption {
   padding: 0.6vmin 0;
   margin-top: 0.4vmin;

@@ -4,6 +4,7 @@ import "./Doom.css";
 //import ScreenshotsCarousel from "../../components/modals/ScreenshotsCarousel";
 import gargoyleA from "../../assets/images/doom/icon-1.webp";
 import gargoyleB from "../../assets/images/doom/icon-2.webp";
+import { Helmet } from "react-helmet";
 
 function Doom() {
   const [cards, setCards] = useState([
@@ -64,142 +65,148 @@ function Doom() {
   }
 
   return (
-    <section>
-      <header>
-        <nav>
-          <a href="#more">Selected Maps</a>&bull;
-          <a href="#starlit-abyss">Starlit Abyss</a>
-        </nav>
-        <h1>BanjoDOOM</h1>
-      </header>
-      <img
-        srcSet="
+    <>
+      <Helmet>
+        <title>BanjoDOOM</title>
+      </Helmet>
+      <section>
+        <header>
+          <nav>
+            <a href="#more">Selected Maps</a>&bull;
+            <a href="#starlit-abyss">Starlit Abyss</a>
+          </nav>
+          <h1>BanjoDOOM</h1>
+        </header>
+        <img
+          srcSet="
       /img/doom/banner-min.jpg 768w,
       /img/doom/banner.png 1280w"
-        sizes="(max-width: 768px) 768px, 1280px"
-        src="/img/doom/banner.png"
-        alt="Screenshot of Blazing Beachhead"
-        className="banner"
-        loading="lazy"
-      />
-      <div className="container">
-        <article id="more">
-          <h2>
-            <img src={gargoyleB} alt="Satyr Gargoyle" loading="lazy" />
-            <div>
-              Selected Maps
-              <br />
-              <span>From Various Projects</span>
-            </div>
-          </h2>
-          <div className="doom-cards">
-            {cards.map((card) => (
-              <div
-                className="card"
-                id={card.id}
-                key={card.id}
-                style={{
-                  backgroundImage: `linear-gradient(to bottom, transparent, transparent 66.6%, black), url('/img/doom/card-${card.id}.jpg')`,
-                }}
-                onMouseEnter={() => handleMouseEnter(card.id)}
-                onMouseLeave={() => handleMouseLeave(card.id)}
-              >
-                <div className="video-dimmer"></div>
+          sizes="(max-width: 768px) 768px, 1280px"
+          src="/img/doom/banner.png"
+          alt="Screenshot of Blazing Beachhead"
+          className="banner"
+          loading="lazy"
+        />
+        <div className="container">
+          <article id="more">
+            <h2>
+              <img src={gargoyleB} alt="Satyr Gargoyle" loading="lazy" />
+              <div>
+                Selected Maps
+                <br />
+                <span>From Various Projects</span>
+              </div>
+            </h2>
+            <div className="doom-cards">
+              {cards.map((card) => (
                 <div
-                  className={`card-video ${card.hover ? "video-active" : ""}`}
+                  className="card"
+                  id={card.id}
+                  key={card.id}
+                  style={{
+                    backgroundImage: `linear-gradient(to bottom, transparent, transparent 66.6%, black), url('/img/doom/card-${card.id}.jpg')`,
+                  }}
+                  onMouseEnter={() => handleMouseEnter(card.id)}
+                  onMouseLeave={() => handleMouseLeave(card.id)}
                 >
-                  {card.videoLoaded && (
-                    <video
-                      src={`/vid/doom/${card.id}.webm`}
-                      muted
-                      loop
-                      autoPlay
-                      playsInline
-                    >
-                      <img src="/img/orb_small.gif" alt="loading..." />
-                    </video>
-                  )}
+                  <div className="video-dimmer"></div>
+                  <div
+                    className={`card-video ${card.hover ? "video-active" : ""}`}
+                  >
+                    {card.videoLoaded && (
+                      <video
+                        src={`/vid/doom/${card.id}.webm`}
+                        muted
+                        loop
+                        autoPlay
+                        playsInline
+                      >
+                        <img src="/img/orb_small.gif" alt="loading..." />
+                      </video>
+                    )}
+                  </div>
+                  <div className="card-container">
+                    <h3>{card.title}</h3>
+                    {card.requirements && (
+                      <p className="card-requirements">{card.requirements}</p>
+                    )}
+                    <p className="desc">{card.desc}</p>
+                    {card.downloadLabel ? (
+                      <a href={card.href} title={card.downloadLabel} download>
+                        <button>{card.buttonLabel}</button>
+                      </a>
+                    ) : (
+                      <a href={card.href} target="_blank" rel="noreferrer">
+                        <button>{card.buttonLabel}</button>
+                      </a>
+                    )}
+                  </div>
                 </div>
-                <div className="card-container">
-                  <h3>{card.title}</h3>
-                  {card.requirements && (
-                    <p className="card-requirements">{card.requirements}</p>
-                  )}
-                  <p className="desc">{card.desc}</p>
-                  {card.downloadLabel ? (
-                    <a href={card.href} title={card.downloadLabel} download>
-                      <button>{card.buttonLabel}</button>
-                    </a>
-                  ) : (
-                    <a href={card.href} target="_blank" rel="noreferrer">
-                      <button>{card.buttonLabel}</button>
-                    </a>
-                  )}
+              ))}
+
+              <p className="more-desc">DOOM2.WAD required</p>
+            </div>
+          </article>
+
+          <article id="starlit-abyss">
+            <h2>
+              <img src={gargoyleA} alt="Lion Gargoyle" loading="lazy" />
+              <div>
+                Starlit Abyss
+                <br />
+                <span>Ultimate DOOM Episode</span>
+              </div>
+            </h2>
+            <div className="feature">
+              <div>
+                <p>
+                  Ready to dance with demons on the edge of the Starlit Abyss?
+                  This 9-map Ultimate DOOM episode is set to blast onto the
+                  scene, seething with infernal fiends, scorching hellfire, and
+                  enough firepower to make a Cyberdemon blush. While the full
+                  release will be yours to wreak havoc with for free, the brave
+                  souls who can't resist an early foray into the abyss can
+                  subscribe to the{" "}
+                  <Link to="/thank-you" className="under-construction">
+                    BanjoDave Patreon
+                  </Link>
+                  , granting you exclusive access to individual maps as they
+                  roll hot off the anvil. I will also be posting regular
+                  development updates to my{" "}
+                  <a
+                    href="https://www.twitter.com/banjeetz"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Twitter
+                  </a>
+                  . The abyss beckons... are you ready to answer its call?
+                </p>
+                <p className="p-desc">DOOM.WAD required</p>
+                <div className="dev-progress">
+                  <ul>
+                    <li>
+                      <b>Development</b>
+                    </li>
+                    <li>E1M1: Deep Space Telemetry [IN PROGRESS]</li>
+                    <li>
+                      E1M2: Eldritch Nexus of the Eternal Furnace [COMING SOON]
+                    </li>
+                    <li>E1M3: [TBA]</li>
+                  </ul>
                 </div>
               </div>
-            ))}
-
-            <p className="more-desc">DOOM2.WAD required</p>
-          </div>
-        </article>
-
-        <article id="starlit-abyss">
-          <h2>
-            <img src={gargoyleA} alt="Lion Gargoyle" loading="lazy" />
-            <div>
-              Starlit Abyss
-              <br />
-              <span>Ultimate DOOM Episode</span>
             </div>
-          </h2>
-          <div className="feature">
-            <div>
-              <p>
-                Ready to dance with demons on the edge of the Starlit Abyss?
-                This 9-map Ultimate DOOM episode is set to blast onto the scene,
-                seething with infernal fiends, scorching hellfire, and enough
-                firepower to make a Cyberdemon blush. While the full release
-                will be yours to wreak havoc with for free, the brave souls who
-                can't resist an early foray into the abyss can subscribe to the{" "}
-                <Link to="/thank-you" className="under-construction">
-                  BanjoDave Patreon
-                </Link>
-                , granting you exclusive access to individual maps as they roll
-                hot off the anvil. I will also be posting regular development
-                updates to my{" "}
-                <a
-                  href="https://www.twitter.com/banjeetz"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Twitter
-                </a>
-                . The abyss beckons... are you ready to answer its call?
-              </p>
-              <p className="p-desc">DOOM.WAD required</p>
-              <div className="dev-progress">
-                <ul>
-                  <li>
-                    <b>Development</b>
-                  </li>
-                  <li>E1M1: Deep Space Telemetry [IN PROGRESS]</li>
-                  <li>
-                    E1M2: Eldritch Nexus of the Eternal Furnace [COMING SOON]
-                  </li>
-                  <li>E1M3: [TBA]</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          {/*
+            {/*
           <div className="button">
             <button className="under-construction">
               Early Access on Patreon!
             </button>
           </div> */}
-        </article>
-      </div>
-    </section>
+          </article>
+        </div>
+      </section>
+    </>
   );
 }
 

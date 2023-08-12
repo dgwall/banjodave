@@ -131,15 +131,15 @@ const CardExpanded = ({ data, access, deck, parentDeck }) => {
   };
 
   const borderDeckStyle = {
-    transition: `${smoothTransition ? "1s" : "0s"}`,
+    transition: `${smoothTransition ? "2s ease-out" : "0s"}`,
     borderRadius: `
-    ${Math.max(0, ((rotation.x - rotation.y) / 2) * 60)}%
-    ${Math.max(0, ((-rotation.x - rotation.y) / 2) * 60)}%
-    ${Math.max(0, ((-rotation.x + rotation.y) / 2) * 50)}%
-    ${Math.max(0, ((rotation.x + rotation.y) / 2) * 50)}%`,
+    ${Math.max(0, ((-rotation.x + rotation.y) / 2) * 40)}%
+    ${Math.max(0, ((rotation.x + rotation.y) / 2) * 40)}%
+    ${Math.max(0, ((rotation.x - rotation.y) / 2) * 50)}%
+    ${Math.max(0, ((-rotation.x - rotation.y) / 2) * 50)}%`,
     boxShadow: `0 0.5rem ${
       (Math.abs(rotation.x) + Math.abs(rotation.y)) / 2
-    }rem #00000044`,
+    }rem #00000055`,
   };
 
   const copyToClipboard = async (text) => {
