@@ -429,10 +429,9 @@ function Cards() {
                 decidedly <span>𝖓𝖔𝖓-NFT</span> 🃏 interactive cards offering{" "}
                 <span>games🎮</span>, <span>videos🎥</span>,{" "}
                 <span>music🎧</span>, <span>art🎨</span>, <span>blogs✍️</span>,
-                and
-                <span>more🔮</span>, to <span>ΣxPlOrE aNd ShArΣ</span>
+                and <span>more🔮</span>, to <span>ΣxPlOrE aNd ShArΣ</span>
               </p>
-              <p>⚡⣿ ⣠⠞⠁⚙⠈⠳⣄ ⣿⚡</p>
+              <p>⚡⣿ ⣠⠞⠁⚠️⠈⠳⣄ ⣿⚡</p>
               <p>
                 As a{" "}
                 <span>
@@ -441,7 +440,7 @@ function Cards() {
                 <span style={{ fontSize: "x-small" }}>(coming soon™)</span>, not
                 only do you <span>unl🔓ck</span> more{" "}
                 <img src="/img/sig-small.webp" alt="Banjo" title="Banjo" />{" "}
-                content, you also get the chance to <span>𝓒𝓡𝓐𝓕𝓣 🛠️</span> your
+                content, you also get the chance to <span>𝓒𝓡𝓐𝓕𝓣🛠️</span> your
                 own cards for the
                 <span style={{ fontVariant: "small-caps" }}>
                   「〒 Community Deck」
@@ -465,42 +464,25 @@ function Cards() {
                 </span>
                 ⌬
               </p>
-              <p>
-                <span
-                  style={{
-                    background: "linear-gradient(to left, #DDB7BD, #00FF7F)",
-                    WebkitBackgroundClip: "text",
-                    MozBackgroundClip: "text",
-                    backgroundClip: "text",
-                    color: "transparent",
-                  }}
-                >
-                  <span style={{ fontVariant: "small-caps" }}>
-                    &gt; lvl1one preview access granted{" "}
-                  </span>
-                </span>
-                <span style={{ color: "#666666", fontSize: "smaller" }}>
-                  [
-                  <span
-                    style={{
-                      fontFamily: "monospace",
-                      background: "#000",
-                      color: "#00FFC0",
-                    }}
-                  >
-                    {
-                      cards.filter(
-                        (card) => card.type === "Card" && card.accessLevel <= 1
-                      ).length
-                    }
-                  </span>
-                  x𝕭𝕱𝕯]
-                </span>
+              <p
+                style={{
+                  fontFamily: "monospace",
+                }}
+              >
+                <span>꧁(✿◠‿◠</span>(◕‿◕)<span>♥‿♥｡)꧂</span>
               </p>
-              <p>
-                ꧁(✿◠‿◠(◕‿◕)♥‿♥｡)꧂
-                <br />
-                ░▒▓▒▓█▓▒▓▒░
+              <p>░▒▓▒▓█▓▒▓▒░</p>
+              <p
+                style={{
+                  background: "linear-gradient(to left, #DDB7BD, #00FF7F)",
+                  WebkitBackgroundClip: "text",
+                  MozBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  fontVariant: "small-caps",
+                }}
+              >
+                &gt; lvl1one preview access granted
               </p>
               <p style={{ fontSize: "x-large" }}>྾</p>
             </div>

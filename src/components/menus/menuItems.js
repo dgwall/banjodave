@@ -7,8 +7,8 @@ export const menuItems = [
   },
   {
     path: "/bfd",
-    label: "Banjeetz × 𝕭𝕱𝕯",
-    text: "Banjeetz × 𝕭𝕱𝕯",
+    label: "BFD Holo-Cards",
+    text: "𝕭𝕱𝕯 Holo-Cards",
     icon: "bwc",
     move: true,
   },
