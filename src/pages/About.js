@@ -30,9 +30,8 @@ function About() {
             skills, with many plans for the future.
           </p>
           <p>
-            Beyond that, I'm interested in philosophy, art, guitar, bouldering,
-            and skateboarding. In my spare time, I create indie games and other
-            forms of content.
+            Beyond that, I'm interested in esports, philosophy, art, guitar,
+            bouldering, and skateboarding.
           </p>
           <p>
             Business inquiries to:{" "}

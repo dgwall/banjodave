@@ -63,7 +63,6 @@ main {
 
 .main .page {
   background-color: #eee;
-  padding: 0 2rem 2rem 2rem;
   color: #333;
 }
 
@@ -121,15 +120,19 @@ main {
   margin: 0;
 }
 
-.main .homepage {
-  padding-top: 4rem;
+.main .homepage .overview {
+  background-image: url("../public/img/desktop.webp");
+  background-size: 100% 100%;
+  min-height: calc(100vh - 5rem);
+  display: flex;
+  align-items: center;
 }
 
-.main .overview {
+.main .overview p {
   position: relative;
   background: linear-gradient(to bottom, #fff, #eee);
   width: 80%;
-  margin: auto;
+  margin: 0 auto;
   margin-bottom: 3rem;
   padding: 1rem;
   border-radius: 1.5rem;

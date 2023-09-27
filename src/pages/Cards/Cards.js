@@ -10,7 +10,6 @@ import {
   fetchCards,
   sortCards,
   searchCards,
-  getTopTags,
   getDeckId,
   getRandomTags,
 } from "../../components/menus/CardService";
@@ -99,8 +98,6 @@ function Cards() {
   const [searchSuggestions, setSearchSuggestions] = useState("");
 
   const searchInputRef = useRef(null);
-
-  const topTags = getTopTags(cards, ACCESS_LEVEL);
 
   useEffect(() => {
     let searchInterval;
@@ -224,7 +221,7 @@ function Cards() {
         setViewMode("similar");
       } else {
         // Handle the case where the card does not exist
-        navigate("/bfd"); // Redirect to the main page or a 404 page
+        navigate("/bfd"); // Redirect to the main page
       }
     }
     // reset state when the location pathname becomes "/"
@@ -403,110 +400,7 @@ function Cards() {
             <h1>Banjeetz × 𝕭𝕱𝕯 Preview</h1>
             <h2>Digital Content Holo-Cards (Under Construction)</h2>
           </header>
-          <main role="main">
-            <div
-              style={{
-                textAlign: "center",
-                width: "50%",
-                marginTop: "1rem",
-                fontSize: "large",
-              }}
-              className="overview"
-            >
-              <p>_,.-⚚-.,_</p>
-              <p>✦✧✶✧✦</p>
-              <p>
-                🀄 𝕰𝖝𝖕𝖑𝖔𝖗𝖊 Ψ 𝕭𝕱𝕯 𝕮𝖆𝖗𝖉𝖘 ⊕{" "}
-                <span
-                  style={{
-                    fontFamily: "monospace",
-                    background: "#000",
-                    color: "#00FFC0",
-                  }}
-                >
-                  {cards.filter((card) => card.type === "Card").length}
-                </span>{" "}
-                decidedly <span>𝖓𝖔𝖓-NFT</span> 🃏 interactive cards offering{" "}
-                <span>games🎮</span>, <span>videos🎥</span>,{" "}
-                <span>music🎧</span>, <span>art🎨</span>, <span>blogs✍️</span>,
-                and <span>more🔮</span>, to <span>ΣxPlOrE aNd ShArΣ</span>
-              </p>
-              <p>⚡⣿ ⣠⠞⠁⚠️⠈⠳⣄ ⣿⚡</p>
-              <p>
-                As a{" "}
-                <span>
-                  ☽<s>𝝦atreon member</s>☾
-                </span>{" "}
-                <span style={{ fontSize: "x-small" }}>(coming soon™)</span>, not
-                only do you <span>unl🔓ck</span> more{" "}
-                <img src="/img/sig-small.webp" alt="Banjo" title="Banjo" />{" "}
-                content, you also get the chance to <span>𝓒𝓡𝓐𝓕𝓣🛠️</span> your
-                own cards for the
-                <span style={{ fontVariant: "small-caps" }}>
-                  「〒 Community Deck」
-                </span>
-                or, if you're a{" "}
-                <span style={{ fontVariant: "small-caps" }}>
-                  <span style={{ color: "#FF0000" }}>l</span>
-                  <span style={{ color: "#FF6600" }}>v</span>
-                  <span style={{ color: "#FFCC00" }}>l</span>
-                  <span style={{ color: "#99CC00" }}>3</span>
-                  <span style={{ color: "#33CC00" }}>t</span>
-                  <span style={{ color: "#00CCCC" }}>h</span>
-                  <span style={{ color: "#0066CC" }}>r</span>
-                  <span style={{ color: "#3333CC" }}>e</span>
-                  <span style={{ color: "#9900CC" }}>e</span>{" "}
-                  <span style={{ color: "#666666" }}>member</span>
-                </span>
-                , create your own
-                <span style={{ fontVariant: "small-caps" }}>
-                  「🏯 Custom Deck」
-                </span>
-                ⌬
-              </p>
-              <p
-                style={{
-                  fontFamily: "monospace",
-                }}
-              >
-                <span>꧁(✿◠‿◠</span>(◕‿◕)<span>♥‿♥｡)꧂</span>
-              </p>
-              <p>░▒▓▒▓█▓▒▓▒░</p>
-              <p
-                style={{
-                  background: "linear-gradient(to left, #DDB7BD, #00FF7F)",
-                  WebkitBackgroundClip: "text",
-                  MozBackgroundClip: "text",
-                  backgroundClip: "text",
-                  color: "transparent",
-                  fontVariant: "small-caps",
-                }}
-              >
-                &gt; lvl1one preview access granted
-              </p>
-              <p style={{ fontSize: "x-large" }}>྾</p>
-            </div>
-            <div
-              style={{
-                fontSize: "small",
-                textAlign: "center",
-                width: "50%",
-                marginTop: "1rem",
-              }}
-            >
-              Top tags
-              <br />
-              {topTags.map((tag, index) => (
-                <span
-                  key={tag.name}
-                  className="tag"
-                  onClick={() => setSearchTerm(tag.name)}
-                >
-                  {tag.name}
-                </span>
-              ))}
-            </div>
-          </main>
+          <p>_,.-⚚-.,_</p>
         </>
       )}
 
@@ -683,11 +577,11 @@ function Cards() {
         {selectedCard && (
           <button
             onClick={() => {
+              setSearchTerm("");
               setViewMode("similar");
               setGroupMode("both");
               setIsShowingRestrictedCards(true);
               setCurrentPage(1);
-              setSearchTerm("");
             }}
             title="Recommended"
           >
@@ -697,11 +591,10 @@ function Cards() {
         )}
         <button
           onClick={() => {
+            setCurrentPage(1);
+            setIsShowingRestrictedCards(true);
             setViewMode("alphabetical");
             setGroupMode("deck");
-            setIsShowingRestrictedCards(true);
-            setCurrentPage(1);
-            setSearchTerm("");
           }}
           title="A-Z categories"
         >
@@ -719,11 +612,11 @@ function Cards() {
         )}
         <button
           onClick={() => {
+            setSearchTerm("");
             setViewMode("newest");
             setGroupMode("card");
             setIsShowingRestrictedCards(false);
             setCurrentPage(1);
-            setSearchTerm("");
           }}
           title="Most recent unlocked cards"
         >
@@ -732,11 +625,11 @@ function Cards() {
         </button>
         <button
           onClick={() => {
+            setSearchTerm("");
             setViewMode(`${viewMode === "shuffle" ? "reshuffle" : "shuffle"}`);
             setGroupMode("both");
             setIsShowingRestrictedCards(true);
             setCurrentPage(1);
-            setSearchTerm("");
           }}
           title="Shuffle all"
         >
@@ -744,6 +637,85 @@ function Cards() {
           {!isSmallScreen && <div>Shuffle all</div>}
         </button>
       </nav>
+
+      <main>
+        <div
+          style={{
+            textAlign: "center",
+            width: "50%",
+            marginTop: "1rem",
+            fontSize: "large",
+          }}
+          className="overview"
+        >
+          <p>✦✧✶✧✦</p>
+          <p>
+            🀄 𝕰𝖝𝖕𝖑𝖔𝖗𝖊 Ψ 𝕭𝕱𝕯 𝕮𝖆𝖗𝖉𝖘 ⊕{" "}
+            <span
+              style={{
+                fontFamily: "monospace",
+                background: "#000",
+                color: "#00FFC0",
+              }}
+            >
+              {cards.filter((card) => card.type === "Card").length}
+            </span>{" "}
+            decidedly <span>𝖓𝖔𝖓-NFT</span> 🃏 interactive cards offering{" "}
+            <span>games🎮</span>, <span>videos🎥</span>, <span>music🎧</span>,{" "}
+            <span>art🎨</span>, <span>blogs✍️</span>, and <span>more🔮</span>,
+            to <span>ΣxPlOrE aNd ShArΣ</span>
+          </p>
+          <p>⚡⣿ ⣠⠞⠁⚠️⠈⠳⣄ ⣿⚡</p>
+          <p>
+            As a{" "}
+            <span>
+              ☽<s>𝝦atreon member</s>☾
+            </span>{" "}
+            <span style={{ fontSize: "x-small" }}>(coming soon™)</span>, not
+            only do you <span>unl🔓ck</span> more{" "}
+            <img src="/img/sig-small.webp" alt="Banjo" title="Banjo" /> content,
+            you also get the chance to <span>𝓒𝓡𝓐𝓕𝓣 🛠️</span> your own cards for
+            the
+            <span style={{ fontVariant: "small-caps" }}>
+              「〒 Community Deck」
+            </span>
+            or, if you're a{" "}
+            <span style={{ fontVariant: "small-caps" }}>
+              <span style={{ color: "#FF0000" }}>l</span>
+              <span style={{ color: "#FF6600" }}>v</span>
+              <span style={{ color: "#FFCC00" }}>l</span>
+              <span style={{ color: "#99CC00" }}>3</span>
+              <span style={{ color: "#33CC00" }}>t</span>
+              <span style={{ color: "#00CCCC" }}>h</span>
+              <span style={{ color: "#0066CC" }}>r</span>
+              <span style={{ color: "#3333CC" }}>e</span>
+              <span style={{ color: "#9900CC" }}>e</span>{" "}
+              <span style={{ color: "#666666" }}>member</span>
+            </span>
+            , create your own
+            <span style={{ fontVariant: "small-caps" }}>
+              「🏯 Custom Deck」
+            </span>
+            ⌬
+          </p>
+          <p>
+            <span>꧁(✿◠‿◠</span>(◕‿◕)<span>♥‿♥｡)꧂</span>
+          </p>
+          <p
+            style={{
+              background: "linear-gradient(to left, #DDB7BD, #00FF7F)",
+              WebkitBackgroundClip: "text",
+              MozBackgroundClip: "text",
+              backgroundClip: "text",
+              color: "transparent",
+              fontVariant: "small-caps",
+            }}
+          >
+            &gt; lvl1one preview access granted
+          </p>
+          <p style={{ fontSize: "x-large" }}>྾</p>
+        </div>
+      </main>
     </>
   );
 }
