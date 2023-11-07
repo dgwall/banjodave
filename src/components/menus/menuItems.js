@@ -6,10 +6,10 @@ export const menuItems = [
     text: "Home",
   },
   {
-    path: "/bfd",
-    label: "BFD Holo-Cards",
-    text: "𝕭𝕱𝕯 Holo-Cards",
-    icon: "bwc",
+    path: "/0dgames",
+    label: "Play 0DGames",
+    text: "0DGames",
+    icon: "0d",
     move: true,
   },
   {
@@ -27,10 +27,10 @@ export const menuItems = [
     move: true,
   },
   {
-    path: "/0dgames",
-    label: "Play 0DGames",
-    text: "0DGames",
-    icon: "0d",
+    path: "/zine",
+    label: "BanjoZine",
+    text: "BanjoZine",
+    icon: "zine",
     move: false,
   },
   {
@@ -59,10 +59,10 @@ export const menuItems = [
 /*
 
   {
-    path: "/zine",
-    label: "BanjoZine",
-    text: "BanjoZine",
-    icon: "zine",
+    path: "/bfd",
+    label: "BFD Holo-Cards",
+    text: "𝕭𝕱𝕯 Holo-Cards",
+    icon: "bwc",
     move: false,
   },
   {

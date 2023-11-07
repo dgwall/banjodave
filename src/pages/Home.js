@@ -5,7 +5,7 @@ import { Helmet } from "react-helmet";
 
 const panelA = { id: "0dg", name: "0DGames", imageCount: 4 };
 const panelB = { id: "lvl", name: "Level Design", imageCount: 5 };
-const panelC = { id: "soc", name: "Stay Updated", imageCount: 5 };
+const panelC = { id: "soc", name: "Stay Updated", imageCount: 4 };
 
 function Home() {
   return (

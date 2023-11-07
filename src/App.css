@@ -131,7 +131,7 @@ main {
 .main .overview p {
   position: relative;
   background: linear-gradient(to bottom, #fff, #eee);
-  width: 80%;
+  width: 60%;
   margin: 0 auto;
   margin-bottom: 3rem;
   padding: 1rem;
