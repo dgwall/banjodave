@@ -2,7 +2,7 @@
   {
     "id": "rootootoot",
     "title": "rootootoot",
-    "tags": ["550 Map Pack", "Map Pack", "rootootoot"],
+    "tags": ["Map Pack", "rootootoot"],
     "description": "In 2018, I set out on the monumental task of compiling every map I've ever crafted. From this extensive collection, I painstakingly curated my top 500 - a showcase of my best work. These maps were then meticulously structured into an episodic format matching the original game reflecting a progression in both difficulty and complexity.",
     "screenshotCount": 4,
     "buttons": [
@@ -20,13 +20,24 @@
   {
     "id": "sol",
     "title": "sol",
-    "tags": ["Coming Soon", "244 Map Pack", "Map Pack", "sol"],
-    "description": "The sol map pack will feature maps with difficulty levels that range from very easy to hard, ensuring a suitable challenge for everyone from beginners to experienced players. Each map will also house three hidden trapdoor switches, serving as bonus objectives for those players who love to explore and conquer. (Coming Soon)"
+    "tags": ["Map Pack", "sol"],
+    "description": "The sol map pack features maps with difficulty levels that range from very easy to hard, ensuring a suitable challenge for everyone from beginners to experienced players. Each map also houses three hidden trapdoor switches, serving as bonus objectives for those players who love to explore and conquer, and bonus/alternate hard versions of each map.",
+    "buttons": [
+      {
+        "type": "download",
+        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/n/DW40-sol.zip",
+        "label": "sol (free download pre-packaged with game!)"
+      },
+      {
+        "href": "https://packs.droni.es/c99fc8f1846959e4dd",
+        "label": "browse maps on packs"
+      }
+    ]
   },
   {
     "id": "DW40",
     "title": "Complete Works of DW40",
-    "tags": ["Coming Soon", ">2000 Map Pack", "Map Pack", "Patreon"],
+    "tags": ["Coming Soon", "Map Pack", "Patreon"],
     "description": "My best efforts to catalogue a decade of mapping. Every map I've ever made in one massive pack. Includes the best and worst of DW40. (Coming Soon to BWC)"
   },
   {

@@ -44,12 +44,21 @@ input {
   min-height: 92.5vh;
 }
 
+.homepage-content {
+  max-width: 1280px;
+  margin: 0 auto;
+  background-color: #eee;
+  padding-bottom: 2rem;
+  min-height: 92.5vh;
+}
+
 main {
   margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.main {
+.main,
+.homepage {
   background-image: url("./assets/images/bg.png");
   background-attachment: fixed;
   background-color: #c1c1c1;
@@ -61,7 +70,8 @@ main {
   padding: 2rem;
 }
 
-.main .page {
+.main .page,
+.main .homepage {
   background-color: #eee;
   color: #333;
 }
@@ -120,7 +130,7 @@ main {
   margin: 0;
 }
 
-.main .homepage .overview {
+.main .home-overview {
   background-image: url("../public/img/desktop.webp");
   background-size: 100% 100%;
   min-height: calc(100vh - 5rem);
@@ -128,10 +138,11 @@ main {
   align-items: center;
 }
 
-.main .overview p {
+.main .overview p,
+.main .home-overview p {
+  width: 60%;
   position: relative;
   background: linear-gradient(to bottom, #fff, #eee);
-  width: 60%;
   margin: 0 auto;
   margin-bottom: 3rem;
   padding: 1rem;
@@ -147,17 +158,23 @@ main {
   left: 10%;
 }
 
-.main .overview p {
+.main .overview p,
+.main .home-overview p {
   text-align: center;
   color: #646050;
   text-shadow: 0 1px 0 #fff;
+}
+
+.main .home-overview p {
+  max-width: 1280px;
+  width: 60%;
 }
 
 .main .overview p:not(:last-child) {
   margin-bottom: 1rem;
 }
 
-.main .overview p .title {
+.main p .title {
   color: #000;
 }
 

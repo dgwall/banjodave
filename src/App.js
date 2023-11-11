@@ -78,7 +78,7 @@ function App() {
                   key={path}
                   element={
                     <main className={`main${mainClass}`}>
-                      <div className="page">
+                      <div className={`${path === "/" ? "home" : ""}page`}>
                         <Component />
                       </div>
                     </main>

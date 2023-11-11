@@ -13,17 +13,18 @@ function Home() {
       <Helmet>
         <title>BanjoDave.com</title>
       </Helmet>
-      <section className="homepage">
-        <article className="overview">
-          <p>
-            Alright? Welcome to <span className="title">BanjoDave.com</span>.
-            I'm a front-end web and games developer based in Scotland, designing
-            and implementing engaging interactive user experiences. Currently I
-            am diligently transforming my little corner of our vast digital
-            wasteland. The crafting process is still underway, stay tuned.
-          </p>
-        </article>
 
+      <article className="home-overview">
+        <p>
+          Alright? Welcome to <span className="title">BanjoDave.com</span>. I'm
+          a front-end web and games developer based in Scotland, designing and
+          implementing engaging interactive user experiences. Currently I am
+          diligently transforming my little corner of our vast digital
+          wasteland. The crafting process is still underway, stay tuned.
+        </p>
+      </article>
+
+      <section className="homepage-content">
         <article className="benefits">
           <p>
             <Link to="/0dgames">0DGames</Link> is where my game development
