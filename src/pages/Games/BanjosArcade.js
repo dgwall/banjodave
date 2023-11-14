@@ -79,7 +79,7 @@ function BanjosArcade() {
           <p>
             Prepare to reignite your passion for classic gaming with{" "}
             <span>Banjo's Arcade</span>, a treasure trove of retro-remakes
-            delivered straight to your Windows device!
+            delivered straight to your PC!
           </p>
           <p>
             Dive into <span>Hierophant Commandant,</span> defending your village
@@ -92,7 +92,7 @@ function BanjosArcade() {
           </p>
           <p>
             Hold your breath for <span>Kósmoptasía,</span> a nebulous new
-            addition. A neon-soaked ride down the pixelated path of retro glory!
+            addition.
           </p>
         </div>
         <div className="emblem">

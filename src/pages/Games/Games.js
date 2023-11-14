@@ -36,12 +36,10 @@ function Games() {
           <div className="overview">
             <h2>Cutting-Edge Throwbacks</h2>
             <p>
-              <span>0DGames</span> brings to life action games that stand out.
-              I'm dedicated to crafting experiences characterized by unique
-              artwork, precise controls, and compelling mechanics, which stretch
-              the imagination and challenge. For the casual gamer looking for a
-              fun diversion, and the elite player seeking to uncover advanced
-              techniques, 0DGames has something for you.
+              Stretching the imagination with unique action games. For the both
+              the casual gamer looking for fun, and the elite player seeking to
+              uncover advanced techniques and beat their highscore,{" "}
+              <span>0DGames</span> has something for you.
             </p>
           </div>
           <div className="emblem">
