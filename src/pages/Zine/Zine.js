@@ -55,7 +55,7 @@ function Zine() {
         <article className="overview">
           <p>I'm looking forward to reviving this old project.</p>
           <p>
-            BanjoZine: the underground intersection of games, philosophy, and
+            BanjoZine: the underground intersection of games, mysticism, and
             media. Established in March 2021, this digital cryptex delves into
             pop culture revelations, the arcane secrets of game design, and the
             abyss of philosophical discourse. As nightfall descends, embark on

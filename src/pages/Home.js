@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import HoverAnimationPanel from "../components/shared/HoverAnimationPanel";
 import { Helmet } from "react-helmet";
 
-const panelA = { id: "0dg", name: "0DGames", imageCount: 4 };
+const panelA = { id: "0dg", name: "[0D]Games", imageCount: 4 };
 const panelB = { id: "lvl", name: "Level Design", imageCount: 5 };
 const panelC = { id: "soc", name: "Stay Updated", imageCount: 4 };
 
@@ -27,9 +27,9 @@ function Home() {
       <section className="homepage-content">
         <article className="benefits">
           <p>
-            <Link to="/0dgames">0DGames</Link> is where my game development
+            <Link to="/0dgames">[0D]Games</Link> is where my game development
             projects come to life. Keep an eye on this space as the curtain
-            prepares to rise on the world of 0DGames.
+            prepares to rise on the world of [0D]Games.
           </p>
           <Link to="/0dgames/">
             <HoverAnimationPanel data={panelA} />

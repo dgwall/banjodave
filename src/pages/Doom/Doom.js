@@ -161,12 +161,11 @@ function Doom() {
               <div>
                 <p>
                   Ready to dance with demons on the edge of the Starlit Abyss?
-                  This 9-map Ultimate DOOM episode is set to blast onto the
-                  scene, seething with infernal fiends, scorching hellfire, and
-                  enough firepower to make a Cyberdemon blush. While the full
-                  release will be yours to wreak havoc with for free, the brave
-                  souls who can't resist an early foray into the abyss can
-                  subscribe to the{" "}
+                  This 9-map Ultimate DOOM episode is seething with infernal
+                  fiends, scorching hellfire, and enough firepower to make a
+                  Cyberdemon blush. While the full release will be yours to
+                  wreak havoc with for free, the brave souls who can't resist an
+                  early foray into the abyss can subscribe to the{" "}
                   <Link to="/thank-you" className="under-construction">
                     BanjoDave Patreon
                   </Link>

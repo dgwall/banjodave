@@ -21,7 +21,7 @@
     ],
     "tagline": "Banjo's Arcade Hierophant Commandant beta cartridge",
     "tags": [
-      "0DGames",
+      "[0D]Games",
       "Game",
       "Banjo's Arcade",
       "Game Dev",
@@ -62,7 +62,7 @@
     ],
     "tagline": "Banjo's Arcade notavirus.exe beta cartridge",
     "tags": [
-      "0DGames",
+      "[0D]Games",
       "Game",
       "Banjo's Arcade",
       "Game Dev",
@@ -88,7 +88,7 @@
     "tagline": "Cutting edge retro throwbacks",
     "tags": [
       "Banjo's Arcade",
-      "0DGames",
+      "[0D]Games",
       "Retro",
       "Remake",
       "Windows",
@@ -3739,7 +3739,7 @@
     "id": "0DBAAC",
     "tagline": "Banjo's Arcade alpha cartridge",
     "tags": [
-      "0DGames",
+      "[0D]Games",
       "Game Dev",
       "Banjo's Arcade",
       "alpha",
@@ -3763,7 +3763,7 @@
     "id": "0DBADC",
     "tagline": "Banjo's Arcade damaged cartridge",
     "tags": [
-      "0DGames",
+      "[0D]Games",
       "Game Dev",
       "Banjo's Arcade",
       "Digital Art",
@@ -4550,7 +4550,7 @@
     "tagline": "BWC Access Level 3",
     "tags": ["BWC", "Restricted Access", "Level 3"],
     "text": [
-      "Access all levels of BFD, get 0DG games for free, and more with the BWC Black Card."
+      "Access all levels of BFD, get [0D]G games for free, and more with the BWC Black Card."
     ],
     "theme": "bwc",
     "title": "BWC L3 Special Access Card (Black)",

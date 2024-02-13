@@ -23,12 +23,12 @@ function Games() {
   return (
     <>
       <Helmet>
-        <title>0DGames on BanjoDave.com</title>
+        <title>[0D]Games on BanjoDave.com</title>
       </Helmet>
       <section>
         <header>
           <h1>
-            <span>0DG</span>
+            <span>[0D]Games</span>
           </h1>
         </header>
 
@@ -39,11 +39,11 @@ function Games() {
               Stretching the imagination with unique action games. For the both
               the casual gamer looking for fun, and the elite player seeking to
               uncover advanced techniques and beat their highscore,{" "}
-              <span>0DGames</span> has something for you.
+              <span>[0D]Games</span> has something for you.
             </p>
           </div>
           <div className="emblem">
-            <img src={emblem} alt="0DG Emblem" loading="lazy" />
+            <img src={emblem} alt="[0D]Games Emblem" loading="lazy" />
           </div>
         </div>
 

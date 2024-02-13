@@ -63,7 +63,7 @@ function BanjosArcade() {
     <section>
       <header>
         <h1>
-          <span>0DG</span>
+          <span>[0D]Games</span>
         </h1>
       </header>
 
@@ -91,8 +91,8 @@ function BanjosArcade() {
             defying firewalls in a game that reimagines Arkanoid.
           </p>
           <p>
-            Hold your breath for <span>Kósmoptasía,</span> a nebulous new
-            addition.
+            Don't hold your breath for <span>Kósmoptasía,</span> a nebulous new
+            addition, because it's not coming out.
           </p>
         </div>
         <div className="emblem">

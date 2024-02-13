@@ -9,7 +9,7 @@ const CurrentIssue = ({ currentIssue }) => {
       <div className="skull-head">
         <img src={skull} alt="Skull" className="skull" loading="lazy" />
       </div>
-      <p className="herald">A new moon rises, heralding the unveiling of...</p>
+      <p className="herald">A new moon rises, heralding the unfolding of...</p>
       <div className="issue-details current">
         <div className="current-container">
           <ZineCard issue={currentIssue} />

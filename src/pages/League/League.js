@@ -8,18 +8,7 @@ function League() {
       <Helmet>
         <title>Banjo League</title>
       </Helmet>
-      <section>
-        <img
-          src="./img/league/coming-soon.png"
-          alt="Banjo League Coming Soon"
-          loading="lazy"
-        />
-        <img
-          src="./img/league/league-badges.png"
-          alt="Banjo League Badges and Trophies"
-          loading="lazy"
-        />
-      </section>
+      <section>{`Om `}</section>
     </>
   );
 }
