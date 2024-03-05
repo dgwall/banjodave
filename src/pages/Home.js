@@ -28,8 +28,7 @@ function Home() {
         <article className="benefits">
           <p>
             <Link to="/0dgames">[0D]Games</Link> is where my game development
-            projects come to life. Keep an eye on this space as the curtain
-            prepares to rise on the world of [0D]Games.
+            projects live.
           </p>
           <Link to="/0dgames/">
             <HoverAnimationPanel data={panelA} />
@@ -37,11 +36,7 @@ function Home() {
         </article>
 
         <article className="benefits">
-          <p>
-            I create maps for the classic games DOOM by id Software and N by
-            Metanet Software. My aim is to contribute meaningfully to these
-            classic games.
-          </p>
+          <p>I create maps for the classic games DOOM and N.</p>
           <Link to="/doom/">
             <HoverAnimationPanel data={panelB} />
           </Link>
@@ -81,9 +76,8 @@ function Home() {
               rel="noreferrer"
             >
               YouTube
-            </a>{" "}
-            where I share whatever's cooking in the game dev kitchen and the ins
-            and outs of my creations.
+            </a>
+            .
           </p>
           <Link to="/thank-you/">
             <HoverAnimationPanel data={panelC} />

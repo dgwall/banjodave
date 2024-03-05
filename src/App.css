@@ -166,7 +166,7 @@ main {
 
 .main .home-overview p {
   max-width: 720px;
-  width: 60%;
+  width: 80%;
 }
 
 .main .overview p:not(:last-child) {

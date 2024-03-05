@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./Doom.css";
 //import ScreenshotsCarousel from "../../components/modals/ScreenshotsCarousel";
 import gargoyleA from "../../assets/images/doom/icon-1.webp";
@@ -161,25 +160,7 @@ function Doom() {
               <div>
                 <p>
                   Ready to dance with demons on the edge of the Starlit Abyss?
-                  This 9-map Ultimate DOOM episode is seething with infernal
-                  fiends, scorching hellfire, and enough firepower to make a
-                  Cyberdemon blush. While the full release will be yours to
-                  wreak havoc with for free, the brave souls who can't resist an
-                  early foray into the abyss can subscribe to the{" "}
-                  <Link to="/thank-you" className="under-construction">
-                    BanjoDave Patreon
-                  </Link>
-                  , granting you exclusive access to individual maps as they
-                  roll hot off the anvil. I will also be posting regular
-                  development updates to my{" "}
-                  <a
-                    href="https://www.twitter.com/banjeetz"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Twitter
-                  </a>
-                  . The abyss beckons... are you ready to answer its call?
+                  Well too bad because the stage isn't set yet.
                 </p>
                 <p className="p-desc">DOOM.WAD required</p>
                 <div className="dev-progress">

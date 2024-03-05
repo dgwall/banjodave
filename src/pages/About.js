@@ -2,8 +2,9 @@ import React from "react";
 import { Helmet } from "react-helmet";
 
 function About() {
-  var user = "&#119;&#97;&#107;&#107;&#97;&#99;&#101;";
-  var domain = "&#103;&#109;&#97;&#105;&#108;";
+  var user = "&#100;&#97;&#118;&#105;&#100;";
+  var domain =
+    "&#100;&#103;&#119;&#105;&#110;&#116;&#101;&#114;&#97;&#99;&#116;&#105;&#118;&#101;";
   return (
     <>
       <Helmet>

@@ -53,13 +53,12 @@ function Zine() {
         </header>
 
         <article className="overview">
-          <p>I'm looking forward to reviving this old project.</p>
+          <p>As nightfall descends, embark on an unexpected odyssey.</p>
           <p>
-            BanjoZine: the underground intersection of games, mysticism, and
-            media. Established in March 2021, this digital cryptex delves into
-            pop culture revelations, the arcane secrets of game design, and the
-            abyss of philosophical discourse. As nightfall descends, embark on
-            an unexpected odyssey.
+            <b>BanjoZine</b>: the underground intersection of games, mysticism,
+            and media. Established in March 2021, this digital cryptex delves
+            into pop culture revelations, the arcane secrets of game design, and
+            the abyss of philosophical discourse.
           </p>
         </article>
 
@@ -87,6 +86,7 @@ function Zine() {
           </>
         )}
 
+        {/*
         <article>
           <h1>
             <img src={skull} alt="Skull" className="skull" loading="lazy" />
@@ -102,7 +102,7 @@ function Zine() {
             flame, and propelling our nocturnal journey further into the
             unknown.
           </p>
-          {/* 
+          
         <a href="#maincontent" className="patreon-link">
         target="_blank"
         rel="noreferrer"
@@ -115,8 +115,11 @@ function Zine() {
             Join our arcane quest on Patreon
           </span>
         </a>
-         */}
-          <div align="center">
+        </article>
+        */}
+
+        <article>
+          <div align="left">
             <img src={seal} alt="Seal of Banjo House Publishing" />
           </div>
         </article>

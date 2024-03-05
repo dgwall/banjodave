@@ -323,6 +323,7 @@
 
 .main-doom .feature > div {
   background-color: #00000033;
+  min-width: 100%;
   padding: 1rem;
   border-radius: 1rem;
 }
