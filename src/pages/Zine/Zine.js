@@ -119,8 +119,10 @@ function Zine() {
         */}
 
         <article>
-          <div align="left">
+          <div align="center">
             <img src={seal} alt="Seal of Banjo House Publishing" />
+            <br />
+            Banjo House Publishing
           </div>
         </article>
       </section>

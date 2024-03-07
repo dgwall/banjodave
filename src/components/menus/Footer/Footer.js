@@ -12,7 +12,7 @@ const socials = [
     extra: true,
   },
   {
-    href: "https://discord.com/invite/W9UtSAYQXR",
+    href: "https://discord.gg/z76NmuSWVs",
     title: "Discord: The BanjoCave",
     icon: "discord",
     extra: false,
@@ -34,12 +34,6 @@ const socials = [
     title: "itch.io",
     icon: "itch",
     extra: false,
-  },
-  {
-    href: "https://mastodon.gamedev.place/@banjeetz",
-    title: "mastodon.gamedev.place",
-    icon: "mastadon",
-    extra: true,
   },
   {
     href: "https://www.nmaps.net/user/DW40",
@@ -142,7 +136,7 @@ function Footer() {
       </div>
 
       <div className="legal">
-        <p>&copy; 2023 BanjoDave. All rights reserved.</p>
+        <p>&copy; 2024 BanjoDave. All rights reserved.</p>
       </div>
 
       <div className="signature">
