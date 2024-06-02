@@ -27,10 +27,10 @@ export const menuItems = [
     move: true,
   },
   {
-    path: "/zine",
-    label: "BanjoZine",
-    text: "BanjoZine",
-    icon: "zine",
+    path: "/bfd",
+    label: "BFD Holo-Cards",
+    text: "𝕭𝕱𝕯 Holo-Cards",
+    icon: "bwc",
     move: false,
   },
   {
@@ -45,10 +45,10 @@ export const menuItems = [
 /*
 
   {
-    path: "/bfd",
-    label: "BFD Holo-Cards",
-    text: "𝕭𝕱𝕯 Holo-Cards",
-    icon: "bwc",
+    path: "/zine",
+    label: "BanjoZine",
+    text: "BanjoZine",
+    icon: "zine",
     move: false,
   },
   {

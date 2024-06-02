@@ -239,25 +239,13 @@ const CardExpanded = ({ data, access, deck, parentDeck }) => {
           </>
         ) : (
           <div className="card-text">
-            <p>
-              Access to this LVL{data.accessLevel} BFD has been restricted on
-              the authority of BWC
-            </p>
+            <p>Access to this LVL{data.accessLevel} BFD has been restricted.</p>
             {data.accessLevel === 1 ? (
-              <p>
-                LVL1 Access will be available for free, simply by logging in
-                with a Patreon account.
-              </p>
+              <p>LVL1 Access.</p>
             ) : data.accessLevel === 2 ? (
-              <p>
-                LVL2 Access will be available with a Patreon sub, and grants the
-                creation of up to 3 custom cards in the Community Deck.
-              </p>
+              <p>LVL2 Access.</p>
             ) : data.accessLevel === 3 ? (
-              <p>
-                LVL3 Access will be available with a high-tier Patreon sub, and
-                grants the creation of your own unique Custom Deck.
-              </p>
+              <p>LVL3 Access.</p>
             ) : (
               {}
             )}
