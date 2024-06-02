@@ -11,12 +11,12 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>BanjoDave.com</title>
+        <title>BanjoDave.co.uk</title>
       </Helmet>
 
       <article className="home-overview">
         <p>
-          Alright? Welcome to <span className="title">BanjoDave.com</span>. I'm
+          Alright? Welcome to <span className="title">BanjoDave.co.uk</span>. I'm
           a front-end web and games developer based in Scotland, designing and
           implementing engaging interactive user experiences. Currently I am
           diligently transforming my little corner of our vast digital

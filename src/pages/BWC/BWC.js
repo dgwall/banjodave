@@ -133,12 +133,12 @@ const AccessScreen = ({ access, accessLabel, secretCode }) => (
           <br />
           <br />
           <a
-            href="https://www.banjodave.com/"
+            href="https://www.banjodave.co.uk/"
             target="_blank"
             rel="noreferrer"
             className="site-link"
           >
-            banjodave.com
+            banjodave.co.uk
           </a>
           <br />
           <a

@@ -350,14 +350,14 @@ function Cards() {
         {selectedCard ? (
           <>
             <title>{`BFD ${selectedCard?.title}`}</title>
-            <meta content="BanjoDave.com" property="og:site_name" />
+            <meta content="BanjoDave.co.uk" property="og:site_name" />
             <meta
               name="description"
-              content={`BFD ${selectedCard?.title} on BanjoDave.com. ${selectedCard?.tagline}.`}
+              content={`BFD ${selectedCard?.title} on BanjoDave.co.uk. ${selectedCard?.tagline}.`}
             />
             <meta
               property="og:title"
-              content={`${selectedCard?.title} on BanjoDave.com`}
+              content={`${selectedCard?.title} on BanjoDave.co.uk`}
             />
             <meta
               property="og:image"

@@ -5,7 +5,7 @@ function Shop() {
   return (
     <>
       <Helmet>
-        <title>Shop BanjoDave.com</title>
+        <title>Shop BanjoDave.co.uk</title>
       </Helmet>
       <section>
         <header className="under-construction">Shop BanjoWare</header>

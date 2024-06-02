@@ -2,7 +2,7 @@
 export const menuItems = [
   {
     path: "/",
-    label: "BanjoDave.com Homepage",
+    label: "BanjoDave.co.uk Homepage",
     text: "Home",
   },
   {

@@ -23,7 +23,7 @@ function Games() {
   return (
     <>
       <Helmet>
-        <title>[0D]Games on BanjoDave.com</title>
+        <title>[0D]Games on BanjoDave.co.uk</title>
       </Helmet>
       <section>
         <header>

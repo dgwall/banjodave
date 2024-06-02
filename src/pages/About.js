@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>About BanjoDave.com</title>
+        <title>About BanjoDave.co.uk</title>
       </Helmet>
       <section>
         <header>About</header>
