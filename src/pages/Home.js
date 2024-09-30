@@ -11,18 +11,8 @@ function Home() {
   return (
     <>
       <Helmet>
-        <title>BanjoDave.com</title>
+        <title>BanjoDave.co.uk</title>
       </Helmet>
-
-      <article className="home-overview">
-        <p>
-          Alright? Welcome to <span className="title">BanjoDave.com</span>. I'm
-          a front-end web and games developer based in Scotland, designing and
-          implementing engaging interactive user experiences. Currently I am
-          diligently transforming my little corner of our vast digital
-          wasteland. The crafting process is still underway, stay tuned.
-        </p>
-      </article>
 
       <section className="homepage-content">
         <article className="benefits">
@@ -47,35 +37,27 @@ function Home() {
             If you want to keep tabs on what's going down or sneak a peek at my
             day-to-day grind, join the{" "}
             <a
-              href="https://discord.com/invite/W9UtSAYQXR"
+              href="https://discord.gg/Su7BCchJJh"
               target="_blank"
               rel="noreferrer"
             >
-              BanjoCave on Discord
+              BanjoCave Discord
             </a>
             , or follow me on{" "}
             <a
-              href="https://www.instagram.com/banjeetz/"
+              href="https://x.com/banjeetz"
               target="_blank"
               rel="noreferrer"
             >
-              Instagram
-            </a>
-            ,{" "}
-            <a
-              href="https://twitter.com/banjeetz"
-              target="_blank"
-              rel="noreferrer"
-            >
-              Twitter
+              X @banjeetz
             </a>
             , and{" "}
             <a
-              href="https://www.youtube.com/channel/UCWIX3fTPDoVGPHxReT6vC5g"
+              href="https://www.youtube.co.uk/channel/UCWIX3fTPDoVGPHxReT6vC5g"
               target="_blank"
               rel="noreferrer"
             >
-              YouTube
+              YouTube @BanjoD453
             </a>
             .
           </p>

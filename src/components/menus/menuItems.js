@@ -2,7 +2,7 @@
 export const menuItems = [
   {
     path: "/",
-    label: "BanjoDave.com Homepage",
+    label: "BanjoDave.co.uk Homepage",
     text: "Home",
   },
   {
@@ -27,10 +27,10 @@ export const menuItems = [
     move: true,
   },
   {
-    path: "/zine",
-    label: "BanjoZine",
-    text: "BanjoZine",
-    icon: "zine",
+    path: "/league",
+    label: "Compete in the Banjo League",
+    text: "Banjo League",
+    icon: "league",
     move: false,
   },
   {
@@ -45,17 +45,10 @@ export const menuItems = [
 /*
 
   {
-    path: "/bfd",
-    label: "BFD Holo-Cards",
-    text: "𝕭𝕱𝕯 Holo-Cards",
-    icon: "bwc",
-    move: false,
-  },
-  {
-    path: "/league",
-    label: "Compete in the Banjo League",
-    text: "Banjo League",
-    icon: "league",
+    path: "/zine",
+    label: "BanjoZine",
+    text: "BanjoZine",
+    icon: "zine",
     move: false,
   },
   {
@@ -63,6 +56,13 @@ export const menuItems = [
     label: "Supprt My Work",
     text: "Support My Work",
     icon: "support",
+    move: false,
+  },
+  {
+    path: "/bfd",
+    label: "BFD Holo-Cards",
+    text: "𝕭𝕱𝕯 Holo-Cards",
+    icon: "bwc",
     move: false,
   },
   {

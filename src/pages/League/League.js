@@ -8,7 +8,9 @@ function League() {
       <Helmet>
         <title>Banjo League</title>
       </Helmet>
-      <section>{`Om `}</section>
+      <section>
+        <img src="../img/league/emblem-coming-soon.png" alt="BanjoLeague Coming Soon" />
+      </section>
     </>
   );
 }

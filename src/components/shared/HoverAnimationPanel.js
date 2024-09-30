@@ -77,7 +77,7 @@ function HoverAnimationPanel({ data }) {
       className={`ani-panel ${hover ? "hover" : ""}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      style={{ backgroundImage: `url("/img/hoverpanels/blob-${data.id}.svg")` }}
+      style={{opacity: `0.9`, backgroundImage: `url("/img/hoverpanels/blob-${data.id}.svg")` }}
     >
       {imageURLs.map((imgData, index) => (
         <img

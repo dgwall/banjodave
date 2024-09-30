@@ -129,25 +129,23 @@ main {
   margin: 0;
 }
 
-.main .home-overview {
+.main .homepage-content {
   background-image: url("../public/img/desktop.webp");
   background-size: 100% 100%;
   min-height: calc(100vh - 5rem);
-  display: flex;
-  align-items: center;
 }
 
 .main .overview p,
-.main .home-overview p {
+.main .homepage-content p {
   width: 60%;
   position: relative;
-  background: linear-gradient(to bottom, #fff, #eee);
+  background: linear-gradient(to bottom, #ffffff40, #eeeeee40);
   margin: 0 auto;
   margin-bottom: 3rem;
   padding: 1rem;
   border-radius: 1.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(172, 161, 139, 0.651);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.02);
+  border: 1px solid rgba(172, 161, 139, 0.3);
   text-align: center;
 }
 

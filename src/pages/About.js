@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <Helmet>
-        <title>About BanjoDave.com</title>
+        <title>About BanjoDave.co.uk</title>
       </Helmet>
       <section>
         <header>About</header>
@@ -37,9 +37,9 @@ function About() {
           <p>
             Business inquiries to:{" "}
             <i
-              href={`mailto:${user}@${domain}.com`}
+              href={`mailto:${user}@${domain}.co.uk`}
               dangerouslySetInnerHTML={{
-                __html: `${user}@${domain}.com`,
+                __html: `${user}@${domain}.co.uk`,
               }}
             />
           </p>

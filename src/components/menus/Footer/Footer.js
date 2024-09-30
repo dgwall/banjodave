@@ -12,8 +12,8 @@ const socials = [
     extra: true,
   },
   {
-    href: "https://discord.gg/z76NmuSWVs",
-    title: "Discord: The BanjoCave",
+    href: "https://discord.gg/Su7BCchJJh",
+    title: "BanjoCave",
     icon: "discord",
     extra: false,
   },
@@ -22,12 +22,6 @@ const socials = [
     title: "Doomworld",
     icon: "doomworld",
     extra: true,
-  },
-  {
-    href: "https://www.instagram.com/banjeetz/",
-    title: "Instagram",
-    icon: "instagram",
-    extra: false,
   },
   {
     href: "https://banjodave.itch.io/",
@@ -39,12 +33,6 @@ const socials = [
     href: "https://www.nmaps.net/user/DW40",
     title: "N User Map Archive",
     icon: "numa",
-    extra: true,
-  },
-  {
-    href: "https://www.patreon.com/banjodave",
-    title: "Patreon",
-    icon: "patreon",
     extra: true,
   },
   {
@@ -60,8 +48,8 @@ const socials = [
     extra: true,
   },
   {
-    href: "https://twitter.com/banjeetz",
-    title: "Twitter",
+    href: "https://x.com/banjeetz",
+    title: "X",
     icon: "twitter",
     extra: false,
   },

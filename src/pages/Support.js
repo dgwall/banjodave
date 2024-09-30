@@ -5,7 +5,7 @@ function Support() {
   return (
     <>
       <Helmet>
-        <title>Support BanjoDave.com</title>
+        <title>Support BanjoDave.co.uk</title>
       </Helmet>
       <section>
         <header className="under-construction">Support My Work</header>
