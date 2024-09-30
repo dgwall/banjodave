@@ -16,7 +16,7 @@ import {
 
 const ITEMS_HOMEPAGE = 18;
 const ITEMS_PER_PAGE = 9;
-const ACCESS_LEVEL = 1;
+const ACCESS_LEVEL = 3;
 
 const getTheme = (themeName) => {
   return cardThemes.find((theme) => theme.name === themeName) || {};
@@ -398,7 +398,7 @@ function Cards() {
         <>
           <header role="banner">
             <h1>Banjeetz × 𝕭𝕱𝕯 Preview</h1>
-            <h2>Digital Content Holo-Cards (Under Construction)</h2>
+            <h2>Digital Content Holo-Card Archive</h2>
           </header>
           <p>_,.-⚚-.,_</p>
         </>
@@ -665,8 +665,7 @@ function Cards() {
             <span>art🎨</span>, <span>blogs✍️</span>, and <span>more🔮</span>,
             to <span>ΣxPlOrE aNd ShArΣ</span>
           </p>
-          <p>⚡⣿ ⣠⠞⠁⚠️⠈⠳⣄ ⣿⚡</p>
-          <p>
+          {/*<p>
             As a{" "}
             <span>
               ☽<s>𝝦atreon member</s>☾
@@ -696,14 +695,14 @@ function Cards() {
             <span style={{ fontVariant: "small-caps" }}>
               「🏯 Custom Deck」
             </span>
-            ⌬
-          </p>
+            </p>*/}
+          <p>⌬</p>
           <p>
             <span>꧁(✿◠‿◠</span>(◕‿◕)<span>♥‿♥｡)꧂</span>
           </p>
           <p
             style={{
-              background: "linear-gradient(to left, #DDB7BD, #00FF7F)",
+              background: "linear-gradient(to left, #DDDDDD, #FFFFFF)",
               WebkitBackgroundClip: "text",
               MozBackgroundClip: "text",
               backgroundClip: "text",
@@ -711,9 +710,13 @@ function Cards() {
               fontVariant: "small-caps",
             }}
           >
-            &gt; lvl1one preview access granted
+            &gt; lvl2one preview access granted
           </p>
-          <p style={{ fontSize: "x-large" }}>྾</p>
+          <p style={{ color: "yellow" }}>
+            This was mostly a programming exercise and I dont keep this updated
+            anymore.
+          </p>
+          <p style={{ fontSize: "x-large" }}>྾ banjo</p>
         </div>
       </main>
     </>

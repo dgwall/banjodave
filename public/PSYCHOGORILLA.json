@@ -130,25 +130,6 @@
   },
   {
     "accessLevel": 0,
-    "date": "2023-04-20",
-    "deck": "Founder's Deck",
-    "icon": "founder",
-    "id": "OOOFOU",
-    "tagline": "Early BFD Supporter's Deck, before the launch of the Patreon",
-    "tags": [
-      "Founder",
-      "Supporters",
-      "Community Deck",
-      "Community Project",
-      "BWC",
-      "Patreon"
-    ],
-    "theme": "banjo",
-    "title": "Founder's Deck",
-    "type": "Deck"
-  },
-  {
-    "accessLevel": 0,
     "date": "2023-02-05",
     "deck": "Game Jams",
     "icon": "game",
@@ -310,8 +291,7 @@
       "Puzzle"
     ],
     "text": [
-      "BanjoZine: the underground intersection of games, philosophy, and media. Established in March 2021, this digital cryptex delves into pop culture revelations, the arcane secrets of game design, and the abyss of philosophical discourse. As nightfall descends, embark on an unexpected odyssey.",
-      "Do you yearn for a deeper connection with the unseen forces of BanjoZine? The ancient pact of Patreon awaits! Gazing into the dark crystal pool of previews, patrons scry pages of upcoming issues, while those of higher ranks can manifest physical copies into existence. Through support and shared energies, patrons become essential conduits of creation, fanning our ever-burning black flame, and propelling our nocturnal journey further into the unknown."
+      "BanjoZine: the underground intersection of games, philosophy, and media. Established in March 2021, this digital cryptex delves into pop culture revelations, the arcane secrets of game design, and the abyss of philosophical discourse. As nightfall descends, embark on an unexpected odyssey."
     ],
     "theme": "zine",
     "title": "BanjoZine",
@@ -2514,7 +2494,7 @@
     "id": "WEBB22",
     "tags": ["BanjoDave", "Website", "Portfolio", "HTML", "CSS", "Web Dev"],
     "theme": "banjo-dark",
-    "title": "BanjoDave.com 2021-2022",
+    "title": "BanjoDave.co.uk 2021-2022",
     "type": "Card"
   },
   {
@@ -2902,7 +2882,7 @@
     "tagline": "BWC Public Access",
     "tags": ["BWC", "Restricted Access", "Level 1"],
     "text": [
-      "Free-tier BWC preview. Bonus BFD content and more available for free through Patreon."
+      "Free-tier preview."
     ],
     "theme": "bwc",
     "title": "BWC L1 Access Token",
@@ -4642,140 +4622,6 @@
     ],
     "theme": "sky",
     "title": "Mushroom King",
-    "type": "Card"
-  },
-  {
-    "accessLevel": 0,
-    "date": "2023-04-20",
-    "deck": "Founder's Deck",
-    "icon": "art",
-    "id": "FDGWLH",
-    "tags": ["Dundee", "Art", "Scotland", "Design", "Founder"],
-    "media": [
-      {
-        "type": "image",
-        "src": "founders-gwlh-1.jpg",
-        "alt": "Lumphinnans Harbour"
-      }
-    ],
-    "text": ["Acrylic on canvas. 51cm x 51cm unframed."],
-    "theme": "basic",
-    "title": "Lumphinnans Harbour",
-    "tagline": "Created by Founder: Graham Wallace Art",
-    "type": "Card"
-  },
-  {
-    "accessLevel": 0,
-    "buttons": [
-      {
-        "type": "download",
-        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/games/musicstuffsome-eyeball-editable.gmk",
-        "label": "Download .gmk Project File"
-      },
-      {
-        "type": "download",
-        "href": "https://s3.eu-north-1.amazonaws.com/banjodave.com/games/musicstuffsome-eyeball-bouncyball.exe",
-        "label": "Download eyeball bouncyball"
-      }
-    ],
-    "date": "2013-08-22",
-    "deck": "Founder's Deck",
-    "icon": "game",
-    "id": "FDMSEB",
-    "tags": [
-      "eyeball bouncyball",
-      "platformer",
-      "yoyo games",
-      "musicstuffsome",
-      "Archived",
-      "game",
-      "game scrap",
-      "game dev",
-      "Founder"
-    ],
-    "text": [
-      "From YoYo Games Archive: \"latest version added all the game race levels 😊\""
-    ],
-    "theme": "arcade",
-    "title": "eyeball bouncyball",
-    "tagline": "Created by Founder: musicstuffsome",
-    "type": "Card"
-  },
-  {
-    "accessLevel": 0,
-    "buttons": [
-      {
-        "type": "download",
-        "href": "/img/card-content/dl/musicstuffsome-rolly-pollys-pogo-stick-challenge.exe",
-        "label": "Download rolly pollys pogo stick challenge"
-      }
-    ],
-    "date": "2009-11-11",
-    "deck": "Founder's Deck",
-    "icon": "game",
-    "id": "FDMSRP",
-    "tags": [
-      "rolly polly",
-      "platformer",
-      "yoyo games",
-      "musicstuffsome",
-      "Archived",
-      "game",
-      "game scrap",
-      "game dev",
-      "Founder"
-    ],
-    "text": [
-      "From YoYo Games Archive: \"Bounce on your pogostick through 32 levels of fun and sheer randomnessnessness(if thats a word) to allow rolly polly- the freindly tornado to collect all 32 fragments of the DNA of toast and acheive ultimate well being.you on the other hand are likely to have a sezzuie and get RSI by that time .Are you up for a challange?\""
-    ],
-    "tagline": "Created by Founder: musicstuffsome",
-    "theme": "arcade",
-    "title": "rolly pollys pogo stick challenge",
-    "type": "Card"
-  },
-  {
-    "accessLevel": 0,
-    "buttons": [
-      {
-        "type": "download",
-        "href": "/img/card-content/dl/musicstuffsome-ASCI-kicking-warriors.exe",
-        "label": "Download ASCI kicking warriors"
-      }
-    ],
-    "date": "2014-06-29",
-    "deck": "Founder's Deck",
-    "icon": "game",
-    "id": "FDMSAW",
-    "tags": [
-      "ascii",
-      "fighting game",
-      "shmup",
-      "yoyo games",
-      "musicstuffsome",
-      "Archived",
-      "game",
-      "game scrap",
-      "game dev",
-      "Founder"
-    ],
-    "text": [
-      "From YoYo Games Archive: \"Changes in version 1.02",
-      "+++++++++++++++++++++++",
-      ". Game UI is now designed to be predominantly controled by controlers",
-      ". Real time character select",
-      ". The first ammo mechanic",
-      ". Randomised themed music now impliemnted into the the 3 stages",
-      ". Slightly updated instructions !",
-      ". Character changes for",
-      "A.)Hopperspace- fixed a bug regarding gravity",
-      "B.)Cajonja - teleport now only costs 2 ammo",
-      "- Button 2 is now a new move the \"bullet drop\"",
-      "c.)Gyah - left/right spray now only costs 1 ammo",
-      "D.)Ribbet - wavedash has modified propetys to make it more useful\""
-    ],
-    "tagline": "Created by Founder: musicstuffsome",
-    "theme": "white",
-    "title": "ASCI kicking warriors",
     "type": "Card"
   },
   {
