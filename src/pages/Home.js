@@ -14,19 +14,6 @@ function Home() {
         <title>BanjoDave.co.uk</title>
       </Helmet>
 
-<<<<<<< HEAD
-=======
-      <article className="home-overview">
-        <p>
-          Alright? Welcome to <span className="title">BanjoDave.co.uk</span>. I'm
-          a front-end web and games developer based in Scotland, designing and
-          implementing engaging interactive user experiences. Currently I am
-          diligently transforming my little corner of our vast digital
-          wasteland. The crafting process is still underway, stay tuned.
-        </p>
-      </article>
-
->>>>>>> b180a1032d2bf504d226c0321ec441ed8c96dec2
       <section className="homepage-content">
         <article className="benefits">
           <p>
