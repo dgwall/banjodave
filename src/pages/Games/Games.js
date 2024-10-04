@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import "./Games.css";
-import emblem from "./../../assets/images/games/emblem.png";
+import emblem from "./../../assets/images/games/0DG.png";
 import { Helmet } from "react-helmet";
 const SkewDiv = React.lazy(() => import("../../components/items/SkewDiv"));
 
@@ -26,24 +26,15 @@ function Games() {
         <title>[0D]Games on BanjoDave.co.uk</title>
       </Helmet>
       <section>
-        <header>
-          <h1>
-            <span>[0D]Games</span>
-          </h1>
-        </header>
-
         <div className="overview-container">
           <div className="overview">
             <h2>Cutting-Edge Throwbacks</h2>
             <p>
-              Stretching the imagination with unique action games. For the both
-              the casual gamer looking for fun, and the elite player seeking to
-              uncover advanced techniques and beat their highscore,{" "}
-              <span>[0D]Games</span> has something for you.
+              <span>[0D]Games</span> is striving to create games fun for both the casual player and those seeking to uncover advanced techniques and strategies.
             </p>
           </div>
           <div className="emblem">
-            <img src={emblem} alt="[0D]Games Emblem" loading="lazy" />
+            <img src={emblem} alt="Logo of [0D]Games featuring a stylized depiction of a retro game cartridge. The central part shows the text '[0D] GAMES' in bold, yellow letters on a dark gradient background, resembling classic cartridge designs. The logo has a distinct rectangular shape with rounded corners and golden pins at the bottom, evoking nostalgia for vintage gaming hardware." loading="lazy" />
           </div>
         </div>
 

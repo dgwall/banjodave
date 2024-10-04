@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Games.css";
 //import SkewDiv from "../../components/items/SkewDiv";
 /*
@@ -61,11 +62,7 @@ const gameData = [
 function BanjosArcade() {
   return (
     <section>
-      <header>
-        <h1>
-          <span>[0D]Games</span>
-        </h1>
-      </header>
+
 
       <div className="overview-container">
         <div className="overview">
@@ -106,6 +103,10 @@ function BanjosArcade() {
 
       <section className="content">
         <article>
+
+        <iframe title="itch.io" frameborder="0" src="https://itch.io/embed/2773246?linkback=true&amp;border_width=3&amp;bg_color=e8cf1b&amp;fg_color=222222&amp;link_color=fc5c00&amp;border_color=333333" width="556" height="171"><a href="https://banjodave.itch.io/banjos-arcade">Banjo's (Abandoned) Arcade by BanjoDave</a></iframe>
+
+
           <div className="preview-container">
             <iframe
               src="https://www.youtube.com/embed/KZnIY07b3-Q"
@@ -121,7 +122,6 @@ function BanjosArcade() {
               />
             </iframe>
           </div>
-          <h1 className="under-construction">Under Construction</h1>
 
           {/*
           <div className="game-tiles">
@@ -141,6 +141,20 @@ function BanjosArcade() {
               */}
         </article>
       </section>
+
+      <header>
+        <h1>
+          <Link to="../0dgames">
+            <img
+              src="/img/0dg/0DG.png"
+              alt="[0D]Games Logo"
+              height="100px"
+              loading="lazy"
+              style={{ float: "right", margin: "2rem", opacity: "0.5" }}
+            />
+            </Link>
+        </h1>
+      </header>
     </section>
   );
 }
