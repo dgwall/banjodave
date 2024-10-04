@@ -8,17 +8,33 @@ function Support() {
         <title>Support BanjoDave.co.uk</title>
       </Helmet>
       <section>
-        <header className="under-construction">Support My Work</header>
+        <header className="under-construction">Support BanjoDave.co.uk</header>
         <div className="overview">
           <p>
-            Under Construction. Ever thought about diving into the gritty
-            details of game creation or getting a sneak peek of my games,
-            levels, and BanjoZine issues before they hit the public? That's
-            exactly what I'll be offering to my Patreon community (Launching
-            Soon). If this seems like your kind of deal, It would be sick if you
-            could join us on Patreon. Until then please like, comment, follow,
-            subscribe etc.
+          The <a
+              href="https://discord.gg/Su7BCchJJh"
+              target="_blank"
+              rel="noreferrer"
+            >BanjoCave Discord</a> is where you can see my projects take shape, discuss gaming and game development, and forage for grubs with weary goblins in the chaos hole.
+            Updates also at:{" "}
+            <a
+              href="https://x.com/banjeetz"
+              target="_blank"
+              rel="noreferrer"
+            >
+              X @banjeetz
+            </a>
+            , and{" "}
+            <a
+              href="https://www.youtube.co.uk/channel/UCWIX3fTPDoVGPHxReT6vC5g"
+              target="_blank"
+              rel="noreferrer"
+            >
+              YouTube @BanjoD453
+            </a>
+            .
           </p>
+          <h2>Thanks!</h2>
         </div>
       </section>
     </>
