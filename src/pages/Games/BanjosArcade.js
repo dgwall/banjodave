@@ -64,6 +64,27 @@ function BanjosArcade() {
     <section>
 
 
+
+<section className="content">
+        <article>
+<div className="preview-container">
+            <iframe
+              src="https://www.youtube.com/embed/KZnIY07b3-Q"
+              title="YouTube video player"
+              frameborder="0"
+              className="preview"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+              <img
+                src="/portfolio/img/project-ba.png"
+                alt="Banjo's Arcade Screenshots"
+              />
+            </iframe>
+          </div>
+        </article>
+      </section>
+
       <div className="overview-container">
         <div className="overview">
           <h2>
@@ -91,56 +112,21 @@ function BanjosArcade() {
             Don't hold your breath for <span>Kósmoptasía,</span> a nebulous new
             addition, because it's not coming out.
           </p>
+          <iframe title="itch.io" frameborder="0" src="https://itch.io/embed/2773246?linkback=true&amp;border_width=3&amp;bg_color=e8cf1b&amp;fg_color=222222&amp;link_color=fc5c00&amp;border_color=333333" width="556" height="171" className="itch-embed"><a href="https://banjodave.itch.io/banjos-arcade">Banjo's (Abandoned) Arcade by BanjoDave</a></iframe>
         </div>
-        <div className="emblem">
+        <div className="game-cover">
+          <a href="https://banjodave.itch.io/banjos-arcade" target="_blank" rel="noreferrer">
           <img
             src="/img/0dg/tile-ba.png"
             alt="Banjo's Arcade Cover"
             loading="lazy"
           />
+          </a>
         </div>
       </div>
 
-      <section className="content">
-        <article>
-
-        <iframe title="itch.io" frameborder="0" src="https://itch.io/embed/2773246?linkback=true&amp;border_width=3&amp;bg_color=e8cf1b&amp;fg_color=222222&amp;link_color=fc5c00&amp;border_color=333333" width="556" height="171"><a href="https://banjodave.itch.io/banjos-arcade">Banjo's (Abandoned) Arcade by BanjoDave</a></iframe>
 
 
-          <div className="preview-container">
-            <iframe
-              src="https://www.youtube.com/embed/KZnIY07b3-Q"
-              title="YouTube video player"
-              frameborder="0"
-              className="preview"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-            >
-              <img
-                src="/portfolio/img/project-ba.png"
-                alt="Banjo's Arcade Screenshots"
-              />
-            </iframe>
-          </div>
-
-          {/*
-          <div className="game-tiles">
-            {gameData
-              .filter((game) => game.stage === "free")
-              .map((game, index) => (
-                <SkewDiv
-                  key={index}
-                  dest={game.dest}
-                  imgSrc={game.imgSrc}
-                  altText={game.title}
-                  title={game.title}
-                  description={game.description}
-                />
-              ))}
-              </div>
-              */}
-        </article>
-      </section>
 
       <header>
         <h1>
